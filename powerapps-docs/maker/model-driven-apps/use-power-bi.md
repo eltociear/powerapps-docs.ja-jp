@@ -27,7 +27,7 @@ ms.locfileid: "2755953"
 Power BI クラウド サービスは、Common Data Service アプリと連係して、セルフサービス型の分析ソリューションを提供します。 Power BI は、表示されるアプリのデータを最新の状態に自動的に更新します。 ユーザーは、Power BI Desktop または Microsoft Excel では、レポートの作成に Power Query を、モデル駆動型アプリのダッシュボードの共有とデータの更新に Power BI を使用して、強力な新しい方法でアプリのデータを操作することができます。  
   
 <a name="PowerBIGetstarted"></a>   
-## <a name="get-started-using-power-bi-with-model-driven-apps"></a>モデル駆動型アプリを使用して Power BI の使用をを開始する  
+## <a name="get-started-using-power-bi-with-model-driven-apps"></a>モデル駆動型アプリを使用して Power BI の使用を開始する  
  
 Power BIの Dynamics 365 アプリ コンテンツ パックを使用すると、Dynamics 365 のモデル駆動型アプリのデータに簡単にアクセスして分析できます（Dynamics 365 Sales、Dynamics 365 Customer Service、Dynamics 365 Field Service、Dynamics 365 Marketing、Dynamics 365 Project Service Automation)。  
   
