@@ -9,12 +9,12 @@ featureFlags:
 ms.service: powerapps
 ms.custom:
 - PowerApps-hub
-ms.openlocfilehash: 28ad263c2e61973edc0068d0d9211e6a94f1e4c2
-ms.sourcegitcommit: 263a12aefa72a3d73e07b2660bf1e89eba532a16
+ms.openlocfilehash: ad2897f04eebef87dd22c67d7e3a4e342780899c
+ms.sourcegitcommit: b8845f5acb74b5204ef40df1b3d4b70ceeced1d9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "3302359"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "3419620"
 ---
 <div id="main"
    class="v2">
@@ -42,7 +42,7 @@ ms.locfileid: "3302359"
                                              </div>
                                           </div>
                                           <div class="cardText">
-                                             <h3>Power Apps とは何ですか?</h3>
+                                             <h3>Power Apps とは</h3>
                                              <p>Power Apps に関する概要を含むドキュメントから開始します。</p>
                                           </div>
                                        </div>
@@ -62,7 +62,7 @@ ms.locfileid: "3302359"
                                           </div>
                                           <div class="cardText">
                                              <h3>最新情報</h3>
-                                             <p>過去数週間、および今後数か月でリリースされる新機能について学習します。</p>
+                                             <p>過去数週間、および今後数か月でリリースされる新機能について確認します。</p>
                                           </div>
                                        </div>
                                     </div>
@@ -155,7 +155,7 @@ ms.locfileid: "3302359"
                      class="cardsF">
                      <li>
                         <div class="container">
-                           <p>アプリ ユーザーはスマートフォン、タブレット、または Web ブラウザーでアプリ ユーザーまたはその他のユーザーによって作成されたアプリを<a href="/powerapps/user">検索して実行</a>することができます。</p>
+                           <p>アプリ ユーザーはスマートフォン、タブレット、または Web ブラウザーで、アプリ ユーザーまたはその他のユーザーによって作成されたアプリを<a href="/powerapps/user">検索して実行</a>することができます。</p>
                            <hr/>
                            <br/>
                         </div>
@@ -201,7 +201,7 @@ ms.locfileid: "3302359"
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/user/search-records">レコードを検索する</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/user/import-data">Excel からデータをインポートする</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/user/export-to-excel-online">Excel にデータをエクスポートする</a></p>
-                                    <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/user/use-flows">フローを使用してプロセスを自動化する</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/user/use-flows">Flow を使用してプロセスを自動化する</a></p>
                                  </div>
                               </div>
                            </div>
@@ -234,7 +234,7 @@ ms.locfileid: "3302359"
                                     <hr/>
                                     <ul>
                                        <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/canvas-apps/getting-started">キャンバス アプリとは</a></p>
-                                       <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/canvas-apps/open-and-run-a-sample-app">サンプル アプリケーションの作成</a></p>
+                                       <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/canvas-apps/open-and-run-a-sample-app">サンプル アプリの作成</a></p>
                                        <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/canvas-apps/data-platform-create-app-scratch">アプリをゼロから作成</a></p>
                                        <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/canvas-apps/connections-list">コネクタ</a></p>
                                        <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/common-data-service/data-platform-create-business-rule">ビジネス ロジックの適用</a></p>
@@ -263,7 +263,7 @@ ms.locfileid: "3302359"
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/model-driven-apps/model-driven-app-overview">モデル駆動型アプリとは</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/model-driven-apps/build-first-model-driven-app">アプリの作成</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/model-driven-apps/model-driven-app-components">アプリ コンポーネントを理解する</a></p>
-                                    <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/model-driven-apps/create-design-forms">アプリ フォームの作成および設計</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/model-driven-apps/create-design-forms">アプリ フォームの作成と設計</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/model-driven-apps/guide-staff-through-common-tasks-processes">ビジネス ロジックの適用</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/model-driven-apps/create-edit-views">アプリ ビューの作成と管理</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/model-driven-apps/create-edit-system-chart">グラフの使用</a></p>
@@ -311,7 +311,7 @@ ms.locfileid: "3302359"
                                  <div class="cardText">
                                     <h3 style="font-size: 1.15rem">Common Data Service</h3>
                                     <hr/>
-                                    <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/common-data-service/data-platform-intro">Common Data Service とは何か?</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/common-data-service/data-platform-intro">Common Data Service とは</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/common-data-service/entity-overview">エンティティ</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/common-data-service/relationships-overview">エンティティの関連付け</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/common-data-service/fields-overview">フィールド</a></p>
@@ -351,7 +351,7 @@ ms.locfileid: "3302359"
                                     <h3 style="font-size: 1.15rem">Power Platform 管理センター</h3>
                                     <hr/>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/power-platform/admin/admin-documentation">Power Platform の管理</a></p>
-                                    <p><a class="barLink" style="font-size: 0.95rem" href="/power-platform/admin/get-help-support">ヘルプとサポートの表示</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="/power-platform/admin/get-help-support">ヘルプの参照とサポート</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/power-platform/admin/opt-in-early-access-updates">早期アクセス更新プログラムへのオプトイン</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/power-platform/admin/wp-security">セキュリティ概念</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/power-platform/admin/admin-settings">設定の管理</a></p>                                    
@@ -373,7 +373,7 @@ ms.locfileid: "3302359"
                                     <h3 style="font-size: 1.15rem">データ統合と DSR</h3>
                                     <hr/>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/power-platform/admin/data-integrator">Common Data Service へのデータの統合</a></p>
-                                    <p><a class="barLink" style="font-size: 0.95rem" href="/power-platform/admin/powerapps-gdpr-dsr-guide">データ主体の権利 (DSR) 要求に応答する</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="/power-platform/admin/powerapps-gdpr-dsr-guide">データ主体の権利 (DSR) 要求に対応する</a></p>
                                  </div>
                               </div>
                            </div>
@@ -431,7 +431,7 @@ ms.locfileid: "3302359"
                                  <div class="cardText">
                                     <h3 style="font-size: 1.15rem">リソース</h3>
                                     <hr/>
-                                    <p><a class="barLink" style="font-size: 0.95rem" href="https://aka.ms/powerappsadminwhitepaper">ホワイト ペーパー: Power Apps と Power Automate Enterprise Deployment を管理する</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="https://aka.ms/powerappsadminwhitepaper">ホワイト ペーパー: Power Apps と Power Automate エンタープライズ展開を管理する</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="https://docs.microsoft.com/power-platform/guidance/coe/starter-kit">Power Apps Center of Excellence (CoE) スタート キット</a></p>
                                  </div>
                               </div>
@@ -531,7 +531,7 @@ ms.locfileid: "3302359"
                                     <hr/>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/common-data-service/webapi/overview">Web API の使用</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/common-data-service/org-service/overview">組織サービスの使用</a></p>
-                                    <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/common-data-service/use-fetchxml-construct-query">FetchXML を使用してデータをクエリする</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/common-data-service/use-fetchxml-construct-query">FetchXML を使用してデータのクエリを実行する</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/common-data-service/detect-duplicate-data-with-code">重複データの検出</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/common-data-service/optimistic-concurrency">オプティミスティック同時実行の使用</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/common-data-service/best-practices/work-with-data">ベスト プラクティス</a></p>
@@ -579,7 +579,7 @@ ms.locfileid: "3302359"
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/common-data-service/workflow/workflow-extensions">ワークフローの拡張機能 (Common Data Service)</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/model-driven-apps/client-scripting">クライアント スクリプト (モデル駆動型アプリ)</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/common-data-service/best-practices/business-logic">ベスト プラクティス: プラグインとワークフローの拡張機能</a></p>
-                                    <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/model-driven-apps/best-practices/business-logic">ベストプラクティス: クライアント スクリプト</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/model-driven-apps/best-practices/business-logic">ベスト プラクティス: クライアント スクリプト</a></p>
                                  </div>
                               </div>
                            </div>
@@ -601,7 +601,7 @@ ms.locfileid: "3302359"
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/common-data-service/azure-integration">Azure 統合</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/common-data-service/use-webhooks">Webhook</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/common-data-service/import-data">データのインポート</a></p>
-                                    <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/common-data-service/data-export-service">データのエクスポート サービス</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/common-data-service/data-export-service">データ エクスポート サービス</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/common-data-service/data-synchronization">データの同期</a></p>
                                  </div>
                               </div>
@@ -621,7 +621,7 @@ ms.locfileid: "3302359"
                                     <h3 style="font-size: 1.15rem">アプリ/拡張機能のパッケージ化と配布</h3>
                                     <hr/>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/common-data-service/introduction-solutions">ソリューションの使用</a></p>
-                                    <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/common-data-service/build-tools-overview">Power Apps build tools (Azure DevOps 用)</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/common-data-service/build-tools-overview">Microsoft Power Platform Build Tools (Azure DevOps 用)</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/common-data-service/compress-extract-solution-file-solutionpackager">SolutionPackager ツール</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/common-data-service/package-deployer/create-packages-package-deployer">Package Deployer ツール</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/common-data-service/checker/webapi/overview">Power Apps Checker を使用する</a></p>

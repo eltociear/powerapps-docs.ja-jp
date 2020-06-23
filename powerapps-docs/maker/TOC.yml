@@ -1,12 +1,12 @@
 - name: 作業の開始
   items:
-    - name: Power Apps とは何ですか?
+    - name: Power Apps とは
       href: ../powerapps-overview.md
-    - name: 30 日間の無料試用版にサインアップする
+    - name: 30 日間の試用版にサインアップする
       href: signup-for-powerapps.md
     - name: Community Plan にサインアップする
       href: dev-community-plan.md
-    - name: 新機能
+    - name: 最新情報
       href: ../whats-new.md
     - name: ラーニング カタログ
       items:
@@ -14,7 +14,7 @@
           href: ../learning-catalog/get-started.md
         - name: ビジネスの意思決定者
           href: ../learning-catalog/bdm.md
-        - name: アプリ メーカー
+        - name: アプリ作成者
           href: ../learning-catalog/app-maker.md
         - name: 開発者
           href: ../learning-catalog/developer.md
@@ -29,7 +29,7 @@
   items:
     - name: ブラウザーで
       href: ../user/run-app-browser.md
-    - name: 電話で
+    - name: スマートフォンで
       href: ../user/run-canvas-and-model-apps-on-mobile.md
     - name: SharePoint Online ページで (キャンバス アプリ)
       href: ../user/powerapps-web-part.md
@@ -67,14 +67,10 @@
               href: ../user/create-a-record.md
             - name: タイムラインにアクティビティを追加する
               href: ../user/add-activities.md
+            - name: 新しいカレンダー ビューでレコードを操作する
+              href: ../user/calendar-view.md
             - name: アクティビティに関する FAQ
               href: ../user/faq-for-timeline-and-activity.md
-            - name: アクティビティ グリッドを使用して電子メールを表示し、作成する
-              href: ../user/view-create-email.md
-            - name: 強化された電子メール エクスペリエンスを使用した電子メールの送信
-              href: ../user/enhanced-email.md
-            - name: 電子メール テンプレートを挿入する
-              href: ../user/insert-email-template.md
             - name: レコードのルックアップ フィールドを使用する
               href: ../user/lookup-field.md
             - name: プロファイル カードを表示する
@@ -91,7 +87,19 @@
               href: ../user/track-your-progress-with-dashboard-and-charts.md
             - name: Power BI ダッシュボードを追加する
               href: ../user/add-powerbi-dashboards.md
-        - name: ' コラボレーション'
+        - name: 電子メールに関する作業
+          items:
+            - name: アクティビティ グリッドを使用した電子メールの表示と作成
+              href: ../user/view-create-email.md
+            - name: 強化された電子メール エクスペリエンスを使用した電子メールの送信
+              href: ../user/enhanced-email.md
+            - name: 電子メール テンプレートを挿入する
+              href: ../user/insert-email-template.md
+            - name: 電子メールを複数の受信者に送信する
+              href: ../user/direct-email.md
+            - name: 未解決の電子メール受信者を解決する
+              href: ../user/unresolved-email-recipient.md
+        - name: コラボレーション
           items:
             - name: OneDrive for Business を使用する
               href: ../user/one-drive.md
@@ -173,7 +181,7 @@
           href: ./canvas-apps/sample-meeting-capture.md
     - name: 初めてのアプリの作成
       items:
-        - name: 1 - アプリをテンプレートから作成する
+        - name: 1 - テンプレートからアプリを作成する
           href: ./canvas-apps/get-started-test-drive.md
         - name: 2 - データを使用してアプリを作成する
           items:
@@ -227,7 +235,7 @@
                   href: canvas-apps/connections/connection-office365-outlook.md
                 - name: Office 365 ユーザー
                   href: canvas-apps/connections/connection-office365-users.md
-                - name: Oracle データベース
+                - name: Oracle Database
                   href: canvas-apps/connections/connection-oracledb.md
                 - name: Power BI
                   href: canvas-apps/connections/connection-powerbi.md
@@ -267,9 +275,9 @@
                   href: ./canvas-apps/add-scrolling-screen.md
                 - name: Office 365 画面の構成
                   items:
-                    - name: 予定表画面の概要
+                    - name: カレンダー画面の概要
                       href: ./canvas-apps/screen-templates/calendar-screen-overview.md
-                    - name: 予定表画面のリファレンス
+                    - name: カレンダー画面のリファレンス
                       href: ./canvas-apps/screen-templates/calendar-screen-reference.md
                     - name: 電子メール画面の概要
                       href: ./canvas-apps/screen-templates/email-screen-overview.md
@@ -321,6 +329,14 @@
                   href: ./canvas-apps/mixed-reality-component-view-mr.md
                 - name: Mixed Reality で測定する
                   href: ./canvas-apps/mixed-reality-component-measure-distance.md
+            - name: 地理空間コンポーネントの追加 (プレビュー)
+              items:
+                - name: 地理空間コンポーネント
+                  href: ./canvas-apps/geospatial-overview.md
+                - name: インタラクティブ マップの挿入
+                  href: ./canvas-apps/geospatial-component-map.md
+                - name: 住所検索の使用
+                  href: ./canvas-apps/geospatial-component-input-address.md
             - name: Power BI データの追加
               href: ./canvas-apps/powerapps-custom-visual.md
             - name: ギャラリーの操作
@@ -371,7 +387,7 @@
                   href: ./canvas-apps/controls/control-html-text.md
                 - name: アイコン
                   href: ./canvas-apps/controls/control-shapes-icons.md
-                - name: 画像
+                - name: イメージ
                   href: ./canvas-apps/controls/control-image.md
                 - name: インポート
                   href: ./canvas-apps/controls/control-export-import.md
@@ -413,7 +429,7 @@
                   href: ./canvas-apps/controls/control-toggle.md
                 - name: ビデオ
                   href: ./canvas-apps/controls/control-audio-video.md
-                - name: Web のバーコード スキャナー (試験段階)
+                - name: Web バーコード スキャナー (試験段階)
                   href: ./canvas-apps/controls/control-barcodescanner.md
             - name: 共通プロパティ
               items:
@@ -431,7 +447,7 @@
                   href: ./canvas-apps/controls/properties-text.md
         - name: アプリの機能の構成
           items:
-            - name: 数式の使用を開始
+            - name: 数式の基本
               href: ./canvas-apps/working-with-formulas.md
             - name: 変数について
               href: ./canvas-apps/working-with-variables.md
@@ -801,7 +817,7 @@
               href: ./canvas-apps/northwind-install.md
             - name: キャンバス アプリの概要
               href: ./canvas-apps/northwind-orders-canvas-overview.md
-            - name: 1 - 順序ギャラリーを作成する
+            - name: 1 - 受注ギャラリーを作成する
               href: ./canvas-apps/northwind-orders-canvas-part1.md
             - name: 2 - 概要フォームを作成する
               href: ./canvas-apps/northwind-orders-canvas-part2.md
@@ -809,7 +825,7 @@
               href: ./canvas-apps/northwind-orders-canvas-part3.md
         - name: グローバルなアプリをビルドする
           href: ./canvas-apps/global-apps.md
-        - name: アプリにアクセスできるようにする
+        - name: アプリをアクセシビリティ対応にする
           items:
             - name: アクセシビリティ対応のアプリを作成する
               href: ./canvas-apps/accessible-apps.md
@@ -971,7 +987,7 @@
                       href: ./model-driven-apps/create-and-edit-forms.md
                     - name: フィールドの追加、移動、削除
                       href: ./model-driven-apps/add-move-or-delete-fields-on-form.md
-                    - name: コンポーネントの追加、移動、または削除
+                    - name: コンポーネントの追加、移動、削除
                       href: ./model-driven-apps/add-move-configure-or-delete-components-on-form.md
                     - name: セクションの追加、移動、削除
                       href: ./model-driven-apps/add-move-or-delete-sections-on-form.md
@@ -1115,13 +1131,15 @@
                   href: ./model-driven-apps/faqs-timeline-control.md
                 - name: 簡易表示コントロールのプロパティ
                   href: ./model-driven-apps/quick-view-control-properties-legacy.md
-                - name: 電話用 Dynamics 365 とタブレット PC 用 Dynamics 365 のその他のコントロール
+                - name: 使用可能なカスタム コントロール
                   href: ./model-driven-apps/additional-controls-for-dynamics-365-for-phones-and-tablets.md
                 - name: タイマー コントロールの概要
                   href: ./model-driven-apps/timer-control-legacy.md
+                - name: カレンダー コントロールをエンティティに追加する
+                  href: ./model-driven-apps/add-calendar-control.md
             - name: カスタム コントロールを使用したデータのビジュアル化
               href: ./model-driven-apps/use-custom-controls-data-visualizations.md
-        - name: Excel テンプレートと Word テンプレートを使用する
+        - name: Excel と Word のテンプレートを使用する
           href: ./model-driven-apps/templates-overview.md
         - name: テーマを使って組織のブランドを適用する
           href: ./model-driven-apps/create-themes-organization-branding.md
@@ -1132,12 +1150,10 @@
           items:
             - name: レポートに関する考慮事項
               href: ./model-driven-apps/reporting-considerations.md
-            - name: RDL のサンドボックス化
+            - name: RDL サンドボックス
               href: ./model-driven-apps/rdl-sandboxing.md
             - name: Power BI の使用
               href: ./model-driven-apps/use-power-bi.md
-            - name: Power BI コンテンツ パックのカスタマイズ
-              href: ./model-driven-apps/customize-power-bi-content-packs.md
     - name: アプリの検証と公開
       href: ./model-driven-apps/validate-app.md
     - name: アプリの共有
@@ -1167,13 +1183,13 @@
           href: ./model-driven-apps/use-customizable-help.md
         - name: ガイド付きヘルプを作成する
           href: ./model-driven-apps/create-guided-help-learning-path.md
-    - name: 統合インターフェイスへの移行
+    - name: 統一インターフェイスへの移行
       items:
         - name: 切り替えのクイック スタート
           href: ./model-driven-apps/transition-web-app.md
         - name: 既存の環境を使った切り替えのクイック スタート
           href: ./model-driven-apps/transition-web-app-existing.md
-        - name: 統合インターフェイスのプレイブック
+        - name: 統一インターフェイスのプレイブック
           href: ./model-driven-apps/unified-interface-playbook.md
         - name: 統一インターフェイスの切り替えに取り組む
           href: ./model-driven-apps/approaching-unified-interface.md
@@ -1197,7 +1213,7 @@
       items:
         - name: ポータルのテンプレート
           href: ./portals/portal-templates.md
-        - name: スターター ポータルを作成する
+        - name: スターター ポータルの作成
           href: ./portals/create-portal.md
         - name: Dynamics 365 環境でポータルを作成する
           href: ./portals/create-dynamics-portal.md
@@ -1227,6 +1243,8 @@
           href: ./portals/admin/admin-overview.md
         - name: ポータルの詳細
           href: ./portals/admin/portal-details.md
+        - name: Power Platform 管理センターからのポータル管理
+          href: ./portals/admin/power-platform-admin-center.md
         - name: ポータルの公開キーをダウンロードする
           href: ./portals/admin/get-public-key.md
         - name: ポータルのエラー ログを表示する
@@ -1269,7 +1287,7 @@
       items:
         - name: 概要
           href: ./portals/configure/configure-portal.md
-        - name: サイト設定を構成する
+        - name: サイトの設定を構成する
           href: ./portals/configure/configure-site-settings.md
         - name: ポータル認証
           items:
@@ -1315,7 +1333,7 @@
           href: ./portals/configure/add-redirect-url.md
         - name: ショートカットを使用した子ノードの配置
           href: ./portals/configure/place-child-nodes.md
-        - name: 日付と時刻フィールドの動作と形式
+        - name: 日時フィールドの動作と形式
           href: ./portals/configure/behavior-format-date-time-field.md
         - name: ポータルのタイムラインでのアクティビティの表示
           href: ./portals/configure/view-all-activities-in-portal-timeline.md
@@ -1323,7 +1341,7 @@
           href: ./portals/configure/rate-webpage.md
         - name: ポータルでヘッダーとフッターの出力キャッシュを有効にする
           href: ./portals/configure/enable-header-footer-output-caching.md
-        - name: ポータルの Web ページにグラフを追加する
+        - name: ポータルで Web ページにグラフを追加する
           href: ./portals/configure/add-chart.md
         - name: エンティティ フォームの操作
           href: ./portals/configure/entity-forms.md
@@ -1331,7 +1349,7 @@
           href: ./portals/configure/entity-lists.md
         - name: Web サイトの管理
           href: ./portals/configure/websites.md
-        - name: Web サイトのバインドの作成と管理
+        - name: Web サイト バインドの作成と管理
           href: ./portals/configure/website-bindings.md
         - name: Web フォームの操作
           items:
@@ -1343,7 +1361,7 @@
                   href: ./portals/configure/web-form-steps.md
                 - name: フォームの読み込みおよびタブの読み込みのステップの種類を定義する
                   href: ./portals/configure/load-form-step.md
-                - name: リダイレクトのステップの種類を追加する
+                - name: リダイレクト ステップの種類を追加する
                   href: ./portals/configure/add-redirect-step.md
                 - name: 条件付きのステップの種類を追加する
                   href: ./portals/configure/add-conditional-step.md
@@ -1361,27 +1379,27 @@
           href: ./portals/configure/create-run-advertisement.md
         - name: アンケートを使用してフィードバックを収集する
           href: ./portals/configure/gather-feedback-poll.md
-        - name: 発行状態の作成と管理
+        - name: 公開状況の作成と管理
           href: ./portals/configure/publishing-states.md
     - name: 高度なポータルのカスタマイズ
       items:
-        - name: 液体テンプレートを操作する
+        - name: Liquid テンプレートを操作する
           items:
             - name: 概要
               href: ./portals/liquid/liquid-overview.md
             - name: Web テンプレートを使用してコンテンツを保存する
               href: ./portals/liquid/store-content-web-templates.md
-            - name: 液体演算子について
+            - name: Liquid の演算子について
               href: ./portals/liquid/liquid-operators.md
-            - name: 使用可能な液体の種類
+            - name: 使用可能な Liquid の型
               href: ./portals/liquid/liquid-types.md
-            - name: 使用可能な液体条件演算子
+            - name: 使用可能な Liquid の条件演算子
               href: ./portals/liquid/liquid-conditional-operators.md
-            - name: 使用可能な液体オブジェクト
+            - name: 使用可能な Liquid のオブジェクト
               href: ./portals/liquid/liquid-objects.md
-            - name: 使用可能な液体タグ
+            - name: 使用可能な Liquid のタグ
               items:
-                - name: 使用可能な液体タグ
+                - name: 使用可能な Liquid のタグ
                   href: ./portals/liquid/liquid-tags.md
                 - name: 制御フロー タグ
                   href: ./portals/liquid/control-flow-tags.md
@@ -1393,11 +1411,11 @@
                   href: ./portals/liquid/template-tags.md
                 - name: Common Data Service エンティティ タグ
                   href: ./portals/liquid/portals-entity-tags.md
-            - name: 使用可能な液体フィルター
+            - name: 使用可能な Liquid のフィルター
               href: ./portals/liquid/liquid-filters.md
             - name: 高度なテンプレートの作成
               items:
-                - name: カスタム ページ テンプレートを作成する
+                - name: カスタム ページ テンプレートの作成
                   href: ./portals/liquid/create-custom-template.md
                 - name: ハイブリッド ナビゲーションを使用してページ階層を表示する
                   href: ./portals/liquid/hybrid-navigation-render-page-hierachy.md
@@ -1445,7 +1463,7 @@
       href: ./portals/legacy-portal-faq.md
 - name: Common Data Service
   items:
-    - name: Common Data Service とは何ですか?
+    - name: Common Data Service とは
       href: ./common-data-service/data-platform-intro.md
     - name: エンティティの操作
       items:
@@ -1459,8 +1477,6 @@
           href: ./common-data-service/create-edit-metadata.md
         - name: エンティティの種類
           href: ./common-data-service/types-of-entities.md
-        - name: エンティティの作成および編集
-          href: ./common-data-service/create-edit-entities.md
         - name: エンティティの編集
           href: ./common-data-service/edit-entities.md
         - name: 仮想エンティティの作成および編集
@@ -1471,8 +1487,6 @@
           href: ./common-data-service/define-alternate-keys-portal.md
         - name: ソリューション エクスプローラーを使用した代替キーの定義
           href: ./common-data-service/define-alternate-keys-solution-explorer.md
-        - name: Power BI Desktop でのエンティティ データの表示 (プレビュー)
-          href: ./common-data-service/view-entity-data-power-bi.md
         - name: 'ハウツー ガイド: エンティティ'
           items:
             - name: Power Apps ポータルを使用してエンティティを作成する方法
@@ -1579,45 +1593,36 @@
         - name: エンティティのビジネス ルールの作成
           href: ./common-data-service/data-platform-create-business-rule.md
     - name: ソリューションの操作
-      href: ./common-data-service/solutions-overview.md
       items:
-        - name: ソリューションの使用
-          href: ./common-data-service/use-solution-explorer.md
-        - name: ソリューションを使ってカスタマイズする
-          href: ./common-data-service/use-solutions-for-your-customizations.md
-        - name: ソリューション パブリッシャーの概要
-          href: ./common-data-service/change-solution-publisher-prefix.md
-        - name: セグメント化されたソリューションの使用
-          href: ./common-data-service/use-segmented-solutions-patches-simplify-updates.md
-        - name: 管理ソリューションのマージ方法
-          href: ./common-data-service/how-managed-solutions-merged.md
-        - name: ソリューションのチェックを使う
-          href: ./common-data-service/use-powerapps-checker.md
+        - name: ソリューションの概要
+          href: ./common-data-service/solutions-overview.md
+        - name: ソリューションの作成
+          href: ./common-data-service/create-solution.md
+        - name: ソリューションのエクスポート
+          href: ./common-data-service/export-solutions.md
+        - name: ソリューションのインポート
+          href: ./common-data-service/import-update-export-solutions.md
+        - name: ソリューションの更新またはアップグレード
+          href: ./common-data-service/update-solutions.md
+        - name: その他のソリューション タスク
           items:
-            - name: '一般的な問題と解決策: ソリューションのチェック'
-              href: ./common-data-service/common-issues-resolutions-solution-checker.md
-        - name: ベスト プラクティス
-          href: ./common-data-service/solution-best-practices.md
-        - name: 操作方法
-          items:
-            - name: ソリューションの修正プログラムを作成する
-              href: ./common-data-service/solution-patches.md
-            - name: ソリューションの作成
-              href: ./common-data-service/create-solution.md
-            - name: ソリューションの更新またはアップグレード
-              href: ./common-data-service/update-solutions.md
-            - name: ソリューションのインポート
-              href: ./common-data-service/import-update-export-solutions.md
-            - name: ソリューションのエクスポート
-              href: ./common-data-service/export-solutions.md
-            - name: 環境変数を使用する
-              href: ./common-data-service/EnvironmentVariables.md
             - name: ソリューションのレイヤーを表示する
               href: ./common-data-service/solution-layers.md
             - name: ソリューション履歴を表示する
               href: ./common-data-service/solution-history.md
-            - name: メタデータのマネージド プロパティの設定
-              href: ./common-data-service/set-managed-properties-metadata.md
+            - name: コンポーネントの依存関係を表示する
+              href: ./common-data-service/view-component-dependencies.md
+            - name: 環境変数を使用する
+              href: ./common-data-service/EnvironmentVariables.md
+            - name: ユーザー定義エンティティおよびフィールド テキストの翻訳
+              href: ./common-data-service/export-customized-entity-field-text-translation.md
+            - name: 翻訳されたエンティティおよびフィールド テキストのインポート
+              href: ./common-data-service/import-translated-entity-field-text.md
+        - name: ソリューション チェッカーを使用する
+          href: ./common-data-service/use-powerapps-checker.md
+          items:
+            - name: '一般的な問題と解決策: ソリューション チェッカー'
+              href: ./common-data-service/common-issues-resolutions-solution-checker.md
     - name: データフローの操作
       href: ./common-data-service/self-service-data-prep-with-dataflows.md
       items:
@@ -1636,10 +1641,16 @@
           href: ./common-data-service/data-platform-complex-entities.md
         - name: Dynamics 365 のライセンスを必要とする制限付きエンティティ
           href: ./common-data-service/data-platform-restricted-entities.md
+    - name: Common Data Service で Power BI を使用する
+      items:
+        - name: 概要
+          href: ./common-data-service/use-powerbi-with-cds.md
+        - name: Power BI レポートの作成
+          href: ./common-data-service/data-platform-powerbi-connector.md
+        - name: Power BI Desktop でのエンティティ データの表示
+          href: ./common-data-service/view-entity-data-power-bi.md
     - name: SharePoint、OneNote、OneDrive の統合
       href: ./common-data-service/sharepoint-onedrive-onenote-intro.md
-    - name: Power BI レポートの作成
-      href: ./common-data-service/data-platform-powerbi-connector.md
     - name: ユーザー定義エンティティおよびフィールド テキストの翻訳
       href: ./common-data-service/export-customized-entity-field-text-translation.md
     - name: 翻訳されたエンティティおよびフィールド テキストのインポート
@@ -1674,12 +1685,16 @@
           href: ../sample-apps/regional-emergency-response/overview.md
         - name: ソリューションのデプロイ
           href: ../sample-apps/regional-emergency-response/deploy.md
+        - name: ソリューションのアップグレード
+          href: ../sample-apps/regional-emergency-response/upgrade.md
         - name: 地域管理者向けのアプリとダッシュボード
           href: ../sample-apps/regional-emergency-response/configure.md
         - name: 管理者用ポータルとレポート ビューアー
           href: ../sample-apps/regional-emergency-response/portals-admin-reporting.md
         - name: 医療従事者用ポータル
           href: ../sample-apps/regional-emergency-response/portals-user.md
+    - name: 病院から地域へのデータの転送
+      href: ../sample-apps/emergency-response-data-transfer.md
 - name: 他のユーザーの声
   items:
     - name: ブログ
