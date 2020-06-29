@@ -1,6 +1,6 @@
 ---
-title: カレンダー-画面テンプレート |Microsoft Docs
-description: キャンバスアプリのカレンダー画面テンプレートがどのように機能するかを理解し、画面を変更し、アプリの一部として拡張します。
+title: カレンダー スクリーン テンプレート | Microsoft Docs
+description: キャンバス アプリのカレンダー スクリーン テンプレートの仕組みを理解し、スクリーンを変更し、アプリの一部として拡張する
 author: emcoope-msft
 manager: kvivek
 ms.service: powerapps
@@ -15,69 +15,69 @@ search.app:
 - PowerApps
 ms.openlocfilehash: e4c466a2a090836ff880301f0960302413a3e25e
 ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/03/2019
-ms.locfileid: "74732634"
+ms.locfileid: "3307005"
 ---
-# <a name="overview-of-the-calendar-screen-template-for-canvas-apps"></a>キャンバスアプリのカレンダー画面テンプレートの概要
+# <a name="overview-of-the-calendar-screen-template-for-canvas-apps"></a>キャンバス アプリのカレンダー スクリーン テンプレートの概要
 
-Canvas アプリで、Office 365 Outlook アカウントからの今後のイベントを表示する予定表画面を追加します。 ユーザーはカレンダーから日付を選択し、その日のイベントの一覧をスクロールすることができます。 一覧に表示される詳細を変更したり、各イベントの詳細を表示する2番目の画面を追加したり、各イベントの出席者のリストを表示したり、その他のカスタマイズを行ったりすることができます。
+キャンバス アプリで、Office 365 Outlook アカウントからユーザーの今後のイベントを表示するカレンダー スクリーンを追加します。 ユーザーはカレンダーから日付を選択し、その日のイベントのリストをスクロールできます。 リストに表示されている詳細を変更し、各イベントの詳細を表示する 2 番目のスクリーンを追加し、各イベントの出席者のリストを表示し、その他のカスタマイズを行うことができます。
 
-また、[電子メール](email-screen-overview.md)、組織内の[ユーザー](people-screen-overview.md) 、会議に招待するユーザーの[利用](meeting-screen-overview.md)可能性など、Office 365 のさまざまなデータを表示するテンプレートベースの他の画面を追加することもできます。
+[メール](email-screen-overview.md)、組織内の[ユーザー](people-screen-overview.md)、およびユーザーが会議に招待するユーザーの[使用可能性](meeting-screen-overview.md)などの、Office 365 とは異なるデータを表示する他のテンプレート ベースのスクリーンを追加することもできます。
 
-この概要では、次のことについて説明します。
+この概要では次のことについて説明します。
 > [!div class="checklist"]
-> * 既定のカレンダー画面を使用する方法について説明します。
-> * 変更方法。
+> * 既定のカレンダー スクリーンの使い方。
+> * 変更する方法。
 > * アプリに統合する方法。
 
-この画面の既定の機能の詳細については、「[カレンダー画面リファレンス](calendar-screen-reference.md)」を参照してください。
+このスクリーンの既定機能についてさらに詳しく知りたい場合は、[カレンダー スクリーンを参照する](calendar-screen-reference.md) を参照してください。
 
 ## <a name="prerequisite"></a>前提条件
 
-[Power Apps でアプリを作成](../data-platform-create-app-scratch.md)するときに、画面やその他のコントロールを追加および構成する方法について理解します。
+[Power Apps でアプリを作成する](../data-platform-create-app-scratch.md) ときに、画面およびその他のコントロールの追加および構成を行う方法に関する知識。
 
-## <a name="default-functionality"></a>既定の機能
+## <a name="default-functionality"></a>既定機能
 
-テンプレートから予定表画面を追加するには、次のようにします。
+テンプレートからカレンダースクリーンを追加するには:
 
-1. Power Apps に[サインイン](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)し、アプリを作成するか、Power apps Studio で既存のアプリを開きます。
+1. Power Apps に[サインインし](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)、アプリを作成するか、または Power Apps Studio で既存のアプリを開きます。
 
-    このトピックでは phone アプリについて説明しますが、同じ概念がタブレットアプリにも当てはまります。
+    このトピックでは電話アプリについて説明しますが、同じ概念がタブレット PC アプリにも適用されます。
 
-1. リボンの **[ホーム]** タブで、[**新しい画面** > **カレンダー**] を選択します。
+1. リボンの**ホーム** タブで、**新しいスクリーン** > **カレンダー**を選択します。
 
-    既定では、画面は次のようになります。
+    既定では、スクリーンは次のようになります。
 
-    ![予定表画面](media/calendar-screen/calendar-initial.png)
+    ![カレンダー スクリーン](media/calendar-screen/calendar-initial.png)
 
-1. データを表示するには、画面の上部付近のドロップダウンリストでオプションを選択します。
+1. データを表示するには、スクリーンの上部のドロップダウン リストでオプションを選択します。
 
-    ![読み込みが完了した後の予定表画面](./media/calendar-screen/calendar-screen.png)
+    ![読み込みが完了した後のカレンダー スクリーン](./media/calendar-screen/calendar-screen.png)
 
-役に立つ注意事項がいくつかあります。
+いくつかの役に立つ注意事項があります。
 
-* 今日の日付が既定で選択されています。右上隅のカレンダーアイコンを選択すると、簡単に戻ることができます。
-* 別の日付を選択すると、円が囲まれ、明るい四角形 (既定のテーマが適用されている場合は青色) が今日の日付を囲むようになります。
-* 特定の日付に対して少なくとも1つのイベントがスケジュールされている場合は、カレンダーのその日付の下に小さな色付きの円が表示されます。
-* 1つ以上のイベントがスケジュールされている日付を選択すると、そのイベントはカレンダーの下の一覧に表示されます。
+* 既定では今日の日付が選択されており、右上隅のカレンダー アイコンを選択することによって簡単にその日付に戻ることができます。
+* 別の日付を選択した場合、円がその周囲に表示され、淡色の長方形 (既定のテーマが適用されている場合は青) が今日の日付の周囲に表示されます。
+* 特定の日付に少なくとも 1 つのイベントがスケジュールされている場合、カレンダーでその日付の下に小さい色付きの円が表示されます。
+* 1 つまたは複数のイベントがスケジュールされている日付を選択した場合、カレンダーの下のリストにイベントが表示されます。
 
-## <a name="modify-the-screen"></a>画面を変更する
+## <a name="modify-the-screen"></a>スクリーンを変更する
 
-この画面の既定の機能は、いくつかの一般的な方法で変更できます。
+このスクリーンの既定機能は、いくつかの一般的な方法で変更できます。
 
-* [カレンダーを指定](calendar-screen-overview.md#specify-the-calendar)します。
-* [イベントに関するさまざまな詳細を表示](calendar-screen-overview.md#show-different-details-about-an-event)します。
-* [非ブロッキングイベントを非表示](calendar-screen-overview.md#hide-nonblocking-events)にします。
+* [カレンダーを指定します](calendar-screen-overview.md#specify-the-calendar)。
+* [イベントに関するさまざまな詳細を表示します](calendar-screen-overview.md#show-different-details-about-an-event)。
+* [非ブロックイベントを非表示にします](calendar-screen-overview.md#hide-nonblocking-events)。
 
-画面をさらに変更する場合は、ガイドとして[カレンダー画面参照](./calendar-screen-reference.md)を使用します。
+スクリーンをさらに変更する場合は、[カレンダー スクリーンを参照](./calendar-screen-reference.md) をガイドとして使用してください。
 
-### <a name="specify-the-calendar"></a>カレンダーの指定
+### <a name="specify-the-calendar"></a>カレンダーを指定する
 
-ユーザーに表示する予定のカレンダーが既にわかっている場合は、アプリを発行する前にそのカレンダーを指定することで、画面を簡略化できます。 この変更により、カレンダーのドロップダウンリストが不要になるため、削除することができます。
+ユーザーが表示するカレンダーが既にわかっている場合は、アプリを公開する前にそのカレンダーを指定することで、スクリーンを簡素化できます。 この変更により、カレンダーのドロップダウン リストの必要がなくなるため、削除できます。
 
-1. アプリの既定の画面の **[OnStart](../controls/control-screen.md)** プロパティを次の数式に設定します。
+1. アプリの既定スクリーンの **[OnStart](../controls/control-screen.md)** プロパティを次の数式に設定します。
 
     ```powerapps-dot
     Set( _userDomain, Right( User().Email, Len( User().Email ) - Find( "@", User().Email ) ) );
@@ -111,58 +111,58 @@ Canvas アプリで、Office 365 Outlook アカウントからの今後のイベ
     ```
 
     > [!NOTE]
-    > この数式は、カレンダーを選択するためのドロップダウンリストの**Onselect**プロパティの既定値から若干編集されています。 このコントロールの詳細については、[カレンダー画面リファレンス](./calendar-screen-reference.md#calendar-drop-down)のセクションを参照してください。
+    > この数式は、選択されたカレンダーのドロップダウン リストの **OnSelect** プロパティの既定値から少し編集されています。 コントロールの詳細については、[カレンダー - スクリーンを参照](./calendar-screen-reference.md#calendar-drop-down) のセクションを参照してください。
 
-1. 中かっこを含む `{YourCalendarNameHere}`を、表示する予定のカレンダーの名前 (たとえば**calendar**) に置き換えます。
+1. 中かっこを含む `{YourCalendarNameHere}` を、表示するカレンダーの名前 (**カレンダー**など) に置き換えます。
 
     > [!IMPORTANT]
-    > 次の手順では、アプリに予定表の画面を1つだけ追加したことを前提としています。 複数のコントロールを追加した場合、制御名 ( **iconCalendar1**など) は異なる数値で終了し、それに応じて数式を調整する必要があります。
+    > 次の手順では、アプリにカレンダー スクリーンを 1 つだけ追加したことを前提としています。 複数を追加した場合、コントロール名 (**iconCalendar1** など) は異なる値で終わり、それに応じて数式を調整する必要があります。
 
-1. **IconCalendar1**コントロールの**Y**プロパティを次の式に設定します。
+1. **iconCalendar1** コントロールの **Y** プロパティを次の式に設定します。
 
     `RectQuickActionBar1.Height + 20`
 
-1. **LblMonthSelected1**コントロールの**Y**プロパティを次の式に設定します。
+1. **LblMonthSelected1** コントロールの **Y** プロパティを次の式に設定します。
 
     `iconCalendar1.Y + iconCalendar1.Height + 20`
 
-1. **LblNoEvents1**コントロールの**Text**プロパティを次の値に設定します。
+1. **LblNoEvents1** コントロールの**テキスト** プロパティを次の値に設定します。
 
     `"No events scheduled"`
 
-1. **LblNoEvents1**の**Visible**プロパティを次の数式に設定します。
+1. **LblNoEvents1** の**表示**プロパティを次の数式に設定します。
 
     `CountRows(CalendarEventsGallery1.AllItems) = 0 && _calendarVisible`
 
-1. 次のコントロールを削除します。
+1. コントロールを削除します。
 
     - **dropdownCalendarSelection1**
     - **LblEmptyState1**
     - **iconEmptyState1**
 
-1. カレンダー画面が既定の画面でない場合は、アプリをテストできるように、既定の画面から予定表画面に移動するボタンを追加します。
+1. カレンダー スクリーンが既成スクリーンでない場合は、既定スクリーンからカレンダー スクリーンに移動するボタンを追加して、アプリをテストできるようにします。
 
-    たとえば、空白から作成したアプリに予定表画面を追加した場合は、 **Screen2**に移動するボタンを**Screen1**に追加します。
+    たとえば、空白から作成したアプリにカレンダー スクリーンを追加した場合、**スクリーン 2** に移動する**スクリーン 1** にボタンを追加します。
 
-1. アプリを保存し、ブラウザーまたはモバイルデバイスでテストします。
+1. アプリを保存し、次にブラウザーまたはモバイル デバイスでテストします。
 
 ### <a name="show-different-details-about-an-event"></a>イベントに関するさまざまな詳細を表示する
 
-既定では、 **CalendarEventsGallery**という名前のカレンダーの下にあるギャラリーには、開始時刻、期間、件名、および各イベントの場所が表示されます。 [Office 365 コネクタ](https://docs.microsoft.com/connectors/office365/#calendareventclientreceive)がサポートしているフィールド (オーガナイザーなど) を表示するようにギャラリーを構成できます。
+既定では、**CalendarEventsGallery** と呼ばれるカレンダーの下のギャラリーは、各イベントの開始時間、期間、件名および場所を表示します。 ギャラリーを構成して [Office 365 コネクタ](https://docs.microsoft.com/connectors/office365/#calendareventclientreceive) がサポートするフィールド (開催者など) を表示できます。
 
-1. **CalendarEventsGallery**で、新規または既存のラベルの**Text**プロパティを `ThisItem` の後にピリオドを付けて設定します。
+1. **CalendarEventsGallery** で、新規または既存のラベルの**テキスト**プロパティを `ThisItem` にピリオドを付けて設定します。
 
-    IntelliSense では、選択できるフィールドが一覧表示されます。
+    IntelliSense には、選択できるフィールドを表示します。
 
-1. 目的のフィールドを選択します。
+1. 使用するフィールドを選択します。
 
     ラベルには、指定した情報の種類が表示されます。
 
-### <a name="hide-nonblocking-events"></a>非ブロッキングイベントの非表示
+### <a name="hide-nonblocking-events"></a>非ブロックイベントを非表示にする
 
-多くのオフィスでは、チームメンバーが会議出席依頼を送信し、オフィスから離れたときに互いに通知します。 すべてのユーザーのスケジュールをブロックしないようにするために、要求を送信するユーザーはその可用性を**無料**に設定します。 これらのイベントは、いくつかのプロパティを更新することで、カレンダーとギャラリーから非表示にすることができます。
+多くのオフィスでは、チームメンバーが会議出席依頼を送信してオフィスから離れる時を互いに通知します。 全員のスケジュールをブロックしないため、要求を送信するユーザーは使用可能性を**解放**に設定します。 いくつかのプロパティを更新することにより、これらのイベントをカレンダーとギャラリーから非表示にすることができます。
 
-1. **CalendarEventsGallery**の**Items**プロパティを次の数式に設定します。
+1. **CalendarEventsGallery** の**項目**プロパティを次の数式に設定します。
 
     ```powerapps-dot
     SortByColumns(
@@ -176,9 +176,9 @@ Canvas アプリで、Office 365 Outlook アカウントからの今後のイベ
     )
     ```
 
-    この数式では、**フィルター**関数は、選択されたイベント以外の日付に対してスケジュールされているイベントだけでなく、Availability が**Free**に設定されているイベントも非表示にします。
+    この数式では、**フィルター**機能は選択された日付以外の日付にスケジュールされたイベントだけでなく、使用可能性が**解放**に設定されたイベントも非表示されます。
 
-1. カレンダーで、**円**コントロールの**Visible**プロパティを次の数式に設定します。
+1. カレンダーで、**サークル**コントロールの**表示**プロパティを次の数式に設定します。
 
     ```powerapps-dot
     CountRows(
@@ -189,38 +189,38 @@ Canvas アプリで、Office 365 Outlook アカウントからの今後のイベ
         )
     ) > 0 && !Subcircle1.Visible && Title2.Visible
     ```
-    この数式には、前の数式と同じフィルターが含まれています。 そのため、選択した日付に1つ以上のイベントがあり、その可用性が**Free**に設定されていない場合にのみ、イベントインジケーターの円が日付の下に表示されます。
+    この式には、前の数式と同じフィルターが含まれています。 したがって、イベント インジケーターの円は、選択した日付に 1 つまたは複数のイベントがあり、使用可能性が**解放**でない場合にのみ、日付の下に表示されます。
 
-## <a name="integrate-the-screen-into-an-app"></a>画面をアプリに統合する
+## <a name="integrate-the-screen-into-an-app"></a>スクリーンをアプリに統合する
 
-Calendar screen は独自の機能を備えた強力なコントロールですが、通常は大規模で汎用性の高いアプリの一部として最適に動作します。 この画面を大きなアプリに統合するには、次のオプションを追加するなど、さまざまな方法があります。
+カレンダー スクリーンは、それ自体が強力なコントロールのバンドルですが、通常は、より大きくより多目的なアプリの一部として最適に実行します。 スクリーンは次のオプションを追加するなど、さまざまな異なる方法でより大きなアプリに統合することができます。
 
-* [イベントの詳細を表示](calendar-screen-overview.md#view-event-details)します。
-* [イベントの出席者を表示](calendar-screen-overview.md#show-event-attendees)します。
+* [イベントの詳細を表示します](calendar-screen-overview.md#view-event-details)。
+* [イベントの出席者を表示します](calendar-screen-overview.md#show-event-attendees)。
 
-### <a name="view-event-details"></a>イベントの詳細の表示
+### <a name="view-event-details"></a>イベントの詳細を表示する
 
-ユーザーが**CalendarEventsGallery**でイベントを選択した場合、そのイベントに関する詳細情報を表示する別の画面を開くことができます。
+ユーザーが **CalendarEventsGallery** でイベントを選択した場合、そのイベントに関する詳細を表示する別のスクリーンを開くことができます。
 
 > [!NOTE]
-> この手順では、動的なコンテンツを含むギャラリーにイベントの詳細が表示されますが、他の方法を使用して同様の結果を得ることができます。 たとえば、代わりに一連のラベルを使用して、より多くのデザインコントロールを取得できます。
+> この手順では、動的コンテンツを含むギャラリーのイベントの詳細について説明しますが、別の方法を実行しても同様の結果を達成することができます。 たとえば、代わりに一連のラベルを使用して、デザインのコントロールをさらに行なうことができます。
 
-1. 空の柔軟な高さのギャラリーを含む**Eventheight screen**という名前の空の画面を追加し、予定表画面に戻るボタンを追加します。
+1. 空白の高さ調整可能なギャラリーおよびカレンダー スクリーンに戻るボタンを含む **EventDetailsScreen** と呼ばれる空白のスクリーンを追加します。
 
-1. 柔軟な高さのギャラリーで、**ラベル**コントロールと**HTML テキスト**コントロールを追加し、両方の**autoheight**プロパティを**true**に設定します。
+1. 高さ調節可能なギャラリーで、**ラベル** コントロールおよび **HTML テキスト** コントロールを追加し、両方の **AutoHeight** プロパティを **true** に設定します。
 
     > [!NOTE]
-    > Power Apps は、各イベントのメッセージ本文を HTML テキストとして取得するため、そのコンテンツを**html テキスト**コントロールに表示する必要があります。
+    > Power Apps は各イベントのメッセージ本文を HTML テキストとして取得するため、そのコンテンツを **HTML テキスト** コントロールで表示する必要があります。
 
-1. **HTML テキスト**コントロールの**Y**プロパティを次の式に設定します。
+1. **HTML テキスト** コントロールの **Y** プロパティを次の式に設定します。
 
     `Label1.Y + Label1.Height + 20`
 
 1. 必要に応じて、スタイルのニーズに合わせて追加のプロパティを調整します。
 
-    たとえば、 **HTML テキスト**コントロールの下に区切り線を追加することができます。
+    たとえば、**HTML テキスト** コントロールの下に区切り線を追加することができます。
 
-1. 柔軟な高さのギャラリーの**Items**プロパティを次の数式に設定します。
+1. 高さ調節可能なギャラリーの**項目**プロパティを次の数式に設定します。
 
     ```powerapps-dot
     Table(
@@ -233,11 +233,11 @@ Calendar screen は独自の機能を備えた強力なコントロールです�
     )
     ```
 
-    この数式により、 **_selectedCalendarEvent**のフィールド値に設定される動的データのギャラリーが作成されます。これは、ユーザーが**CalendarEventsGallery**コントロールでイベントを選択するたびに設定されます。 このギャラリーを拡張して、さらに多くのフィールドを含めることができます。ただし、このセットには適切な開始点が用意されています。
+    この数式は **_selectedCalendarEvent** のフィールド値に設定された動的データのギャラリーを作成し、**CalendarEventsGallery** コントロールでユーザーがイベントを選択するたびに設定されます。 ラベルをさらに追加することにより、このギャラリーを拡張して他のフィールドを含めることができますが、このセットは良い開始点を提供します。
 
-1. ギャラリー項目を配置した状態で、 **Label**コントロールの**Text**プロパティを `ThisItem.Title`に設定し、 **HTML テキスト**コントロールの**HtmlText**プロパティを `ThisItem.Value`に設定します。
+1. ギャラリー項目を配置したら、**レベル** コントロールの**テキスト** プロパティを `ThisItem.Title` に、および **HTML テキスト** コントロールの **HtmlText** プロパティを `ThisItem.Value` に設定します。
 
-1. **CalendarEventsGallery**で、 **Title**コントロールの**onselect**プロパティを次の数式に設定します。
+1. **CalendarEventsGallery** で、**タイトル**コントロールの **OnSelect** プロパティを次の数式に設定します。
 
     ```powerapps-dot
     Set( _selectedCalendarEvent, ThisItem );
@@ -245,15 +245,15 @@ Calendar screen は独自の機能を備えた強力なコントロールです�
     ```
 
     > [!Note]
-    > **_SelectedCalendarEvent**変数を使用する代わりに、 **CalendarEventsGallery**を使用することもできます。オフ.
+    > **_selectedCalendarEvent** 変数を使用する代わりに、**CalendarEventsGallery**.Selected を代わりに使用できます。
 
-### <a name="show-event-attendees"></a>イベント出席者を表示する
+### <a name="show-event-attendees"></a>イベントの出席者を表示する
 
-`Office365.GetEventsCalendarViewV2` 操作は、セミコロンで区切られた必須出席者とオプションの出席者のセットを含む、各イベントのさまざまなフィールドを取得します。 この手順では、各参加者のセットを解析し、組織内の参加者を特定して、そのユーザーの Office 365 プロファイルを取得します。
+`Office365.GetEventsCalendarViewV2` 操作は、セミコロンで区切られた必須および任意の出席者のセットを含む、各イベントのさまざまなフィールドを取得します。 この手順では、各出席者のセットを解析し、組織内の出席者を特定し、Office 365 プロファイルを取得します。
 
-1. アプリに Office 365 Users コネクタが含まれていない場合は、[それを追加](../add-data-connection.md)します。
+1. アプリに Office 365 ユーザー コネクタが含まれていない場合は、[追加します](../add-data-connection.md)。
 
-1. 会議出席者の Office 365 プロファイルを取得するには、 **CalendarEventsGallery**の **[タイトル]** コントロールの**onselect**プロパティを次の数式に設定します。
+1. 会議出席者の Office 365 プロファイルを取得するには **CalendarEventsGallery** で**タイトル** コントロールの **OnSelect** プロパティを次の数式に設定します。
 
     ```powerapps-dot
     Set( _selectedCalendarEvent, ThisItem );
@@ -281,9 +281,9 @@ Calendar screen は独自の機能を備えた強力なコントロールです�
     )
     ```
 
-この一覧では、各**Clearcollect**操作の動作について説明します。
+次のリストでは、各 **ClearCollect** 操作の動作について説明します。
 
-- ClearCollect (AttendeeEmailsTemp)
+- ClearCollect(AttendeeEmailsTemp)
     ```powerapps-dot
     ClearCollect( AttendeeEmailsTemp,
         Filter(
@@ -293,9 +293,9 @@ Calendar screen は独自の機能を備えた強力なコントロールです�
     );
     ```
 
-    この数式では、必須出席者と省略可能な出席者を1つの文字列に連結し、その文字列をセミコロンで個々のアドレスに分割します。 次に、そのセットの空白の値をフィルターで除外し、他の値を**AttendeeEmailsTemp**という名前のコレクションに追加します。
+    この数式は、必須および任意の出席者を単一の文字列に連結し、次にその文字列を各セミコロンで個々のアドレスに分割します。 次に、数式はそのセットから空白の値をフィルター処理して省き、別の値を **AttendeeEmailsTemp** と呼ばれるコレクションに追加します。
 
-- ClearCollect (AttendeeEmails)
+- ClearCollect(AttendeeEmails)
     ```powerapps-dot
     ClearCollect( AttendeeEmails,
         AddColumns( AttendeeEmailsTemp, 
@@ -304,15 +304,15 @@ Calendar screen は独自の機能を備えた強力なコントロールです�
         )
     );
     ```
-    この数式は、参加者が組織内にあるかどうかを大まかに判断します。 **_UserDomain**の定義は、単に、アプリを実行しているユーザーの電子メールアドレスのドメイン URL です。 この行では、 **AttendeeEmailsTemp**コレクションに**inorg**という名前の追加の true/false 列が作成されます。 この列には、 **Userdomain**が、その特定の行の**AttendeeEmailsTemp**の電子メールアドレスのドメイン URL と等しい場合に**true**が格納されます。
+    この数式は、出席者が組織内にいるかどうかを大まかに決定します。 **_userDomain** の定義は、単にアプリを実行しているユーザーのメール アドレスのドメイン URL です。 このリストは、**AttendeeEmailsTemp** コレクションに **InOrg** という名前の追加の true/false の列を作成します。 この列には、**userDomain** が **AttendeeEmailsTemp** の特定の行のメール アドレスのドメイン URL に相当する場合、**true** が含まれます。
 
-    この方法は常に正確ではありませんが、かなり近いものになります。 たとえば、組織内の特定の参加者は、Jane@OnContoso.comのような電子メールアドレスを持つことがありますが、 **_userDomain**は Contoso.com です。 アプリのユーザーと加藤さんは同じ会社で仕事をしているかもしれませんが、電子メールアドレスに多少の違いがあります。 次のような場合は、次の式を使用することをお勧めします。
+    この方法は常に正確であるとは限りませんが、かなり近いものとなります。 たとえば、組織の特定の出席者が Jane@OnContoso.com のようなメール アドレスを持っているのに対して、**_userDomain** は Contoso.com です。 アプリのユーザーと Jane は同じ会社で働いているかもしれませんが、メール アドレスに若干の違いがあります。 このような場合は、次の数式を使用できます。
 
     `Upper(_userDomain) in Upper(Right(Result, Len(Result) - Find("@", Result)))`
 
-    ただし、この数式は、Jane@NotTheContosoCompany.com のような電子メールアドレスと Contoso.com のような **_userDomain**に一致しますが、これらのユーザーは同じ会社では使用できません。
+    ただし、この数式は Jane@NotTheContosoCompany.com のようなメールアドレスと Contoso.com のような **_userDomain** と一致しますが、それらの人々は同じ会社で働いていません。
 
-- ClearCollect (MyPeople)
+- ClearCollect(MyPeople)
 
     ```powerapps-dot
     ClearCollect( MyPeople,
@@ -335,10 +335,10 @@ Calendar screen は独自の機能を備えた強力なコントロールです�
         )
     );
     ```
-    Office 365 のプロファイルを取得するには、 [Office365Users](https://docs.microsoft.com/connectors/office365users/#userprofile)または[Office365Users](https://docs.microsoft.com/connectors/office365users/#userprofile)操作を使用する必要があります。 これらの操作では、まず、ユーザーの組織内にある出席者のすべての Office 365 プロファイルが収集されます。その後、操作によって、組織の外部から参加者のためのいくつかのフィールドが追加されます。 これらの2つの項目を個別の操作に分割したのは、 **ForAll**ループが順序を保証していないためです。 そのため、 **ForAll**は最初に組織の外部から出席者を回収することがあります。 この場合、 **MyPeople**のスキーマには**DisplayName**、 **Id**、 **jobtitle**、および**UserPrincipalName**だけが含まれます。 ただし、UserProfile 操作は、これよりもはるかに豊富なデータを取得します。 そのため、 **MyPeople**コレクションでは、他のプロファイルの前に Office 365 プロファイルを追加するように強制します。
+    Office 365 プロファイルを取得するには、[Office365Users.UserProfile](https://docs.microsoft.com/connectors/office365users/#userprofile) または [Office365Users.UserProfileV2](https://docs.microsoft.com/connectors/office365users/#userprofile) 操作を使用する必要があります。 これらの操作では、最初にユーザーの組織内にいる出席者のすべての Office 365 プロファイルを収集します。次に、操作は、組織外からの出席者のためのいくつのフィールドを追加します。 これらの 2 つの項目を個別の操作に分けたのは **ForAll** ループは順序を保証しないからです。 したがって、最初に **ForAll** が組織外からの参加者を収集する可能性があります。 この場合、**MyPeople** のスキーマには **DisplayName**、**ID**、**JobTitle**、および **UserPrincipalName** だけが含まれます。 ただし、UserProfile 操作は、それよりもはるかに豊富なデータを取得します。 そのため、**MyPeople** コレクションでは別のプロファイルの前に Office 365 プロファイルを追加するように強制します。
 
     > [!NOTE]
-    > **Clearcollect**関数を1つだけ使用して同じ結果を得ることができます。
+    > 1 つの **ClearCollect** 関数だけで、同じことを達成できます。
 
     ```powerapps-dot
     ClearCollect( MyPeople, 
@@ -371,12 +371,12 @@ Calendar screen は独自の機能を備えた強力なコントロールです�
 
 この演習を完了するには:
 
-1. **Items**プロパティが**MyPeople**に設定されているギャラリーを含む画面を追加します。
+1. **項目**プロパティが **MyPeople** に設定されているギャラリーを含むスクリーンを追加します。
 
-1. **CalendarEventsGallery**の**タイトル**コントロールの**onselect**プロパティで、前の手順で作成した画面に**Navigate**関数を追加します。
+1. **CalendarEventsGallery** の中にある**タイトル** コントロールの **OnSelect** プロパティで、**移動**関数を前の手順で作成したスクリーンに追加します。
 
 ## <a name="next-steps"></a>次の手順
 
-* [この画面のリファレンスドキュメントを表示](calendar-screen-reference.md)します。
-* [Office 365 Outlook コネクタの詳細については、こちらを参照して](../connections/connection-office365-outlook.md)ください。
-* [Office 365 Users コネクタの詳細については、こちらを参照して](../connections/connection-office365-users.md)ください。
+* [スクリーンの参照ドキュメントを表示します](calendar-screen-reference.md)。
+* [Office 365 Outlook コネクタについての詳細](../connections/connection-office365-outlook.md)。
+* [Office 365 ユーザー コネクタについての詳細](../connections/connection-office365-users.md)。

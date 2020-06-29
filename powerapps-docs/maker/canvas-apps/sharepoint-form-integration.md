@@ -1,6 +1,6 @@
 ---
-title: SharePoint フォームの統合について |Microsoft ドキュメント
-description: SharePoint でのカスタム フォームの動作について
+title: SharePoint フォームの統合を理解する | Microsoft Docs
+description: カスタム フォームがどのように SharePoint と連携するのか理解する
 author: NickWaggoner
 manager: kvivek
 ms.service: powerapps
@@ -15,37 +15,37 @@ search.app:
 - PowerApps
 ms.openlocfilehash: 9befcf4cb0e7267820c62ab78a14ee28ba985490
 ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/03/2019
-ms.locfileid: "74732398"
+ms.locfileid: "3307097"
 ---
 # <a name="understand-sharepoint-forms-integration"></a>SharePoint フォームの統合について
-Power Apps で[SharePoint リストフォーム](customize-list-form.md)を簡単にカスタマイズできるようになりました。 この記事では、これらのフォームの動作と、フォームをさらにカスタマイズする方法を詳しく見てみましょう。
+Power Apps にて、簡単に[あらゆる SharePoint リスト フォームをカスタマイズ](customize-list-form.md) 可能です。 この記事では、これらのフォームの動作と、フォームをさらにカスタマイズする方法を詳しく見てみましょう。
 
-SharePoint リストのフォームをカスタマイズしたことがある方は、既定の生成されたフォームは、アイテムの作成、表示、編集などのすべての操作に対応していることをご存知でしょう。 これは、生成された数式と **SharePointIntegration** コントロールによって実現されています。
+SharePoint リスト フォームをカスタマイズしたことがある場合、既定の生成されたフォームが、項目の作成、表示、編集などのすべての操作に対応していることをご存知でしょう。 これは、生成された数式と **SharePointIntegration** コントロールによって実現されています。
 
-## <a name="understand-the-default-generated-form"></a>既定の生成されたフォームについて
+## <a name="understand-the-default-generated-form"></a>既定の生成されたフォームを理解する
 
-既定の生成されたフォームは、次のコントロールと対応する既定値で構成されています。
+既定の生成されたフォームは、次のコントロールと対応する既定値で構成されています:
 
-* **FormScreen1** - これは、フォームを含む[画面](controls/control-screen.md)です。
+* **FormScreen1** - これは、フォームを含む[スクリーン](controls/control-screen.md) です。
 
-* **SharePointForm1** - これは、リスト アイテムの作成、表示、または編集に使用される[フォーム](working-with-forms.md)です。
+* **SharePointForm1** - これは、リスト アイテムの作成、表示、または編集に使用される[フォーム](working-with-forms.md) です。
 
-    * **Data Source** - フォームがカスタマイズされているリストです。
+    * **データ ソース** - フォームがカスタマイズされているリストです。
 
-    * **Item** - リストから選択されたアイテムです。 これは、Power Apps Studio で作業するときに便利なように、一覧の First () 項目に設定されています。
+    * **項目** - リストから選択された項目です。 これは、Power Apps Studio で操作するとき便利なように、リストの First() 項目に設定されています。
 
         **If(IsBlank(SharePointIntegration.Selected) || IsEmpty(SharePointIntegration.Selected),First('*YourListName*'),SharePointIntegration.Selected)**
 
-    * **OnSuccess** - アイテムが正常に作成または保存されると、フォームがリセットされ、SharePoint でこのフォームが非表示になります。
+    * **OnSuccess** - 項目が正常に作成または保存されると、フォームがリセットされ、SharePoint でこのフォームが非表示になります。
 
         **ResetForm(SharePointForm1); RequestHide()**
 
-* **Sharepointintegration** -SharePoint と Power Apps の間でユーザー操作をやり取りするためのコントロール。
+* **SharePointIntegration** - このコントロールは、SharePoint と Power Apps の間でユーザー アクションを伝達します。
 
-    * **Data Source** - フォームがカスタマイズされているリストです。
+    * **データ ソース** - フォームがカスタマイズされているリストです。
 
         **'*YourListName*'**
 
@@ -65,50 +65,50 @@ SharePoint リストのフォームをカスタマイズしたことがある方
 
         **SubmitForm(SharePointForm1)**
 
-    * **OnCancel** - **SharePointForm1** の変更をリセットします。 ユーザーが SharePoint で **[キャンセル]** をクリックまたはタップすると、SharePoint では常にフォームが非表示になります。
+    * **OnCancel** - **SharePointForm1** の変更をリセットします。 ユーザーが SharePoint で**キャンセル**をクリックまたはタップすると、SharePoint では常にフォームが非表示になります。
 
         **ResetForm(SharePointForm1)**
 
-これらの既定値を使用すると、SharePoint 内で実行されるときにフォームが動作するようになります。ユーザーが sharepoint で Power Apps フォームモードを操作すると、その変更が SharePoint に送信されるようになります。
+これらの既定値によって、SharePoint 内で実行したときにフォームが機能し、ユーザーが SharePoint でフォームと対話したときに Power Apps フォーム モードが変更され、変更内容が SharePoint に確実に送信されます。
 
-## <a name="understand-the-sharepointintegration-control"></a>SharePointIntegration コントロールについて
-**Sharepointintegration**コントロールは、SharePoint と Power Apps の間でユーザーの操作をやり取りします。
+## <a name="understand-the-sharepointintegration-control"></a>SharePointIntegration コントロールを理解する
+**SharePointIntegration** コントロールは、SharePoint と Power Apps の間でユーザー アクションを伝達します。
 
 ![](./media/sharepoint-form-integration/sharepointintegration-object.png)
 
 >[!NOTE]
->**Sharepointintegration**コントロールのプロパティにアクセスできるのは、フォームが SharePoint で実行されている場合のみです。 Power Apps Studio でフォームをカスタマイズしている場合は対象になりません。 これらのプロパティは、**OnStart** または **OnVisible** では使用できないことがあります。 
+>**SharePointIntegration** コントロールのプロパティには、フォームが SharePoint で実行されているときにのみアクセスでき、Power Apps Studio でフォームをカスタマイズしているときにはアクセスできません。 これらのプロパティは、**OnStart** または **OnVisible** では使用できないことがあります。 
 
-**SharePointIntegration** コントロールには、次のプロパティがあります。
+**SharePointIntegration** コントロールには、次のプロパティがあります:
 
-**Selected** - SharePoint リストから選択されたアイテムです。
+**選択済み** - SharePoint リストから選択された項目です。
 
-**OnNew** - ユーザーが SharePoint で **[新規]** ボタンをクリックまたはタップしたとき、または**アイテム作成**フォームを開いたときのアプリの応答です。
+**OnNew** - ユーザーが**新規**ボタンをクリックかタップ、または SharePoint の**項目作成**フォームを開いたときのアプリの応答です。
 
-**OnView** - ユーザーが SharePoint で **[アイテム]** ボタンをクリックまたはタップしたとき、または**アイテム詳細**フォームを開いたときのアプリの応答です。
+**OnView** - ユーザーが、**項目**をクリックかタップ、または SharePoint の**項目詳細**フォームを開いたときのアプリの応答です。
 
-**OnEdit** - ユーザーが SharePoint で **[すべて編集]** ボタンをクリックまたはタップしたとき、または**アイテム編集**フォームを開いたときのアプリの応答です。
+**OnEdit** - ユーザーが**すべてを編集**ボタンをクリックかタップ、または SharePoint の**項目の編集**フォームを開いたときのアプリの応答です。
 
-**OnSave** - ユーザーが SharePoint で **[保存]** ボタンをクリックまたはタップしたときのアプリの応答です。
+**OnSave** - ユーザーが SharePoint の**保存**ボタンをクリックまたはタップしたときのアプリの応答です。
 
-**OnCancel** - ユーザーが SharePoint で **[キャンセル]** ボタンをクリックまたはタップしたときのアプリの応答です。
+**OnCancel** - ユーザーが SharePoint の**キャンセル**ボタンをクリックまたはタップしたときのアプリの応答です。
 
-**SelectedListItemID** - SharePoint リストで選択されたアイテムのアイテム ID です。
+**SelectedListItemID** - SharePoint リストで選択された項目 ID です。
 
-**Data Source** – フォームが表示、編集、または作成するレコードが含まれるリストです。 このプロパティを変更すると、**Selected** プロパティと **SelectedItemID** プロパティが無効になる可能性があることに注意してください。
+**データ ソース** – フォームが表示、編集、または作成するレコードが含まれるリストです。 このプロパティを変更すると、**Selected** プロパティと **SelectedItemID** プロパティが無効になる可能性があることに注意してください。
 
 ## <a name="customize-the-default-form"></a>既定のフォームをカスタマイズする
-既定の生成されたフォームと **SharePointIntegration** コントロールを理解したら、数式を変更して、フォームをさらにカスタマイズすることができます。 フォームをカスタマイズするときの注意事項をいくつか次に示します。
+既定の生成されたフォームと **SharePointIntegration** コントロールを理解したら、数式を変更して、フォームをさらにカスタマイズすることができます。 フォームをカスタマイズするときの注意事項をいくつか次に示します:
 
-* アイテムを作成、表示、または編集するための個別のカスタム エクスペリエンスを作成するには、**SharePointIntegration** コントロールの **OnNew**、**OnView**、または **OnEdit** 式を、変数を設定するか別の画面に移動するように設定します。
+* 項目を作成、表示、または編集するための個別のカスタム エクスペリエンスを作成するには、**SharePointIntegration** コントロールの **OnNew**、**OnView**、または **OnEdit** 式を、変数を設定するか別の画面に移動するように設定します。
 
-* ユーザーが SharePoint で **[保存]** をクリックまたはタップしたときの動作をカスタマイズするには、**SharePointIntegration** コントロールの **OnSave** 式を使用します。 複数のフォームがある場合は、現在使用しているフォームに対する変更だけを送信してください。
+* ユーザーが SharePoint で **保存** をクリックまたはタップしたときの動作をカスタマイズするには、**SharePointIntegration** コントロールの **OnSave** 式を使用します。 複数のフォームがある場合は、現在使用しているフォームに対する変更だけを送信してください。
 
   > [!TIP]
   >    **OnNew**、**OnView**、および **OnEdit** 式の変数には異なる値を設定します。 **OnSave** 式でこの変数を使用すると、使用されているフォームを指定できます。
 
 * すべてのフォームの **OnSuccess** 式に必ず **RequestHide()** を含めてください。 これを忘れると、SharePoint はフォームを非表示にするタイミングを認識できません。
 
-* SharePoint でユーザーが **[キャンセル]** をクリックまたはタップしたときのフォームの非表示は制御できないので、**SharePointIntegration** コントロールの **OnCancel** 式でかならずフォームをリセットしてください。
+* ユーザーが SharePoint で **キャンセル**をクリックまたはタップしたさいのフォームの非表示は制御できないので、**SharePointIntegration** コントロールの **OnCancel** 式でかならずフォームをリセットしてください。
 
 * **SharePointIntegration** コントロールのプロパティは **OnStart** または **OnVisible** では使用できないことがあり、それらのイベントはリストの読み込み中に 1 回だけ実行します。 **OnNew**、**OnView**、または **OnEdit** 式を使って、フォームが毎回ユーザーに表示される前にロジックを実行できます。 

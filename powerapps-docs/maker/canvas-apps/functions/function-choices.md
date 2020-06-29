@@ -1,6 +1,6 @@
 ---
 title: Choices 関数 | Microsoft Docs
-description: 構文を含む、Power Apps の Choice 関数の参照情報
+description: Power Apps での Choices 関数の構文を含む参照情報
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -15,91 +15,91 @@ search.app:
 - PowerApps
 ms.openlocfilehash: ab805ec283ca43c96982eb04357ded9aed934a03
 ms.sourcegitcommit: 80120b59d440bb7a3ddca93cd51154607f749f6b
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 02/08/2020
-ms.locfileid: "77089882"
+ms.locfileid: "3307787"
 ---
-# <a name="choices-function-in-power-apps"></a>Power Apps の choice 機能
-ルックアップ列で使用可能な値のテーブルを返します。
+# <a name="choices-function-in-power-apps"></a>Power Apps の Choices 関数
+検索列で使用可能な値のテーブルを返します。
 
-## <a name="description"></a>説明
-**Choices** 関数は、ルックアップ列で使用可能な値のテーブルを返します。  
+## <a name="description"></a>内容
+**Choices** 関数は、検索列で使用可能な値のテーブルを返します。  
 
-**Choices** 関数を使用して、ユーザーが選択する選択肢の一覧を提供します。 この関数は、編集フォームで[**コンボ ボックス**](../controls/control-combo-box.md) コントロールと共によく使用されます。
+**Choices** 関数を使用して、ユーザーが選択する選択肢の一覧を提供します。 この関数は、編集フォームで [**コンボ ボックス**](../controls/control-combo-box.md) コントロールと共によく使用されます。
 
 ルックアップの場合、**Choices** が返すテーブルは、ルックアップに関連付けられている外部テーブルと一致します。 **Choices** を使用することにより、追加データ ソースとして外部テーブルを追加する必要がなくなります。 **Choices** は、外部テーブルのすべての列を返します。
 
 **Choices** はテーブルを返すので、[**Filter**](function-filter-lookup.md)、[**Sort**](function-sort.md)、[**AddColumns**](function-table-shaping.md)、その他すべてのテーブル操作関数を使って、テーブルをフィルター、並べ替え、整形できます。 
 
-現時点では、**選択肢**を[委任](../delegation-overview.md)することはできません。 この制限によりアプリで問題がある場合は、データ ソースとして外部エンティティを追加し、それを直接使用してください。 
+現時点で、**Choices** を[委任](../delegation-overview.md) することはできません。 この制限によりアプリで問題がある場合は、データ ソースとして外部エンティティを追加し、それを直接使用してください。 
 
-ShowColumns[ **、** ](function-table-shaping.md)Search[ **、その他のテーブル関数とは異なり、** Choices](function-filter-lookup.md) では列名を文字列にして二重引用符で囲む必要はありません。 列を直接参照するのと同じように、式を指定します。
+[**ShowColumns**](function-table-shaping.md)、[**Search**](function-filter-lookup.md)、その他のテーブル関数とは異なり、**Choices** は列名を文字列にして二重引用符で囲む必要はありません。 列を直接参照するのと同じように、式を指定します。
 
 列参照は、データ ソースに対して直接行う必要があります。 たとえば、データ ソースが **Accounts** でルックアップが **SLA** の場合、列参照は **Accounts.SLA** になります。 参照は、関数、変数、またはコントロールを経由することはできません。 この例を拡張し、**Accounts** が **Gallery** コントロールにフィードされる場合は、式 **Gallery.Selected.SLA** を使って選択されたアカウントの SLA を参照します。 ただし、この参照はコントロールを経由したので、**Columns** 関数に渡されることはできません。やはり **Accounts.SLA** を使う必要があります。
 
-現時点では、参照列は SharePoint と Common Data Service でのみ使用できます。
+現時点では、ルックアップ列を使用できるのは SharePoint および Common Data Service のみです。
 
 ## <a name="syntax"></a>構文
 **Choices**( *column-reference* )
 
 * *column-reference* – 必須。  データ ソースのルックアップ列です。 列名を二重引用符で囲まないでください。 参照は、データ ソースの列に対して直接行う必要があり、関数またはコントロールを経由してはなりません。
 
-## <a name="examples"></a>使用例
+## <a name="examples"></a>例
 
 #### <a name="choices-for-a-lookup"></a>ルックアップの選択肢
 
-1. Common Data Service で[データベースを作成](../../../administrator/create-database.md)し、 **[サンプルアプリとデータを含める]** ボックスをオンにします。
+1. Common Data Service に[データベースを作成](../../../administrator/create-database.md)し、**サンプル アプリとデータを含める**のボックスを選択します。
 
-    **Accounts** などの多数のエンティティが作成されます。
+    **取引先企業**などの多数のエンティティが作成されます。
 
-    **注**: エンティティ名は、Power Apps Studio の make.powerapps.com と複数形で単数形になっています。
+    **注**: エンティティの名前は、make.powerapps.com では単数形、Power Apps Studio では複数形です。
 
-    ![Common Data Service for Apps の Account エンティティのフィールドの一部を一覧表示します。 "主要連絡先" はルックアップフィールドです。](media/function-choices/entity-account.png)
+    ![アプリ用 Common Data Service の 取引先企業エンティティのフィールドのリストの一部、「取引先責任者」がルックアップ フィールドであることの強調表示](media/function-choices/entity-account.png)
 
-    **Accounts** エンティティには **Primary Contact** 列があり、これは **連絡先** エンティティに対するルックアップです。  
+    **取引先企業**エンティティには **取引先責任者**の列があり、これは **取引先担当者**エンティティに対するルックアップです。  
 
-    ![Common Data Service の Contact エンティティのフィールドの部分的な一覧](media/function-choices/entity-contact.png)
+    ![Common Data Service の取引先担当者エンティティのフィールドのリストの一部](media/function-choices/entity-contact.png)
 
-    各アカウントについて、連絡先が主連絡先として指定されているか、または主連絡先が "*ブランク*" になっています。
+    各アカウントについて、取引先担当者が取引先責任者として指定されているか、または取引先責任者が*空白*になっています。
 
-1. [Accounts](../data-platform-create-app.md) エンティティから**アプリを生成**します。
+1. **取引先企業**エンティティから[アプリを生成](../data-platform-create-app.md)します。
 
-1. 左端近くにある画面とコントロールの一覧で、**EditScreen1** が表示されるまで下にスクロールし、そのすぐ下にある **EditForm1** を選択します。
+1. 左端にある画面とコントロールのリストで、**EditScreen1** が表示されるまで下にスクロールし、そのすぐ下にある **EditForm1** を選択します。
 
     ![左側のナビゲーション バーで、EditScreen1 の EditForm1 を選択する](media/function-choices/select-editform.png)
 
-1. 右側のペインの **[プロパティ]** タブで、 **[フィールドの編集]** を選択します。
+1. 右側のウィンドウの**プロパティ** タブで**フィールドの編集**を選択します。
 
-    ![データペインを開く](media/function-choices/open-data-pane.png)
+    ![データ ウィンドウを開きます](media/function-choices/open-data-pane.png)
 
-1. **[フィールド]** ウィンドウで、 **[フィールドの追加]** を選択します。
+1. **フィールド** ウィンドウで、**フィールドの追加**を選択します。
 
-1. "**主要連絡先**" フィールドを検索し、チェックボックスをオンにして、 **[追加]** を選択します。
+1. **取引先責任者**フィールドを検索し、そのチェックボックスを選択してから、**追加**を選択します。
 
-    ![Accounts を選択して [データ] ウィンドウを開く](media/function-choices/field-list.png)
+    ![取引先企業を選択して、データ ウィンドウを開く](media/function-choices/field-list.png)
 
-    **主要連絡先**フィールドがフォームの下部に表示されます。 フィールドにエラーが表示されている場合は、 **[表示]** タブの **[データソース]** を選択し、**アカウント**データソースの省略記号 (...) を選択して、最新の情報に **[更新]** を選択します。
+    **取引先責任者**フィールドは、フォームの下部に表示されます。 フィールドにエラーが表示された場合は、**ビュー** タブで**データ ソース**を選択し、**取引先企業**データ ソースの省略記号 (...) を選択し、**更新**を選択します。
 
-1. (省略可能) **Primary Contact** フィールドをフィールド一覧の下部から先頭にドラッグします。
+1. (オプション) **取引先責任者**のフィールドをフィールド一覧の下部から先頭にドラッグします。
 
-1. **Primary Contact** のカードで、**コンボ ボックス** コントロールを選択します。
+1. **取引先責任者**のカードで、**コンボ ボックス** コントロールを選択します。
 
-    このコントロールの**Items**プロパティは、最初の例のように表示名で列を識別する数式、または2番目の例のように論理名を使用して、列を識別する数式に設定されます。
+    そのコントロールの **Items** プロパティは、最初の例のように表示名、または 2 番目の例のように論理名で列を識別する式に設定されます。
 
    - **Choices( Accounts.'Primary Contact' )**
    - **Choices( Accounts.primarycontactid )**
 
-     ![フォーム コントロールを含むキャンバス画面。 主要連絡先カード内のコンボボックスコントロールが選択されていて、数式の選択 (Accounts. 主要連絡先) を含む Items プロパティが表示されます。](media/function-choices/accounts-primary-contact.png)
+     ![フォーム コントロールを含むキャンバス画面。 取引先責任者カードのコンボ ボックス コントロールが選択されており、式 Choices( Accounts.'Primary Contact') を持つ Items プロパティが表示される](media/function-choices/accounts-primary-contact.png)
 
-1. 説明のために、**データテーブル**コントロールの**choice**関数によって返される完全なテーブルを表示できます。  **[ホーム]** タブの **[新しい画面]** を選択し、 **[空白]** を選択します。
+1. わかりやすくするため、**Choices** 関数によって返された完全なテーブルを、**Data table** コントロールで確認できます。  **ホーム** タブの**新しい画面**を選択し、**空白**を選択します。
 
-1. **[挿入]** タブの **[データ テーブル]** を選択します。
+1. **挿入**タブの**データ テーブル**を選択します。
 
-1. **データテーブル**コントロールの**Items**プロパティを次の数式に設定します。
+1. **データ テーブル** コントロールの **Items** プロパティを次の数式に設定します。
 
      **Choices( Accounts.'Primary Contact' )**
 
-1. **データテーブル**コントロールの中央で、開始するリンクをクリックして **[フィールド...]** を選択し、表示するフィールドのチェックボックスをオンにします ( **firstname** 、 **lastname**など)。
+1. **データ テーブル** コントロールの中央で、**フィールドを選んでください ...** で始まるリンクを選択してから、表示するフィールド (たとえば、**firstname** および **lastname**) のチェック ボックスを選択します。
 
-     ![データ テーブル コントロールを含むキャンバス画面。 Items プロパティは式 Choices( Accounts.'Primary Contact' ) に設定され、テーブルには Contacts エンティティの最初のレコード セットの firstname 列と lastname 列が表示されている](media/function-choices/full-accounts-pc.png)
+     ![データ テーブル コントロールを含むキャンバス画面。 Items プロパティは式 Choices( Accounts.'Primary Contact' ) に設定され、テーブルには取引先担当者エンティティの最初のレコード セットの firstname 列と lastname 列が表示されている](media/function-choices/full-accounts-pc.png)
