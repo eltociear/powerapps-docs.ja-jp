@@ -1,65 +1,65 @@
 ---
-title: 'コンテナーコントロール: reference |Microsoft Docs'
-description: プロパティと例を含むコンテナーコントロールに関する情報
+title: 'コンテナー コントロール: リファレンス | Microsoft Docs'
+description: プロパティとサンプルを含む、コンテナー コントロールに関する情報
 author: emcoope-msft
 manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.component: canvas
-ms.date: 9/20/2019
+ms.date: 05/01/2020
 ms.author: emcoope
 ms.reviewer: tapanm-msft
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: e22800dc929c32f0a605137b6dc94820b984459c
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
-ms.translationtype: MT
+ms.openlocfilehash: 472683bd7b8d78f655aae89d1fd618b54ae4b24e
+ms.sourcegitcommit: b75b29d58adf1547c9fcd3ddd1f14f69fb7f572b
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74727337"
+ms.lasthandoff: 05/02/2020
+ms.locfileid: "3330518"
 ---
-# <a name="container-control-in-power-apps-experimental"></a>Power Apps でのコンテナーコントロール (試験段階)
+# <a name="container-control-in-power-apps-experimental"></a>Power Apps でのコンテナー コントロール (実験段階)
 階層を作成する機能を提供します。
 
 > [!IMPORTANT]
-> これは試験的な機能です。 試験的な機能は大幅に変更されたり、いつでもまったく表示されなくなったりする可能性があります。
-> 詳細については、「 [Power Apps の試験段階とプレビュー機能に](https://docs.microsoft.com/powerapps/maker/canvas-apps/working-with-experimental-preview)ついて」を参照してください。
+> これは実験段階の機能です。 試験的な機能は根本的に変更され、いつでも完全に表示されなくなります。
+> 詳細については、[Power Apps での実験段階の機能とプレビュー機能について](https://docs.microsoft.com/powerapps/maker/canvas-apps/working-with-experimental-preview) をお読みください。
 
-## <a name="description"></a>Description
- コンテナーは、一連のコントロールを保持し、独自のプロパティを持つことができます。 
+## <a name="description"></a>内容
+ コンテナーは一連のコントロールを保持でき、独自のプロパティがあります。
 
-空のコンテナーを挿入してから、コントロールを追加し、サイズを変更し、移動し、非表示にし、その他の変更を加えることによって、コンテナーをカスタマイズすることができます。 また、さまざまなコントロールから開始し、それらを選択してコンテナーに追加することもできます。これを行うには、ツリービューのコンテキストメニューを使用するか、キャンバスを右クリックします。 
+空のコンテナーを挿入して開始できます。 次に、コントロールの追加、サイズ変更、移動、非表示化や他の変更を加えることによりカスタマイズできます。 いくつかのコントロールから始めて、それらを選択し、ツリー ビューの使用を追加することもできます。
 
-## <a name="properties"></a>プロパティ
-**[BorderColor](properties-color-border.md)** – コントロールの境界線の色です。
+## <a name="properties"></a>プロパティ​​
+**[BorderColor](properties-color-border.md)** – コントロールの境界線の色。
 
-**[BorderStyle](properties-color-border.md)** – コントロールの境界線を **Solid** (実線)、**Dashed** (破線)、**Dotted** (点線)、**None** (なし) のいずれに指定します。
+**[BorderStyle](properties-color-border.md)** – コントロールの境界線が**実線**、**破線**、**点線**、または**なし**かどうか。
 
-**[BorderThickness](properties-color-border.md)** – コントロールの境界線の太さです。
+**[BorderThickness](properties-color-border.md)** – コントロールの境界線の太さ。
 
-**[Fill](properties-color-border.md)** – コントロールの背景色です。
+**[塗りつぶし](properties-color-border.md)** – コントロールの背景色。
 
-**[Height](properties-size-location.md)** – コントロールの上端と下端の距離です。
+**[高さ](properties-size-location.md)** – コントロールの上端と下端間の距離。
 
-**[Width](properties-size-location.md)** – コントロールの左端と右端の間の距離です。
+**[幅](properties-size-location.md)** – コントロールの左端と右端間の距離。
 
-**[Visible](properties-core.md)** – コントロールを表示するか非表示にするかを指定します。
+**[表示](properties-core.md)** – コントロールが表示されるか非表示になるか。
 
-**[X](properties-size-location.md)** – コントロールの左端とその親コンテナー (親コンテナーがない場合は画面) の左端間の距離です。 
+**[X](properties-size-location.md)** – コントロールの左端とその親コンテナー (親コンテナーがない場合は画面) の左端間の距離。 
 
-**[Y](properties-size-location.md)** – コントロールの上端とその親コンテナー (親コンテナーがない場合は画面) の上端間の距離です。 
+**[Y](properties-size-location.md)** – コントロールの上端とその親コンテナー (親コンテナーがない場合は画面) の上端間の距離。 
 
 
 ## <a name="known-limitations"></a>既知の制限
 
-コンテナーは、キャンバスコンポーネントまたはフォーム内では使用できません。 
+コンテナーはフォーム内では機能しません。
 
 ## <a name="frequently-asked-questions"></a>よく寄せられる質問
 
-**コンテナーとグループの違いは何ですか。**
-作成グループは、コントロールを移動したり、グループ内のコントロールの同様のプロパティを一括編集したりするために使用される軽量の概念です。 作成グループは、アプリのレイアウトには影響しません。 
+### <a name="what-is-the-difference-between-a-container-and-a-group"></a>コンテナーとグループ間の違いは何ですか。
 
-このコンテナーコントロールは、事前試験段階で、強化されたグループとして名前が変更された作成グループの代替として出荷されました。 簡易作成グループと、追加のプロパティを持つ strutured container コントロールの両方に値があるため、コンテナーコントロールに名前が変更されました。 
+作成グループは、コントロール内を移動し、グループ内のコントロールの同様のプロパティを一括編集するために使用される軽量概念です。 作成グループは、アプリのレイアウトに影響を与えません。
 
+以前は実験段階で出荷されたコンテナー コントロールは、作成グループの代わりに拡張グループとして名前変更されました。 軽量の作成グループと追加のプロパティを持つ構造化されたコンテナー コントロールの両方に値があるため、コンテナー コントロールに名前変更されました。

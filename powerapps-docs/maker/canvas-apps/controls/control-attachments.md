@@ -1,6 +1,6 @@
 ---
-title: 'Attachments コントロール: リファレンス | Microsoft Docs'
-description: 各種プロパティとサンプルを含む Attachments コントロールに関する情報
+title: '添付ファイル コントロール: リファレンス | Microsoft Docs'
+description: 各種プロパティとサンプルを含む、添付ファイル コントロールに関する情報
 author: chmoncay
 manager: kvivek
 ms.service: powerapps
@@ -15,105 +15,105 @@ search.app:
 - PowerApps
 ms.openlocfilehash: 35e4107934134a229817deb258bacf5e36c9dbb6
 ms.sourcegitcommit: a02b20113164acb11955d27ef4ffa421ee0fba9d
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/10/2020
-ms.locfileid: "78970978"
+ms.locfileid: "3308224"
 ---
-# <a name="attachments-control-in-power-apps"></a>Power Apps での添付ファイルの制御
-ユーザーがデバイスにファイルをダウンロードしたり、SharePoint リストまたは Common Data Service エンティティからファイルをアップロードしたり削除したりできるようにするコントロール。
+# <a name="attachments-control-in-power-apps"></a>Power Apps の添付ファイル コントロール
+ユーザーがデバイスへのファイルのダウンロードや、SharePoint リストまたは Common Data Service エンティティからのファイルのアップロードや削除ができるようになるコントロール。
 
-## <a name="limitations"></a>制限事項
-添付ファイル コントロールには、次の制限があります。
-1. 添付ファイルは、SharePoint リストおよび Common Data Service エンティティでサポートされています。
+## <a name="limitations"></a>制限
+添付ファイル コントロールには、次の制限があります:
+1. 添付ファイルは SharePoint リストおよび Common Data Service エンティティでサポートされています。
 
-1. アップロードおよび削除機能は、フォーム内でのみ動作します。 添付コントロールは、編集モードのときは無効になり、フォーム内では表示されません。 ファイルの追加と削除を保存するには、アプリユーザーがフォームを保存する必要があります。 この制限のため、添付ファイルコントロールは **[挿入]** タブからは使用できませんが、SharePoint または Common Data Service フォームで添付ファイルフォームフィールドが有効になっている場合はフォームに表示されます。
+1. アップロードと削除の機能は、フォームの内部でのみ機能します。 添付ファイル コントロールは、編集モードでフォーム内にない場合、無効と表示されます。 ファイルの追加と削除を保存するには、アプリ ユーザーがフォームを保存する必要があります。 この制限のため、添付ファイル コントロールは**挿入**タブからは利用できませんが、SharePoint または Common Data Service フォームで添付ファイル フォーム フィールドが有効である場合はフォームに表示されます。
 
-1. ファイルをアップロードできるのは、10 MB 以下の場合だけです。  
+1. ファイルは 10 MB 以下の場合にのみアップロードできます。  
 
-## <a name="description"></a>説明
-**添付**ファイルコントロールを使用すると、SharePoint リストまたは Common Data Service エンティティからファイルを開いたり、追加したり、削除したりできます。
+## <a name="description"></a>内容
+**添付ファイル** コントロールにより、SharePoint リストまたは Common Data Service エンティティからのファイルを開いたり、追加したり、削除したりできるようになります。
 
 ## <a name="key-properties"></a>主要なプロパティ
-**[Items](properties-core.md)** – ダウンロードできるファイルを記述するソースです。
+**[項目](properties-core.md)** – ダウンロードできるファイルを記述しているソースです。
 
-**MaxAttachments** - コントロールが受け入れるファイルの最大数です。
+**MaxAttachments** – コントロールが受け入れるファイルの最大数。
 
-**MaxAttachmentSize** – 新しい添付ファイルごとに許容される最大ファイル サイズ (MB) です。  現在、10 MB の制限があります。
+**MaxAttachmentSize** – 新しい添付ファイルごとに許容される最大ファイル サイズ (MB)。  現在、10 MB の制限があります。
 
-**OnAttach** – ユーザーが新しい添付ファイルを追加したときのアプリの応答です。
+**OnAttach** – ユーザーが新しい添付ファイルを追加するときのアプリの応答方法。
 
-**OnRemove** – ユーザーが既存の添付ファイルを削除したときのアプリの応答です。
+**OnRemove** – ユーザーが既存の添付ファイルを削除するときのアプリの応答方法。
 
-**[OnSelect](properties-core.md)** – ユーザーが添付ファイルをクリックしたときのアプリの応答です。
+**[OnSelect](properties-core.md)** – ユーザーが添付ファイルをクリックしたときのアプリの応答方法。
 
-## <a name="additional-properties"></a>その他のプロパティ
-**[AccessibleLabel](properties-accessibility.md)** – スクリーン リーダー用のラベルです。 添付ファイルの目的を説明する必要があります。
+## <a name="additional-properties"></a>追加のプロパティ
+**[AccessibleLabel](properties-accessibility.md)** – スクリーン リーダー用のラベル。 添付ファイルの目的を説明する必要があります。
 
-**AddAttachmentText** – 新しい添付ファイルを追加するために使用するリンクのラベル テキストです。
+**AddAttachmentText** – 新しい添付ファイルを追加するために使用するリンクのラベル テキスト。
 
-**[BorderColor](properties-color-border.md)** – コントロールの境界線の色です。
+**[BorderColor](properties-color-border.md)** – コントロールの境界線の色。
 
-**[BorderStyle](properties-color-border.md)** – コントロールの境界線を **Solid** (実線)、**Dashed** (破線)、**Dotted** (点線)、**None** (なし) のいずれに指定します。
+**[BorderStyle](properties-color-border.md)** – コントロールの境界線が**実線**、**破線**、**点線**、または**なし**かどうか。
 
-**[BorderThickness](properties-color-border.md)** – コントロールの境界線の太さです。
+**[BorderThickness](properties-color-border.md)** – コントロールの境界線の太さ。
 
-**[DisplayMode](properties-core.md)** – コントロールで、ファイルの追加と削除を許可するか (**Edit**)、データの表示のみを許可するか (**View**)、許可しないか (**Disabled**) を設定します。
+**[DisplayMode](properties-core.md)** – コントロールがファイルの追加と削除を許可するかどうか (**編集**)、データの表示のみを許可するか (**表示**)、または無効 (**無効**) にします。
 
-**[FocusedBorderColor](properties-color-border.md)** – コントロールにフォーカスがあるときのコントロールの境界線の色です。
+**[FocusedBorderColor](properties-color-border.md)** – コントロールがフォーカスされているときのコントロールの境界線の色。
 
-**[FocusedBorderThickness](properties-color-border.md)** – コントロールにフォーカスがあるときのコントロールの境界線の太さです。
+**[FocusedBorderThickness](properties-color-border.md)** – コントロールがフォーカスされているときのコントロールの境界線の太さ。
 
-**[Height](properties-size-location.md)** – コントロールの上端と下端の距離です。
+**[高さ](properties-size-location.md)** – コントロールの上端と下端間の距離。
 
-**MaxAttachmentsText** – コントロールに許容される最大数のファイルが含まれている場合に "ファイルの添付" リンクと置き換えられるテキストです。
+**MaxAttachmentsText** – 許容されるファイルの最大数がコントロールに含まれているときに、"添付ファイル" リンクと置き換えられるテキスト。
 
-**NoAttachmentsText** – 添付されているファイルが存在しないときにユーザーに表示する情報テキストです。
+**NoAttachmentsText** – 添付ファイルがないときにユーザーに表示される情報テキスト。
 
-**[TabIndex](properties-accessibility.md)** – 他のコントロールに関連するキーボード ナビゲーションの順序です。
+**[TabIndex](properties-accessibility.md)** – 他のコントロールに関連するキーボード ナビゲーションの順序。
 
-**[Visible](properties-core.md)** – コントロールを表示するか非表示にするかです。
+**[表示](properties-core.md)** – コントロールが表示されるかどうか。
 
-**[Width](properties-size-location.md)** – コントロールの左端と右端の間の距離です。
+**[幅](properties-size-location.md)** – コントロールの左端と右端間の距離。
 
-**[X](properties-size-location.md)** – コントロールの左端とその親コンテナー (親コンテナーがない場合は画面) の左端間の距離です。
+**[X](properties-size-location.md)** – コントロールの左端とその親コンテナー (親コンテナーがない場合は画面) の左端間の距離。
 
-**[Y](properties-size-location.md)** – コントロールの上端とその親コンテナー (親コンテナーがない場合は画面) の上端間の距離です。
+**[Y](properties-size-location.md)** – コントロールの上端とその親コンテナー (親コンテナーがない場合は画面) の上端間の距離。
 
 
 ## <a name="example"></a>例
-1. フォームをアプリに追加し、SharePoint リストをデータソースとして設定します。
+1. アプリにフォームを追加し、そのデータ ソースとして SharePoint リストを設定します。
 
-2. 左側のツリービューで、 **[フォームの表示]** コントロールを選択します。 代わりに、**編集フォーム**を使用することもできます。
+2. 左側にあるツリー ビュー内の**表示フォーム** コントロールを選択します。 代わりに**編集フォーム**を使用することもできます。
 
-3. 右側の オプション パネルの プロパティ タブで **データソース** を選択し、接続した SharePoint リストを選択します。
+3. 右側のオプション パネルのプロパティ タブで**データ ソース**を選択してから、接続した SharePoint リストを選択します。
 
-4. [*フィールド内の*フィールドを**編集**] セクションを選択し、 **[フィールドの追加]** を選択します。 
+4. *フィールド* セクションで**編集フィールド**を選択し、**フィールドの追加**を選択します。 
 
-5. **[添付ファイル]** フィールドを選択し、 **[追加]** を選択します。
+5. **添付ファイル** フィールドを選択し、**追加**を選択します。
 
     SharePoint リストに関連付けられている添付ファイル フィールドが、フォームに表示されます。
 
-[コントロールを追加して構成する方法について説明します。](../add-configure-controls.md)
+[コントロールを追加して構成する方法に関する説明](../add-configure-controls.md)
 
 
-## <a name="accessibility-guidelines"></a>アクセシビリティのガイドライン
+## <a name="accessibility-guidelines"></a>アクセシビリティ ガイドライン
 ### <a name="color-contrast"></a>色のコントラスト
-以下の間には適切な色のコントラストが必要です。
+次の間には適切な色のコントラストが必要です:
 * **ItemColor** と **ItemFill**
 * **ItemHoverColor** と **ItemHoverFill**
 * **ItemPressedColor** と **ItemPressedFill**
 * **AddedItemColor** と **AddedItemFill**
 * **RemovedItemColor** と **RemovedItemFill**
 * **ItemErrorColor** と **ItemErrorFill**
-* **AddAttachmentColor** と **Fill**
-* **MaxAttachmentsColor** と **Fill**
-* **NoAttachmentsColor** と **Fill**
+* **AddAttachmentColor** と**塗りつぶし**
+* **MaxAttachmentsColor** と**塗りつぶし**
+* **NoAttachmentsColor** と**塗りつぶし**
 
-これは、[標準の色のコントラスト要件](../accessible-apps-color.md)に追加されるものです。
+これは、[標準の色のコントラスト要件](../accessible-apps-color.md) に追加されるものです。
 
-### <a name="screen-reader-support"></a>スクリーン リーダーのサポート
-次のプロパティが存在する必要があります。
+### <a name="screen-reader-support"></a>スクリーン リーダー サポート
+次のプロパティが存在する必要があります:
 * **[AccessibleLabel](properties-accessibility.md)**
 * **AddAttachmentsText**
 * **MaxAttachmentsText**
@@ -121,4 +121,4 @@ ms.locfileid: "78970978"
 
 ### <a name="keyboard-support"></a>キーボードのサポート
 * **[TabIndex](properties-accessibility.md)** を 0 以上にして、キーボード ユーザーがそこに移動できるようにする必要があります。
-* フォーカス インジケーターは明確に表示する必要があります。 これを実現するには **[FocusedBorderColor](properties-color-border.md)** と **[FocusedBorderThickness](properties-color-border.md)** を使用します。
+* フォーカス インジケーターは明確に表示する必要があります。 これを実現するには **[FocusedBorderColor](properties-color-border.md)** および **[FocusedBorderThickness](properties-color-border.md)** を使用します。
