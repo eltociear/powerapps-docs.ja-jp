@@ -1,190 +1,190 @@
 ---
-title: Application Insights を使用してアプリのテレメトリを分析する |Microsoft Docs
+title: Application Insights を使用してアプリのテレメトリを分析する | Microsoft Docs
 description: Application Insights を使用してアプリのテレメトリを分析する方法
-author: tapanm-msft
+author: aengusheaney
 manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: tapanm
-ms.date: 03/25/2020
+ms.date: 04/24/2020
 ms.author: aheaney
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: cf7e65d395e8ad28e434cc957502a5bce52a3e6e
-ms.sourcegitcommit: 77e00640a59a7db9d67d3ac52f74d264cbe3a494
-ms.translationtype: MT
+ms.openlocfilehash: 72de7fbd47678a8b6424fe04c5527311d31b549b
+ms.sourcegitcommit: 0c92e85f95f3baa04cce140c96e53d5d86d685c0
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80328918"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "3333238"
 ---
-# <a name="analyze-app-telemetry-using-application-insights"></a>Application Insights を使用したアプリテレメトリの分析
+# <a name="analyze-app-telemetry-using-application-insights"></a>Application Insights を使用してアプリのテレメトリを分析する
 
-アプリを[Azure Monitor](https://docs.microsoft.com/azure/azure-monitor/overview)の機能である[Application Insights](https://docs.microsoft.com/azure/azure-monitor/app/app-insights-overview)に接続できます。 Application Insights には、問題を診断し、ユーザーがアプリで実際に実行する操作を理解するのに役立つ強力な分析ツールが用意されています。 
+アプリを [Azure Monitor](https://docs.microsoft.com/azure/azure-monitor/overview) の機能である[Application Insights](https://docs.microsoft.com/azure/azure-monitor/app/app-insights-overview) に接続できます。 Application Insights には、問題を診断し、およびユーザーがアプリで実際に行うことを理解するのに役立つ強力な分析ツールが含まれています。 
 
-アプリを Application Insights に接続すると、ビジネス上の意思決定を改善し、アプリの品質を向上させるために役立つ情報を収集できます。
+アプリを Applications Insights に接続すると、より適切なビジネス上の意思決定に役立つ情報を収集し、およびアプリの品質を向上することができます。
 
-このクイックスタートでは、Kudos というキャンバスアプリをインストルメント化します。 これにより、テレメトリの概念を調査して発見し、独自のキャンバスアプリに適用することができます。 サンプル Kudos アプリは、 [Employee Experience Starter Kit](https://powerapps.microsoft.com/blog/powerapps-employee-experience-starter-kit)からダウンロードできる一連の employee engagement アプリに含まれています。
+このクイック スタートでは、Kudos というキャンバス アプリをインストルメントします。 これにより、テレメトリの概念を調べ、検出し、それらを独自のキャンバス アプリに適用することができます。 サンプルの Kudos アプリは、 [従業員エクスペリエンス スターター キット](https://powerapps.microsoft.com/blog/powerapps-employee-experience-starter-kit) からダウンロードできる従業員エンゲージメント アプリのスイートの一部です。
 
 ## <a name="prerequisites"></a>前提条件
 
-- [Azure portal](https://portal.azure.com)にアクセスできる必要があります。
-- [Azure リソースを作成](https://docs.microsoft.com/azure/role-based-access-control/quickstart-assign-role-user-portal)するためのアクセス許可が必要です。
+- [Azure portal](https://portal.azure.com) にアクセスできる必要があります。
+- [Azure リソースを作成する](https://docs.microsoft.com/azure/role-based-access-control/quickstart-assign-role-user-portal) へのアクセス許可が必要です。
 
-### <a name="optional"></a>［オプション］
+### <a name="optional"></a>任意
 
-- [Employee Experience Starter Kit](https://powerapps.microsoft.com/blog/powerapps-employee-experience-starter-kit)から Kudos アプリをダウンロードしてインストールします。 代わりに、既存のアプリを使用することもできます。
+- [従業員エクスペリエンス スターター キット](https://powerapps.microsoft.com/blog/powerapps-employee-experience-starter-kit) から Kudos アプリをダウンロードおよびインストールします。 代わりに、既存のアプリを使用することもできます。
 
 ## <a name="create-an-application-insights-resource"></a>Application Insights リソースの作成
 
-アプリのテレメトリを送信するには、その前に、イベントを格納するための Azure アプリケーション Insights リソースを作成する必要があります。
+アプリのテレメトリを送信する前に、イベントを格納する Application Insights リソースを作成する必要があります。
 
-1.  [Azure portal](https://portal.azure.com/)にサインインします。
+1.  [Azure Portal](https://portal.azure.com/) にサインインします。
 
 1. Application Insights を検索します。
 
-    ![Azure Application Insights](./media/application-insights/azureappinsights.png)
+    ![Application Insights](./media/application-insights/azureappinsights.png "Application Insights")
 
 1. Application Insights リソースを作成します。
 
-    ![Azure アプリケーション Insights リソースの追加](./media/application-insights/azureappinsights-add.png)
+    ![Application Insights リソースの追加](./media/application-insights/azureappinsights-add.png "Application Insights リソースを追加する")
 
-1. 適切な値を入力し、[**レビュー + 作成**] を選択します。 詳細については、「 [Application Insights リソースの作成](https://docs.microsoft.com/azure/azure-monitor/app/create-new-resource)」を参照してください。 
+1. 適切な値を入力し、および**レビュー + 作成**を選択します。 詳細については、[Application Insights リソースを作成](https://docs.microsoft.com/azure/azure-monitor/app/create-new-resource) をお読みください。 
 
-    ![リソースの作成](./media/application-insights/createresource.png)
+    ![リソースの作成](./media/application-insights/createresource.png "リソースの作成")
 
-1. Application Insights インスタンスが作成されると、インスタンスの概要が表示されます。 **インストルメンテーションキー**をコピーします。 アプリを構成するには、このキーが必要になります。
+1. Application Insights インスタンスの作成後、インスタンスの概要が表示されます。 **インストルメンテーション キー**をコピーします。 アプリを構成するには、このキーが必要です。
 
-    ![インストルメンテーションキーのコピー](./media/application-insights/instrumentation-key.png)
+    ![インストルメンテーション キーをコピーする](./media/application-insights/instrumentation-key.png "インストルメンテーション キーをコピーする")
 
 ## <a name="connect-your-app-to-application-insights"></a>アプリを Application Insights に接続する
 
 1. [Power Apps](https://make.powerapps.com) にサインインします。
 
-1. 左側のナビゲーションから [**アプリ**] を選択します。 アプリの一覧から**Kudos**アプリを選択し、[**編集**] を選択します。
+1. 左側のナビゲーションから**アプリ**を選択します。 アプリのリストから **Kudos** アプリを選択し、次に**編集**を選択します。
 
-    ![Kudos アプリの編集](./media/application-insights/edit-kudos-app.png)
+    ![Kudos アプリを編集する](./media/application-insights/edit-kudos-app.png "Kudos アプリを編集する")
 
     > [!NOTE]
-    > 代わりに、新しいアプリを[作成](open-and-run-a-sample-app.md)したり、既存のアプリを[編集](edit-app.md)したりすることもできます。
+    > 新しいアプリを[作成する](open-and-run-a-sample-app.md)または代わりに既存のアプリを[編集する](edit-app.md) こともできます。
 
-1. 左側のナビゲーションツリービューで [**アプリ**] オブジェクトを選択し、**インストルメンテーションキー**を貼り付けます。
+1. 左側のナビゲーション ツリー ビューから**アプリ** オブジェクトを選択し、**インストルメンテーション キー**を貼り付けます。
 
-    ![インストルメンテーションキーの追加](./media/application-insights/add-instrumentation-key.png)
+    ![インストルメンテーション キーを追加する](./media/application-insights/add-instrumentation-key.png "インストルメンテーション キーを追加する")
 
-1. アプリを**保存** & **発行**します。
+1. アプリを**保存**および**公開**します。
 
-1. 発行されたアプリを**再生**し、さまざまな画面を参照します。 
+1. 別のスクリーンによって公開されているアプリを**再生**および参照します。 
 
-さまざまな画面を参照すると、イベントは次のような使用状況の詳細を含む Application Insights に自動的に記録されます。
+別のスクリーンを閲覧すると、次のような使用詳細などを含むイベントが自動的に Application Insights に記録されます。
 
-- アプリがどこからアクセスされるか。
-- 使用するデバイスです。
-- 使用されるブラウザーの種類。
+- アプリへのアクセス元。
+- 使用されているデバイス。
+- 使用されているブラウザーの種類。
 
 > [!IMPORTANT]
-> Application Insights にイベントを送信するには、発行されたアプリを再生する必要があります。 Power Apps Studio でアプリをプレビューするときに、イベントが Application Insights に送信されることはありません。
+> Application Insights にイベントを送信するには公開されているアプリを再生する必要があります。 Power Apps Studio でアプリをプレビューした場合、イベントは Application Insights に送信されません。
 
-## <a name="view-events-in-application-insights"></a>Application Insights でのイベントの表示
+## <a name="view-events-in-application-insights"></a>Application Insights でイベントを表示する
 
-1.  [Azure portal](https://portal.azure.com/)にサインインし、[前](#create-an-application-insights-resource)の手順で作成した Application Insights リソースを開きます。
+1.  [Azure Portal](https://portal.azure.com/) にサインインし、および[先ほど](#create-an-application-insights-resource) 作成した Application Insights リソースを開きます。
 
-1. 左側のナビゲーションウィンドウで下へスクロールし、[**使用状況**] セクションで [**ユーザー** ] を選択します。 
+1. 左側のナビゲーション ウィンドウで下方向へスクロールし、および**使用**セクションで**ユーザー**を選択します。 
 
     > [!NOTE]
-    > **ユーザー**ビューには、アプリの使用状況の詳細が表示されます。次に例を示します。
+    > **ユーザー** ビューには、次のようなアプリの使用詳細が表示されます。
     > - アプリを表示したユーザーの数。
     > - アプリのユーザーによるセッションの数。
-    > - アプリに対してログに記録されたイベントの数。
-    > - ユーザーのオペレーティングシステムとブラウザーバージョンの詳細。
+    > - アプリに対して記録されたイベントの数。
+    > - ユーザーのオペレーティング システムおよびブラウザー バージョンの詳細。
     > - ユーザーのリージョンと場所。
     > 
-    > 詳細については、「 [Application Insights でのユーザー、セッション、およびイベントの分析](https://docs.microsoft.com/azure/azure-monitor/app/usage-segmentation)」を参照してください。
+    > 詳細については、[ユーザー、セッション、および Application Insights でイベントを分析](https://docs.microsoft.com/azure/azure-monitor/app/usage-segmentation) をお読みください。
 
-1. ユーザーセッションの1つを選択して、特定の詳細にドリルダウンします。 セッションの長さや、表示された画面などの情報を確認できます。
+1. ユーザー セッションの 1 つを選択して、特定の詳細をより細かく調べます。 セッションの長さおよび表示したスクリーンなどの情報を参照できます。
 
-    ![ユーザーの使用状況の詳細](./media/application-insights/appinsights-users.gif)
+    ![ユーザーの使用詳細](./media/application-insights/appinsights-users.gif "ユーザーの使用詳細")
 
-1. 左側のナビゲーションウィンドウで [**使用量**] セクションの [**イベント**] ビューを選択します。 すべてのアプリセッションで表示されるすべての画面の概要を確認できます。
+1. **使用**セクションの左側のナビゲーション ウィンドウで**イベント** ビューを選択します。 すべてのアプリ セッションの間で表示されたすべてのスクリーンの概要を参照できます。
 
-    ![アプリのイベントの詳細](./media/application-insights/appInsights-events.gif)
+    ![アプリのイベントの詳細](./media/application-insights/appInsights-events.gif "アプリのイベントの詳細")
 
 > [!TIP]
-> 使用できる追加の Application Insights 機能の一部を次に示します。  
-> - [**じょうご**](https://docs.microsoft.com/azure/azure-monitor/app/usage-funnels)
-> - [**コーホート**](https://docs.microsoft.com/azure/azure-monitor/app/usage-cohorts)
-> - [**影響分析**](https://docs.microsoft.com/azure/azure-monitor/app/usage-impact)
-> - [**保持分析**](https://docs.microsoft.com/azure/azure-monitor/app/usage-retention)
-> - [**使用フロー**](https://docs.microsoft.com/azure/azure-monitor/app/usage-flows)
+> 使用できる追加の Application Insights 機能の一部は次のとおりです。  
+> - [じょうごグラフ](https://docs.microsoft.com/azure/azure-monitor/app/usage-funnels)
+> - [コーホート](https://docs.microsoft.com/azure/azure-monitor/app/usage-cohorts)
+> - [影響分析](https://docs.microsoft.com/azure/azure-monitor/app/usage-impact)
+> - [リテンション期間の分析](https://docs.microsoft.com/azure/azure-monitor/app/usage-retention)
+> - [使用フロー](https://docs.microsoft.com/azure/azure-monitor/app/usage-flows)
 
-## <a name="create-custom-trace-events"></a>カスタムトレースイベントの作成
+## <a name="create-custom-trace-events"></a>カスタム トレース イベントを作成する
 
-カスタムトレースを Application Insights に直接記述して、シナリオに固有の情報の分析を開始することができます。 [Trace](https://docs.microsoft.com/powerapps/maker/canvas-apps/functions/function-trace)関数を使用すると、次のものを収集できます。
+カスタム トレースを Application Insights に直接書き込み、シナリオに特有の情報の分析を開始できます。 [トレース](https://docs.microsoft.com/powerapps/maker/canvas-apps/functions/function-trace) 機能を使用すると以下を収集できます。
 
-- 画面上のコントロールの詳細な使用方法に関する情報。
+- スクリーンのコントロールの詳細な使用情報。
 - アプリにアクセスしている特定のユーザー。
-- どのようなエラーが発生しますか。
+- 発生したエラー。
 
-トレースは、ユーザーがアプリを参照してさまざまな操作を実行するときに情報の記録を送信できるため、問題の診断にも役立ちます。
+ユーザーがアプリを参照してさまざまなアクションを実行しながら情報の記録を送信できるので、トレースは問題を診断するのにも役立ちます。
 
-アプリから Application Insights にカスタムトレース情報を送信する場合、トレースメッセージには3つの重大度があります。
+アプリから Application Insights にカスタム トレース 情報を送信する場合、トレース メッセージには 3 つの重大度があります。
 
-- **参照**
-- **要する**
-- **エラー**
+- 情報
+- 警告
+- エラー
 
-シナリオによっては、適切な重大度でトレースメッセージを送信するように選択できます。 データに対してクエリを実行し、メッセージの重要度に基づいて特定のアクションを実行することができます。
+シナリオに応じて、適切な重大度のトレース メッセージを送信するように選択できます。 データをクエリし、およびメッセージの重大度に基づいて特定のアクションを実行できます。
 
 > [!NOTE]
-> スタッフデータをログに記録する場合は、GDPR などのデータコンプライアンスの義務を考慮する必要があります。これは、実装する必要がある場合もあります。
+> 人事データを記録する場合、GDPRなどの、データ コンプライアンスの義務を考慮する必要があり、必要に応じて実装する必要もあります。
 
-次に、アプリを更新し、新しいコンポーネントを作成して、アプリの各画面に関するフィードバックを収集します。 Application Insights するイベントを記述します。
+ここで、アプリを更新し、およびアプリの各スクリーンでフィードバックを収集するための新しいコンポーネントを作成します。 Application Insights にイベントを書き込みます。
 
 1. [Power Apps](https://make.powerapps.com) にサインインします。
 
-1. 左側のナビゲーションから [**アプリ**] を選択します。 アプリの一覧から**Kudos**アプリを選択し、[**編集**] を選択します。
+1. 左側のナビゲーションから**アプリ**を選択します。 アプリのリストから **Kudos** アプリを選択し、次に**編集**を選択します。
 
     > [!NOTE]
-    > 代わりに、新しいアプリを[作成](open-and-run-a-sample-app.md)したり、既存のアプリを[編集](edit-app.md)したりすることもできます。
+    > 新しいアプリを[作成する](open-and-run-a-sample-app.md)または代わりに既存のアプリを[編集する](edit-app.md) こともできます。
 
-1. **ツリービュー**で、[**コンポーネント**] オプションを選択します。
+1. **ツリー ビュー**の**コンポーネント** オプションを選択します。
 
-    ![Components](./media/application-insights/new-component.png)
+    ![コンポーネント](./media/application-insights/new-component.png "コンポーネント")
 
-1. [**新しいコンポーネント**] を選択し、幅を200、[高さ] を75に変更します。
+1. **新しいコンポーネント**を選択し、次に幅を 200 および高さを 75 にサイズ変更します。
 
-    ![高さと幅](./media/application-insights/resize-component.png)
+    ![高さおよび幅](./media/application-insights/resize-component.png "高さと幅")
 
-1. メニューの [**挿入**] を選択し、[**アイコン**] を選択して、*改善点*と*絵文字*のアイコンを追加します。
+1. メニューから**挿入**を選択し、次に**アイコン**を選択して*絵文字 - しかめっ面アイコン*および*絵文字 - 笑顔アイコン*を選択します。
 
-    ![アイコンの追加](./media/application-insights/add-icons.png)
+    ![アイコンを追加する](./media/application-insights/add-icons.png "アイコンを追加する")
 
-1. カスタムプロパティを作成するには、[**新しいカスタムプロパティ**] を選択します。
+1. **新しいカスタム プロパティ**を選択して、カスタム プロパティを作成します。
 
-    ![カスタムプロパティの作成](./media/application-insights/create-custom-property.png)
+    ![カスタム プロパティを作成する](./media/application-insights/create-custom-property.png "カスタム プロパティを作成する")
 
-1. プロパティの*名前*と*表示名*( *FeedbackSceen*など) を入力します。
+1. *FeedbackSceen* などのプロパティ*名*および*表示名*を入力します。
 
-1. プロパティの*説明*を入力します。
+1. プロパティの*内容*を入力します。
 
-1. [**プロパティの種類**] として [**入力**] を選択し、[**データ型** **] を画面**に選択します
+1. **プロパティの種類**を**入力**、および**データ型**を**スクリーン**として選択します。
 
-    ![カスタムプロパティ](./media/application-insights/custom-input-property.png)
+    ![カスタム プロパティ](./media/application-insights/custom-input-property.png "カスタム プロパティ")
 
     > [!NOTE]
-    > Input プロパティを使用すると、この情報を Application Insights に記録できるように、画面名とそのコンポーネントをキャプチャできます。
+    > プロパティを入力すると、スクリーン名およびそのコンポーネントを取り込むことができるので、Application Insights にこの情報を記録することができます。
 
-1. **ツリービュー**でコンポーネントを選択し、[**その他のアクション**(**...**)] を選択し、[**名前の変更**] を選択して、"*フィードバックコンポーネント*" などのわかりやすい名前に変更します。
+1. **ツリー ビュー**のコンポーネントを選択し、**その他の操作** (**...**) を選択し、次に**名前の変更**を選択し、*FeedbackComponent* などのわかりやすい名前にコンポーネントの名前を変更をします。
 
-    ![コンポーネントと欠点の名前を変更する](./media/application-insights/rename-component-icons.png)
+    ![コンポーネントおよびアイコンの名前を変更する](./media/application-insights/rename-component-icons.png "コンポーネントおよびアイコンの名前を変更する")
 
-1. [アイコン] を選択し、[**その他のアクション**(**...**)] を選択し、[**名前の変更**] を選択して、 *FrownIcon*や*SmileIcon*などのわかりやすい名前でアイコンの名前を変更します。
+1. アイコンを選択し、**その他の操作** (**...**) を選択し、次に**名前の変更**を選択して *FrownIcon* および *SmileIcon* などのわかりやすい名前にアイコンの名前を変更します。
 
-1. *FrownIcon*を選択し、 **onselect**プロパティを選択して、数式バーに次の式を入力します。
+1. **FrownIcon** を選択し、**OnSelect** プロパティを選択し、次に数式バーに次のような式を入力します。
 
-    ```
+    ```powerapps-dot
     Trace(
        "App Feedback",
        TraceSeverity.Information,
@@ -198,14 +198,14 @@ ms.locfileid: "80328918"
     Notify("Thanks for you feedback!");
     ```
 
-    ![改善点アイコンの数式](./media/application-insights/frownicon-formula.png)
+    ![しかめっ面アイコンの数式](./media/application-insights/frownicon-formula.png "しかめっ面アイコンの数式")
 
     > [!NOTE]
-    > 数式式は、 *UserName*、 *useremail*、 *Screen* 、および*フィードバック*(値 *-1*) を Application Insights に送信します。
+    > 数式の式は*ユーザー名*、*UserEmail*、*スクリーン*、および*フィードバック* (値が *-1*) を Application Insights に送信します。
 
-1. *SmileIcon*を選択し、 **onselect**プロパティを選択して、数式バーに次の式を入力します。
+1. **SmileIcon** を選択し、**OnSelect** プロパティを選択し、次に数式バーに次のような式を入力します。
     
-    ```
+    ```powerapps-dot
     Trace(
        "App Feedback",
        TraceSeverity.Information,
@@ -221,49 +221,49 @@ ms.locfileid: "80328918"
 
 1. アプリのいずれかの画面にコンポーネントを追加します。
 
-    ![フィードバックコンポーネントの追加](./media/application-insights/add-feedback-component.png)
+    ![フィードバック コンポーネントを追加する](./media/application-insights/add-feedback-component.png "フィードバック コンポーネントを追加する")
 
-1. [**保存**] を選択し、[**発行**] を選択してアプリを発行 & に保存します。
+1. **保存**を選択し、次に**公開**を選択してアプリを保存および公開します。
 
-1. 発行されたアプリを再生し、画面から気に入った機能と改善点フィードバックを送信します。
+1. 公開されたアプリを再生し、スクリーンから笑顔およびしかめっ面フィードバックを送信します。
 
     > [!IMPORTANT]
-    > Application Insights にイベントを送信するには、発行されたアプリを再生する必要があります。 Power Apps Studio でアプリをプレビューするときに、イベントが Application Insights に送信されることはありません。
+    > Application Insights にイベントを送信するには公開されているアプリを再生する必要があります。 Power Apps Studio でアプリをプレビューした場合、イベントは Application Insights に送信されません。
 
-    ![発行されたアプリの再生](./media/application-insights/play-published-app.png)
+    ![公開アプリを再生する](./media/application-insights/play-published-app.png "公開アプリを再生する")
 
-## <a name="analyze-data-in-application-insights"></a>Application Insights でのデータの分析
+## <a name="analyze-data-in-application-insights"></a>Application Insights でデータを分析する
 
-これで、App Insights でアプリケーションから[トレース](#create-custom-trace-events)関数を使用して送信したデータの分析を開始できるようになりました。
+これで、Application Insights でアプリから[トレース](#create-custom-trace-events) 機能を使用して送信したデータの分析を開始することができます。
 
-1.  [Azure portal](https://portal.azure.com/)にサインインし、[前](#create-an-application-insights-resource)の手順で作成した Application Insights リソースを開きます。
+1.  [Azure Portal](https://portal.azure.com/) にサインインし、[先ほど](#create-an-application-insights-resource) 作成した Application Insights リソースを開きます。
 
-    ![Application insights の選択](./media/application-insights/select-app-insights.png)
+    ![Application Insights を選択する](./media/application-insights/select-app-insights.png "[Application Insights の選択]")
 
-1. 左側のナビゲーションウィンドウで [**監視**] の下にある [**ログ**] を選択します。
+1. 左側のナビゲーション ウィンドウから**監査**の下の**ログ**を選択します。
 
-    ![ログの選択](./media/application-insights/select-logs.png)
+    ![ロゴの選択](./media/application-insights/select-logs.png "ロゴの選択")
 
-1. 次のクエリを入力し、[**実行**] を選択します。 アプリから受け取ったフィードバックが返されます。
+1. 次のクエリを入力し、**実行**を選択します。 アプリから受信されたフィードバックが返されます。
 
-    ```powerappsfl
+    ```kusto
     traces
     | where message == "App Feedback"
     | order by timestamp
     ```
 
-    ![アプリのフィードバックを表示する](./media/application-insights/view-app-feedback.png)
+    ![アプリのフィードバッグを表示する](./media/application-insights/view-app-feedback.png "アプリのフィードバッグを表示する")
 
-1. 結果内の行を選択し、[*カスタムディメンション*] フィールドを展開します。 
+1. 結果の行を選択し、*customDimensions* フィールドを展開します。 
 
-    コンポーネントの [気に入った機能] または [改善点] アイコンの**Onselect**イベントの [画面]、[**ユーザー名**]、[ **Useremail**]、[**フィードバック値** **]** の値が記録されています。 <br>
-    Application Insights に送信されるイベントごとに、いくつかの追加の値も記録されます。( **appId**、 **AppName** 、 **appsessionid**など)。
+    コンポーネントの中の笑顔またはしかめっ面アイコンの**OnSelect**イベントのための**スクリーン**、**ユーザー名**、**UserEmail**、および **FeedbackValue** の値が記録されました。 <br>
+    **appId**、**appName**、および **appSessionId** などの Application Insights に送信される各イベントに対していくつかの追加された値の記録もあります。
 
-    ![カスタムディメンションを展開する](./media/application-insights/expand-custom-dimensions.png)
+    ![カスタム ディメンションを展開する](./media/application-insights/expand-custom-dimensions.png "カスタム ディメンションを展開する")
 
-1. 次のクエリ例では、JSON カスタムディメンションのプロパティを拡張し、結果ビューで列を射影できます。
+1. 次のクエリ例では、JSON カスタム ディメンションのプロパティを拡張し、および結果ビューに列を表示できます。
 
-    ```powerappsfl
+    ```kusto
     traces
         | extend customdims = parse_json(customDimensions)
         | where message == "App Feedback"
@@ -277,48 +277,48 @@ ms.locfileid: "80328918"
         | order by timestamp desc
     ```
 
-    ![CustomDimensions クエリの拡張](./media/application-insights/custom-dimensions-extend-query.png)
+    ![customDimensions クエリを拡張する](./media/application-insights/custom-dimensions-extend-query.png "customDimensions クエリを拡張する")
 
     > [!TIP]
-    > *ログクエリ*は非常に強力です。 複数のテーブルを結合し、大量のデータを集計し、複雑な操作を実行するために使用できます。 詳細については、「[ログクエリ](https://docs.microsoft.com/azure/azure-monitor/log-query/log-query-overview)」を参照してください。
+    > *ログ クエリ*は非常に強力です。 これらを使用して、複数のテーブルを結合し、大量のデータを集計し、および複雑な操作を実行できます。 詳細については、[ログ クエリ](https://docs.microsoft.com/azure/azure-monitor/log-query/log-query-overview) をお読みください。
 
-## <a name="export-data-to-power-bi"></a>Power BI にデータをエクスポートする
+## <a name="export-data-to-power-bi"></a>Power BI へのデータのエクスポート
 
-分析とデータ表示のために、Application Insights データとクエリ結果を Power BI にエクスポートできます。
+Application Insights データおよびクエリ結果を Power BI にエクスポートして、分析およびデータ プレゼンテーションをすることができます。
 
-1.  [Azure portal](https://portal.azure.com/)にサインインし、[前](#create-an-application-insights-resource)の手順で作成した Application Insights リソースを開きます。
+1.  [Azure Portal](https://portal.azure.com/) にサインインし、[先ほど](#create-an-application-insights-resource) 作成した Application Insights リソースを開きます。
 
-1. 左側のナビゲーションウィンドウで [**監視**] の下にある [**ログ**] を選択します。
+1. 左側のナビゲーション ウィンドウから**監査**の下の**ログ**を選択します。
 
-1. Log analytics クエリウィンドウで、[**エクスポート**] ドロップダウンメニューを選択します。
+1. ログ分析クエリ ウィンドウから**エクスポート** ドロップダウン メニューを選択します。
 
-1. [ **Power BI (M クエリ) にエクスポート**] オプションを選択します。 これにより、Power BI のクエリファイルがコンピューターにダウンロードされます。
+1. **Power BI(M クエリ) にエクスポートする**オプションを選択します。 これにより Power BI クエリ ファイルをコンピューターにダウンロードします。
 
-    ![Power BI クエリのエクスポート](./media/application-insights/export-powerbi-query.png)
+    ![Power BI クエリのエクスポート](./media/application-insights/export-powerbi-query.png "Power BI クエリのエクスポート")
 
-1. ダウンロードしたファイルをテキストエディターで開き、クエリをクリップボードにコピーします。
+1. ダウンロードしたファイルをテキスト エディターで開き、クエリをクリップボードにコピーします。
 
 1. Power BI を開きます。
 
-1. [**ホーム**] リボンで [**データの取得**] ドロップダウンメニューを選択し、[**空のクエリ**] を選択します。
+1. **ホーム**リボンの**データ取得**のドロップダウン メニューを選択し、次に**空のクエリ**を選択します。
 
-    ![空のクエリを Power BI](./media/application-insights/powerbi-blank-query.png)
+    ![Power BI 空のクエリ](./media/application-insights/powerbi-blank-query.png "Power BI 空のクエリ")
 
-1. クエリウィンドウで、[**詳細エディター**] を選択します。 手順 5. のクエリをウィンドウに貼り付けて、[**完了**] を選択し、[**閉じる & 適用**] を選択します。
+1. クエリのウィンドウで、**詳細エディター**を選択します。 手順 5 からのクエリをウィンドウに貼り付け、**完了**を選択し、次に**閉じる & 適用**を選択します。
 
-    ![Power BI の詳細クエリ](./media/application-insights/powerbi-advance-query.png)
+    ![Power BI 事前クエリ](./media/application-insights/powerbi-advance-query.png "Power BI 事前クエリ")
 
-1. Power BI でグラフや視覚エフェクトを作成して、アプリで受信したフィードバックを表すこともできます。 データベースの決定とアクションを行います。
+1. Power BI でグラフおよびビジュアル化を作成して、アプリで受け取ったフィードバックを表示するだけでなく、データに基づく決定および操作を行なうこともできます。
 
-    ![グラフと視覚エフェクト](./media/application-insights/powerbi-feedback.png)
+    ![グラフおよびビジュアル化](./media/application-insights/powerbi-feedback.png "グラフおよびビジュアル化")
 
-## <a name="default-trace-event-context-and-dimensions"></a>既定のトレースイベントコンテキストとディメンション
+## <a name="default-trace-event-context-and-dimensions"></a>既定のトレース イベント コンテキストおよびディメンション
 
-既定のディメンションのセットも、各トレースイベントの*Customdimensions*プロパティに追加されます。 これらのディメンションは、イベントが発生したアプリケーションとアプリケーションセッションを識別するために使用できます。 トレース関数を使用して追加のカスタムデータをログに記録すると、カスタムディメンションにも表示されます。
+既定のディメンションのセットは各トレース イベントの *customDimensions* プロパティにも追加されます。 これらのディメンションは、イベントが発生したアプリケーションとアプリケーションのセッションを識別するために使用できます。 トレース機能を使用して追加のカスタム データを記録する場合、それらもカスタム ディメンションに表示されます。
 
-| ディメンション名  | 表す内容                                            |
+| ディメンション名  | 説明                                            |
 |-----------------|-------------------------------------------------------|
-| ms-appId        | イベントを送信したアプリのアプリケーション ID     |
-| ms-appName      | イベントを送信したアプリのアプリケーション名   |
-| ms appSessionId | アプリケーションセッション ID。                           |
+| ms-appId        | イベントを送信したアプリのアプリケーション ID。     |
+| ms-appName      | イベントを送信したアプリのアプリケーションの名前。   |
+| ms-appSessionId | アプリケーション セッション ID。                           |
 
