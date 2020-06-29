@@ -1,6 +1,6 @@
 ---
 title: Rand 関数 | Microsoft Docs
-description: Power Apps の Rand 関数の構文を含む参照情報
+description: Power Apps での Rand 関数の構文を含む参照情報
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -15,34 +15,34 @@ search.app:
 - PowerApps
 ms.openlocfilehash: 5f34be9a38f4e30bdf19f337a24580615a16697c
 ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/03/2019
-ms.locfileid: "74730440"
+ms.locfileid: "3304797"
 ---
 # <a name="rand-function-in-power-apps"></a>Power Apps での Rand 関数
 疑似乱数を返します。
 
-## <a name="description"></a>Description
+## <a name="description"></a>内容
 **Rand** 関数は、0 以上 1 未満の疑似乱数を返します。
 
-## <a name="volatile-functions"></a>揮発性関数
-**Rand** は揮発性関数です。  揮発性関数は、評価されるたびに異なる値を返します。  
+## <a name="volatile-functions"></a>Volatile 関数
+**Rand** は揮発性関数です。  関数が評価されるたびに、別の値が返されます。  
 
-データ フロー式で使うと、揮発性関数は、それが出現する数式が再評価された場合にのみ、異なる値を返します。  数式で何も変更されていない場合、アプリの実行全体を通じて同じ値を返します。
+データ フロー数式で使用すると、揮発性の関数は、それが表示される数式が再評価される場合に別の値を返すだけです。  数式で何も変更されていない場合、アプリの実行全体を通じて同じ値を返します。
 
-たとえば、**Label1.Text = Rand()** であるラベル コントロールは、アプリがアクティブな間は変化しません。  アプリをいったん閉じて再び開いた場合にのみ、新しい値が返ります。
+たとえば、**Label1.Text = Rand()** であるラベル コントロールは、アプリがアクティブな間は変化しません。  アプリを閉じてからもう一度開いた場合にのみ、新しい値が返ります。
 
-関数は、何かが変更された数式の一部である場合に再評価されます。  たとえば、**Label1.Text = Slider1.Value + Rand()** であるスライダー コントロールを含むように例を変更した場合、スライダー コントロールの値が変化するたびにラベルのテキスト プロパティが再評価されて、新しい乱数が生成されます。  この例については、以下を参照してください。
+関数は、他の何かが変更された数式の一部である場合に再評価されます。  たとえば、**Label1.Text = Slider1.Value + Rand()** であるスライダー コントロールを含むように例を変更した場合、スライダー コントロールの値が変化するたびにラベルのテキスト プロパティが再評価されて、新しい乱数が生成されます。  この例については、以下を参照してください。
 
-[動作の数式](../working-with-formulas-in-depth.md)で使うと、動作の数式が評価されるたびに、**Rand** が評価されます。  例については、以下を参照してください。
+[動作の数式](../working-with-formulas-in-depth.md) で使うと、動作の数式が評価されるたびに、**Rand** が評価されます。  例については、以下を参照してください。
 
 ## <a name="syntax"></a>構文
 **Rand**()
 
 ## <a name="examples"></a>例
 
-#### <a name="display-a-different-random-number-as-user-input-changes"></a>ユーザーの入力が変わると、異なる乱数を表示します。
+#### <a name="display-a-different-random-number-as-user-input-changes"></a>ユーザーの入力が変わるとき、異なる乱数を表示する
 1. **[Slider](../controls/control-slider.md)** コントロールを追加し、別の名前になっている場合は **Slider1** に名前を変更します。
 
 1. **[Label](../controls/control-text-box.md)** コントロールを追加し、その **Text** プロパティを次の数式に設定します。
@@ -60,7 +60,7 @@ ms.locfileid: "74730440"
     ![4 つの異なるスライダー設定に対して 4 つの異なるランダムな小数値がラベル コントロールに表示されている 4 つの画面 (70.899、84.667、90.134、99.690)](media/function-rand/rand-slider-results.png)
 
 #### <a name="create-a-table-of-random-numbers"></a>乱数のテーブルを作成する
-1. **[[ボタン]](../controls/control-button.md)** コントロールを追加し、 **[OnSelect](../controls/properties-core.md)** プロパティに次の式を設定します。
+1. **[Button](../controls/control-button.md)** コントロールを追加し、その **[OnSelect](../controls/properties-core.md)** プロパティを次の数式に設定します。
 
     **ClearCollect( RandomNumbers, ForAll( [ 1, 2, 3, 4, 5 ], Rand() ))**
 

@@ -1,6 +1,6 @@
 ---
 title: キャンバス アプリの現在のユーザーに関する詳細の表示 | Microsoft Docs
-description: Power Apps で、サインインしているユーザーの名前と電子メールアドレスを canvas アプリに表示する
+description: Power Apps で、キャンバス アプリにサインインしているユーザーの名前やメール アドレスを表示する
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -15,35 +15,35 @@ search.app:
 - PowerApps
 ms.openlocfilehash: f77ec80cfaf579c836277f0e29d3b84b325a0462
 ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/02/2019
-ms.locfileid: "74674612"
+ms.locfileid: "3304038"
 ---
-# <a name="show-information-about-a-power-apps-user-in-a-canvas-app"></a>Power Apps ユーザーに関する情報を canvas アプリに表示する
+# <a name="show-information-about-a-power-apps-user-in-a-canvas-app"></a>キャンバス アプリの Power Apps ユーザーに関する情報を表示する
 
-Power Apps で、フルネーム、電子メールアドレス、および canvas アプリにサインインしたユーザーに関連付けられている画像を表示します。 この情報を使用すると、たとえば、自動的にフォームへの入力を行うことができます。
+Power Apps で、キャンバス アプリにサインインしているユーザーに関連付けられているフル ネーム、メール アドレス、写真を表示します。 この情報を使用すると、たとえば、自動的にフォームへの入力を行うことができます。
 
 たとえば、この機能を使うと次のことができます。
 
-* ユーザー用のサインアップ "シート" を作成する (トレーニング、イベントのボランティア、券売機での発券など)。
+* ユーザー用のサインアップ「シート」を作成する (トレーニング、イベントのボランティア、キオスクでのチェックインなど)。
 * 人事管理アプリでフル ネームを表示する。
-* ヘルプデスクへの問い合わせ時に電子メール アドレスを自動的に入力する。
+* ヘルプデスクへの問い合わせ時にメール アドレスを自動的に入力する。
 
-基本的にこの機能は、フォームやラベルの自動入力を活かすことができる部分であれば、どこにでも利用できます。
+基本的にこの機能は、フォームやラベルの自動入力を活かすことができる部分であれば、どこにでも利用できます
 
 [!INCLUDE [app-customization-requirements](../../includes/app-customization-requirements.md)]
 
 ## <a name="show-user-details"></a>ユーザー情報を表示する
 
-1. **[挿入]** タブの **[メディア]** をクリックまたはタップし、 **[画像]** をクリックまたはタップします。
+1. **挿入**タブの**メディア**をクリックまたはタップし、**画像**をクリックまたはタップします。
    
    ![][2]
 2. **[Image](controls/properties-visual.md)** プロパティを次の数式に設定します。
    <br>**User().Image**
    
     ![][3]
-3. **[挿入]** タブの **[テキスト]** をクリックまたはタップし、 **[ラベル]** をクリックまたはタップします。  
+3. **挿入**タブの**テキスト**をクリックまたはタップし、**ラベル**をクリックまたはタップします。  
    
     ![][4]
 4. **[Text](controls/properties-core.md)** プロパティを次の数式に設定します。
@@ -54,12 +54,12 @@ Power Apps で、フルネーム、電子メールアドレス、および canva
    これを実行すると、ラベルにフル ネームが自動的に設定されます。 次のように、ラベルをイメージ コントロールの下に移動します。
    
    ![][5]
-5. 別のラベルを追加し、その **[Text](controls/properties-core.md)** プロパティを次の数式に設定します。
+5. 別のラベルを追加し、その **[Text](controls/properties-core.md)** プロパティを次の計算式に設定します。
    <br>**User().Email**  
    
     ![][8]
    
-    これを実行すると、ラベルに電子メール アドレスが自動的に設定されます。 このラベルを、次のように 1 つ目のラベルの下に移動します。  
+    これを実行すると、ラベルにメール アドレスが自動的に設定されます。 このラベルを、次のように 1 つ目のラベルの下に移動します。  
    
     ![][7]
 

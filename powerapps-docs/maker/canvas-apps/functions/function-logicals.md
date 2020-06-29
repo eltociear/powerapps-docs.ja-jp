@@ -1,6 +1,6 @@
 ---
-title: And 関数、Or 関数、Not 関数 | Microsoft Docs
-description: 構文と例を含む、Power Apps の And、Or、および Not 関数の参照情報
+title: And、Or、および Not 関数 | Microsoft Docs
+description: Power Apps での And、Or、および Not 関数の構文と例を含む参照情報
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -15,16 +15,16 @@ search.app:
 - PowerApps
 ms.openlocfilehash: 1dae72a288c93b624d232402e32fe0e82cbaaead
 ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/03/2019
-ms.locfileid: "74730619"
+ms.locfileid: "3304912"
 ---
-# <a name="and-or-and-not-functions-in-power-apps"></a>Power Apps の and、Or、および Not 関数
+# <a name="and-or-and-not-functions-in-power-apps"></a>Power Apps の And、Or、および Not 関数
 
-比較とテストの結果を操作するためによく使用される、ブール値の論理関数について説明します。
+比較とテストの結果を操作するためによく使用される、ブール値の論理関数。
 
-## <a name="description"></a>Description
+## <a name="description"></a>内容
 
 **And** 関数は、すべての引数が **true** の場合に **true** を返します。
 
@@ -32,15 +32,15 @@ ms.locfileid: "74730619"
 
 **Not** 関数は、引数が **false** の場合は **true** を、引数が **true** の場合は **false** を返します。
 
-これらの関数は、Excel の場合と同じように動作します。 また、Visual Basic または JavaScript 構文を使用して、これらの同じ操作を実行するために[演算子](operators.md)を使用することもできます。
+これらの関数は、Excel と同じように機能します。 Visual Basic または JavaScript 構文を使用して、同じ操作を実行するには、[演算子](operators.md) を使用することもできます:
 
-| 関数の表記 | Visual Basic 演算子の表記 | JavaScript 演算子の表記 |
+| 関数の表記 | Visual Basic 演算子表記 | JavaScript 演算子表記 |
 | -------------|------------|--------|
-| **And (x, y)** | **x と y** | **x & & y** |
-| **Or (x, y)** | **x または y** | **x &#124; &#124; y** |
-| **Not (x)** | **X 以外** | **!閉じる** |
+| **And ( x, y )** | **x と y** | **x && y** |
+| **Or ( x, y )** | **x または y** | **x &#124;&#124; y** |
+| **Not ( x )** | **x 以外** | **! x** |
 
-これらの関数では論理値が扱われます。 数値または文字列を直接渡すことはできません。代わりに、比較またはテストを行う必要があります。 たとえば、この論理式**x > 1**は、 **x**が**1**より大きい場合はブール値**true**に評価されます。 **X**が**1**未満の場合、式は**false**と評価されます。
+これらの関数は論理値と機能します。 数または文字列をこれらの関数に直接渡すことはできません; その代わり、比較またはテストする必要があります。 たとえば、この論理式は **x** が **1** より大きい場合、**x > 1** はブール値を **true** と評価します。 **x** が **1** 未満の場合、数式は **false** と評価します。
 
 ## <a name="syntax"></a>構文
 
@@ -48,37 +48,37 @@ ms.locfileid: "74730619"
 **Or**( *LogicalFormula1*, *LogicalFormula2* [, *LogicalFormula3*, ... ] )<br>
 **Not**( *LogicalFormula* )
 
-- *LogicalFormula(s)* - 必須。  評価と処理の対象となる論理式。
+- *LogicalFormula(s)* - 必須。  評価および操作の論理式。
 
 ## <a name="examples"></a>例
 
-このセクションの例では、次のグローバル変数を使用します。
+このセクションの例は、次のグローバル変数を使用します:
 
-- ** = ** *false*
+- **a** = *false*
 - **b** = *true*
 - **x** = 10
 - **y** = 100
-- **s** = "Hello World"
+- **s** = 「Hello World」
 
-アプリでこれらのグローバル変数を作成するには、[**ボタン**](../controls/control-button.md)コントロールを挿入し、その**onselect**プロパティを次の数式に設定します。
+アプリでこれらのグローバル変数を作成するには、[**Button**](../controls/control-button.md) コントロールを挿入し、**OnSelect** プロパティを次の数式に設定します:
 
 ```powerapps-dot
 Set( a, false ); Set( b, true ); Set( x, 10 ); Set( y, 100 ); Set( s, "Hello World" )
 ```
 
-(Alt キーを押しながらクリックして) ボタンを選択し、[**ラベル**](../controls/control-text-box.md)コントロールの**Text**プロパティを次の表の最初の列の数式に設定します。
+(Altキーを押しながらクリックして) ボタンを選択し、[**Label**](../controls/control-text-box.md) コントロールの **Text** プロパティを次のテーブルの最初の列の数式に設定します。
 
-| 数式 | Description | 結果 |
+| 計算式 | 内容 | 結果 |
 |---------|-------------|--------|
-| **And (a, b)** | **A**と**b**の値をテストします。  引数の1つが*false*であるため、関数は*false*を返します。 | *false* |
-| **a および b** | 前の例と同じ Visual Basic 表記法を使用します。 | *false* |
-| **a & & b** | 前の例と同じです。 JavaScript 表記を使用します。 | *false* |
-| **または (a, b)** | **A**と**b**の値をテストします。 引数のいずれかが*true*であるため、関数は*true*を返します。 | *true* |
-| **a または b** | 前の例と同じ Visual Basic 表記法を使用します。 | *true* |
-| **a &#124; &#124; b** | 前の例と同じです。 JavaScript 表記を使用します。 | *true* |
-| **Not (a)** | の**値をテストします。** 引数が*false*の場合、関数は逆の結果を返します。 | *true* |
-| **ではありません。** | 前の例と同じ Visual Basic 表記法を使用します。 | *true* |
-| **!ある** | 前の例と同じです。 JavaScript 表記を使用します。 | *true* |
-| **Len (&nbsp;s&nbsp;)&nbsp;<&nbsp;20 および&nbsp;Not Blank (&nbsp;s&nbsp;)** | の長さが20未満であるかどうか、および**空白** **の値**でないかどうかをテストします。 長さが20未満で、値が空白ではありません。 したがって、結果は*true*になります。 | *true* |
-| **または (&nbsp;Len (&nbsp;s&nbsp;)&nbsp;<&nbsp;10、x&nbsp;<&nbsp;100、y&nbsp;<&nbsp;100&nbsp;)** | **S**の長さが10未満であるかどうか、 **x**が100未満であるかどうか、 **y**が100未満かどうかをテストします。 1番目と3番目の引数は false ですが、2番目の引数は true です。 したがって、この関数は*true*を返します。 | *true* |
-| **Not IsBlank (&nbsp;s&nbsp;)** | **S**が*空白*であるかどうかをテストします。 *false*を返します。 **Not**は、この結果の逆を返します。これは*true*です。 | *true* |
+| **And( a, b )** | **a** および **b** の値をテストします。  引数の 1 つは *false*なので、関数は *false* を返します。 | *false* |
+| **a および b** | 前の例と同じように、Visual Basic 表記を使用ています。 | *false* |
+| **a && b** | 前の例と同じように、 JavaScript 表記を使用しています。 | *false* |
+| **または ( a, b )** | **a** および **b** の値をテストします。 引数の 1 つは *true*なので、関数は *true* を返します。 | *True* |
+| **a または b** | 前の例と同じように、Visual Basic 表記を使用ています。 | *True* |
+| **a &#124;&#124; b** | 前の例と同じように、 JavaScript 表記を使用しています。 | *True* |
+| **Not ( a )** | **a** の値をテストします。 引数は *false* なので、関数は反対の結果を返します。 | *True* |
+| **Not a** | 前の例と同じように、Visual Basic 表記を使用ています。 | *True* |
+| **! a** | 前の例と同じように、 JavaScript 表記を使用しています。 | *True* |
+| **Len (&nbsp;s&nbsp;)&nbsp;<&nbsp;20 および &nbsp;Not&nbsp;IsBlank (&nbsp;s&nbsp;)** | **s** の長さが 20 未満かどうか、また、**空白**値でないかどうかテストします。 長さが 20 未満で、値が空白ではありません。 したがって、結果は *true* です。 | *True* |
+| **または (&nbsp;Len (&nbsp;s&nbsp;) &nbsp;<&nbsp;10、x&nbsp;<&nbsp;100、 y&nbsp;<&nbsp;100&nbsp;)** | **s** の長さが 10 未満かどうか、**x** が 100 未満かどうか、**y** が 100 未満かどうかテストします。 最初および 3 番目の引数は false ですが、2 番目は true です。 したがって、関数は *true* を返します。 | *True* |
+| **Not IsBlank (&nbsp;s&nbsp;)** | **s** は *false* を返す*空白*かどうかをテストします。 **Not** はこの結果の反対である *true* を返します。 | *True* |

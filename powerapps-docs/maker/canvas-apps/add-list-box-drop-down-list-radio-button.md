@@ -1,6 +1,6 @@
 ---
 title: リスト ボックス、ドロップダウン リスト、またはラジオ ボタンをキャンバス アプリに追加する | Microsoft Docs
-description: Power Apps で、キャンバスアプリの複数選択オプションを作成または構成する
+description: Power Apps で、キャンバス アプリに複数選択オプションを作成または構成する
 author: fikaradz
 manager: kvivek
 ms.service: powerapps
@@ -15,26 +15,26 @@ search.app:
 - PowerApps
 ms.openlocfilehash: 9bf03693a182a9c6f85ad43c431b10fabf21b48d
 ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/02/2019
-ms.locfileid: "74678950"
+ms.locfileid: "3304153"
 ---
 # <a name="add-a-list-box-a-drop-down-list-or-radio-buttons-to-a-canvas-app"></a>リスト ボックス、ドロップダウン リスト、またはラジオ ボタンをキャンバス アプリに追加する
 
-キャンバス アプリで (たとえば複数列テーブルから) 1 つの列のデータを表示し、ユーザーが一覧の項目を 1 つまたは複数選択できるようにします。
+キャンバス アプリで 1 つの列のデータを (たとえば複数列テーブルから) 表示して、ユーザーが一覧の項目を 1 つまたは複数選択できるようにします。
 
 - リスト ボックスを追加して、ユーザーが複数のオプションを選択できるようにします。
-- ドロップダウン リストを追加して、必要な画面領域を小さくします。
+- ドロップダウン リストを追加して、画面上のスペースを節約します。
 - 特定のデザイン効果のために、一連のラジオ ボタンを追加します。
 
-このトピックではリスト ボックスとラジオ ボタンに焦点が当てられていますが、ドロップダウン リストにも同じ原則を適用できます。
+このトピックではリスト ボックスとラジオ ボタンに重点を置いていますが、ドロップダウン リストの場合も基本的な手順は同じです。
 
 [!INCLUDE [app-customization-requirements](../../includes/app-customization-requirements.md)]
 
-## <a name="create-a-simple-list"></a>単純なリストを作成する
+## <a name="create-a-simple-list"></a>簡易リストを作成する
 
-1. **リスト ボックス** コントロールを追加して **MyListBox** という名前を付け、その **Items** プロパティを次の式に設定します。
+1. **MyListBox** という名前の**リスト ボックス** コントロールを追加して、その **Items** プロパティを次の式に設定します。
 
     ```["circle","triangle","rectangle"]```  <br/>
 
@@ -42,7 +42,7 @@ ms.locfileid: "74678950"
 
     ![][4]
 
-4. **[挿入]** タブで **[アイコン]** を選択し、円を選択し、それを **MyListBox** の下に移動します。
+4. **挿入**タブで、**アイコン**を選択し、円を選択し、それを **MyListBox** の下に移動します。
 
     ![][5]  
 
@@ -52,7 +52,7 @@ ms.locfileid: "74678950"
 
 6. 次の図形の **[Visible](controls/properties-core.md)** プロパティを次の関数に設定します。  
 
-   | 図形 | 設定する Visible 関数 |
+   | 図形 | Visible 関数を以下に設定します |
    | --- | --- |
    | 円 |```If("circle" in MyListBox.SelectedItems.Value, true)``` |
    | 三角形 |```If("triangle" in MyListBox.SelectedItems.Value, true)``` |
@@ -62,12 +62,12 @@ ms.locfileid: "74678950"
 
     選択した図形のみが表示されます。
 
-以上の手順では、式を利用して項目リストを作成しました。 これは自分の作業内の他の要素に適用できます。 たとえば、**ドロップダウン** コントロールを利用し、製品の画像や説明などを表示できます。
+以上の手順では、式を利用して項目リストを作成しました。 これはビジネス内の他の要素に適用できます。 たとえば、**ドロップ ダウン** コントロールを利用して、製品の画像や説明などを表示できます。
 
 ## <a name="add-radio-buttons"></a>ラジオ ボタンを追加する
-1. **[ホーム]** タブの **[新しい画面]** を選択し、 **[空白]** を選択します。
+1. **ホーム** タブの**新しい画面**を選択し、**空白**を選択します。
 
-2. **[挿入]** タブで **[コントロール]** を選択し、**ラジオ** を選択します。
+2. **挿入**タブで**コントロール**を選択し、**ラジオ**を選択します。
 
     ![][10]  
 
@@ -78,14 +78,14 @@ ms.locfileid: "74678950"
 
     必要に応じて、すべてのオプションが表示されるようにコントロールのサイズを変更します。
 
-4. **[挿入]** タブで **[アイコン]** を選択し、円を選択します。
+4. **挿入**タブで**アイコン**を選択し、円を選択します。
 
 5. 円の **[Fill](controls/properties-color-border.md)** プロパティを次の関数に設定します。  
    ```If(Choices.Selected.Value = "red", Red, Choices.Selected.Value = "green", Green, Choices.Selected.Value = "blue", Blue)```  
 
     この数式では、選択したラジオ ボタンに基づいて円の色が変わります。
 
-6. この例のように **ラジオ** コントロールの下に円を移動します。
+6. この例のように**ラジオ** コントロールの下に円を移動します。
 
     ![][14]  
 

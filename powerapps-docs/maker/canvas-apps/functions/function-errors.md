@@ -1,6 +1,6 @@
 ---
 title: Errors 関数 | Microsoft Docs
-description: 構文と例を含む Power Apps の Errors 関数の参照情報
+description: Power Apps での Errors 関数の構文と例を含む参照情報
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -15,92 +15,92 @@ search.app:
 - PowerApps
 ms.openlocfilehash: 245bdbfbcf8e95b5bca6ca736ff67d5623f772f5
 ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/03/2019
-ms.locfileid: "74731051"
+ms.locfileid: "3305280"
 ---
-# <a name="errors-function-in-power-apps"></a>Power Apps の Errors 関数
-[データ ソース](../working-with-data-sources.md)に対する以前の変更のエラー情報を提供します。
+# <a name="errors-function-in-power-apps"></a>Power Apps での Errors 関数
+[データ ソース](../working-with-data-sources.md) への前の変更のエラー情報を提供します。
 
 ## <a name="overview"></a>概要
-エラーは、データ ソースの[レコード](../working-with-tables.md#records)が変更されたときに発生する場合があります。  ネットワーク障害、不適切なアクセス許可、編集の競合など、多くの原因が考えられます。  
+エラーは、データ ソースの[レコード](../working-with-tables.md#records) が変更された場合に発生することがあります。  ネットワークの停止、不適切なアクセス許可、および編集の競合を含む、多くの原因が考えられます。  
 
-**[Patch](function-patch.md)** 関数とその他のデータ関数は、直接エラーを返しません。 代わりに、操作の結果が返されます。 データ関数の実行後、**Errors** 関数を使用して、エラーの詳細を取得することができます。  **IsEmpty( Errors ( ... ) )** という数式にある **[IsEmpty]** 関数で、エラーの存在を確認することができます。
+**[Patch](function-patch.md)** 関数および他のデータ関数は、直接エラーを返しません。 代わりに、操作の結果が返されます。 データ関数の実行後、**Errors** 関数を使用して、エラーの詳細を取得することができます。  **IsEmpty( Errors ( ... ) )** の数式で **[IsEmpty]** 関数を使用して、エラーの存在を確認することができます。
 
-**[Validate](function-validate.md)** 関数と **[DataSourceInfo](function-datasourceinfo.md)** 関数を使用すると、一部のエラーを発生前に回避することができます。  エラーの対処方法と回避方法の詳細な推奨事項については、[データ ソースの操作](../working-with-data-sources.md)に関するページを参照してください。
+**[Validate](function-validate.md)** および **[DataSourceInfo](function-datasourceinfo.md)** 関数を使用して、いくつかのエラーを発生前に回避することができます。  エラーの処理および回避方法についての推奨事項については、[データ ソースの操作](../working-with-data-sources.md) を参照してください。
 
-## <a name="description"></a>Description
-**Errors** 関数は、エラーの[テーブル](../working-with-tables.md)を返します。このテーブルには、次の[列](../working-with-tables.md#columns)が含まれています。
+## <a name="description"></a>内容
+**Errors** 関数は、次の[列](../working-with-tables.md#columns) を含むエラーの[テーブル](../working-with-tables.md) を返します。
 
-* **Record**。  データ ソース内のエラーが発生したレコード。  レコードの作成中にエラーが発生した場合、この列は "*空白*" になります。
-* **Column**。  エラーの原因となった列 (エラーの原因が 1 つの列にある場合)。 そうでない場合は、"*空白*" になります。
-* **Message**。  エラーの説明。  このエラー文字列は、エンド ユーザーに表示できます。  このメッセージはデータ ソースによって生成される場合があり、長くなったり、ユーザーにとっては無意味な元の列名が含まれていたりする可能性があることに注意してください。
-* **Error**。  次に示すような、エラーを解決できるように数式で使用できるエラー コード。
+* **レコード**。  エラーが発生したデータ ソース内のレコード。  レコードの作成中にエラーが発生した場合、この列は*空白*になります。
+* **列**。  エラーが 1 つの列に原因があると考えられる場合に、エラーの原因となった列。 そうでない場合は、*空白*になります。
+* **メッセージ**。  エラーの説明。  このエラー文字列は、エンド ユーザーに対して表示できます。  このメッセージはデータ ソースによって生成される場合があり、長くなったり、ユーザーには意味を持たない生の列名を含んでいる可能性があることに注意してください。
+* **エラー** :   エラーを解決するために数式で使用できるエラー コード。
 
-| ErrorKind | Description |
+| ErrorKind | 内容 |
 | --- | --- |
-| ErrorKind.Conflict |同じレコードに対して別の変更が行われた結果、変更が競合しています。  **[Refresh](function-refresh.md)** 関数を使用して、レコードを再読み込みし、もう一度変更を試してください。 |
-| ErrorKind.ConstraintViolation |1 つ以上の制約に違反しました。 |
+| ErrorKind.Conflict |同じレコードに対して別の変更が行われ、変更の競合という結果になりました。  **[Refresh](function-refresh.md)** 関数を使用して、レコードを再読み込みし、変更を再度試します。 |
+| ErrorKind.ConstraintViolation |1 つ以上の制約に違反しています。 |
 | ErrorKind.CreatePermission |レコードを作成しようとしましたが、現在のユーザーにはレコードを作成するためのアクセス許可がありません。 |
 | ErrorKind.DeletePermission |レコードを削除しようとしましたが、現在のユーザーにはレコードを削除するためのアクセス許可がありません。 |
 | ErrorKind.EditPermission |レコードを編集しようとしましたが、現在のユーザーにはレコードを編集するためのアクセス許可がありません。 |
-| ErrorKind.GeneratedValue |データ ソースによって自動的に生成される列を変更しようとしました。 |
-| ErrorKind.MissingRequired |必要な列の値がレコードに見つかりません。 |
+| ErrorKind.GeneratedValue |データ ソースが自動的に生成する列を変更しようとしました。 |
+| ErrorKind.MissingRequired |必要な列の値がレコードにありません。 |
 | ErrorKind.None |エラーはありません。 |
 | ErrorKind.NotFound |レコードを編集または削除しようとしましたが、レコードが見つかりませんでした。  別のユーザーがレコードを変更した可能性があります。 |
 | ErrorKind.ReadOnlyValue |読み取り専用の列を変更しようとしました。 |
-| ErrorKind.Sync |データ ソースによってエラーが報告されました。  詳細については、Message 列を確認してください。 |
+| ErrorKind.Sync |データ ソースによってエラーが報告されました。  詳細については、メッセージの列を確認してください。 |
 | ErrorKind.Unknown |エラーが発生しましたが、種類が不明です。 |
-| ErrorKind.Validation |一般的な検証の問題が検出されました。この問題は他のどの種類にも当てはまりませんでした。 |
+| ErrorKind.Validation |他の種類の 1 つに適合しない、一般的な検証のイシューが検知されました。 |
 
-関数に *Record* 引数を指定すると、データ ソース全体または選択した行のみにエラーが返されます。  
+関数に*レコード*引数を提供すると、データ ソース全体または選択された行のみにエラーが返されます。  
 
-**[Patch](function-patch.md)** またはその他のデータ関数は、レコードが作成できなかった場合などに、"*空白*" の値を返すことがあります。 **Errors** には "*空白*" を渡すことができます。その場合は、適切なエラー情報が返されます。  その後、同じデータ ソースに対してデータ関数を使用すると、エラー情報が消去されます。
+**[Patch](function-patch.md)** または他のデータ関数は、たとえば、レコードを作成できなかった場合は、*空白*値を返すことがあります。 **Errors** に*空白*を渡すと、そのような場合は適切なエラー情報が返されます。  同じデータ ソースのそれ以降のデータ関数の使用は、このエラー情報を消去します。
 
-エラーがない場合、**Errors** によって返されるテーブルは[空](function-isblank-isempty.md)になるため、 **[IsEmpty](function-isblank-isempty.md)** 関数を使用してテストすることができます。
+エラーがない場合、**Errors** が返すテーブルは[空](function-isblank-isempty.md) になり、**[IsEmpty](function-isblank-isempty.md)** 関数でテストすることができます。
 
 ## <a name="syntax"></a>構文
 **Errors**( *DataSource* [, *Record* ] )
 
 * *DataSource* – 必須。 エラーを返すデータ ソース。
-* *Record* – 省略可能。  エラーを返す特定のレコード。 この引数を指定しない場合は、データ ソース全体のエラーが返されます。
+* *Record* – オプション。  エラーを返す特定のレコード。 この引数を指定しない場合、関数はデータ ソース全体のエラーを返します。
 
 ## <a name="examples"></a>例
-### <a name="step-by-step"></a>ステップ バイ ステップ
-この例では、**IceCream** データ ソースを操作します。
+### <a name="step-by-step"></a>手順
+この例では、**IceCream** データ ソースを使用して操作します。
 
 ![](media/function-errors/icecream.png)
 
-ユーザーは、アプリを使用して Chocolate レコードをデータ入力フォームに読み込み、**Quantity** の値を 90 に変更します。  操作対象のレコードは、[コンテキスト変数](../working-with-variables.md#use-a-context-variable) **EditRecord** に配置されています。
+アプリを使用して、ユーザーはチョコレートのレコードをデータ入力フォームに読み込み、次に**数量**の値を 90 に変更します。  操作するレコードは、[コンテキスト変数](../working-with-variables.md#use-a-context-variable) **EditRecord** に配置されています。
 
 * **UpdateContext( { EditRecord: First( Filter( IceCream, Flavor = "Chocolate" ) ) } )**
 
-データ ソースでこの変更を行うには、次のように **[Patch](function-patch.md)** 関数を使用します。
+データ ソースでこの変更を行うには、**[Patch](function-patch.md)** 関数を使用します。
 
 * **Patch( IceCream, EditRecord, Gallery.Updates )**
 
-ここで、**Gallery.Updates** は **{ Quantity: 90 }** に評価されます。変更されたのは **Quantity** プロパティのみであるためです。
+ここで、**Quantity** 関数のみが変更されたため、**Gallery.Updates** は **{ Quantity: 90 }** と評価されます。
 
-残念ながら、 **[Patch](function-patch.md)** 関数が呼び出される直前に、他のユーザーによって Chocolate の **Quantity** が 80 に変更されます。  この問題は、電源アプリによって検出され、競合する変更が発生することはありません。  この状況を次の数式で確認できます。
+残念ながら、**[Patch](function-patch.md)** 関数が呼び出された直前に、他のユーザーがチョコレートの**数量**を 80 に変更しました。  Power Apps はこれを検出し、競合する変更の発生を許可しません。  次の数式でこの状況を確認できます。
 
 * **IsEmpty( Errors( IceCream, EditRecord ) )**
 
-**false** が返されます。**Errors** 関数は次のテーブルを返したためです。
+**Errors** 関数が次のテーブルを返したため、**false** が返されます。
 
 | レコード | 列 | メッセージ | エラー |
 | --- | --- | --- | --- |
-| { Flavor: "Chocolate", Quantity: 100 } |"*空白*" |"別のユーザーにより変更しようとしているレコードは変更されています。 レコードを再読み込みしてからやり直してください。" |ErrorKind.Conflict |
+| { Flavor: "Chocolate", Quantity: 100 } |*空白* |"別のユーザーが、変更しようとしているレコードを変更しました。 レコードを再読み込みしてから再度やり直してください。" |ErrorKind.Conflict |
 
-このエラーをユーザーに表示するためのラベルをフォーム上に配置することができます。
+このエラーをユーザーに表示するため、フォームにラベルを置くことができます。
 
 * エラーを表示するには、ラベルの **[Text](../controls/properties-core.md)** プロパティを次の数式に設定します。<br>
   **Label.Text = First(Errors( IceCream, EditRecord )).Message**
 
-ユーザーが効率的に競合を解決できるように、フォームに **Reload** ボタンを追加することもできます。
+フォームに**リロード** ボタンを追加すると、ユーザーが効率的に競合を解決できるようにすることもできます。
 
 * 競合が発生した場合にのみボタンを表示するには、ボタンの **[Visible](../controls/properties-core.md)** プロパティを次の数式に設定します。<br>
     **!IsEmpty( Lookup( Errors( IceCream, EditRecord ), Error = ErrorKind.Conflict ) )**
-* ユーザーがボタンを選択したときに変更を元に戻すには、そのボタンの **[OnSelect](../controls/properties-core.md)** プロパティを次の数式に設定します。<br>
+* ユーザーがボタンを選択して変更を元に戻すには、その **[OnSelect](../controls/properties-core.md)** プロパティを次の数式に設定します。<br>
     **ReloadButton.OnSelect = Revert( IceCream, EditRecord )**
 

@@ -1,6 +1,6 @@
 ---
-title: GroupBy 関数と Ungroup 関数 | Microsoft Docs
-description: 構文と例を含む、Power Apps の GroupBy 関数とグループ解除関数の参照情報
+title: GroupBy および Ungroup 関数 | Microsoft Docs
+description: Power Apps での GroupBy および Ungroup 関数の構文と例を含む参照情報
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -15,20 +15,20 @@ search.app:
 - PowerApps
 ms.openlocfilehash: 47a71ab36d67cd3b6862b7d3fe6503b9053108c8
 ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/03/2019
-ms.locfileid: "74730925"
+ms.locfileid: "3305119"
 ---
-# <a name="groupby-and-ungroup-functions-in-power-apps"></a>Power Apps での関数の GroupBy とグループ解除
-[テーブル](../working-with-tables.md)の[レコード](../working-with-tables.md#records)のグループ化とグループ化解除を行います。
+# <a name="groupby-and-ungroup-functions-in-power-apps"></a>Power Apps での GroupBy および Ungroup 関数
+[テーブル](../working-with-tables.md) の[レコード](../working-with-tables.md#records) のグループ化とグループ化解除を行います。
 
-## <a name="description"></a>Description
-**GroupBy** 関数は、1 つ以上の[列](../working-with-tables.md#columns)の値に基づいてレコードをグループ化したテーブルを返します。 同じグループのレコードは単一のレコードにまとめられ、列が追加されます。この列には、残りの列が入れ子になったテーブルが保持されます。   
+## <a name="description"></a>内容
+**GroupBy** 関数は、1 つ以上の[列](../working-with-tables.md#columns) の値に基づいてレコードを一緒にグループ化したテーブルを返します。 同じグループのレコードは単一のレコードに配置され、残りの列の入れ子になったテーブルを保持する列が追加されます。   
 
-**Ungroup** 関数では、**GroupBy** と逆の処理が行われます。 この関数は、グループ化されていたレコードを個別のレコードに分割してテーブルを返します。
+**Ungroup** 関数は、**GroupBy** プロセスを逆にします。 この関数は、一緒にグループ化されていたレコードをそれぞれのレコードに分割してテーブルを返します。
 
-**GroupBy** でレコードをグループ化し、返されたテーブルに変更を加え、それから **Ungroup** を使ってその変更したテーブルのレコードのグループ化を解除することができます。 たとえば、次の方法でレコードのグループを削除できます。
+**GroupBy** を使用してレコードをグループ化し、返されたテーブルを変更し、次に **Ungroup** を使用して変更されたテーブルのレコードのグループ化を解除することができます。 たとえば、次の方法でレコードのグループを削除できます。
 
 * **GroupBy** 関数を使用します。
 * **[Filter](function-filter-lookup.md)** 関数を使用して、レコードのグループ全体を削除します。
@@ -37,35 +37,35 @@ ms.locfileid: "74730925"
 グループ化に基づいて結果を集計することもできます。
 
 * **GroupBy** 関数を使用します。
-* **[Sum](function-aggregates.md)** 、 **[Average](function-aggregates.md)** 、その他の集計関数と共に **[AddColumns](function-table-shaping.md)** 関数を使用して、グループ テーブルの集計結果である新しい列を追加します。
-* **[DropColumns](function-table-shaping.md)** 関数を使用して、グループ テーブルを削除します。
+* **[Sum](function-aggregates.md)**、**[Average](function-aggregates.md)**、およびその他の集計関数とともに **[AddColumns](function-table-shaping.md)** 関数を使用して、グループ テーブルの集計である新しい列を追加します。
+* **[DropColumns](function-table-shaping.md)** 関数を使用してグループ テーブルをドロップします。
 
-**Ungroup** は、**GroupBy** に渡されたレコードの順番を元のまま保持しようとしますが、  必ずしも可能ではありません (元のテーブルに "*空白*" のレコードが含まれている場合など)。
+**Ungroup** は、**GroupBy** に供給されたレコードの元の順序を維持しようとします。  これは常にできるとは限りません (たとえば、元のテーブルに*空白*レコードが含まれている場合です)。
 
-テーブルは、文字列や数値と同じように、Power Apps の値です。 テーブルは関数の引数として指定できるほか、関数で返すことができます。 **GroupBy** と **Ungroup** では、テーブルは変更されません。代わりに、これらの関数はテーブルを引数として受け取り、別のテーブルを返します。 詳細については、[テーブルの使用](../working-with-tables.md)に関するページを参照してください。
+テーブルは、文字列や数値と同じように、Power Apps の値です。 関数の引数としてテーブルを指定し、関数はテーブルを返すことができます。 **GroupBy** および **Ungroup** はテーブルを変更せず、代わりに、テーブルを引数として受け取り、別のテーブルを返します。 詳細については、[テーブルの使用](../working-with-tables.md) に関するページを参照してください。
 
 ## <a name="syntax"></a>構文
 **GroupBy**( *Table*, *ColumnName1* [, *ColumnName2*, ... ], *GroupColumnName* )
 
 * *Table* - 必須。 グループ化するテーブル。
-* *ColumnName(s)* - 必須。  レコードをグループ化する基準となる、*Table* 内の列名。  これらの列は、返されるテーブルで列になります。
-* *GroupColumnName* - 必須。  *ColumnName(s)* 内にないレコード データが格納される列の名前。
+* *ColumnName(s)* - 必須。  レコードをグループ化する*テーブル*内の列名。  これらの列は、結果のテーブルの列になります。
+* *GroupColumnName* - 必須。  *ColumnName(s)* にないレコード データの記憶域の列名。
   
     > [!NOTE]
-  > 名前にスペースが使われている列を含む SharePoint および Excel のデータ ソースの場合、各スペースを **"\_x0020\_"** として指定します。 たとえば、 **"Column Name"** として **"Column_x0020_Name"** を指定します。
+  > 名前にスペースが使われている SharePoint と Excel のデータ ソースの場合、各スペースを **"\_x0020\_"** として指定します。 たとえば、**"Column Name"** を **"Column_x0020_Name"** として指定します。
 
 **Ungroup**( *Table*, *GroupColumnName* )
 
 * *Table* - 必須。 グループ化を解除するテーブル。
-* *GroupColumnName* - 必須。 **GroupBy** 関数によって設定されたレコード データを含む列。
+* *GroupColumnName* - 必須。 **GroupBy** 関数を用いたレコード データの設定を含む列。
   
     > [!NOTE]
-  > 名前にスペースが使われている列を含む SharePoint および Excel のデータ ソースの場合、各スペースを **"\_x0020\_"** として指定します。 たとえば、 **"Column Name"** として **"Column_x0020_Name"** を指定します。
+  > 名前にスペースが使われている SharePoint と Excel のデータ ソースの場合、各スペースを **"\_x0020\_"** として指定します。 たとえば、**"Column Name"** を **"Column_x0020_Name"** として指定します。
 
 ## <a name="examples"></a>例
 ### <a name="create-a-collection"></a>コレクションの作成
-1. ボタンを追加し、**Original** と表示されるように **[Text](../controls/properties-core.md)** プロパティを設定します。
-2. **Original** ボタンの **[OnSelect](../controls/properties-core.md)** プロパティを次の式に設定します。
+1. ボタンを追加し、その **[Text](../controls/properties-core.md)** プロパティを設定し、ボタンに**オリジナル**と表示されるようにします。
+2. **オリジナル**ボタンの **[OnSelect](../controls/properties-core.md)** プロパティを次の数式に設定します。
 
 ```powerapps-dot   
 ClearCollect( CityPopulations, 
@@ -81,44 +81,44 @@ ClearCollect( CityPopulations,
 )
 ```
 
-3. Alt キーを押しながら、**Original** ボタンを選択します。
+3. Alt キーを押しながら、**オリジナル**ボタンを選択します。
    
-    次のデータが含まれた **CityPopulations** という名前の[コレクション](../working-with-data-sources.md#collections)が作成されました。
+    次のデータが含まれた **CityPopulations** という名前の[コレクション](../working-with-data-sources.md#collections) が作成されました。
    
     ![](media/function-groupby/cities.png)
-4. このコレクションを表示するには、 **[ファイル]** メニューの **[コレクション]** を選択してから、**CityPopulations** コレクションを選択します。  コレクションに含まれているレコードのうち最初の 5 つが表示されます。
+4. このコレクションを表示するには、**ファイル** メニューの**コレクション**を選択し、次に **CityPopulations** コレクションを選択します。  コレクション内の最初の 5 つのレコードが表示されます。
    
     ![](media/function-groupby/citypopulations-collection.png)
 
 ### <a name="group-records"></a>レコードのグループ化
-1. もう 1 つボタンを追加し、 **[Text](../controls/properties-core.md)** プロパティを **"Group"** に設定します。
-2. このボタンの **[OnSelect](../controls/properties-core.md)** プロパティを次の式に設定します。
+1. 他のボタンを追加し、その **[Text](../controls/properties-core.md)** プロパティを **"グループ"** に設定します。
+2. このボタンの **[OnSelect](../controls/properties-core.md)** プロパティを次の数式に設定します。
    
     **ClearCollect( CitiesByCountry, GroupBy( CityPopulations, "Country", "Cities" ) )**
-3. Alt キーを押しながら、**Group** ボタンを選択します。
+3. Alt キーを押しながら、**グループ** ボタンを選択します。
    
-    **CitiesByCountry** という名前のコレクションが作成されました。このコレクションでは、前のコレクションのレコードが **Country** 列に基づいてグループ化されています。
+    前のコレクションのレコードが、**国**列によってグループ化されている **CitiesByCountry** という名前のコレクションが作成されました。
    
     ![](media/function-groupby/cities-grouped.png)
-4. このコレクションに含まれているレコードの最初の 5 つを表示するには、 **[ファイル]** メニューの **[コレクション]** を選択します。
+4. このコレクションに含まれている最初の 5 つのレコードを表示するには、**ファイル** メニューの**コレクション**を選択します。
    
     ![](media/function-groupby/citiesbycountry-collection.png)
-5. ある国の各市の人口を表示するには、その国 (例: Germany) の **Cities** 列内のテーブル アイコンを選択します。
+5. 国の市区町村の人口を表示するには、その国 (例: ドイツ) の**市区町村**列内のテーブル アイコンを選択します。
    
     ![](media/function-groupby/population-germany.png)
 
-### <a name="filter-and-ungroup-records"></a>レコードのフィルターとグループ化解除
-1. もう 1 つボタンを追加し、 **"Filter"** と表示されるように **[Text](../controls/properties-core.md)** プロパティを設定します。
-2. このボタンの **[OnSelect](../controls/properties-core.md)** プロパティを次の式に設定します。
+### <a name="filter-and-ungroup-records"></a>レコードのフィルターおよびグループ化解除
+1. 他のボタンを追加し、その **[Text](../controls/properties-core.md)** プロパティを設定し、ボタンが **"フィルター"** と表示されるようにします。
+2. このボタンの **[OnSelect](../controls/properties-core.md)** プロパティを次の数式に設定します。
    
     **ClearCollect( CitiesByCountryFiltered, Filter( CitiesByCountry, "e" in Country ) )**
 3. Alt キーを押しながら、追加したボタンを選択します。
    
-    **CitiesByCountryFiltered** という名前の 3 つ目のコレクションが作成されました。このコレクションには、名前に "e" が付いた国だけが含まれています (つまり、Spain や Italy は除外)。
+    名前に "e" を持つ (つまり、スペインまたはイタリアではない) これらの国のみを含む、**CitiesByCountryFiltered** という名前の 3 つ目のコレクションが作成されました。
    
     ![](media/function-groupby/cities-grouped-hase.png)
-4. さらに 1 つボタンを追加し、 **"Ungroup"** と表示されるように **[Text](../controls/properties-core.md)** プロパティを設定します。
-5. このボタンの **[OnSelect](../controls/properties-core.md)** プロパティを次の式に設定します。
+4. もう 1 つボタンを追加し、その **[Text](../controls/properties-core.md)** プロパティを設定し、ボタンが **"グループ化の解除"** と表示されるようにします。
+5. このボタンの **[OnSelect](../controls/properties-core.md)** プロパティを次の数式に設定します。
    
     **ClearCollect( CityPopulationsUngrouped, Ungroup( CitiesByCountryFiltered, "Cities" ) )**
    
@@ -127,10 +127,10 @@ ClearCollect( CityPopulations,
     ![](media/function-groupby/cities-hase.png)
 
 ### <a name="aggregate-results"></a>結果の集計
-このほか、グループ化したテーブルでは結果の集計が行えます。  この例では、各国の主な都市の人口を合計します。
+このほか、グループ化したテーブルでは結果を集計することができます。  この例では、各国の主な市区町村の人口を合計します。
 
-1. もう 1 つボタンを追加し、 **"Sum"** と表示されるように **[Text](../controls/properties-core.md)** プロパティを設定します。
-2. **"Sum"** ボタンの **[OnSelect](../controls/properties-core.md)** プロパティを次の式に設定します。
+1. 他のボタンを追加し、その **[Text](../controls/properties-core.md)** プロパティを設定し、**"合計"** と表示されるようにします。
+2. **"合計"** ボタンの **[OnSelect](../controls/properties-core.md)** プロパティを次の数式に設定します。
    
     **ClearCollect( CityPopulationsSum, AddColumns( CitiesByCountry, "Sum of City Populations", Sum( Cities, Population ) ) )**
    
@@ -138,12 +138,12 @@ ClearCollect( CityPopulations,
    
     ![](media/function-groupby/cities-sum.png)
    
-    **[AddColumns](function-table-shaping.md)** では **CitiesByCountry** コレクションがベースとなり、新しい列 **Sum of City Populations** がそこに追加されます。  この列の値は、数式 **Sum( Cities, Population )** に基づいて行ごとに計算されます。  **AddColumns** によって **Cities** 列 (テーブル) の値が行ごとに入力され、 **[Sum](function-aggregates.md)** によってこのサブ テーブルの各行の **Population** が合計されます。
+    **[AddColumns](function-table-shaping.md)** では、ベースである **CitiesByCountry** コレクションで始まり、新しい列である**市区町村人口の合計**が追加されます。  この列の値では、数式 **Sum( Cities, Population )** に基づいて、行単位で計算されます。  **AddColumns** は、各行に**市区町村**列 (テーブル) の値を提供し、**[合計](function-aggregates.md)** は、このサブ テーブルの各行に**人口**を追加します。
 
-    目的の合計値が得られたところで、 **[DropColumns](function-table-shaping.md)** を使用してサブ テーブルを削除できます。
+    これで、必要な合計が得られたので、**[DropColumns](function-table-shaping.md)** を使用してサブ テーブルを削除できます。
   
-3. もう 1 つボタンを追加し、 **"SumOnly"** と表示されるようにその **[Text](../controls/properties-core.md)** プロパティを設定します。
-4. **"SumOnly"** ボタンの **[OnSelect](../controls/properties-core.md)** プロパティを次の式に設定します。
+3. 他のボタンを追加し、**"SumOnly"** と表示されるように、その **[Text](../controls/properties-core.md)** プロパティを設定します。
+4. **"SumOnly"** ボタンの **[OnSelect](../controls/properties-core.md)** プロパティを次の数式に設定します。
 
     **ClearCollect( CityPopulationsSumOnly, DropColumns( CityPopulationsSum, "Cities" ) )**
    
@@ -151,5 +151,5 @@ ClearCollect( CityPopulations,
    
     ![](media/function-groupby/cities-sum-drop-cities.png)
    
-    このテーブルではグループ化解除が不要だったことに注意してください。
+    このテーブルのグループ化を解除する必要がなかったことに注意してください。
 

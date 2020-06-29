@@ -1,6 +1,6 @@
 ---
 title: Distinct 関数 | Microsoft Docs
-description: 構文と例を含む Power Apps の Distinct 関数の参照情報
+description: Power Apps での Distinct 関数の構文と例を含む参照情報
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -15,16 +15,16 @@ search.app:
 - PowerApps
 ms.openlocfilehash: b77cdf452250fc30e1b8c61867f82e5f109fff49
 ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/03/2019
-ms.locfileid: "74731244"
+ms.locfileid: "3305326"
 ---
-# <a name="distinct-function-in-power-apps"></a>Power Apps の Distinct 関数
-重複を削除して、[テーブル](../working-with-tables.md)の[レコード](../working-with-tables.md#records)を要約します。
+# <a name="distinct-function-in-power-apps"></a>Power Apps での Distinct 関数
+[テーブル](../working-with-tables.md) の[レコード](../working-with-tables.md#records) を要約し、重複を削除します。
 
-## <a name="description"></a>Description
-**Distinct**関数は、テーブルの各レコードに対して数式を評価し、重複する値が削除された結果の1列のテーブルを返します。  列の名前は**Result**です。  
+## <a name="description"></a>内容
+**Distinct** 関数は、テーブルの各レコードにわたって数式を評価し、重複する値が削除された結果の 1 列のテーブルを返します。  列の名前は、**結果**です。  
 
 [!INCLUDE [record-scope](../../../includes/record-scope.md)]
 
@@ -38,7 +38,7 @@ ms.locfileid: "74731244"
 
 ## <a name="example"></a>例
 
-1. [**ボタン**](../controls/control-button.md)コントロールを挿入し、その**onselect**プロパティを次の数式に設定します。
+1. [**Button**](../controls/control-button.md) コントロールを挿入し、**OnSelect** プロパティに次の数式を設定します。
 
     ```powerapps-dot
     ClearCollect( CityPopulations,
@@ -51,38 +51,38 @@ ms.locfileid: "74731244"
     );
     ```
 
-1. Alt キーを押しながらボタンを選択します。
+1. Alt キーを押しながら、ボタンを選択します。
 
-    数式は evaluatd であり、数式バーで**CityPopulations**を選択することによって表示できる**CityPopulations** collection が作成されます。
+    数式が評価され、数式バーで **CityPopulations** を選択して表示される **CityPopulations** が作成されます。
 
     > [!div class="mx-imgBorder"]
-    > 結果ビューに表示される ![CityPopulations collection](media/function-distinct/citypopulations-create.png)
+    > ![結果ビューに表示される CityPopulations コレクション](media/function-distinct/citypopulations-create.png)
 
-1. [**データテーブル**](../controls/control-data-table.md)コントロールを挿入し、その**Items**プロパティを次の数式に設定します。
+1. [**データ テーブル**](../controls/control-data-table.md) コントロールを挿入し、その **Items** プロパティを次の数式に設定します。
 
     ```powerapps-dot
     Distinct( CityPopulations, Country )
     ```
 
-    数式バーで数式全体を選択することで、この数式の結果を表示できます。
+    数式の全体を選択すると、この数式の結果が数式バーに表示されます。
 
     > [!div class="mx-imgBorder"]
-    > 結果ビューに表示される Distinct 関数からの出力の ![](media/function-distinct/citypopulations-distinct.png)
+    > ![結果ビューに表示される Distinct 関数からの出力](media/function-distinct/citypopulations-distinct.png)
 
-1. データテーブルのプロパティペインの **[フィールドの編集]** リンクを使用すると、**結果**列を追加できます。
+1. データ テーブルのプロパティ ペインで、**フィールドの編集**リンクを使用し、**結果**列を追加します。
 
     > [!div class="mx-imgBorder"]
-    > ![データテーブルに示されている Distinct 関数からの出力](media/function-distinct/citypopulations-datatable.png)
+    > ![データ テーブルに表示される Distinct 関数からの出力](media/function-distinct/citypopulations-datatable.png)
 
-1. [**ラベル**](../controls/control-text-box.md)コントロールを挿入し、その**Text**プロパティを数式に設定します。
+1. [**Label**](../controls/control-text-box.md) コントロールを挿入し、その **Text** プロパティを次の数式に設定します。
 
     ```powerapps-dot
     First( Sort( Distinct( CityPopulations, Country ), Result ) ).Result
     ```
 
-    この数式では、 [**Sort**](function-sort.md)関数を使用して**Distinct**の結果を並べ替え、結果のテーブルの最初のレコードを[**最初**](function-first-last.md)の関数と共に取得し、**結果**フィールドを抽出して、国名だけを取得します。
+    この数式は、[**Sort**](function-sort.md) 関数を使用して **Distinct** からの結果を並べ替え、[**First**](function-first-last.md) 関数を使用して結果テーブルから最初のレコードを取り出し、**結果**フィールドを解凍して国名のみを取得します。
 
     > [!div class="mx-imgBorder"]
-    > 名前によって最初の国を示す Distinct 関数からの出力を ![](media/function-distinct/citypopulations-first.png)
+    > ![最初の国を名前で表示する Distinct 関数からの出力](media/function-distinct/citypopulations-first.png)
 
      

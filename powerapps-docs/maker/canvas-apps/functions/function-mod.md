@@ -1,6 +1,6 @@
 ---
 title: Mod 関数 | Microsoft Docs
-description: 構文と例を含む Power Apps の Mod 関数の参照情報
+description: Power Apps での Mod 関数の構文と例を含む参照情報
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -15,15 +15,15 @@ search.app:
 - PowerApps
 ms.openlocfilehash: db7c18c322b7d4c659ca577bf9092daf20f626b1
 ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/03/2019
-ms.locfileid: "74730495"
+ms.locfileid: "3304889"
 ---
-# <a name="mod-function-in-power-apps"></a>Power Apps での Mod 関数
+# <a name="mod-function-in-power-apps"></a>Power Apps の Mod 関数
 除算の剰余を返します。
 
-## <a name="description"></a>Description
+## <a name="description"></a>内容
 **Mod** 関数は、数値を除数で除算した後に、その剰余を返します。
 
 結果の符号は除数と同じです。

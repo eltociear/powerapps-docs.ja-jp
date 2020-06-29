@@ -1,6 +1,6 @@
 ---
-title: Canvas アプリでカードをカスタマイズする |Microsoft Docs
-description: キャンバスアプリの詳細または編集フォームでカードに表示される既定のコントロールを変更する
+title: キャンバス アプリでカードをカスタマイズする | Microsoft Docs
+description: キャンバス アプリの詳細フォームまたは編集フォームのカードに表示される既定のコントロールを変更する
 author: tapanm-msft
 manager: kvivek
 ms.service: powerapps
@@ -14,69 +14,69 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 5bcf1515f72bdce0872f91c64b5ac4fe5028ee2c
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
-ms.translationtype: MT
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71985914"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "3303831"
 ---
-# <a name="customize-a-card-in-a-canvas-app"></a>キャンバスアプリでカードをカスタマイズする
+# <a name="customize-a-card-in-a-canvas-app"></a>キャンバス アプリでカードをカスタマイズする
 
 基本的なカスタマイズ (カードのロック解除を伴わないカスタマイズ) は、コントロールの変更などによって行います。 高度なカスタマイズは、カードのロックを解除し、既定では利用できないコントロールをカードに追加するなどして行います。
 
-概要については、「[Understand data cards (データ カードについて)](working-with-cards.md)」をご覧ください。
+概要については、[データ カードについて](working-with-cards.md)を参照してください。
 
 ## <a name="prerequisites"></a>前提条件
 
-- [コントロールを追加して構成](add-configure-controls.md)する方法について学ぶ。
-- このトピックは、一般的な概念についてのみ確認できます。また、次のトピックの手順を最初に完了した場合は、手順に従って操作することもできます。
+- [コントロールを追加して構成する](add-configure-controls.md)方法について学習します。
+- このトピックは、概念全般を理解する目的でのみご覧いただいても、これらのトピックの手順を最初に完了して、手順ごとに実行していただいてもかまいません。
 
     1. [アプリを生成します](data-platform-create-app.md)。
-    1. [そのギャラリーをカスタマイズします](customize-layout-sharepoint.md)。
+    1. [ギャラリーをカスタマイズします](customize-layout-sharepoint.md)。
     1. [フォームをカスタマイズします](customize-forms-sharepoint.md)。
 
 ## <a name="customize-a-locked-card"></a>ロックされたカードのカスタマイズ
 
-この手順では、カードのロックを解除せずに、 **[テキスト入力](controls/control-text-input.md)** コントロールを **[スライダー] (コントロール/コントロールスライダーの md**コントロール) に置き換えます。
+この手順では、カードのロックを解除せずに、**[Text-input](controls/control-text-input.md)** コントロールを **[Slider](controls/control-slider.md)** コントロールで置き換えます。
 
-1. 生成してカスタマイズしたアプリで、左側のナビゲーションバーの **[EditForm1]** を選択し、右側のウィンドウの **[プロパティ]** タブで **[フィールドの編集]** を選択します。
+1. 生成してカスタマイズしたアプリで、左側のナビゲーション バーで **EditForm1** を選択し、右側のウィンドウの**プロパティ** タブで**フィールドの編集**を選択します。
 
-1. フィールドの一覧で、 **[Number Of Employees]** の下矢印を選択し、 **[コントロールの種類]** の下の一覧を開きます。
+1. フィールドのリストで、**従業員数**の下矢印を選択し、**コントロールの種類**下のリストを開きます。
 
     > [!div class="mx-imgBorder"]
-    > 数値カードのオプションのドロップダウンリスト ![](./media/customize-card/card-selector.png)
+    > ![数値カードのオプションのドロップダウン リスト](./media/customize-card/card-selector.png)
 
-1. **[スライダーの編集]** を選択します。
+1. **スライダーを編集**を選択します。
 
     画面に変更内容が反映されます。
 
     > [!div class="mx-imgBorder"]
-    > スライダーコントロールを使用した EditForm1 の ![](./media/customize-card/add-slider.png)
+    > ![スライダー コントロールと EditForm1](./media/customize-card/add-slider.png)
 
 ## <a name="unlock-and-customize-a-card"></a>カードのロック解除とカスタマイズ
 
-この手順では、カードのロックを解除し、追加した**スライダー**コントロールの**Max**プロパティを更新します。
+この手順では、カードのロックを解除して、追加した**Slider** コントロールの **Max** プロパティを更新します。
 
-1. **EditForm1**で、 **Employees カードの数**の**スライダー**コントロールを選択します。
-
-    > [!div class="mx-imgBorder"]
-    > ![スライダーを選択し](./media/customize-card/select-slider.png)
-
-1. 右側のウィンドウの **[詳細設定]** タブで、ロックアイコンを選択してカードのロックを解除します。
+1. **EditForm1** で、**従業員数**カードの **Slider** コントロールを選択します。
 
     > [!div class="mx-imgBorder"]
-    > カードのロック解除 ![](./media/customize-card/lock-icon.png)
+    > ![スライダーを選択する](./media/customize-card/select-slider.png)
 
-1. **スライダー**コントロールの**Max**プロパティを1万に設定します。
-
-    > [!div class="mx-imgBorder"]
-    > [詳細設定] タブの [最大 ![] プロパティ](./media/customize-card/max-property.png)
-
-    **スライダー**コントロールにより、より正確な値が表示されます。
+1. 右側のウィンドウにある**詳細設定**タブで、ロック アイコンを選択してカードのロックを解除します。
 
     > [!div class="mx-imgBorder"]
-    > ![スライダーの範囲: 0 ~ 10000](./media/customize-card/final-slider.png)
+    > ![カードのロックを解除](./media/customize-card/lock-icon.png)
+
+1. **Slider** コントロールの **Max** プロパティを 10,000 に設定します。
+
+    > [!div class="mx-imgBorder"]
+    > ![詳細設定タブの Max プロパティ](./media/customize-card/max-property.png)
+
+    **Slider** コントロールはより正確な値を示します。
+
+    > [!div class="mx-imgBorder"]
+    > ![スライダー範囲 : 0-10,000](./media/customize-card/final-slider.png)
 
 ## <a name="next-steps"></a>次の手順
 
-これでアプリを生成し、ギャラリー、フォーム、カードをカスタマイズする方法の基礎を理解したので、[独自のアプリを新規に作成する](data-platform-create-app-scratch.md)ことができます。
+これで、アプリを生成し、ギャラリー、フォーム、カードをカスタマイズする方法の基本的な理解を得られたので、[独自のアプリを一から作成する](data-platform-create-app-scratch.md)ことができます。

@@ -14,16 +14,16 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: a1bffa509f382c2f706c2163d89c5788f8607ec7
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
-ms.translationtype: MT
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71993052"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "3303785"
 ---
 # <a name="use-the-entity-form-control"></a>エンティティ フォーム コントロールの使用
 **エンティティ フォーム** コントロールを使用して、Common Data Service エンティティに豊富なフォームを追加し、アプリをさらに短い期間で作成できます。
 
-**エンティティフォーム**コントロールの概要については、次のブログ投稿を参照してください。[Common Data Service の新しいエンティティフォームコントロール (試験的機能)](https://powerapps.microsoft.com/blog/new-entity-form-control-experimental-feature-for-common-data-service/)。
+**エンティティ フォーム** コントロールの概要については、[Common Data Service の新しいエンティティ フォーム (試験的機能)](https://powerapps.microsoft.com/blog/new-entity-form-control-experimental-feature-for-common-data-service/) のブログ投稿をご覧ください。
 
 > [!IMPORTANT]
 > このブログ投稿で記載されているとおり、**エンティティ フォーム** コントロールの試験的な性質に注意してください。また、少なくとも現時点では、**エンティティ フォーム** コントロールの実稼働アプリでの使用については慎重に検討してください。
@@ -35,29 +35,29 @@ ms.locfileid: "71993052"
 > [!NOTE]
 > 現在、Common Data Service 内のエンティティのみが**エンティティ フォーム** コントロールのデータ ソースとしてサポートされています。  
 
-**Pattern** – **エンティティ フォーム** コントロールで表示するフォームのスタイルを指定します。 **FormPattern** 列挙型を使用して、このプロパティを設定します。
+**Pattern** – **エンティティ フォーム** コントロールで表示するフォームのスタイルを指定します。 **FormPattern** 列挙体を使用して、このプロパティを設定します。
 
 * **FormPattern.List** – レコードの表形式のリストを表示します。
 * **FormPattern.CardList** – レコードのカード リストを表示します。
 * **FormPattern.Details** – 単一レコードの詳細を表示または編集するためのフォームを表示します。
-* **FormPattern.None** – スタイルが明示的に指定されていません。 既定値はタブレット アプリは **List**、携帯電話アプリは **CardList** です。
+* **FormPattern.None** – スタイルが明示的に指定されていません。 既定値は、タブレット アプリは **List**、携帯電話アプリは **CardList** です。
 
 **Item** – **エンティティ フォーム** コントロールが表示する必要のあるデータ ソース内のレコードを指定します。 このプロパティは、**Pattern** が **FormPattern.Details** に設定されている場合にのみ使用されます。
 
 **Selected**– 現在選択されているレコードを取得します。  
-例:**エンティティフォーム**コントロールに販売注文レコードの一覧が表示される場合、**選択**したプロパティによって、現在選択されているレコードが表示されます。 レコード内のフィールドにアクセスすることもできます。 (たとえば、選択したレコードの **Account** フィールドを **Selected.Account** として指定します。)
+例: **エンティティ フォーム**コントロールが販売注文レコードの一覧を表示する場合、**Selected** プロパティは現在選択されているレコードを指定します。 レコード内のフィールドにアクセスすることもできます。 (たとえば、選択したレコードの **Account** フィールドを **Selected.Account** として指定します。)
 
 **SelectableFields** – どのフィールドがリンクとして表示される必要があるかを指定します。 次の構文を使用して、このプロパティの値を設定します。  
 **{Field1Name : true, Field2Name : true}**  
-例:**Salesorderid**フィールドと**Account**フィールドをフォームのリンクとして表示する場合は、そのフォームの**selectablefields**プロパティを次の値に設定します。  
+例: フォームで **SalesOrderId** および **Account** フィールドをリンクとして表示するには、そのフォームの **SelectableFields** プロパティを次の値に設定します。  
 **{SalesOrderId : true, Account : true}**
 
 **SelectedField** – どのフィールドがクリックまたはタップされたかを特定します。 これは、**SelectableFields** として指定されたフィールドにのみ適用されます。  
-例:**Selectablefields**プロパティを **{salesorderid: true, account: true}** に設定し、ユーザーが**アカウント**フィールドをクリックまたはタップすると、 **[selectedfield. account]** が true に設定されます。
+例: **SelectableFields** プロパティを **{SalesOrderId : true, Account : true}** に設定し、ユーザーが **Account** フィールドをクリックまたはタップすると、**SelectedField.Account** が true に設定されます。
 
 **OnFieldSelect** – ユーザーがフィールドをクリックまたはタップしたときのアプリの応答方法。 これは、**SelectableFields** として指定されたフィールドにのみ適用されます。
 
-**Mode** – フォームのモードを決定します。 モードを変更するには、**ViewForm**、**EditForm**、または **NewForm** 関数を使用します。 これらの関数は、**Pattern** プロパティが **FormPattern.Details** に設定されている場合にのみ機能します。 **Mode** プロパティの値を **FormMode** 列挙型の値に設定します。
+**Mode** – フォームのモードを決定します。 モードを変更するには、**ViewForm**、**EditForm**、または **NewForm** 関数を使用します。 これらの関数は、**Pattern** プロパティが **FormPattern.Details** に設定されている場合にのみ機能します。 **Mode** プロパティの値を **FormMode** 列挙体の値に設定します。
 
 * **FormMode.View** – レコードを表示できますが、編集や追加はできません。
 * **FormMode.Edit** – レコードを編集できます。
@@ -65,12 +65,12 @@ ms.locfileid: "71993052"
 
 **OnSuccess** – データ操作が成功したときのアプリの応答方法。
 
-**OnFailure** – データ操作が失敗したときのアプリの応答方法。
+**OnFailure** - データ操作が失敗したときのアプリの応答方法。
 
 **Unsaved** – ユーザーが編集中のレコードに未保存の変更があるかどうかを特定します。
 
 ## <a name="related-functions"></a>関連する関数
-**エンティティ フォーム** コントロールまたは[編集フォーム コントロール](functions/function-form.md)のいずれかで、次の共有関数を使用できます。 これらの関数は、**Pattern** プロパティが **FormPattern.Details** に設定されている場合にのみ**編集フォーム** コントロールで機能します。
+**エンティティ フォーム** コントロールまたは[編集フォーム コントロール](functions/function-form.md)のいずれかで、次の共有関数を使用できます。 これらの関数は、**Pattern** プロパティが **FormPattern.Details** に設定されている場合にのみ**エンティティ フォーム** コントロールで機能します。
 
 **ViewForm** – **エンティティ フォーム** コントロールの **Mode** プロパティを **FormMode.View** に設定します。
 
@@ -87,7 +87,7 @@ ms.locfileid: "71993052"
 > [!NOTE]
 > Common Data Service データベースへのアクセス権がない場合は、以下の手順を行う前にアクセス権を取得してください。
 
-## <a name="display-a-list-of-records"></a>レコードの一覧を表示する
+## <a name="display-a-list-of-records"></a>レコードの一覧の表示
 次の 5 つの手順では、単一の、エンド ツー エンドの**エンティティ フォーム** コントロール使用方法の例を提供します。 この手順では、販売注文の一覧を表示するフォームを追加します。  
 
 1. 空白のタブレット アプリを作成します。
@@ -96,25 +96,25 @@ ms.locfileid: "71993052"
 2. 最初の画面 **SalesOrderListScreen** の名前を変更します。
    
     ![](media/entity-form-control/entityform-tutorial-01-02.png)
-3. **[挿入]** タブの **[フォーム]** をクリックまたはタップし、 **[エンティティ フォーム (試験段階)]** をクリックまたはタップします。  
+3. **挿入**タブの**フォーム**をクリックまたはタップし、**エンティティ フォーム (実験段階)** をクリックまたはタップします。  
    
     **エンティティ フォーム** コントロールが画面に追加されます。  
    
     ![](media/entity-form-control/entityform-tutorial-01-03.png)
 4. **エンティティ フォーム** コントロール **SalesOrderListForm** の名前を変更し、画面全体をカバーするサイズに変更します。
-5. 右側のウィンドウで、テキスト **[データ ソースが選択されていません ]** の横にあるデータベース アイコンをクリックまたはタップしてから、 **[データ ソースの追加]** をクリックまたはタップします。  
+5. 右側のウィンドウで、テキスト **データ ソースが選択されていません**の横にあるデータベース アイコンをクリックまたはタップしてから、**データ ソースの追加**をクリックまたはタップします。  
    
     ![](media/entity-form-control/entityform-tutorial-01-04.png)
 6. 接続の一覧で、データベースの接続をクリックまたはタップします。  
    
     ![](media/entity-form-control/entityform-tutorial-01-05.png)
-7. エンティティの一覧で、 **[販売注文]** をクリックまたはタップしてから、 **[接続]** をクリックまたはタップします。  
+7. エンティティの一覧で、**販売注文**をクリックまたはタップしてから、**接続**をクリックまたはタップします。  
    
     **販売注文**エンティティのデータ ソースが作成され、**SalesOrderListForm** の **DataSource** プロパティがそのデータ ソースに設定されます。
    
     ![](media/entity-form-control/entityform-tutorial-01-06.png)  
    
-    **エンティティ フォーム**コントロールが販売注文の一覧を表示します。 **エンティティ フォーム**コントロールを使用して、手動で構築することなく、リスト フォームをすばやく表示しました。
+    **エンティティ フォーム** コントロールが販売注文の一覧を表示します。 **エンティティ フォーム** コントロールを使用して、手動で構築することなく、リスト フォームをすばやく表示しました。
    
     ![](media/entity-form-control/entityform-tutorial-01-07.png)  
    
@@ -145,17 +145,17 @@ ms.locfileid: "71993052"
     ![](media/entity-form-control/entityform-tutorial-01-13.png)  
 
 ## <a name="configure-a-field-to-navigate-to-another-screen"></a>別の画面に移動するためのフィールドの構成
-次は、アプリにさらに画面を追加してから、**エンティティ フォーム** コントロールのフィールドを構成して、アプリでフィールドをクリックまたはタップしたときに、別の画面に移動するようにしましょう。  
+次は、アプリにさらに画面を追加してから、**エンティティ フォーム** コントロールのフィールドを構成して、ユーザーがフィールドをクリックまたはタップしたときに、アプリ内の別の画面に移動するようにしましょう。  
 
 1. 2 つ目の画面をアプリに追加し、画面 **SalesOrderDetailsScreen** の名前を変更します。
 2. **SalesOrderDetailsForm** を切り取って **SalesOrderDetailsScreen** に貼り付け、上部のにあるアイコンのスペースを確保した状態で、画面の大部分がカバーされるようにフォームのサイズを変更します。
-3. **SalesOrderDetailsScreen** の左上隅近くに、左向き矢印アイコンを追加します。
-4. 左向き矢印アイコンの **OnSelect** プロパティを [**Back**](functions/function-navigate.md) 関数に設定します。  
+3. **SalesOrderDetailsScreen** の左上隅近くに、戻る矢印アイコンを追加します。
+4. 戻る矢印アイコンの **OnSelect** プロパティを [**Back**](functions/function-navigate.md) 関数に設定します。  
    
     ![](media/entity-form-control/entityform-tutorial-01-14.png)
 5. **SalesOrderListScreen** で、**SalesOrderListForm** のサイズを変更し、画面全体がカバーされるようにします。
 6. **SalesOrderListForm** をクリックまたはタップして選択します。
-7. 右側のウィンドウの **[フィールド]** の下で、**SalesOrderId** を設定して **SalesOrderDetailsScreen** に移動するようにします。  
+7. 右側のウィンドウの**フィールド**の下で、**SalesOrderId** を設定して **SalesOrderDetailsScreen** に移動するようにします。  
    
     ![](media/entity-form-control/entityform-tutorial-01-15.png)
    
@@ -170,12 +170,12 @@ ms.locfileid: "71993052"
    
     ![](media/entity-form-control/entityform-tutorial-01-18.png)  
    
-    別の販売注文の詳細を表示するには、左向き矢印をクリックまたはタップして一覧に戻り、詳細を表示する注文のリンクをクリックまたはタップします。
+    別の販売注文の詳細を表示するには、戻る矢印をクリックまたはタップして一覧に戻り、詳細を表示する注文のリンクをクリックまたはタップします。
 
 ## <a name="navigate-with-a-context-variable"></a>コンテキストの変数を使用した移動
 **SalesOrderDetailsForm** の **Item** プロパティは、ユーザーが **SalesOrderListForm** で選択したレコードの詳細が **SalesOrderDetailsForm** で表示されるように **SalesOrderListForm.Selected** に設定されています。 移動するフィールドを構成するためにフォームのカスタマイズ ウィンドウを使用するときに自動的に作成される **NavigationContext** コンテキストの変数を使用して、選択したレコードのコンテキストを取得することもできます。  
 
-1. **SalesOrderDetailsForm** の **Item** プロパティを **SalesOrderListForm.Selected** に変更します。
+1. **SalesOrderDetailsForm** の **Item** プロパティを **NavigationContext** に変更します。
    
     ![](media/entity-form-control/entityform-tutorial-01-19.png)
 2. F5 を押してアプリをプレビューしてから、販売注文の一覧にあるリンクをクリックまたはタップします。
@@ -190,7 +190,7 @@ ms.locfileid: "71993052"
 
 これは、フォームのカスタマイズ ウィンドウを使用して **SalesOrderId** フィールドを **SalesOrderDetailsScreen** に移動するようにしたときに、自動的に設定されています。 そのため、**SalesOrderId** フィールド内の値がリンクとして表示されます。
 
-**SalesOrderListForm**の**onfieldselect**プロパティは、ユーザーが**Sales order ID**フィールドをクリックまたはタップするかどうかを決定する[**If**](functions/function-if.md)関数に設定されています。**SalesOrderListForm = true**を入力します。  
+**SalesOrderListForm** の **OnFieldSelect** プロパティは [**If**](functions/function-if.md) 関数に設定され、これによりユーザーが**販売注文 ID** フィールド: **SalesOrderListForm.SelectedField.SalesOrderId = true** をクリックするかタップするかが決定されます。  
 
 この関数が true として評価される場合、**SalesOrderDetailsScreen** は以前使用した **NavigationContext** というコンテキストの変数で開きます。  
 
@@ -217,12 +217,12 @@ ms.locfileid: "71993052"
 3. F5 キーを押してアプリをプレビューし、**販売注文 ID** リンクをクリックまたはタップして販売注文の詳細を表示してから、編集アイコンをクリックまたはタップします。  
    
     レコードを編集できるように、**エンティティ フォーム** コントロールの **Mode** が **FormMode.Edit** に設定されています。
-4. **[注文状況]** を **[請求書]** に更新します。  
+4. **注文状況** を**請求書**に更新します。  
    
     ![](media/entity-form-control/entityform-tutorial-01-24.png)
-5. **[販売担当者]** を **[WRK014]** に更新します。
+5. **販売担当者**を **WRK014** に更新します。
    
-    **[販売担当者]** の選択をサポートするため、**エンティティ フォーム** コントロールによって自動的に詳細な検索がレンダリングされます。 この検索を生成および表示するため、このコントロールでは Common Data Service の**ワーカー**エンティティの **DefaultLookup** フィールド グループが使用されます。 **[販売担当者]** フィールドの種類が **[ワーカー]** であるため、**ワーカー** エンティティが使用されます。
+    **販売担当者**の選択をサポートするため、**エンティティ フォーム** コントロールによって自動的に詳細な検索がレンダリングされます。 この検索を生成および表示するため、このコントロールでは Common Data Service の**ワーカー** エンティティの **DefaultLookup** フィールド グループが使用されます。 **販売担当者**フィールドの種類が**ワーカー**であるため、**ワーカー** エンティティが使用されます。
    
     ![](media/entity-form-control/entityform-tutorial-01-25.png)
 6. チェックマーク アイコンをクリックまたはタップして、変更を保存します。
