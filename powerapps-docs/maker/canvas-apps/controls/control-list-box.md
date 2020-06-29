@@ -1,6 +1,6 @@
 ---
 title: 'リスト ボックス コントロール: リファレンス | Microsoft Docs'
-description: 各種プロパティとサンプルを含む、リスト ボックス コントロールに関する情報です
+description: プロパティとサンプルを含む、リスト ボックス コントロールに関する情報
 author: chmoncay
 manager: kvivek
 ms.service: powerapps
@@ -15,170 +15,170 @@ search.app:
 - PowerApps
 ms.openlocfilehash: 0e55963dfb93e3bfe913b53f90160cb87ed147d8
 ms.sourcegitcommit: c0508e233a03ac4846c04d5caae79eccca3e2843
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 04/15/2020
-ms.locfileid: "81385283"
+ms.locfileid: "3309328"
 ---
-# <a name="list-box-control-in-power-apps"></a>Power Apps のリスト ボックス コントロール
-ユーザーが 1 つまたは複数の項目を選択できるリストです。
+# <a name="list-box-control-in-power-apps"></a>Power Apps でのリスト ボックス コントロール
+ユーザーが 1 つまたは複数の項目を選択できるリスト。
 
-## <a name="description"></a>説明
-**リスト ボックス** コントロールは、使用可能なすべての選択肢が常に表示されており ( **[ドロップ ダウン](control-drop-down.md)** コントロールと異なる点)、ユーザーは一度に複数の項目を選択できます ( **[ラジオ](control-radio.md)** コントロールと異なる点)。
+## <a name="description"></a>内容
+**リスト ボックス** コントロールでは、使用可能なすべての選択肢が常に表示されており (**[ドロップ ダウン](control-drop-down.md)** コントロールと異なる)、ユーザーは一度に複数の項目を選択できます (**[ラジオ](control-radio.md)** コントロールと異なる)。
 
 ## <a name="key-properties"></a>主要なプロパティ
 **[Default](properties-core.md)** – ユーザーが変更する前のコントロールの初期値です。
 
-**[Items](properties-core.md)** – ギャラリー、リスト、グラフなどのコントロールに表示されるデータのソースです。
+**[項目](properties-core.md)** – ギャラリー、リスト、グラフなどのコントロールに表示されるデータのソース。
 
-**Selected** – 選択された項目を表すデータ レコードです。  既定で選択できる項目は 1 つのみです。  複数の項目を選択する必要がある場合は、[コンボ ボックス](control-combo-box.md) コントロールを使用します。
+**選択済** – 選択された項目を表すデータ レコード。  既定で選択できる項目は 1 つのみです。  複数の選択した項目が必要な場合は、[コンボ ボックス](control-combo-box.md) コントロールを使用してください。
 
-ギャラリー、リスト、またはグラフを追加すると、既定ではプロパティの一覧に**項目**が表示されます。新しいコントロールに表示されるデータを簡単に指定できます。 たとえば、ギャラリーの **Items** プロパティは、Salesforce の **Account** テーブルや、Excel で作成してクラウドにアップロードした **在庫管理** という名前の表や、**カンファレンスの講師**と名前をつけた SharePoint リストなどに設定できます。
+ギャラリー、リスト、またはグラフを追加すると、既定ではプロパティの一覧に**項目**が表示され、新しいコントロールに表示されるデータを簡単に指定できます。 たとえば、ギャラリーの**項目**プロパティは Salesforce の**取引先企業**テーブル、Excel で作成されクラウドにアップロードされた **在庫**という名前の表、または **ConferenceSpeakers** という名前の SharePoint リストに設定する場合があります。
 
-## <a name="additional-properties"></a>その他のプロパティ
-**[AccessibleLabel](properties-accessibility.md)** – スクリーン リーダー用のラベルです。
+## <a name="additional-properties"></a>追加のプロパティ
+**[AccessibleLabel](properties-accessibility.md)** – スクリーン リーダー用のラベル。
 
-**[BorderColor](properties-color-border.md)** – コントロールの境界線の色です。
+**[BorderColor](properties-color-border.md)** – コントロールの境界線の色。
 
-**[BorderStyle](properties-color-border.md)** – コントロールの境界線を **Solid** (実線)、**Dashed** (破線)、**Dotted** (点線)、**None** (なし) のいずれに指定します。
+**[BorderStyle](properties-color-border.md)** – コントロールの境界線が**実線**、**破線**、**点線**、または**なし**かどうか。
 
-**[BorderThickness](properties-color-border.md)** – コントロールの境界線の太さです。
+**[BorderThickness](properties-color-border.md)** – コントロールの境界線の太さ。
 
-**[Color](properties-color-border.md)** – コントロールのテキストの色です。
+**[色](properties-color-border.md)** – コントロールのテキストの色。
 
-**[DisplayMode](properties-core.md)** – コントロールで、ユーザー入力を許可するか (**Edit**)、データの表示のみを許可するか (**View**)、許可しないか (**Disabled**) を設定します。
+**[DisplayMode](properties-core.md)** – コントロールがユーザー入力を許可するか (**編集**)、データのみを表示するか (**表示**)、または無効にするか (**無効**) どうか。
 
-**[DisabledBorderColor](properties-color-border.md)** – コントロールの **[DisplayMode](properties-core.md)** プロパティが **Disabled** に設定されている場合のコントロールの境界線の色です。
+**[DisabledBorderColor](properties-color-border.md)** – コントロールの **[DisplayMode](properties-core.md)** プロパティが**無効**に設定されている場合のコントロールの境界線の色。
 
-**[DisabledColor](properties-color-border.md)** – コントロールの **[DisplayMode](properties-core.md)** プロパティが **Disabled** に設定されている場合のコントロール内のテキストの色です。
+**[DisabledColor](properties-color-border.md)** – コントロールの **[DisplayMode](properties-core.md)** プロパティが**無効**に設定されている場合のコントロール内のテキストの色。
 
-**[DisabledFill](properties-color-border.md)** – コントロールの **[DisplayMode](properties-core.md)** プロパティが **Disabled** に設定されている場合のコントロールの背景色です。
+**[DisabledFill](properties-color-border.md)** – コントロールの **[DisplayMode](properties-core.md)** プロパティが**無効**に設定されている場合のコントロールの背景色。
 
-**[Fill](properties-color-border.md)** – コントロールの背景色です。
+**[塗りつぶし](properties-color-border.md)** – コントロールの背景色。
 
-**[FocusedBorderColor](properties-color-border.md)** – コントロールにフォーカスがあるときのコントロールの境界線の色です。
+**[FocusedBorderColor](properties-color-border.md)** – コントロールがフォーカスされているときのコントロールの境界線の色。
 
-**[FocusedBorderThickness](properties-color-border.md)** – コントロールにフォーカスがあるときのコントロールの境界線の太さです。
+**[FocusedBorderThickness](properties-color-border.md)** – コントロールがフォーカスされているときのコントロールの境界線の太さ。
 
-**[Font](properties-text.md)** – テキストを表記するフォントのファミリー名です。
+**[フォント](properties-text.md)** – テキストを表示するフォントのファミリーの名前。
 
-**[FontWeight](properties-text.md)** – コントロール内のテキストの太さです。**Bold** (太字)、**Semibold** (中太)、**Normal** (標準)、**Lighter** (細字) から指定します。
+**[FontWeight](properties-text.md)** – コントロール内のテキストの太さ: **太字**、**中太**、**標準**、または**細字**。
 
-**[Height](properties-size-location.md)** – コントロールの上端と下端の距離です。
+**[高さ](properties-size-location.md)** – コントロールの上端と下端間の距離。
 
-**[HoverBorderColor](properties-color-border.md)** – コントロール上にユーザーがマウス ポインターを重ねているときのコントロールの境界線の色です。
+**[HoverBorderColor](properties-color-border.md)** – ユーザーがコントロール上にマウス ポインターを重ねているときのコントロールの境界線の色。
 
-**[HoverColor](properties-color-border.md)** – コントロールにユーザーがマウス ポインターを重ねているときのコントロール内のテキストの色です。
+**[HoverColor](properties-color-border.md)** – ユーザーがコントロールにマウス ポインターを重ねているときのコントロール内のテキストの色。
 
-**[HoverFill](properties-color-border.md)** – コントロールにユーザーがマウス ポインターを重ねているときのコントロールの背景色です。
+**[HoverFill](properties-color-border.md)** – ユーザーがコントロールにマウス ポインターを重ねているときのコントロールの背景色。
 
-**[Italic](properties-text.md)** – コントロール内のテキストを斜体にするかどうかを指定します。
+**[斜体](properties-text.md)** – コントロール内のテキストを斜体にするかどうか。
 
-**ItemPaddingLeft** – リスト ボックス内のテキストと左端の間の距離です。
+**ItemPaddingLeft** – リストボックス内のテキストと左端の間の距離。
 
-**[LineHeight](properties-text.md)** – テキストの行間やリスト内の項目間などの距離です。
+**[LineHeight](properties-text.md)** – たとえば、テキストの行間またはリスト内の項目間などの距離です。
 
-**[OnChange](properties-core.md)** – ユーザーが (スライダーを調整するなどして) コントロールの値を変更した場合のアプリの反応を指定します。
+**[OnChange](properties-core.md)** – ユーザーが (たとえば、スライダーを調整するなどして) コントロールの値を変更した場合のアプリの反応を指定します。
 
-**[OnSelect](properties-core.md)** – ユーザーがコントロールをタップまたはクリックした場合のアプリの反応を指定します。
+**[OnSelect](properties-core.md)** – ユーザーがコントロールをタップまたはクリックする場合のアプリの反応方法。
 
-**[PaddingBottom](properties-size-location.md)** – コントロール内のテキストとそのコントロールの下端間の距離です。
+**[PaddingBottom](properties-size-location.md)** – コントロール内のテキストとそのコントロールの下端間の距離。
 
-**[PaddingLeft](properties-size-location.md)** – コントロール内のテキストとそのコントロールの左端間の距離です。
+**[PaddingLeft](properties-size-location.md)** – コントロール内のテキストとそのコントロールの左端間の距離。
 
-**[PaddingRight](properties-size-location.md)** – コントロール内のテキストとそのコントロールの右端間の距離です。
+**[PaddingRight](properties-size-location.md)** – コントロール内のテキストとそのコントロールの右端間の距離。
 
-**[PaddingTop](properties-size-location.md)** – コントロール内のテキストとそのコントロールの上端間の距離です。
+**[PaddingTop](properties-size-location.md)** – コントロール内のテキストとそのコントロールの上端間の距離。
 
-**[PressedBorderColor](properties-color-border.md)** – コントロールをユーザーがタップまたはクリックしたときのコントロールの境界線の色です。
+**[PressedBorderColor](properties-color-border.md)** – ユーザーがコントロールをタップまたはクリックしたときのコントロールの境界線の色。
 
-**[PressedColor](properties-color-border.md)** – コントロールをユーザーがタップまたはクリックしたときのコントロール内のテキストの色です。
+**[PressedColor](properties-color-border.md)** – ユーザーがコントロールをタップまたはクリックしたときのコントロール内のテキストの色。
 
-**[PressedFill](properties-color-border.md)** – コントロールをユーザーがタップまたはクリックしたときのコントロールの背景色です。
+**[PressedFill](properties-color-border.md)** – ユーザーがコントロールをタップまたはクリックしたときのコントロールの背景色。
 
 **[Reset](properties-core.md)** – コントロールを既定値に戻すかどうかを指定します。
 
-**Selected** – 選択された項目を表すデータ レコードです。  既定で選択できる項目は 1 つのみです。  複数の項目を選択する必要がある場合は、[コンボ ボックス](control-combo-box.md) コントロールを使用します。
+**選択済** – 選択された項目を表すデータ レコード。  既定で選択できる項目は 1 つのみです。  複数の選択した項目が必要な場合は、[コンボ ボックス](control-combo-box.md) コントロールを使用してください。
 
-**SelectedItems** - **読み取り**専用です。 複数選択のリストボックスに対して選択された項目の datatable を表します。
+**SelectedItems** - **読み取り専用**。 複数選択リストボックスの選択された項目のデータテーブルを表します。
 
-**SelectedItemsText** - **読み取り**専用です。 複数選択のリストボックスの選択項目テキストの datatable を表します。
+**SelectedItemsText** - **読み取り専用**。 複数選択リストボックスの選択された項目テキストのデータテーブルを表します。
 
-**SelectedText (非推奨)** – 選択した項目を表す文字列値です。
+**SelectedText (非推奨)** – 選択した項目を表す文字列値。
 
-**[SelectionColor](properties-color-border.md)** – リスト内で選択された項目のテキストの色、またはペン コントロールの選択ツールの色です。
+**[SelectionColor](properties-color-border.md)** – リスト内で選択された項目のテキストの色、またはペン コントロールの選択ツールの色。
 
-**[SelectionFill](properties-color-border.md)** – リストで選択された項目またはペン コントロールの選択領域の背景色です。
+**[SelectionFill](properties-color-border.md)** – 選択された項目、またはリストの項目、またはペン コントロールの選択領域の背景色。
 
-**SelectMultiple** – ユーザーがリスト ボックスの複数の項目を選択できるかどうかを指定します。
+**SelectMultiple** – ユーザーがリストボックスの複数の項目を選択できるかどうか。
 
-**[Size](properties-text.md)** – コントロールに表示されるテキストのフォント サイズです。
+**[サイズ](properties-text.md)** – コントロールに表示されるテキストのフォント サイズ。
 
-**[Strikethrough](properties-text.md)** – コントロールに表示されるテキストに取り消し線を付けるかどうかを指定します。
+**[Strikethrough](properties-text.md)** – コントロールに表示されるテキストに取り消し線を付けるかどうか。
 
-**[TabIndex](properties-accessibility.md)** – 他のコントロールに関連するキーボード ナビゲーションの順序です。
+**[TabIndex](properties-accessibility.md)** – 他のコントロールに関連するキーボード ナビゲーションの順序。
 
-**[Tooltip](properties-core.md)** – ユーザーがポインターをコントロールに合わせたときに表示される説明テキストです。
+**[ツールヒント](properties-core.md)** – ユーザーがコントロールにカーソルを置くときに表示される説明テキスト。
 
-**[Underline](properties-text.md)** – コントロールに表示されるテキストの下に線を引くかどうかを指定します。
+**[下線](properties-text.md)** – コントロールに表示されるテキストの下に線を引くかどうか。
 
-**[Visible](properties-core.md)** – コントロールを表示するか非表示にするかを指定します。
+**[表示](properties-core.md)** – コントロールが表示されるか非表示になるか。
 
-**[Width](properties-size-location.md)** – コントロールの左端と右端の間の距離です。
+**[幅](properties-size-location.md)** – コントロールの左端と右端間の距離。
 
-**[X](properties-size-location.md)** – コントロールの左端とその親コンテナー (親コンテナーがない場合は画面) の左端間の距離です。
+**[X](properties-size-location.md)** – コントロールの左端とその親コンテナー (親コンテナーがない場合は画面) の左端間の距離。
 
-**[Y](properties-size-location.md)** – コントロールの上端とその親コンテナー (親コンテナーがない場合は画面) の上端間の距離です。
+**[Y](properties-size-location.md)** – コントロールの上端とその親コンテナー (親コンテナーがない場合は画面) の上端間の距離。
 
 ## <a name="related-functions"></a>関連する関数
 [**Distinct**( *DataSource*, *ColumnName* )](../functions/function-distinct.md)
 
 ## <a name="example"></a>例
-1. **リスト ボックス** コントロールを追加して **CategoryList** という名前を付け、 **[Items](properties-core.md)** プロパティを次の式に設定します。<br>
-   **["Carpet","Hardwood","Tile"]**
+1. **リスト ボックス** コントロールを追加し、**CategoryList** という名前を付け、**[項目](properties-core.md)** プロパティを次の式に設定します:<br>
+   **["カーペット","硬木","タイル"]**
    
-    [コントロールの追加、命名、構成についてはこちらをご覧ください](../add-configure-controls.md)。
+    [コントロールの追加、名前付け、構成](../add-configure-controls.md) についてはこちらをご覧ください。
    
     ![リスト ボックス内の床のカテゴリ](./media/control-list-box/category-listbox.png)
 2. 3 つの **[ドロップ ダウン](control-drop-down.md)** コントロールを追加し、**CategoryList** の下に移動して、**CarpetList**、**HardwoodList**、**TileList** という名前を付けます。
-3. 各 **[ドロップ ダウン](properties-core.md)** コントロールの **[Items](control-drop-down.md)** プロパティに、次の値の 1 つを設定します。
+3. 各 **[ドロップ ダウン](control-drop-down.md)** コントロールの **[項目](properties-core.md)** プロパティに、次の値の 1 つを設定します:
    
    * CarpetList: **["Caserta Stone Beige","Ageless Beauty Clay", "Lush II Tundra"]**
    * HardwoodList: **["Golden Teak","Natural Hickory", "Victoria Mahogany"]**
    * TileList: **["Honey Onyx Marble","Indian Autumn Slate", "Panaria Vitality Ceramic"]**
      
-     ![ドロップダウン リストの床の名前](./media/control-list-box/flooring-names.png)
-4. 各 **[ドロップ ダウン](properties-core.md)** コントロールの **[Visible](control-drop-down.md)** プロパティに、次の値の 1 つを設定します。
+     ![ドロップダウン リストの床材の名前](./media/control-list-box/flooring-names.png)
+4. 各 **[ドロップ ダウン](control-drop-down.md)** コントロールの **[表示](properties-core.md)** プロパティに、次の値の 1 つを設定します:
    
    * CarpetList: **If("Carpet" in CategoryList.SelectedItems.Value, true)**
    * HardwoodList: **If("Hardwood" in CategoryList.SelectedItems.Value, true)**
    * TileList: **If("Tile" in CategoryList.SelectedItems.Value, true)**
      
-     **[If](../functions/function-if.md)** 関数や[その他の関数](../formula-reference.md)については各関連記事を参照してください。
-5. F5 キーを押し、**CategoryList** で 1 つまたは複数の項目を選択します。
+     **[If](../functions/function-if.md)** 関数または [その他の関数](../formula-reference.md) の詳細については各関連記事を参照してください。
+5. F5 キーを押してから、**CategoryList** で 1 つまたは複数の項目を選択します。
    
     選択に基づいて、適切な **[ドロップ ダウン](control-drop-down.md)** コントロールが表示されます。
    
-    ![ドロップダウン リストの床の名前](./media/control-list-box/selected-lists.png)
-6. (省略可能) Esc キーを押して既定のワークスペースに戻ります。
+    ![ドロップダウン リストの床材の名前](./media/control-list-box/selected-lists.png)
+6. (オプション) Esc キーを押して既定のワークスペースに戻ります。
 
 
-## <a name="accessibility-guidelines"></a>アクセシビリティのガイドライン
+## <a name="accessibility-guidelines"></a>アクセシビリティ ガイドライン
 ### <a name="color-contrast"></a>色のコントラスト
-以下の間には適切な色のコントラストが必要です。
+次の間には適切な色のコントラストが必要です:
 * **SelectionColor** と **SelectionFill**
-* **SelectionFill** と **[Fill](properties-color-border.md)**
-* **[HoverFill](properties-color-border.md)** と **[Fill](properties-color-border.md)**
-* **[PressedFill](properties-color-border.md)** と **[Fill](properties-color-border.md)**
+* **SelectionFill** と **[塗りつぶし](properties-color-border.md)**
+* **[HoverFill](properties-color-border.md)** と **[塗りつぶし](properties-color-border.md)**
+* **[PressedFill](properties-color-border.md)** と **[塗りつぶし](properties-color-border.md)**
 
-これは、[標準の色のコントラスト要件](../accessible-apps-color.md)に追加されるものです。
+これは、[標準の色のコントラスト要件](../accessible-apps-color.md) に追加されるものです。
 
-### <a name="screen-reader-support"></a>スクリーン リーダーのサポート
+### <a name="screen-reader-support"></a>スクリーン リーダー サポート
 * **[AccessibleLabel](properties-accessibility.md)** が存在する必要があります。
 
 ### <a name="keyboard-support"></a>キーボードのサポート
 * **[TabIndex](properties-accessibility.md)** を 0 以上にして、キーボード ユーザーがそこに移動できるようにする必要があります。
-* フォーカス インジケーターは明確に表示する必要があります。 これを実現するには **[FocusedBorderColor](properties-color-border.md)** と **[FocusedBorderThickness](properties-color-border.md)** を使用します。
+* フォーカス インジケーターは明確に表示する必要があります。 これを実現するには **[FocusedBorderColor](properties-color-border.md)** および **[FocusedBorderThickness](properties-color-border.md)** を使用します。
 
     > [!NOTE]
-  > Tab キーを押すと、**リスト ボックス**に移動またはリスト ボックスから移動します。 方向キーを押すと、**リスト ボックス**の別の内容に移動します。
+  > Tab キーを押すと、**リスト ボックス**に移動またはリスト ボックスから移動します。 矢印キーを押すと、**リスト ボックス**の内容に移動します。

@@ -1,56 +1,70 @@
 ---
 title: キャンバス アプリを削除する | Microsoft Docs
-description: Power Apps で既存のキャンバスアプリを削除する方法
+description: Power Apps から既存のキャンバス アプリを削除する方法
 author: tapanm-msft
 manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: tapanm
-ms.date: 11/18/2019
-ms.author: litran
+ms.date: 05/08/2020
+ms.author: alaug
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: c58ff613afb98efdce86135941b66b42c7dbff04
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
-ms.translationtype: MT
+ms.openlocfilehash: 7cc275f50e5c972041e523c6e1118f53dffddccc
+ms.sourcegitcommit: 3448869b74152e01a58f61c37d4361d8ae8bb09d
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74731640"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "3354022"
 ---
-# <a name="delete-a-canvas-app-from-power-apps"></a>Power Apps からキャンバスアプリを削除する
-この記事では、Power Apps アカウントからキャンバスアプリを削除する方法と、アプリが共有された相手のアカウントからキャンバスアプリを削除する方法について説明します。
+# <a name="delete-a-canvas-app-from-power-apps"></a>Power Apps からキャンバス アプリを削除する
 
-## <a name="delete-an-app-from-your-account"></a>アカウントからアプリを削除する
-1. [Powerapps.com](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)を開き、左側の**ツリービュー**ウィンドウで **[アプリ]** を選択します。
-   
-    ![選ぶ](./media/delete-app/file-apps.png)
-2. optional右上隅にあるアプリの一覧をフィルター処理して、自分が所有しているアプリまたは投稿先のアプリのみを表示します。
-   
+この記事では、キャンバス アプリを削除する方法について説明します。
+
+## <a name="delete-an-app-as-the-owner"></a>所有者としてアプリを削除する
+
+1. [Power Apps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインします。
+
+1. 左側のウィンドウから、**アプリ**を選択します。
+
+    ![アプリ](./media/delete-app/file-apps.png)
+
+1. (オプション) 右上隅の近くで、アプリのリストをフィルター処理して、所有しているアプリのみを表示します。
+
     ![アプリ フィルター](./media/delete-app/filter-list.png)
-   
-    > [!NOTE]
-   > 削除するアプリが表示されない場合は、適切な環境を使用していることを確認してください。
-3. 削除するアプリの [**その他のコマンド**(...)] を選択します。
-   
-    ![その他のコマンド](./media/delete-app/app-options.png)
-4. ごみ箱アイコンを選択して、アプリを削除します。
-   
-    ![デリート](./media/delete-app/delete-icon.png)
-   
-    > [!NOTE]
-   > アプリを削除するには、アプリに対する**共同作成者**のアクセス許可が必要です。
-5. 表示されるダイアログボックスで、 **[クラウドから削除]** を選択します。  
-   
+
+   > [!NOTE]
+   > 削除するアプリが表示されない場合は、適切な環境にいることを確認してください。
+
+1. アプリを選択します。
+
+    ![アプリの選択](./media/delete-app/select-app.png)
+
+1. トップ メニューから、**削除**を選択します。 **その他のコマンド** (**...**) を選択してから、代わりに**削除**を選択することもできます。
+
+    ![削除を選択する](./media/delete-app/select-delete.png)
+
+1. **クラウドから削除**を選択します。  
+
+    ![クラウドから削除](./media/delete-app/delete-app.png)
+
     > [!IMPORTANT]
-   > この操作を実行すると、自身のアカウントだけでなく、アプリを共有する全ユーザーのアカウントからも対象のアプリが完全に削除されます。
-   
-    ![クラウドから削除](./media/delete-app/delete-button.png)
+    > この操作を実行すると、自身のアカウントだけでなく、アプリを共有する全ユーザーのアカウントからも対象のアプリが削除されます。
 
-## <a name="more-resources"></a>その他のリソース
-[アプリを共有する](share-app.md)  
-[アプリ名とタイルを変更する](set-name-tile.md)  
-[アプリを以前のバージョンに復元する](restore-an-app.md)  
+## <a name="delete-an-app-as-the-administrator"></a>管理者としてアプリを削除する
 
+アプリの所有者がいない場合、グローバル管理者、Azure Active Directory のグローバル管理者、または Dynamics 365 のサービス管理者などがアプリの所有者を設定できます。 そして、[新しい所有者はアプリを削除できます](#delete-an-app-as-the-owner)。
+
+ユーザーをアプリの所有者として設定するには、[管理者向けの Power Apps コマンドレット](https://docs.microsoft.com/power-platform/admin/powerapps-powershell)を使用してください。
+
+> [!TIP]
+> アプリが[検出可能](https://docs.microsoft.com/power-platform/admin/powerapps-powershell#display-a-list-of-deleted-power-apps-in-an-environment)である限り、[管理者向け Power Apps コマンドレット](https://docs.microsoft.com/power-platform/admin/powerapps-powershell#recover-a-deleted-canvas-app)を使用して、削除したキャンバス アプリを復元することもできます。
+
+### <a name="see-also"></a>関連項目
+
+[アプリの共有](share-app.md)  
+[アプリ名とタイルの変更](set-name-tile.md)  
+[アプリを以前のバージョンに復元する](restore-an-app.md)

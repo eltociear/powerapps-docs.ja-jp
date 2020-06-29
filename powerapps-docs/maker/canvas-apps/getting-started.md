@@ -1,60 +1,60 @@
 ---
-title: キャンバス アプリとは | Microsoft Docs
-description: ユーザーがブラウザーまたはモバイルデバイスで基幹業務データを管理できるように、Power Apps でキャンバスアプリを設計およびビルドする
+title: キャンバス アプリとは  | Microsoft Docs
+description: Power Apps でキャンバス アプリを設計して構築し、ユーザーがブラウザーまたはモバイル デバイスで基幹業務データを管理できるようにします
 author: tapanm-msft
 manager: kvivek
 ms.service: powerapps
 ms.topic: overview
 ms.custom: canvas
 ms.reviewer: ''
-ms.date: 04/26/2018
+ms.date: 04/27/2020
 ms.author: tapanm
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 543084f04e2c5456182a17f4f193c5cf722cbe27
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
-ms.translationtype: MT
+ms.openlocfilehash: 2a6ce3a3a353a2771696f38a6f0878c6daf9e0ed
+ms.sourcegitcommit: 9f83d4c09f09256493bc5d49c7b4a4fc02d9342a
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74729524"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "3309788"
 ---
-# <a name="what-are-canvas-apps-in-power-apps"></a>Power Apps のキャンバスアプリとは
-などC#の従来のプログラミング言語でコードを記述することなく、Microsoft Power Apps のキャンバスからビジネスアプリを設計して構築します。 PowerPoint のスライドを設計する場合と同じように、要素をキャンバスにドラッグ アンド ドロップして、アプリを設計します。 ロジックを指定し、データを処理するための Excel のような式を作成します。 [Microsoft とサード パーティのさまざまなソース](connections-list.md)からビジネス データを統合するアプリを構築します。 アプリを共有して、ユーザーがブラウザーやモバイル デバイスで実行できるようにします。また、アプリを埋め込んで、ユーザーが SharePoint、Power BI、Teams で実行できるようにします。
+# <a name="what-are-canvas-apps-in-power-apps"></a>Power Apps のキャンバス アプリとは?
+C# などの従来のプログラミング言語でコードを書くことなく、Microsoft Power Apps でキャンバスからビジネス アプリを設計して構築します。 PowerPoint のスライドを設計する場合と同じように、要素をキャンバスにドラッグ アンド ドロップして、アプリを設計します。 ロジックを指定し、データを処理するための Excel のような式を作成します。 [Microsoft とサード パーティのさまざまなソース](connections-list.md) からビジネス データを統合するアプリを構築します。 アプリを共有して、ユーザーがブラウザーやモバイル デバイスで実行できるようにします。また、アプリを埋め込んで、ユーザーが SharePoint、Power BI、Teams で実行できるようにします。
 
-カスタムデザインが不要で、データが Common Data Service にある場合は、ビジネスデータとプロセスからモデル駆動型アプリを自動的に生成できます。 この種のアプリではフォーム、ビュー、その他のコンポーネントをモデル化することができ、既定の UI は携帯電話、ラップトップ、その他のデバイスに合わせて自動的に調整されます。 この種のアプリの詳細については、「[モデル駆動型アプリの構築の概要](../model-driven-apps/model-driven-app-overview.md)」を参照してください。
+カスタム設計が不要で、データが Common Data Service にある場合は、業務データおよびプロセスからモデル駆動型アプリを自動的に生成できます。 この種類のアプリではフォーム、ビュー、その他のコンポーネントをモデル化することができ、既定の UI は携帯電話、ラップトップ、その他のデバイスに合わせて自動的に調整されます。 この種類のアプリの詳細については、「[モデル駆動型アプリの構築の概要](../model-driven-apps/model-driven-app-overview.md)」を参照してください。
 
-## <a name="build-an-app"></a>アプリをビルドする
+## <a name="build-an-app"></a>アプリの構築
 作業を開始するには、次のようないずれかのソースからアプリを自動的に生成します。
 - [サンプル アプリ](open-and-run-a-sample-app.md)
 - [テンプレート](get-started-test-drive.md)
 - [Common Data Service](data-platform-create-app.md)
 - [SharePoint](app-from-sharepoint.md)
-- [Excel](get-started-create-from-data.md)
+- [[Excel]](get-started-create-from-data.md)
 
-Power Apps に[サインイン](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)し、 **[データから開始]** または**サービスデスク**や**予算トラッカー**などのサンプルアプリを選択します。
+Power Apps に[サインイン](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) してから、**データから開始**または **Service Desk** や **Budget Tracker** などのサンプル アプリを選択します。
 
 ![Power Apps サイト](./media/getting-started/create-page-samples.png)
 
-アプリを自動的に生成したら、ユーザーのワークフローに基づいて、既定の外観と動作をカスタマイズします。 たとえば、表示するデータの種類、データを並べ替える方法、さらにはユーザーが入力するかスライダーを調整して数値を指定できるかどうかを変更します。 [画面](add-screen-context-variables.md)、[ギャラリー](customize-layout-sharepoint.md)、[フォーム](customize-forms-sharepoint.md)、その他のコントロールを追加してカスタマイズします。
+アプリを自動的に生成したら、ユーザーのワークフローに基づいて、既定の外観と動作をカスタマイズします。 たとえば、表示するデータの種類、データを並べ替える方法、さらにはユーザーが入力するかスライダーを調整して数値を指定できるかどうかを変更します。 [スクリーン](add-screen-context-variables.md)、[ギャラリー](customize-layout-sharepoint.md)、[フォーム](customize-forms-sharepoint.md)、その他のコントロールを追加してカスタマイズします。
 
-アプリを自動的に生成し、カスタマイズの経験を得たら、 [Common Data Service](data-platform-create-app-scratch.md)、 [Excel](get-started-create-from-blank.md)、または他のデータソースに基づいてアプリを最初から作成します。 何もない状態から作業することで、アプリの設計やフロー、制御の幅が広がり、組み込むことができるデータ ソースの種類も増えます。
+アプリを自動的に生成する作業を 1、2 回経験し、カスタマイズのノウハウがある程度得られたら[Common Data Service](data-platform-create-app-scratch.md)、[Excel](get-started-create-from-blank.md)、または別のデータ ソースに基づいてアプリを最初から作成します。 何もない状態から作業することで、アプリの設計やフロー、コントロールの幅が広がり、組み込むことができるデータ ソースの種類も増えます。
 
 ## <a name="share-and-run-an-app"></a>アプリの共有と実行
-アプリを完成させ、クラウドに保存したら、組織内の[人とアプリを共有](share-app.md)します。 アプリを実行できるユーザーまたはグループと、その対象者がアプリをカスタマイズしたり、組織内の他のユーザーと共有したりできるかを指定します。
+アプリを完成させ、クラウドに保存したら、組織内の[他のユーザーとアプリを共有](share-app.md) します。 アプリを実行できるユーザーまたはグループと、その対象者がアプリをカスタマイズしたり、組織内の他のユーザーと共有したりできるかを指定します。
 
-独自のアプリ、さらには共有されているすべてのアプリを Windows、[Web ブラウザー](../../user/run-app-browser.md)、[iOS や Android デバイス](../../user/run-app-client.md)で実行します。
+独自のアプリ、さらには共有されているすべてのアプリを Windows、[Web ブラウザー](../../user/run-app-browser.md)、[iOS または Android](../../user/run-app-client.md) デバイスで実行します。
 
-## <a name="learn-more"></a>詳細情報
-* 左側のナビゲーション ウィンドウで詳細手順、概念、リファレンスのトピックを探す。
-* オンデマンドでアクセスできる[ウェビナー](webinars-listing.md)を確認して、Power Apps の機能を活用してください。
-* アプリのパフォーマンスを最大化し、アプリの保守を容易にするための[コーディング標準](https://aka.ms/powerappscanvasguidelines)を確認します。
+## <a name="learn-more"></a>詳細はこちら
+- 左側のナビゲーション ウィンドウで詳細手順、概念、リファレンスのトピックを探す。
+- アプリのパフォーマンスを最大化し、アプリ管理を維持しやすくするために、[コーディング標準](https://aka.ms/powerappscanvasguidelines) を確認します。
+- Power Apps の機能を活用するのに役立つ[ウェビナーとビデオ ギャラリー](https://powerusers.microsoft.com/t5/Webinars-and-Video-Gallery/bd-p/VideoGallery?featured=yes) を確認します。
 
 ## <a name="share-your-experience"></a>感想をお聞かせください
-* Power apps[コミュニティ](https://aka.ms/powerapps-community)での読み取りと投稿。 power apps を使用するすべてのユーザーが質問を投稿し、他のユーザーが回答できるようにします。 質問を投稿する前にコミュニティを検索して、既に同じ質問が回答済みでないかを確認してください。
-* [Power apps のアイデア](https://powerusers.microsoft.com/t5/PowerApps-Ideas/idb-p/PowerAppsIdeas)で power apps を改善する方法についてのアイデアをお送りください。
-* [サポート チケット](https://powerapps.microsoft.com/support/pro/)を作成して技術的なサポートを受ける。 組織の Power Apps 管理者の場合は、 [Power apps 管理センター](https://admin.microsoft.com/Support/Support.aspx)でサポートチケットを開くこともできます。
+* [Power Apps コミュニティ](https://aka.ms/powerapps-community) で記事の閲覧や投稿を行います。ここでは、Power Apps のユーザーであれば誰でも質問を投稿したり、他の人の質問に回答したりできます。 質問を投稿する前にコミュニティを検索して、既に同じ質問が回答済みでないかを確認してください。
+* [Power Apps アイデア](https://powerusers.microsoft.com/t5/PowerApps-Ideas/idb-p/PowerAppsIdeas) で、Microsoft が Power Apps を改良するためのアイデアをお送りください。
+* [サポート チケット](https://powerapps.microsoft.com/support/pro/) を作成して技術的なサポートを受けます。 お客様が所属組織の Power Apps 管理者である場合は、[Power Apps 管理者センター](https://admin.microsoft.com/Support/Support.aspx) でサポート チケットを開くこともできます。
 
 ## <a name="next-steps"></a>次の手順
 - [無料ライセンスにサインアップします。](../signup-for-powerapps.md)

@@ -1,67 +1,83 @@
 ---
-title: キャンバス アプリの画面のサイズと向きを変更する | Microsoft Docs
-description: 画面のサイズや、Power Apps でのキャンバスアプリの向きなど、設定を変更するための詳細な手順
-author: evchaki
+title: キャンバス アプリの画面サイズと向きを変更する | Microsoft Docs
+description: Power Apps でキャンバス アプリの画面サイズと向きなどの設定を変更するための詳しい手順
+author: emcoope-MSFT
 manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: tapanm
-ms.date: 11/07/2018
-ms.author: evchaki
+ms.date: 04/30/2020
+ms.author: emcoope
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: b6ec2006266a15b7552d1a83b2d7d67c14560470
-ms.sourcegitcommit: a1b54333338abbb0bc3ca0d7443a5a06b8945228
-ms.translationtype: MT
+ms.openlocfilehash: 8ee60fb5fc8b681f70a591adb0f7a82b1fe687d4
+ms.sourcegitcommit: b75b29d58adf1547c9fcd3ddd1f14f69fb7f572b
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79211436"
+ms.lasthandoff: 05/02/2020
+ms.locfileid: "3330298"
 ---
-# <a name="change-screen-size-and-orientation-of-a-canvas-app-in-power-apps"></a>Power Apps でのキャンバスアプリの画面サイズと向きの変更
+# <a name="change-screen-size-and-orientation-of-a-canvas-app-in-power-apps"></a>Power Apps でキャンバス アプリの画面のサイズと向きを変更する
+
 キャンバス アプリは、その画面のサイズと向きを変更することでカスタマイズできます。
 
-## <a name="prerequisites"></a>前提条件
+## <a name="change-screen-size-and-orientation"></a>画面のサイズと表示方向の変更
 
-アプリを作成するか、編集用に開き、[**ファイル**] メニューの [**アプリの設定**] を選択します。
+1. [Power Apps](https://make.powerapps.com) にサインインします。
+1. アプリを開き、[編集](edit-app.md) を行います。
+1. **ファイル**メニューを選択します。
+1. **設定**を選択します。
+1. **画面サイズ + 向き**を選択します。
 
-## <a name="change-screen-size-and-orientation"></a>スクリーンのサイズと向きを変更する
-1. **[App settings (アプリ設定)]** で **[Screen size + orientation (画面のサイズと向き)]** を選択します。
+    ![アプリの画面のサイズと向きを変更するためのオプション](./media/set-aspect-ratio-portrait-landscape/size-orientation.png "画面サイズ + 向きのオプション")
 
-    ![アプリの画面のサイズと向きを変更するためのオプション](./media/set-aspect-ratio-portrait-landscape/size-orientation.png)
+1. **向き**の一覧で、**縦**または**横**を選択します。 <br> 
 
-1. [**方向**] ボックスの一覧で、[**縦**] または [**横**] を選択します。
+    ![電話レイアウトの向き](./media/set-aspect-ratio-portrait-landscape/phone-layout-orientation.png "電話レイアウトの向き")
 
-1. (タブレットアプリのみ)[**縦横比**] で、次のいずれかの手順を実行します。
+1. (タブレット アプリのみ) **アスペクト比**で、次のいずれかの手順を実行します:
 
-    - このアプリのターゲットデバイスに一致する比率を選択します。
-    - 独自のサイズを設定するには [**カスタム**] を選択し、50 ~ 3840 の範囲の幅を指定し、50 ~ 2160 の高さを指定します。
+    - このアプリのターゲット デバイスと一致する比率を選択します。
+    - **カスタム**を選び、独自のサイズを設定してから、50 - 3840 の幅と 50 - 2160 の高さを指定します。
 
-    ![タブレット アプリの縦横比の変更](./media/set-aspect-ratio-portrait-landscape/aspect-tablet.png)
+    ![タブレット アプリの縦横比の変更](./media/set-aspect-ratio-portrait-landscape/aspect-tablet.png "タブレットのアスペクト比")
     
-1. [**拡大縮小**] で、 **[オン**] または [**オフ**] を指定します。
+    > [!NOTE]
+    > **サイズ**は、**タブレット**レイアウトのアプリのみで利用可能です。
 
-    この設定は既定でオンになっているので、デバイスの使用可能な領域に合わせてアプリの画面のサイズが変更されます。 この設定が on の場合、アプリの**width**プロパティは**designwidth**に一致し、アプリの**高さ**は**designwidth**と一致します。
+1. **全体表示**で、**オン**または**オフ**を指定します。
 
-    この設定をオフにすると、アプリは、実行されているデバイスの縦横比に合わせて調整され、使用可能なすべての領域を占有します。 アプリは拡張されず、結果として画面により多くの情報が表示される場合があります。
+    ![全体表示](./media/set-aspect-ratio-portrait-landscape/scale-to-fit.png "全体表示")
 
-    この設定をオフにすると、**ロックの縦横比**は自動的にオフになり、無効になります。 さらに、すべての画面の**Width**プロパティが `Max(App.Width, App.DesignWidth)`に設定され、その**Height**プロパティは `Max(App.Height, App.DesignHeight)` に設定されているため、アプリが実行されているウィンドウの大きさを追跡できます。 この変更により、さまざまなデバイスとウィンドウのサイズに応答するアプリを作成できます。 詳細情報:[応答性](create-responsive-layout.md)の高いレイアウトの作成
+    この設定は既定でオンになっているため、デバイスの使用可能なスペースに合わせてアプリ画面のサイズが変更されます。 この設定がオンの場合、アプリの **Width** プロパティは **DesignWidth** と一致し、アプリの **Height** は **DesignHeight** と一致します。
 
-1. **[Lock aspect ratio (縦横比を固定する)]** で、**[On (オン)]** または **[Off (オフ)]** を指定します。
+    この設定をオフにすると、アプリは実行されているデバイスのアスペクト比に合わせて調整され、利用可能なすべてのスペースを占有します。 アプリはスケールされないため、画面にさらに多くの情報を表示できます。
 
-    この設定をオンにすると、デバイスに関係なく、手順 2. および 3. で指定した画面の向きと縦横比が維持されます。 たとえば、web ブラウザーで実行されている電話アプリでは、電話の比率が保持されます。ウィンドウを埋めるのではなく、両側にダークバーが表示されます。
+    この設定をオフにすると、**アスペクト比をロック**は自動的にオフになり、無効になります。 さらに、全ての画面の **Width** プロパティが `Max(App.Width, App.DesignWidth)` に設定され、**Height** プロパティは `Max(App.Height, App.DesignHeight)` に設定されるので、アプリが実行されているウィンドウのサイズを追跡できるようにします。 この変更により、さまざまなデバイスとウィンドウのサイズに対応するアプリを作成できます。 詳細: [レスポンシブ レイアウトを作成する](create-responsive-layout.md)
 
-    この設定がオフの場合、アプリは、実行されているデバイスの縦横比に合わせて調整されます (必要に応じて UI がゆがめられます)。
+1. **縦横比を固定する**で、**オン**または**オフ**を指定します。
 
-1. **[Lock orientation (向きを固定する)]** で、**[On (オン)]** または **[Off (オフ)]** を指定します。
+    ![縦横比を固定](./media/set-aspect-ratio-portrait-landscape/lock-aspect-ratio.png "縦横比を固定")
 
-    アプリの向きをロックすると、指定した向きが保持されます。 アプリが異なる向きのデバイスで実行されている場合、アプリが正しく表示されないため、望ましくない結果が表示されることがあります。 アプリの向きのロックを解除すると、アプリが実行されているデバイスの画面の向きに合わせて調整されます。
+    この設定がオンの場合、アプリはデバイスに関係なく、手順 2 と 3 で指定した画面の向きとアスペクト比を保持します。 たとえば、Web ブラウザーで実行されている電話アプリでは、電話の比率を保持し、ウィンドウを塗りつぶす代わりに両側に暗いバーを表示します。
 
-    **[詳細設定**] の [**アプリの埋め込みユーザーエクスペリエンスを有効**にする] を有効にすることで、アプリの向きを変更することもできます。 この機能は、アプリが埋め込まれているときにアプリを左揃えにし、ホストしているキャンバスの背景色を白に変更します。
+    この設定がオフの場合、アプリは実行されているデバイスのアスペクト比に合わせて調整されます (必要であれば UI は歪みます)。
 
-1. **[Apply (適用)]** を選択して変更を保存します。
+1. **向きを固定する**で、**オン**または**オフ**を指定します。
 
-## <a name="next-step"></a>次の手順
-**[File (ファイル)]** メニューの **[Save (保存)]** を選択して、新しい設定でアプリを再発行します。
+    ![向きを固定する](./media/set-aspect-ratio-portrait-landscape/lock-orientation.png "向きを固定する")
+
+    アプリの向きを固定すると、指定した向きがアプリで保持されます。 画面の向きが異なるデバイスでアプリが実行されている場合、アプリの表示は正しく行われず、望ましくない結果が表示される可能性があります。 アプリの向きの固定を解除すると、アプリが実行されているデバイスの画面の向きに合うように自動的に調整されます。
+
+    **実験的機能**で、**詳細設定**の**埋め込みの外観を最適化する**を有効にして、アプリの向きを変更することもできます。 この左上の機能を使用すると、アプリが埋め込まれているときにアプリが配置され、ホスティング キャンバスの背景色が白に変更されます。
+
+    ![埋め込みのエクスペリエンス](./media/set-aspect-ratio-portrait-landscape/embedding-experience.png "埋め込みのエクスペリエンス")
+
+1. アプリを[保存して公開](save-publish-app.md)します。
+
+## <a name="next-step"></a>次のステップ
+
+[キャンバス アプリのレスポンシブ レイアウトの作成](create-responsive-layout.md)
