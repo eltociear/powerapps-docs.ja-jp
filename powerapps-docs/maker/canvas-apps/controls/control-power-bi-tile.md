@@ -1,6 +1,6 @@
 ---
 title: 'Power BI タイル コントロール: リファレンス | Microsoft Docs'
-description: 各種プロパティとサンプルを含む Power BI のタイル コントロールに関する情報です
+description: 各種プロパティとサンプルを含む、Power BI タイル コントロールに関する情報
 author: chmoncay
 manager: kvivek
 ms.service: powerapps
@@ -15,101 +15,101 @@ search.app:
 - PowerApps
 ms.openlocfilehash: 959f8eaee539febbb7c00441453da9bab23a1812
 ms.sourcegitcommit: 263a12aefa72a3d73e07b2660bf1e89eba532a16
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 04/16/2020
-ms.locfileid: "81441767"
+ms.locfileid: "3309374"
 ---
-# <a name="power-bi-tile-control-in-power-apps"></a>Power Apps でのタイルコントロールの Power BI
+# <a name="power-bi-tile-control-in-power-apps"></a>Power Apps での Power BI タイル コントロール
 
 アプリ内の [Power BI](https://powerbi.microsoft.com) タイルを表示するコントロール。
 
-Power BI をお持ちではありませんか? [サインアップ](https://docs.microsoft.com/power-bi/service-self-service-signup-for-power-bi)してください。
+Power BI を持っていない場合は? [サインアップ](https://docs.microsoft.com/power-bi/service-self-service-signup-for-power-bi)。
 
-## <a name="description"></a>説明
+## <a name="description"></a>内容
 
-アプリ内の **[Power BI タイル](https://docs.microsoft.com/power-bi/service-dashboard-tiles)** を表示して、既存のデータ分析とレポートを活用します。 オプション パネルの **[データ]** タブで **Workspace**、**Dashboard**、**Tile** プロパティを設定して、表示するタイルを指定します。
+アプリ内の **[Power BI タイル](https://docs.microsoft.com/power-bi/service-dashboard-tiles)** を表示することにより、既存のデータ分析とレポートを活用します。 オプション パネルの**データ** タブで **ワークスペース**、**ダッシュボード**、および**タイル** プロパティを設定することにより、表示するタイルを指定します。
 
 ## <a name="sharing-and-security"></a>共有とセキュリティ
 
-Power BI コンテンツを含むアプリを共有するときは、アプリ自体だけでなく、タイルが表示されている[ダッシュボード](https://docs.microsoft.com/power-bi/service-how-to-collaborate-distribute-dashboards-reports)も共有する必要があります。 そうしないと、アプリを開いたユーザーであっても、Power BI コンテンツは表示されません。 Power BI コンテンツを含むアプリには、そのコンテンツに対するアクセス許可が適用されます。
+Power BI コンテンツを含むアプリを共有するときは、アプリ自体だけでなく、タイルの取得元である [ダッシュボード](https://docs.microsoft.com/power-bi/service-how-to-collaborate-distribute-dashboards-reports) も共有する必要があります。 さもなければ、アプリを開いたユーザーにも Power BI コンテンツは表示されません。 Power BI コンテンツを含むアプリには、そのコンテンツに対するアクセス許可が適用されます。
 
-## <a name="performance"></a>パフォーマンス テスト
+## <a name="performance"></a>パフォーマンス
 
-アプリ内に同時に 4 つ以上の Power BI タイルを読み込むことは推奨されません。 タイルの読み込みとアンロードは、**LoadPowerBIContent** プロパティを設定することによって制御できます。
+アプリ内に同時に 4 つ以上の Power BI タイルを読み込むことは推奨されません。 **LoadPowerBIContent** プロパティを設定することにより、タイルの読み込みとアンロードを制御できます。
 
-## <a name="pass-a-parameter"></a>パラメーターを渡す
+## <a name="pass-a-parameter"></a>渡すパラメーター
 
-アプリから1つのパラメーターを渡すことによって、Power BI タイルに表示される結果をフィルター処理できます。 ただし、文字列値と equals 演算子のみがサポートされており、テーブル名または列名にスペースが含まれている場合、フィルターが機能しない可能性があります。
+アプリから単一のパラメーターを渡すことにより、Power BI タイルに表示される結果をフィルター処理できます。 ただし、サポートされているのは文字列値と等価演算子のみであり、テーブル名または列名にスペースが含まれていると、フィルターが機能しない場合があります。
 
-1つのフィルター値を渡すには、次の構文に従って、 **[タイル url]** プロパティの値を変更します。
+単一のフィルター値を渡すには、次の構文に従って **TileURL** プロパティの値を変更します:
 
 ```
 "https://app.powerbi.com/embed?dashboardId=<DashboardID>&tileId=<TileID>&config=<SomeHash>"
 ```
 
-その値に、次の構文を追加します。
+その値に、次の構文を追加します:
 
 ```
 &$filter=<TableName>/<ColumnName> eq '<Value>'
 ```
 
-パラメーターは、タイルが生成されたレポートのデータセット内の値をフィルター処理します。 ただし、フィルター機能には次の制限があります。
+パラメータでは、タイルの発生元であるレポートのデータセットの値をフィルター処理します。 ただし、フィルタリング機能には次の制限があります:
 
-- 適用できるフィルターは1つだけです。
+- 適用できるフィルターは 1 つのみです。
 - `eq` 演算子のみがサポートされています。
-- フィールドの型は文字列である必要があります。
+- フィールド タイプは文字列でなければなりません。
 
-Power BI レポートで計算フィールドを使用すると、他の値の型を文字列に変換したり、複数のフィールドを1つに結合したりすることができます。
+Power BI レポートで計算フィールドを使用して、他の値のタイプを文字列に変換するか、複数のフィールドを 1 つに組み合わせることができます。
 
 ## <a name="key-properties"></a>主要なプロパティ
 
-**ワークスペース** – タイルの情報源である Power BI ワークスペース。
+**ワークスペース** – タイルの取得元である Power BI ワークスペース。
 
-**ダッシュボード** – タイルの情報源である Power BI のダッシュボード。
+**ダッシュボード** – タイルの取得元である Power BI ダッシュボード。
 
-**Tile** – 表示する Power BI のタイルの名前。
+**タイル** – 表示する Power BI タイルの名前。
 
 **LoadPowerBIContent** – true に設定すると、Power BI コンテンツが読み込まれて表示されます。 false に設定すると、Power BI コンテンツはアンロードされ、メモリが解放されてパフォーマンスが最適化されます。
 
-## <a name="additional-properties"></a>その他のプロパティ
+## <a name="additional-properties"></a>追加のプロパティ
 
-**[BorderColor](properties-color-border.md)** – コントロールの境界線の色です。
+**[BorderColor](properties-color-border.md)** – コントロールの境界線の色。
 
-**[BorderStyle](properties-color-border.md)** – コントロールの境界線を **Solid** (実線)、**Dashed** (破線)、**Dotted** (点線)、**None** (なし) のいずれに指定します。
+**[BorderStyle](properties-color-border.md)** – コントロールの境界線が**実線**、**破線**、**点線**、または**なし**かどうか。
 
-**[BorderThickness](properties-color-border.md)** – コントロールの境界線の太さです。
+**[BorderThickness](properties-color-border.md)** – コントロールの境界線の太さ。
 
-**[DisplayMode](properties-core.md)** – コントロールで、ユーザー入力を許可するか (**Edit**)、データの表示のみを許可するか (**View**)、許可しないか (**Disabled**) を設定します。
+**[DisplayMode](properties-core.md)** – コントロールがユーザー入力を許可するか (**編集**)、データのみを表示するか (**表示**)、または無効にするか (**無効**) どうか。
 
-**[Height](properties-size-location.md)** – コントロールの上端と下端の距離です。
+**[高さ](properties-size-location.md)** – コントロールの上端と下端間の距離。
 
-**[OnSelect](properties-core.md)** – ユーザーがコントロールをタップまたはクリックした場合のアプリの反応を指定します。 既定では、タイルに関連付けられた Power BI レポートが開きます。
+**[OnSelect](properties-core.md)** – ユーザーがコントロールをタップまたはクリックする場合のアプリの反応方法。 既定では、タイルに関連付けられた Power BI レポートが開きます。
 
-**TileUrl** – Power BI サービスからタイルが要求される URL。 URL にパラメーターを追加することで、Power BI タイルに 1 つのパラメーターを渡すことができます (例: … & "&$filter=Town/Province eq '" & ListBox1.Selected.Abbr & "'")。 パラメーターでは等価演算子のみを使用できます。
+**TileUrl** – Power BI サービスからタイルが要求される URL。 URL にパラメーターを追加することで、Power BI タイルに単一のパラメーターを渡すことができます (例: … & "&$filter=Town/Province eq '" & ListBox1.Selected.Abbr & "'")。 パラメーターでは等価演算子のみを使用できます。
 
-**[Visible](properties-core.md)** – コントロールを表示するか非表示にするかを指定します。
+**[表示](properties-core.md)** – コントロールが表示されるか非表示になるか。
 
-**[Width](properties-size-location.md)** – コントロールの左端と右端の間の距離です。
+**[幅](properties-size-location.md)** – コントロールの左端と右端間の距離。
 
-**[X](properties-size-location.md)** – コントロールの左端とその親コンテナー (親コンテナーがない場合は画面) の左端間の距離です。
+**[X](properties-size-location.md)** – コントロールの左端とその親コンテナー (親コンテナーがない場合は画面) の左端間の距離。
 
-**[Y](properties-size-location.md)** – コントロールの上端とその親コンテナー (親コンテナーがない場合は画面) の上端間の距離です。
+**[Y](properties-size-location.md)** – コントロールの上端とその親コンテナー (親コンテナーがない場合は画面) の上端間の距離。
 
 ## <a name="example"></a>例
 
-1. **[挿入]** タブで **[コントロール]** メニューを開き、 **[Power BI タイル]** コントロールを追加します。
+1. **挿入**タブで、**コントロール** メニューを開いてから、**Power BI タイル** コントロールを追加します。
 
-    [コントロールの追加および構成方法](../add-configure-controls.md)については関連記事を参照してください。
+    [コントロールの追加および構成](../add-configure-controls.md) についてはこちらをご覧ください。
 
-2. オプション パネルの **[データ]** タブで、 **[ワークスペース]** の設定の **[マイ ワークスペース]** をクリックまたはタップします。
+2. オプション パネルの**データ** タブで、**ワークスペース**設定の**マイ ワークスペース**をクリックまたはタップします。
 
-3. ダッシュボードの一覧でダッシュボードを選び、タイルの一覧でタイルを選びます。
+3. ダッシュボードの一覧でダッシュボードを選択してから、タイルの一覧でタイルを選択します。
 
-    コントロールが Power BI タイルを表示します。
+    コントロールでは、Power BI タイルを表示します。
 
-## <a name="accessibility-guidelines"></a>アクセシビリティのガイドライン
+## <a name="accessibility-guidelines"></a>アクセシビリティ ガイドライン
 
-**Power BI タイル**は、Power BI コンテンツの単なるコンテナーです。 アクセシビリティ対応のコンテンツを作成する方法については、[Power BI のアクセシビリティに関するヒント](https://docs.microsoft.com/power-bi/desktop-accessibility)のページを参照してください。
+**Power BI タイル**は、Power BI コンテンツのコンテナーです。 アクセシビリティ対応のコンテンツを作成する方法については、[Power BI のアクセシビリティに関するヒント](https://docs.microsoft.com/power-bi/desktop-accessibility) を参照してください。
 
-Power BI コンテンツにタイトルがない場合は、 **[ラベル](control-text-box.md)** コントロールを使用して見出しを追加し、スクリーン リーダーをサポートすることを検討してください。 ラベルは、Power BI タイルの直前に配置することができます。
+Power BI コンテンツにタイトルがない場合は、**[ラベル](control-text-box.md)** コントロールを使用して見出しを追加し、スクリーン リーダーをサポートすることを検討してください。 ラベルは、Power BI タイルの直前に配置することができます。

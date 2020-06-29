@@ -1,6 +1,6 @@
 ---
 title: 'ギャラリー コントロール: リファレンス | Microsoft Docs'
-description: 各種プロパティとサンプルを含むギャラリー コントロールに関する情報
+description: プロパティとサンプルを含む、ギャラリー コントロールに関する情報
 author: chmoncay
 manager: kvivek
 ms.service: powerapps
@@ -15,148 +15,148 @@ search.app:
 - PowerApps
 ms.openlocfilehash: ca48ccaf4aca72301d3a8b7f2eb79885d7c7cdf5
 ms.sourcegitcommit: 6acc6ac7cc1749e9681d5e55c96613033835d294
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 04/08/2020
-ms.locfileid: "80871329"
+ms.locfileid: "3309121"
 ---
-# <a name="gallery-control-in-canvas-apps"></a>キャンバスアプリのギャラリーコントロール
+# <a name="gallery-control-in-canvas-apps"></a>キャンバス アプリのギャラリー コントロール
 
-その他のコントロールが含まれており、一連のデータを表示するコントロールです。
+その他のコントロールが含まれており、一連のデータを表示するコントロール。
 
-## <a name="description"></a>説明
+## <a name="description"></a>内容
 
-**ギャラリー** コントロールを使用して、データ ソースの複数のレコードを表示できます。各レコードには、複数の種類のデータを含めることができます。 たとえば、**ギャラリー**コントロールを使用して複数の連絡先を表示し、各連絡先の名前、住所、電話番号などの連絡先情報を表示します。
+**ギャラリー** コントロールにデータ ソース内のさまざまなレコードを表示できます。各レコードにさまざまなタイプのデータを含めることができます。 たとえば、**ギャラリー** コントロールを使用して、各連絡先の名前、住所、電話番号を含む連絡先情報を表示する各項目に複数の連絡先を表示します。
 
-各データフィールドは、**ギャラリー**コントロール内の個別のコントロールに表示されます。 これらのコントロールは、テンプレートで構成できます。 テンプレートは、ギャラリー内の最初の項目として表示されます。
+各データ フィールドは、**ギャラリー** コントロール内の個別のコントロールに表示されます。 さらに、それらのコントロールをテンプレートで構成できます。 テンプレートがギャラリー内の最初の項目として表示されます:
 
-- 水平/横向きの**ギャラリー**コントロールの左端。
-- また、縦/縦向きの**ギャラリー**コントロールの上部にあります。 
+- 水平/横方向の**ギャラリー** コントロールの左端。
+- 垂直/縦方向の**ギャラリー** コントロールの上部。 
 
-テンプレートで行った変更は、**ギャラリー** コントロール全体に反映されます。
+テンプレートで加えた変更は、**ギャラリー** コントロール全体に反映されます。
 
-ギャラリーに画像やテキストを表示するための定義済みテンプレートと、可変高さ項目のギャラリーが用意されています。
+ギャラリーで画像やテキストを表示する事前定義されたテンプレート、および高さが可変の項目のギャラリーを利用できます。
 
-## <a name="limitations"></a>制限事項
+## <a name="limitations"></a>制限
 
-ユーザーが、すべての項目が読み込まれる前に、**柔軟な高さ**のギャラリーコントロールをスクロールすると、データの読み込みが完了すると、現在表示されているアイテムが表示されなくなることがあります。 この問題を回避するには、**柔軟な高さ**バリアントではなく、標準の**ギャラリー**コントロールを使用します。
+ユーザーが、すべての項目が読み込まれる前に**伸縮可能な高さ**ギャラリーコントロールをスクロールする場合、データの読み込みが完了すると、現在表示されている項目が押し出されて表示されなくなる場合があります。 この問題を回避するには、**伸縮可能な高さ**バリアントの代わりに、標準の**ギャラリー** コントロールを使用します。
 
 ## <a name="key-properties"></a>主要なプロパティ
 
-[[既定](properties-core.md)] –アプリの起動時にギャラリーで選択されるデータソースの項目またはレコード。
+[既定](properties-core.md) – アプリの起動時に、ギャラリーで選択されるデータ ソースからの項目またはレコード。
 
-[Items](properties-core.md) – ギャラリー、リスト、グラフなどのコントロールに表示されるデータのソースです。
+[項目](properties-core.md) – ギャラリー、リスト、グラフなどのコントロールに表示されるデータのソース。
 
 **Selected** – 選択された項目です。
 
-## <a name="additional-properties"></a>その他のプロパティ
+## <a name="additional-properties"></a>追加のプロパティ
 
-[AccessibleLabel](properties-accessibility.md) –スクリーンリーダー用のギャラリーのラベル (含まれる項目ではありません)。 項目の一覧の内容を説明する必要があります。
+[AccessibleLabel](properties-accessibility.md) – スクリーン リーダー用のギャラリーのラベル (含まれている項目ではない)。 項目の一覧について説明する必要があります。
 
-**AllItems** – ギャラリーのテンプレートの一部である追加のコントロール値を含む、ギャラリーのすべての項目です。
+**AllItems** – ギャラリーのテンプレートの一部である追加のコントロール値を含む、ギャラリーのすべての項目。
 
-[BorderColor](properties-color-border.md) – コントロールの境界線の色です。
+[BorderColor](properties-color-border.md) – コントロールの境界線の色。
 
-[BorderStyle](properties-color-border.md) – コントロールの境界線のスタイルです (**実線**、**破線**、**点線**、または**なし**)。
+[BorderStyle](properties-color-border.md) – コントロールの境界線が**実線**、**破線**、**点線**、または**なし**かどうか。
 
-[BorderThickness](properties-color-border.md) – コントロールの境界線の太さです。
+[BorderThickness](properties-color-border.md) – コントロールの境界線の太さ。
 
-**Delayitemloading** -画面が最初に読み込まれるまで項目 (行) の遅延読み込みを実行します。
+**DelayItemLoading** - 画面が最初に読み込まれるまで、項目 (行) の読み込みを遅延させます。
 
-[DisplayMode](properties-core.md) –コントロールでユーザー入力を許可するか (**Edit**)、データの表示のみを許可するか (**View**)、または無効 (**無効**) にするかを指定します。
+[DisplayMode](properties-core.md) – コントロールがユーザー入力を許可するか (**編集**)、データのみを表示するか (**表示**)、または無効にするか (**無効化**)。
 
-[Fill](properties-color-border.md) – コントロールの背景色です。
+[塗りつぶし](properties-color-border.md) – コントロールの背景色。
 
-[Height](properties-size-location.md) – コントロールの上端と下端の距離です。
+[高さ](properties-size-location.md) – コントロールの上端と下端間の距離。
 
-**ItemAccessibleLabel** –スクリーンリーダー用の各ギャラリー項目のラベルです。 各項目の内容を説明する必要があります。
+**ItemAccessibleLabel** – スクリーン リーダー用の各ギャラリー項目のラベル。 各アイテムについて説明する必要があります。
 
-**Loadingspinner ボタン**(**なし**、**コントロール**、または**データ**)-none の場合、スピンボタンは表示されません。 When Controls |データは、表示されている空の行を生成するレンダリングパスが発生すると表示されます。
+**LoadingSpinner** (**なし**、**コントロール**または**データ**) - なしの場合、スピナーは表示されません。 コントロール時 | 空の行が表示されるレンダリング パスが発生すると、データ、スピナーが表示されます。
 
-**Loadingspinnercolor** -読み込みスピンボタンの塗りつぶしの色。  既定値は BorderColor に設定されています。
+**LoadingSpinnerColor** - スピナーを読み込む塗りつぶしの色。  既定では、BorderColor に設定されています。
 
-**NavigationStep** – **ShowNavigation** プロパティが **true** に設定されている場合、ギャラリーの端にあるナビゲーション矢印の選択操作でギャラリーをどの程度スクロールするかを指定します。
+**NavigationStep** – **ShowNavigation** プロパティが **true** に設定され、ユーザーがそのギャラリーの両端にあるナビゲーション矢印を選択する場合、ギャラリーをどの程度スクロールするか。
 
-選択**可能**–ギャラリー項目を選択できるかどうかを指定します。 **True**に設定すると、スクリーンリーダーはギャラリーを選択可能なリストとして識別します。 項目を選択して選択します。 **False**に設定すると、スクリーンリーダーはギャラリーを標準の一覧として識別し、項目を選択しても選択されません。
+**選択可能** – ギャラリー項目を選択できるかどうか。 **true** に設定した場合、スクリーン リーダーはギャラリーを選択可能なリストとして識別します。 さらに、項目を選択することにより選択します。 **false** に設定した場合、スクリーン リーダーはギャラリーを通常のリストとして識別し、項目を選択しても選択されません。
 
-**Shownavigation** –ギャラリーの各端に矢印を表示するかどうかを指定します。ユーザーは、矢印を選択してギャラリー内の項目をスクロールできます。
+**ShowNavigation** – ギャラリーの各端に矢印を表示し、矢印の選択によりギャラリー内の項目をユーザーがスクロールできるようにするかどうか。
 
-**ShowScrollbar** – ユーザーがポインタをギャラリーに合わせたときにスクロール バーを表示するかどうかを指定します。
+**ShowScrollbar** – ユーザーがャラリーにカーソルを置くときにスクロールバーが表示されるかどうか。
 
-**Snap** – ユーザーがギャラリーをスクロールするとき、次の項目が完全に表示されるように自動的にスナップするかどうかを指定します。
+**スナップ** – ユーザーがギャラリーをスクロールするとき、次の項目が完全に表示されるように自動的にスナップするかどうか。
 
-**TemplateFill** – ギャラリーの背景色です。
+**TemplateFill** – ギャラリーの背景色。
 
-**TemplatePadding** – ギャラリー内の項目間の距離です。
+**TemplatePadding** – ギャラリー内の項目間の距離。
 
-**Templatesize** –垂直/縦向きのギャラリーのテンプレートの高さです。 水平/横向きのギャラリーのテンプレートの幅。
+**TemplateSize** – 垂直/縦向きのギャラリーのテンプレートの高さ。 または、水平/横向きのギャラリーのテンプレートの幅。
 
-**Transition** – ユーザーがポインタをギャラリー内の項目に合わせたときの視覚効果 (**ポップ**、**プッシュ**、または **None**) を指定します。
+**移行** – ユーザーがギャラリー内の項目にカーソルを置くときの視覚効果 (**ポップ**、**プッシュ**、または**なし**)。
 
-[Visible](properties-core.md) – コントロールを表示するか非表示にするかを指定します。
+[表示](properties-core.md) – コントロールが表示されるか非表示になるか。
 
-[Width](properties-size-location.md) – コントロールの左端と右端の間の距離です。
+[幅](properties-size-location.md) – コントロールの左端と右端間の距離。
 
-**WrapCount** – 水平または垂直レイアウトに合わせて行または列ごとに表示される項目の数です。
+**WrapCount** – 水平または垂直レイアウトに合わせて行または列ごとに表示される項目の数。
 
-[X](properties-size-location.md) –コントロールの左端とその親コンテナーまたは画面の左端の間の距離です。
+[X](properties-size-location.md) – コントロールの左端とその親コンテナまたはスクリーンの左端との間の距離。
 
-[Y](properties-size-location.md) –コントロールの上端と親コンテナーまたは画面の上端との距離です。
+[Y](properties-size-location.md) – コントロールの上端と親コンテナまたはスクリーンの上端との間の距離。
 
 ## <a name="related-functions"></a>関連する関数
 
-[Filter ( *DataSource*、 *Formula* )](../functions/function-filter-lookup.md)
+[Filter( *DataSource*, *式* )](../functions/function-filter-lookup.md)
 
-[Reset (*コントロール*)](../functions/function-reset.md) -ギャラリーを初期状態に戻します。 初期状態では、最初の項目へのスクロールと最初の項目の選択が含まれます (存在する場合)。 
+[リセット(*コントロール*)](../functions/function-reset.md) - ギャラリーを初期状態にリセットします。 初期状態には、最初の項目へのスクロールと、最初の項目または存在する場合はデフォルトの選択が含まれます。 
 
   > [!NOTE]
-  > **Reset**コントロールは、ギャラリーのすべての子を再帰的にリセットしません。
+  > **リセット** コントロールは、ギャラリーのすべての子を再帰的にリセットしません。
 
-## <a name="examples"></a>使用例
+## <a name="examples"></a>例
 
 ### <a name="show-and-filter-data"></a>データを表示およびフィルター処理する
 
-- [テキストを表示します](control-text-box.md#show-data-in-a-gallery)
-- [イメージを表示します](control-image.md#show-a-set-of-images-from-a-data-source)
-- [リスト オプションを選択してデータをフィルター処理します](control-drop-down.md#example)
-- [スライダーを調整してデータをフィルター処理します](control-slider.md#example)
+- [テキストの表示](control-text-box.md#show-data-in-a-gallery)
+- [画像の表示](control-image.md#show-a-set-of-images-from-a-data-source)
+- [リスト オプションを選択してデータのフィルター処理](control-drop-down.md#example)
+- [スライダーを調整してデータのフィルター処理](control-slider.md#example)
 
 ### <a name="get-data-from-the-user"></a>ユーザーからデータを取得する
 
-- [テキストを取得します](control-text-input.md#collect-data)
-- [イメージを取得します](control-add-picture.md#add-images-to-an-image-gallery-control)
-- [写真を取得します](control-camera.md#examples)
-- [サウンドを取得します](control-microphone.md#examples)
-- [図面を取得します](control-pen-input.md#create-a-set-of-images)
+- [テキストの取得](control-text-input.md#collect-data)
+- [画像の取得](control-add-picture.md#add-images-to-an-image-gallery-control)
+- [写真の取得](control-camera.md#examples)
+- [サウンドの取得](control-microphone.md#examples)
+- [図面の取得](control-pen-input.md#create-a-set-of-images)
 
-## <a name="accessibility-guidelines"></a>アクセシビリティのガイドライン
+## <a name="accessibility-guidelines"></a>アクセシビリティ ガイドライン
 
 ### <a name="color-contrast"></a>色のコントラスト
 
-ギャラリー項目内のどこかをクリックすると、その項目が選択される場合、以下の間に適切な色のコントラストが必要です。
+ギャラリー項目内のどこかをクリックするとその項目が選択される場合、次の間に適切な色のコントラストが必要です:
 
-- [BorderColor](properties-color-border.md)とギャラリーの外側の色 (境界線がある場合)。
-- [塗りつぶし](properties-color-border.md)とギャラリー外の色 (境界線がない場合)。
+- [BorderColor](properties-color-border.md) とギャラリーの外側の色 (境界線がある場合)。
+- [塗りつぶし](properties-color-border.md) とギャラリーの外側の色 (境界線がない場合)。
 
-### <a name="screen-reader-support"></a>スクリーン リーダーのサポート
+### <a name="screen-reader-support"></a>スクリーン リーダー サポート
 
-- [AccessibleLabel](properties-accessibility.md)が存在している必要があります。
+- [AccessibleLabel](properties-accessibility.md) が存在する必要があります。
 
     > [!NOTE]
-    > ギャラリー内の項目が変更されると、スクリーンリーダーによってアナウンスされます。 **AccessibleLabel** についても通知されます。 これによって通知のコンテキストがわかるので、同じスクリーン上に複数のギャラリーがある場合にはさらに重要です。
+    > ギャラリー内の項目が変更されると、スクリーン リーダーから通知されます。 **AccessibleLabel** についても通知されます。 これによって通知のコンテキストがわかるので、同じ画面上に複数のギャラリーがある場合にはさらに重要です。
 
-- ギャラリー項目に複数のコントロールが含まれている場合は、 **ItemAccessibleLabel**を使用して、ギャラリー項目の内容を表示します。
+- ギャラリー項目に複数のコントロールが含まれている場合は、**ItemAccessibleLabel** を使用してギャラリー項目のコンテンツを表示します。
 
-- ユーザーがギャラリー項目を選択できるようにする場合は、 **[選択可能]** の値を **[true]** に設定します。 それ以外の場合は、その値を**false**に設定します。
+- ユーザーにギャラリー項目を選択させる場合は、**選択可能**の値を **true** に設定します。 それ以外の場合は、その値を **false** に設定します。
 
-- ギャラリーアイテムに複数のコントロールが含まれている場合は、 **ItemAccessibleLabel**を使用して、ギャラリーアイテムのコンテンツの概要を指定します。
+- ギャラリー項目に複数のコントロールが含まれている場合は、**ItemAccessibleLabel** を使用してギャラリー項目のコンテンツの概要を提供します。
 
-- ユーザーがギャラリーアイテムを選択することになっているかどうかに応じて、**選択可能**な項目を適切に設定する必要があります。
+- ユーザーがギャラリー項目を選択するようになっているかどうかに応じて、**選択可能**を適切に設定する必要があります。
 
 ### <a name="keyboard-support"></a>キーボードのサポート
 
-- **ShowScrollbar** を **true** に設定することを検討してください。 ほとんどのタッチスクリーンデバイスでは、スクロールが開始されるまでスクロールバーは表示されません。
-- ギャラリー項目内のどこかをクリックすると、その項目が選択される場合、キーボード ユーザーがギャラリー項目を選択できる方法も必要です。 たとえば、 **Onselect**プロパティが**select (Parent)** に設定されている[ボタン](control-button.md)を追加します。
+- **ShowScrollbar** を **true** に設定することを検討してください。 ほとんどのタッチ画面を持つデバイスでは、スクロールが始まるまでスクロール バーは表示されません。
+- ギャラリー項目内のどこかをクリックするとその項目が選択されるようになっている場合、キーボード ユーザーがギャラリー項目を選択できる方法も必要です。 たとえば、**OnSelect** プロパティが **Select(Parent)** に設定されている [ボタン](control-button.md) を追加します。
 
     > [!NOTE]
-  > ギャラリーの外部のコントロールは、ギャラリー内のキーボード ナビゲーション順では考慮されません。 ギャラリー内の[TabIndex](properties-accessibility.md)コントロールはスコープが設定されています。 詳細については、[アクセシビリティのプロパティ](properties-accessibility.md)に関するページを参照してください。
+  > ギャラリーの外部のコントロールは、ギャラリー内のキーボード ナビゲーション順には考慮されません。 ギャラリー内の [TabIndex](properties-accessibility.md) コントロールがスコープされます。 詳細については、[アクセシビリティのプロパティ](properties-accessibility.md) を参照してください。
