@@ -2,7 +2,7 @@
 title: Power BI Desktop でのエンティティ データを表示 (プレビュー) | MicrosoftDocs
 description: Power BI Desktop でエンティティ データにアクセスして、表示する方法についてアクセスする方法について説明します
 ms.custom: ''
-ms.date: 05/01/2020
+ms.date: 05/26/2020
 ms.reviewer: matp
 ms.service: powerapps
 author: Mattp123
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 446381f491fac0cb5d60c3945f5404983f1ed364
-ms.sourcegitcommit: 0ede8e3bc795e151aa94ffcbce15cff7a949c57a
+ms.openlocfilehash: 54f23e3b5d390acef99878cdae373b04032a7873
+ms.sourcegitcommit: 82fa1758e29fe302f9a252fd9943ace03b7aada0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "3335411"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "3427017"
 ---
 # <a name="view-entity-data-in-power-bi-desktop-preview"></a>Power BI Desktop でエンティティ データを表示する (プレビュー)
 
@@ -30,6 +30,17 @@ Power BI Desktop を使用して、Common Data Service で表示できます。 
 > [!IMPORTANT]
 > - これはプレビュー機能であり、すべての地域で利用できるわけではありません。
 > - [!INCLUDE[cc_preview_features_definition](../../includes/cc-preview-features-definition.md)]
+
+## <a name="prerequisite"></a>前提条件
+このプレビューでは、環境で Common Data Service の表形式データ ストリーム (TDS) エンドポイントを有効にするには、管理者であり、次の手順を実行する必要があります。
+    
+1. [Power Apps](https://make.powerapps.com/) にサインインして、右上隅で適切な環境を選択します。
+      
+2. 環境に少なくともバージョン 9.1.0.17437 があることを確認します。 これをおこなうには、ツールバーで **設定** ギアを選択してから、**詳細設定** を選択します。 次に、新しいブラウザタブが開いたら、**設定**ツールバーのギアを選択し、次に **詳細** を選択します。
+      
+3. TDS エンドポイントを有効にします。 詳細については、[機能設定の管理](/power-platform/admin/settings-features) のトピックで、**TDS エンドポイント (プレビュー)** 設定を参照してください。
+          
+## <a name="view-entity-data"></a>エンティティ データの表示
 
 1.  [Power Apps](https://make.powerapps.com/) にサインインして、右上隅で適切な環境を選択します。
 

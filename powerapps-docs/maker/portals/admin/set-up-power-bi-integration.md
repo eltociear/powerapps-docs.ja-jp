@@ -6,15 +6,15 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 04/27/2020
+ms.date: 05/13/2020
 ms.author: tapanm
 ms.reviewer: ''
-ms.openlocfilehash: aa5bf8a76097f1f2885487ac9550326e7e0eba23
-ms.sourcegitcommit: 8dd68565e03a4e66db1f8937630fa4c52eb93871
+ms.openlocfilehash: 0f6af69a6ebdb4e59f36748f94a3841bea4f6496
+ms.sourcegitcommit: ef921bbf0908283a3621c2ca1069e6b58a2b14e7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "3321250"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "3373506"
 ---
 # <a name="set-up-power-bi-integration"></a>Power BI 統合の設定
 
@@ -198,5 +198,6 @@ Power BI Embedded サービス統合を有効にしたら、Azure Active Directo
 
 ### <a name="see-also"></a>関連項目
 
-[Power BIの Liquid タグ](../liquid/portals-entity-tags.md#powerbi)<br> 
-[Power BI レポートまたはダッシュボードをポータルの Web ページに追加](add-powerbi-report.md)
+- [ポータル スタジオを使用して、Power BI コンポーネントを Web ページに追加する](../compose-page.md#add-power-bi)
+- [Power BI レポートまたはダッシュボードをポータルの流動タグを使って Web ページに追加する](add-powerbi-report.md)
+- [Power BIの Liquid タグ](../liquid/portals-entity-tags.md#powerbi)

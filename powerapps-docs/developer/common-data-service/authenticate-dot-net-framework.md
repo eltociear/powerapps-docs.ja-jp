@@ -2,7 +2,7 @@
 title: .NET Framework アプリケーションによる認証 (Common Data Service) | Microsoft Docs
 description: Common Data Service を使用した .NET Framework アプリケーションの認証方法
 ms.custom: ''
-ms.date: 01/25/2019
+ms.date: 05/11/2020
 ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
@@ -14,16 +14,16 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 3cb5256130773472af60fbfbc3b6f062f24db1a5
-ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
+ms.openlocfilehash: bddd2b0ce374a89b0ef6cec3485add4c04c2d510
+ms.sourcegitcommit: 37afeec92b1cda4f00c3e0071d82dd5259fc8278
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "3156451"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "3436454"
 ---
 # <a name="authentication-with-net-framework-applications"></a>.NET Framework アプリケーションでの認証
 
-.NET Framework を使用している場合、[Xrm.Tooling](/dotnet/api/?view=dynamics-xrmtooling-ce-9) 名前空間内でクラスを使用して認証し、組織サービスおよび Web API に接続できます。
+.NET Framework を使用している場合、[Xrm.Tooling](/dotnet/api/?view=dynamics-xrmtooling-ce-9) の名前空間内でクラスを使用して認証し、組織サービスおよび Web API に接続することができます。
 
 `Xrm.Tooling` クラスで、<xref:Microsoft.Xrm.Sdk.IOrganizationService> インターフェイス メソッドを使用している SDK アセンブリを使用できます。 これはプラグインおよびワークフロー活動で使用されるプログラミングと同じスタイルで、.NET Framework アプリケーションのどこででも使用できる 1 つのスタイルになっています。
 
@@ -53,6 +53,7 @@ Web API の使用を希望する場合は、<xref:Microsoft.Xrm.Tooling.Connecto
 クライアント アプリケーションを作成するときには、.NET Framework バージョン 4.6.2 以降を使用します。 Transport Level Security (TLS) 1.2 またはそれより優れたセキュリティを使用するアプリケーションのみが接続できます。 TLS 1.2 は .NET Framework 4.5.2 で使用される既定のプロトコルではありませんが、.NET Framework 4.6.2 内にあります。
 
 > [!NOTE]
+> [Microsoft.CrmSdk.XrmTooling.CoreAssembly](https://www.nuget.org/packages/Microsoft.CrmSdk.XrmTooling.CoreAssembly/) で利用可能なSDK API や、その他の "CrmSdk" NuGet パッケージは .NET Core コードの開発に対応していません。<p/>
 > **Visual Studio 2015 に関する既知の問題**
 > 
 > VS 2015 のデバッグモードでプロジェクト/ソリューションを実行していると、接続できなくなることがあります。 これは、4.6.2 以降のターゲットフレームワークを使用しているかどうかにかかわらず発生します。 これは、Visual Studio ホスティングプロセスが .NET 4.5 に対してコンパイルされているために発生します。これは既定で TLS 1.2 がサポートされていないことを意味します。 回避策として、Visual Studio ホスティング プロセスを無効にできます。 

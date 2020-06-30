@@ -10,16 +10,16 @@ ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
-ms.openlocfilehash: 6f801328a4fc6b400cecd9ae7d8d233d8f3241a7
-ms.sourcegitcommit: 551af7e0273862b28d9b2387671a4eeaf719eb37
+ms.openlocfilehash: 05ed5100a9f599283b7e3480a3459412abfb5b69
+ms.sourcegitcommit: e1a6113bc54d23f94a2ec336076ca715df75f67f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "3116872"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "3369899"
 ---
 # <a name="add-code-components-to-a-field-or-entity-in-model-driven-apps"></a>モデル駆動型アプリでフィールドやエンティティにコード コンポーネントを追加する
 
-コード コンポーネントを使用すると、従来テキストを含むフィールドをビジュアル化に変換できます。 同様に、コード コンポーネントを使用して、ビューなどのデータセットを変換し、レコードの一覧ではなくより視覚的表現で表示することができます。 コード コンポーネントは、フォーム、ダッシュボード、ビュー、およびホームページ グリッド上にビジュアル化として表示することができます。 
+コード コンポーネントを使用すると、従来テキストを含むフィールドをビジュアル化に変換できます。 同様に、コード コンポーネントを使用して、ビューなどのデータセットを変換し、レコードの一覧ではなくより視覚的表現で表示することができます。 コード コンポーネントは、フォーム、ダッシュボード、ビュー、ホームページ グリッド上に視覚エフェクトとして表示することができます。 
 
 
    > [!div class="mx-imgBorder"] 

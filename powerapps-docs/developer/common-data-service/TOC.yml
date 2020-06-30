@@ -330,19 +330,11 @@
               href: work-solutions.md
             - name: 管理ソリューションの作成、インストール、および更新
               href: create-install-update-managed-solution.md
-            - name: ソリューションの更新プログラムを簡易化する修正プログラムの作成
+            - name: ソリューションの更新を簡略化する修正プログラムの作成
               href: create-patches-simplify-solution-updates.md
             - name: カスタマイズ ファイルを編集するとき
               href: when-edit-customization-file.md
-    - name: Azure DevOps 構築ツール
-      items:
-        - name: 概要
-          href: build-tools-overview.md
-        - name: 仕事
-          href: build-tools-tasks.md
-        - name: チュートリアルとよく寄せられる質問
-          href: build-tools-tutorial-faq.md
-    - name: 'SolutionPackager ツール '
+    - name: SolutionPackager ツール
       href: compress-extract-solution-file-solutionpackager.md
       items:
         - name: ソリューション ファイルを使用したソース コントロール
@@ -408,6 +400,8 @@
           href: authenticate-office365-deprecation.md
     - name: 'チュートリアル: アプリを Azure Active Directory に登録する'
       href: walkthrough-register-app-azure-active-directory.md
+    - name: 'チュートリアル: ASP.NET Core Blazor WebAssembly アプリを作成する'
+      href: walkthrough-blazor-webassembly-single-tenant.md
     - name: サーバー間 (S2S) の認証を使用して Web アプリケーションを作成する
       href: build-web-applications-server-server-s2s-authentication.md
       items:

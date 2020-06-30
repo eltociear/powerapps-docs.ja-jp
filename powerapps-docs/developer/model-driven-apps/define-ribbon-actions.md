@@ -2,7 +2,7 @@
 title: リボン アクションを定義する (モデル駆動型アプリ) | MicrosoftDocs
 description: <CommandDefinition> 要素のコマンド バーまたはリボン コントロールによって実行されるアクションを、リボンでそのコントロールを有効化するか、表示するかを制御するルールと一緒に定義する方法について説明します。
 keywords: ''
-ms.date: 10/31/2018
+ms.date: 05/07/2020
 ms.service:
 - PowerApps
 ms.topic: article
@@ -16,12 +16,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 13efb9c8962f14dffe73beb67aff1f1c229a9286
-ms.sourcegitcommit: 4a88daac42180283314f6bedee3d6810fd5a6c25
+ms.openlocfilehash: d3fa1bdb13054ba3e59d60b795868e13c02ce28a
+ms.sourcegitcommit: ed423b9382bf183d0b28907039d3432b99d4e7f0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "3275959"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "3353488"
 ---
 # <a name="define-ribbon-actions"></a>リボン アクションの定義
 
@@ -31,7 +31,7 @@ ms.locfileid: "3275959"
   
  リボン コントロールは、次の 2 種類のアクションを実行できます。複数のアクションが含まれることもあります。  
   
-- **JavaScript 関数**: `<JavaScriptFunction>` 要素はスクリプト Web リソースに定義される関数を参照します。  
+- **JavaScript 関数** :  `<JavaScriptFunction>` 要素は、[スクリプト (JScript) Web リソース](/powerapps/developer/model-driven-apps/script-jscript-web-resources)に定義された関数を参照します。  
   
 - **URL を開く**: リボンは、`<Url>` 要素の Address 属性の値を使用して URL を開きます。 追加パラメーターによって、どの QueryString パラメーターをどのように渡すかと、ウィンドウが開くときのモードに関する情報を渡すことができます。  
   

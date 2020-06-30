@@ -6,20 +6,22 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 01/17/2020
+ms.date: 05/07/2020
 ms.author: tapanm
 ms.reviewer: ''
-ms.openlocfilehash: 4c7f5aaa46acd255f15e0a040f44710a608d34a2
-ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
+ms.openlocfilehash: 5298f982321cd42deda98674286e2695cc345ac7
+ms.sourcegitcommit: ed423b9382bf183d0b28907039d3432b99d4e7f0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "2977366"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "3353412"
 ---
 # <a name="known-issues"></a>既知の問題
 
 
 ## <a name="general-issues"></a>一般的な問題
+
+- タイムラインのメモのリッチ テキストは Power Apps ポータルではサポートされていません。 ポータルで使用する場合は、[タイムラインのメモのリッチ テキスト エディターを無効](https://docs.microsoft.com/powerapps/maker/model-driven-apps/set-up-timeline-control#enable-or-disable-rich-text-editor-for-notes-in-timeline) にしてください。
 
 - 更新されたYahoo YDN Oauth プロバイダー エンドポイントと Power Apps ポータルの間で互換性の問題が継続しているため、ユーザーは一時的に [Yahoo ID プロバイダー](./configure/configure-oauth2-settings.md#yahoo-ydn-app-settings) で認証できません。
 

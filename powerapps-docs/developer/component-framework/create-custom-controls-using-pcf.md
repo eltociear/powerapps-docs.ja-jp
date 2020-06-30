@@ -11,12 +11,12 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d2cbf58a-9112-45c2-b823-2c07a310714c
-ms.openlocfilehash: ccdb91def96f485d4641a71a6d12199117063e78
-ms.sourcegitcommit: 310dd3dc68ffebe6a416450836ac0ba988b84fb4
+ms.openlocfilehash: 7fc225e385ba19377d837550c7d3e903082e753d
+ms.sourcegitcommit: e1a6113bc54d23f94a2ec336076ca715df75f67f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "3162164"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "3370091"
 ---
 # <a name="create-and-build-a-code-component"></a>コードコンポーネントを作成、構築する
 
@@ -24,9 +24,9 @@ ms.locfileid: "3162164"
 
 ## <a name="create-a-new-component"></a>新しいコンポーネントの作成
 
-開始するには、 Power Apps CLIのインストール後に **VS 2017 の開発者向けコマンド プロンプト** 開きます。
+まず、Power Apps CLI のインストール後、**VS 2017 以降の開発者コマンドプロンプト**を開きます。
 
-1. VS 2017 の開発者向けコマンド プロンプトでは、コマンド `mkdir <Specify the folder name>`を使用して、ローカルのハードディスクに *C:\Users\your name\Documents\My_code_Component* のような新規フォルダを作成します。
+1. 開発者コマンド プロンプトで、ローカルマシンに新規フォルダを作成します。たとえば、`mkdir <Specify the folder name>`コマンドを使用して、*C:\Users\your name \ Documents \ My_code_Component* を作成します。
 2. コマンド `cd <specify your new folder path>` を使用して、新しく作成したフォルダに移動します。
 3. このコマンドを実行して、基本パラメータを渡して新たなコンポーネントプロジェクトを作成します。
 

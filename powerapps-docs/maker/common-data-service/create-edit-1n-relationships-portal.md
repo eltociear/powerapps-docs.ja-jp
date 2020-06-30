@@ -2,7 +2,7 @@
 title: Power Apps ポータルを使用して 1 対多または多対 1 のエンティティ関連付けを作成、編集する | MicrosoftDocs
 description: Power Apps ポータルを使用して 1 対多または多 対 1 のエンティティ関連付けを作成する方法について説明します
 ms.custom: ''
-ms.date: 06/11/2018
+ms.date: 08/27/2019
 ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
@@ -20,12 +20,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 415b613fbbafa5f3b1b54827a1aa59272cdc4b7d
-ms.sourcegitcommit: d98dd90a7dda11f434a13a7f8976459856d6142b
+ms.openlocfilehash: 52f1593350b2c164425c9af339f476dd4d3a53a2
+ms.sourcegitcommit: 82fa1758e29fe302f9a252fd9943ace03b7aada0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/29/2020
-ms.locfileid: "3093821"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "3427289"
 ---
 # <a name="create-and-edit-one-to-many-or-many-to-one-entity-relationships-using-power-apps-portal"></a>Power Apps ポータルを使用して 1 対多または多対 1 のエンティティ関連付けを作成、編集する
 
@@ -46,7 +46,6 @@ ms.locfileid: "3093821"
  |**すべて**| エンティティのすべての関連付けを表示する|
  |**ユーザー定義**|エンティティのカスタム関連付けのみを表示する|
  |**既定**|エンティティの標準関連付けのみを表示する|
-<!-- TODO: What is the actual difference between All and Default? -->
 
 ![アカウント エンティティの関連付け](media/view-account-relationships-portal.png)
 
@@ -59,13 +58,11 @@ ms.locfileid: "3093821"
 > [!NOTE]
 > **多対多** の関連付けに関する詳細は、「[N:N (多対多) の関連付けを作成する](create-edit-nn-relationships.md)」を参照してください。
 
-<!-- This may change going forward, but this is the way it is now. #2534972 -->
 > [!Important]
 > ポータルは、ソリューション エクスプローラーとは異なる用語を使用します。 ソリューション エクスプローラーの **主エンティティ** は、ポータルでは **現在のエンティティ** となります。
 
 選択肢に応じて、次のいずれかが表示されます。
 
-<!-- These are the correct screenshots from the UI as of 6/11/18 -->
 |型|パネル|
 |--|--|
 |**多対 1**|![多対 1 の関連付けパネル](media/many-to-one-relationship-panel.png)|
@@ -78,8 +75,8 @@ ms.locfileid: "3093821"
 
 エンティティを選択すると、関連付けの詳細を編集できます。 この例では、複数の取引先担当者のエンティティ レコードを 1 つの取引先企業に関連付けることができます。
 
-<!-- These are the correct screenshots from the UI as of 6/11/18 -->
-![1 対多の関連付けの取引先企業と取引先担当者](media/One-to-many-account-contact.png)
+> [!div class="mx-imgBorder"] 
+> ![1 対多の関連付けの取引先企業と取引先担当者](media/One-to-many-account-contact.png)
 
 保存する前に表示された既定値を編集できます。 **関連付けの名前** および **参照フィールドの説明** の値を表示するために、**そのほかのオプション** を選択します
 
@@ -87,7 +84,7 @@ ms.locfileid: "3093821"
 |--|--|
 |**参照フィールド表示名**|検索フィールドのローカライズ可能なテキストが関連エンティティで作成されます。<br />これは、後で編集できます。|
 |**検索フィールド名**|検索フィールドの名前が関連エンティティで作成されます。|
-|**リレーションシップ名**|作成される関連付けの名前。|
+|**リレーションシップ名**|作成されるリレーションシップの名前。|
 |**検索フィールドの説明**|検索フィールドの説明。 モデル駆動型アプリでは、これは、ユーザーがフィールド上にマウス カーソルを置いたときにツールヒントとして表示されます。 <br />これは、後で編集できます。|
 
 エンティティの編集を続行できます。 構成した関連付けを作成するには、**エンティティの保存** を選択します。

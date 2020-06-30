@@ -21,12 +21,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 199399fe75103df2d8fde902d54a803ec56fc395
-ms.sourcegitcommit: 2b34de88c977c149e4c632b23d8e816901c15949
+ms.openlocfilehash: 924fd4107a330a82f3efdbe8ac2f934dffa1bf19
+ms.sourcegitcommit: 4b6f187c9501332f9acca5978fa326621f2980e5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "3040572"
+ms.lasthandoff: 05/22/2020
+ms.locfileid: "3394684"
 ---
 # <a name="create-and-edit-entities-using-power-apps-portal"></a>Power Apps ポータルを使用してエンティティを作成、編集する
 
@@ -40,11 +40,13 @@ ms.locfileid: "3040572"
 
 1. [Power Apps ポータル](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) から、**データ** > **エンティティ** を選択します。
 
-![エンティティの表示](media/view-entities-portal.png)
+    > [!div class="mx-imgBorder"] 
+    > ![エンティティの表示](media/view-entities-portal.png)
 
 一覧の次のビューを使用して表示されたエンティティをフィルター処理できます。 
 
-![エンティティ ビュー](media/entity-views-portal.png)
+  > [!div class="mx-imgBorder"] 
+    > ![エンティティ ビュー](media/entity-views-portal.png)
 
  |ビュー|説明|
  |--|--|
@@ -59,7 +61,8 @@ ms.locfileid: "3040572"
 
 [エンティティを表示](#view-entities)しながら、メニュー バーで **新しいエンティティ** を選択します。 これには、[新しいエンティティ] パネルが開きます。
 
-![新しいエンティティ パネル](media/new-entity-panel.png)
+  > [!div class="mx-imgBorder"] 
+    > ![新しいエンティティ パネル](media/new-entity-panel.png)
 
 以下のフィールドにデータを入力
 
@@ -88,7 +91,8 @@ ms.locfileid: "3040572"
 
 エンティティの **プライマリ名** フィールドがフィールドの一覧に表示されます。 フィールドの **表示名** または **名前** を変更する場合は、**プライマリ名** フィールドを選択して編集します。 既定値は、以下に表示されます。
 
-![[プライマリ名] パネル](media/primary-name-panel.png)
+  > [!div class="mx-imgBorder"] 
+    > ![[プライマリ名] パネル](media/primary-name-panel.png)
 
 ## <a name="edit-an-entity"></a>エンティティの編集
 
@@ -96,7 +100,8 @@ ms.locfileid: "3040572"
 
 エンティティの **表示名**、 **表示名の複数形** 、**説明** を編集する場合は、メニューから **設定** を選択します。
 
-![エンティティ設定](media/entity-settings-portal.png)
+  > [!div class="mx-imgBorder"] 
+    > ![エンティティ設定](media/entity-settings-portal.png)
 
 他の項目については、タブから選択します。
 
@@ -137,7 +142,8 @@ ms.locfileid: "3040572"
 エンティティ内のデータを表示します。
 エンティティの使用できるビューから選択したり、すべてのフィールドを表示するには、**ビューの選択** メニューを使用します。
 
-![ビューの選択](media/entity-data-select-view.png)
+  > [!div class="mx-imgBorder"] 
+    > ![ビューの選択](media/entity-data-select-view.png)
 
 そのほかのデータを表示するには、フォームの下部の **次のページ** と **前のページ** コマンドを使用します。
 
@@ -153,7 +159,8 @@ ms.locfileid: "3040572"
 
 [エンティティを表示](#view-entities)した状態で、エンティティを選択し、メニューから **エンティティの削除** を選択します。
 
-![Power Apps ポータルを使用してエンティティを削除する](media/delete-entity-powerapps-portal.png)
+  > [!div class="mx-imgBorder"] 
+    > ![Power Apps ポータルを使用してエンティティを削除する](media/delete-entity-powerapps-portal.png)
 
 削除を防止する依存関係がエンティティにする場合は、エラー メッセージが表示されます。 依存関係を特定および削除するには、ソリューション エクスプローラーを使用する必要があります。 詳細については、「[エンティティの依存関係の特定](create-edit-entities-solution-explorer.md#identify-entity-dependencies)」を参照してください
 

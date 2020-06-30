@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 3ba1bdb37eef71584a2992855c61f0ac0799e2b9
-ms.sourcegitcommit: c6906775005aec98973b1f5c3dbe5924aff6d26e
+ms.openlocfilehash: 63180fe7b6fe7c8c0829b0660e8a98200f967476
+ms.sourcegitcommit: e1a6113bc54d23f94a2ec336076ca715df75f67f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "3341368"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "3370095"
 ---
 # <a name="use-multi-tenant-server-to-server-authentication"></a>マルチ テナント型でのサーバー間認証の使用
 
@@ -68,12 +68,12 @@ ms.locfileid: "3341368"
  マルチテナント型 Web アプリケーションまたは Azure AD を認証プロバイダーとして使用するサービスを作成します。  
   
  これをどうやって行うのかは、このトピックの焦点ではありません。 これにアプローチして、要件や好みに合った選択をすることができるいくつかの方法があります。 詳細とサンプルについては、次のリンクを参照してください:  
+
+- [Azure AD & OpenID Connect を使用してマルチテナント型 SaaS Web アプリケーションを構築する](https://github.com/Azure-Samples/active-directory-dotnet-webapp-multitenant-openidconnect)
   
-- [ Azure AD &amp; OpenID 接続を使用してマルチテナント型 SaaS Web アプリケーションを構築する](https://azure.microsoft.com/documentation/samples/active-directory-dotnet-webapp-multitenant-openidconnect/)  
+- [Microsoft IDプラットフォームを使用する組織の ASP.NET Core Web アプリのサインイン ユーザー](https://github.com/Azure-Samples/active-directory-aspnetcore-webapp-openidconnect-v2/tree/master/1-WebApp-OIDC/1-2-AnyOrg)  
   
-- [Azure AD を使用して、Web API を呼び出すマルチテナント型 SaaS Web アプリケーションを構築する](https://azure.microsoft.com/documentation/samples/active-directory-webapp-webapi-multitenant-openidconnect-aspnetcore/)  
-  
-  Azure AD には、アプリを登録するために次の値が必要です。  
+Azure AD には、アプリを登録するために次の値が必要です。  
   
 |値|説明|  
 |-----------|-----------------|  

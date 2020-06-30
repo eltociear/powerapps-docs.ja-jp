@@ -2,7 +2,7 @@
 title: Power Apps ポータルを使用して Common Data Service に多対多のエンティティー の関連付けを作成する | MicrosoftDocs
 description: N:N (多対多) の関連付けを作成する方法を学習する
 ms.custom: ''
-ms.date: 06/11/2018
+ms.date: 08/27/2019
 ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
@@ -20,12 +20,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: cd7450b81b29c4d95ac304f76eeff29f32a65f79
-ms.sourcegitcommit: d98dd90a7dda11f434a13a7f8976459856d6142b
+ms.openlocfilehash: c19b182d543918c30ad2a3316314edb947dc7d8a
+ms.sourcegitcommit: 82fa1758e29fe302f9a252fd9943ace03b7aada0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/29/2020
-ms.locfileid: "3093689"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "3427201"
 ---
 # <a name="create-many-to-many-entity-relationships-in-common-data-service-using-power-apps-portal"></a>Power Apps ポータルを使用して Common Data Service に多対多のエンティティの関連付けを作成する
 
@@ -46,7 +46,6 @@ ms.locfileid: "3093689"
  |**すべて**| エンティティのすべての関連付けを表示する|
  |**ユーザー定義**|エンティティのカスタム関連付けのみを表示する|
  |**既定**|エンティティの標準関連付けのみを表示する|
-<!-- TODO: What is the actual difference between All and Default? -->
 
 ![アカウント エンティティの関連付け](media/view-account-relationships-portal.png)
 
@@ -63,11 +62,13 @@ ms.locfileid: "3093689"
 
 **多対多**ウィンドウで、現在のエンティティに関連付けするエンティティを選択します。
 
-![選択した取引先のエンティティを使用した多対多のパネル](media/many-to-many-panel-1.png)
+> [!div class="mx-imgBorder"] 
+> ![選択した取引先のエンティティを使用した多対多のパネル](media/many-to-many-panel-1.png)
 
 **関連付けの名前** および **関連付けのエンティティの名前**フィールドを表示するために、**そのほかのオプション**を選択します。
 
-![そのほかのオプションを選択した多対多のパネル](media/many-to-many-panel-2.png)
+> [!div class="mx-imgBorder"] 
+> ![そのほかのオプションを選択した多対多のパネル](media/many-to-many-panel-2.png)
 
 これらのフィールドの値は、選択されたエンティティに基づいて自動的に生成されます。
 

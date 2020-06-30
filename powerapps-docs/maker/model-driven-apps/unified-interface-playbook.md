@@ -2,7 +2,7 @@
 title: 統合インターフェイスの活用プレイブック | MicrosoftDocs
 description: 従来の Webクライアント から 統合インターフェイス への移行を計画し、実行する方法を解説します
 ms.custom: ''
-ms.date: 03/13/2020
+ms.date: 05/20/2020
 ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
@@ -18,12 +18,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 6359f4b673640bfdd5cd1093dc7e6da063da0fce
-ms.sourcegitcommit: 3066c2800a939fbcaaac4262c802843e2d80b88c
+ms.openlocfilehash: 228a45fe8479a6ec696ff0894ca51c30c9286832
+ms.sourcegitcommit: 2ccf6fd0af217c370fe38f76d30b38b7c9b19934
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "3134053"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "3391060"
 ---
 # <a name="unified-interface-playbook"></a>統合インターフェイスの活用プレイブック
 
@@ -46,4 +46,6 @@ ms.locfileid: "3134053"
 | [第 4 章: 最適化](https://download.microsoft.com/download/A/F/3/AF3D45A7-4F38-41BE-8956-1DF7A4A5AFDB/playbook-ch4-optimize.pptx)  | PowerPoint  |
 
 ### <a name="see-also"></a>関連項目
-[Dynamics 365 Project Service Automation アップグレード プレイブック](https://aka.ms/PSAUCIUpgrade)
+[Dynamics 365 Project Service Automation アップグレード プレイブック](https://aka.ms/PSAUCIUpgrade)<br/>
+[Dynamics 365 Service スケジュール低減策のプレイブック](https://aka.ms/ServiceSchedulePlaybook)
+

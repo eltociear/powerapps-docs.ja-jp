@@ -1,7 +1,7 @@
 ---
 title: 組織のブランドに合わせて配色を変更またはロゴを追加 | MicrosoftDocs
 ms.custom: ''
-ms.date: 02/19/2019
+ms.date: 04/30/2020
 ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
@@ -17,12 +17,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 1919084b26cb7605b2c32e8569df8ab31fb857a3
-ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
+ms.openlocfilehash: eba9c1b52cfdb11b5f784f64bd2189ba6357a73b
+ms.sourcegitcommit: 4b6f187c9501332f9acca5978fa326621f2980e5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "2875095"
+ms.lasthandoff: 05/22/2020
+ms.locfileid: "3394640"
 ---
 # <a name="create-a-theme"></a>テーマの作成
 
@@ -30,13 +30,13 @@ ms.locfileid: "2875095"
   
 <a name="UseThemes"></a>   
 ## <a name="use-themes-to-enhance-the-user-interface-and-create-your-product-branding"></a>ユーザー インターフェイスの機能の強化と製品ブランドの作成にテーマを使用  
- テーマに合わせた構成は、アプリのユーザー インターフェイスを大幅に変えるだけでなく、その機能を強化します。 テーマ色はアプリケーション全体に適用されます。 たとえば、UI の次の視覚要素の機能を強化できます。  
+ テーマに合わせた構成は、アプリのユーザー インターフェイスを大幅に変えるだけでなく、その機能を強化します。 テーマ色はアプリケーション全体にグローバルに適用されます。 たとえば、UI で次の視覚要素を強化できます。  
   
--   製品ロゴとナビゲーション色を変更して製品ブランドを作成  
+-   製品のロゴとナビゲーション カラーの変更による製品ブランドの作成  
   
--   カーソルを置いたときの色や選択色など、強調色を調整  
+-   アクセントカラーの調整 (ホバー色や選択色など)  
   
--   エンティティ固有の着色を指定  
+-   エンティティ固有の色の指定  
     
 -   ロゴ  
   
@@ -44,7 +44,7 @@ ms.locfileid: "2875095"
   
 -   ナビゲーション バーの色  
   
--   ナビゲーション バーのシェルフの色
+-   ナビゲーション バー シェルフの色
 
 -   統一インターフェイスのメイン コマンド バーの色
   
@@ -72,17 +72,13 @@ ms.locfileid: "2875095"
   
 <a name="CloneAlter"></a>   
 ## <a name="copy-and-alter-the-existing-theme"></a>既存のテーマのコピーと変更  
- 新しいをテーマ作成する最も簡単で最も早い方法は、既存のテーマを複製し、それを変更した後、それを保存、プレビュー、公開することです。 
+ 新しいテーマを作成するには、既存のテーマを複製して変更した後、保存してプレビューし、公開する方法が最も簡単です。 
  
-1.  [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインします。
+1. [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインし、右上の **設定** ![設定アイコン](../model-driven-apps/media/powerapps-gear.png)を選択し、続いて**詳細設定**を選択します。
 
-2.  **モデル駆動型** (左下) を選択します。 
+2. **カスタマイズ** を選択し、**テーマ** を選択します。
 
-3.  選択 ![設定アイコン](../model-driven-apps/media/powerapps-gear.png) (右上) > **高度なカスタマイズ**。 
-
-4. **テーマ** で **すべてのテーマ**を選択します。 
-
-5. **CRM の既定のテーマ**を選択します。 
+3. **すべてのテーマ** 配下で **CRM の既定のテーマ**を選択します。 
 
 次のスクリーンショットは、既定のテーマのセットアップの一部を示しています。  
 

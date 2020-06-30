@@ -10,24 +10,24 @@ ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
-ms.openlocfilehash: 59069a6ae5a42b3fb2eb52bf069ba084f6ea0166
-ms.sourcegitcommit: 943672dad0041d3bab25b44cd8c4d25e88f39b93
+ms.openlocfilehash: 5d65768c0b321b578f4c6f649795f234a16a7159
+ms.sourcegitcommit: e1a6113bc54d23f94a2ec336076ca715df75f67f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/25/2020
-ms.locfileid: "3289283"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "3369791"
 ---
 # <a name="how-to-use-the-sample-components"></a>サンプルコンポーネントの使用方法
 
-このセクションに記載されているすべてのサンプル コンポーネントは、[ここ](https://go.microsoft.com/fwlink/?linkid=2088525)からダウンロードできるため、モデル駆動型アプリまたはキャンバス アプリで試すことができます。
+このセクションに記載されているすべてのサンプル コンポーネントは、[ここ](https://github.com/microsoft/PowerApps-Samples/tree/master/component-framework)からダウンロードできるため、モデル駆動型アプリまたはキャンバス アプリで試すことができます。
 
-このセクションの個々のサンプル コンポーネントのトピックでは、サンプル コンポーネントの概要、外観、およびサンプル コンポーネントのマニフェスト、コード、およびリソースについて説明します。
+このセクションの個々のサンプル コンポーネントのトピックでは、サンプル コンポーネントの概要、外観、マニフェスト、コード、サンプル コンポーネントのリソースについて説明します。
 
 ## <a name="before-you-can-try-the-sample-components"></a>サンプル コンポーネントを試す前に
 
 サンプル コンポーネントを試すには、まず次の手順を実行する必要があります。
 
-- [ダウンロード](https://go.microsoft.com/fwlink/?linkid=2088525)サンプル コンポーネントを使用して、ローカル コピーを作成できるようにします。
+- [ダウンロード](https://github.com/microsoft/PowerApps-Samples/tree/master/component-framework)サンプル コンポーネントを使用して、ローカル コピーを作成できるようにします。
 - [Power Apps CLI](https://aka.ms/PowerAppsCLI) のインストール
 
 ## <a name="try-the-sample-components"></a>サンプル コンポーネントを試す
@@ -35,7 +35,11 @@ ms.locfileid: "3289283"
 モデル駆動型アプリまたはキャンバス アプリでサンプル コンポーネントをインポートして試すには、次の手順に従います。
 
 1. サンプル コンポーネントをダウンロードしたコンピューター上のフォルダーに移動し、.zip ファイルを展開します。  
-1. Visual Studio 2017 の開発者コマンド プロンプトを開き、ランタイムで表示する展開フォルダー内のサンプル コンポーネント フォルダーに移動します。 たとえば、`/extracted_folder/TS_IncrementComponent` フォルダに移動します。
+1. Visual Studio　2017 以降の開発者コマンド プロンプトを開いて、ランタイムで表示する抽出したフォルダー内のサンプルコンポーネント フォルダーに移動します。 たとえば、`/extracted_folder/TS_IncrementComponent` フォルダに移動します。
+
+   >[!NOTE]
+   > 特定のコンポーネントを実行時に表示したい場合は、特定のコンポーネント フォルダーに移動する必要があります。 ビルド プロセス中に、複数のコンポーネントを単一のソリューション ファイルに追加できます。
+
 1. 次のコマンドを実行して、必要なすべての依存関係を取得します。
     ```CLI
     npm install

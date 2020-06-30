@@ -20,12 +20,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: b0528015899ccc624fed1d83566c445f348343c9
-ms.sourcegitcommit: 2b34de88c977c149e4c632b23d8e816901c15949
+ms.openlocfilehash: 6b34d999b06e756bac246213412fb955c433c8eb
+ms.sourcegitcommit: 4b6f187c9501332f9acca5978fa326621f2980e5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "3040440"
+ms.lasthandoff: 05/22/2020
+ms.locfileid: "3394288"
 ---
 # <a name="define-alternate-keys-using-power-apps-portal"></a>Power Apps ポータルを使用した代替キーを定義する
 
@@ -40,7 +40,8 @@ ms.locfileid: "3040440"
 1. [Power Apps ポータル](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) から、**データ** > **エンティティ** を選択し、表示したいフィールドを含むエンティティを選択します。
 2. **キー**を選択すると、定義された代替キーのリストが表示されます。
 
-    ![代替キーを表示](media/view-alternate-keys-portal.png)
+  > [!div class="mx-imgBorder"] 
+    > ![代替キーを表示](media/view-alternate-keys-portal.png)
 
 ## <a name="create-an-alternate-key"></a>代替キーの作成
 

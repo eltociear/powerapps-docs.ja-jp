@@ -6,15 +6,15 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 10/07/2019
+ms.date: 06/04/2020
 ms.author: tapanm
 ms.reviewer: ''
-ms.openlocfilehash: 73149bc45d61f344b62f7a5e733848f11287c369
-ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
+ms.openlocfilehash: 07b3b892ae4e07c5ec643f7be61a522faa916ea8
+ms.sourcegitcommit: 909948d219c3c61d617f13aceb355e1d5bcb0b55
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "2980882"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "3432665"
 ---
 # <a name="render-the-entity-list-associated-with-the-current-page"></a>現在のページに関連付けられているエンティティの表示
 
@@ -145,7 +145,7 @@ ms.locfileid: "2980882"
                 {% else %}
                   {{ attr }}
                 {% endif -%}
-              </th>
+              </td>
             {% endfor -%}
 
             <td>

@@ -2,7 +2,7 @@
 title: リボンの有効化ルールを定義する (モデル駆動型アプリ) | MicrosoftDocs
 description: リボン要素の構成中にそのリボン要素をいつ有効化するかを制御する、特定のルールを定義することについて学習します。
 keywords: ''
-ms.date: 02/08/2019
+ms.date: 05/07/2020
 ms.service: powerapps
 ms.topic: article
 ms.assetid: 201f5db9-be65-7c3b-8202-822d78338bd6
@@ -15,12 +15,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: d6805a18d0b445d18233c854d0b760b0a7098db2
-ms.sourcegitcommit: 4a88daac42180283314f6bedee3d6810fd5a6c25
+ms.openlocfilehash: 70d44e321d798805b90b269bac5fc20588ae1d92
+ms.sourcegitcommit: ed423b9382bf183d0b28907039d3432b99d4e7f0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "3275819"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "3353496"
 ---
 # <a name="define-ribbon-enable-rules"></a>リボンの有効化ルールの定義
 
@@ -70,7 +70,7 @@ ms.locfileid: "3275819"
 -   `CrmForOutlookOfflineAccess`  
 
 ### <a name="custom-rule"></a>カスタム ルール
- `<CustomRule>` 要素を使用します。 Promise (統一インターフェイス) またはブール値 (統一インターフェイスおよび Web クライアント) を返す JavaScript ライブラリ内の関数を呼び出すには、この種類のルールを使用します。
+ `<CustomRule>` 要素を使用します。 Promise (統一インターフェイス) またはブール値 (統一インターフェイスおよび Web クライアント) を返す [スクリプト (JScript) Web リソース](/powerapps/developer/model-driven-apps/script-jscript-web-resources)内の関数を呼び出すには、この種類のルールを使用します。
 
 ```JavaScript
 function EnableRule()

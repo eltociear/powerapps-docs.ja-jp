@@ -6,17 +6,17 @@ manager: annbe
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 05/06/2020
+ms.date: 06/05/2020
 ms.author: kvivek
 ms.reviewer: kvivek
 searchScope:
 - PowerApps
-ms.openlocfilehash: f50cf7a7ae839cd22632bb4f5e1281ad585eb2a6
-ms.sourcegitcommit: 2e186321d124dd6c0a4b51df5e8bc94a83ccf1e2
+ms.openlocfilehash: 20ee7b40a0256ccc8cba02321755b8a3830ae9ca
+ms.sourcegitcommit: 6f904789d817248eac0a4c9dd0c5fe37dfbb77ad
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "3342208"
+ms.lasthandoff: 06/06/2020
+ms.locfileid: "3434395"
 ---
 # <a name="upgrade-the-regional-governmentemergency-response-and-monitoring-solution"></a>地域政府機関の緊急応答およびモニタリング ソリューションをアップグレードする
 
@@ -36,7 +36,7 @@ ms.locfileid: "3342208"
 
 **重要:** .zip ファイルを解凍する前に、ファイルのブロックを解除してください。
 
-1.  .zip ファイルを右クリックし、**プロパティ** を選択します。
+1.  .zip ファイルを右クリックし、**プロパティ**を選択します。
 
 2.  プロパティ ダイアログボックスで**ブロック解除**を選択し、**適用**を選択してから、**OK** をクリックします。
 
@@ -66,40 +66,35 @@ ms.locfileid: "3342208"
 
 .pbit ファイルを使用する手順は、元の展開と同じです。Power Apps ポータルへの埋め込みに使用される Power BI レポート URL を保持したい場合は、同じワークスペースを使用して既存の Power BI ダッシュボードを上書きすることを確認してください。 
 
-詳細: [ステップ 5: Power BI ダッシュボードを構成して公開](https://docs.microsoft.com/powerapps/sample-apps/regional-emergency-response/deploy#step-5-configure-and-publish-power-bi-dashboard)
+詳細: デプロイのトピックにある [ステップ 5: Power BI ダッシュボードを構成して公開する](https://docs.microsoft.com/powerapps/sample-apps/regional-emergency-response/deploy#step-5-configure-and-publish-power-bi-dashboard)。
 
 ## <a name="step-4-verify-the-power-bi-report-url-in-your-portal"></a>ステップ 4: ポータルで Power BI レポート URL を検証
 
-この手順はダッシュボードを新しいワークソースで公開したために、前の手順で Power BI レポート URL が変更された場合にのみ必要です。ポータルで **PowerBI パス** サイト設定を検証し、最新の Power BI レポート URL で値を更新します。
+このステップは、新しいワークスペースでダッシュボードを公開するための前のステップで、Power BI レポート URL が変更された場合のみ必要です。 自分のポータルで **PowerBI パス** サイトを確認して、最新の Power BI レポート URL で値を更新します。
 
-詳細な手順については、[Power BI レポートをポータルに埋め込む](https://docs.microsoft.com/powerapps/sample-apps/regional-emergency-response/deploy#the-process-1) を参照してください
+詳細な手順については、デプロイトピックの [ポータルに Power BI レポートを埋め込む](https://docs.microsoft.com/powerapps/sample-apps/regional-emergency-response/deploy#the-process-1) を参照してください。
 
-変更を有効にするために、必ずポータルを再起動します。 詳細: [ポータルのリセット](https://docs.microsoft.com/powerapps/sample-apps/regional-emergency-response/deploy#restart-the-portal)
+変更を有効にするために、必ずポータルを再起動します。 詳細: デプロイ トピックの [ポータルを再起動する](https://docs.microsoft.com/powerapps/sample-apps/regional-emergency-response/deploy#restart-the-portal)。
 
-## <a name="step-5-verify-the-send-invitation-and-send-password-reset-to-contact-processes"></a>ステップ 5: 招待状の送信とパスワードのリセットを連絡先に送信するプロセスを検証
+## <a name="step-5-verify-the-processes"></a>ステップ 5: プロセスを確認する
 
 **招待状を送信**および**連絡先にパスワードのリセットを送信**プロセスが、まだ有効であることを確認します。つまり、**差出人**フィールドにメールを送信できるアカウントがあるなら、残りの詳細は問題ありません。
 
-これらのプロセスを修正する方法の詳細については、以下を参照してください。
+これらのプロセスを修正する方法の詳細については、デプロイ トピックの [ステップ10: アプリのプロセスを修正する](/powerapps/sample-apps/regional-emergency-response/deploy#step-10-fix-the-processes-for-the-app) を参照してください。
 
--   [ステップ 10: 招待状の送信プロセスを修正](https://docs.microsoft.com/powerapps/sample-apps/regional-emergency-response/deploy#step-10-fix-the-send-invitation-process)
+## <a name="step-6-verify-the-flows-for-sending-emails"></a>ステップ 6 : メールの送信フローを修正する
 
--   [ステップ 11: パスワードのリセットを連絡先に送信するプロセスを修正](https://docs.microsoft.com/powerapps/sample-apps/regional-emergency-response/deploy#step-11-fix-the-send-password-reset-to-contact-process)
-
-## <a name="step-6-verify-the-flow-supply-tracking-flow-is-enabled"></a>ステップ 6: フロー消耗品の追跡フローが有効になっていることを確認
-
-このフローにより、最前線のユーザーは、Common Data Service に保存されるポータルを経由して消耗品を追加できます。
-
-これらのプロセスを修正する方法の詳細については、[ステップ 13: フロー消耗品の追跡フローを有効になっていることを確認](https://docs.microsoft.com/powerapps/sample-apps/regional-emergency-response/deploy#step-13-verify-the-flow-supply-tracking-flow-is-enabled) を参照してください。
-
-## <a name="step-7-verify-and-update-the-details-of-flows-for-sending-emails"></a>ステップ 7: 電子メール送信のフロー詳細を確認して更新
-
-このステップでは、以下のことを行います。
+次の手順を実行します。
 
 |フロー名|変更|
 |--|--|
 |**ポータル ユーザーの要請: 要請の却下時に管理者にメールを送信**|接続を更新して Common Data Service に接続し、電子メールを送信するユーザー アカウントを指定します。|
 |**ポータル ユーザーの要請: 要請の作成時に管理者にメールを送信**|接続を更新して Common Data Service に接続し、電子メールを送信するユーザー アカウントを指定します。 さらに、ポータル URL に基づいて、電子メール本文のポータル URL を更新します。| 
 
-この詳細については、[ステップ14: 電子メール送信のフロー詳細を更新](deploy.md#step-14-update-the-details-of-flows-for-sending-emails) を参照してください
+この詳細については、デプロイ トピックの [ステップ 11.1: メール送信のフロー詳細を修正する](deploy.md##step-111-fix-the-flows-for-sending-emails) を参照してください。
 
+## <a name="step-7-verify-the-flows-for-performing-tasks"></a>ステップ 7: タスクを実行するフローを確認する
+
+特定のタスクを実行するためのフローの接続情報を確認および承認します。
+
+これをおこなうための詳細については、[ステップ 11.2: 特定のタスクを実行するためのフローを修正する](/powerapps/sample-apps/regional-emergency-response/deploy#step-112-fix-the-flows-for-performing-specific-tasks) を参照してください。

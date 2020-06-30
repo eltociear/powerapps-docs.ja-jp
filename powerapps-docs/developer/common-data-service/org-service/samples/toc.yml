@@ -142,6 +142,8 @@
       href: dump-global-option-set.md
     - name: リボン定義のエクスポート
       href: export-ribbon-definitions.md
+    - name: メタデータのクエリと変更の検出
+      href: query-metadata-changes.md
     - name: 有効な状態の遷移を取得する
       href: retrieve-valid-status-transitions.md
     - name: 属性に関する作業

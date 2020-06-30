@@ -2,32 +2,26 @@
 title: Common Data Service のフィールドのデータ型 | MicrosoftDocs
 description: アプリケーションで使用可能な異なるフィールド データの種類について
 keywords: ''
-ms.date: 09/30/2019
+ms.date: 05/27/2020
 ms.service: powerapps
 ms.custom: ''
 ms.topic: article
-applies_to:
-- Dynamics 365 (online)
-- Dynamics 365 Version 9.x
-- powerapps
 author: Mattp123
 ms.assetid: 734b4ffa-5543-4f88-8517-299589f433f7
 ms.author: matp
 manager: kvivek
 ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
 search.audienceType:
 - maker
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 2c98ab7d40d89460995e69aed86dcdecc97ada25
-ms.sourcegitcommit: abdc8c609a7a221ce4ca6b051a84b7083bdbe1ab
+ms.openlocfilehash: 83a64d089728574bf04419604ad58464bfa390f7
+ms.sourcegitcommit: 241075714595a3544833040a6a16bc3def87ffcc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "3225633"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "3408006"
 ---
 # <a name="types-of-fields"></a>フィールドの種類
 
@@ -88,7 +82,7 @@ ms.locfileid: "3225633"
 
 複数選択フィールドを追加して、フォーム (メイン、簡易作成、簡易ビュー) と電子メールのテンプレートをカスタマイズできます。 複数選択オプション セット フィールドを追加するときは、ユーザーが選択できる複数の値を指定することができます。 ユーザーはフォームに記入する際、ドロップダウン リストに表示される値 1 つ、複数またはすべてを選択できます。
 
-たとえば、組織が複数の領域または地域で実行すると、「事業地域]フィールドの複数の場所または地域を含めることができます。 ユーザーは使用可能な値の一覧から、1 つまたは複数の場所を選択できます。
+たとえば、組織が複数の領域または地域で実行すると、事業地域フィールドの複数の場所または地域を含めることができます。 ユーザーは使用可能な値の一覧から、1 つまたは複数の場所を選択できます。
 
 複数選択オプション セットは読み取り専用グリッド、編集可能グリッドおよびフォームでのみ使用できます。 複数選択オプション セットは以下でサポートされていません。 
 - ワークフロー、アクション、ダイアログ、ロールアップ、グラフ、および計算フィールド。
@@ -221,6 +215,9 @@ By default, when an app user adds an image to display to a form or canvas app, t
 
 11. フォーム エディター リボンで **保存** を選択し、**公開** を選択します。 フォーム エディターを閉じます。 
 
+>[!NOTE]
+> 最大ファイルサイズが一度保存されると、変更できません。
+
 アプリ ユーザーがフォームに表示するイメージを選択できるようになりました。 アプリ ユーザーがレコードのフォームを開くとき、フォームに表示するイメージを選択できます。 
 
 > [!IMPORTANT]
@@ -251,5 +248,8 @@ By default, when an app user adds an image to display to a form or canvas app, t
 **ファイル** フィールドはバイナリ データを格納するために使用されます。 このフィールドの主目的の一つは、単一のイメージ、メモ、添付ファイルを保存することです。 ただし、そのほかの形式のバイナリ データの保存もできます。 このデータの種類に対して一つ以上のフィールドで、カスタマイズ可能な既存の標準のエンティティまたはユーザー定義エンティティに追加できます。
 
 既定の **最大ファイル サイズ** は 32 MBで、設定できる最大のサイズは128 MBです。 ファイル サイズ制限は、エンティティに追加するファイルの種類別のフィールドに個別に設定できます。 
+
+>[!NOTE]
+> 最大ファイルサイズが一度保存されると、変更できません。
 
 ファイル データを操作する開発者のための詳細: [ファイル属性](/powerapps/developer/common-data-service/file-attributes)

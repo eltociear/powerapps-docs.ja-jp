@@ -10,12 +10,12 @@ ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
-ms.openlocfilehash: 1d53a01d91822743311d350ddfce7733aba3f661
-ms.sourcegitcommit: 6fce86edacd9bfe49f8114a2a69bc18302cd01f9
+ms.openlocfilehash: 8a1cf58022d28366a9f24821a5a78dc9a661b559
+ms.sourcegitcommit: e1a6113bc54d23f94a2ec336076ca715df75f67f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "3260661"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "3370087"
 ---
 # <a name="common-issues-and-workarounds"></a>共通の問題と回避策
 
@@ -30,7 +30,7 @@ ms.locfileid: "3260661"
 **回避策**:
 
 - Visual Studio インストーラーを開きます。
-- Visual Studio 2017 で、 **修正 を選択します**。
+- Visual Studio 2017 以降の場合は、**修正** を選択します。
 - **個別のコンポーネント** を選択します。
 - コード ツール配下の **NuGet ターゲットと構築タスク** を確認します。
 

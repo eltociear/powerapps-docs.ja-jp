@@ -6,17 +6,17 @@ manager: annbe
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 05/06/2020
+ms.date: 06/05/2020
 ms.author: kvivek
 ms.reviewer: kvivek
 searchScope:
 - PowerApps
-ms.openlocfilehash: 7c2d72201e9ae45e6d8957434aa9d4014cb593a6
-ms.sourcegitcommit: 2e186321d124dd6c0a4b51df5e8bc94a83ccf1e2
+ms.openlocfilehash: 5c689f3b5761be0f92fe6282cec0b5543454e482
+ms.sourcegitcommit: 6f904789d817248eac0a4c9dd0c5fe37dfbb77ad
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "3342072"
+ms.lasthandoff: 06/06/2020
+ms.locfileid: "3434483"
 ---
 # <a name="deploy-the-regional-governmentemergency-response-and-monitoring-solution"></a>地域政府機関の緊急応答およびモニタリング ソリューションを展開する
 
@@ -556,7 +556,17 @@ Power BI のビジュアル化と Power BI Embedded サービスの両方を有�
     > [!WARNING]
     > このユーザーが他の Common Data Service または Dynamics 365 環境でサーバー側の同期用に構成されていないことを確認してください。 別の環境でサーバー側同期を設定している場合、ここでサーバー側同期を有効にすると、以前に使用されていた環境でそれが無効になります。
 
-## <a name="step-10-fix-the-send-invitation-process"></a>ステップ 10: 招待状の送信プロセスを修正する
+## <a name="step-10-fix-the-processes-for-the-app"></a>手順 10 : アプリのプロセスを修正する
+
+この手順では、次のプロセスを修正します :
+
+- 招待状の送信
+
+- 連絡先にパスワード再設定を送信します。
+
+- Web ロールを新しいユーザーに割り当て
+
+### <a name="step-101-fix-the-send-invitation-process"></a>ステップ 10.1: 招待状の送信プロセスを修正する
 
 このステップでは、**招待状を送信**プロセスを修正して、ポータルの招待状が個々の病院管理者に送信される電子メール アドレスと、招待メールで送信される招待 URL を指定します。
 
@@ -603,7 +613,7 @@ Power BI のビジュアル化と Power BI Embedded サービスの両方を有�
     > [!div class="mx-imgBorder"] 
     > ![プロセスをアクティブ化する](media/deploy-activate-process.png "プロセスをアクティブ化する")    
 
-## <a name="step-11-fix-the-send-password-reset-to-contact-process"></a>ステップ 11: 連絡先へのパスワード再設定送信プロセスを修正する
+### <a name="step-102-fix-the-send-password-reset-to-contact-process"></a>ステップ 10.2: 連絡先へのパスワード再設定送信プロセスを修正する
 
 このステップでは、**連絡先にパスワードの再設定を送信する**のプロセスを修正して、ポータル ユーザーがポータルの**パスワードを忘れた場合**のリンクを使用してパスワードのリセットをするよう要求した際に、ポータル パスワードの再設定メールが送信される電子メール アドレスを指定します。
 
@@ -615,7 +625,7 @@ Power BI のビジュアル化と Power BI Embedded サービスの両方を有�
 
     > [!div class="mx-imgBorder"] 
     > ![連絡先にパスワードの再設定を送信する](media/deploy-password-reset.png "連絡先にパスワード再設定を送信します。")
-    <!-- ![](media/2ff3f6344a7ea9aa564592a15833fcb3.png) -->
+   
 
 4.  **プロセス** ページで、「連絡先にパスワードの再設定を送信する」を検索し、検索結果から**連絡先にパスワードの再設定を送信する**のプロセスを選択して開きます。
 
@@ -628,13 +638,13 @@ Power BI のビジュアル化と Power BI Embedded サービスの両方を有�
 
         > [!div class="mx-imgBorder"] 
         > ![電子メール送信のプロパティを設定する](media/deploy-set-email-properties.png "[電子メール送信のプロパティを設定する")
-        <!-- ![](media/4a3c0bbf3785cdb7bad4c671964f0220.png) -->
+       
 
 6.  **電子メールの送信**ステップの定義ページで、**フォーム** フィールドから動的な値 (黄色で強調表示) を削除します。
 
     > [!div class="mx-imgBorder"] 
     > ![電子メール送信のステップ定義](media/deploy-email-step-definition.png "電子メール送信のステップ定義")
-    <!-- ![](media/8838a0341e240cfe49741d64e761555d.png) -->
+    
 
 7.  **差出人**フィールドで、ポータル招待リンクの送信に使用される電子メール ID を選択します。 メールを送信するには、ここで指定するユーザー アカウントでサーバー側の同期を有効にする必要があります。
 
@@ -644,7 +654,7 @@ Power BI のビジュアル化と Power BI Embedded サービスの両方を有�
 
     > [!div class="mx-imgBorder"] 
     > ![動的な値を更新しない](media/deploy-dynamic-values.png "動的な値を更新しない")
-    <!-- ![](media/35a0f7a386b2e5345158def083c62402.png) -->
+    
 
 8.  **保存して閉じる**を選択して変更を保存します。
 
@@ -653,7 +663,7 @@ Power BI のビジュアル化と Power BI Embedded サービスの両方を有�
     > [!div class="mx-imgBorder"] 
     > ![変更の保存とプロセスのアクティブ化](media/deploy-save-activate-process.png "変更の保存とプロセスのアクティブ化")    
 
-## <a name="step-12-verify-assign-web-roles-to-new-users-process-is-enabled"></a>ステップ 12: 新しいユーザーへの Web ロールの割り当てプロセスが有効になっていることを検証する
+### <a name="step-103-verify-assign-web-roles-to-new-users-process-is-enabled"></a>ステップ 10.3: 新しいユーザーへの Web ロールの割り当てプロセスが有効になっていることを検証する
 
 1.  [Power Apps](https://make.powerapps.com) にサインインします。
 
@@ -671,7 +681,9 @@ Power BI のビジュアル化と Power BI Embedded サービスの両方を有�
 
 5.  有効になっていない場合は、プロセス名を選択してレコードを開き、**アクティブ化**を選択します。 プロセスのアクティブ化を確認する。
 
-## <a name="step-13-enable-the-flow-supply-tracking-flow"></a>ステップ 13: フロー消耗品の追跡フローを有効にする
+## <a name="step-11-fix-the-flows-for-the-app"></a>手順 11 : アプリのフローを修正する
+
+このステップでは、アプリに必要となるフローを修正します。 次の手順を使用して、アプリで使用されるすべてのフローを表示できます :
 
 1.  [Power Automate](https://flow.microsoft.com/) にサインインする。
 
@@ -680,18 +692,31 @@ Power BI のビジュアル化と Power BI Embedded サービスの両方を有�
     > [!div class="mx-imgBorder"] 
     > ![ソリューションを開く](media/deploy-open-solution.png "ソリューションを開く")
 
-3.  ソリューションでは、**フロー**をフィルター処理し、**フロー消耗品の追跡**レコードを検索します。
+3.  ソリューションでは、**フロー**でフィルター処理し、すべてのフローを検索します。
 
     > [!div class="mx-imgBorder"] 
-    > ![フロー消耗品の追跡レコードを検索する](media/deploy-find-record.png "フロー消耗品の追跡レコードを検索する")
+    > ![アプリのフロー](media/conf-all-flows.png "アプリのフロー")
 
-4.  フロー名を選択してフロー定義を開きます。 フロー定義で、ツールバーの**編集**を選択します。
+フィールドには 2 つの種類が存在します :
 
-5.  Common Data Service に接続するための接続を修正し、接続情報を保存します。
+- 最初の一連のフローは、電子メールの送信に活用できます :
+    - ポータル ユーザーの要請: 要請の却下時に管理者にメールを送信
+    - ポータル ユーザーの要請: 要請の作成時に管理者にメールを送信
+    
+    これらのフローでは、接続を認証してから、メールを送信するユーザーアカウントを指定して、フローを有効化する必要があります。
 
-6. フロー定義で、**有効にする**を選択します。
+- フローの 2 つ目のセットは、タスクを完了する際に役立ちます :
+    - 新しい消耗品の入力レコードの処理
+    - フロー消耗品の追跡
+    - CDC データの入力 - 医療スタッフ
+    - CDC データの入力 - 医療消耗品
+    - CDC データの入力 - 患者および病院のキャパシティ
+    - ポータルに新規入力されたスタッフ エントリーを処理する 
 
-## <a name="step-14-update-the-details-of-flows-for-sending-emails"></a>ステップ 14: 電子メール送信のフローの詳細を更新する
+    これらのフローでは、接続を承認してからフローを有効化する必要があります。
+
+
+### <a name="step-111-fix-the-flows-for-sending-emails"></a>手順 11.1 : 電子メールの送信フローを修正する
 
 このステップでは、以下のことを行います。
 
@@ -745,7 +770,34 @@ Power BI のビジュアル化と Power BI Embedded サービスの両方を有�
 
 12. **保存**を選択して変更の保存を行い、**有効にする**を選択します。
 
-## <a name="step-15-share-admin-app-with-other-admin-users"></a>ステップ 15: 管理アプリを他の管理ユーザーと共有する
+### <a name="step-112-fix-the-flows-for-performing-specific-tasks"></a>手順11.2 : 特定のタスクを実行するフローを修正する
+
+この手順では、特定のタスクの実行に役立つフローの接続情報を承認し、有効化します。
+
+1.  [Power Automate](https://flow.microsoft.com/) にサインインする。
+
+2.  左側のウィンドウで、**ソリューション**を選択します。 ソリューション リストから、**地域の緊急時対応ソリューション**を選択し、ソリューションを開きます。
+
+3.  ソリューションでは、**フロー**をフィルター処理し、**フロー消耗品の追跡**レコードを検索します。
+
+4.  フロー名を選択してフロー定義を開きます。 フロー定義で、ツールバーの**編集**を選択します。
+
+5.  **接続**を選択して Common Data Service に接続する接続を指定し、次に既存の接続を使用するか、**新しい接続を追加**を選択して新しい資格情報を使用します。  
+
+    > [!div class="mx-imgBorder"] 
+    > ![資格情報の修正](media/authorize-cred.png "資格情報の修正")
+
+6. **保存**を選択して変更の保存を行い、**有効にする**を選択します。
+
+7. 次の各フローで手順 4 から 6 を実行して接続を承認し、フローを有効化します。
+
+    - 新しい消耗品の入力レコードの処理
+    - CDC データの入力 - 医療スタッフ
+    - CDC データの入力 - 医療消耗品
+    - CDC データの入力 - 患者および病院のキャパシティ
+    - ポータルに新規入力されたスタッフ エントリーを処理する
+
+## <a name="step-12-share-admin-app-with-other-admin-users"></a>ステップ 12: 管理アプリを他の管理ユーザーと共有する
 
 ビジネス管理者ユーザーが管理アプリ (モデル駆動型アプリ) を使用してデータを入力および管理するには、アプリを管理者ユーザーと共有する必要があります。 Azure AD グループを使用すると、管理ユーザーのグループとアプリをより簡単に共有できます。
 
@@ -770,7 +822,7 @@ Power BI のビジュアル化と Power BI Embedded サービスの両方を有�
 
 -  マスター データの構成と管理
 
--   ポータル ユーザーを作成して個々の病院の管理者ユーザーを招待し、ポータルを使用してデータとユーザーを追加および管理できるようにします。
+-  ポータル ユーザーを作成して個々の病院の管理者ユーザーを招待し、ポータルを使用してデータとユーザーを追加および管理できるようにします。
 
 - テナントの Power BI ダッシュボードを表示します。
 

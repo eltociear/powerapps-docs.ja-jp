@@ -15,22 +15,20 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 60ab861bd50ee5106bbdfb59d016fe7fefe588c7
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: f22130bab71b617484023e55c0ac09c1dba50c73
+ms.sourcegitcommit: 4311eef027ee7580a655fa8fb1566e944d6e8212
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "3302566"
----
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "3421930"
 ---
 # <a name="view-your-user-profile"></a>ユーザー プロファイルの表示  
 
-
-ユーザープロファイルには、ユーザーと組織全体に関する有用な情報が表示されます。たとえば、連絡先情報、自分の組織、セキュリティ ロールなどです。 セキュリティ ロールによっては、ユーザー プロファイルに変更を加えることができる場合があります。  
+ユーザー プロファイルは、組織全体に有益なユーザー自身に関する情報、たとえば、連絡先、組織およびセキュリティ ロールなどを表示します。 自分のユーザー プロファイルに変更を加えられるかどうかは、セキュリティ ロールによって異なります。  
   
-1. 画面の右上隅にある **[設定]** ![user-profile-settings-button](media/user-profile-settings-button.gif) > **[個人設定]** を選択します。  
+1. スクリーンの右上隅で、**設定** ![ユーザー プロファイル設定ボタン](media/user-profile-settings-button.gif) > **個人設定** を選択します。  
  
 2. **個人用オプションの設定**ダイアログ ボックスの一覧の下部上までスクロールし、**ユーザー情報の表示**を選択します。  
   
-3. **[概要]**、**[詳細]**、**[管理]** などのさまざまな領域を選択して、プロファイルの詳細を表示します。 
+3. **概要**、**詳細**、**管理** などのさまざまな領域を選択して、プロファイルの詳細を表示します。 
   

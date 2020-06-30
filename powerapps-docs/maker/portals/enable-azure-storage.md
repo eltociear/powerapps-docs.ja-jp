@@ -6,15 +6,15 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 02/12/2020
+ms.date: 05/27/2020
 ms.author: tapanm
 ms.reviewer: tapanm
-ms.openlocfilehash: ceb25954357efeafec6b33338ff4b617af82ebda
-ms.sourcegitcommit: 6cffa70358fd2e388d64a01f906c8c196fbbdefb
+ms.openlocfilehash: 827615bfe2fdc33eb991dbe866a016bee252336d
+ms.sourcegitcommit: 241075714595a3544833040a6a16bc3def87ffcc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "3069764"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "3407962"
 ---
 # <a name="enable-azure-storage"></a>Azure Storage の有効化
 
@@ -57,12 +57,16 @@ FileStorage/CloudStorageAccount の値を検索するには、[!include[Azure po
 
 以下のように、クロス オリジンのリソース共有 (CORS) ルールをあなたの Azure Storage アカウントに追加する必要があります。それ以外の場合は、クラウド アイコンではなく通常の添付アイコンが表示されます:
 
-- **許可されているオリジン**: ドメインの指定。 たとえば、`https://contoso.crm.dynamics.com` などとします。
+- **許可されているオリジン**: ドメインの指定。 例:`https://contoso.crm.dynamics.com` <br> 許可されているオリジンに末尾の `/` がないことを確認してください。 たとえば、`https://contoso.crm.dynamics.com/` は正しくありません。
 - **許可されている動詞**: GET, PUT, DELETE, HEAD, POST
-- **許可されているヘッダー**: オリジン ドメインが CORS 要求で指定できる要求ヘッダーを指定。 例えば、x-ms-meta-data\*、x-ms-meta-target\*。 
-- **公開されたヘッダー**: CORS 要求への応答で送信され、ブラウザが要求発行者に公開する応答ヘッダーを指定。 例えば、x-ms-meta-\*。
+- **許可されているヘッダー**: オリジン ドメインが CORS 要求で指定できる要求ヘッダーを指定。 例えば、x-ms-meta-data\*、x-ms-meta-target\*、または \* はすべて許可します。
+- **公開されたヘッダー**: CORS 要求への応答で送信され、ブラウザが要求発行者に公開する応答ヘッダーを指定。 例えば、x-ms-meta-\*、または \* はすべて許可します。
 - **最大期日経過日数 (秒)**: ブラウザがプリフライト OPTIONS 要求をキャッシュする最大時間を指定。 例えば、200 です。
- 
+
+CORS ルールの例:
+
+![CORS ルールの例](media/portals-cors-azure.png "CORS ルールの例")
+
 [!include[More information:](../../includes/proc-more-information.md)] [Azure Storage サービスの CORS サポート](https://docs.microsoft.com/rest/api/storageservices/cross-origin-resource-sharing--cors--support-for-the-azure-storage-services)
 
 ## <a name="add-site-settings"></a>サイト設定の追加

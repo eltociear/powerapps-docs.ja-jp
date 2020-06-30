@@ -4,13 +4,13 @@
   href: overview.md
 - name: はじめに
   items:
-    - name: '(C#)'
+    - name: (C#)
       items:
-        - name: 'Web API (C#) の使用を開始'
+        - name: Web API (C#) の使用を開始
           href: get-started-dynamics-365-web-api-csharp.md
         - name: 'クイック スタート: Web API のサンプル (C#)'
           href: quick-start-console-app-csharp.md
-        - name: '強化された クイック スタート (C#)'
+        - name: 強化された クイック スタート (C#)
           href: enhanced-quick-start.md
         - name: Visual Studio でAPI Web プロジェクトを使う
           href: start-web-api-project-visual-studio-csharp.md
@@ -40,6 +40,8 @@
       href: update-delete-entities-using-web-api.md
     - name: エンティティの関連付けと関連付け解除
       href: associate-disassociate-entities-using-web-api.md
+    - name: エンティティの結合
+      href: merge-entity-using-web-api.md
     - name: Functions の使用
       href: use-web-api-functions.md
     - name: アクションの使用
@@ -82,7 +84,7 @@
       href: discover-url-organization-web-api.md
     - name: コードを変更してグローバル検出サービスを使用する
       href: discovery-orgsdk-to-webapi.md
-    - name: 'グローバル検索サービスのサンプル (C#)'
+    - name: グローバル検索サービスのサンプル (C#)
       href: samples/global-discovery-service-csharp.md
 - name: Web API バージョンと制限
   href: web-api-versions.md

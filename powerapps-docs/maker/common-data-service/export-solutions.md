@@ -2,7 +2,7 @@
 title: ソリューションのエクスポート | MicrosoftDocs
 description: Power Apps で ソリューション を エクスポート する方法
 ms.custom: ''
-ms.date: 01/30/2020
+ms.date: 05/26/2020
 ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
@@ -21,18 +21,18 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 496cc3bcf55dfdff26a51f221df7b22d5ac7479f
-ms.sourcegitcommit: cb533c30252240dc298594e74e3189d7290a4bd7
+ms.openlocfilehash: dcd2663d7cf75ebb9732cc2e08dbb5fb629be060
+ms.sourcegitcommit: 909948d219c3c61d617f13aceb355e1d5bcb0b55
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "3017671"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "3432841"
 ---
 # <a name="export-solutions"></a>エクスポート ソリューション  
- カスタマイズを使用またはエクスポートするには、アンマネージド ソリューションを作成することをお勧めします。 その後、カスタマイズを定期的にエクスポートすることで、万一のためのバックアップを持つことができます。 管理ソリューションはエクスポートできません。 Power Apps からソリューションをエクスポートするか、またはクラシック エクスペリエンスを使用してエクスポートすることができます。 
+この記事の手順を使用して、ソリューションを手動でエクスポートできます。 カスタマイズのエクスポートに使用するアンマネージド ソリューションを作成し、カスタマイズを定期的にエクスポートして、何かが発生した場合に備えてバックアップをとることをお勧めします。 [管理](/power-platform/alm/solution-concepts-alm#managed-and-unmanaged-solutions) ソリューション または [既定のソリューション](solutions-overview.md#default-solutions) はエクスポートできません。 
  
-> [!IMPORTANT]
-> 既定のソリューションのエクスポートはサポートされていません。 
+> [!NOTE]
+> 組織に正常なアプリケーション ライフサイクル管理 (ALM) を実装するには、ソース管理システムを使用してソリューションを格納およびコラボレーションし、ソリューションのエクスポート プロセスを自動化することを検討してください。 詳細: Power Platform ALMガイドの [ALMの基本](/power-platform/alm/basics-alm)。 
 
 ## <a name="export-from-power-apps"></a>Power Apps からのエクスポート
   
@@ -41,21 +41,21 @@ ms.locfileid: "3017671"
 2.  ソリューションの一覧で、エクスポートするアンマネージド ソリューションを選択し、**エクスポート** を選択します。 管理ソリューションはエクスポートできないことを留意してください。 
 
 3. **エクスポートする前に** が右側に表示されます。 以下のオプションを選んだ後で、 **次へ** を選択してください。  
-    - **すべての変更を公開する**。 ソリューションのコンポーネントは、エクスポートする前に公開する必要があります。 
+    - **すべての変更を公開する**。 管理ソリューションまたはアンマネージド ソリューションをエクスポートすると、公開されたコンポーネントのみがエクスポートされることに注意してください。 **すべての変更を公開** を選択して、すべてのコンポーネントがエクスポートされたソリューションに含まれていることを確認することをお勧めします。 
     - **問題を確認する**。 ソリューションに対してソリューション チェッカーを実行して、パフォーマンスと安定性の問題を検出します。
 
 4.  **このソリューションをエクスポートする** が右側に表示されます。 次のオプションを入力または選択してから、**エクスポート**を選択してください。  
     - **バージョン ナンバー**：Power Apps現在のバージョンを表示し、ソリューションのバージョンを自動的にインクリメントします。 既定のバージョンを受け入れるか、独自のバージョンを入力できます。 
-    - **エクスポート方式**:  **管理** 、または **非管理** のパッケージ タイプを選択します。 
+    - **エクスポート方式**:  **管理** 、または **非管理** のパッケージ タイプを選択します。 詳細: [管理ソリューションとアンマネージド ソリューション](/power-platform/alm/solution-concepts-alm#managed-and-unmanaged-solutions)
 
-   <!-- UI has changed  [!div class="mx-imgBorder"]  
-    > ![Export solution](media/solution-export.png "Export solution")  -->
+    > [!div class="mx-imgBorder"]  
+    > ![ソリューションのエクスポート](media/solution-export.png "ソリューションのエクスポート")
 
 エクスポートが完了するまでに数分かかる場合があります。 終了後、エクスポートされた zip ファイルは、Web ブラウザーで指定されたダウンロード フォルダーで使用可能になります。
 
-## <a name="export-from-the-classic-experience"></a>クラシック エクスペリエンスからのエクスポート
+## <a name="export-using-the-classic-experience"></a>クラシック エクスペリエンスを使用してエクスポートする
 
-1.  左側のナビゲーションから**ソリューション**を選択し、それから**クラシックに切り替え**を選択します。 
+1.  [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインし、左側のナビゲーションから**ソリューション**を選択します。 **クラシックに切り替え** を選択します。 
   
 2.  一覧でエクスポートするソリューションを選択し、**エクスポート**を選択します。 
   

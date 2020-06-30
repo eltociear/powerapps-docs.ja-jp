@@ -9,12 +9,12 @@ ms.assetid: 9f940264-d7d5-4930-8052-1bd582445d37
 ms.author: grhurl
 author: ghurlman
 ms.reviewer: nkrb
-ms.openlocfilehash: 12b8f136c717ad61f958df5869034f204c03cea5
-ms.sourcegitcommit: 943672dad0041d3bab25b44cd8c4d25e88f39b93
+ms.openlocfilehash: 1c1c7f6ef32be9771b989d9ea3b6c7825afa307c
+ms.sourcegitcommit: 51d899f17feebd9da8e165dce3e2e2c017ac76ca
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/25/2020
-ms.locfileid: "3289279"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "3378345"
 ---
 # <a name="faqs"></a>よく寄せられる質問
 
@@ -66,6 +66,11 @@ ms.locfileid: "3289279"
 ### <a name="can-i-use-img-resource-property-in-canvas-apps"></a>キャンバス アプリで img リソース プロパティを使用できますか。
 
 現在、[img](manifest-schema-reference/img.md) リソースはキャンバス アプリでサポートされていません。
+
+### <a name="tabindex-support-for-components-in-canvas-apps"></a>キャンバス アプリでのコンポーネントの TabIndex サポート
+
+現在、コード コンポーネントはキャンバス アプリの `tabindex` プロパティをサポートしていません。 モデル駆動型アプリの場合、タブ割り当ては `tabIndex = 0` を使用して自動的に割り当てられるため、要素は出現順にナビゲートされます。 
+
 
 ## <a name="related-topics"></a>関連トピック
 

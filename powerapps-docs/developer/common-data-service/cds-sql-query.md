@@ -2,11 +2,11 @@
 title: SQL を使用したデータのクエリ (Common Data Service)| Microsoft Docs
 description: SQL を使用して Common Data Service エンティティ データをクエリする方法について説明します。
 ms.custom: ''
-ms.date: 05/05/2020
+ms.date: 05/26/2020
 ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
-author: phecke
+author: mayadumesh
 ms.author: pehecke
 manager: kvivek
 search.audienceType:
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: b464b1cd4a64e9f33919567da15d10d7e50d9dd2
-ms.sourcegitcommit: 0ede8e3bc795e151aa94ffcbce15cff7a949c57a
+ms.openlocfilehash: 69dc9c3c5986468fc47710c2d980857f547bacb9
+ms.sourcegitcommit: 1c205fc6ea1d85778c1ceeb164d1867f512e5d91
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "3335343"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "3431855"
 ---
 # <a name="use-sql-to-query-data-preview"></a>SQL を使用してデータを照会する (プレビュー)
 
@@ -30,13 +30,16 @@ SQL データ接続は、Common Data Service エンドポイントで使用で�
 > [!IMPORTANT]
 > - これはプレビュー機能であり、すべての地域で利用できるわけではありません。
 > - [!INCLUDE[cc_preview_features_definition](../../includes/cc-preview-features-definition.md)]
+> - この機能を有効にする手順は、次を参照してください: [Power BI Desktop でエンティティ データを表示する](/powerapps/maker/common-data-service/view-entity-data-power-bi)、および[機能設定を管理する](/power-platform/admin/settings-features) (TDSエンドポイント設定を参照)。
 
 ## <a name="applications-support"></a>アプリケーション サポート
 
 Power Apps (https://make.powerapps.com) の **Power BI で分析**オプション (**データ** > **エンティティ** > **Power BI で分析**) を使用して、SQL 接続機能により Power BI Desktop でデータを分析できます。 詳細: [Power BI Desktop でのエンティティ データの表示](/powerapps/maker/common-data-service/view-entity-data-power-bi)
 
 > [!NOTE]
-> Power Apps 環境内に **Power BI で分析**オプションがない場合、SQL 接続機能にまだアクセスできません。
+> ターゲット環境で Common Data Service SQL接続機能が有効になっている場合は、以下を実行します :
+> 1. Power Apps にサインインし、左側のナビゲーション ウィンドウで、**データ**を展開して**エンティティ**を選びます。
+> 2. コマンドバーに **Power BIで分析を行う** ボタンが表示されます。 このボタンが表示されない場合、環境にはまだこの機能が実装されていないことを意味します。
 
 Common Data Service エンドポイントの SQL 接続で、[SQL Server Management Studio](/sql/ssms/download-sql-server-management-studio-ssms) (SSMS) バージョン 18.4 以降を使用することもできます。 SQL データ接続で SSMS を使用する例を以下に示します。
 
@@ -78,9 +81,19 @@ select name, fullname from account a inner join contact c on a.primarycontactid 
 - UNION および JOIN
 - フィルタリング
 
-これは読み取り専用の SQL データ接続であるため、データを変更しようとする操作 (例、INSERT、UPDATE) は機能しません。 Common Data Service オプション セットは、結果セットでは \< OptionSet \> の名前と \< OptionSet \> のラベルとして表されます。
+これは読み取り専用の SQL データ接続であるため、データを変更しようとする操作 (例、INSERT、UPDATE) は機能しません。 Common Data Service オプション セットは、結果セットでは \<OptionSet\>  の名前と \<OptionSet\> のラベルとして表されます。
 
-次の Common Data Service データ型は、SQL 接続ではサポートされていません。バイナリ、イメージ、ntext、sql_variant、varbinary、仮想、HierarchyId、managedproperty、ファイル、xml、partylist、タイムスタンプ。
+以下の Common Data Service データ型は SQL 接続では対応していません : `binary`、`image`、`ntext`、`sql_variant`、`varbinary`、`virtual`、`HierarchyId`、`managedproperty`、`file`、`xml`、`partylist`、`timestamp`。
+
+> [!TIP]
+> `partylist` 属性は、代わりに以下のように `activityparty` テーブルに結合して問い合わせを行うことができます。
+> 
+> ```tsql
+> select act.activityid, act.subject, string_agg([to].partyidname, ', ')
+> from activitypointer as act
+> left outer join activityparty as [to] on act.activityid = [to].activityid and [to].participationtypemask = 2
+> group by act.activityid, act.subject
+> ```
 
 ### <a name="see-also"></a>関連項目
 

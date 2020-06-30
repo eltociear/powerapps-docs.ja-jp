@@ -2,7 +2,7 @@
 title: Power Apps におけるモデル駆動型アプリ フォームの最適化 | MicrosoftDocs
 description: フォームの読み込みが遅くなる原因となるフォーム設計を避ける方法を学習します
 ms.custom: ''
-ms.date: 06/27/2018
+ms.date: 04/24/2020
 ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
@@ -18,12 +18,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 566a33c267d271618cd31b6225710e2113208350
-ms.sourcegitcommit: 3c6c5594b73abd5ff438d50f3b579d56cef7241c
+ms.openlocfilehash: e67db84c047754eed6bfc2588c5e59d83ea4674a
+ms.sourcegitcommit: 82fa1758e29fe302f9a252fd9943ace03b7aada0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "3285929"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "3427087"
 ---
 # <a name="optimize-model-driven-app-form-performance"></a>モデル駆動型アプリ フォーム パフォーマンスを最適化する
 

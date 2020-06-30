@@ -20,12 +20,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 2328d35af7be35e3aae8d38bc1157adce513cb7c
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: eaa950d14c384a4ecf85e39fae8b314909291610
+ms.sourcegitcommit: 241075714595a3544833040a6a16bc3def87ffcc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2758549"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "3408402"
 ---
 # <a name="visualize-hierarchical-data-with-model-driven-apps"></a>モデル駆動型アプリによる階層型データのビジュアル化
 
@@ -46,7 +46,7 @@ ms.locfileid: "2758549"
   
 - 各エンティティについて (1:N) の自己参照の関連付けを 1 つだけ階層として設定できます。 自己参照の関連付けで、主エンティティおよび関連エンティティが同じ種類である必要があります。  
 - 階層またはビジュアル化は 1 つのエンティティのみに基づいています。 取引先企業を複数レベルで示す取引先企業階層を表現することはできますが、取引先企業と取引先担当者を同じ階層型ビジュアル化に表示することはできません。 
-- タイルに表示できる最大のレコード数は 4 です。 タイル ビューに使用される簡易入力フォームに複数のフィールドを追加すると、最初の 4 つのフィールドだけが表示されます。 
+- タイルに表示できる最大のレコード数は 3 です。 タイル ビューに使用される簡易入力フォームに複数のフィールドを追加すると、最初の 3 つのフィールドだけが表示されます。 
 
 ## <a name="hierarchy-settings"></a>階層設定
 

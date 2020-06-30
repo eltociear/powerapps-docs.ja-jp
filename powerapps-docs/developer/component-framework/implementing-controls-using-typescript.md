@@ -8,12 +8,12 @@ ms.topic: index-page
 ms.assetid: 18e88d702-3349-4022-a7d8-a9adf52cd34f
 ms.author: nabuthuk
 author: Nkrb
-ms.openlocfilehash: d60bbb70b4f716868aa5f7090750d8f334808444
-ms.sourcegitcommit: 6fce86edacd9bfe49f8114a2a69bc18302cd01f9
+ms.openlocfilehash: ebcf23a4986129aacab5ea11dbffe2be7e7a0518
+ms.sourcegitcommit: ee4796919a3ef520e95210468ec57f8d4baa39db
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "3260657"
+ms.lasthandoff: 06/11/2020
+ms.locfileid: "3442218"
 ---
 # <a name="create-your-first-component"></a>最初のコンポーネントを作成する 
 
@@ -34,7 +34,7 @@ ms.locfileid: "3260657"
 
 新しいプロジェクトを作成するには:
 
-1. **VS 2017 のコマンド プロンプトの作成** ウィンドウを開きます。 次のコマンドを使用してプロジェクトの新しいフォルダを作成します: 
+1. **VS 2017 以降の開発者コマンド プロンプト** ウィンドウを開きます。 次のコマンドを使用してプロジェクトの新しいフォルダを作成します: 
     ```CLI
      mkdir LinearComponent
     ```
@@ -119,7 +119,7 @@ ms.locfileid: "3260657"
 
 ## <a name="implementing-component-logic"></a>コンポーネント ロジックの実装
 
-マニフェスト ファイルを実行した後の次の手順は、TypeScript を使用してマニフェスト ファイルをコンポーネントのロジックに実装することです。 コンポーネントのロジックは、`index.ts` ファイル内で実装する必要があります。 Visual Studio コードの `index.ts` ファイルを開く場合、4 つの必要なクラスが事前定義されることがわかります。 次に、コード コンポーネントのロジックを実装します。 
+マニフェスト ファイルを実行した後の次の手順は、TypeScript を使用してマニフェスト ファイルをコンポーネントのロジックに実装することです。 コンポーネントのロジックは、`index.ts` ファイル内で実装する必要があります。 Visual Studio コードで `index.ts` ファイルを開くと、4 つの重要な関数が事前定義されていることがわかります。 次に、コード コンポーネントのロジックを実装します。 
 
 1. 任意のコードエディタで `index.ts` ファイルを開きます。
 2. 次のコードで `TSLinearInputComponent` クラスを更新します。
@@ -320,6 +320,11 @@ export class TSLinearInputComponent
     </resources> 
      ```
 
+> [!NOTE]
+> Power Apps component framework は、ローカライズされた文字列の管理に使用される文字列 (resx) Web リソースを実装する概念を使用し、任意のユーザー インターフェイスに表示されます。 詳細: [文字列 (Resx) Web リソース](https://docs.microsoft.com/dynamics365/customerengagement/on-premises/developer/resx-web-resources)。
+> `resx` Web リソースを使用してコード コンポーネントをローカライズする方法については、[ローカライズ API](sample-controls/localization-api-control.md) サンプル を参照してください。 
+
+
 ## <a name="build-your-code-components"></a>コード コンポーネントを構築する
 
 マニフェスト、コンポーネント ロジック、スタイルの追加が完了したら、次のコマンドを使用してコード コンポーネントをビルドします:
@@ -373,17 +378,17 @@ npm start
     ```
     > [!TIP]
     > 次のエラーが発生します: `msbuild` コマンドを使用してソリューションファイルをビルドし、Common Data Service にインポートして、ソリューション チェッカーを実行する場合は、*`eval` 関数または同等の機能を使用しないでください*。
-    > コマンド `msbuild/property:configuration:Release` を使用してソリューション ファイルを再構築し、ソリューションを Common Data Service に再インポートして、ソリューション チェッカーを実行します。
+    > コマンド `msbuild/property:configuration=Release` を使用してソリューション ファイルを再構築し、ソリューションを Common Data Service に再インポートして、ソリューション チェッカーを実行します。
       
     > [!NOTE]
     > **NuGet ターゲットおよび構成タスク** のチェックボックスをオンにしてください。 これを有効にするには、次の手順を行います。
     > - **Visual Studio インストーラー** を開きます。
-    > - Visual Studio 2017 で、 **修正 を選択します**。
+    > - Visual Studio 2017 以降の場合は、**修正** を選択します。
     > - **個別のコンポーネント** を選択します。
     > - **コード ツール** の **NuGetターゲットとビルド タスク** にチェックマークを付けます。
 
 6. 生成されたソリューションの zip ファイルは、`Solution\bin\debug` フォルダーにあります。
-7. zipファイルが準備ができたらWeb ポータルを使用して、手動で [ソリューションを Common Data Service にインポートする](https://docs.microsoft.com/powerapps/maker/common-data-service/import-update-export-solutions) か、 [Power Apps Build Tools](https://marketplace.visualstudio.com/items?itemName=microsoft-IsvExpTools.PowerApps-BuildTools) を使用して自動的にインポートします。
+7. zipファイルが準備ができたらWeb ポータルを使用して、手動で [ソリューションを Common Data Service にインポートする](https://docs.microsoft.com/powerapps/maker/common-data-service/import-update-export-solutions) か、 [Microsoft Power Platform Build Tools](https://marketplace.visualstudio.com/items?itemName=microsoft-IsvExpTools.PowerApps-BuildTools) を使用して自動的にインポートします。
 
 ## <a name="adding-code-components-in-model-driven-apps"></a>モデル駆動型のアプリのコード コンポーネントの追加
 
@@ -398,6 +403,6 @@ npm start
 [サンプル コンポーネントをダウンロード](https://github.com/microsoft/PowerApps-Samples/tree/master/component-framework)<br/>
 [Power Apps component framework の学習](https://docs.microsoft.com/learn/paths/use-power-apps-component-framework)<br/>
 [既存の Power Apps component framework のコンポーネントを更新する](updating-existing-controls.md)<br/>
-[Power Apps Build Tools](https://docs.microsoft.com/powerapps/developer/common-data-service/build-tools-overview)<br/>
+[Microsoft Power Platform Build Tools](https://docs.microsoft.com/powerapps/developer/common-data-service/build-tools-overview)<br/>
 [Power Apps Component Framework API の参照](reference/index.md)<br/>
 [Power Apps Component Framework の概要](overview.md)

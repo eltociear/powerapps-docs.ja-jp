@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 924fb17728ff1681bcba3d4dd60dc6723156694e
-ms.sourcegitcommit: 9f83d4c09f09256493bc5d49c7b4a4fc02d9342a
+ms.openlocfilehash: ad995909d93573992b3d999de86b57cb305be4ee
+ms.sourcegitcommit: 241075714595a3544833040a6a16bc3def87ffcc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "3293008"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "3407938"
 ---
 # <a name="image-attributes"></a>イメージ属性
 
@@ -78,6 +78,9 @@ IsPrimaryImage、MaxHeight、MaxWidth | [IsPrimaryImage](https://docs.microsoft.
 ### <a name="maxsizeinkb-attribute"></a>MaxSizeInKB 属性
 
  この値は、属性に含めることができるイメージ データの最大サイズ (KB) を表します。 この値を、特定のアプリケーションに適した最小の使用可能データ サイズに設定してください。 許容サイズ制限と既定値に対する <xref:Microsoft.Xrm.Sdk.Metadata.ImageAttributeMetadata.MaxSizeInKB> のプロパティを参照してください。
+ 
+ > [!NOTE]
+ > MaxSizeInKB は、イメージ属性がエンティティに追加されるときに設定されます。 設定後は変更するできません。
 
 ### <a name="canstorefullimage-attribute"></a>CanStoreFullImage 属性
 

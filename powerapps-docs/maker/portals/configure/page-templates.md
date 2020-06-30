@@ -9,12 +9,12 @@ ms.custom: ''
 ms.date: 11/04/2019
 ms.author: tapanm
 ms.reviewer: ''
-ms.openlocfilehash: 26d9799425d561e4fb6a5f9f6c368fa6162ecb6d
-ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
+ms.openlocfilehash: 27a0fb1ed690fe0ac798fe1ec63dccb7aa7fda75
+ms.sourcegitcommit: 8a8ec297eccf3b4233031f7548b5c99f0f1d7c41
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "2980618"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "3405652"
 ---
 # <a name="create-and-manage-page-templates"></a>ページ テンプレートの作成および管理
 

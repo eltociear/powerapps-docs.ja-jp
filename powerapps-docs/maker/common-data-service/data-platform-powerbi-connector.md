@@ -1,90 +1,84 @@
 ---
-title: PowerBI レポートの作成 | Microsoft Docs
-description: Common Data Service コネクタを使用して PowerBI Desktop からデータに接続する。
-author: lancedMicrosoft
-manager: kfile
+title: Common Data Service コネクタを使用して PowerBI レポートを作成する | Microsoft Docs
+description: Common Data Service コネクタを使用して Power BI Desktop からデータに接続する。
+author: Mattp123
+manager: kvivek
 ms.service: powerapps
 ms.component: cds
 ms.topic: conceptual
-ms.date: 05/21/2018
-ms.author: lanced
+ms.date: 05/26/2020
+ms.author: matp
 search.audienceType:
 - maker
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: ebecba9aedb8c475e3f8ce8628b7b24d104669e0
-ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
+ms.openlocfilehash: 1f2d62a618b12935a37f507eb2d691b86c01f1fe
+ms.sourcegitcommit: 8a8ec297eccf3b4233031f7548b5c99f0f1d7c41
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "2873775"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "3405695"
 ---
-# <a name="create-a-power-bi-report"></a>Power BI レポートを作成する
-Common Data Service を使用すると、 Power BI Desktop を使用してデータに直接接続し、レポートを作成してPower BIに発行することができます。 Power BI からは、ダッシュボードでレポートを使用したり、他のユーザーと共有したり、 Power BI モバイルアプリでクロスプラットフォームにアクセスしたりできます。
+# <a name="create-a-power-bi-report-using-the-common-data-service-connector"></a>Common Data Service コネクタを使用して Power BI レポートを作成する
+Common Data Service を使用すると、 Power BI Desktop を使用してデータに直接接続し、レポートを作成してPower BIに発行することができます。 Power BI からは、ダッシュボードでレポートを利用したり、他のユーザーと共有したり、 Power BI のモバイル アプリでクロス プラットフォームでアクセスすることができます。
 
 ![Power BI Desktop](./media/data-platform-cds-powerbi-connector/PBIDesktop.png "Power BI Desktop")
 
 ## <a name="prerequisites"></a>前提条件
 
-Common Data Service で Power BI を使うには、以下が必要です:
+Common Data Service で  Power BI を使用するには、以下の項目が必要となります :
 
 * Power BI Desktop をダウンロードしてインストールします。これはローカル コンピュータで動作する無料のアプリケーションです。 Power BI desktopは [こちら](https://powerbi.microsoft.com/desktop/)でダウンロードできます。
 * Common Data Service 環境はエンティティー内のデータにアクセスするための読み取り権限とポータルへのアクセス権限を持っています。
 
 ## <a name="finding-your-common-data-service-environment-url"></a>Common Data Service 環境のURL を選択します。
 
-1. [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) を開いて接続する環境を選択し、右上隅にある **設定の歯車** をクリックしてから、 **高度なカスタマイズ**をクリックします。
+1. [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) を開き、接続する環境を選択し、右上隅にある**設定**を選択し、続いて**高度な設定**を選択します。
 
-    ![Common Data Service 環境 URL](./media/data-platform-cds-powerbi-connector/CDSEnv1.png "Common Data Service環境")
+   <!-- ![Common Data Service Environment](./media/data-platform-cds-powerbi-connector/CDSEnv1.png "Common Data Service Environment") -->
 
-2. 開発者リソース セクションの下にある**リソース**をクリックして新しいタブを開きます。
-
-    ![Common Data Service 環境 URL](./media/data-platform-cds-powerbi-connector/CDSEnv2.png "Common Data Service環境")
-
-3. 新しいタブの URL のルートをコピーします。これは環境に対する一意の URL です。 URL は、**https://yourenvironmentid.crm.dynamics.com/** の形式になります。URL の残りをコピーしていないことを確認してください。 PowerBI レポートを作成する時に使用できるよう、他の便利な場所に保管してください。
+2. 開いた新しいブラウザタブで、URL のルート部分をコピーします。 これは、環境固有の URL です。 URL の形式は、**https://yourenvironmentid.crm.dynamics.com/** のようになります。 残りの URL はコピーしないでください。 Power BI レポートの作成時に使用できるよう、どこか便利な場所に保管してください。
 
     > [!div class="mx-imgBorder"] 
-    > ![Common Data Service 環境 URL](./media/data-platform-cds-powerbi-connector/CDSEnv3.png "Common Data Service環境")
+    > ![Common Data Service 環境 URL](./media/data-platform-cds-powerbi-connector/CDSEnv3.png "Common Data Service 環境 URL")
 
 ## <a name="connecting-to-common-data-service-from-power-bi-desktop"></a>Power BI Desktop から Common Data Service に接続する
 
-1. **Power BI Desktop** を起動します。初めての場合は、ようこそ画面が表示されるか、空白のキャンバスに直接移動します。どちらの場合も、 **Get Data** をクリックして **More** を選択すると、 Power BI Desktop で使用できるデータソースの完全なリストが開きます。
+1. **Power BI Desktop** を開きます。 **ファイル** > **データの取得**を選択し、続いて **データを取得してスタートする** を選択して、Power BI Desktop で使用するデータソースの完全なリストを開きます。
 
-    ![Power BI Desktop](./media/data-platform-cds-powerbi-connector/CreateReport1.png "Power BI Desktop")
+    <!-- ![Power BI Desktop](./media/data-platform-cds-powerbi-connector/CreateReport1.png "Power BI Desktop") -->
 
-2. コネクタの一覧から **オンライン サービス** および **Common Data Service (ベータ版)** をクリックします。 **接続** をクリックします。
+2. **検索** ボックスで*一般* と入力し、**Common Data Service** を選択します。続いて **接続**を選択します。
 
-    ![Power BI Desktop](./media/data-platform-cds-powerbi-connector/CreateReport2.png "Power BI Desktop")
+    > [!div class="mx-imgBorder"] 
+    > ![Common Data Service に接続する Power BI Desktop](./media/data-platform-cds-powerbi-connector/CreateReport2.png "Power BI Desktop を Common Data Service に接続します")
 
-3. **サーバー URL** フィールドに **Common Data Service環境の URLL** を貼り付け **OK** をクリックします。 これが初めての場合、 Power Apps および Common Data Service に接続するために使用するのと同じ資格情報を使用してログインするよう求められます。
+3. 表示された **Common Data Service** ダイアログ ボックスで、Common Data Service 環境に URL を**サーバーの URL**ボックスに貼り付け、**OK**を選択します。 Power Apps や Common Data Service に接続する際に使用したものと同じ認証情報を使用してサインインを促される場合があります。 **接続** を選択します。
 
-    ![Power BI Desktop](./media/data-platform-cds-powerbi-connector/CreateReport3.png "Power BI Desktop")
+   <!-- ![Power BI Desktop](./media/data-platform-cds-powerbi-connector/CreateReport3.png "Power BI Desktop") -->
 
-4. ナビゲーターは、3 つのフォルダーにグループ化された環境に対して使用可能なすべてのエンティティを表示します。 **共通データ モデル** フォルダーを展開します。
+4. **ナビゲーター** は、2 つのフォルダーにグループ化された環境に対して使用可能なすべてのエンティティを表示します。 
 
-    * 共通データ モデル - 共通データ モデルの一部として一般的に使用される、すべての環境で使用可能な標準エンティティのことです。
-    * ユーザー定義エンティティ - ユーザーの環境で作成またはインポートされたエンティティのことです。
-    * システム - 共通データ モデルおよびユーザー定義エンティティを含め、ユーザーの環境におけるすべてのエンティティを含みます。
+    * エンティティ - 環境で作成された、またはインポートした標準エンティティおよびユーザー定義のエンティティです。
+    * システム - システム エンティティを含む、環境内のすべてのエンティティが含まれます。
 
-    ![Power BI Desktop](./media/data-platform-cds-powerbi-connector/CreateReport4.png "Power BI Desktop")
+   <!-- ![Power BI Desktop](./media/data-platform-cds-powerbi-connector/CreateReport4.png "Power BI Desktop") -->
 
-5. **取引先企業**エンティティを選択し、右ウィンドウでデータのプレビューを表示してから、**読み込み**をクリックします。
+5. **取引先企業** のエンティティを選択し、右ウィンドウでデータのプレビューを表示します。 **読み込み** を選択します。
 
-    ![Power BI Desktop](./media/data-platform-cds-powerbi-connector/CreateReport5.png "Power BI Desktop")
+    > [!div class="mx-imgBorder"] 
+    > ![取引先企業エンティティ レコードの読み込み](./media/data-platform-cds-powerbi-connector/CreateReport5.png "取引先企業エンティティ レコードの読み込み")
 
-6. これでエンティティはレポートに読み込まれました。レポートの作成を開始するか、またはこのプロセスを繰り返してそのほかのエンティティを追加することができます。
+6. エンティティがレポートに読み込まれ、レポートの作成を開始や、前述の手順を繰り返してエンティティを追加することもできます。 たとえば、**フィールド** ウィンドウで、**名前**を選択し、続いて**numberofemployees**を選択します。 **視覚化**ウィンドウで、**円グラフ**を選択します。 これにより、レポート キャンバスに新たな視覚化が追加されます。 
 
-    ![Power BI Desktop](./media/data-platform-cds-powerbi-connector/CreateReport6.png "Power BI Desktop")
-
-7. フィールド パネルの**名前**フィールドをクリックして、レポートのキャンバスに新しいビジュアル化を追加します。 このプロセスを繰り返して、レポートを作成するためのビジュアル化を変更できるようになりました。
-
-    ![Power BI Desktop](./media/data-platform-cds-powerbi-connector/CreateReport7.png "Power BI Desktop")
+    > [!div class="mx-imgBorder"] 
+    > ![Power BI Desktop の資格化](./media/data-platform-cds-powerbi-connector/CreateReport7.png "Power BI Desktop の視覚化")
 
 
 ## <a name="using-option-sets"></a>オプション セットの使用
 
-オプション セットは、アプリとフロー内でユーザーに値のドロップダウン リストを提供するためにエンティティで使用されます。 Power BI コネクタを使用している場合、オプション セット フィールドは 2 つの列として示され、一意の値と表示値の両方を表示します。
+オプション セットは、アプリやフローでユーザーに値のドロップダウン リストを提供する目的でエンティティで使用されます。 Power BI コネクタを使用している場合、オプション セット フィールドは 2 つの列として示され、一意の値と表示値の両方を表示します。
 
 たとえば、ApprovalStatus というエンティティのオプション セットの場合、Power BI に 2 つのフィールドが表示されます。
 
@@ -100,13 +94,13 @@ Common Data Service で Power BI を使うには、以下が必要です:
 
 ## <a name="navigating-relationships"></a>ナビゲーションの関連付け
 
-Common Data Service の関連付けでは、GUIDフィールドを使用して2つのエンティティ間の PowerBI desktop 内に関連付けを作成する必要があります。これはシステムによって生成される一意の識別子で、他のフィールドとの間にあいまいさや重複が存在する可能性のあるレコードを作成するために関連付けが作成されます。 Power BI Desktop の関連付けの管理については、 [こちら](https://docs.microsoft.com/power-bi/desktop-create-and-manage-relationships) をご覧ください。
+Common Data Service の関連付けには GUID フィールドを使用する 2 つのエンティティ間で、Power BI desktop 内での関連付けを作成する必要があります。これは他のフィールドとのあいまいさ、または重複が存在する場合のある作成レコードに対して関連付けが作成されていることを確認する目的で、システムが生成する一意の識別子です。 Power BI Desktop の関連付けの管理については、 [こちら](https://docs.microsoft.com/power-bi/desktop-create-and-manage-relationships) をご覧ください。
 
-一部の関連付けは自動的に作成されますが、レポートの作成時に正しい関連付けが確立されているかプレビューおよび確認を行うことができます。
+関連付けは自動的に作成される場合もありますが、レポートを作成する際にレビューを行い、正しい関連付けが確立されているかどうかを確認することができます。
 
 * エンティティの検索フィールドには、関連エンティティのレコードの GUID が含まれます。
-* 関連エンティティには、GUID を含む [EntityName] id 形式のフィールドがあります。これには、Accountid または MyCustomEntityid などがあります。
-* PowerBI Desktop 関連付け管理機能を使用して、検索フィールドと関連エンティティの ID フィールド間で新しい関連付けを作成します。
+* 関連エンティティには、GUID を含む "[EntityName]ID" 形式のフィールドがあります。たとえば、Accountid または MyCustomEntityid などがあります
+* Power BI desktop の関連付け管理機能を使用して、検索フィールドと関連エンティティの ID フィールド間で新たな関連付けを作成します。
 
 
 ## <a name="next-steps"></a>次のステップ

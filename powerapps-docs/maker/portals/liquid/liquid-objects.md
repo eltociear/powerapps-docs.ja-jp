@@ -6,15 +6,15 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 10/07/2019
+ms.date: 06/05/2020
 ms.author: tapanm
 ms.reviewer: ''
-ms.openlocfilehash: 4f741c8db2c0f73df8ee10c16793df78d4d58625
-ms.sourcegitcommit: a1b54333338abbb0bc3ca0d7443a5a06b8945228
+ms.openlocfilehash: 80278116ac20411faeb773c37e0c938134108206
+ms.sourcegitcommit: 6f904789d817248eac0a4c9dd0c5fe37dfbb77ad
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "3126326"
+ms.lasthandoff: 06/06/2020
+ms.locfileid: "3434546"
 ---
 # <a name="available-liquid-objects"></a>使用可能な Liquid オブジェクト
 
@@ -233,7 +233,7 @@ ms.locfileid: "3126326"
 
 blogposts オブジェクトにより、ブログ記事オブジェクトのコレクションにアクセスできます。 ブログ記事を発注して改ページを実行し、Liquid フィルターも使用できます。
 
-{ % assign blogposts = blogs.posts | order\_by “adx\_name”, “desc” | paginate: 0,4 | all %}。blogs.posts.all もすべてのブログ投稿を取得する有効な方法であることに注意してください。blogs.posts | from\_index: 0 | take: 2 も可能です。
+{% assign blogposts = blogs.posts | order\_by “adx\_name”, “desc” | paginate: 0,4 | all %} blogs.posts.all もすべてのブログ投稿を取得する有効な方法であることに注意してください blogs.posts | from\_index: 0 | take: 2 も可能です
 
 次の表は、blogposts オブジェクトに関連付けられるさまざまな属性を説明したものです。
 
@@ -636,7 +636,7 @@ forumposts オブジェクトにより、forumpost オブジェクトのコレ�
 > [!Note]
 > [entities](#entities)
 
-|属性   |説明   |
+|属性   |内容   |
 |---|---|
 | スレッド       | フォーラムのすべてのフォーラム スレッドを含む forumthreads オブジェクトを返します。               |
 | 件名          | フォーラムの名前。                                                                  |
@@ -984,8 +984,9 @@ Power Apps knowledgearticle およびカテゴリ エンティティ レコー�
 <a href={{ request.url | add_query: 'foo', 1 }}>Link</a>
 ```
 
-> [!Note]
-> URL フィルターを使用して Liquid で URL を動的に作成できます。 
+> [!NOTE]
+> - URL フィルターを使用して Liquid で URL を動的に作成できます。
+> - request.url で使用される URL は、された任意の値にすることができ、後続の要求のために [キャッシュ](../configure/enable-header-footer-output-caching.md) されます。 request.url の値を正しくするには、[置換タグ](../liquid/template-tags.md#substitution) を使用するか、~\{WebFile パス} などの部分的な URL を使用するか、または [サイト設定](../configure/configure-site-settings.md) にポータル URL を保存することを検討してください。
 
 ### <a name="attributes"></a>属性
 

@@ -15,12 +15,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 61a0ba6433290f832323766699a792f1e57aa9eb
-ms.sourcegitcommit: 4a88daac42180283314f6bedee3d6810fd5a6c25
+ms.openlocfilehash: 51d92e0b155c93b23cc613226aaae9a8603fade3
+ms.sourcegitcommit: ee4796919a3ef520e95210468ec57f8d4baa39db
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "3276143"
+ms.lasthandoff: 06/11/2020
+ms.locfileid: "3442230"
 ---
 # <a name="customize-visualizations-and-dashboards"></a>ビジュアル化とダッシュボードのカスタマイズ
 
@@ -34,22 +34,10 @@ ms.locfileid: "3276143"
   
 - **ダッシュボード**。 ダッシュボードは、さまざまな形式でデータのスナップショットを提供することにより、モデル駆動アプリでビジネス インテリジェンス ツールとして機能します。 ダッシュボードを使用して、グラフ、グリッド、IFrame、または Web リソースからのデータを同時に提示できます。  
   
-## <a name="in-this-section"></a>このセクションの内容  
+## <a name="related-topics"></a>関連トピック  
 
-[ビジュアル化を使用したデータの表示 (グラフ)](view-data-with-visualizations-charts.md)  
-[ダッシュボードによるデータの分析](analyze-data-with-dashboards.md)  
+[ダッシュボードによるデータの分析](analyze-data-with-dashboards.md)<br/>
+[ビジュアル化を使用したデータの表示 (グラフ)](view-data-with-visualizations-charts.md)<br/>
 [ビジュアル化データ記述スキーマ](visualization-data-description-schema.md)  
   
-## <a name="related-sections"></a>関連セクション 
 
-[メタデータ モデルを拡張する](/dynamics365/customer-engagement/developer/org-service/use-organization-service-metadata)
-[エンティティ フォームをカスタマイズする](customize-entity-forms.md)  
-[エンティティ ビューをカスタマイズする](customize-entity-views.md) 
-[グローバル オプション セットをカスタマイズする](/dynamics365/customer-engagement/developer/org-service/customize-global-option-sets)<br/>
-[SiteMap を使用したアプリケーション ナビゲーションの変更](/dynamics365/customer-engagement/developer/customize-dev/change-application-navigation-using-sitemap)<br/>  
-[コマンド、およびリボンをカスタマイズする](customize-commands-ribbon.md)  
-[サービス カレンダーの外観構成](/dynamics365/customer-engagement/developer/customize-dev/service-calendar-appearance-configuration) 
-[カスタマイズを公開する](publish-customizations.md)  
-[カスタマイズ ファイルを編集するとき](when-edit-customization-file.md)  
-[クライアントの拡張](/dynamics365/customer-engagement/developer/extend-client)  
-[Web リソース](web-resources.md)

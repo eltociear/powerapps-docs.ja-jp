@@ -2,7 +2,7 @@
 title: Power Apps で翻訳用にカスタマイズされたエンティティとフィールド テキストをエクスポートする | MicrosoftDocs
 description: エンティティとフィールド テキストの変換のエクスポート方法を説明する
 ms.custom: ''
-ms.date: 06/19/2018
+ms.date: 05/19/2020
 ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
@@ -22,23 +22,23 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 9061b953aff67a4fa98c342f89dbc3bf20c4ff93
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 6f8f607c2f9ad58be54d808a6c682590a3ea5f35
+ms.sourcegitcommit: 82fa1758e29fe302f9a252fd9943ace03b7aada0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2863734"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "3427454"
 ---
 # <a name="translate-customized-entity-and-field-text-into-other-languages"></a>カスタマイズされたエンティティおよびフィールド テキストを他の言語に翻訳する
+アンマネージド ソリューションでカスタマイズしたエンティティとフィールド テキストを作成した後、他言語に翻訳することができます。  
+  
+1. [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインし、左側のナビゲーションから**ソリューション**を選択します。    
+  
+2. 必要なソリューションを選択して、コマンド バーで **…** を選択し、**翻訳** を選択してから、**翻訳のエクスポート** を選択します。  
 
-カスタマイズしたエンティティおよびフィールド テキストを作成した後、他言語への翻訳が必要な場合があります。  
+3. エクスポートが完了すると、エクスポートされた翻訳の圧縮 (zip) ファイルがブラウザーの既定のダウンロード フォルダーにダウンロードされ、エクスポートされたラベルが含まれます。
   
-1. [ソリューション エクスプローラー](../model-driven-apps/advanced-navigation.md#solution-explorer)を開きます。    
-  
-2. ソリューション エクスプローラーの操作ツール バーで、**翻訳のエクスポート**を選択します。  
-3.  エクスポートの完了後、ローカル コンピューターまたはネットワークにエクスポートされたラベルが格納されている圧縮 (.zip) ファイルを開くか保存します。  
-  
-4.  圧縮 (.zip) ファイルから XML ファイルを抽出し、それを翻訳します。  
+4. 圧縮 (.zip) ファイルから XML ファイルを抽出し、それを翻訳します。  
 
 ## <a name="community-tools"></a>コミュニティ ツール
 
