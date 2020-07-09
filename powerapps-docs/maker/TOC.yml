@@ -133,6 +133,8 @@
               href: ../user/export-excel-pivottable.md
             - name: 重複レコードをマージする
               href: ../user/merge-duplicate-records.md
+            - name: Excel へのエクスポートのトラブルシューティング
+              href: ../user/ts-export-to-excel.md
         - name: レポート
           items:
             - name: レポートの操作
@@ -233,7 +235,7 @@
                   href: canvas-apps/connections/connection-microsoft-translator.md
                 - name: Office 365 Outlook
                   href: canvas-apps/connections/connection-office365-outlook.md
-                - name: Office 365 ユーザー
+                - name: Office 365 Users
                   href: canvas-apps/connections/connection-office365-users.md
                 - name: Oracle Database
                   href: canvas-apps/connections/connection-oracledb.md
@@ -915,6 +917,18 @@
               href: ./canvas-apps/sharepoint-scenario-alerts-flow.md
             - name: 完了済みシナリオの検証
               href: ./canvas-apps/sharepoint-scenario-summary.md
+            - name: SharePoint 統合シナリオ
+              items:
+                - name: SharePoint シナリオの概要
+                  href: ./canvas-apps/sharepoint/scenarios-intro.md
+                - name: アプリで検索リストをフィルター処理する方法
+                  href: ./canvas-apps/sharepoint/scenarios-filter-search-list.md
+                - name: SharePoint リストでルックアップ列からの選択肢を含むドロップダウン リストを使用する方法
+                  href: ./canvas-apps/sharepoint/scenarios-choice-to-lookup.md
+                - name: SharePoint リスト内部の列のステータスに基づいてアプリ画面をカスタマイズする方法
+                  href: ./canvas-apps/sharepoint/scenarios-customize-view-based-on-column-status.md
+                - name: SharePoint サイトからルックアップ リスト内のアクセス許可を操作する方法
+                  href: ./canvas-apps/sharepoint/scenarios-lookup-list-permissions.md
         - name: Cognitive Services
           href: ./canvas-apps/cognitive-services-api.md
         - name: InfoPath のフォームを Power Apps に変換する
@@ -1465,7 +1479,17 @@
   items:
     - name: Common Data Service とは
       href: ./common-data-service/data-platform-intro.md
-    - name: エンティティの操作
+    - name: Common Data Service を選ぶ理由
+      items:
+        - name: 概要
+          href: ./common-data-service/why-cds-overview.md
+        - name: データに関する作業
+          href: ./common-data-service/why-cds-work-with-data.md
+        - name: データのインポートおよびエクスポート
+          href: ./common-data-service/why-cds-import-export.md
+        - name: アプリに関する作業
+          href: ./common-data-service/why-cds-any-type-app.md
+    - name: エンティティに関する作業
       items:
         - name: エンティティの概要
           href: ./common-data-service/entity-overview.md
@@ -1663,6 +1687,8 @@
       href: ./common-data-service/api-limits-overview.md
     - name: 開発者向け
       href: ../developer/common-data-service/overview.md
+- name: チャットボット
+  href: ../chatbots.md
 - name: AI Builder
   href: ../use-ai-builder.md
 - name: サンプル アプリとソリューション
@@ -1673,11 +1699,11 @@
       items:
         - name: 概要
           href: ../sample-apps/emergency-response/overview.md
-        - name: アプリをデプロイする
+        - name: アプリのデプロイ
           href: ../sample-apps/emergency-response/deploy-configure.md
-        - name: 管理アプリとダッシュボードを使用する
+        - name: 管理アプリとダッシュボードの使用
           href: ../sample-apps/emergency-response/configure-data-reporting.md
-        - name: モバイル アプリを使用する
+        - name: モバイル アプリの使用
           href: ../sample-apps/emergency-response/use.md
     - name: 地方自治体の緊急時対応と監視
       items:
@@ -1695,7 +1721,19 @@
           href: ../sample-apps/regional-emergency-response/portals-user.md
     - name: 病院から地域へのデータの転送
       href: ../sample-apps/emergency-response-data-transfer.md
-- name: 他のユーザーの声
+    - name: 高等教育危機管理の財務的影響トラッカー
+      items:
+        - name: 概要
+          href: ../sample-apps/crisis-financial-impact-tracker/overview.md
+        - name: ソリューションのデプロイ
+          href: ../sample-apps/crisis-financial-impact-tracker/deploy-solution.md
+        - name: 管理アプリの使用
+          href: ../sample-apps/crisis-financial-impact-tracker/configure-data.md
+        - name: モバイル アプリの使用
+          href: ../sample-apps/crisis-financial-impact-tracker/use-mobile-app.md
+        - name: ダッシュボードの使用
+          href: ../sample-apps/crisis-financial-impact-tracker/configure-dashboards.md
+- name: 他のユーザーから学ぶ
   items:
     - name: ブログ
       href: 'https://powerapps.microsoft.com/blog/'
