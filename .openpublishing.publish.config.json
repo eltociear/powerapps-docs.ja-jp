@@ -11,7 +11,7 @@
         "/dotnet",
         "/dynamics365/customer-engagement/web-api"
       ],
-      "open_to_public_contributors": true,
+      "open_to_public_contributors": false,
       "type_mapping": {
         "Conceptual": "Content",
         "ManagedReference": "Content",
@@ -65,7 +65,7 @@
     "master-sxs",
     "live-sxs"
   ],
-  "git_repository_url_open_to_public_contributors": "https://github.com/MicrosoftDocs/powerapps-docs.ja-jp",
+  "git_repository_url_open_to_public_contributors": "https://github.com/MicrosoftDocs/powerapps-docs",
   "git_repository_branch_open_to_public_contributors": "live",
   "continue_with_document_error": true,
   "skip_source_output_uploading": false,
