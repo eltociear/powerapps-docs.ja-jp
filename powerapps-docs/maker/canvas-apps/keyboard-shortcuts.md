@@ -1,24 +1,24 @@
 ---
 title: キャンバス アプリのキーボード ショートカット | Microsoft Docs
 description: キャンバス アプリのためのキーボード ショートカット
-author: tapanm-msft
+author: adrianorth
 manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
-ms.reviewer: ''
-ms.date: 02/09/2020
-ms.author: tapanm
+ms.reviewer: tapanm
+ms.date: 06/12/2020
+ms.author: aorth
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 2f41edb15bec061887ebe41f375cb1498280857c
-ms.sourcegitcommit: a1b54333338abbb0bc3ca0d7443a5a06b8945228
+ms.openlocfilehash: d8bbf85e393862afadab854995bf6ba3a6e10374
+ms.sourcegitcommit: e8e2b7251c301f44fb60af29a86107c099a543a8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "3308293"
+ms.lasthandoff: 06/12/2020
+ms.locfileid: "3447454"
 ---
 # <a name="keyboard-shortcuts-for-canvas-apps"></a>キャンバス アプリのためのキーボード ショートカット
 
@@ -42,8 +42,6 @@ ms.locfileid: "3308293"
 |--|--|
 | Enter | 選択したコマンドを実行します。 |
 | タブ​​ | 選択したタブでコマンド間を移動し、次のタブに移動します。 |
-| Ctrl + F6 | 次のランドマークに移動します。 |
-| Ctrl+Shift+F6 | 前のランドマークに移動します。 |
 | Alt+I | **挿入**タブを選択します。 |
 
 ## <a name="editing"></a>編集
@@ -139,6 +137,8 @@ Alt キーは、コントロールが移動およびサイズ変更のスナッ�
 | ショートカット | 操作​​ |
 |--|--|
 | F1 | ドキュメントを開きます。 |
+| Ctrl + F6 | 次のランドマークに移動します。 |
+| Ctrl+Shift+F6 | 前のランドマークに移動します。 |
 | Shift + F10 | たとえば、**ツリー ビュー**などのショートカット メニューを開きます。 |
 
 

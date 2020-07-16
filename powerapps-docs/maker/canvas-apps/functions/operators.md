@@ -7,18 +7,18 @@ ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: tapanm
-ms.date: 02/29/2020
+ms.date: 05/20/2020
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 8c7f982f4d2eca1b097a312f74aff70063bf3396
-ms.sourcegitcommit: a1b54333338abbb0bc3ca0d7443a5a06b8945228
+ms.openlocfilehash: a38930c24954867d9253b53c2f7cb24b86aed2c1
+ms.sourcegitcommit: 4b6f187c9501332f9acca5978fa326621f2980e5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "3308684"
+ms.lasthandoff: 05/22/2020
+ms.locfileid: "3394049"
 ---
 # <a name="operators-and-identifiers-in-power-apps"></a>Power Apps の演算子と識別子
 
@@ -54,7 +54,8 @@ ms.locfileid: "3308684"
 |                                **@**                                |                       &nbsp;                        |                                                                              **[@MyVariable]**                                                                               |                                                                                                                      グローバルの曖昧性を除去します                                                                                                                       |
 | **,**<br>[[言語依存](../global-apps.md)]  |                   リスト区切り記号                    | **If( X < 10, "Low", "Good" )**<br>**{ X: 12, Y: 32 }**<br>**[ 1, 2, 3 ]** | 以下の要素を区切ります。 <ul><li>関数呼び出しの引数</li><li>[レコード](../working-with-tables.md#elements-of-a-table) のフィールド</li><li>[テーブル](../working-with-tables.md#inline-value-tables) のレコード</li></ul> この文字は言語に依存します。 |
 | **;**<br>[[言語依存](../global-apps.md)] |                  数式のチェーン                   |                                     **Collect(T, A); Navigate(S1, &quot;&quot;)**                                     |                                                                          関数の呼び出しの動作プロパティを区切ります。 このチェーン演算子は言語に依存します。                                                                          |
-|                             **親**                              |         [Parent 演算子](#parent-operator)         |                                                                               **Parent.Fill**                                                                                |                                                                                                           コントロール コンテナーのプロパティにアクセスする                                                                                                            |
+|                             **セルフ**                              |         [Self 演算子](#self-and-parent-operators)         |                                                                               **Self.Fill**                                                                                |                                                                                                           現在のコントロールのプロパティへのアクセス                                                                                                             |
+|                             **親**                              |         [Parent 演算子](#self-and-parent-operators)         |                                                                               **Parent.Fill**                                                                                |                                                                                                           コントロール コンテナーのプロパティにアクセスする                                                                                                            |
 |                            **ThisItem**                             |       [ThisItem 演算子](#thisitem-operator)       |                                                                            **ThisItem.FirstName**                                                                            |                                                                                                          ギャラリーまたはフォーム コントロールのフィールドにアクセスする                                                                                                           |
 
 ## <a name="in-and-exactin-operators"></a>in 演算子と exactin 演算子
@@ -77,12 +78,17 @@ ms.locfileid: "3308684"
 
 入れ子になっているギャラリーでは、**[ThisItem](operators.md#thisitem-operator)** は、最も内側のギャラリー アイテムを参照します。 内側と外側のギャラリーの行フィールドが競合していないことを前提として、修飾されていないフィールド (列) 名を直接使用することもできます。 この方法によって、内側のギャラリーが外側のギャラリーのアイテムを参照するというルールが有効になります。
 
-## <a name="parent-operator"></a>Parent 演算子
-一部のコントロールは、その他のコントロールをホストします。 たとえば、**[画面](../controls/control-screen.md)** **[ギャラリー](../controls/control-gallery.md)** **[カード](../controls/control-card.md)** **[編集フォーム](../controls/control-form-detail.md)** および **[表示フォーム](../controls/control-form-detail.md)** コントロールは、すべてがコントロールのコンテナーです。 ホストしているコントロールは、その中に含まれているコントロールの「親」と呼ばれます。
+## <a name="self-and-parent-operators"></a>Self および Parent 演算子
 
-Power Apps のコントロールは、アプリ内のどこからでも、名前で参照することができます。 **Screen1** がアプリの画面名であるとします。 この画面の背景色を取得するには、**Screen1.Fill** を使用できます。
+数式内でコントロールとそのプロパティを参照するには、3 つの方法があります:
 
-この画面上のコントロールには、別のオプションがあります。 それらは、相対参照である **Parent.Fill** を使用することができます。 **[Parent](operators.md#parent-operator)** 演算子は、コントロールをホストしているコントロールを参照して、ホストしているコントロールのすべてのプロパティを使用できるようにします。 **[Parent](operators.md#parent-operator)** コントロールはコントロールの名前に依存しないため、便利に使用できます。 コンテナー コントロールは、コンテナー内の参照の調整なしで、コピーして貼り付けることができます。 またこの演算子により、数式を読み取るとき、コントロールの親子関係を理解しやすくなります。
+| メソッド | 内容 |
+|--------|-------------|
+| コントロール名別 |  コントロールは、アプリ内のどこからでも、名前で参照することができます。<br><br>例えば、**Label1.Fill** は名前が **Label1** であるコントロールの Fill プロパティを参照します。  | 
+| **Self** 演算子 | 数式を作成するときに、同じコントロールの別のプロパティを参照すると便利な場合があります。  名前による絶対参照を使用する代わりに、1 つの*Self* への相対参照を使用する方が簡単で移植性が高くなります。  **Self** 演算子は、現在のコントロールに簡単にアクセスできるようにします。<br><br>例えば、**Self.Fill** は現在のコントロールの塗りつぶしの色を参照します。   |
+| **Parent** 演算子 | 一部のコントロールは、**[画面](../controls/control-screen.md)** や **[ギャラリー](../controls/control-gallery.md)** コントロールなど、他のコントロールをホストします。 内部のコントロールのホスティング コントロールは、*親* と呼ばれます。  **Self** 演算子と同様に、**Parent** 演算子は、コンテナー コントロールへの簡単な相対参照を提供します。<br><br>例えば、**Parent.Fill** は、現在のコントロールのコンテナーであるコントロールの fill プロパティを参照します。 |
+
+**Self** と **Parent** は演算子であり、コントロール自体のプロパティではありません。 **Parent.Parent**、**Self.Parent** または **Parent.Self** への参照はサポートされていません。
 
 ## <a name="identifier-names"></a>識別子名
 

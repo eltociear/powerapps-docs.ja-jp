@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 0301d48ccc739d8f6382deb8b01eeac7719e6dc2
-ms.sourcegitcommit: 4a88daac42180283314f6bedee3d6810fd5a6c25
+ms.openlocfilehash: 9fdf154e4e612eac215e1a3c9e6c8a86ee8ad24c
+ms.sourcegitcommit: b5ab419dad4e9d64a5e6610641363b0d7487930a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "3275983"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "3465613"
 ---
 # <a name="publish-customizations"></a>カスタマイズを公開します
 
@@ -80,11 +80,9 @@ ms.locfileid: "3275983"
   
 ### <a name="see-also"></a>関連項目  
 
- [モデル駆動型アプリのカスタマイズ](/dynamics365/customer-engagement/developer/customize-dev/customize-applications)<br/>
- [メタデータ モデルの拡張](/dynamics365/customer-engagement/developer/org-service/use-organization-service-metadata)<br/>
+ [メタデータ モデルの拡張](https://docs.microsoft.com/powerapps/developer/common-data-service/metadata-services)<br/>
  [Publish 要求スキーマ](publish-request-schema.md)<br/>
  [エンティティ フォームのカスタマイズ](customize-entity-forms.md)<br/>
  [エンティティ ビューのカスタマイズ](customize-entity-views.md)<br/>
- [グローバル オプション セットのカスタマイズ](/dynamics365/customer-engagement/developer/org-service/customize-global-option-sets)<br/>
- [SiteMap を使用したアプリケーション ナビゲーションの変更](/dynamics365/customer-engagement/developer/customize-dev/change-application-navigation-using-sitemap)
+ [SiteMap を使用したアプリケーション ナビゲーションの変更](https://docs.microsoft.com/powerapps/maker/model-driven-apps/create-site-map-app)
 

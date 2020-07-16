@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 77594b699f335d3d167f49b92df437a5c2a1425c
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: e35697bf8a2fad5fd2e3cf7619eed449bc6d98db
+ms.sourcegitcommit: a94b56525667015d4439a082873c2262a61b25a9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2748803"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "3455944"
 ---
 # <a name="developer-tools-and-resources"></a>開発者のツールとリソース
 
@@ -33,7 +33,7 @@ ms.locfileid: "2748803"
 |---------|---------|
 |コード生成ツール `CrmSvcUtil.exe`|組織サービスで使われるエンティティ データ モデルを表す事前バインド .NET Framework クラスを生成する、コマンドライン コード生成ツールです。 <br />詳細: <br />[組織のサービス](work-with-data-cds.md#organization-service)<br />[コード生成ツールを使用して事前バインド型エンティティ クラスを作成する](/dynamics365/customer-engagement/developer/org-service/create-early-bound-entity-classes-code-generation-tool)|
 |Configuration Migration ツール `DataMigrationUtility.exe`|環境間で構成データを移動するために使用します。 構成データは、カスタム機能を定義するために使用され、通常はユーザー定義エンティティに格納されます。 ツールはビジネス データを移動するために設計されていません。 <br /> 詳細については次を参照してください: [Common Data Service 管理者ガイド: 設定移行ツールを使用して、インスタンス間および組織間で構成データを移動する](/dynamics365/customer-engagement/admin/manage-configuration-data)|
-|Package Deployer `PackageDeployer.exe`|Common Data Service インスタンスにパッケージを展開するために使用します。 パッケージは、ソリューションを含むインストール可能なユニットです。 <br /> 詳細: <br />[ソリューション パッケージの展開](introduction-solutions.md#deploy-solution-packages)<br />[Common Data Service のパッケージを作成する Package Deployer](/dynamics365/customer-engagement/developer/create-packages-package-deployer)|
+|Package Deployer `PackageDeployer.exe`|Common Data Service インスタンスにパッケージを展開するために使用します。 パッケージは、ソリューションを含むインストール可能なユニットです。 <br /> 詳細: <br />[ソリューション パッケージの展開](introduction-solutions.md#deploy-solution-packages)<br />[Package Deployer のパッケージを作成する](/power-platform/alm/package-deployer-tool)|
 |プラグイン登録ツール `PluginRegistration.exe`|.NET アセンブリのプラグイン クラスをサーバー イベントに登録するために使用されるツールです。 <br />詳細: <br />[プラグインの作成](apply-business-logic-with-code.md#create-a-plug-in)<br />[プラグインの登録](register-plug-in.md)|
 |SolutionPackager ツール `SolutionPackager.exe`|Common Data Service 圧縮ソリューションファイルを複数のXMLファイルおよびその他のファイルに可逆的に分解処理を行い、これらのファイルをソースコントロールシステムで簡単に管理するツールです。<br /> 詳細: <br />[ソリューションの開発チーム](introduction-solutions.md#team-development-of-solutions)<br />[SolutionPackager ツールを使用してソリューション ファイルを圧縮および解凍する](/dynamics365/customer-engagement/developer/compress-extract-solution-file-solutionpackager)|
 
@@ -86,7 +86,7 @@ ms.locfileid: "2748803"
 
 これらのアセンブリを使用して Package Deployerのパッケージを作成します。
 
-詳細情報については次を参照してください: [Common Data Service Package Deployerにパッケージを作成する](/dynamics365/customer-engagement/developer/create-packages-package-deployer)
+詳細: [Package Deployer のパッケージを作成する](/power-platform/alm/package-deployer-tool)
 
 **NuGet パッケージ**: [Microsoft.CrmSdk.XrmTooling.PackageDeployment](https://www.nuget.org/packages/Microsoft.CrmSdk.XrmTooling.PackageDeployment/)
 

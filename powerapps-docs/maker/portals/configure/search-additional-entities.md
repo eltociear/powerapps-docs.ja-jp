@@ -1,20 +1,19 @@
 ---
 title: Power Apps ポータルの追加エンティティに対するグローバル検索 | MicrosoftDocs
 description: ポータルで追加エンティティに対するグローバル検索がどのように機能するかを説明します。
-author: tapanm-msft
-manager: kvivek
+author: sandhangitmsft
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 04/28/2020
 ms.author: sandhan
 ms.reviewer: tapanm
-ms.openlocfilehash: e1091709e096d7b7b53c5f4e02f4b84d15cd952e
-ms.sourcegitcommit: 8dd68565e03a4e66db1f8937630fa4c52eb93871
+ms.openlocfilehash: 1404b91fe6380d85dc93bc513ad3185dc2c91501
+ms.sourcegitcommit: c12260f372ad2cc48d3146be570d2088c9ef1d86
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "3321294"
+ms.lasthandoff: 06/20/2020
+ms.locfileid: "3494067"
 ---
 # <a name="walkthrough-configuring-additional-entitiesforglobalsearch"></a>チュートリアル: グローバル検索の追加エンティティの構成  
 

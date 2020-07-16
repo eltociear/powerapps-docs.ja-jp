@@ -1,20 +1,19 @@
 ---
 title: ポータルの公開キーのダウンロード | MicrosoftDocs
 description: ポータルの公開キーのダウンロード方法を説明します。
-author: tapanm-msft
-manager: kvivek
+author: neerajnandwana-msft
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 10/07/2019
-ms.author: tapanm
-ms.reviewer: ''
-ms.openlocfilehash: 8b74e1943e6a356884be167be033b7e633660b40
-ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
+ms.author: nenandw
+ms.reviewer: tapanm
+ms.openlocfilehash: 0ceb5ec82fdf2d0cc0220d5bb2c4b43932e394e6
+ms.sourcegitcommit: 2fd873a1ea17f419f6194714efffa47a9bd00c2e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "2977891"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "3506685"
 ---
 # <a name="download-public-key-of-portal"></a>ポータルの公開キーのダウンロード
 

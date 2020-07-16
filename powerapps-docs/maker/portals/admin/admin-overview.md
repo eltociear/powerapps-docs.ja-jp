@@ -1,20 +1,19 @@
 ---
 title: Power Apps ポータル管理センターの概要 | MicrosoftDocs
 description: Power Apps ポータル管理センターに関する情報。
-author: tapanm-msft
-manager: kvivek
+author: neerajnandwana-msft
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 10/07/2019
-ms.author: tapanm
-ms.reviewer: ''
-ms.openlocfilehash: 21e27be0c5c60d6c992c58839980283088f1c2b4
-ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
+ms.author: nenandw
+ms.reviewer: tapanm
+ms.openlocfilehash: 743955dee5b2f2df8992019aef77db81c62e3306
+ms.sourcegitcommit: 2fd873a1ea17f419f6194714efffa47a9bd00c2e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "2977978"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "3506870"
 ---
 # <a name="power-apps-portals-admin-center"></a>Power Apps ポータル管理センター
 

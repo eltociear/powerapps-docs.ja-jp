@@ -7,27 +7,29 @@ ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: tapanm
-ms.date: 05/13/2020
+ms.date: 06/12/2020
 ms.author: aheaney
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: ba4f6966c4d84ef8b628c4cb2b23495a991869ec
-ms.sourcegitcommit: e3fc14acfc123642aac7154f96a07edd766f7810
+ms.openlocfilehash: 1cb8fb8e738f0ec4534ffad2517443cbe3d31e51
+ms.sourcegitcommit: e8e2b7251c301f44fb60af29a86107c099a543a8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "3384827"
+ms.lasthandoff: 06/12/2020
+ms.locfileid: "3447410"
 ---
-# <a name="debugging-an-app-with-canvas-app-monitor-experimental"></a>キャンバス アプリ モニターを使用してアプリをデバッグする (実験段階)
+# <a name="debugging-an-app-with-canvas-app-monitor-preview"></a>キャンバス アプリ モニターを使用したアプリのデバッグ (プレビュー)
+
+[この記事はプレリリース ドキュメントであり、変更されることがあります。]
 
 **キャンバス アプリ モニター**は、問題のデバッグと診断を迅速化し、より高速で信頼性の高いアプリを構築するのに役立ちます。 モニターでは、アプリの実行時にアプリのすべてのアクティビティのログを提供することで、アプリの実行方法の詳細なビューが提供されます。
 
-これにより、アプリに含まれる数式がどう機能するかをよりよく理解でき、ユーザーはパフォーマンスを向上させ、エラーや問題を特定できます。
+この機能により、アプリに含まれる数式がどのように機能するかをよりよく理解できるため、パフォーマンスを向上させ、エラーや問題を特定できます。
 
-> [!NOTE]
-> キャンバス アプリ モニター機能はまだ実験段階です。 詳細については [実験的機能とプレビュー機能](working-with-experimental-preview.md) を参照してください。
+> [!IMPORTANT]
+> キャンバス アプリ モニター 機能はプレビュー段階です。 詳細については [実験的機能とプレビュー機能](working-with-experimental-preview.md) を参照してください。
 
 ## <a name="debugging-an-app"></a>アプリのデバッグ
 
@@ -56,26 +58,71 @@ ms.locfileid: "3384827"
 
 実行中の**モニター**を確認するには、[シナリオの例](#example) を参照してください。
 
-## <a name="open-canvas-app-monitor"></a>キャンバス アプリ モニターを開く
+## <a name="open-app-monitor-while-editing-an-app-in-power-apps-studio"></a>Power Apps Studio でアプリを編集中にアプリ モニターを開く
 
-キャンバス アプリ モニターは、既定ですべてのキャンバス アプリに対して使用できます。 モニターを開くには:
+キャンバス アプリ モニターは、既定ですべてのキャンバス アプリに対して使用できます。 アプリを作成するときにモニターを開くには:
 
 1.  [Power Apps](https://make.powerapps.com/) にサインインします。
 
 1.  [新しいアプリ](https://docs.microsoft.com/powerapps/maker/canvas-apps/get-started-test-drive) を作成するか [既存のアプリを編集](https://docs.microsoft.com/powerapps/maker/canvas-apps/edit-app) します。
 
-1. 左側のナビゲーション ウィンドウにある **詳細ツール** を選択します。
+1. 左側のペインにある  **詳細ツール** を選択します。
 
 1.  **モニターを開く** を選択して、このアプリのモニターを開きます。 
 
     ![モニターを開く](./media/monitor/open-monitor.png "モニターを開く")
 
-これにより、新しいブラウザー タブでモニターが開き、既存のスタジオ セッションに接続されます。
+このアクションは、新しいブラウザー タブでモニターを開き、既存の Studio セッションに接続します:
 
 ![キャンバス アプリ モニター](./media/monitor/canvas-app-monitor.png "キャンバス アプリ モニター")
 
 > [!NOTE]
 > モニターはアプリに影響を与えません。 モニターは、テスト環境または運用環境の任意のアプリで使用できます。
+
+## <a name="open-app-monitor-for-published-app"></a>公開済みアプリのアプリ モニターを開く
+
+モニターを使用して、公開済みアプリを Web プレーヤーでデバッグすることもできます。 公開済みアプリのモニターを開くには、2 つのオプションがあります。
+
+### <a name="open-app-monitor-for-published-app-using-power-apps-studio"></a>Power Apps Studio を使用して公開済みアプリのアプリ モニターを開く
+
+1.  [Power Apps](https://make.powerapps.com/) にサインインします。
+
+1.  [新しいアプリ](https://docs.microsoft.com/powerapps/maker/canvas-apps/get-started-test-drive) を作成するか [既存のアプリを編集](https://docs.microsoft.com/powerapps/maker/canvas-apps/edit-app) します。
+
+1. 左側のペインにある  **詳細ツール** を選択します。
+
+1.  **モニターを開く** を選択して、このアプリのモニターを開きます。
+
+1. トップ メニューから **公開済みアプリの再生** を選択します。
+
+   ![公開済みアプリを開く](./media/monitor/play-published-app.png "公開済みアプリを開く")
+
+   これにより、新しいブラウザー タブで公開済みアプリを開き、現在のモニター セッションに接続します。 アプリが Web プレーヤーに読み込まれたとき、および公開済みアプリを操作したときに、すぐにモニターにイベントが表示されます。
+
+   > [!NOTE]
+   > この方法で公開済みアプリを開くと、アプリが同じモニター セッションに 2 回接続されます。 Power Apps Studio で編集中のアプリと Web プレーヤーで公開されたアプリ。 両方のオプションを同時に使用してアプリを操作すると、Power Apps Studio と公開済みアプリの両方からのイベントがモニターに表示されます。
+
+### <a name="open-app-monitor-for-published-app-from-power-apps"></a>Power Apps から公開済みアプリのアプリ モニターを開く
+ 
+Power Apps Studio でアプリを開かなくても、公開済みアプリのモニターを開くことができます。
+   
+1.  [Power Apps](https://make.powerapps.com/) にサインインします。
+
+1. 左側のペインで、**アプリ** を選択します。
+
+1. 一覧からアプリを選択します。
+
+1. メニューから **モニター** を選択します。 **その他のコマンド** (**...**) を選択して、代わりに **モニター** を選択することもできます。
+
+    ![モニターを開く](./media/monitor/open-monitor-portal.png "モニターを開く")
+
+    このアクションは、新しいブラウザー タブでモニターを開きます。
+
+1. モニターではトップ メニューから **公開済みアプリの再生** を選択します。
+
+    ![公開済みアプリを開く](./media/monitor/play-published-app.png "公開済みアプリを開く")
+
+    これにより、新しいブラウザー タブで公開済みアプリを開き、現在のモニター セッションに接続します。 アプリが Web プレーヤーに読み込まれたとき、および公開済みアプリを操作したときに、すぐにモニターにイベントが表示されます。
 
 ## <a name="view-events-in-canvas-app-monitor"></a>キャンバス アプリ モニターでイベントを表示する
 
@@ -154,7 +201,7 @@ ms.locfileid: "3384827"
 
 テーブルに表示されるイベントをダウンロードして、オフラインで分析できます。 イベントは ```.json``` または ```.csv``` 形式でダウンロードでき、他のユーザーと共有できます。 ```.csv``` ファイルのみダウンロードできます。 ただし、イベントを ```.json``` 形式でエクスポートする場合、分析のためにモニター ツールに戻すことができます。 トレース ファイルを添付してサービス要求をサポートし、問題の解決を迅速化するすることもできます。
 
-![ダウンロード](./media/monitor/Download.png "ダウンロード")
+![Download](./media/monitor/Download.png "ダウンロード")
 
 **アップロード**を選択して、```.json``` トレース ファイルをモニターに読み込みます。 アップロード オプションは、現在モニター テーブルに表示される任意のイベントを削除し、トレース ファイルに含まれるイベントの詳細に置き換えます。
 
@@ -178,7 +225,7 @@ ms.locfileid: "3384827"
 
 ### <a name="analysis"></a>分析
 
-要求が調整されている理由を理解するには、問題をさらに分析する必要があります。 モニターでは、 **createRow** 呼び出しごとに、 **ProgressCount.Text** プロパティからのそれぞれ異なるエンティティに対する **getRows** 要求がいくつかあることがわかります。 これらはアプリが行を作成するエンティティではありません。 **ProgressCount.Text** 式はモニターに表示されます:
+要求が調整されている理由を理解するには、問題をさらに分析する必要があります。 モニターでは、 **createRow** 呼び出しごとに、 **ProgressCount.Text** プロパティからのそれぞれ異なるエンティティに対する **getRows** 要求がいくつかあることがわかります。 これらのエンティティは、アプリが行を作成するエンティティではありません。 **ProgressCount.Text** 式はモニターに表示されます:
 
 ![ProgressCount.Text 式](./media/monitor/progresscount-text-formula.png "ProgressCount.Text 式")
 

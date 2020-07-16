@@ -1,24 +1,26 @@
 ---
 title: Dynamics 365 のインスタンス、対象者、またはポータルの種類の変更 | MicrosoftDocs
 description: Dynamics 365 のインスタンス、対象者、またはポータルの種類の変更方法について説明します。
-author: tapanm-msft
-manager: kvivek
+author: neerajnandwana-msft
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 11/18/2019
-ms.author: tapanm
-ms.reviewer: ''
-ms.openlocfilehash: 35aaf6df8c7450901f8966bbd34e19e9b4b340c9
-ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
+ms.date: 06/12/2020
+ms.author: nenandw
+ms.reviewer: tapanm
+ms.openlocfilehash: 32aac38201b1d36458431e7d2df4113c415db42c
+ms.sourcegitcommit: 2fd873a1ea17f419f6194714efffa47a9bd00c2e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "2978242"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "3507182"
 ---
 # <a name="change-the-dynamics-365-instance-audience-or-type-of-portal"></a>Dynamics 365 のインスタンス、対象者、またはポータルの種類の変更
 
 ポータルが作成かつプロビジョニングされた後、Dynamics 365 インスタンスおよびポータルの詳細を変更できます。
+
+> [!IMPORTANT]
+> ご利用のポータルで Dynamics 365 インスタンスを変更する場合は、新しいインスタンスが現在のインスタンスと同じ[領域](https://docs.microsoft.com/power-platform/admin/regions-overview)であることを確認してください。 領域を横断して Power Apps ポータルの Dynamics 365 インスタンスを変更することはできません。
 
 1. **Dynamics 365 管理センター**ページに移動してから、**アプリケーション**タブを選択します。
 

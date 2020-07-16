@@ -1,20 +1,19 @@
 ---
 title: テンプレートに関する作業 | Microsoft Docs
 description: ポータルでテンプレートを使用する手順。
-author: tapanm-msft
-manager: kvivek
+author: neerajnandwana-msft
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 10/07/2019
-ms.author: tapanm
-ms.reviewer: ''
-ms.openlocfilehash: bbf71a5301ef1f3546c8817c24c73b0260764f6a
-ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
+ms.author: nenandw
+ms.reviewer: tapanm
+ms.openlocfilehash: 4cf50310b049b64a7f243e04a07b9fdece0cd915
+ms.sourcegitcommit: 2fd873a1ea17f419f6194714efffa47a9bd00c2e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "2981234"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "3507992"
 ---
 # <a name="work-with-templates"></a>テンプレートに関する作業
 

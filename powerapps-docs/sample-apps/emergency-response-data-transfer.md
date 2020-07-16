@@ -9,14 +9,12 @@ ms.custom: ''
 ms.date: 06/10/2020
 ms.author: pankar
 ms.reviewer: kvivek
-searchScope:
-- PowerApps
-ms.openlocfilehash: 6673916552c4382f1d3c3f096c87c9730bdf61b1
-ms.sourcegitcommit: 6e4a8cc9ddfb0ceb894fe7fbd626021633033907
+ms.openlocfilehash: dface1f6389fe62ab74a8d96d806ca34eb586f19
+ms.sourcegitcommit: 997384ebd01bda4f456f08689e024fb8ca5bf057
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2020
-ms.locfileid: "3443200"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "3455252"
 ---
 # <a name="transfer-data-from-hospital-to-regional-system"></a>病院から地域システムへのデータの転送
 

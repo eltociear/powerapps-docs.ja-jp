@@ -1,20 +1,19 @@
 ---
 title: ポータルでのコンテンツ スニペットを使用したコンテンツのカスタマイズ | MicrosoftDocs
 description: コンテンツ スニペットの使用によるコンテンツのカスタマイズの方法について学習します。
-author: tapanm-msft
-manager: kvivek
+author: sandhangitmsft
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 05/21/2020
-ms.author: tapanm
-ms.reviewer: ''
-ms.openlocfilehash: 25e7b6c335e35ff97da8535cfdd9023feeaea9bc
-ms.sourcegitcommit: 8b08fdc6a2934648ae926ea62ebee4cdb578b651
+ms.author: sandhan
+ms.reviewer: tapanm
+ms.openlocfilehash: 1936a10613dbf166affe11fd9d4daff0fc2482f5
+ms.sourcegitcommit: c12260f372ad2cc48d3146be570d2088c9ef1d86
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/22/2020
-ms.locfileid: "3394876"
+ms.lasthandoff: 06/20/2020
+ms.locfileid: "3494427"
 ---
 # <a name="customize-content-by-using-content-snippets"></a>コンテンツ スニペットの使用によるコンテンツのカスタマイズ
 

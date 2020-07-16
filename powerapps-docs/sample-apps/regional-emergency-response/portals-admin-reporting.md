@@ -1,22 +1,20 @@
 ---
 title: 地域政府機関の緊急時対応答およびモニタリング ポータルを管理する | Microsoft Docs
 description: 地域病院の緊急時応答ポータルを構成する方法について説明します。
-author: tapanm-msft
+author: pankajarora-msft
 manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 06/05/2020
-ms.author: tapanm
+ms.author: pankar
 ms.reviewer: tapanm
-searchScope:
-- PowerApps
-ms.openlocfilehash: 50c16947405d35de79a7ec89d3cf9a59cf483fef
-ms.sourcegitcommit: 6f904789d817248eac0a4c9dd0c5fe37dfbb77ad
+ms.openlocfilehash: 9b2831ae34961ae0f2b02a6f3e0b5cd177e02db1
+ms.sourcegitcommit: b5ab419dad4e9d64a5e6610641363b0d7487930a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "3434703"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "3465817"
 ---
 # <a name="administer-the-regional-governmentemergency-response-and-monitoring-portal"></a>地域政府機関の緊急時応答およびモニタリング ポータルを管理する
 

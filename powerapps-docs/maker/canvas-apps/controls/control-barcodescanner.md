@@ -1,36 +1,39 @@
 ---
-title: 'Web バーコード スキャナー コントロール: リファレンス | Microsoft Docs'
-description: プロパティとサンプルを含む、バーコード スキャナー コントロールに関する情報
+title: Web バーコード スキャナー コントロールのリファレンス | Microsoft Docs
+description: Web バーコード スキャナーのコントロールに関するプロパティや例を含む情報
 author: chmoncay
 manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.date: 10/25/2016
+ms.date: 06/12/2020
 ms.author: chmoncay
 ms.reviewer: tapanm
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: a116d812f8be7d8c1fb15ba2b05805536240084c
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: 9bc094614938d64fcf0e059b7a3f3d110da4ed6d
+ms.sourcegitcommit: e8e2b7251c301f44fb60af29a86107c099a543a8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "3306269"
+ms.lasthandoff: 06/12/2020
+ms.locfileid: "3447278"
 ---
-# <a name="web-barcode-scanner-control-experimental-in-power-apps"></a>Power Apps での Web バーコード スキャナー コントロール (試験段階)
+# <a name="web-barcode-scanner-control-experimental-in-power-apps"></a>Power Apps における Web バーコード スキャナー コントロール (試験段階)
 
-従来のバーコード スキャナー コントロールは廃止されましたが、Web ブラウザーでコードをスキャンするのに役立つ場合があります。
+従来のバーコード スキャナー コントロールは廃止されましたが、Web ブラウザーでコードをスキャンすることが役立つ場合があります。
 
 ## <a name="description"></a>内容
 
-ユーザーがすべてのデバイスでバーコードをスキャンできるように、コントロールではアプリにカメラ フィードを表示します。 パフォーマンス低下のためコントロールは廃止され、モバイル **[バーコード スキャナー](control-new-barcode-scanner.md)** コントロールがこのコントロールに代わるものです。
+ユーザーがすべてのデバイスでバーコードをスキャンできるように、コントロールではアプリにカメラ フィードを表示します。 このコントロールはパフォーマンスが悪いために廃止されているため、モバイル **[バーコードスキャナ](control-new-barcode-scanner.md)**  コントロールがこのコントロールに取って代わります。
+
+> [!NOTE]
+> Web バーコード スキャナー コントロールは、Microsoft Edge、Chrome、Firefox、Opera ブラウザにてご利用頂けます。 他のすべてのブラウザでは、アプリの一部の機能が動作しない旨の警告メッセージが表示されます。
 
 ## <a name="key-properties"></a>主要なプロパティ
 
-**バーコード スキャナー** – 複数のバーコード スキャナーを備えるデバイスで、アプリが使用するバーコード スキャナーの数値 ID。
+**カメラ** – 複数のカメラを搭載した端末では、アプリがバーコードをスキャンする際に使用するカメラの数値 ID が表示されます。
 
 ## <a name="additional-properties"></a>追加のプロパティ
 
@@ -86,7 +89,7 @@ ms.locfileid: "3306269"
 
 ### <a name="video-alternatives"></a>ビデオの代替手段
 
-* **[テキスト](properties-core.md)** をバーコード スキャナーの**テキスト**に設定した **[ラベル](control-text-box.md)** を追加することを検討してください。 バーコード スキャナーは識別されたバーコード値を表示しないため、上記のようにすると視覚障碍を持つユーザーだけでなく、誰でもスキャナーにアクセスできるようになります。
+* **[テキスト](properties-core.md)** をバーコード スキャナーの**テキスト**に設定した **[ラベル](control-text-box.md)** を追加することを検討してください。 バーコード スキャナーは識別されたバーコードの値を表示しないため、上記のようにすることで、視覚障害者だけでなく、誰でもスキャナーにアクセスできるようになります。
 
 ### <a name="screen-reader-support"></a>スクリーン リーダー サポート
 

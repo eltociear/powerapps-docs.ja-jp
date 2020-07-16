@@ -1,20 +1,19 @@
 ---
 title: Power Platform 管理センターの Power Apps ポータルの設定 | MicrosoftDocs
 description: Power Platform 管理センターの Power Apps ポータル設定についての情報。
-author: tapanm-msft
-manager: kvivek
+author: neerajnandwana-msft
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 05/29/2020
+ms.date: 06/12/2020
 ms.author: nenandw
 ms.reviewer: tapanm
-ms.openlocfilehash: 8f6d5ac03736612e1b328d087885fa085ebb421b
-ms.sourcegitcommit: e2c92335fe6162c4576f0b86238ccbe4a7f74732
+ms.openlocfilehash: 695cf1d88cda7db1f659341179c661eebbea8ebd
+ms.sourcegitcommit: 2fd873a1ea17f419f6194714efffa47a9bd00c2e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/01/2020
-ms.locfileid: "3417833"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "3507227"
 ---
 # <a name="manage-portals-from-the-power-platform-admin-center"></a>Power Platform 管理センターからポータルを管理する
 
@@ -97,6 +96,9 @@ Power Platform 管理センターを使用して、この記事で説明する�
 ## <a name="update-the-power-apps-portal-solution"></a>Power Apps ポータル ソリューションの更新
 
 Power Platform 管理センターを使用して、Power Apps ポータル ソリューションを更新できます。
+
+> [!IMPORTANT]
+> ご利用のポータルで Dynamics 365 インスタンスを変更する場合は、新しいインスタンスが現在のインスタンスと同じ[領域](https://docs.microsoft.com/power-platform/admin/regions-overview)であることを確認してください。 領域を横断して Power Apps ポータルの Dynamics 365 インスタンスを変更することはできません。
 
 1. **管理** を選択して、この記事の前半で説明した方法のいずれかを使用してポータルを管理します。
 

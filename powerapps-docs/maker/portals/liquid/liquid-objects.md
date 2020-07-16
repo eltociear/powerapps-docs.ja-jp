@@ -1,20 +1,19 @@
 ---
 title: ポータルの Liquid オブジェクトを使用する | MicrosoftDocs
 description: ポータルで使用可能な Liquid のオブジェクトについて説明します。
-author: tapanm-msft
-manager: kvivek
+author: gitanjalisingh33msft
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 06/05/2020
-ms.author: tapanm
-ms.reviewer: ''
-ms.openlocfilehash: 80278116ac20411faeb773c37e0c938134108206
-ms.sourcegitcommit: 6f904789d817248eac0a4c9dd0c5fe37dfbb77ad
+ms.author: gisingh
+ms.reviewer: tapanm
+ms.openlocfilehash: 24bf87aa52581f61798cea3d171709369dfc9fb2
+ms.sourcegitcommit: c12260f372ad2cc48d3146be570d2088c9ef1d86
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "3434546"
+ms.lasthandoff: 06/20/2020
+ms.locfileid: "3491902"
 ---
 # <a name="available-liquid-objects"></a>使用可能な Liquid オブジェクト
 

@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: f76065b6205343742e67a03740745e35b8564c35
-ms.sourcegitcommit: 6c73e316f866af6a34619f95a5ac64ad1664b48a
+ms.openlocfilehash: 77aae6792cdb5bff83c1b8fe6381dd6c4a8826c7
+ms.sourcegitcommit: b5ab419dad4e9d64a5e6610641363b0d7487930a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "3326449"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "3465617"
 ---
 # <a name="pass-parameters-to-a-url-by-using-the-ribbon"></a>リボンの使用による URL へのパラメーターの受け渡し
 
@@ -34,6 +34,7 @@ ms.locfileid: "3326449"
 -   `<JavaScriptFunction>` 要素と `<CrmParameter>` 要素を一緒に使用します。  
   
 ## <a name="use-the-passparams-attribute-to-set-dynamic-values"></a>PassParams 属性を使用して動的な値を設定する  
+
  ターゲットのアプリケーションは、**PassParams** 属性を使用してターゲット URL に渡されたパラメーターから、レコードまたはユーザーのコンテキストについての情報を受け取ります。 **PassParams** 属性を使用してリボン コントロールを構成している場合、すべてのパラメーターが渡されます。 渡されるパラメーターを次の表に示します。  
   
 |パラメーター|名前|説明|  

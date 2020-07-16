@@ -13,12 +13,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: bfc3415d95e8861cdd2ba4c4835e453c0ddc2720
-ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
+ms.openlocfilehash: 94b7e7db381c04a7271d997d448835445ceed8f6
+ms.sourcegitcommit: a94b56525667015d4439a082873c2262a61b25a9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "3156191"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "3455976"
 ---
 # <a name="developers-get-started-with-common-data-service"></a>開発者向け: Common Data Service を使う
 
@@ -63,7 +63,7 @@ Common Data Service のデータ管理機能を使用すると、 Common Data Se
 
  - [ソリューションの概要](introduction-solutions.md)
  - [SolutionPackager ツール](compress-extract-solution-file-solutionpackager.md)
- - [Package Deployer ツール](./package-deployer/create-packages-package-deployer.md)
+ - [Package Deployer ツール](/power-platform/alm/package-deployer-tool)
  - [AppSourceでアプリを公開する](publish-app-appsource.md)
 
 ## <a name="create-client-applications-and-authentication"></a>クライアント アプリケーションと認証を作成します

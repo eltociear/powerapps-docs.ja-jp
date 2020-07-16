@@ -1,20 +1,19 @@
 ---
 title: ポータルで CSS の編集 | Microsoft Docs
 description: ポータルで CSS 編集の手順。
-author: tapanm-msft
-manager: kvivek
+author: neerajnandwana-msft
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 04/07/2020
-ms.author: tapanm
-ms.reviewer: ''
-ms.openlocfilehash: 9c6689932e6098bf036d1cfb8cfd158d0a0cfd10
-ms.sourcegitcommit: 6aa28b13d942c4a907642962348f0c0443623fd1
+ms.author: nenandw
+ms.reviewer: tapanm
+ms.openlocfilehash: 6c1554c75fcffcea4a570e6a3418e7f2d0808c17
+ms.sourcegitcommit: 2fd873a1ea17f419f6194714efffa47a9bd00c2e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "3285259"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "3507542"
 ---
 # <a name="edit-css-for-themes-in-power-apps-portal"></a>Power Apps ポータルで、テーマの CSS を編集する
 

@@ -2,7 +2,7 @@
 title: Web API を使用してエンティティ レコードを取得する (Common Data Service) | Microsoft Docs
 description: 一意の識別子を含むリソースとして指定されたエンティティのデータを取得するために Common Data Service Web API を使用して GET 要求を作成する方法について
 ms.custom: ''
-ms.date: 10/31/2018
+ms.date: 06/27/2020
 ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,18 +14,18 @@ caps.latest.revision: 21
 author: JimDaly
 ms.author: jdaly
 ms.reviewer: pehecke
-manager: annbe
+manager: ryjones
 search.audienceType:
 - developer
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: f3160cbc7d34b9f140daac75c9e60d9113bb0273
-ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
+ms.openlocfilehash: a1e56598830ea36f1fcc858104aac3994d19f258
+ms.sourcegitcommit: c31f1d0385945d6265290c3eb6e49646ffbe4e18
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "3155039"
+ms.lasthandoff: 06/29/2020
+ms.locfileid: "3517375"
 ---
 # <a name="retrieve-an-entity-record-using-the-web-api"></a>Web API を使用してエンティティ レコードを取得する
 
@@ -81,7 +81,7 @@ OData-Version: 4.0
 "revenue": 10000,  
 "accountid": "00000000-0000-0000-0000-000000000001",  
 "_transactioncurrencyid_value":"b2a6b689-9a39-e611-80d2-00155db44581"  
-}  
+}
 
 ```
 
@@ -95,18 +95,18 @@ OData-Version: 4.0
 
 ## <a name="retrieve-using-an-alternate-key"></a>代替キーの使用の取得
 
-エンティティで代替キーを定義している場合、さらに、代替キーを使用して、エンティティの一意の識別子ではないエンティティを取得することができます。 たとえば、`Contact` エンティティに、firstname と emailaddress1 のプロパティの両方を含む代替キーの定義がある場合、ここで示されているように、それらのキーに対して用意されているデータを含むクエリを使用して取引先担当者を取得できます。
+エンティティで代替キーを定義している場合、さらに、代替キーを使用して、エンティティの一意の識別子ではないエンティティを取得することができます。 たとえば、`Contact` エンティティに `firstname` と `emailaddress1` のプロパティの両方を含む代替キーの定義がある場合、ここで示されているように、それらのキーに対して用意されているデータを含むクエリを使用して取引先担当者を取得できます。
 
 ```http
 GET [Organization URI]/api/data/v9.0/contacts(firstname='Joe',emailaddress1='abc@example.com')
 ```
-代替キー定義が検索型フィールド (たとえば、取引先企業エンティティの primarycontactid プロパティ) に含まれる場合、次のように、[検索プロパティ](/powerapps/developer/common-data-service/webapi/web-api-types-operations#lookup-properties)を使用して取引先企業を取得できます。
+代替キー定義がルックアップ タイプ フィールド (たとえば、`account` エンティティの `primarycontactid` プロパティ) に含まれる場合、ここに示すように、[検索プロパティ](/powerapps/developer/common-data-service/webapi/web-api-types-operations#lookup-properties) を使用して `account` を取得できます。
 
 ```http
-GET [Organization URI]/api/data/v9.0/accounts(_primarycontactid_value=00000000-0000-0000-0000-000000000001) 
+GET [Organization URI]/api/data/v9.0/accounts(_primarycontactid_value=00000000-0000-0000-0000-000000000001)
 ```
 
-取得、更新、または削除するエンティティを一意に識別する必要のある場合には必ず、エンティティに対して構成された代替キーを使用できます。 既定では、エンティティに構成された代替キーがありません。 代替キーは、組織がそれらを追加する場合にのみ使用できます。
+取得、更新、または削除するエンティティを一意に識別する必要のある場合には必ず、エンティティに対して構成された代替キーを使用できます。 既定では、エンティティに構成された代替キーがありません。 代替キーは、組織またはソリューションがそれらを追加する場合にのみ使用できます。
 
 <a name="bkmk_retrieveSingleValue"></a>
 
@@ -114,16 +114,18 @@ GET [Organization URI]/api/data/v9.0/accounts(_primarycontactid_value=00000000-0
 
 エンティティの単一のプロパティ値を取得する必要がある場合、そのプロパティの値のみを返すために、エンティティの URI にプロパティの名前を付けることができます。 これは、応答で返されるものよりデータの必要が少ないために、パフォーマンスのベスト プラクティスです。
 
-この例では、取引先企業エンティティの名前プロパティの値のみ返します。
+この例では、`account` エンティティの `name` プロパティの値のみ返します。
 
 **要求**
+
 ```http
 GET [Organization URI]/api/data/v9.0/accounts(00000000-0000-0000-0000-000000000001)/name HTTP/1.1
 Accept: application/json
 OData-MaxVersion: 4.0
 OData-Version: 4.0
 ```
-**応答**
+**回答**
+
  ```http
 HTTP/1.1 200 OK
 Content-Type: application/json; odata.metadata=minimal
@@ -141,16 +143,18 @@ OData-Version: 4.0
 
 個々のプロパティ値が取得できることと同様に、個々のエンティティを参照する URI にナビゲーション プロパティ名を追加することによって、ナビゲーション プロパティ (検索フィールド) の値にもアクセスできます。
 
-次の例では、`primarycontactid` 単一値ナビゲーション プロパティを使用して取引先企業の取引先責任者のフル ネームを返します。  
+次の例では、`primarycontactid` 単一値ナビゲーション プロパティを使用して `account` の主 `contact` の `fullname` を返します。  
 
 **要求**
+
  ```http
 GET [Organization URI]/api/data/v9.0/accounts(00000000-0000-0000-0000-000000000001)/primarycontactid?$select=fullname HTTP/1.1
 Accept: application/json
 OData-MaxVersion: 4.0
 OData-Version: 4.0
 ```
-**応答**
+**回答**
+
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json; odata.metadata=minimal
@@ -162,7 +166,6 @@ OData-Version: 4.0
 "fullname": "Rene Valdes (sample)",  
 "contactid": "ff390c24-9c72-e511-80d4-00155d2a68d1"  
 }
-
 ```
 
 コレクション値ナビゲーション プロパティでは、関連するエンティティに対する参照だけまたは関連エンティティの数のみを返すオプションがあります。
@@ -170,6 +173,7 @@ OData-Version: 4.0
 次の例では、`/$ref`を要求に追加することによって、ちょうど特定の取引先企業に関連したタスクへの参照を返します。
 
 **要求**
+
 ```http
 GET [Organization URI]/api/data/v9.0/accounts(00000000-0000-0000-0000-000000000001)/AccountTasks/$ref HTTP/1.1
 Accept: application/json
@@ -178,27 +182,26 @@ OData-Version: 4.0
 ```
 
 **応答**
+
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json; odata.metadata=minimal
 OData-Version: 4.0
   
-{  
-"@odata.context": "[Organization URI]/api/data/v9.0/$metadata#Collection($ref)",  
-"value": [  
-{  
-"@odata.id": "[Organization URI]/api/data/v9.0/tasks(6b5941dd-d175-e511-80d4-00155d2a68d1)"  
-},  
-{  
-"@odata.id": "[Organization URI]/api/data/v9.0/tasks(fcbb60ed-d175-e511-80d4-00155d2a68d1)"  
-}  
-]  
-}  
-  
+{
+    "@odata.context": "[Organization URI]/api/data/v9.0/$metadata#Collection($ref)",
+    "value":
+  [
+    { "@odata.id": "[Organization URI]/api/data/v9.0/tasks(6b5941dd-d175-e511-80d4-00155d2a68d1)" },
+    { "@odata.id": "[Organization URI]/api/data/v9.0/tasks(fcbb60ed-d175-e511-80d4-00155d2a68d1)" }
+  ]
+}
 ```
-次の例では、`/$count` が追加された Account_Tasks コレクション値ナビゲーション プロパティを使用して、特定の取引先企業と関連するタスクの数を返します。  
+
+次の例では、`/$count` が追加された `Account_Tasks` コレクション値ナビゲーション プロパティを使用して特定の取引先企業と関連するタスクの数を返します。  
 
  **要求**
+
 ```http
 GET [Organization URI]/api/data/v9.0/accounts(00000000-0000-0000-0000-000000000001)/Account_Tasks/$count HTTP/1.1  
 Accept: application/json  
@@ -206,10 +209,13 @@ OData-MaxVersion: 4.0
 OData-Version: 4.0  
   
 ```
+
 **応答**
+
 ```http
 ï»¿2
 ```
+
 > [!NOTE]
 > 戻る値には、これが UTF-8 ドキュメントであることを表す、UTF-8 バイトのオーダー マーク (BOM) 文字 (`ï»¿`) が含まれています。
 
@@ -230,65 +236,70 @@ OData-Version: 4.0
 - **単一値ナビゲーション プロパティの拡張によるエンティティ インスタンスに対する関連エンティティの取得**: <br />以下の例は、取引先企業エンティティの取引先担当者を取得する方法を示します。 関連する取引先担当者レコードの場合、取引先担当者 ID およびフルネームのみを取得します。
 
   **要求**
+
   ```http
-    GET [Organization URI]/api/data/v9.0/accounts(00000000-0000-0000-0000-000000000001)?$select=name&$expand=primarycontactid($select=contactid,fullname) HTTP/1.1  
-    Accept: application/json  
-    OData-MaxVersion: 4.0  
-    OData-Version: 4.0  
+  GET [Organization URI]/api/data/v9.0/accounts(00000000-0000-0000-0000-000000000001)?$select=name&$expand=primarycontactid($select=contactid,fullname) HTTP/1.1  
+  Accept: application/json  
+  OData-MaxVersion: 4.0  
+  OData-Version: 4.0  
   ```
 
   **応答**
-  ```http
-    HTTP/1.1 200 OK  
-    Content-Type: application/json; odata.metadata=minimal  
-    OData-Version: 4.0  
 
-    {  
+  ```http
+  HTTP/1.1 200 OK  
+  Content-Type: application/json; odata.metadata=minimal  
+  OData-Version: 4.0  
+
+  {  
     "@odata.context":"[Organization URI]/api/data/v9.0/$metadata#accounts(name,primarycontactid,primarycontactid(contactid,fullname))/$entity",  
     "@odata.etag":"W/\"550616\"",  
     "name":"Adventure Works (sample)",  
     "accountid":"00000000-0000-0000-0000-000000000001",  
-    "primarycontactid":{  
+    "primarycontactid":
+    {  
     "@odata.etag":"W/\"550626\"",  
     "contactid":"c59648c3-68f7-e511-80d3-00155db53318",  
     "fullname":"Nancy Anderson (sample)"  
-    }  
-    }  
-  
+    }
+  }
   ```
+
   エンティティ インスタンスの関連エンティティを返す代わりに、`$ref` オプションを使用して単一値ナビゲーション プロパティを展開することにより、関連エンティティへの参照 (リンク) を返すこともできます。 次の例では、すべての取引先企業エンティティの取引先担当者レコードに対するリンクを返します。  
 
   **要求**
+
   ```http
-    GET [Organization URI]/api/data/v9.0/accounts(00000000-0000-0000-0000-000000000001)?$select=name&$expand=primarycontactid/$ref HTTP/1.1  
-    Accept: application/json  
-    OData-MaxVersion: 4.0  
-    OData-Version: 4.0  
+  GET [Organization URI]/api/data/v9.0/accounts(00000000-0000-0000-0000-000000000001)?$select=name&$expand=primarycontactid/$ref HTTP/1.1  
+  Accept: application/json  
+  OData-MaxVersion: 4.0  
+  OData-Version: 4.0  
   ```
 
   **応答**
+
   ```http
-    HTTP/1.1 200 OK  
-    Content-Type: application/json; odata.metadata=minimal  
-    OData-Version: 4.0  
+  HTTP/1.1 200 OK  
+  Content-Type: application/json; odata.metadata=minimal  
+  OData-Version: 4.0  
   
-    {  
+  {  
     "@odata.context":"[Organization URI]/api/data/v9.0/$metadata#accounts(name,primarycontactid)/$entity",  
     "@odata.etag":"W/\"550616\"",  
     "name":"Adventure Works (sample)",  
     "accountid":"00000000-0000-0000-0000-000000000001",  
     "_primarycontactid_value":"c59648c3-68f7-e511-80d3-00155db53318",  
-    "primarycontactid":{  
-    "@odata.id":"[Organization URI]/api/data/v9.0/contacts(c59648c3-68f7-e511-80d3-00155db53318)"  
-    }  
-    }
+    "primarycontactid": { "@odata.id":"[Organization URI]/api/data/v9.0/contacts(c59648c3-68f7-e511-80d3-00155db53318)" }
+  }
   ```
+
 - **コレクション値ナビゲーション プロパティの拡張によるエンティティ インスタンスに対する関連エンティティの取得**:<br /> 以下の例は、取引先企業レコードに割り当てたすべてのタスクを取得する方法を示します。
 
   **要求**
 
   ```http
-  GET [Organization URI]/api/data/v9.0/accounts(915e89f5-29fc-e511-80d2-00155db07c77)?$select=name&$expand=Account_Tasks($select=subject,scheduledstart)
+  GET [Organization URI]/api/data/v9.0/accounts(915e89f5-29fc-e511-80d2-00155db07c77)?$select=name
+  &$expand=Account_Tasks($select=subject,scheduledstart)
   Accept: application/json
   OData-MaxVersion: 4.0
   OData-Version: 4.0
@@ -302,21 +313,25 @@ OData-Version: 4.0
   OData-Version: 4.0
 
   {
-  "@odata.context":"[Organization URI]/api/data/v9.0/$metadata#accounts(name,Account_Tasks,Account_Tasks(subject,scheduledstart))/$entity",  
-    "@odata.etag":"W/\"514069\"","name":"Sample Child Account 1","accountid":"915e89f5-29fc-e511-80d2-00155db07c77",  
-    "Account_Tasks":[  
-    {  
-    "@odata.etag":"W/\"514085\"",  
-    "subject":"Sample Task 1",  
-    "scheduledstart":"2016-04-11T15:00:00Z",  
-    "activityid":"a983a612-3ffc-e511-80d2-00155db07c77"  
-    },{  
-    "@odata.etag":"W/\"514082\"",  
-    "subject":"Sample Task 2",  
-    "scheduledstart":"2016-04-13T15:00:00Z",  
-    "activityid":"7bcc572f-3ffc-e511-80d2-00155db07c77"  
-   }  
-  ]  
+    "@odata.context": "[Organization URI]/api/data/v9.0/$metadata#accounts(name,Account_Tasks,Account_Tasks(subject,scheduledstart))/$entity",
+    "@odata.etag": "W/\"514069\"",
+    "name": "Sample Child Account 1",
+    "accountid": "915e89f5-29fc-e511-80d2-00155db07c77",
+    "Account_Tasks":
+     [
+      {
+        "@odata.etag": "W/\"514085\"",
+        "subject": "Sample Task 1",
+        "scheduledstart": "2016-04-11T15:00:00Z",
+        "activityid": "a983a612-3ffc-e511-80d2-00155db07c77"
+      },
+      {
+        "@odata.etag": "W/\"514082\"",
+        "subject": "Sample Task 2",
+        "scheduledstart": "2016-04-13T15:00:00Z",
+        "activityid": "7bcc572f-3ffc-e511-80d2-00155db07c77"
+      }
+     ]
   }
   ```
   
@@ -328,40 +343,47 @@ OData-Version: 4.0
   **要求**
 
   ```http 
-    GET [Organization URI]/api/data/v9.0/accounts(99390c24-9c72-e511-80d4-00155d2a68d1)?$select=accountid&$expand=parentaccountid($select%20=%20createdon,%20name),Account_Tasks($select%20=%20subject,%20scheduledstart) HTTP/1.1  
-    Accept: application/json  
-    Content-Type: application/json; charset=utf-8  
-    OData-MaxVersion: 4.0  
-    OData-Version: 4.0
+  GET [Organization URI]/api/data/v9.0/accounts(99390c24-9c72-e511-80d4-00155d2a68d1)?$select=accountid
+  &$expand=parentaccountid($select%20=%20createdon,%20name),Account_Tasks($select%20=%20subject,%20scheduledstart) HTTP/1.1  
+  Accept: application/json
+  OData-MaxVersion: 4.0
+  OData-Version: 4.0
   ```
 
   **応答**
 
   ```http
-    HTTP/1.1 200 OK  
-    Content-Type: application/json; odata.metadata=minimal  
-    OData-Version: 4.0  
+  HTTP/1.1 200 OK  
+  Content-Type: application/json; odata.metadata=minimal  
+  OData-Version: 4.0  
 
-    {  
-    "@odata.context":"[Organization URI]/api/data/v9.0/$metadata#accounts(accountid,parentaccountid,Account_Tasks,parentaccountid(createdon,name),Account_Tasks(subject,scheduledstart))/$entity","@odata.etag":"W/\"514069\"","accountid":"915e89f5-29fc-e511-80d2-00155db07c77",  
-    "parentaccountid":{  
-    "@odata.etag":"W/\"514074\"","createdon":"2016-04-06T00:29:04Z",  
-    "name":"Adventure Works (sample)",  
-    "accountid":"3adbf27c-8efb-e511-80d2-00155db07c77"  
-    },"Account_Tasks":[  
-    {  
-    "@odata.etag":"W/\"514085\"",  
-    "subject":"Sample Task 1",  
-    "scheduledstart":"2016-04-11T15:00:00Z",  
-    "activityid":"a983a612-3ffc-e511-80d2-00155db07c77"  
-    },{  
-    "@odata.etag":"W/\"514082\"",  
-    "subject":"Sample Task 2",  
-    "scheduledstart":"2016-04-13T15:00:00Z",  
-    "activityid":"7bcc572f-3ffc-e511-80d2-00155db07c77"  
-    }  
-    ]  
-    }
+  {
+   "@odata.context": "[Organization URI]/api/data/v9.0/$metadata#accounts(accountid,parentaccountid,Account_Tasks,parentaccountid(createdon,name),Account_Tasks(subject,scheduledstart))/$entity",
+   "@odata.etag": "W/\"514069\"",
+   "accountid": "915e89f5-29fc-e511-80d2-00155db07c77",
+   "parentaccountid": 
+      {
+        "@odata.etag": "W/\"514074\"",
+        "createdon": "2016-04-06T00:29:04Z",
+        "name": "Adventure Works (sample)",
+        "accountid": "3adbf27c-8efb-e511-80d2-00155db07c77"
+      },
+    "Account_Tasks":
+      [
+        {
+          "@odata.etag": "W/\"514085\"",
+          "subject": "Sample Task 1",
+          "scheduledstart": "2016-04-11T15:00:00Z",
+          "activityid": "a983a612-3ffc-e511-80d2-00155db07c77"
+        },
+        {
+          "@odata.etag": "W/\"514082\"",
+          "subject": "Sample Task 2",
+          "scheduledstart": "2016-04-13T15:00:00Z",
+          "activityid": "7bcc572f-3ffc-e511-80d2-00155db07c77"
+        }
+      ]
+  }
   ```
 
 > [!NOTE]
@@ -371,34 +393,46 @@ OData-Version: 4.0
 
 ## <a name="options-to-apply-to-expanded-entities"></a>拡張されたエンティティに適用するためのオプション
 
- コレクション値ナビゲーション プロパティに対して返されるエンティティに特定のシステム クエリ オプションを適用することができます。 コレクション値ナビゲーション プロパティ名の後に、かっこで囲まれるシステム クエリ オプションのセミコロン区切りリストを使用します。 `$select`、`$filter`、`$orderby`、および `$top` を使用することができます。
+ コレクション値ナビゲーション プロパティに対して返されるエンティティに特定のシステム クエリ オプションを適用することができます。 コレクション値ナビゲーション プロパティ名の後に、かっこで囲まれるシステム クエリ オプションのセミコロン区切りリストを使用します。 `$select`、`$filter`、`$orderby`、`$top`、`$expand` を使用することができます。
 
- 次の例では、取引先企業に関連するタスク エンティティの結果を、"1" で終わる件名を含むものにフィルター処理します。
+ 次の例では、`account` に関連するタスク エンティティの結果を、"1" で終わる件名を含むものにフィルター処理します。
 
 ```http
-GET [Organization URI]/api/data/v9.0/accounts(00000000-0000-0000-0000-000000000001)?$expand=Account_Tasks($filter=endswith(subject,'1');$select=subject)  
+?$expand=Account_Tasks($filter=endswith(subject,'1');$select=subject)  
 ```
 
 次の例では、関連タスクが `createdon` プロパティに基づいて昇順で返される必要のあることを指定します。
 
 ```http
-GET [Organization URI]/api/data/v9.0/accounts(00000000-0000-0000-0000-000000000001)?$expand=Account_Tasks($orderby=createdon asc;$select=subject,createdon)  
+?$expand=Account_Tasks($orderby=createdon asc;$select=subject,createdon)  
 ```
 
  次の例では、最初の関連するタスクのみ返します。
 
 ```http
-GET [Organization URI]/api/data/v9.0/accounts(00000000-0000-0000-0000-000000000001)?$expand=Account_Tasks($top=1;$select=subject)
+?$expand=Account_Tasks($top=1;$select=subject)
+```
+
+ 次の例では、入れ子になった `$expand` オプションを適用して、アカウントを最後に変更した `systemuser` に関する詳細と、ユーザーが属する `businessunit` の名前を返します。
+
+```http
+?$select=name&$expand=modifiedby($select=fullname;$expand=businessunitid($select=name))
 ```
 
 > [!NOTE]
-> これは、[OData バージョン 4.0 パート 1: プロトコル プラス Errata 02](https://docs.oasis-open.org/odata/odata/v4.0/errata02/os/complete/part1-protocol/odata-v4.0-errata02-os-part1-protocol-complete.html) の「11.2.4.2.1 展開オプション」セクションに記載のシステム クエリ オプションの一部です。 オプション `$skip`、`$count`、`$search`、`$expand`、および`$levels` は Web API ではサポートされていません。
+> - 入れ子になった `$expand` オプションは、単一値ナビゲーション プロパティにのみ適用できます。
+>
+> - 各リクエストには最大 10 個の `$expand` オプションを含めることができます。 入れ子になった `$expand` オプションの深さに制限はありませんが、合計 10 個の `$expand` オプションの制限はこれらにも適用されます。
+>
+> - これは、[OData バージョン 4.0 パート 1: プロトコル プラス Errata 02](https://docs.oasis-open.org/odata/odata/v4.0/errata02/os/complete/part1-protocol/odata-v4.0-errata02-os-part1-protocol-complete.html) の「11.2.4.2.1 展開オプション」セクションに記載のシステム クエリ オプションの一部です。 オプション `$skip`、`$count`、`$search`、`$levels` は Web API ではサポートされていません。
+
+入れ子になった $expand オプションの使用に関する詳細: [単一値ナビゲーション プロパティの複数レベルの展開](retrieve-related-entities-query.md#multi-level-expand-of-single-valued-navigation-properties)
 
 <a name="bkmk_DetectIfChanged"></a>
 
 ## <a name="detect-if-an-entity-has-changed-since-it-was-retrieved"></a>エンティティが取得されてから変更されているかどうかの検出
 
-パフォーマンスのベスト プラクティスとして、必要なデータのみを使用する必要があります。 以前にエンティティ レコードを取得した場合、以前に取得したレコードに関連する *ETag* を使用して、そのレコードを条件を付けて検索できます。  詳細については、「[条件付き検索](perform-conditional-operations-using-web-api.md#bkmk_DetectIfChanged)」を参照してください。  
+パフォーマンスのベスト プラクティスとして、必要なデータのみを使用する必要があります。 以前にエンティティ レコードを取得した場合、以前に取得したレコードに関連する *ETag* を使用して、そのレコードを条件を付けて検索できます。 詳細: [条件付き検索](perform-conditional-operations-using-web-api.md#bkmk_DetectIfChanged)。
 
 <a name="bkmk_formattedValues"></a>
 

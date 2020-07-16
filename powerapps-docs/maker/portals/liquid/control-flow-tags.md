@@ -1,20 +1,19 @@
 ---
 title: ポータルの制御フロー タグを使用する | MicrosoftDocs
 description: ポータルで利用可能な制御フロー タグについて説明します。
-author: tapanm-msft
-manager: kvivek
+author: gitanjalisingh33msft
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 10/07/2019
-ms.author: tapanm
-ms.reviewer: ''
-ms.openlocfilehash: 1cdc608253bef652445f0eb689435f0089629979
-ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
+ms.author: gisingh
+ms.reviewer: tapanm
+ms.openlocfilehash: 152024ed73b8d7972cd58242c15f9d91507f9607
+ms.sourcegitcommit: c12260f372ad2cc48d3146be570d2088c9ef1d86
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "2977274"
+ms.lasthandoff: 06/20/2020
+ms.locfileid: "3490277"
 ---
 # <a name="control-flow-tags"></a>制御フロー タグ
 

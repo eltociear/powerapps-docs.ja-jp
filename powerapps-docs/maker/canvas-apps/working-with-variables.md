@@ -7,18 +7,18 @@ ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: tapanm
-ms.date: 02/07/2020
+ms.date: 06/29/2020
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: d7fb0e386309f207809204d4f9f582aa3aedfe7e
-ms.sourcegitcommit: a1b54333338abbb0bc3ca0d7443a5a06b8945228
+ms.openlocfilehash: 83099bdd687d0e92bf7913d3993f41a41083c35d
+ms.sourcegitcommit: afe9c7b6ef3e82eb8f7e3ad5cc41b067e81546d0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "3308776"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "3518352"
 ---
 # <a name="understand-canvas-app-variables-in-power-apps"></a>Power Apps のキャンバス アプリ変数について
 
@@ -325,4 +325,4 @@ Power Apps には 3 種類の変数があります。
 12. F5 キーを押してもう一度プレビューを表示し、テキスト入力コントロールに数値を入力してボタンを選択します。 **保存**ボタンを選択します。 アプリを閉じて再読み込みし、**読み込み**ボタンを選択してコレクションを再読み込みします。
 
 > [!NOTE]
-> **SaveData** と **LoadData** 関数は Power Apps モバイルで使用できますが、Power Apps Studio または Power Apps のWeb プレーヤーでは使用できません。
+> **SaveData** 機能と **LoadData** 機能は Power Apps Mobile で機能するが、Power Apps Studio または Power Apps のためのウェブプレーヤーでは機能しません。

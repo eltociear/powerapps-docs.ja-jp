@@ -7,23 +7,25 @@ ms.service: powerapps
 ms.topic: overview
 ms.custom: canvas
 ms.reviewer: ''
-ms.date: 04/27/2020
+ms.date: 06/16/2020
 ms.author: tapanm
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 2a6ce3a3a353a2771696f38a6f0878c6daf9e0ed
-ms.sourcegitcommit: 9f83d4c09f09256493bc5d49c7b4a4fc02d9342a
+ms.openlocfilehash: bc8cdfba0e033cc2774d26f6a3162dcdc9bcf9b6
+ms.sourcegitcommit: 42d89101985f13a2a384f8f4617e7f5f7b23f0c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "3309788"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "3531716"
 ---
 # <a name="what-are-canvas-apps-in-power-apps"></a>Power Apps のキャンバス アプリとは?
 C# などの従来のプログラミング言語でコードを書くことなく、Microsoft Power Apps でキャンバスからビジネス アプリを設計して構築します。 PowerPoint のスライドを設計する場合と同じように、要素をキャンバスにドラッグ アンド ドロップして、アプリを設計します。 ロジックを指定し、データを処理するための Excel のような式を作成します。 [Microsoft とサード パーティのさまざまなソース](connections-list.md) からビジネス データを統合するアプリを構築します。 アプリを共有して、ユーザーがブラウザーやモバイル デバイスで実行できるようにします。また、アプリを埋め込んで、ユーザーが SharePoint、Power BI、Teams で実行できるようにします。
 
 カスタム設計が不要で、データが Common Data Service にある場合は、業務データおよびプロセスからモデル駆動型アプリを自動的に生成できます。 この種類のアプリではフォーム、ビュー、その他のコンポーネントをモデル化することができ、既定の UI は携帯電話、ラップトップ、その他のデバイスに合わせて自動的に調整されます。 この種類のアプリの詳細については、「[モデル駆動型アプリの構築の概要](../model-driven-apps/model-driven-app-overview.md)」を参照してください。
+
+Power Apps が初めてで、Power Apps を使用してアイデアを完全に機能するソリューションに変換する方法を学びたい場合は、[Power Apps プロジェクトの計画](/powerapps/guidance/planning/introduction) から始めてください。
 
 ## <a name="build-an-app"></a>アプリの構築
 作業を開始するには、次のようないずれかのソースからアプリを自動的に生成します。
@@ -47,6 +49,7 @@ Power Apps に[サインイン](https://make.powerapps.com?utm_source=padocs&utm
 独自のアプリ、さらには共有されているすべてのアプリを Windows、[Web ブラウザー](../../user/run-app-browser.md)、[iOS または Android](../../user/run-app-client.md) デバイスで実行します。
 
 ## <a name="learn-more"></a>詳細はこちら
+- アイデアをアプリに変換する準備はできましたか? ここから開始: [Power Apps プロジェクトの計画](/powerapps/guidance/planning/introduction)
 - 左側のナビゲーション ウィンドウで詳細手順、概念、リファレンスのトピックを探す。
 - アプリのパフォーマンスを最大化し、アプリ管理を維持しやすくするために、[コーディング標準](https://aka.ms/powerappscanvasguidelines) を確認します。
 - Power Apps の機能を活用するのに役立つ[ウェビナーとビデオ ギャラリー](https://powerusers.microsoft.com/t5/Webinars-and-Video-Gallery/bd-p/VideoGallery?featured=yes) を確認します。
@@ -57,6 +60,7 @@ Power Apps に[サインイン](https://make.powerapps.com?utm_source=padocs&utm
 * [サポート チケット](https://powerapps.microsoft.com/support/pro/) を作成して技術的なサポートを受けます。 お客様が所属組織の Power Apps 管理者である場合は、[Power Apps 管理者センター](https://admin.microsoft.com/Support/Support.aspx) でサポート チケットを開くこともできます。
 
 ## <a name="next-steps"></a>次の手順
-- [無料ライセンスにサインアップします。](../signup-for-powerapps.md)
-- [Power Apps にサインインします。](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)
-- [サンプル アプリを開きます。](open-and-run-a-sample-app.md)
+- [Power Apps のプロジェクトを計画する](/powerapps/guidance/planning/introduction)
+- [無料ライセンスにサインアップする](../signup-for-powerapps.md)
+- [Power Apps にサインインする](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)
+- [サンプル アプリを開く](open-and-run-a-sample-app.md)

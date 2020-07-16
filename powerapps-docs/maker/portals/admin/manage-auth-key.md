@@ -1,20 +1,19 @@
 ---
 title: ポータルを Common Data Service 環境に接続する | MicrosoftDocs
 description: ポータルを Common Data Service 環境に接続する方法と認証キーを更新する方法を学習します。
-author: tapanm-msft
-manager: kvivek
+author: neerajnandwana-msft
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 05/20/2020
-ms.author: tapanm
-ms.reviewer: ''
-ms.openlocfilehash: 5f63821d4f5cb7a5b2b8c1a1db0449ac61977ef7
-ms.sourcegitcommit: c90ed15cafdb804b602a1e4c12e6cf0e78fe645c
+ms.author: nenandw
+ms.reviewer: tapanm
+ms.openlocfilehash: 546fb189ba7f50be08b0ab40b8ad8e77f0848cf8
+ms.sourcegitcommit: 2fd873a1ea17f419f6194714efffa47a9bd00c2e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "3389850"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "3507767"
 ---
 # <a name="connect-to-a-common-data-service-environment-using-a-portal"></a>ポータルを使用して Common Data Service 環境に接続する
 

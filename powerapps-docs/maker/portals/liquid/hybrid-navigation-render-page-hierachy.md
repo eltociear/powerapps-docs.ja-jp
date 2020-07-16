@@ -1,20 +1,19 @@
 ---
 title: ハイブリッド ナビゲーションを使用してポータルのページ階層をレンダーする | MicrosoftDocs
 description: ハイブリッド ナビゲーションを使用してポータルのページ階層を描画する手順
-author: tapanm-msft
-manager: kvivek
+author: gitanjalisingh33msft
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 10/07/2019
-ms.author: tapanm
-ms.reviewer: ''
-ms.openlocfilehash: 2fa7927d13a7cb940bb1d2d9b1281110a196b48f
-ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
+ms.author: gisingh
+ms.reviewer: tapanm
+ms.openlocfilehash: 348dc8f7833e13487594f2823f321db826bf51b4
+ms.sourcegitcommit: c12260f372ad2cc48d3146be570d2088c9ef1d86
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "2978946"
+ms.lasthandoff: 06/20/2020
+ms.locfileid: "3492717"
 ---
 # <a name="render-up-to-three-levels-of-page-hierarchy-by-using-hybrid-navigation"></a>ハイブリッド ナビゲーションの使用により、ページ階層のレベルを 3 つまで描画
 

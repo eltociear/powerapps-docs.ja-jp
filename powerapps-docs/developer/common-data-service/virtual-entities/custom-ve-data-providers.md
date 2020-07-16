@@ -1,26 +1,26 @@
 ---
 title: カスタム仮想エンティティ データ プロバイダ (Common Data Service) | Microsoft Docs
 description: Common Data Service Data SDK の使用により、.NET Developers には、既存のデータ プロバイダーがサポートしていない外部データ ソースの種類を統合するために役立つ、カスタム仮想エンティティ データ プロバイダーを作成するオプションがあります。
-ms.date: 09/05/2019
+ms.date: 06/24/2020
 ms.service: powerapps
 ms.topic: article
 applies_to:
 - Dynamics 365 (online)
 ms.assetid: d329dade-16c5-46e9-8dec-4b8efb996d22
-author: mayadumesh
-ms.author: jdaly
-manager: annbe
+author: Sunil-Garg
+ms.author: pehecke
+manager: ryjones
 search.audienceType:
 - developer
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 22de24c208d3df119de4c9312087a4c37531ad48
-ms.sourcegitcommit: 5701e7a755fade6c3bac5c4a5774fcc74627e168
+ms.openlocfilehash: f4353925409999095530c7cc870582fc6566f58a
+ms.sourcegitcommit: 8c157ad4ab7c01d55728a301abd616fee9341f9c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "3115775"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "3503069"
 ---
 # <a name="custom-virtual-entity-data-providers"></a>カスタム仮想エンティティ データ プロバイダー
 

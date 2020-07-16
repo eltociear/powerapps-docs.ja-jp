@@ -7,18 +7,18 @@ ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: tapanm
-ms.date: 03/16/2020
+ms.date: 06/12/2020
 ms.author: chmoncay
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 353485baf6726314f6009c57838b3aa68d145fa0
-ms.sourcegitcommit: cf492063eca27fdf73459ff2f9134f2ca04ee766
+ms.openlocfilehash: e2f150db8bce532b5487dc7b7058fb2761aa7b0a
+ms.sourcegitcommit: e8e2b7251c301f44fb60af29a86107c099a543a8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "3308845"
+ms.lasthandoff: 06/12/2020
+ms.locfileid: "3447230"
 ---
 # <a name="microphone-control-in-power-apps"></a>Power Apps でのマイク コントロール
 
@@ -26,7 +26,7 @@ ms.locfileid: "3308845"
 
 ## <a name="description"></a>内容
 
-**マイク** コントロールを使用して、デバイスのマイクでオーディオをキャプチャします。  デバイスにはマイクが必要であり、ユーザーはアプリがマイクを使用することを許可する必要があります。  マイク コントロールは、Web ブラウザーでの実行時にサポートされます。  
+**マイク** コントロールを使用して、デバイスのマイクでオーディオをキャプチャします。 デバイスにはマイクが必要であり、ユーザーはアプリがマイクを使用することを許可する必要があります。 
 
 最近録音されたオーディオ クリップは、**オーディオ** プロパティを通して利用できます。 このプロパティを使用すると、録音されたオーディオは次のようになります:
 
@@ -42,6 +42,9 @@ ms.locfileid: "3308845"
 - *Web ブラウザー*用 *OGG* 形式。
 
 キャプチャされたメディアは、テキスト文字列 URI によって参照されます。 詳細については、[データ型ドキュメント](../functions/data-types.md#uris-for-images-and-other-media) をお読みください。
+
+> [!NOTE]
+> マイク コントロールは、クロミウム ベースの Microsoft Edge、Chrome、Firefox ブラウザ、および Android、iOS デバイスにてご利用頂けます。 他のすべてのブラウザやプラットフォームでは、アプリの一部の機能が動作しない旨の警告メッセージが表示されます。
 
 ## <a name="key-properties"></a>主要なプロパティ
 

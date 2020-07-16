@@ -7,18 +7,18 @@ ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: ''
-ms.date: 05/11/2020
+ms.date: 06/01/2020
 ms.author: tapanm
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 72e029b8d27f9aeeb72e395aa6331989b83b3d8f
-ms.sourcegitcommit: e1a6113bc54d23f94a2ec336076ca715df75f67f
+ms.openlocfilehash: c8e5ca63c3eb09909097001846deb334957e040f
+ms.sourcegitcommit: 4311eef027ee7580a655fa8fb1566e944d6e8212
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "3370015"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "3421978"
 ---
 # <a name="share-a-canvas-app-in-power-apps"></a>キャンバス アプリを Power Apps と共有する
 
@@ -228,13 +228,13 @@ Power Apps キャンバス アプリは、Azure Active Directory テナントの
 
 ### <a name="frequently-asked-questions"></a>よく寄せられる質問
 
-#### <a name="whats-the-difference-between-canvas-app-guest-access-and-power-apps-portals"></a>キャンバス アプリのゲスト アクセスと Power Apps ポータルの違いは何ですか?
+#### <a name="whats-the-difference-between-canvas-app-guest-access-and-power-apps-portals"></a>キャンバス アプリのゲスト アクセスと Power Apps ポータルの違いは何ですか ?
 
 キャンバス アプリを使用すると、C# などの従来のプログラミング言語でコードを記述することなく、ビジネス プロセスのデジタル化に合わせたアプリを構築できます。 キャンバス アプリのゲスト アクセスにより、共通のビジネスプ ロセスに参加しているさまざまな組織で構成される個人のチームが、 さまざまな Microsoft および第三者のソースと統合できる同じアプリリソースにアクセスできます。 詳細: [Power Apps のキャンバス アプリ コネクタの概要](/powerapps/maker/canvas-apps/connections-list)。
 
-[Power Apps ポータル](/powerapps/maker/portals/overview)  では、外部ユーザーが Common Data Service に格納されているデータを操作できるようにする、低コードで応答性の高い Web サイトを構築する機能 を提供します。 組織は、匿名または LinkedIn、Microsoft アカウントや他の商用ログイン プロバイダーなどの選択したログイン プロバイダーによる組織の外部ユーザーと共有できる Web サイトを作成することを可能にします。 
+[Power Apps ポータル](/powerapps/maker/portals/overview) では、外部ユーザーが Common Data Service に格納されているデータを操作できるようにする、低コードで応答性の高い Web サイトを構築する機能 を提供します。 組織は、匿名または LinkedIn、Microsoft アカウントや他の商用ログイン プロバイダーなどの選択したログイン プロバイダーによる組織の外部ユーザーと共有できる Web サイトを作成することを可能にします。 
 
-次の表は、Power Apps ポータルとキャンバス アプリ間のいくつかのコア機能の違いをまとめたものです。  
+次の表は、Power Apps ポータルとキャンバス アプリの間のいくつかのコア機能の違いをまとめたものです。  
 
 | | インターフェイス | 認証 | 可能なデータ ソース |
 |------|--------|----------|-------------------|
@@ -303,11 +303,11 @@ Intune は、ユーザーのホーム テナントのポリシーのみを適用
 
 #### <a name="what-connectors-support-guest-access"></a>ゲスト アクセスをサポートするのは、どのコネクタですか?
 
-ゲスト アクセスをサポートするあらゆるタイプの Azure AD 認証を実行しないすべてのコネクタです。 次の表は、Azure AD 認証を実行するすべてのコネクタと現在ゲスト アクセスをサポートしているコネクタを列挙します。 これらの多くは、一般提供に至るまで更新されます。
+あらゆるタイプの Azure AD 認証のを使用しないすべてのコネクタは、ゲスト アクセスをサポートします。 次の表は、Azure AD 認証を使用するすべてのコネクタと、現在どのコネクタがゲスト アクセスをサポートしているかを列挙しています。
 
 | **コネクタ**                                     | **ゲスト アクセスをサポート**                                              |
 |---------------------------------------------------|------------------------------------------------------------------------|
-| 10 から 8 へ Appointment Scheduling                      | No                                                                     |
+| 10to8 Appointment Scheduling                      | No                                                                     |
 | Adobe Creative Cloud                              | No                                                                     |
 | Adobe Sign                                        | No                                                                     |
 | Asana                                             | No                                                                     |
@@ -335,7 +335,7 @@ Intune は、ユーザーのホーム テナントのポリシーのみを適用
 | Capsule CRM                                       | No                                                                     |
 | Cloud PKI Management                              | No                                                                     |
 | Cognito Forms                                     | No                                                                     |
-| Common Data Service                               | No                                                                     |
+| Common Data Service                               | はい*                                                                     |
 | Common Data Service (レガシ)                      | No                                                                     |
 | D&B Optimizer                                     | No                                                                     |
 | Derdack SIGNL4                                    | No                                                                     |
@@ -404,3 +404,5 @@ Intune は、ユーザーのホーム テナントのポリシーのみを適用
 | Webex Teams                                       | No                                                                     |
 | Windows Defender Advanced Threat Protection (ATP) | No                                                                     |
 | Word Online (Business)                            | No                                                                     |
+
+\*Common Data Service コネクタを使用する場合、自分が Common Data Service を配置しているのと同じテナントからゲスト ユーザーがライセンス付与されていることを確認してください。

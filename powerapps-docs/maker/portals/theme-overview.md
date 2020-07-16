@@ -1,20 +1,19 @@
 ---
 title: Power Apps ポータルのテーマ概要 | Microsoft Docs
 description: Power Apps ポータルのテーマ概要。
-author: tapanm-msft
-manager: kvivek
+author: neerajnandwana-msft
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 04/28/2020
-ms.author: tapanm
+ms.author: nenandw
 ms.reviewer: tapanm
-ms.openlocfilehash: ae7543b2e2983f24303a9f67e881380670600b90
-ms.sourcegitcommit: b75b29d58adf1547c9fcd3ddd1f14f69fb7f572b
+ms.openlocfilehash: 3aba469224a5e980a8c402f632974a54a8b90141
+ms.sourcegitcommit: 2fd873a1ea17f419f6194714efffa47a9bd00c2e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/02/2020
-ms.locfileid: "3330342"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "3507678"
 ---
 # <a name="overview-of-themes-in-power-apps-portals"></a>Power Apps ポータルのテーマ概要
 

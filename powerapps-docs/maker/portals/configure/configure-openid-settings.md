@@ -1,20 +1,19 @@
 ---
 title: ポータル用 OpenID 接続プロバイダー設定の構成 | MicrosoftDocs
 description: ポータルの OpenID 接続プロバイダー設定を追加およびコンフィギュレーションする指示をします。
-author: tapanm-msft
-manager: kvivek
+author: sandhangitmsft
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 10/18/2019
-ms.author: tapanm
-ms.reviewer: ''
-ms.openlocfilehash: b36150e7193975305fb8a478852070628268d4ee
-ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
+ms.author: sandhan
+ms.reviewer: tapanm
+ms.openlocfilehash: fea85107fba2a57d77332c964ff72dc170e96e58
+ms.sourcegitcommit: c12260f372ad2cc48d3146be570d2088c9ef1d86
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "2979210"
+ms.lasthandoff: 06/20/2020
+ms.locfileid: "3494562"
 ---
 # <a name="configure-open-id-connect-provider-settings-for-portals"></a>ポータルの Open ID 接続プロバイダー設定を構成します
 

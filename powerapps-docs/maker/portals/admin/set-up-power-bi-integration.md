@@ -1,20 +1,19 @@
 ---
 title: ポータルとの Power BI の統合の設定 | MicrosoftDocs
 description: ポータルとの Power BI の統合の設定方法を説明します。
-author: tapanm-msft
-manager: kvivek
+author: neerajnandwana-msft
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 05/13/2020
-ms.author: tapanm
-ms.reviewer: ''
-ms.openlocfilehash: 0f6af69a6ebdb4e59f36748f94a3841bea4f6496
-ms.sourcegitcommit: ef921bbf0908283a3621c2ca1069e6b58a2b14e7
+ms.author: nenandw
+ms.reviewer: tapanm
+ms.openlocfilehash: 8d70be0fe9da6be4974ddd42b76ca943bffb9568
+ms.sourcegitcommit: 2fd873a1ea17f419f6194714efffa47a9bd00c2e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "3373506"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "3508037"
 ---
 # <a name="set-up-power-bi-integration"></a>Power BI 統合の設定
 

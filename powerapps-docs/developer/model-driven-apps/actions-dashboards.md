@@ -15,12 +15,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: fdb1fc5ceb8ec5ead1b5e43bc79e500de0f6a39a
-ms.sourcegitcommit: 4a88daac42180283314f6bedee3d6810fd5a6c25
+ms.openlocfilehash: b255705b5d803cf8cf2036295adb1a7e6fd913be
+ms.sourcegitcommit: afe9c7b6ef3e82eb8f7e3ad5cc41b067e81546d0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "3276135"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "3518267"
 ---
 # <a name="actions-on-dashboards"></a>ダッシュボードに対するアクション
 
@@ -29,6 +29,7 @@ ms.locfileid: "3276135"
 組織所有のダッシュボードおよびユーザー所有のダッシュボードに対して、作成、取得、更新、削除などのアクションを実行できます。  
   
 ## <a name="actions-on-an-organization-owned-dashboard"></a>組織所有のダッシュボードに対するアクション  
+
  組織所有のダッシュボード (`SystemForm`) に対して以下のアクションを実行するには、Common Data Service の自分のアカウントにシステム管理者ロールまたはシステム カスタマイザー ロールが割り当てられている必要があります。  
   
 - 作成、取得、更新、および削除。 Common Data Service Web サービスを使用するか、エンティティ フォームをカスタマイズすることにより、組織所有のダッシュボードを作成または更新できます。 システム ダッシュボードの作成の詳細については、「[システム ダッシュボードの作成](create-dashboard.md)」を参照してください。  
@@ -38,11 +39,12 @@ ms.locfileid: "3276135"
   > [!IMPORTANT]
   >  Common Data Service Web サービスで利用可能なメソッドを使用して、2 つのダッシュボードを既定として設定できます。 この設定をプログラムで更新する前に、他のダッシュボードが組織の既定のダッシュボードになっていないことを確認してください。  
   
-  組織所有のダッシュボードを更新した後は、メタデータの変更を公開して、組織全体で参照できるようにする必要があります。 組織所有のダッシュボードへの変更を公開するには、<xref:Microsoft.Crm.Sdk.Messages.PublishAllXmlRequest> メッセージまたは <xref:Microsoft.Crm.Sdk.Messages.PublishXmlRequest> メッセージを使用します。 その方法を示すサンプル コードについては [サンプル: ダッシュボードの作成、取得、更新および削除 (CRUD)](/dynamics365/customer-engagement/developer/customize-dev/sample-create-retrieve-update-delete-dashboard) を参照してください<!-- TODO Need to update the powerapps repo's topic link. As of now not found-->   
+  組織所有のダッシュボードを更新した後は、メタデータの変更を公開して、組織全体で参照できるようにする必要があります。 組織所有のダッシュボードへの変更を公開するには、<xref:Microsoft.Crm.Sdk.Messages.PublishAllXmlRequest> メッセージまたは <xref:Microsoft.Crm.Sdk.Messages.PublishXmlRequest> メッセージを使用します。 その方法を示すサンプル コードについては、「[サンプル: ダッシュボードを作成、取得、更新、および削除 (CRUD) する方法](https://github.com/microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/CRUDOperationsDashboard)」を参照してください。  
   
   組織所有のダッシュボード エンティティでサポートされるメッセージの一覧については、「[SystemForm エンティティ](../common-data-service/reference/entities/systemform.md)」を参照してください。  
   
 ## <a name="actions-on-a-user-owned-dashboard"></a>ユーザー所有のダッシュボードに対するアクション  
+
  ユーザー所有のダッシュボード (`UserForm`) に対しては、以下のアクションを実行できます。  
   
 - 作成、取得、更新、および削除。 ユーザー所有のダッシュボードの作成の詳細については、「[ダッシュボードの作成](create-dashboard.md)」を参照してください。  
@@ -58,9 +60,8 @@ ms.locfileid: "3276135"
 ### <a name="see-also"></a>関連項目  
 
  [Microsoft Dynamics 365 用ダッシュボード](analyze-data-with-dashboards.md)   
- [ダッシュボード用FormXMLを使用](understand-dashboards-dashboard-components-formxml.md)   
+ [ダッシュボード用 FormXML を使用](understand-dashboards-dashboard-components-formxml.md)   
  [ダッシュボードの作成](create-dashboard.md)   
- [サンプル ダッシュボード](sample-dashboards.md)   
- [ダッシュボード エンティティ](/dynamics365/customer-engagement/developer/customize-dev/dashboard-entities) <!-- TODO Need to update the powerapps repo's topic link. As of now not found-->  
- [サンプル: ダッシュボードの作成、取得、更新および削除 (CRUD)](/dynamics365/customer-engagement/developer/customize-dev/sample-create-retrieve-update-delete-dashboard) <!-- TODO Need to update the powerapps repo's topic link. As of now not found-->   
- [サンプル: ユーザー所有のダッシュボードの別のユーザーへの割り当て](/dynamics365/customer-engagement/developer/customize-dev/sample-assign-user-owned-dashboard-another-user) <!-- TODO Need to update the powerapps repo's topic link. As of now not found-->
+ [サンプル ダッシュボード](sample-dashboards.md)     
+ [サンプル: ダッシュボードの作成、取得、更新および削除 (CRUD)](https://github.com/microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/CRUDOperationsDashboard)  
+ [サンプル: ユーザー所有のダッシュボードの別のユーザーへの割り当て](https://github.com/microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/AssignUserOwnedDashboardToAnother)

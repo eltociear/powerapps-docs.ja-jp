@@ -1,32 +1,35 @@
 ---
-title: 'バーコード スキャナー コントロール: リファレンス | Microsoft Docs'
-description: プロパティとサンプルを含む、バーコード スキャナー コントロールに関する情報
+title: バーコード スキャナー コントロールのリファレンス | Microsoft Docs
+description: バーコード スキャナー コントロールに関するプロパティと例を含む情報
 author: chmoncay
 manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.date: 11/25/2018
+ms.date: 06/12/2020
 ms.author: chmoncay
 ms.reviewer: tapanm
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: d2499a597295147cea1b39bb18fee2cbb056b413
-ms.sourcegitcommit: ebb4bb7ea7184e31dc95f0c301ebef75fae5fb14
+ms.openlocfilehash: 2dd9d7e021f0aca3cee98d84a421a412df47e7da
+ms.sourcegitcommit: e8e2b7251c301f44fb60af29a86107c099a543a8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "3309006"
+ms.lasthandoff: 06/12/2020
+ms.locfileid: "3447186"
 ---
-# <a name="barcode-scanner-control-for-canvas-apps"></a>キャンバス アプリのバーコード スキャナー コントロール
+# <a name="barcode-scanner-control-for-canvas-apps"></a>キャンバス アプリ向けバーコード スキャナー制御
 
-Android または iOS デバイスでバーコード、QR コード、およびデータ マトリックス コードをスキャンします。 Web ブラウザーではサポートされていません。
+Android または iOS デバイスでバーコード、QR コード、およびデータ マトリックス コードをスキャンします。
 
 ## <a name="description"></a>内容
 
 コントロールは、Android または iOS デバイスでネイティブのスキャナーを開きます。 スキャナーは、ビューにあるバーコード、QR コード、データ マトリックス コードを自動的に検出します。 このコントロールでは、Web ブラウザーでのスキャンをサポートしていません。
+
+> [!NOTE]
+> バーコード スキャナーコントロールは、Android および iOS デバイスにのみ対応しています。 その他のすべてのプラットフォームでは、アプリの一部の機能が動作しない旨の警告メッセージが表示されます。
 
 ## <a name="key-properties"></a>主要なプロパティ
 
@@ -36,7 +39,7 @@ Android または iOS デバイスでバーコード、QR コード、および�
 
 **OnScan** – バーコードが正常にスキャンされたときのアプリの応答方法。
 
-**OnCancel** – ユーザーがバーコードのスキャンをキャンセルするときのアプリの応答方法。
+**OnCancel** – ユーザーがバーコードスキャンをキャンセルしたときのアプリの応答。
 
 **BarcodeType** - スキャンするバーコード タイプ。 複数のバーコード タイプを連結することにより、それらを対象にできます。 例: BarcodeType.Code128 & BarcodeType.Code39  **既定: 自動**
 
@@ -70,11 +73,11 @@ Android または iOS デバイスでバーコード、QR コード、および�
 
 **[Y](properties-size-location.md)** – コントロールの上端とその親コンテナー (親コンテナーがない場合は画面) の上端間の距離。
 
-## <a name="accessibility-guidelines"></a>アクセシビリティ ガイドライン
+## <a name="accessibility-guidelines"></a>アクセシビリティのガイドライン
 **[ボタン](control-button.md)** コントロール用の同じガイドラインが**バーコード スキャナー** コントロールに適用されます。それはスキャンを起動するボタンであるためです。
 
 ### <a name="visual-alternatives"></a>視覚化の代替手段
-* バーコード スキャナーは、スキャン結果を表示しないボタンです。 **[ラベル](control-text-box.md)** コントロールでスキャン結果を表示することを検討してください。 ラベルの **[テキスト](properties-core.md)** プロパティをバーコード スキャナーの**値**プロパティに設定します。 ラベルの **[ライブ](properties-accessibility.md)** プロパティを**ポライト**に設定して、スクリーン リーダー ユーザーに変更が通知されるようにします。 この変更により、スキャンした値は、視覚的な機能に関係なく、すべてのユーザーがアクセスできるようになります。
+* バーコード スキャナーは、スキャン結果を表示しないボタンです。 **[ラベル](control-text-box.md)** コントロールでスキャン結果を表示することを検討してください。 ラベルの **[テキスト](properties-core.md)** プロパティをバーコード スキャナーの**値**プロパティに設定します。 ラベルの **[ライブ](properties-accessibility.md)** プロパティを**ポライト**に設定して、スクリーン リーダー ユーザーに変更が通知されるようにします。 この変更により、視覚的能力を問わず、スキャンされた値に誰でもアクセスできるようになります。
 
 * 視覚や動作に障碍のあるユーザーは、バーコードにカメラをポイントしたくない場合があります。 ユーザーがバーコードを入力するため、**[テキスト入力](control-text-input.md)** コントロールなどの別の形式の入力を追加することを検討してください。
 
@@ -99,4 +102,4 @@ Android または iOS デバイスでバーコード、QR コード、および�
 |MSI|✖|✖|
 |AZTEC|✔|✔|
 
-**注意:** PDF_417 および AZTEC は自動モードではサポートされていません
+**注意 :** PDF_417 と AZTEC は自動モードには対応していません

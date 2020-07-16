@@ -7,18 +7,18 @@ ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: tapanm
-ms.date: 04/03/2018
+ms.date: 07/01/2020
 ms.author: fikaradz
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 9f80332a490289cc5b59de7131d1c2b2483633e1
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: ebd0b37d2e18ef9e62580862ae0b8bc5dbdd6916
+ms.sourcegitcommit: 42d89101985f13a2a384f8f4617e7f5f7b23f0c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "3306637"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "3531865"
 ---
 # <a name="create-accessible-canvas-apps-in-power-apps"></a>Power Apps でアクセシビリティ対応キャンバス アプリを作成する
 アクセシビリティ対応のキャンバス アプリでは、視覚や聴覚などに障碍のあるユーザーが、アプリを正しく使えるように配慮されています。  これは、多くの政府機関や組織にとっての要件というだけではありません。以下のガイドラインに従うことで、能力に関係なくあらゆるユーザーの使いやすさが向上します。
@@ -26,7 +26,7 @@ ms.locfileid: "3306637"
 **[アクセシビリティ チェッカー](accessibility-checker.md)** を使用して、アプリの潜在的なアクセシビリティの問題を確認します。 
 
 ## <a name="layout-and-color"></a>レイアウトと色
-常識的でシンプルなデザインを採用することで、アプリはすべてのユーザーにとってアクセスしやすいものとなります。  アプリを大幅にカスタマイズする場合は、以下の推奨事項に留意してください。  Power Apps のテーマは、既定でアクセシビリティ対応になっています。
+常識的でシンプルなデザインを採用することで、アプリはすべてのユーザーにとってアクセスしやすいものとなります。  アプリを大幅にカスタマイズする場合は、以下の推奨事項に留意してください。 Power Apps のテーマは、アクセシビリティの規格を満たすように設計されています。
 - すべての要素が明確に表示され、テキストが十分なサイズであることを確認します。  すべてのコンテンツを、肉眼で簡単に読んで理解できるようにする必要があります。
 - 要素を表示するための項目の可視性プロパティは、使用しないでください。  何かを条件付きで表示する必要がある場合は、新しい画面にコンテンツを作成して、そこにユーザーを移動させ、再び戻らせます。
 - 入力要素が画面上でラベル付けされていることを確認します。 スクリーン リーダーが読み上げる内容は、**[AccessibilityLabel](controls/properties-accessibility.md)** プロパティによって定義されます。

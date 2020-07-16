@@ -1,20 +1,19 @@
 ---
 title: ポータル用 WS-Federation プロバイダー設定の構成 | MicrosoftDocs
 description: ポータル用WS-Federationの構成を追加して構成するための手順ついての説明です。
-author: tapanm-msft
-manager: kvivek
+author: sandhangitmsft
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 10/18/2019
-ms.author: tapanm
-ms.reviewer: ''
-ms.openlocfilehash: f210a5c806ce3ac894e647fc882a4e3d8f4c0167
-ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
+ms.author: sandhan
+ms.reviewer: tapanm
+ms.openlocfilehash: 285b87fa6df450cbb9ac0dceb5414bca546c586b
+ms.sourcegitcommit: c12260f372ad2cc48d3146be570d2088c9ef1d86
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "2977670"
+ms.lasthandoff: 06/20/2020
+ms.locfileid: "3489955"
 ---
 # <a name="configure-ws-federation-provider-settings-for-portals"></a>ポータル用 WS-Federation プロバイダー設定を構成します
 

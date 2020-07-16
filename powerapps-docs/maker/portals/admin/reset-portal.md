@@ -1,26 +1,25 @@
 ---
 title: ポータルをリセットする | MicrosoftDocs
 description: ポータルのリセット方法について説明します。
-author: tapanm-msft
-manager: kvivek
+author: neerajnandwana-msft
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 02/11/2020
-ms.author: tapanm
-ms.reviewer: ''
-ms.openlocfilehash: b788d0b1a0935949e7114e220ad714fa6495c294
-ms.sourcegitcommit: 6cffa70358fd2e388d64a01f906c8c196fbbdefb
+ms.author: nenandw
+ms.reviewer: tapanm
+ms.openlocfilehash: 1860d9034219ea155e71b4385b068990c1c0a803
+ms.sourcegitcommit: 2fd873a1ea17f419f6194714efffa47a9bd00c2e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "3069456"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "3506994"
 ---
 # <a name="reset-a-portal"></a>ポータルのリセット
 
 ポータルのプロビジョニング後、組織を他のテナントまたは他のデータ センターに移動する、またはポータルを組織から削除するなど、特定の状況ではポータルからリソースを削除する必要が生じる場合があります。
 
-このために、ポータルをリセットすることができます。そうすると関連付けられたすべてのホストされたリソースが削除されます。 次に、ポータルを再びプロビジョニングすることができます。 リセット操作が完了すると、そのポータル URL にはアクセスできなくなります。
+このために、ポータルをリセットすることができます。そうすると関連付けられたすべてのホストされたリソースが削除されます。 その後、ポータルをもう一度プロビジョニングできます。 リセット操作が完了すると、ポータル URL にアクセスできなくなります。
 
 ポータルをリセットしても、ポータル構成またはインスタンス内に存在するソリューションは削除されず、そのまま残ることに注意してください。
 
