@@ -1,20 +1,19 @@
 ---
 title: ポータル用の Azure Storage を有効化 | MicrosoftDocs
 description: ポータル用 Azure Storage を有効にして、Azure より大きなファイル ストレージ機能を利用できるようにする手順
-author: tapanm-msft
-manager: kvivek
+author: gitanjalisingh33msft
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 05/27/2020
-ms.author: tapanm
+ms.author: gisingh
 ms.reviewer: tapanm
-ms.openlocfilehash: 827615bfe2fdc33eb991dbe866a016bee252336d
-ms.sourcegitcommit: 241075714595a3544833040a6a16bc3def87ffcc
+ms.openlocfilehash: b3ce1e89e57bbc1d13eb4723563beacc9b26befb
+ms.sourcegitcommit: c12260f372ad2cc48d3146be570d2088c9ef1d86
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "3407962"
+ms.lasthandoff: 06/20/2020
+ms.locfileid: "3492858"
 ---
 # <a name="enable-azure-storage"></a>Azure Storage の有効化
 

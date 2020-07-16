@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: c51852f54770acc7299f73478529d3f5ea303680
-ms.sourcegitcommit: 6c73e316f866af6a34619f95a5ac64ad1664b48a
+ms.openlocfilehash: e03bf15b925d45b64fcd6e392aa7f3ea519e779a
+ms.sourcegitcommit: b5ab419dad4e9d64a5e6610641363b0d7487930a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "3326437"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "3465453"
 ---
 # <a name="ribbons-available"></a>利用できるリボン
 
@@ -177,5 +177,6 @@ ms.locfileid: "3326437"
 `<PageRule>` を使用して、カスタム ページ上のカスタム リボン コンポーネントを有効化または表示することはできません。  
 
 ### <a name="see-also"></a>関連項目  
+
  [リボンのカスタマイズ](customize-commands-ribbon.md)   
  [バーまたはリボンの表示](command-bar-ribbon-presentation.md)

@@ -1,20 +1,19 @@
 ---
 title: フォームに Azure Storage Web リソースを追加 | MicrosoftDocs
 description: Azure Storage に添付ファイルをアップロードできるようフォームに Azure Storage Web リソースを追加する手順。
-author: tapanm-msft
-manager: kvivek
+author: gitanjalisingh33msft
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 05/27/2020
-ms.author: tapanm
+ms.author: gisingh
 ms.reviewer: tapanm
-ms.openlocfilehash: de8f61d48a713b707cb1e6e80fc0652e2491f2d7
-ms.sourcegitcommit: 241075714595a3544833040a6a16bc3def87ffcc
+ms.openlocfilehash: 0758244f614be79e738eb4fbd3ac9988f54080c0
+ms.sourcegitcommit: c12260f372ad2cc48d3146be570d2088c9ef1d86
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "3408227"
+ms.lasthandoff: 06/20/2020
+ms.locfileid: "3493437"
 ---
 # <a name="add-the-azure-storage-web-resource-to-a-form"></a>フォームに Azure Storage Web リソースを追加する
 

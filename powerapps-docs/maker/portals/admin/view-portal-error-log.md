@@ -1,20 +1,19 @@
 ---
 title: ポータル エラー ログの表示と Azure Blob Storage への保存 | MicrosoftDocs
 description: ポータル エラー ログの表示方法とそのエラー ログを Azure Blob Storage アカウントに保存する方法を説明します。
-author: tapanm-msft
-manager: kvivek
+author: neerajnandwana-msft
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 10/07/2019
-ms.author: tapanm
-ms.reviewer: ''
-ms.openlocfilehash: 4b7fe184dce7475bf2b7fc373fc98d875fffb515
-ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
+ms.author: nenandw
+ms.reviewer: tapanm
+ms.openlocfilehash: b4c06c4d74289a08d49379ac964b455f471bd761
+ms.sourcegitcommit: 2fd873a1ea17f419f6194714efffa47a9bd00c2e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "2979870"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "3507632"
 ---
 # <a name="view-portal-error-logs"></a>ポータル エラー ログの表示
 
@@ -70,7 +69,7 @@ YSOD を有効にするには、ポータルでの [カスタム エラーを無
 
 ポータルを構成して、一般的なエラーではなく、プロフェッショナルなデザインのカスタム エラーを表示することができます。
 
-カスタム エラーを定義するには、そのコンテンツ スニペット `Portal Generic Error` を使用します。 このスニペットに定義されたコンテンツがエラー ページに表示されます。 このコンテンツ スニペットはすぐには使用できません。作成する必要があります。 コンテンツ スニペットの**種類**には**テキスト**または **HTML** があります。 コンテンツ スニペットの作成または編集をするには、[コンテンツ スニペットを使用したコンテンツのカスタマイズ​​](../configure/customize-content-snippets.md) を参照してください。
+カスタム エラーを定義するには、そのコンテンツ スニペット `Portal Generic Error` を使用します。 このスニペットで定義されるコンテンツは、エラー ページに表示されます。 このコンテンツ スニペットはすぐには使用できません。作成する必要があります。 コンテンツ スニペットの**種類**には**テキスト**または **HTML** があります。 コンテンツ スニペットの作成または編集をするには、[コンテンツ スニペットを使用したコンテンツのカスタマイズ​​](../configure/customize-content-snippets.md) を参照してください。
 
 > [!NOTE]
 > コンテンツ スニペットに流動コードが記述されている場合、その流体コードは表示されません。
@@ -179,7 +178,7 @@ YSOD を有効にするには、ポータルでの [カスタム エラーを無
 
 ポータルの開発中によく発生するもう 1 つのシナリオは、Common Data Service 環境で記述されたカスタムのプラグインおよびビジネス ロジックによって生成されるエラーです。 通常、これらのエラーには、[カスタム エラーを無効にする](#disable-custom-error)または[診断ログを有効にする](#enable-diagnostic-logging)でアクセスできます。 ただし、問題を素早く診断するには、これらのエラーをポータルに直接表示することがより速い場合があります。 これを行うために、Common Data Service からカスタム プラグイン エラーをポータルのスクリーンに表示するように ポータルを設定できます。
 
-カスタム プラグイン エラーを表示するには、サイト設定 `Site/EnableCustomPluginError` を作成し、その値を True に設定します。 一般的なエラーではなく、カスタム プラグイン エラーが画面に表示されます。 このエラーは、完全なスタック トレースではなく、プラグイン エラーのメッセージ部分のみを表示します。
+カスタム プラグイン エラーを表示するには、サイト設定 `Site/EnableCustomPluginError` を作成し、その値を True に設定します。 これにより、画面に汎用エラーではなくカスタム プラグイン エラーが表示されます。 このエラーは、完全なスタック トレースではなく、プラグイン エラーのメッセージ部分のみを表示します。
 
 以下に、カスタム プラグイン エラーが表示される画面を示します。 
 - エンティティ リスト 

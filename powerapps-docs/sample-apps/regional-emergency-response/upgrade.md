@@ -1,22 +1,20 @@
 ---
 title: 地域政府機関の緊急応答およびモニタリング ソリューションをアップグレード | Microsoft Docs
 description: 地域の IT 管理者が地域政府機関の緊急対応およびモニタリング ソリューションを組織にアップグレードするための詳細な手順を示します。
-author: KumarVivek
+author: pankajarora-msft
 manager: annbe
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 06/05/2020
-ms.author: kvivek
+ms.author: pankar
 ms.reviewer: kvivek
-searchScope:
-- PowerApps
-ms.openlocfilehash: 20ee7b40a0256ccc8cba02321755b8a3830ae9ca
-ms.sourcegitcommit: 6f904789d817248eac0a4c9dd0c5fe37dfbb77ad
+ms.openlocfilehash: a18c82dc26525b8a9899147aedb17a910e4100d4
+ms.sourcegitcommit: b5ab419dad4e9d64a5e6610641363b0d7487930a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "3434395"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "3465641"
 ---
 # <a name="upgrade-the-regional-governmentemergency-response-and-monitoring-solution"></a>地域政府機関の緊急応答およびモニタリング ソリューションをアップグレードする
 

@@ -20,12 +20,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: db2dd730f172810a571d8d6289ce4ae8b25dcdbe
-ms.sourcegitcommit: c6906775005aec98973b1f5c3dbe5924aff6d26e
+ms.openlocfilehash: 665ebb1046d3b38c9851a1627ac218d0552176ae
+ms.sourcegitcommit: a94b56525667015d4439a082873c2262a61b25a9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "3341442"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "3455972"
 ---
 # <a name="introduction-to-solutions"></a>ソリューションの概要
 
@@ -152,7 +152,7 @@ Common Data Service は、インストールされた順に管理ソリューシ
 - パッケージが展開される前、展開中、またはその後に実行できるカスタム コード。
 - 展開プロセスの最初か最後に表示可能なパッケージに固有の HTML コンテンツ。 これは、パッケージに展開されるソリューションおよびファイルの説明を提供するのに便利です。
 
-詳細: [Common Data Service Package Deployerにパッケージを作成する](package-deployer/create-packages-package-deployer.md)。
+詳細: [Package Deployer のパッケージを作成する](/power-platform/alm/package-deployer-tool)。
 
 ## <a name="team-development-of-solutions"></a>ソリューションのチーム開発
 

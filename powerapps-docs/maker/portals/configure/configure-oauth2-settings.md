@@ -1,20 +1,19 @@
 ---
 title: ポータル用 OAuth2 プロバイダー設定の構成 | MicrosoftDocs
 description: ポータルの OAuth2 プロバイダー設定を追加およびコンフィギュレーションする指示をします。
-author: tapanm-msft
-manager: kvivek
+author: sandhangitmsft
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 01/17/2020
-ms.author: tapanm
-ms.reviewer: ''
-ms.openlocfilehash: 6065c842831aa9aa0c225d12470a4469fe51146d
-ms.sourcegitcommit: a1b54333338abbb0bc3ca0d7443a5a06b8945228
+ms.author: sandhan
+ms.reviewer: tapanm
+ms.openlocfilehash: c025c3d089fd30afafd2680b4c3f7edaaa2d9f76
+ms.sourcegitcommit: c12260f372ad2cc48d3146be570d2088c9ef1d86
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "3125094"
+ms.lasthandoff: 06/20/2020
+ms.locfileid: "3494697"
 ---
 # <a name="configure-oauth2-provider-settings-for-portals"></a>ポータル用 OAuth2 プロバイダー設定を構成します
 

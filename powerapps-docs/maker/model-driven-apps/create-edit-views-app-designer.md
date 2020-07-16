@@ -2,7 +2,7 @@
 title: Power Apps を使用して共有またはシステム モデル駆動型アプリ ビューを作成、編集する | MicrosoftDocs
 description: アプリ デザイナーを使用してビューを作成または編集する方法を学習する
 keywords: ''
-ms.date: 03/23/2020
+ms.date: 06/23/2020
 ms.service: powerapps
 ms.custom: ''
 ms.topic: article
@@ -24,12 +24,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 10aa1623cbc3ff90788257641afd71ac0e149375
-ms.sourcegitcommit: 9f2694bd14d70798310b89a4673672c1bfad989d
+ms.openlocfilehash: 8fd6a76640880a899c71c10d5fcfc22fe92cf0e4
+ms.sourcegitcommit: bd543dccaa38bd63ad576f408c8b669c7e653ca3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "3166843"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "3501073"
 ---
 # <a name="create-and-edit-public-or-system-model-driven-app-views"></a>共有またはシステム モデル駆動型アプリ ビューを作成および編集
 
@@ -50,9 +50,13 @@ Power Apps において、ビューは特定のエンティティのレコード
 
 ## <a name="create-a-public-view-in-power-apps"></a>Power Appsで共有ビューを作成する
 アプリの作成者は、Power Apps を使用して、共有ビューを作成および編集することができます。
+
+> [!NOTE]
+> Power Apps で作成されたパブリックビューで、**データを含む**、または**データを含まない**フィルターを含むものは、詳細検索で保存されたビューのリストには表示されません。
+
 1. [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインします。  
 
-2.  **データ**を展開して**エンティティ**を選択し、目的のエンティティを選択して**ビュー** タブを選択します。 
+2. **データ**を展開して**エンティティ**を選択し、目的のエンティティを選択して**ビュー** タブを選択します。 
 
 3. ツール バーで、**ビューの追加** を選択します。 
 
@@ -71,7 +75,7 @@ Power Apps において、ビューは特定のエンティティのレコード
     > [!NOTE]
     > また、列ヘッダーをクリックして**右に移動**または**左に移動**を選択することにより、列の順序を変更することができます。
 
-10. ビューを保存して、組織内の他のユーザーが使用できるようにするため、**公開**を選択します。 
+7. ビューを保存して、組織内の他のユーザーが使用できるようにするため、**公開**を選択します。 
    
 
 ## <a name="work-with-views-in-app-designer"></a>アプリ デザイナーでのビューの作業

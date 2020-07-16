@@ -5,7 +5,7 @@ manager: kvivek
 ms.service: powerapps
 ms.component: pa-user
 ms.topic: conceptual
-ms.date: 04/02/2020
+ms.date: 06/24/2020
 ms.author: mkaur
 ms.reviewer: ''
 ms.assetid: ''
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 144f4745bfcbd3d891210f2d6e556aefeeed30f4
-ms.sourcegitcommit: bfe434eb0ec6c0c449a3df3ce4b5d9bb644fd3e3
+ms.openlocfilehash: 9e2b19e1d38522bd073919afa37ef81feb2256df
+ms.sourcegitcommit: 47fb5b8a3580ea13a93eded76c2c79394490d9f4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "3386242"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "3502207"
 ---
 # <a name="edit-or-create-personal-views-using-advanced-grid-filters"></a>詳細グリッド フィルターを使用して個人用ビューを編集または作成する 
 
@@ -30,6 +30,7 @@ ms.locfileid: "3386242"
 > - 詳細フィルター オプションは、英語版でのみ使用できます。 今後のリリースで、より多くの言語をサポートする予定です。
 > - Queues エンティティの高度なフィルター オプションが機能せず、次のエラーメッセージが表示されます：このビューのフィルター条件を表示できません。
 > - 統一インターフェイスのグリッドでは、現在のビュー定義に基づいた列フィルターが事前入力されません。
+> - Power Apps で作成されたパブリックビューで、**データを含む**、または**データを含まない**フィルターを含むものは、詳細検索で保存されたビューのリストには表示されません。
 
 個人用ビューを作成して保存すると、**自分のビュー** の下の個人用ビューの一覧に表示されます。
 

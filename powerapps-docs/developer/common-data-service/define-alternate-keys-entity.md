@@ -2,7 +2,7 @@
 title: 代替キーを使用する (Common Data Service) | Microsoft Docs
 description: このトピックスではエンティティの代替キーの作成方法について説明します。 代替キーはプログラムで、またはカスタマイズ ツールを使用して作成することができます
 ms.custom: ''
-ms.date: 03/16/2020
+ms.date: 06/24/2020
 ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 03c15a27a20dc36609438d82fe4789af1dc1f95c
-ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
+ms.openlocfilehash: c83df56a18636b2ef9aff2056073d2793fdf07e5
+ms.sourcegitcommit: 8c157ad4ab7c01d55728a301abd616fee9341f9c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "3156271"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "3503056"
 ---
 # <a name="work-with-alternate-keys"></a>代替キーに関する作業
 
@@ -60,7 +60,7 @@ ms.locfileid: "3156271"
 
 - **キー値内の Unicode 文字**
 
-  代替キーで使用されるフィールド内のデータに `/`、`<`、`>`、`*`、`%`、`&`、`:`、`\\` などの文字が含まれている場合は、get アクションまたは patch アクションは機能しません。  一意性のみを必要とする場合はこの方法も使用することができますが、これらのキーをデータ統合の一部として使用する必要がある場合は、これらの文字を持つデータを持たないフィールド上でキーを作成するのが最善です。
+  代替キーで使用されているフィールド内のデータに  `/`、`<`、`>`、`*`、`%`、`&`、`:`、`\\` のいずれかが含まれている場合、更新または upsert (PATCH) アクションは機能しません。  一意性のみを必要とする場合はこの方法も使用することができますが、これらのキーをデータ統合の一部として使用する必要がある場合は、これらの文字を持つデータを持たないフィールド上でキーを作成するのが最善です。
 
 <a name="BKMK_crud"></a>   
 

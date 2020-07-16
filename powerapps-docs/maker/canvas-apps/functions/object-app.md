@@ -7,18 +7,18 @@ ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: tapanm
-ms.date: 05/29/2019
+ms.date: 05/20/2020
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: f5f09bab44f3f229b47d9a801703b3aa10cba06d
-ms.sourcegitcommit: a1b54333338abbb0bc3ca0d7443a5a06b8945228
+ms.openlocfilehash: c3abd7aebd2efbcb5d7e004a985b40c8e3948d1d
+ms.sourcegitcommit: 4b6f187c9501332f9acca5978fa326621f2980e5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "3308638"
+ms.lasthandoff: 05/22/2020
+ms.locfileid: "3393928"
 ---
 # <a name="app-object-in-power-apps"></a>Power Apps のアプリ オブジェクト
 
@@ -78,10 +78,11 @@ ms.locfileid: "3308638"
 - アプリがブラウザーで実行されている場合。
   - アプリが実行されているブラウザーまたはブラウザー タブを閉じます。
   - ブラウザーの戻るボタンを選択します。
+  - **Self** の *LaunchTarget* で [**Launch**](function-param.md) 関数を実行します。
 - アプリが Power Apps モバイル (iOS または Android) で実行されている場合。
-  - [**Launch**](function-param.md) 関数を実行しています。<br>**Launch** 関数は、その他のタブを開いてデータが失われないようにするため、ブラウザーのダイアログ ボックスをトリガーしません。
   - スワイプすることで、Power Apps モバイルの異なるアプリに切り替えます。
   - Android デバイス上の戻るボタンを選択します。
+  - [**Launch**](function-param.md) 関数を実行して、別のキャンバス アプリを起動します。
 
 確認ダイアログ ボックスの正確な外観は、Power Apps のデバイスおよびバージョン間でさまざまです。
 

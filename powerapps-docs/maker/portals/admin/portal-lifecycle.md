@@ -1,20 +1,19 @@
 ---
 title: Power Apps ポータルのライフサイクルについて | MicrosoftDocs
 description: Power Apps ポータルのライフサイクルと、試用版から運用版への変更に関する情報。
-author: tapanm-msft
-manager: kvivek
+author: neerajnandwana-msft
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 05/29/2020
-ms.author: tapanm
+ms.date: 06/22/2020
+ms.author: nenandw
 ms.reviewer: tapanm
-ms.openlocfilehash: 67dc6a59081b3ea607c6391b9b3657d103082398
-ms.sourcegitcommit: e2c92335fe6162c4576f0b86238ccbe4a7f74732
+ms.openlocfilehash: 635222979ff99df941e447293f2cecdba22eca8d
+ms.sourcegitcommit: 2fd873a1ea17f419f6194714efffa47a9bd00c2e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/01/2020
-ms.locfileid: "3417973"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "3507092"
 ---
 # <a name="about-the-portal-lifecycle"></a>ポータルのライフサイクルについて
 
@@ -71,9 +70,6 @@ ms.locfileid: "3417973"
     > ![試用版から運用への確認](../media/trial-to-prod-confirm.png "試用版から運用への確認")
 
 ## <a name="convert-an-existing-portal-to-a-capacity-based-model"></a>既存のポータルを容量ベースのモデルに変換する
-
-> [!IMPORTANT]
-> この機能はデプロイされています。 展開期間中は、この機能が使用できない場合があります。
 
 既存のポータル ライセンスを [容量ベースのライセンス モデル](https://docs.microsoft.com/power-platform/admin/powerapps-flow-licensing-faq#can-you-share-more-details-regarding-the-new-power-apps-portals-licensing) に変換できます。 ポータル ライセンスを容量ベースのモデルに変更するには:
 

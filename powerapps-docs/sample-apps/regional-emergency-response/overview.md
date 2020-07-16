@@ -1,22 +1,20 @@
 ---
 title: 地域政府機関 の緊急応答および Power Platform モニタリング ソリューションの概要 | Microsoft Docs
 description: 州と地方行政機関向けの地域政府機関の緊急応答およびモニタリング ソリューションの概要を説明します。
-author: KumarVivek
+author: pankajarora-msft
 manager: annbe
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 05/06/2020
-ms.author: kvivek
+ms.author: pankar
 ms.reviewer: kvivek
-searchScope:
-- PowerApps
-ms.openlocfilehash: e91dadf24010ebf1fcffbbe7000f3d622238abc5
-ms.sourcegitcommit: 2e186321d124dd6c0a4b51df5e8bc94a83ccf1e2
+ms.openlocfilehash: c95984903ba63e1e65396c51c8ed827ce683d1bd
+ms.sourcegitcommit: b5ab419dad4e9d64a5e6610641363b0d7487930a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "3342024"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "3465421"
 ---
 # <a name="regional-governmentemergency-response-and-monitoring---power-platform-solution-for-state-and-local-governments"></a>地方自治体の緊急時対応と監視 - 州と地方行政機関向けの Power Platform ソリューション
 

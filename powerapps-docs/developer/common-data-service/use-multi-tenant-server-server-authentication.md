@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 63180fe7b6fe7c8c0829b0660e8a98200f967476
-ms.sourcegitcommit: e1a6113bc54d23f94a2ec336076ca715df75f67f
+ms.openlocfilehash: c15132ceb3b2e203b8d6bf8697095bcfaeb3199f
+ms.sourcegitcommit: a94b56525667015d4439a082873c2262a61b25a9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "3370095"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "3455980"
 ---
 # <a name="use-multi-tenant-server-to-server-authentication"></a>マルチ テナント型でのサーバー間認証の使用
 
@@ -216,7 +216,7 @@ Azure AD には、アプリを登録するために次の値が必要です。
   
   Web サービスを使用して独自のプログラムを作成したりサブスクライバーにプログラムを実行させるなど、これを達成するにはいくつかの方法があります。  
   
-  Dynamics 365 Package Deployer は、ソリューションおよびデータを別の Common Data Service 組織へ自動的に転送するパッケージの準備として使用できるアプリです。 詳細: [Dynamics 365 Package Deployer 用のパッケージを作成する](/dynamics365/customer-engagement/developer/create-packages-package-deployer)  
+  Dynamics 365 Package Deployer は、ソリューションおよびデータを別の Common Data Service 組織へ自動的に転送するパッケージの準備として使用できるアプリです。 詳細: [Package Deployer のパッケージを作成する](/power-platform/alm/package-deployer-tool)  
   
 ### <a name="see-also"></a>関連項目  
  [単一テナント型のサーバー間認証の使用](use-single-tenant-server-server-authentication.md)   

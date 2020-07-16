@@ -2,7 +2,7 @@
 title: 'サンプル: 汎用仮想エンティティ データ プロバイダー プラグイン (Common Data Service) | Microsoft Docs'
 description: サンプルでは、汎用のカスタム Dynamics 365 仮想エンティティ プラグインの実行方法を説明しています。
 ms.custom: ''
-ms.date: 10/31/2018
+ms.date: 06/24/2020
 ms.reviewer: pehecke
 ms.service: powerapps
 ms.suite: ''
@@ -11,20 +11,20 @@ ms.topic: samples
 applies_to:
 - Dynamics 365 (online)
 ms.assetid: d329dade-16c5-46e9-8dec-4b8efb996d24
-author: mayadumesh
-ms.author: jdaly
-manager: annbe
+author: Sunil-Garg
+ms.author: pehecke
+manager: ryjones
 search.audienceType:
 - developer
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: c943741e2d7ade3335a67d857984e2600a24cf9a
-ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
+ms.openlocfilehash: 72f8c572802095347802a3a4a534b733a4a2afa6
+ms.sourcegitcommit: 8c157ad4ab7c01d55728a301abd616fee9341f9c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "3155147"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "3503061"
 ---
 # <a name="sample-generic-virtual-entity-data-provider-plug-in"></a>サンプル: 汎用仮想エンティティ データ プロバイダー プラグイン
 

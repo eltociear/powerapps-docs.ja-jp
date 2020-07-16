@@ -1,20 +1,19 @@
 ---
 title: ポータルで管理されたフォームに物理的場所を追加する | MicrosoftDocs
 description: 物理的場所を管理されたフォームに追加する手順。
-author: tapanm-msft
-manager: kvivek
+author: sandhangitmsft
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 11/04/2019
-ms.author: tapanm
-ms.reviewer: ''
-ms.openlocfilehash: 44619bfdb6d09221a6a23164a9627b4e06ebb0d7
-ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
+ms.author: sandhan
+ms.reviewer: tapanm
+ms.openlocfilehash: 4b441d9492ca56b7b694cc4e39fae4c9da21037f
+ms.sourcegitcommit: c12260f372ad2cc48d3146be570d2088c9ef1d86
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "2979456"
+ms.lasthandoff: 06/20/2020
+ms.locfileid: "3492082"
 ---
 # <a name="add-geolocation"></a>物理的場所を追加する
 

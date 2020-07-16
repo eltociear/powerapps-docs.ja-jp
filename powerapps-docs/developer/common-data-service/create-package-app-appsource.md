@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 377bbd94e39afa3b4702a809ff1dd7a97b6cff25
-ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
+ms.openlocfilehash: 6558fb26f2888ab0e4a24b02f0132b00d7560427
+ms.sourcegitcommit: a94b56525667015d4439a082873c2262a61b25a9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "3156335"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "3455964"
 ---
 # <a name="step-3-create-an-appsource-package-for-your-app"></a>手順3: アプリの AppSource パッケージを作成する
 
@@ -38,13 +38,13 @@ ms.locfileid: "3156335"
 
 アプリに関連付けられた複数のファイルを同時にバンドルおよび展開することができるパッケージ。 
 
-1. [手順 2: アプリの管理ソリューションを作成する](create-solution-app-appsource.md)で作成したソリューションおよび構成データ ファイルを含める Dynamics 365 パッケージを作成します。 また、パッケージには、パッケージが Common Data Service インスタンスに展開される前、間、または後に実行可能なカスタム コードを含むことができます。 パッケージ ファイルの作成に関する詳細については、 [Dynamics 365 Package Deployerのパッケージを作成する](/dynamics365/customer-engagement/developer/create-packages-package-deployer) を参照してください。
+1. [手順 2: アプリの管理ソリューションを作成する](create-solution-app-appsource.md)で作成したソリューションおよび構成データ ファイルを含める Dynamics 365 パッケージを作成します。 また、パッケージには、パッケージが Common Data Service インスタンスに展開される前、間、または後に実行可能なカスタム コードを含むことができます。 パッケージ ファイルの作成に関する詳細については、 [Package Deployerのパッケージを作成する](/power-platform/alm/package-deployer-tool) を参照してください。
 
     パッケージを作成すると、パッケージは以下の内容で構成されます。
 
     - **\<PackageName> フォルダー**: このフォルダーには、パッケージのすべてのソリューション、構成データ、フラット ファイル、および目次が含まれます。 例: **PkgFolder**。  
   
-    - **\<PackageName>.dll**: アセンブリには、パッケージのカスタム コードが含まれています。 例: **SamplePackage.dll**。
+    - **\<PackageName>.dll** : このアセンブリには、パッケージのカスタムコードが含まれています。 例: **SamplePackage.dll**。
 
 2. 次に、パッケージに含まれるファイル拡張子のMIMEタイプ情報を提供する **[Content_Types].xml** ファイルを作成します。 これは、 AppSource パッケージに再び含まれるものとは別のものです。 ファイルタイプがリストされた Content_Types.xml ファイルの内容例を次に示します。
 

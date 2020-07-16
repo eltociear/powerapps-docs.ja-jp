@@ -7,18 +7,18 @@ ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: tapanm
-ms.date: 04/27/2020
+ms.date: 05/29/2020
 ms.author: ropur
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 2ec4bdec7aaadd2c845201d9983de6c7a0ea4207
-ms.sourcegitcommit: 9f83d4c09f09256493bc5d49c7b4a4fc02d9342a
+ms.openlocfilehash: 14eaa34323208066f305016bcc7754c259f2f089
+ms.sourcegitcommit: e2c92335fe6162c4576f0b86238ccbe4a7f74732
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "3309765"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "3418193"
 ---
 # <a name="power-apps-visual-for-power-bi"></a>Power BI 用の Power Apps ビジュアル
 
@@ -73,6 +73,7 @@ Power BI レポートで Power Apps ビジュアルを使用するために必�
 
 Power Apps ビジュアルには次の制限が適用されます。
 
+- Power Apps ビジュアルは、[ゲスト ユーザー](share-app.md#share-with-guests) ではサポートされません。
 - Power Apps ビジュアルは、主権あるクラウドではサポートされていません。
 - ビジュアルに関連付けられているデータ フィールドを変更する場合、省略記号 (...) を選択してから、**編集**を選択することによって、Power BI サービス内からアプリを編集する必要があります。 それ以外の場合は、Power Apps に変更が反映されず、アプリは予期しない方法で動作します。
 - Power Apps ビジュアルは、Power BI Desktop 内から Power BI レポートと Power BI データ ソースの更新をトリガーできません。 アプリからレポートと同じデータ ソースにデータを書き戻す場合、変更内容は Power BI Desktop にすぐには反映されません。 変更内容は、次回のスケジュールされた更新で反映されます。

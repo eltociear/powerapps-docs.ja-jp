@@ -1,20 +1,19 @@
 ---
 title: Power Apps ポータルとは? | Microsoft Docs
 description: Common Data Service に格納されているデータを外部ユーザーが操作できる Power Apps を使用して Web サイトを設計し、構築します 。
-author: tapanm-msft
-manager: kvivek
+author: sandhangitmsft
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 01/17/2020
-ms.author: tapanm
-ms.reviewer: ''
-ms.openlocfilehash: 4f8617c824037d8975514e809347cfaa6c0328c4
-ms.sourcegitcommit: 2fd8b682e2d4c1e6a45c851b56f37f842ef18224
+ms.author: sandhan
+ms.reviewer: tapanm
+ms.openlocfilehash: eadba7f158186c50310c5aaf42f170272849b70e
+ms.sourcegitcommit: c12260f372ad2cc48d3146be570d2088c9ef1d86
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2020
-ms.locfileid: "2982506"
+ms.lasthandoff: 06/20/2020
+ms.locfileid: "3493527"
 ---
 # <a name="what-is-power-apps-portals"></a>Power Apps ポータルとは?
 

@@ -19,12 +19,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 5a0cd90c78b0654ded91d13761b228f4a6f4ba34
-ms.sourcegitcommit: 4a88daac42180283314f6bedee3d6810fd5a6c25
+ms.openlocfilehash: 9fac6873de58e3090e62e24e7f43f79caad30a63
+ms.sourcegitcommit: a94b56525667015d4439a082873c2262a61b25a9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "3275771"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "3455956"
 ---
 # <a name="appsource-checker"></a>AppSource チェッカー
 
@@ -32,7 +32,7 @@ ms.locfileid: "3275771"
 
 AppSource チェッカーを使用して、[AppSource](https://appsource.microsoft.com/) に送信する前にアプリが認定基準に一致しているか検証することができます。 チェッカーによりソリューション ファイルに修正が必要なエラーがあるかどうか知ることができ、AppSource 認定基準に一致しているか検証できます。 
 
-ISV Studio で、完全な [パッケージ](/powerapps/developer/common-data-service/package-deployer/create-packages-package-deployer) またはソリューションをアップロードできます。 修復される必要がある問題があるか通知されます。
+ISV Studio で、完全な [パッケージ](/power-platform/alm/package-deployer-tool) またはソリューションをアップロードできます。 修復される必要がある問題があるか通知されます。
 
 **AppSource チェッカーの実行**
 

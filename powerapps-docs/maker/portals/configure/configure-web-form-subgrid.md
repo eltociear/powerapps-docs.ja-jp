@@ -1,20 +1,19 @@
 ---
 title: ポータルの Web フォーム サブグリッド構成 | MicrosoftDocs
 description: ポータル用 Web フォームのサブグリッドを追加して構成するための手順。
-author: tapanm-msft
-manager: kvivek
+author: sandhangitmsft
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 11/04/2019
-ms.author: tapanm
-ms.reviewer: ''
-ms.openlocfilehash: 129af5698bf7a3ff3d598d230e1e79d35c68e720
-ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
+ms.author: sandhan
+ms.reviewer: tapanm
+ms.openlocfilehash: 34c3c83dd7fd8d66e00ab45ba1a97a8f8113751b
+ms.sourcegitcommit: c12260f372ad2cc48d3146be570d2088c9ef1d86
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "2977758"
+ms.lasthandoff: 06/20/2020
+ms.locfileid: "3493842"
 ---
 # <a name="configure-web-form-subgrids-for-portals"></a>ポータルの Web フォーム サブグリッドを構成します
 

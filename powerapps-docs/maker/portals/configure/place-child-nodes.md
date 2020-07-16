@@ -1,20 +1,19 @@
 ---
 title: ポータルのショートカットを使用して子ノードを配置する | MicrosoftDocs
 description: ポータルのショートカットを使用して子ノードを配置する手順。
-author: tapanm-msft
-manager: kvivek
+author: sandhangitmsft
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 11/04/2019
-ms.author: tapanm
-ms.reviewer: ''
-ms.openlocfilehash: e438803fa817d1b02a303a6a6e4873f2ba1e295f
-ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
+ms.author: sandhan
+ms.reviewer: tapanm
+ms.openlocfilehash: 6e14b4ce2ca488f17d892ea8fdf6e23f3be63af4
+ms.sourcegitcommit: c12260f372ad2cc48d3146be570d2088c9ef1d86
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "2980574"
+ms.lasthandoff: 06/20/2020
+ms.locfileid: "3490322"
 ---
 # <a name="place-child-nodes-by-using-shortcuts-for-portals"></a>ポータルのショートカットを使用して子ノードを配置する
 ショートカットを使用して、ポータルのサイトマップ全体に子ノードを配置できます。それにより、サイトマップに存在する他のノードやポータル外の URL を簡単にポイントすることができます。 言い換えれば、Web ページ、Web ファイル、イベント、フォーラムはすべて、ポータルのサイトマップの「固体」ノードとみなすことができます。サイトマップに追加され、それらに移動すると、それらのノードの実際のコンテンツが直接表示されます。 一方、ショートカットは、「無体物」ノードと考えることができます。これらもサイトマップに追加できます (Web リンクとは異なります) が、これらに移動すると、ショートカットがポイントしていたターゲットである「固定」ノードの内容の表示が、そのノードのページ テンプレートに表示された内容で終了します。

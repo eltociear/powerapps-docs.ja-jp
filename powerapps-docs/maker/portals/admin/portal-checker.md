@@ -1,20 +1,19 @@
 ---
 title: ポータルを使用して顧客の問題を識別および修正する | MicrosoftDocs
 description: ポータルを使用して顧客の問題を識別および修正する方法について説明します。
-author: tapanm-msft
-manager: kvivek
+author: neerajnandwana-msft
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 04/24/2020
-ms.author: tapanm
-ms.reviewer: ''
-ms.openlocfilehash: bbc5cc51fceadb5dfb836ca36483002f6537620b
-ms.sourcegitcommit: 943672dad0041d3bab25b44cd8c4d25e88f39b93
+ms.author: nenandw
+ms.reviewer: tapanm
+ms.openlocfilehash: 44ada594e0e506a848864c8bcb050ccdf6bc8707
+ms.sourcegitcommit: 2fd873a1ea17f419f6194714efffa47a9bd00c2e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/25/2020
-ms.locfileid: "3289351"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "3507317"
 ---
 # <a name="portal-checker"></a>ポータル チェッカー
 

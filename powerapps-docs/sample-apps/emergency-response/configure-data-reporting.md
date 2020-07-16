@@ -9,14 +9,12 @@ ms.custom: ''
 ms.date: 06/10/2020
 ms.author: pankar
 ms.reviewer: kvivek
-searchScope:
-- PowerApps
-ms.openlocfilehash: eaf4377928473eab05aa1913b68f3274d98f4577
-ms.sourcegitcommit: 6e4a8cc9ddfb0ceb894fe7fbd626021633033907
+ms.openlocfilehash: fa1825b2e3d6b1ed947a3b3e3957dad1c340ac6c
+ms.sourcegitcommit: 997384ebd01bda4f456f08689e024fb8ca5bf057
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2020
-ms.locfileid: "3443112"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "3455340"
 ---
 # <a name="configure-data-and-view-dashboards"></a>データの構成とダッシュボードの表示
 

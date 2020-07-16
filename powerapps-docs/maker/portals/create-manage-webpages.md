@@ -1,20 +1,19 @@
 ---
 title: Webページの作成と管理 | MicrosoftDocs
 description: ポータルでWebページを作成、管理するための手順。
-author: tapanm-msft
-manager: kvivek
+author: neerajnandwana-msft
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 10/07/2019
-ms.author: tapanm
-ms.reviewer: ''
-ms.openlocfilehash: 542622e814c2d650cbf3d6a4d3354bb363174e12
-ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
+ms.author: nenandw
+ms.reviewer: tapanm
+ms.openlocfilehash: 6db8a105da4fe3f18e7738d0add7539f5984a7b2
+ms.sourcegitcommit: 2fd873a1ea17f419f6194714efffa47a9bd00c2e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "2980706"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "3506397"
 ---
 # <a name="create-and-manage-webpages"></a>Webページの作成と管理
 

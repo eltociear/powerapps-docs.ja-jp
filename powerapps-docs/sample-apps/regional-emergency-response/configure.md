@@ -1,22 +1,20 @@
 ---
 title: 地方自治体の緊急時対応と監視ソリューションの管理アプリおよびダッシュボードを使用 | Microsoft Docs
 description: 地域組織のビジネス管理者がマスター データを構成し、ポータル ユーザーを管理し、主要なインサイトを得るためにダッシュボードを表示するための詳しい手順を説明します。
-author: KumarVivek
+author: pankajarora-msft
 manager: annbe
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 06/05/2020
-ms.author: kvivek
+ms.author: pankar
 ms.reviewer: kvivek
-searchScope:
-- PowerApps
-ms.openlocfilehash: 5496a5ed1ad61158aae36940bcf723dfb5a80084
-ms.sourcegitcommit: 6e4a8cc9ddfb0ceb894fe7fbd626021633033907
+ms.openlocfilehash: 94277bc2b5462fd34be92c8a4a590ce88d1531c8
+ms.sourcegitcommit: b5ab419dad4e9d64a5e6610641363b0d7487930a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2020
-ms.locfileid: "3442980"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "3465773"
 ---
 # <a name="use-the-admin-app-and-dashboard"></a>管理アプリとダッシュボードを使用する
 

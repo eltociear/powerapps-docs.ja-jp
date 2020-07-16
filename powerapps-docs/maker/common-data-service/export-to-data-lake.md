@@ -19,12 +19,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 52ab32a0ddf27a2a6be3566305655399918b01e4
-ms.sourcegitcommit: 51fa748cde4ea81e918dae1b39f9dca1d6e4e546
+ms.openlocfilehash: b8b0ab15720130e7624d31ea40fa7a73a4fe4f8f
+ms.sourcegitcommit: 8728546925c570541bebc1ac7a24227651e8f65f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "3292072"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "3463472"
 ---
 # <a name="export-entity-data-to-azure-data-lake-storage-gen2"></a>エンティティデータを Azure Data Lake Storage Gen2 にエクスポートする
 
@@ -48,7 +48,7 @@ Data Lake サービスへのエクスポートは、エンティティ データ
 
 標準エンティティとカスタム エンティティの両方をエクスポートすることができます。 Common Data Service の変更追跡のエンティティ属性は、データが最初に抽出されてから、または最後に同期されてからどのデータが変更されたかを検出することによって、データの同期を効率の良い方法で維持します。 
 
-すべての作成、更新、削除操作が Common Data Service からデータ レイクへエクスポートされます。 たとえば、ユーザーが Common Data Service のアカウント エンティティ レコードを削除すると、トランザクションは宛先のデータ レイクに複製されます。
+すべての作成、更新、削除作業は、Common Data Service から Data Lake へとエクスポートされます。 たとえば、ユーザーが Common Data Service のアカウント エンティティ レコードを削除すると、トランザクションは宛先のデータ レイクに複製されます。
 
 ## <a name="prerequisites"></a>前提条件
 

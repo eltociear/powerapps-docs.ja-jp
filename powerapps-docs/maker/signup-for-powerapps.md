@@ -9,15 +9,12 @@ ms.custom: canvas
 ms.date: 02/28/2020
 ms.author: kvivek
 ms.reviewer: kvivek
-searchScope:
-- GetStarted
-- PowerApps
-ms.openlocfilehash: 17cc56ec99f364ad817175e3314d36be0a5584a7
-ms.sourcegitcommit: a1b54333338abbb0bc3ca0d7443a5a06b8945228
+ms.openlocfilehash: edad9294c2ecfd784916d9252d1bb724fee583ba
+ms.sourcegitcommit: 3bc94ac014b12d2b04a1af598d38b875e9e5dc2a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "3303348"
+ms.lasthandoff: 06/12/2020
+ms.locfileid: "3444545"
 ---
 # <a name="explore-power-apps-for-free-for-30-days"></a>30 日間無料で Power Apps を使ってみる
 
@@ -33,7 +30,7 @@ Power Apps ライセンスまたは Office 365 のライセンスをお持ちの
 
 > [!NOTE]
 > - 管理者の場合、[組織向けの Power Apps の購入](../administrator/signup-for-powerapps-admin.md) または [組織の Power Apps の Q&A](../administrator/signup-question-and-answer.md) 参照してください。
-> - 2020 年 1 月から、Power Platform 製品 (Power BI、Power Apps、Power Automate) のセルフサービス購入、サブスクリプション、およびライセンス管理機能を、米国の商用クラウドのお客様は利用できます。 組織でセルフサービス購入を有効または無効にする手順などの詳細については、「[セルフサービス購入に関する FAQ](https://docs.microsoft.com/microsoft-365/commerce/subscriptions/self-service-purchase-faq?view=o365-worldwide)」を参照してください。
+> - 2020 年 1 月から、Power Platform 製品 (Power BI、Power Apps、Power Automate) のセルフサービス購入、サブスクリプション、およびライセンス管理機能を、米国の商用クラウドのお客様は利用できます。 組織でセルフサービス購入を有効または無効にする手順などの詳細については、[セルフサービス購入に関するよくあるご質問](https://docs.microsoft.com/microsoft-365/commerce/subscriptions/self-service-purchase-faq?view=o365-worldwide) を参照してください。
 
 ## <a name="identify-your-current-license"></a>現在のライセンスを確認する
 
@@ -52,7 +49,7 @@ Power Apps ライセンスまたは Office 365 のライセンスをお持ちの
 
 既存のライセンスから Power Apps プラン 2 の 30 日間の無料試用版を開始するには、[Power Apps にサインイン](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) して、プラン 2 を必要とする機能を試してください。 (たとえば、右上隅にある歯車アイコンを選択し、**管理センター** を選択してから、右上隅にある **新しい環境** を選択します。) 次に、プロンプトに従ってサインアップ プロセスを完了します。
 
-## <a name="get-a-license-from-scratch"></a>何もない状態からライセンスを取得する
+## <a name="get-a-license-from-scratch"></a>最初からライセンスを取得する
 
 Power Apps のライセンスがあるかどうかに関係なく、次の手順に従って、Power Apps プラン 2 の 30 日間無料試用版を開始できます:
 
@@ -69,22 +66,22 @@ Power Apps のライセンスがあるかどうかに関係なく、次の手順
 
 1. Power Apps によって組織の資格情報が認識されていることをダイアログ ボックスが示す場合、プロンプトに従ってサインインを完了します。
 
-    ![職場アカウントでサインイン](./media/signup-for-powerapps/we-know-you.png)
+    ![職場のアカウントでサインインする](./media/signup-for-powerapps/we-know-you.png)
 
     それ以外の場合は、プロンプトに従ってメールを確認し、メールアドレスを確認して、必要に応じて詳細情報を入力して、**開始** を選択します。
 
 ## <a name="faq"></a>よくあるご質問
 
-### <a name="what-email-address-can-i-use"></a>どのようなメール アドレスを使えますか?
+### <a name="what-email-address-can-i-use"></a>どんな電子メール アドレスを使用することができますか。
 
-職場または学校のアドレスを使って、試用版ライセンスにサインアップできます。 別の種類のアドレスを使った場合、次の表のいずれかの現象が発生する可能性があります。
+試用ライセンスにサインアップするには、職場または学校のアドレスを使用できます。 別の種類のアドレスを使用する場合は、この表の一つの現象が発生する可能性があります。
 
 
 |                                                                                                                                                                                                                             現象 / エラー メッセージ                                                                                                                                                                                                                             |                                                                                                                                                                                                     原因と回避策                                                                                                                                                                                                      |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <strong>個人の電子メール アドレス (例: nancy@gmail.com)</strong> <br> <br> サインアップ時に次のようなメッセージが表示される。 <br> <br> `You entered a personal email address: Please enter your work email address so we can securely store your company's data.` <br> <br> or <br> <br> `That looks like a personal email address. Enter your work address so we can connect you with others in your company. And don’t worry. We won’t share your address with anyone.` |                                                                                                        Power Apps は消費者向け電子メール サービスまたは通信プロバイダーによって提供されるメール アドレスをサポートしていません。 <br> <br> サインアップを完了するには、職場または学校で割り当てられた電子メール アドレスを使用して再試行します。                                                                                                        |
-|                             **.gov または .mil アドレス** <br> <br> サインアップ時に次のようなメッセージが表示される。 <br> <br> `Power Apps unavailable: Power Apps is not available for users with .gov or .mil email addresses at this time. Use another work email address or check back later.` <br> <br> or <br> <br> `We can't finish signing you up. It looks like Microsoft Power Apps isn't currently available for your work or school.`                              |                                                                                                                                                                                Power Apps は現時点で .gov または .mil のアドレスをサポートしていません。                                                                                                                                                                                |
-|                                                                                             **電子メール アドレス は Office 365 ID ではありません** <br> <br>  サインアップ時に次のようなメッセージが表示される。 <br> <br> `We can't find you at contoso.com.  Do you use a different ID at work or school? Try signing in with that, and if it doesn't work, contact your IT department.`                                                                                              | 組織は、電子メール アドレス以外の ID で Office 365 や他の Microsoft サービスにサインインします。 たとえば、メール アドレスが Nancy.Smith@contoso.com で、ID が nancys@contoso.com の場合です。 <br> <br> サインアップを完了するには、Office 365 または他の Microsoft サービスにサインインするために組織が割り当てた ID を使用します。  この ID が分からない場合は、IT 管理者にお問い合わせください。 |
+| <strong>個人のメール アドレス (例: nancy@gmail.com)</strong> <br> <br> サインアップ中には次のようなメッセージが表示されます: <br> <br> `You entered a personal email address: Please enter your work email address so we can securely store your company's data.` <br> <br> or <br> <br> `That looks like a personal email address. Enter your work address so we can connect you with others in your company. And don’t worry. We won’t share your address with anyone.` |                                                                                                        Power Apps は消費者向け電子メール サービスまたは通信プロバイダーによって提供されるメール アドレスをサポートしていません。 <br> <br> サインアップを完了するには、職場または学校で割り当てられた電子メール アドレスを使用して再試行します。                                                                                                        |
+|                             **.gov または .mil アドレス** <br> <br> サインアップ中には次のようなメッセージが表示されます: <br> <br> `Power Apps unavailable: Power Apps is not available for users with .gov or .mil email addresses at this time. Use another work email address or check back later.` <br> <br> or <br> <br> `We can't finish signing you up. It looks like Microsoft Power Apps isn't currently available for your work or school.`                              |                                                                                                                                                                                Power Apps は現時点で .gov または .mil のアドレスをサポートしていません。                                                                                                                                                                                |
+|                                                                                             **電子メール アドレス は Office 365 ID ではありません** <br> <br>  サインアップ中には次のようなメッセージが表示されます: <br> <br> `We can't find you at contoso.com.  Do you use a different ID at work or school? Try signing in with that, and if it doesn't work, contact your IT department.`                                                                                              | 組織は、電子メール アドレス以外の ID で Office 365 や他の Microsoft サービスにサインインします。 たとえば、メール アドレスが Nancy.Smith@contoso.com で、ID が nancys@contoso.com の場合です。 <br> <br> サインアップを完了するには、Office 365 または他の Microsoft サービスにサインインするために組織が割り当てた ID を使用します。  これを知らない場合は、IT 管理者にお問い合わせください。 |
 
 <!--
 ### When will my trial license expire?
@@ -92,12 +89,12 @@ Power Apps のライセンスがあるかどうかに関係なく、次の手順
 To determine when your trial license will expire, select the gear icon near the upper-right corner of the [Power Apps site](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), and then select **Plan(s)**.
 -->
 
-### <a name="what-happens-when-my-trial-expires"></a>試用版の有効期限が過ぎるとどうなりますか?
+### <a name="what-happens-when-my-trial-expires"></a>試用の有効期限が切れるとどうなりますか。
 
 試用版の開始から 30 日後に、試用版の延長をリクエストするか、プランを購入するよう求められます。 すべてのプランに関する詳細については、[価格設定のページ](https://powerapps.microsoft.com/pricing/) を参照できます。
 
 試用版を延長したり、プランを購入したりせずに、別の種類のライセンスがある場合は、他のライセンスが提供する Power Apps のすべての機能を使用できます。 Common Data Service 内のデータはそのまま残り、Common Data Service を使用するアプリまたはフローはライセンスでサポートされている場合と同様に引き続き実行されます。 プラン 2 がサポートする機能を使用しようとしたが、既存のライセンスがサポートしていない場合 (たとえば、Common Data Service でスキーマまたはエンティティを変更する場合)、プランを購入するように求められます。
 
-### <a name="more-questions"></a>ご質問は
+### <a name="more-questions"></a>さらに質問はございませんか?
 
 Power Apps [コミュニティ](https://community.powerapps.com) を試してください。

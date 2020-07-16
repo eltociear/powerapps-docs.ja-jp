@@ -15,12 +15,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 995fc58d72031a6108573ba48cebcb30f1aecd79
-ms.sourcegitcommit: cf492063eca27fdf73459ff2f9134f2ca04ee766
+ms.openlocfilehash: 3314d168616d6db460085addbad489e6054dc80f
+ms.sourcegitcommit: 8728546925c570541bebc1ac7a24227651e8f65f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "3136526"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "3463428"
 ---
 # <a name="model-driven-sample-apps"></a>モデル駆動型サンプル アプリ
 
@@ -34,7 +34,7 @@ ms.locfileid: "3136526"
 
 ## <a name="get-sample-apps"></a>サンプル アプリの入手
 
-モデル駆動型サンプル アプリを再生または編集するには、アプリをまず Common Data Service データベースでプロビジョニングする必要があります。 まず、試用環境およびデータベースを作成し、**サンプル アプリおよびデータの展開** を選択します。
+モデル駆動型サンプル アプリを再生または編集するには、アプリをまず Common Data Service データベースでプロビジョニングする必要があります。 まず、試用環境およびデータベースを作成し、必ず **サンプル アプリおよびデータの展開** を選択してください。
 
 > [!div class="mx-imgBorder"] 
 > ![データベースの作成](media/overview-model-driven-samples/create-database1.png "データベースを作成する")

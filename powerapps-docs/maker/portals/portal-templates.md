@@ -1,20 +1,19 @@
 ---
 title: Power Apps で使用可能なポータル テンプレート | Microsoft Docs
 description: Power Apps で使用可能なさまざまなポータル テンプレートについて説明します。
-author: tapanm-msft
-manager: kvivek
+author: neerajnandwana-msft
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 04/09/2020
-ms.author: tapanm
-ms.reviewer: ''
-ms.openlocfilehash: 429dfdf0a87e11f12dc8e7c857d3de501013c859
-ms.sourcegitcommit: e2c92335fe6162c4576f0b86238ccbe4a7f74732
+ms.author: nenandw
+ms.reviewer: tapanm
+ms.openlocfilehash: 1dbe7bf3742e1d8477923d3f5d9e86ca3ea2ee31
+ms.sourcegitcommit: 2fd873a1ea17f419f6194714efffa47a9bd00c2e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/01/2020
-ms.locfileid: "3418105"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "3506499"
 ---
 # <a name="portal-templates"></a>ポータル テンプレート
 

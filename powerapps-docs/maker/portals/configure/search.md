@@ -1,20 +1,19 @@
 ---
 title: Power Apps ポータルのグローバル検索 | MicrosoftDocs
 description: ポータルでグローバル検索がどのように機能するかを説明します。
-author: tapanm-msft
-manager: kvivek
+author: sandhangitmsft
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 04/23/2020
-ms.author: tapanm
-ms.reviewer: ''
-ms.openlocfilehash: 87c85766453bbe352923f2ea191cd6d9be31075f
-ms.sourcegitcommit: 6aa28b13d942c4a907642962348f0c0443623fd1
+ms.author: sandhan
+ms.reviewer: tapanm
+ms.openlocfilehash: cf906e36ecd967527d3ee6a90add7456c98492de
+ms.sourcegitcommit: c12260f372ad2cc48d3146be570d2088c9ef1d86
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "3285303"
+ms.lasthandoff: 06/20/2020
+ms.locfileid: "3493977"
 ---
 # <a name="search"></a>Search
 

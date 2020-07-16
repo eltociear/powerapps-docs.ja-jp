@@ -1,20 +1,19 @@
 ---
 title: ポータル用の認証 ID の設定 | MicrosoftDocs
 description: ポータル用の認証 ID を設定する手順。
-author: tapanm-msft
-manager: kvivek
+author: sandhangitmsft
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 04/30/2020
-ms.author: tapanm
-ms.reviewer: ''
-ms.openlocfilehash: f5371cbf4ec95bd18f0d81fc1a94b4b3e3421554
-ms.sourcegitcommit: b75b29d58adf1547c9fcd3ddd1f14f69fb7f572b
+ms.author: sandhan
+ms.reviewer: tapanm
+ms.openlocfilehash: db974229255eb37fe90fc4961d132013c3cced0a
+ms.sourcegitcommit: c12260f372ad2cc48d3146be570d2088c9ef1d86
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/02/2020
-ms.locfileid: "3330474"
+ms.lasthandoff: 06/20/2020
+ms.locfileid: "3491767"
 ---
 # <a name="set-authentication-identity-for-a-portal"></a>ポータル用の認証 ID の設定
 

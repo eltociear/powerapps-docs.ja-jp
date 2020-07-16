@@ -1,20 +1,19 @@
 ---
 title: ポータル用 Liquid の条件演算子を使用する | MicrosoftDocs
 description: ポータルで使用可能な Liquid の条件演算子について説明します。
-author: tapanm-msft
-manager: kvivek
+author: gitanjalisingh33msft
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 10/07/2019
-ms.author: tapanm
-ms.reviewer: ''
-ms.openlocfilehash: dc356e876c2b5ece6379765e01d623d98c08a7a4
-ms.sourcegitcommit: 51fa748cde4ea81e918dae1b39f9dca1d6e4e546
+ms.author: gisingh
+ms.reviewer: tapanm
+ms.openlocfilehash: ac6354a57e19efece53d92fea7c2410da7bda3a0
+ms.sourcegitcommit: c12260f372ad2cc48d3146be570d2088c9ef1d86
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "3292028"
+ms.lasthandoff: 06/20/2020
+ms.locfileid: "3494202"
 ---
 # <a name="available-liquid-conditional-operators"></a>使用可能な Liquid の条件演算子
 

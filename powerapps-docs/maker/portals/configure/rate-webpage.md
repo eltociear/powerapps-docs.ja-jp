@@ -1,20 +1,19 @@
 ---
 title: ポータルの Web ページの評価または投票 | MicrosoftDocs
 description: ポータルで Web ページの評価を有効にし、管理するための手順。
-author: tapanm-msft
-manager: kvivek
+author: sandhangitmsft
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 11/11/2019
-ms.author: tapanm
-ms.reviewer: ''
-ms.openlocfilehash: 0dd86fde3ed867c68f2ca773c14b7656980436cc
-ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
+ms.author: sandhan
+ms.reviewer: tapanm
+ms.openlocfilehash: bdb68d547799ef947d8043f56181739577277fd4
+ms.sourcegitcommit: c12260f372ad2cc48d3146be570d2088c9ef1d86
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "2980662"
+ms.lasthandoff: 06/20/2020
+ms.locfileid: "3491587"
 ---
 # <a name="rate-or-vote-on-a-webpage-on-a-portal"></a>ポータルの Web ページの評価または投票
 

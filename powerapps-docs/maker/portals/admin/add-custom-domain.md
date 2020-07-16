@@ -1,20 +1,19 @@
 ---
 title: カスタム ドメイン名を追加する | MicrosoftDocs
 description: カスタム ドメイン名を追加する手順。
-author: tapanm-msft
-manager: kvivek
+author: neerajnandwana-msft
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 06/04/2020
-ms.author: tapanm
-ms.reviewer: ''
-ms.openlocfilehash: 9cc0275be57989e4bad7be38f68b7eb50a4bb9c5
-ms.sourcegitcommit: 909948d219c3c61d617f13aceb355e1d5bcb0b55
+ms.author: nenandw
+ms.reviewer: tapanm
+ms.openlocfilehash: 84d888e7d752113e3d0d4e31b4dfee47ee6eaddd
+ms.sourcegitcommit: 2fd873a1ea17f419f6194714efffa47a9bd00c2e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/05/2020
-ms.locfileid: "3432937"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "3506962"
 ---
 # <a name="add-a-custom-domain-name"></a>カスタム ドメイン名の追加
 

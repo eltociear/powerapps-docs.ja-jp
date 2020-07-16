@@ -7,18 +7,18 @@ ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: tapanm
-ms.date: 05/04/2020
+ms.date: 05/20/2020
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 7d8bf93b32f7afb449cf8dc46960f30f7c41294d
-ms.sourcegitcommit: 0c92e85f95f3baa04cce140c96e53d5d86d685c0
+ms.openlocfilehash: 6dd5e41eebcc1b047f52656332ade2c644d9284f
+ms.sourcegitcommit: 4b6f187c9501332f9acca5978fa326621f2980e5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "3333062"
+ms.lasthandoff: 05/22/2020
+ms.locfileid: "3394104"
 ---
 # <a name="launch-and-param-functions-in-power-apps"></a>Power Apps の Launch および Param 関数
 
@@ -103,10 +103,11 @@ Web ページを起動するとき、パラメーターの [クエリ文字列](
 | **セルフ** | Web ページまたはアプリは、現在のウィンドウまたはタブを置き換えます。 |
 | *名前* | 列挙値の代わりに、独自のテキスト文字列を使用してウィンドウまたはタブに*名前*を付けます。*自分*は、**Launch** 関数でのみ使用される内部専用の名前です。 ユーザーに表示されるウィンドウのタイトルには影響せず、照合もしません。  指定された*名前*のウィンドウまたはタブは既に存在しているので、その内容は置き換えられます。 それ以外の場合、新しいウィンドウまたはタブが作成されます。  *name* は、アンダースコア文字で始まることはできません。 |
 
-Web ブラウザーで実行している場合、**Blank** が既定になり、**Self** および *name* が利用可能なオプションです。  モバイル プレーヤーでは、**Blank** が Web ページの既定で、*name* が利用可能なオプションです。**Self** は常にアプリで使用されます。
+**Blank** は 、**Self** と *name* が利用可能なオプションとして設定されている Web ブラウザで実行されている場合、既定の列挙型です。 モバイル プレーヤーでは、*name* が利用可能なオプションとして設定されている Web ページでは、**Blank** が既定となり、現在のキャンバス アプリは常に別のキャンバス アプリに置き換えられます。
 
 > [!NOTE]
-> *LaunchTarget*列挙名は移行中です。  現在、**Blank** および **Self** が使用できますが、これらの名前は数週間以内に変更されます。  これが発生した場合、アプリは自動的に更新され、数式を更新する必要はありません。
+> - *LaunchTarget* は、埋め込み型のシナリオ  (Power BI や SharePoint など) では **Blank** 以外の値に対応しておらず、予期せぬ動作につながる可能性があります。 将来的には、この挙動が更新される可能性もありますが、依然としてエラーとなる可能性もあります。
+> - *LaunchTarget*列挙名は移行中です。 現在は **Blank** と **Self** を使用することができますが、これらの名称は将来的に変更される予定です。 **Self** は、新しい **Self** キーワードが導入されると、**'Self'** に中間的に変更されます。 この競合を回避するにあたって、予想される名前は **New** と **Replace** です。 これらの変更が発生すると、アプリでは自動的に更新されます。 既存の数式を手動で更新する必要はありません。
 
 ### <a name="security-zones"></a>セキュリティ ゾーン
 

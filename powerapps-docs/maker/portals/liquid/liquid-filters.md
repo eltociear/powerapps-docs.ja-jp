@@ -1,20 +1,19 @@
 ---
 title: ポータル用 Liquid フィルターを使用する | MicrosoftDocs
 description: ポータルで使用可能な Liquid のフィルターについて説明します。
-author: tapanm-msft
-manager: kvivek
+author: gitanjalisingh33msft
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 10/07/2019
-ms.author: tapanm
-ms.reviewer: ''
-ms.openlocfilehash: 9d2bdad966b91bad9fa75dace484b54ece6e05f9
-ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
+ms.author: gisingh
+ms.reviewer: tapanm
+ms.openlocfilehash: 563e50d6b6d1255aeee55a32fbc32db4698e9df0
+ms.sourcegitcommit: c12260f372ad2cc48d3146be570d2088c9ef1d86
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "2980838"
+ms.lasthandoff: 06/20/2020
+ms.locfileid: "3490232"
 ---
 # <a name="available-liquid-filters"></a>使用可能な Liquid フィルター
 

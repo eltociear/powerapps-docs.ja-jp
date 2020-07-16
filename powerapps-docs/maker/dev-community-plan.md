@@ -9,15 +9,12 @@ ms.custom: ''
 ms.date: 06/04/2020
 ms.author: dileeps
 ms.reviewer: ''
-searchScope:
-- GetStarted
-- PowerApps
-ms.openlocfilehash: 8f147ab70be8deb35d297f87e3b52a9b9f6eb59d
-ms.sourcegitcommit: 1c205fc6ea1d85778c1ceeb164d1867f512e5d91
+ms.openlocfilehash: 02b3d867e11d880edea30690e8b51a9f1ccdb4ba
+ms.sourcegitcommit: 3bc94ac014b12d2b04a1af598d38b875e9e5dc2a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "3431787"
+ms.lasthandoff: 06/12/2020
+ms.locfileid: "3444149"
 ---
 # <a name="power-apps-community-plan-a-free-development-environment-for-individual-use"></a>Power Apps PowerApps コミュニティ プラン: 個別に使用するための自由な開発環境
 スキルを強化して Power Apps、Power Automate、Common Data Service について学習する場合は、Power Apps コミュニティ プランが適切です。 Power Apps コミュニティ プランでは個別に使用するための自由な開発環境が用意され、以下の内容を実行することができます。

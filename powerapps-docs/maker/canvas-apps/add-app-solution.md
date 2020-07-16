@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 679dab28c49d71e8f28a9ace047b9481c4d53cc2
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: 4fe582d6c546892883bb48bbfa538c7a94850bd4
+ms.sourcegitcommit: b89aa4dff729ccd456d9d5521de63853f4a3b2bb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "3306614"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "3427941"
 ---
 # <a name="create-a-canvas-app-from-within-a-solution"></a>ソリューション内からキャンバス アプリを作成する
 
@@ -121,7 +121,7 @@ ms.locfileid: "3306614"
 
 ## <a name="known-limitations"></a>既知の制限
 
-既知の制限については、[Power Apps ソリューションを使用する](../common-data-service/use-solution-explorer.md#known-limitations) を参照してください。 
+既知の制限については、[ソリューションの概要](/powerapps/maker/common-data-service/solutions-overview#known-limitations)を参照してください。 
 
 ## <a name="next-steps"></a>次の手順
 

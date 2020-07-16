@@ -1,20 +1,19 @@
 ---
 title: Common Data Service における日時フィールドの動作と形式 | MicrosoftDocs
 description: ポータルで使用される日時フィールドの動作と形式。
-author: tapanm-msft
-manager: kvivek
+author: sandhangitmsft
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 11/04/2019
-ms.author: tapanm
-ms.reviewer: ''
-ms.openlocfilehash: fe9a2e6e8cef5f2199eb4bd5aa98aacea8d14e67
-ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
+ms.author: sandhan
+ms.reviewer: tapanm
+ms.openlocfilehash: 6f67900066f3d0fd36823de095f4f1b6bb3270db
+ms.sourcegitcommit: c12260f372ad2cc48d3146be570d2088c9ef1d86
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "2979288"
+ms.lasthandoff: 06/20/2020
+ms.locfileid: "3494607"
 ---
 # <a name="behavior-and-format-of-the-date-and-time-field"></a>日時フィールドの動作と形式
 

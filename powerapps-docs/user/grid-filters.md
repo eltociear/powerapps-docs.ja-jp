@@ -14,16 +14,18 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 73b7223e207f45149947e13c957218822055c3bb
-ms.sourcegitcommit: bfe434eb0ec6c0c449a3df3ce4b5d9bb644fd3e3
+ms.openlocfilehash: 598891a32b94488fdc485db596cddea2d4124c12
+ms.sourcegitcommit: 0bf7fd59a348370a4ea1685ccc4a6a5e4c20f807
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "3386154"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "3498965"
 ---
 # <a name="use-grid-filters"></a>グリッド フィルターを使用する 
 
 統一インターフェイスのグリッドが改善され、画面に表示できるデータの量が増えました。 列のさまざまなフィルター処理オプションから選択できるようになりました; 列のデータの種類によって、使用できるフィルター オプションが決まります。 たとえば、**取引先担当者** グリッドの **氏名** 列と、**活動** グリッドの **活動の種類** 列では、フィルター オプションが異なります。
+
+Power Apps で作成されたパブリックビューで、**データを含む**、または**データを含まない**フィルターを含むものは、詳細検索で保存されたビューのリストには表示されません。 
 
 > [!IMPORTANT]
 > 統一インターフェイスのグリッドでは、現在のビュー定義に基づいた列フィルターが事前入力されません。

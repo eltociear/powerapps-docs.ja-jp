@@ -2,7 +2,7 @@
 title: ファイル属性 (Common Data Service) | Microsoft Docs
 description: アプリケーション内にファイル データを保存するファイル属性、サポートされている属性、データの取得、およびファイル データのアップロードについて説明します。
 ms.custom: ''
-ms.date: 05/08/2020
+ms.date: 06/17/2020
 ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 20f7614ebf0764b5c0b94f7bdef0ef935a421aaa
-ms.sourcegitcommit: 241075714595a3544833040a6a16bc3def87ffcc
+ms.openlocfilehash: 045e42cfe3038618cf4125c790f55390e7e37eb6
+ms.sourcegitcommit: 8728546925c570541bebc1ac7a24227651e8f65f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "3407934"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "3463288"
 ---
 # <a name="file-attributes"></a>ファイル属性
 
@@ -69,7 +69,7 @@ Webサービス エンドポイントからのファイル データ転送は、
 ```http
 GET [Organization URI]/api/data/v9.1/accounts(id)/myfileattribute/$value
 Headers:
-Range: 0-1023/8192
+Range: bytes=0-1023/8192
 ```
 
 **応答**
@@ -172,7 +172,7 @@ Location: api/data/v9.1/accounts(id)/myfileattribute?FileContinuationToken
 PATCH [Organization URI]/api/data/v9.1/accounts(id)/myfileattribute?FileContinuationToken 
 
 Headers: 
-Content-Range: 0-4095/8192 
+Content-Range: bytes 0-4095/8192 
 Content-Type: application/octet-stream
 x-ms-file-name: sample.png
 

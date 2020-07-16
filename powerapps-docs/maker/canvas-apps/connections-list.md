@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 623f18144bd3eaf41a43b78817d42c248f26748f
-ms.sourcegitcommit: 6aa28b13d942c4a907642962348f0c0443623fd1
+ms.openlocfilehash: 984cb472a3efeb0fc4f702cfed67d76d437b88c4
+ms.sourcegitcommit: e2c92335fe6162c4576f0b86238ccbe4a7f74732
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "3309512"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "3418237"
 ---
 # <a name="overview-of-canvas-app-connectors-for-power-apps"></a>Power Apps のキャンバス アプリ コネクタの概要
 データは、Power Apps で構築されたものを含め、ほとんどのアプリの中核にあります。 データは*データ ソース*に格納され、*接続*を作成することによってそのデータをアプリに取り込みます。 接続では、データソースとの通信に*コネクタ*を使用します。 Power Apps には、SharePoint、SQL Server、Office 365、Salesforce、Twitter など、よく使われているサービスやオンプレミスのデータ ソースの多くに対応したコネクタが用意されています。 キャンバス アプリへのデータの追加を開始するには、[Power Apps でのデータ接続の追加](add-data-connection.md) を参照してください。
@@ -67,12 +67,11 @@ ms.locfileid: "3309512"
 | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; |
 | --- | --- | --- | --- | --- |
 | ![Common Data Service](./media/connections-list/cdm.png) |[**Common Data Service**](connections/connection-common-data-service.md) |&nbsp; |![クラウド ストレージ](./media/connections-list/onedrive.png) |[**クラウド ストレージ**](connections/cloud-storage-blob-connections.md) ** |
-| ![Dynamics 365](./media/connections-list/dynamics-365.png) |[**Dynamics 365**](connections/connection-dynamics-crmonline.md) |&nbsp; | ![Dynamics AX](./media/connections-list/dynamics-ax.png) |[**Dynamics AX**](connections/connection-dynamicsax.md) |
-|![Excel](./media/connections-list/excel.png) |[**[Excel]**](connections/connection-excel.md) |&nbsp; |![Microsoft Translator](./media/connections-list/microsoft-translator.png) |[**Microsoft Translator**](connections/connection-microsoft-translator.md) |
-|![Office 365 Outlook](./media/connections-list/office365.png) |[**Office 365 Outlook**](connections/connection-office365-outlook.md) |&nbsp; | ![Office 365 Users](./media/connections-list/office365.png) |[**Office 365 ユーザー**](connections/connection-office365-users.md) |
-| ![Oracle](./media/connections-list/oracle-icon.png) |[**Oracle**](connections/connection-oracledb.md) |&nbsp; | ![Power BI](./media/connections-list/powerbi.png) |[**Power BI**](connections/connection-powerbi.md) |
-| ![SharePoint](./media/connections-list/sharepoint.png) |[**SharePoint**](connections/connection-sharepoint-online.md) |&nbsp; | ![SQL Server](./media/connections-list/sql.png) |[**SQL Server**](connections/connection-azure-sqldatabase.md) 
-|![Twitter](./media/connections-list/twitter.png) |[**Twitter**](connections/connection-twitter.md)
+| ![Dynamics AX](./media/connections-list/dynamics-ax.png) |[**Dynamics AX**](connections/connection-dynamicsax.md)|&nbsp; |![Excel](./media/connections-list/excel.png) |[**Excel**](connections/connection-excel.md)|
+| ![Microsoft Translator](./media/connections-list/microsoft-translator.png) |[**Microsoft Translator**](connections/connection-microsoft-translator.md)|&nbsp; | ![Office 365 Outlook](./media/connections-list/office365.png) |[**Office 365 Outlook**](connections/connection-office365-outlook.md)|
+| ![Office 365 Users](./media/connections-list/office365.png) |[**Office 365 ユーザー**](connections/connection-office365-users.md)  |&nbsp; | ![Oracle](./media/connections-list/oracle-icon.png) |[**Oracle**](connections/connection-oracledb.md)|
+| ![Power BI](./media/connections-list/powerbi.png) |[**Power BI**](connections/connection-powerbi.md) |&nbsp; | ![SharePoint](./media/connections-list/sharepoint.png) |[**SharePoint**](connections/connection-sharepoint-online.md) |
+| ![SQL Server](./media/connections-list/sql.png) |[**SQL Server**](connections/connection-azure-sqldatabase.md) |&nbsp; | ![Twitter](./media/connections-list/twitter.png) |[**Twitter**](connections/connection-twitter.md) |
 
 **Azure Blob、Box、Dropbox、Google Drive、OneDrive および OneDrive for Business に適用されます
 

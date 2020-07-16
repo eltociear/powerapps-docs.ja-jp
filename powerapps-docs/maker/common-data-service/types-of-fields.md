@@ -16,12 +16,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 83a64d089728574bf04419604ad58464bfa390f7
-ms.sourcegitcommit: 241075714595a3544833040a6a16bc3def87ffcc
+ms.openlocfilehash: f786588a4e81ad66abf92e7c4486b8259d9806d5
+ms.sourcegitcommit: 3bc94ac014b12d2b04a1af598d38b875e9e5dc2a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "3408006"
+ms.lasthandoff: 06/12/2020
+ms.locfileid: "3444589"
 ---
 # <a name="types-of-fields"></a>フィールドの種類
 
@@ -58,7 +58,7 @@ ms.locfileid: "3408006"
 |**URL**|**1 行テキスト**<br />*URL* 形式|`StringType`|
 |**整数**|**整数**<br />*なし*形式|`IntegerType`|
 
-追加または編集可能な各種類の詳細については、対応するデザイナーのトピックをを参照してください。
+追加または編集可能な各種類の詳細については、対応する記事のトピックを参照してください。
  - [Power Apps ポータルを使用して Common Data Service のフィールドの作成および編集をする: フィールドのデータ型](create-edit-field-portal.md#field-data-types)
  - [Power Apps ソリューションエクスプローラーを使用して Common Data Service のフィールドの作成および編集をする: フィールドのデータ型](create-edit-field-solution-explorer.md#field-data-types)
 
@@ -104,7 +104,7 @@ ms.locfileid: "3408006"
   
 ## <a name="using-the-right-type-of-number"></a>正しいタイプの数値を使用する
 
-数値フィールドに使用する正しいタイプを選択する際に、**整数**または**通貨**タイプを選択すると、とても簡単です。 **浮動小数点**または**小数**の数値を使用する選択は、もっと複雑です。  
+数値フィールドに使用する正しいタイプを選択する際に、**整数** または **通貨** タイプを選択すると、とても簡単です。 **浮動小数点**または**小数**の数値を使用する選択は、もっと複雑です。  
   
 小数は、指定したとおりにデータベースに格納されます。 浮動小数点数の数値は、その値の近似値が格納されます。 正確な値があるのに、なぜ近似値を使用するのか？ 答えは、異なるシステム パフォーマンスを得るためです。  
   
@@ -243,13 +243,16 @@ By default, when an app user adds an image to display to a form or canvas app, t
 ## <a name="file-fields"></a>ファイル フィールド
 [!INCLUDE [cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]
 
-現在、ファイル データの種類はキャンバス アプリとフローでのみ使用できます。 
-
 **ファイル** フィールドはバイナリ データを格納するために使用されます。 このフィールドの主目的の一つは、単一のイメージ、メモ、添付ファイルを保存することです。 ただし、そのほかの形式のバイナリ データの保存もできます。 このデータの種類に対して一つ以上のフィールドで、カスタマイズ可能な既存の標準のエンティティまたはユーザー定義エンティティに追加できます。
 
 既定の **最大ファイル サイズ** は 32 MBで、設定できる最大のサイズは128 MBです。 ファイル サイズ制限は、エンティティに追加するファイルの種類別のフィールドに個別に設定できます。 
 
 >[!NOTE]
 > 最大ファイルサイズが一度保存されると、変更できません。
+
+ファイル フィールドを作成するには、Power Apps の左側のペインで **ソリューション** を選択し、必要なソリューションを開き、必要なエンティティを開き、**フィールド** タブで **フィールドを追加** を選択してから、**フィールドのプロパティ** ペインで **ファイル** を**データの種類** として選択します。 
+
+> [!div class="mx-imgBorder"] 
+> ![ファイル データの種類](media/file-data-type.png)
 
 ファイル データを操作する開発者のための詳細: [ファイル属性](/powerapps/developer/common-data-service/file-attributes)

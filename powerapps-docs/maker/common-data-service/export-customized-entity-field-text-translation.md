@@ -2,7 +2,7 @@
 title: Power Apps で翻訳用にカスタマイズされたエンティティとフィールド テキストをエクスポートする | MicrosoftDocs
 description: エンティティとフィールド テキストの変換のエクスポート方法を説明する
 ms.custom: ''
-ms.date: 05/19/2020
+ms.date: 06/15/2020
 ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
@@ -22,19 +22,19 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 6f8f607c2f9ad58be54d808a6c682590a3ea5f35
-ms.sourcegitcommit: 82fa1758e29fe302f9a252fd9943ace03b7aada0
+ms.openlocfilehash: 570083a2c0a183dfe99baad95ba9bf6fde18d181
+ms.sourcegitcommit: 997384ebd01bda4f456f08689e024fb8ca5bf057
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "3427454"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "3455112"
 ---
 # <a name="translate-customized-entity-and-field-text-into-other-languages"></a>カスタマイズされたエンティティおよびフィールド テキストを他の言語に翻訳する
 アンマネージド ソリューションでカスタマイズしたエンティティとフィールド テキストを作成した後、他言語に翻訳することができます。  
   
 1. [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインし、左側のナビゲーションから**ソリューション**を選択します。    
   
-2. 必要なソリューションを選択して、コマンド バーで **…** を選択し、**翻訳** を選択してから、**翻訳のエクスポート** を選択します。  
+2. 必要なアンマネージド ソリューションを選択し、コマンドバーで **…** を選択します。選択する**翻訳**を選択して、続いて**翻訳をエクスポート**を選択します。  
 
 3. エクスポートが完了すると、エクスポートされた翻訳の圧縮 (zip) ファイルがブラウザーの既定のダウンロード フォルダーにダウンロードされ、エクスポートされたラベルが含まれます。
   

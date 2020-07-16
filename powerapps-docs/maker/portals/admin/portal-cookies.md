@@ -1,20 +1,19 @@
 ---
 title: Power Apps ポータルの Cookie | MicrosoftDocs
 description: Power Apps ポータルが使用する Cookie を把握します。
-author: tapanm-msft
-manager: kvivek
+author: neerajnandwana-msft
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 03/10/2020
 ms.author: nenandw
 ms.reviewer: tapanm
-ms.openlocfilehash: 13730a4faa284890136cc04d2f56ff50c46d42e2
-ms.sourcegitcommit: cf492063eca27fdf73459ff2f9134f2ca04ee766
+ms.openlocfilehash: 48868947721f9c5e1c732336df28a7679eb7dda1
+ms.sourcegitcommit: 2fd873a1ea17f419f6194714efffa47a9bd00c2e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "3136658"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "3507272"
 ---
 # <a name="cookies-in-power-apps-portals"></a>Power Apps ポータルの Cookie
 

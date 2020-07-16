@@ -9,14 +9,12 @@ ms.custom: ''
 ms.date: 04/23/2020
 ms.author: pankar
 ms.reviewer: kvivek
-searchScope:
-- PowerApps
-ms.openlocfilehash: be5ebbab60cb941518d655df5256f8b4070684b3
-ms.sourcegitcommit: 943672dad0041d3bab25b44cd8c4d25e88f39b93
+ms.openlocfilehash: 4a4993bb7c54126d2161c11da516407c7d9f86b0
+ms.sourcegitcommit: 997384ebd01bda4f456f08689e024fb8ca5bf057
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/25/2020
-ms.locfileid: "3289255"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "3455384"
 ---
 # <a name="hospital-emergency-response---power-platform-sample-solution"></a>病院緊急時対応 - Power Platform サンプル ソリューション
 

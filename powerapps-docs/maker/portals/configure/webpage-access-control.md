@@ -1,20 +1,19 @@
 ---
 title: ポータル用 Web ページへのアクセスの制御 | MicrosoftDocs
 description: ポータルに Web ページ アクセス制御ルールを作成するための手順。
-author: tapanm-msft
-manager: kvivek
+author: sandhangitmsft
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 11/04/2019
-ms.author: tapanm
-ms.reviewer: ''
-ms.openlocfilehash: 894c06982084e2f9b4a96d5cd0189dd3a763b97e
-ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
+ms.author: sandhan
+ms.reviewer: tapanm
+ms.openlocfilehash: 7cba8135634efbeb23304c6b65c6c7d429bdeb38
+ms.sourcegitcommit: c12260f372ad2cc48d3146be570d2088c9ef1d86
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "2978110"
+ms.lasthandoff: 06/20/2020
+ms.locfileid: "3493077"
 ---
 # <a name="control-webpage-access-for-portals"></a>ポータル用 Web ページへのアクセスの制御
 

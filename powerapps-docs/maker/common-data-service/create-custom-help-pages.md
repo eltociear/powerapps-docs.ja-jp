@@ -2,7 +2,7 @@
 title: ユーザー定義のヘルプ ページを作成する | MicrosoftDocs
 description: UCI でユーザー定義のヘルプ ページを作成する
 ms.custom: ''
-ms.date: 01/15/2020
+ms.date: 06/19/2020
 ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
@@ -22,12 +22,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 716892b9b036eeefc225ea2bd206229354974dd0
-ms.sourcegitcommit: 82fa1758e29fe302f9a252fd9943ace03b7aada0
+ms.openlocfilehash: 5e5ee445c24b3f067eb2a0cd7dd66b7c1871dcb5
+ms.sourcegitcommit: c12260f372ad2cc48d3146be570d2088c9ef1d86
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "3427245"
+ms.lasthandoff: 06/20/2020
+ms.locfileid: "3492582"
 ---
 # <a name="create-guided-help-for-your-unified-interface-app"></a>統一インターフェイスアプリのガイド付きヘルプを作成する
 
@@ -57,9 +57,6 @@ ms.locfileid: "3427245"
 - バージョン 9.1.0.10300 またはそれ以降。
 - **ヘルプ ページ** 特権に対するグローバル作成、読み取り、書き込み、削除、追加、および追加のアクセス許可。 既定では、システム管理者とシステムカスタマイザの両方のセキュリティ ロールがこの特権を持っています。  
 - [ご利用の環境で、ユーザー定義のヘルプ ウィンドウを有効にしている必要があります。](#enable-custom-help-panes-for-your-environment) 
-- *ユーザー定義の* モデル駆動型アプリ。 
-    > [!IMPORTANT]
-    > この機能は、Dynamics 365 Sales や Dynamics 365 Customer Service アプリなどの Dynamics 365 のモデル駆動型アプリでは機能しません。
 
 ## <a name="enable-custom-help-panes-for-your-environment"></a>ご利用の環境で、ユーザー定義のヘルプ ウィンドウを有効にする
 1. モデル駆動形アプリを開き、コマンド バーの **設定** ![設定](../model-driven-apps/media/powerapps-gear.png) > **詳細設定**を選びます。

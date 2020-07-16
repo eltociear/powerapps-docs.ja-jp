@@ -1,20 +1,19 @@
 ---
 title: ポータル用 Web フォームのプロパティを構成する | MicrosoftDocs
 description: ポータル用 Web フォームのプロパティを構成するための手順。
-author: tapanm-msft
-manager: kvivek
+author: sandhangitmsft
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 11/04/2019
-ms.author: tapanm
-ms.reviewer: ''
-ms.openlocfilehash: 31e7dd819ba274a70a4c07bf7a21721a7cfa1f76
-ms.sourcegitcommit: a1b54333338abbb0bc3ca0d7443a5a06b8945228
+ms.author: sandhan
+ms.reviewer: tapanm
+ms.openlocfilehash: 7fdbb5b000ff95fd51262c121e6e8f2caa70da98
+ms.sourcegitcommit: c12260f372ad2cc48d3146be570d2088c9ef1d86
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "3125270"
+ms.lasthandoff: 06/20/2020
+ms.locfileid: "3493167"
 ---
 # <a name="define-web-form-properties-for-portals"></a>ポータルの Web フォーム プロパティを定義
 

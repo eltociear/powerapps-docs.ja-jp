@@ -1,20 +1,19 @@
 ---
 title: Power Apps ポータルで Web ファイルを作成および管理する | MicrosoftDocs
 description: ポータルで Web ファイルを作成し管理する方法について説明します。
-author: tapanm-msft
-manager: kvivek
+author: sandhangitmsft
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 11/04/2019
-ms.author: tapanm
-ms.reviewer: ''
-ms.openlocfilehash: 9e1e32291f6bc92bb5b1a873562dd966e4b394b7
-ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
+ms.author: sandhan
+ms.reviewer: tapanm
+ms.openlocfilehash: fcf6a36bd8115add7dc3b6311b105c4cd01b3d4c
+ms.sourcegitcommit: c12260f372ad2cc48d3146be570d2088c9ef1d86
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "2980398"
+ms.lasthandoff: 06/20/2020
+ms.locfileid: "3493752"
 ---
 # <a name="create-and-manage-web-files"></a>Web ファイルの作成および管理
 

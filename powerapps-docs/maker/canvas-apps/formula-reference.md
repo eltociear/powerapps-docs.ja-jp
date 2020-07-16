@@ -7,18 +7,18 @@ ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: tapanm
-ms.date: 05/04/2020
+ms.date: 05/20/2020
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 79c7c26f921edaac3e92d7418e842a696335c559
-ms.sourcegitcommit: 0c92e85f95f3baa04cce140c96e53d5d86d685c0
+ms.openlocfilehash: 5678b69f3d08c2c08cf19ad063f08269e210dd41
+ms.sourcegitcommit: 4b6f187c9501332f9acca5978fa326621f2980e5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "3333356"
+ms.lasthandoff: 05/22/2020
+ms.locfileid: "3393972"
 ---
 # <a name="formula-reference-for-power-apps"></a>Power Apps 向けの数式のリファレンス
 数式では、多くの要素を組み合わせて使用します。  使用できる要素は、次のとおりです。
@@ -26,7 +26,7 @@ ms.locfileid: "3333356"
 * **関数**はパラメーターを受け取り、演算を実行し、値を返します。 たとえば、**Sqrt(25)** は **5** を返します。 関数は、Microsoft Excel 関数をモデルにしています。  関数の中には、副作用を生じさせるものがあります。たとえば、**SubmitForm** 関数は、**Button.OnSelect** のような[動作の数式](working-with-formulas-in-depth.md)内でのみ正しく機能します。
 * **シグナル**は、環境に関する情報を返します。 たとえば、**[Location](functions/signals.md)** は、デバイスの現在の GPS 座標を返します。 シグナルは、パラメーターを受け取らず、副作用もありません。
 * **列挙体**は、事前定義された定数値を返します。 たとえば、**[Color](functions/function-colors.md)** は、**Color.Red** や **Color.Blue** などの事前定義された値を持つ列挙体です。  一般的な列挙体がこのページに記載されています。関数に固有の列挙体は、関数と併せて説明しています。
-* **[ThisItem](functions/operators.md#thisitem-operator)** や **[Parent](functions/operators.md#parent-operator)** などの**名前付き演算子**を使用すると、コンテナー内から情報にアクセスできます。
+* **[ThisItem](functions/operators.md#thisitem-operator)** や **[Self](functions/operators.md#self-and-parent-operators)** などの**名前付き演算子**を使用すると、コンテナー内から情報にアクセスできます。
 
 上記の他にも、次のような要素を使用できます。
 
@@ -253,7 +253,7 @@ ms.locfileid: "3333356"
 ## <a name="p"></a>P
 **[Param](functions/function-param.md)** – 起動時にキャンバス アプリに渡されるパラメーターにアクセスします。
 
-**[Parent](functions/operators.md#parent-operator)** – コンテナー コントロールのプロパティへのアクセスを提供します。
+**[Parent](functions/operators.md#self-and-parent-operators)** – コンテナー コントロールのプロパティへのアクセスを提供します。
 
 **[Patch](functions/function-patch.md)** – データ ソース内のレコードを変更または作成するか、データ ソースの外部でレコードをマージします。
 
@@ -306,6 +306,8 @@ ms.locfileid: "3333356"
 **[Second](functions/function-datetime-parts.md)** – 日付/時刻値の秒の部分を取得します。
 
 **[Select](functions/function-select.md)** – コントロールでの選択アクションをシミュレートし、**OnSelect** 式の評価を実行させます。
+
+**[Self](functions/operators.md#self-and-parent-operators)** - 現在のコントロールのプロパティへのアクセスができるようになります。
 
 **[Set](functions/function-set.md)** – グローバル変数の値を設定します。
 

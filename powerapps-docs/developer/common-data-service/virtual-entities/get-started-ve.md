@@ -1,26 +1,26 @@
 ---
 title: 仮想エンティティに関する入門情報 (Common Data Service) | Microsoft Docs
 description: 仮想エンティティは、 Common Data Service のエンティティとしてシームレスに表すことで、データの重複なしに、また、多くの場合、カスタム コーディングなしに、外部システムに存在するデータの統合を可能にします。
-ms.date: 10/31/2018
+ms.date: 06/24/2020
 ms.service: powerapps
 ms.topic: get-started-article
 applies_to:
 - Dynamics 365 (online)
 ms.assetid: 14c5fbbc-98db-4e49-b245-2c84c1cd11cd
-author: mayadumesh
-ms.author: jdaly
-manager: annbe
+author: Sunil-Garg
+ms.author: pehecke
+manager: ryjones
 search.audienceType:
 - developer
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 49ca9fdbd731a70c006ad9f550ee615442d1e851
-ms.sourcegitcommit: e3fc14acfc123642aac7154f96a07edd766f7810
+ms.openlocfilehash: bf67d4db2686d87c21cdbb4343028c47be4c7bee
+ms.sourcegitcommit: 8c157ad4ab7c01d55728a301abd616fee9341f9c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "3384851"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "3503167"
 ---
 # <a name="get-started-with-virtual-entities"></a>仮想エンティティに関する入門情報
 

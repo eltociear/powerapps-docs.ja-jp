@@ -1,20 +1,19 @@
 ---
 title: ポータルの Azure AD B2C プロバイダー設定 | MicrosoftDocs
 description: ポータルの Azure AD B2C プロバイダー設定を有効にするための手順。
-author: tapanm-msft
-manager: kvivek
+author: sandhangitmsft
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 01/03/2020
-ms.author: tapanm
+ms.author: sandhan
 ms.reviewer: tapanm
-ms.openlocfilehash: 37a515486afd2c57fa07cea24905584e9515ba60
-ms.sourcegitcommit: 6acc6ac7cc1749e9681d5e55c96613033835d294
+ms.openlocfilehash: 457a7127102fa3cc1af37979bd281a5bc32288af
+ms.sourcegitcommit: c12260f372ad2cc48d3146be570d2088c9ef1d86
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "3238507"
+ms.lasthandoff: 06/20/2020
+ms.locfileid: "3494787"
 ---
 # <a name="azure-ad-b2c-provider-settings-for-portals"></a>ポータルの Azure AD B2C プロバイダー設定
 

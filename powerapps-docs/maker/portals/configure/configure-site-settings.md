@@ -1,20 +1,19 @@
 ---
 title: ポータル用サイト設定の構成 | MicrosoftDocs
 description: ポータルのサイト設定と組織内のすべてのポータルのグローバル設定を追加および構成する手順。
-author: tapanm-msft
-manager: kvivek
+author: sandhangitmsft
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 10/18/2019
-ms.author: tapanm
-ms.reviewer: ''
-ms.openlocfilehash: 539df5b7515f739c64b9d6cefc1c92f79812736c
-ms.sourcegitcommit: a1b54333338abbb0bc3ca0d7443a5a06b8945228
+ms.author: sandhan
+ms.reviewer: tapanm
+ms.openlocfilehash: f2bb801f2766c930fb48b2bb1df24a61a5862a39
+ms.sourcegitcommit: c12260f372ad2cc48d3146be570d2088c9ef1d86
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "3126062"
+ms.lasthandoff: 06/20/2020
+ms.locfileid: "3489817"
 ---
 # <a name="configure-site-settings-for-portals"></a>ポータルのサイト設定の構成
 

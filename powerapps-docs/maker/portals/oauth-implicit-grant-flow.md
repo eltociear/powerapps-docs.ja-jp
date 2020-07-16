@@ -1,20 +1,19 @@
 ---
 title: ポータル内で OAuth 2.0 暗黙的許可フローを使用する | MicrosoftDocs
 description: クライアント側で外部 API を呼び出す方法と、あなたのポータルで OAuth の暗黙的な許可フローを使用することでそれらを保護する方法を説明します。
-author: tapanm-msft
-manager: kvivek
+author: gitanjalisingh33msft
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 01/24/2020
-ms.author: tapanm
-ms.reviewer: ''
-ms.openlocfilehash: a69d77122a6beb657a322da156e3cf895b5bec36
-ms.sourcegitcommit: b250e63e881d9bd10c0b3dea36c7f12e8a9c6ac2
+ms.author: gisingh
+ms.reviewer: tapanm
+ms.openlocfilehash: d75018d46bce9bfc8fdc065d3315f9483ec49b7e
+ms.sourcegitcommit: c12260f372ad2cc48d3146be570d2088c9ef1d86
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2020
-ms.locfileid: "2988039"
+ms.lasthandoff: 06/20/2020
+ms.locfileid: "3493932"
 ---
 # <a name="use-oauth-20-implicit-grant-flow-within-your-portal"></a>ポータル内で OAuth 2.0 の暗黙的な許可フローを使用する 
 

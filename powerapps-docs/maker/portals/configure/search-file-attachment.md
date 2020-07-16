@@ -1,20 +1,19 @@
 ---
 title: ポータルの添付ファイルのコンテンツ内の検索 | MicrosoftDocs
 description: ポータル内の添付ファイルのコンテンツ内を検索するよう、ポータルを構成する方法を説明します。
-author: tapanm-msft
-manager: kvivek
+author: sandhangitmsft
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 11/04/2019
-ms.author: tapanm
-ms.reviewer: ''
-ms.openlocfilehash: 99df8fa13dd066f8e5b2efa134529ac24a8facec
-ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
+ms.author: sandhan
+ms.reviewer: tapanm
+ms.openlocfilehash: 9c1c6bfd14736efac3b8c4fcc03cf455b51225dc
+ms.sourcegitcommit: c12260f372ad2cc48d3146be570d2088c9ef1d86
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "2980090"
+ms.lasthandoff: 06/20/2020
+ms.locfileid: "3494022"
 ---
 # <a name="search-within-file-attachment-content"></a>添付ファイルのコンテンツ内の検索
 

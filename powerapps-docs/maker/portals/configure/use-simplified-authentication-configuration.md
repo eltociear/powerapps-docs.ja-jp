@@ -1,20 +1,19 @@
 ---
 title: 簡素化された認証と ID プロバイダー構成を使用する (プレビュー) | MicrosoftDocs
 description: 迅速で簡単な、簡素化されたポータル構成を認証に使用する方法を説明します。
-author: tapanm-msft
-manager: kvivek
+author: sandhangitmsft
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 05/05/2020
-ms.author: tapanm
-ms.reviewer: ''
-ms.openlocfilehash: 6dc6fc21c32c044a49ff9364dbf0c3c95bcb04cf
-ms.sourcegitcommit: 13a78a66408d39b4bc90a72613b0d303abc07b1b
+ms.author: sandhan
+ms.reviewer: tapanm
+ms.openlocfilehash: cd4ddd631443cbd51693582045f13ada587efda2
+ms.sourcegitcommit: c12260f372ad2cc48d3146be570d2088c9ef1d86
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "3338224"
+ms.lasthandoff: 06/20/2020
+ms.locfileid: "3491407"
 ---
 # <a name="simplified-authentication-and-identity-provider-configuration-preview"></a>簡素化された認証と ID プロバイダー構成 (プレビュー)
 

@@ -1,20 +1,19 @@
 ---
 title: ポータルの Power Apps Common Data Service エンティティ タグを使用する | MicrosoftDocs
 description: ポータルで使用可能な Power Apps Common Data Service エンティティ タグについて説明します。
-author: tapanm-msft
-manager: kvivek
+author: gitanjalisingh33msft
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 11/28/2019
-ms.author: tapanm
-ms.reviewer: ''
-ms.openlocfilehash: 83247403a482f7ce980f83a5813be2fd158e1be0
-ms.sourcegitcommit: a1b54333338abbb0bc3ca0d7443a5a06b8945228
+ms.author: gisingh
+ms.reviewer: tapanm
+ms.openlocfilehash: a04c1af2590f56be099b0b1fea3a1868cef2acc9
+ms.sourcegitcommit: c12260f372ad2cc48d3146be570d2088c9ef1d86
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "3125666"
+ms.lasthandoff: 06/20/2020
+ms.locfileid: "3491542"
 ---
 # <a name="power-apps-common-data-service-entity-tags"></a>Power Apps Common Data Service エンティティ タグ
 

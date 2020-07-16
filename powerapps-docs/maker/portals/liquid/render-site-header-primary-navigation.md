@@ -1,20 +1,19 @@
 ---
 title: ポータルにおける Web サイト ヘッダーとプライマリ ナビゲーション バーをレンダリングする | MicrosoftDocs
 description: ポータル上に Web サイトのヘッダーと主なナビゲーション バーを表示するための手順とサンプルコード。
-author: tapanm-msft
-manager: kvivek
+author: gitanjalisingh33msft
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 10/07/2019
-ms.author: tapanm
-ms.reviewer: ''
-ms.openlocfilehash: d7725c5e577f7b2bc5f30d78cf3b13c6cd6d494d
-ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
+ms.author: gisingh
+ms.reviewer: tapanm
+ms.openlocfilehash: 6110fd2677e58577399836e2ed416702fa6ddc6f
+ms.sourcegitcommit: c12260f372ad2cc48d3146be570d2088c9ef1d86
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "2981058"
+ms.lasthandoff: 06/20/2020
+ms.locfileid: "3493617"
 ---
 # <a name="render-a-website-header-and-primary-navigation-bar"></a>Web サイト ヘッダーとプライマリ ナビゲーション バーの表示
 

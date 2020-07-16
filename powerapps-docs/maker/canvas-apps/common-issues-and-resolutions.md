@@ -7,26 +7,32 @@ ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: ''
-ms.date: 08/21/2019
+ms.date: 06/11/2020
 ms.author: kvivek
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 254034d608e5824f2e6358bfa84bb7f7fe9f178c
-ms.sourcegitcommit: 6b2961308c41867756ecdd55f55eccbebf70f7f0
+ms.openlocfilehash: 9f315382aea6576f3cd2bb09ba1476694602720d
+ms.sourcegitcommit: 3bc94ac014b12d2b04a1af598d38b875e9e5dc2a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "3307649"
+ms.lasthandoff: 06/12/2020
+ms.locfileid: "3444053"
 ---
 # <a name="common-issues-and-resolutions-for-power-apps"></a>Power Apps の一般的な問題と解決方法
 
 この記事では Power Apps の使用中に発生する可能性がある一般的な問題について説明します。 適用対象には回避策を示します。
 
-1. **Edge 経由でインポートされたカメラ画像が反転される** (2020 年 1 月 20 日)
+1. **埋め込まれたキャンバス アプリの一部を覆うブラックボックス** (2020年6月11日) - SharePoint フォーム、SharePoint Web パーツやモデル駆動型フォームなどの埋め込み型キャンバス アプリを使用する場合、アプリの一部をスクロールすると、多くのユーザーにブラック ボックスが表示されます。 この問題は、バージョン 83 以降のクローム ベースのブラウザで発生します。 現時点で、この問題を回避する方法はありません。 現在、チームが修正と回避策を見つけるために積極的に調査しています。
+   
+1. **SharePointカスタム フォームでの添付ファイルのダウンロードに関する問題** (2020年5月22日) - 添付ファイルコントロールを使用して添付ファイルをダウンロードする場合、Google Chrome のバージョン 83 、または新たな Microsoft Edge のバージョン 83 ブラウザーを使用すると、クリックしても反応しません。 回避策として、既定で SharePoint フォームを使用する用に変更するか、別のブラウザを使用してください。 現在、チームはこの問題の修正に積極的に取り組んでいます。 **修正は 2020年6月8日の週に展開されました**
+   
+1. **埋め込み型 Power Apps で添付ファイルをダウンロードする際の問題** (2020年5月22日) - 添付ファイルコントロールを使用して添付ファイルをダウンロードする場合、Google Chrome のバージョン 83 、または新たな  Microsoft Edge  のバージョン 83 ブラウザーを使用すると、クリックしても反応しません。 回避策として、別のブラウザを使用してください。 現在、チームはこの問題の修正に積極的に取り組んでいます。
+  
+1. **Microsoft Edge  経由でインポートされたカメラ画像が反転される** (2020 年 1 月 20 日)
 
-    カメラおよび Edge ブラウザーを使用すると、画像が反転される場合があります。  これは Edge の欠陥が原因です。  この問題を軽減するには、新しい Edge Chromium または別のブラウザーを使用してください。
+    カメラとレガシー版の Microsoft Edge  ブラウザーを使用すると、画像が反転される場合があります。 これはレガシー版 Microsoft Edge ブラウザの欠陥によるものです。 この問題に対処するには、新しい Microsoft Edge 、または別のブラウザーを使用してください。
     
 1. **カメラ画像にメタデータ情報が含まれていない** (2020 年 1 月 20 日)
 

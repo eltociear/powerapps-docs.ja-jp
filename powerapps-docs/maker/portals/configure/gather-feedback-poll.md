@@ -1,20 +1,19 @@
 ---
 title: ポータルのポーリングを使用してフィードバックを収集する | MicrosoftDocs
 description: ポータルでアンケートを作成し、アンケートを使用してフィードバックを収集する手順。
-author: tapanm-msft
-manager: kvivek
+author: sandhangitmsft
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 11/22/2019
-ms.author: tapanm
-ms.reviewer: ''
-ms.openlocfilehash: 561c67076e981c236f491638cdb6814ec56edcd7
-ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
+ms.author: sandhan
+ms.reviewer: tapanm
+ms.openlocfilehash: 2220efcd23eaa24d53de5d9488ba650165e41df8
+ms.sourcegitcommit: c12260f372ad2cc48d3146be570d2088c9ef1d86
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "2979983"
+ms.lasthandoff: 06/20/2020
+ms.locfileid: "3491137"
 ---
 # <a name="gather-feedback-by-using-polls-on-a-portal"></a>ポータルのポーリングを使用してフィードバックを収集する
 
@@ -38,7 +37,7 @@ ms.locfileid: "2979983"
 `{% include 'Poll Template' ad:ads[Wireframe Development] %}`
 
 > [!Note]
-> Web テンプレートの例が、スターター Web サイトで構成されます**。 ランダム ポーリングのテンプレートを使用して、特定のポーリングの配置エンティティからポーリングをランダムに表示するか、またはポーリング テンプレートのテンプレートを使用して特定のポーリングを表示します。 これらのテンプレートを編集するか、または例に基づき、[ポーリング](../liquid/liquid-objects.md#polls) を使用して、独自のテンプレートを作成します。 
+> Web テンプレートの例が、スターター Web サイトで構成されます。 ランダム ポーリングのテンプレートを使用して、特定のポーリングの配置エンティティからポーリングをランダムに表示するか、またはポーリング テンプレートのテンプレートを使用して特定のポーリングを表示します。 これらのテンプレートを編集するか、または例に基づき、[ポーリング](../liquid/liquid-objects.md#polls) を使用して、独自のテンプレートを作成します。 
 
 ## <a name="create-a-poll-placement"></a>ポーリングの配置の作成
 

@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 0c4e3c0fe4188b3b9f2d95cb479a23f6e54c193b
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 8a40a4cd000e44ad965232f2298576b15ec1fb96
+ms.sourcegitcommit: b5ab419dad4e9d64a5e6610641363b0d7487930a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2748846"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "3465445"
 ---
 # <a name="open-forms-views-and-dashboards-in-mobile-client-with-a-url"></a>URL を使用してモバイル クライアントでフォーム、ビュー、およびダッシュ ボードを開く
 
@@ -67,4 +67,4 @@ ms-dynamicsxrm://?pagetype=<VALUE>&etn=<VALUE>&id=<VALUE>
 ### <a name="see-also"></a>関連項目
 
  [URL を使用してフォーム、ビュー、ダイアログおよびレポートを開く](open-forms-views-dialogs-reports-url.md)  
- [クライアントの拡張](/dynamics365/customer-engagement/developer/extend-client)
+ 

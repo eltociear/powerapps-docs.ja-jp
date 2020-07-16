@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 1df865134029403158f28f5f052e2bc355b0bf19
-ms.sourcegitcommit: a5b3871e623cebd7de64a0c386503832a2d04c03
+ms.openlocfilehash: 5b6445ef8a604085ad139f89972bddb83c1ff71c
+ms.sourcegitcommit: eda1684352baa7cb0f95119362177f3934a7bd4d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "3331695"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "3409662"
 ---
 # <a name="view-3d-content-or-images-in-the-real-word-preview"></a>実際の言葉で 3D コンテンツまたは画像を表示する (プレビュー)
 
@@ -32,28 +32,28 @@ ms.locfileid: "3331695"
 
 
 
->[!IMPORTANT]
->3D コンテンツは .glb ファイル形式である必要があります。  
->さまざまな 3D 形式から [既存の 3D モデルを .glb ファイル形式に変換](/dynamics365/mixed-reality/import-tool/) できます。
+> [!IMPORTANT]
+> 3D コンテンツは .glb ファイル形式である必要があります。  
+> さまざまな 3D 形式から [既存の 3D モデルを .glb ファイル形式に変換](/dynamics365/mixed-reality/import-tool/) できます。
 
 コンポーネントを使用するには、使用する [各アプリの Mixed Reality (MR) 機能を有効にする](mixed-reality-overview.md#enable-the-mixed-reality-features-for-each-app) 必要があります。
 
 [MR コンポーネントを使用するための前提条件の確認](mixed-reality-overview.md#prerequisites) も必ず実行してください。
 
->[!TIP]
+> [!TIP]
 > MR コンポーネントは、フラット テクスチャ サーフェスの明るい環境で最適に動作します。 追跡を確立するときは、追跡するサーフェスにデバイスを向け、広い腕の動きでデバイスを右から左にゆっくりとパンします。 追跡に失敗した場合は、終了して MR ビューを入力し、追跡をリセットして再試行してください。
 
 ## <a name="use-the-component"></a>コンポーネントを使用する
 
 他の任意のボタン コントロールまたはコンポーネントの場合と同じように、コンポーネントをアプリに挿入します。
 
-[Power Apps Studio](https://create.powerapps.com) で編集用にアプリを開くと:
+[Power Apps Studio](https://create.powerapps.com) で編集用にアプリを開いて:
 
 1. **挿入**タブを開きます。
 2. **Mixed reality** を展開します。
 3. コンポーネントの **MR で表示**を選択して、アプリ スクリーンの中央に配置するか、またはスクリーンの任意の場所にドラッグおよびドロップします。
 
-  ![](./media/augmented-view-mr/augmented-view-mr.png)
+   ![MR コンポーネントのビューをアプリに挿入する](./media/augmented-view-mr/augmented-view-mr.png "MR コンポーネントのビューをアプリに挿入する")
 
 いくつかのプロパティを使用してコンポーネントを変更できます。
 
@@ -61,17 +61,17 @@ ms.locfileid: "3331695"
 
 次のプロパティは、**プロパティ**と**詳細**タブでコンポーネントの **MR で表示**ウィンドウにあります。
 
-![](./media/augmented-view-mr/augmented-view-mr-properties.png)
+![MR ペインのビューのプロパティ](./media/augmented-view-mr/augmented-view-mr-properties.png "MR ペインのビューのプロパティ")
 
 一部のプロパティは、**MR で表示**ウィンドウの**詳細**タブの**詳細オプション**でのみ使用できることに注意してください。
 
 プロパティ | 内容 | 種類​​ | 場所
 - | - | - | -
 テキスト | ボタンのラベル | 文字列 | プロパティ (**詳細**にもあります)
-表示の種類 | ボタンにアイコン、テキスト、またはその両方が表示されるかどうか | ドロップダウン セレクション | プロパティ (**詳細**にもあります)
-ソース | 表示する .glb ファイルを識別するデータ ソース。 **MR で表示**コンポーネントは次からのモデルの読み込みをサポートします:<br/><ul><li>一般にアクセス可能な、CORS 準拠の URL</li><li>Base64 エンコードされた URI</li><li>データ コネクタを介してアクセスされる添付ファイルまたはメディア コンテンツ</li></ul><br/>詳細については、**3D で表示**コンポーネントの [3D コンテンツの格納場所を定義する](mixed-reality-component-view-3d.md#define-where-the-3d-content-is-stored) を参照してください。 | 適用なし | **プロパティ** (**詳細**にもあります)
-オブジェクトの幅 | 表示される画像または 3D コンテンツの幅 | Integer | **プロパティ** (**詳細**にもあります)
-オブジェクトの高さ | 表示される画像または 3D コンテンツの高さ | Integer | **プロパティ** (**詳細**にもあります)
+表示の種類 | ボタンにアイコン、テキスト、またはその両方が表示されるかどうか。 | ドロップダウン セレクション | プロパティ (**詳細**にもあります)
+ソース | 表示する .glb ファイルを識別するデータ ソース。 **MR で表示**コンポーネントは次からのモデルの読み込みをサポートします:<br/><ul><li>一般にアクセス可能な、CORS 準拠の URL。</li><li>Base64 エンコードされた URI。</li><li>データ コネクタを介してアクセスされる添付ファイルまたはメディア コンテンツ。</li></ul><br/>詳細については、**3D で表示**コンポーネントの [3D コンテンツの格納場所を定義する](mixed-reality-component-view-3d.md#define-where-the-3d-content-is-stored) を参照してください。 | 適用なし | **プロパティ** (**詳細**にもあります)
+オブジェクトの幅 | 表示される画像または 3D コンテンツの幅。 | Integer | **プロパティ** (**詳細**にもあります)
+オブジェクトの高さ | 表示される画像または 3D コンテンツの高さ。 | Integer | **プロパティ** (**詳細**にもあります)
 オブジェクトの深さ | 3D コンテンツの 3 次元の深さ。 | Integer | **プロパティ** (**詳細**にもあります)
 出荷単位 | オブジェクトの幅、高さ、深さフィールドに使用される単位。 | ドロップダウン セレクション | **プロパティ** (**詳細**にもあります)
 写真 | Mixed Reality セッション中にキャプチャされた写真。 | | 該当なし (出力プロパティのみ)
@@ -98,7 +98,7 @@ ms.locfileid: "3331695"
 
 **[Font](./controls/properties-text.md)** – テキストを表示するフォントのファミリーの名前。
 
-**[FontStyle](./controls/properties-text.md)** - コンポーネント内のテキストのスタイル: **無し**、**取り消し線**、**下線**、または**イタリック**
+**[FontStyle](./controls/properties-text.md)** - コンポーネント内のテキストのスタイル: **なし**、**取り消し線**、**下線**、または **イタリック**。
 
 **[FontSize](./controls/properties-text.md)** – コントロールに表示されるテキストのフォント サイズ。
 
@@ -128,11 +128,11 @@ ms.locfileid: "3331695"
 
 **[TabIndex](./controls/properties-accessibility.md)** – キーボード ナビゲーションの順序。
 
-**[TextAlignment](./controls/properties-text.md)** - テキストの配置: **中央揃え**、**左揃え**、**右揃え**、または両端揃え
+**[TextAlignment](./controls/properties-text.md)** - テキストの配置: **中央揃え**、**左揃え**、**右揃え**、または両端揃え。
 
 **[Tooltip](./controls/properties-core.md)** – ユーザーがコントロールにカーソルを置くときに表示される説明テキスト。
 
-**[VerticalAlign](./controls/properties-text.md)** – コントロールの垂直方向の中心に対するコントロール上でのテキストの位置: **中央**、**上部**、または**下部**
+**[VerticalAlign](./controls/properties-text.md)** – コントロールの垂直方向の中心に対するコントロール上でのテキストの位置: **中央**、**上部**、または **下部**。
 
 **[Visible](./controls/properties-core.md)** – コントロールが表示されるか非表示になるか。
 

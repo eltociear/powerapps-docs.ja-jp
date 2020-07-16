@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: c2176e4915970f214a8c74fa8c4f1ac61fd81f53
-ms.sourcegitcommit: 6c73e316f866af6a34619f95a5ac64ad1664b48a
+ms.openlocfilehash: 143930d9590d094973386d363a0386da185818df
+ms.sourcegitcommit: b5ab419dad4e9d64a5e6610641363b0d7487930a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "3326445"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "3465505"
 ---
 # <a name="open-forms-views-dialogs-and-reports-with-a-url"></a>URL を使用してフォーム、ビュー、ダイアログ、およびレポートを開く
 
@@ -229,6 +229,5 @@ function getReportURL(action,fileName,id) {
  [リボンのカスタマイズ](customize-commands-ribbon.md)<br/>
  [JavaScript を使用したクライアント スクリプト](client-scripting.md)<br/>
  [Web リソース](web-resources.md)<br/> 
- [クライアントの拡張](/dynamics365/customer-engagement/developer/extend-client)<br/> 
- [SiteMap を使用したアプリケーション ナビゲーションの変更](/dynamics365/customer-engagement/developer/customize-dev/change-application-navigation-using-sitemap)<br/> 
- [URL によるダイアログの起動](/dynamics365/customer-engagement/developer/actions-dialogs#StartDialog)
+ [SiteMap を使用したアプリケーション ナビゲーションの変更](https://docs.microsoft.com/powerapps/maker/model-driven-apps/create-site-map-app)
+ 

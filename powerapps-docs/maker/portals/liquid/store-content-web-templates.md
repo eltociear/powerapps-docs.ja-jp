@@ -1,20 +1,19 @@
 ---
 title: ポータルでの Web テンプレートを使用したソース コンテンツの保存 | MicrosoftDocs
 description: ポータル上の Web テンプレートを使用してコンテンツを保存する手順。
-author: tapanm-msft
-manager: kvivek
+author: gitanjalisingh33msft
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 10/07/2019
-ms.author: tapanm
-ms.reviewer: ''
-ms.openlocfilehash: 0738813d9836803ba9e0826da4314d95bd4a2a3f
-ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
+ms.author: gisingh
+ms.reviewer: tapanm
+ms.openlocfilehash: 2e69170a0b77fe7ad9314c97ae4eeef78a6d2641
+ms.sourcegitcommit: c12260f372ad2cc48d3146be570d2088c9ef1d86
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "2977318"
+ms.lasthandoff: 06/20/2020
+ms.locfileid: "3491092"
 ---
 # <a name="store-source-content-by-using-web-templates"></a>Web テンプレートを使用したソース コンテンツの保存
 

@@ -1,20 +1,19 @@
 ---
 title: ポータルで反復タグを使用する | MicrosoftDocs
 description: ポータルで使用可能な反復タグについて説明します
-author: tapanm-msft
-manager: kvivek
+author: gitanjalisingh33msft
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 10/07/2019
-ms.author: tapanm
-ms.reviewer: ''
-ms.openlocfilehash: 3240b06c54b24778a8327d403a36902a3b3e0da4
-ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
+ms.author: gisingh
+ms.reviewer: tapanm
+ms.openlocfilehash: 14953a7fbb006d8c1f678580a361945e19d44ddc
+ms.sourcegitcommit: c12260f372ad2cc48d3146be570d2088c9ef1d86
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "2980750"
+ms.lasthandoff: 06/20/2020
+ms.locfileid: "3490182"
 ---
 # <a name="iteration-tags"></a>反復タグ
 

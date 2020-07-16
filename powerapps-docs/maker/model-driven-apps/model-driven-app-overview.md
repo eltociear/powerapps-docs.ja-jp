@@ -1,32 +1,27 @@
 ---
 title: Power Apps を使用したモデル駆動型アプリの構築の概要 | Microsoft Docs
-description: Power Apps アプリで使用するエンティティを作成および構成するための詳細な手順です。
-documentationcenter: na
+description: Power Apps モデル駆動型アプリで使用するエンティティを作成および構成するための詳細な手順。
 author: Mattp123
-manager: kvivek
-editor: ''
-tags: ''
 ms.service: powerapps
-ms.devlang: na
 ms.topic: conceptual
 ms.component: model
-ms.date: 02/12/2020
+ms.date: 06/16/2020
 ms.author: matp
 search.audienceType:
 - maker
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: d29ec6ca429efb4a7c221b888c77f01841542a18
-ms.sourcegitcommit: 6cffa70358fd2e388d64a01f906c8c196fbbdefb
+ms.openlocfilehash: 79eb00aa79bb2c172dc3bc17cbf17d05713b701c
+ms.sourcegitcommit: 213c46f7055eb71b9064b0645d8d17cf8eaad179
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "3069808"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "3456193"
 ---
 # <a name="what-are-model-driven-apps-in-power-apps"></a>Power Apps におけるモデル駆動型アプリとは?
 
-モデル駆動型アプリの設計は、アプリ開発へのコンポーネントを重視した手法です。 モデル駆動型アプリの設計は、コードを必要とせず、作成するアプリはシンプルにもきわめて複雑にもすることができます。  デザイナーがアプリ レイアウトを完全に制御するキャンバス アプリ開発とは違い、モデル駆動型アプリではレイアウトの多くが自動的に決まり、アプリに追加するコンポーネントによって大部分が指定されます。
+モデル駆動型アプリ設計は、アプリ開発においてコンポーネントに焦点を絞ったアプローチです。 モデル駆動型アプリの設計は、コードを必要とせず、作成するアプリはシンプルにもきわめて複雑にもすることができます。  デザイナーがアプリ レイアウトを完全に制御するキャンバス アプリ開発とは違い、モデル駆動型アプリではレイアウトの多くが自動的に決まり、アプリに追加するコンポーネントによって大部分が指定されます。
 
 ![サンプル モデル駆動型アプリ](media/model-driven-app-overview/model-app-sample.png)
 
@@ -54,7 +49,9 @@ ms.locfileid: "3069808"
 
 ![アプリ デザイナー](media/model-driven-app-overview/app-designer.png)
 
-## <a name="next-steps"></a>次のステップ
+Power Apps が初めてで、Power Apps を使用してアイデアを完全に機能するソリューションに変換する方法を学びたい場合は、[Power Apps プロジェクトの計画](/powerapps/guidance/planning/introduction) から始めてください。
+
+## <a name="next-steps"></a>次の手順
 
 [モデル駆動型アプリを作成する](build-first-model-driven-app.md)
 

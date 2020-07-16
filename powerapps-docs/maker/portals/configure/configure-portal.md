@@ -1,20 +1,19 @@
 ---
 title: ポータル管理アプリの概要 | MicrosoftDocs
 description: ポータル管理アプリに関する情報です。
-author: tapanm-msft
-manager: kvivek
+author: sandhangitmsft
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 10/07/2019
-ms.author: tapanm
-ms.reviewer: ''
-ms.openlocfilehash: 2a0cc4506673ba8b11e5b1df7103cd02047acab1
-ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
+ms.author: sandhan
+ms.reviewer: tapanm
+ms.openlocfilehash: a37fb6c63a62f8ebc57c15393642909d4dd1069e
+ms.sourcegitcommit: c12260f372ad2cc48d3146be570d2088c9ef1d86
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "2979078"
+ms.lasthandoff: 06/20/2020
+ms.locfileid: "3494472"
 ---
 # <a name="portal-management-app"></a>ポータル管理アプリ
 

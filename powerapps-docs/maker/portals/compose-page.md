@@ -1,20 +1,19 @@
 ---
 title: Web ページの作成 | Microsoft Docs
 description: ポータルの Web ページを構成するための手順
-author: tapanm-msft
-manager: kvivek
+author: neerajnandwana-msft
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 05/11/2020
 ms.author: nenandw
 ms.reviewer: tapanm
-ms.openlocfilehash: 2181d8211c6bfbdacb70c43433e0c03e7f0f66d0
-ms.sourcegitcommit: ef921bbf0908283a3621c2ca1069e6b58a2b14e7
+ms.openlocfilehash: c823eada8c7ab079f465fefef48f06172ebbb0ee
+ms.sourcegitcommit: 2fd873a1ea17f419f6194714efffa47a9bd00c2e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "3373709"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "3507497"
 ---
 # <a name="compose-a-page"></a>ページの作成
 

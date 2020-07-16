@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 9da1202dc157d7f763dd4bfd2e4c2040a053b704
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: d304bb2b97d76df08c76ef3929451392463abf66
+ms.sourcegitcommit: b89aa4dff729ccd456d9d5521de63853f4a3b2bb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "3307235"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "3427889"
 ---
 # <a name="troubleshooting-startup-issues-for-power-apps"></a>Power Apps の起動時の問題のトラブルシューティング
 
@@ -63,7 +63,7 @@ Power Apps は、ユーザー ID および基本設定を含む一部のデー�
 
 - **オプション 1: すべてのサイトのローカル データを有効にする**
 
-    1. Internet Explorer および Edge windows すべてを閉じます。
+    1. Internet Explorer と Microsoft Edge のすべてのウィンドウを閉じます。
     2. **OK** を選択して、**インターネット オプション** ダイアログ ボックスを閉じます。
     3. **OK** を選択します。
     4. **powerapps.com** のエントリを削除します。
@@ -86,15 +86,15 @@ Power Apps は、ユーザー ID および基本設定を含む一部のデー�
     6. “同意” **powerapps.com** にエントリを追加します。
     7. **OK** を選択します。
     8. インターネット オプション ダイアログ ボックスを閉じるには **OK** を選択します。
-    9. Internet Explorer および Edge windows すべてを閉じます。
+    9. Internet Explorer と Microsoft Edge のすべてのウィンドウを閉じます。
 
-### <a name="instructions-for-edge"></a>Edge の説明
-1. Edge を開きます。
-2. Edge ツールバーで、**その他** > **設定**を選択します。
+### <a name="instructions-for-microsoft-edge"></a>Microsoft Edge の説明
+1. Microsoft Edge を開きます。
+2. Microsoft Edge ツールバーで、**詳細** > **設定** を選択します。
 3. パネルの下部近くで、**詳細設定を表示**を選択します。
 4. パネルの下部近くで、**Cookies** ドロップダウン オプション リストを検索します。
 5. **Cookie をブロックしない**を選択します。
-6. Internet Explorer および Edge windows すべてを閉じます。
+6. Internet Explorer と Microsoft Edge のすべてのウィンドウを閉じます。
 
 ### <a name="instructions-for-chrome"></a>Chrome の説明
     
@@ -118,9 +118,9 @@ Power Apps は、ユーザー ID および基本設定を含む一部のデー�
     6. **完了**を選択します。
 
 
-## <a name="resolution-2-configure-trust-zones-for-internet-explorer-and-edge"></a>解決方法 2: Internet Explorer および Edge のセキュリティ ゾーンを構成する
+## <a name="resolution-2-configure-trust-zones-for-internet-explorer-and-microsoft-edge"></a>解決策 2: Internet Explorer と Microsoft Edge の信頼ゾーンを構成する
 
-Internet Explorer および Edge は *セキュリティ ゾーン*を使用します。 Power Apps が依存するサービスが、ブラウザー設定の異なるセキュリティ ゾーンにある場合、問題が起こる可能性があります。 これらの設定は Internet Explorer および Edge の両方に適用されるとしても、アクセスする最も簡単な方法は Internet Explorer からです。 (これらの設定の一部を変更するには、IT 管理者の支援が必要になる場合があります。)
+Internet Explorer と Microsoft Edge は *信頼ゾーン* を使用します。 Power Apps が依存するサービスが、ブラウザー設定の異なるセキュリティ ゾーンにある場合、問題が起こる可能性があります。 これらの設定は Internet Explorer と Microsoft Edge の両方に適用されますが、それらにアクセスする最も簡単な方法は Internet Explorer からです。 (これらの設定の一部を変更するには、IT 管理者の支援が必要になる場合があります。)
 
 - **オプション 1: 必要な Power Apps ドメインを信頼済みサイトゾーンへ追加する**
     1. ブラウザーのツールバーで、歯車のアイコンを選択します。
@@ -137,7 +137,7 @@ Internet Explorer および Edge は *セキュリティ ゾーン*を使用し�
         - **https://*.powerapps.com** (アスタリスクはアドレスの一部です、置き換えないでください)
     7. **閉じる**を選択します。
     8. **OK** を選択します。
-    9. Internet Explorer および Edge windows すべてを閉じます。
+    9. Internet Explorer と Microsoft Edge のすべてのウィンドウを閉じます。
  
 
 - **オプション 2: すべての Power Apps ドメインを信頼済みサイトゾーンから削除する**

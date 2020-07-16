@@ -8,24 +8,23 @@ ms.service: powerapps
 ms.topic: article
 author: JimDaly
 ms.author: jdaly
-manager: ryjones
 search.audienceType:
 - developer
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: bc09f59223164a7c044a1a19894245eb68fd298f
-ms.sourcegitcommit: a1b54333338abbb0bc3ca0d7443a5a06b8945228
+ms.openlocfilehash: 0bf41b5a3e2d7b22e1358d06fda4788d5a4ab91b
+ms.sourcegitcommit: 997384ebd01bda4f456f08689e024fb8ca5bf057
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "3126522"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "3455497"
 ---
 # <a name="workflow-extensions"></a>ワークフローの拡張機能
 
 Common Data Service で使用されるワークフローのデザイナー内で使用可能なオプションを拡張できます。 これらの拡張機能は、[CodeActivity](/dotnet/api/system.activities.codeactivity) クラスを拡張するクラスを含むアセンブリを追加することによって追加されます。 これらの拡張機能は一般的に、 *ワークフロー アセンブリ* または *ワークフロー活動* と呼ばれます。
 
-ワークフロー、カスタム アクション、およびダイアログで使用されるデザイナー内のこれらカスタム拡張機能を使用できます。
+ワークフロー、カスタム アクション、ダイアログ (非推奨) で使用されるデザイナー内のこれらカスタム拡張機能を使用できます。
 
 > [!IMPORTANT]
 > 可能な限り、ビジネスロジックを定義するいくつかの宣言型オプションの 1 つを適用することを最初に検討する必要があります。 詳細情報: [Common Data Service でビジネスロジックを適用](../../../maker/common-data-service/cds-processes.md)
@@ -133,7 +132,7 @@ Dynamics 365 Sales または Service ソリューションがある場合、ソ�
 
 ## <a name="add-parameters"></a>パラメータを追加する
 
-クラスのパラメーターを定義するとき、それらを[InArgument\<T>](/dotnet/api/system.activities.inargument-1)、[OutArgument\<T>](/dotnet/api/system.activities.outargument-1)、または [InOutArgument\<T>](/dotnet/api/system.activities.inoutargument-1) の種類として定義する必要があります。 これらの種類は、パラメーターを取得または設定するために共通の [引数クラス](/dotnet/api/system.activities.argument) から継承したメソッドを提供します。 コードは Execute メソッドでこれらのメソッドを使用します。 詳細: [Execute メソッドにコードを追加する](#add-your-code-to-the-execute-method)
+クラスのパラメーターを定義するとき、[InArgument\<T>](/dotnet/api/system.activities.inargument-1)、[OutArgument\<T>](/dotnet/api/system.activities.outargument-1)、または[InOutArgument\<T>](/dotnet/api/system.activities.inoutargument-1)の種類として定義する必要があります。 これらの種類は、パラメーターを取得または設定するために共通の [引数クラス](/dotnet/api/system.activities.argument) から継承したメソッドを提供します。 コードは Execute メソッドでこれらのメソッドを使用します。 詳細: [Execute メソッドにコードを追加する](#add-your-code-to-the-execute-method)
 
 ユーザー定義ワークフロー活動が入力または出力パラメーターを使用する場合、定義するパブリック クラスのプロパティに適した .NET 属性を追加する必要があります。 このデータはプロセス デザイナーによって読み取られ、プロセス デザイナーでどのようにパレメーターを設定できるかを定義します。
 
@@ -275,7 +274,7 @@ protected override void Execute(CodeActivityContext context)
 
 ### <a name="use-the-organization-service"></a>組織サービスの使用
 
-組織サービスを使用してデータ操作を実行する必要がある場合、<xref:Microsoft.Xrm.Sdk.IOrganizationServiceFactory> インターフェイスで[CodeActivityContext.GetExtension\<T>](/dotnet/api/system.activities.activitycontext.getextension) メソッドを使用してこれにアクセスできます。 そこから、<xref:Microsoft.Xrm.Sdk.IOrganizationServiceFactory.CreateOrganizationService(System.Nullable{System.Guid})> メソッドを使用して、データ操作を実行するために使用できるサービス プロキシのインスタンスにアクセスできます。 <xref:Microsoft.Xrm.Sdk.Workflow.IWorkflowContext>.<xref:Microsoft.Xrm.Sdk.IExecutionContext.InitiatingUserId> 操作が電話プロセスと同じコンテキストで行われるようにする場合、使用するユーザー コンテキストを特定するために使用できます。
+組織サービスを使用してデータ操作の実行が必要になる場合、<xref:Microsoft.Xrm.Sdk.IOrganizationServiceFactory> インターフェイスで [CodeActivityContext.GetExtension\<T>](/dotnet/api/system.activities.activitycontext.getextension) メソッドを使用してこれにアクセスできます。 そこから、<xref:Microsoft.Xrm.Sdk.IOrganizationServiceFactory.CreateOrganizationService(System.Nullable{System.Guid})> メソッドを使用して、データ操作を実行するために使用できるサービス プロキシのインスタンスにアクセスできます。 <xref:Microsoft.Xrm.Sdk.Workflow.IWorkflowContext>.<xref:Microsoft.Xrm.Sdk.IExecutionContext.InitiatingUserId> 操作が電話プロセスと同じコンテキストで行われるようにする場合、使用するユーザー コンテキストを特定するために使用できます。
 組織サービスにアクセスするには `Execute` 関数の次のコードを使用します。
 
 ```csharp

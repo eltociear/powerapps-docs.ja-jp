@@ -9,14 +9,12 @@ ms.custom: ''
 ms.date: 06/10/2020
 ms.author: pankar
 ms.reviewer: kvivek
-searchScope:
-- PowerApps
-ms.openlocfilehash: 51187e422d1081f6c7b3042896099b4463185b86
-ms.sourcegitcommit: 6e4a8cc9ddfb0ceb894fe7fbd626021633033907
+ms.openlocfilehash: 30aa2a2d44cdb2f85f73296601f4117f8a0b2dcc
+ms.sourcegitcommit: 997384ebd01bda4f456f08689e024fb8ca5bf057
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2020
-ms.locfileid: "3443068"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "3455208"
 ---
 # <a name="deploy-the-hospital-emergency-response-app"></a>病院緊急時対応アプリをデプロイする
 
@@ -90,7 +88,7 @@ Power Apps を購入後、Common Data Service データベースで環境を作�
 > 
 > - 構成とサンプル データは、新規インストールの場合にのみインストールされます。 このアプリを以前に環境にインストールしている場合、既存のデータが上書きされないようにするため、インストール中に構成データとサンプル データはインストールされません。
 >
-> - 病院から[地域](/powerapps/sample-apps/regional-emergency-response/overview)ソリューションにデータを転送する場合は、ソリューションをインストールする前に[接続の作成](/powerapps/sample-apps/emergency-response-data-transfer#step-1-create-connections)で説明したように、ご利用の環境に接続を作成しておく必要があります。 
+> - 病院から[地域](/powerapps/sample-apps/regional-emergency-response/overview)ソリューションにデータを転送する場合は、ソリューションをインストールする前に[接続の作成](/powerapps/sample-apps/emergency-response-data-transfer#step-1-create-connections)で説明したように、ご利用の環境に接続を作成しておく必要があります。 既成のソリューション [病院から地域へデータを転送する](../emergency-response-data-transfer.md) では、データ転送メカニズムにセキュア ファイル転送プロトコル (SFTP) を使用しています。 
 
 次の 3 つのオプションのいずれかを使用してアプリをインストールできます。
 

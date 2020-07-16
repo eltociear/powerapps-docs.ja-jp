@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 2a4b4a6bf2da6cc6588a0fcf8b7523bae1c7da5f
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: ac3564f99cc878692875a38369a16ee301f29c1d
+ms.sourcegitcommit: b5ab419dad4e9d64a5e6610641363b0d7487930a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2753587"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "3465541"
 ---
 # <a name="sample-pass-multiple-values-to-a--web-resource-through-the-data-parameter"></a>サンプル: データ パラメーターを使用した Web リソースへの複数の値の引き渡し
 
@@ -205,6 +205,7 @@ ms.locfileid: "2753587"
  `ParseDataValue` 関数は、`getDataParam` と同様のロジックを使用してカスタム パラメーター区切り文字を特定し、名前と値のペアの配列を作成します。 次に、テーブルを生成し、空の document.body に追加します。  
   
 ### <a name="see-also"></a>関連項目  
+
  [Web リソース](web-resources.md)   
  [サンプル: Web リソースとしてファイルをインポート](sample-import-files-web-resources.md)   
  [Web ページ (HTML) の Web リソース](webpage-html-web-resources.md)   

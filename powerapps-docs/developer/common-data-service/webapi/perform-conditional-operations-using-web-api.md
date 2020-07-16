@@ -2,7 +2,7 @@
 title: Web API (Common Data Service) を使って条件付き操作を実行する| Microsoft Docs
 description: Web API を使用して特定の操作を実行するかどうかおよびその方法を決定する、条件の作成方法について説明します。
 ms.custom: ''
-ms.date: 04/06/2020
+ms.date: 06/19/2020
 ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -20,12 +20,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: aa6d6827994749d48981144fd2deea0d1f839a83
-ms.sourcegitcommit: 49b69129262a9b530e69508e84c3822b742066df
+ms.openlocfilehash: 3fe0f0efb28c7d7fdc6051916df70b57f249a3ee
+ms.sourcegitcommit: c12260f372ad2cc48d3146be570d2088c9ef1d86
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "3233751"
+ms.lasthandoff: 06/20/2020
+ms.locfileid: "3490207"
 ---
 # <a name="perform-conditional-operations-using-the-web-api"></a>Web API を使用する条件付き演算を実行する
 
@@ -85,6 +85,12 @@ GET [Organization URI]/api/data/v9.0/EntityDefinitions(LogicalName='<Entity Logi
 ### <a name="query-must-not-include-expand"></a>クエリに $expand を含めることはできません
 
 Etag は、取得される単一レコードが変更されたかどうかのみを検出できます。 クエリで `$expand` を使用すると、追加のレコードが返され、それらのレコードが変更されたかどうかを検出できなくなります。 クエリに `$expand` が含まれる場合、 `304 Not Modified` は返されません。
+
+### <a name="query-must-not-include-annotations"></a>クエリに注釈を含めることはできません
+
+`Prefer: odata.include-annotations` ヘッダーが `GET` 要求に含まれている場合、`304 Not Modified` を返すことはありません。 注釈の値は、関連するレコードの値を参照できます。 これらのレコードは変更されている可能性があり、この変更は検出できなかったため、何も変更されていないことを示すのは正しくありません。
+
+
   
 <a name="bkmk_limitUpsertOperations"></a>
   

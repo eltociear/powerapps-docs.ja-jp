@@ -13,18 +13,18 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 9d5984a39d2f2d28d684480237623c68a12adef4
-ms.sourcegitcommit: a5b3871e623cebd7de64a0c386503832a2d04c03
+ms.openlocfilehash: 8497663a4ebebd744e44ce9b89c819c2c34d56a0
+ms.sourcegitcommit: 5e195cb09ab43d31c854efdc4e7e8dc9f1955ca4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "3331693"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "3418697"
 ---
 # <a name="create-and-view-predefined-3d-shapes-in-mixed-reality-preview"></a>Mixed Reality で事前定義された 3D 図形を作成および表示する (プレビュー)
 
 [!INCLUDE [cc-beta-prerelease-disclaimer.md](../../includes/cc-beta-prerelease-disclaimer.md)]
 
-アプリの **MR の図形表示**コンポーネントを使用して、シンプルなキューブが指定されたスペースにどのように収まるかをユーザーが確認できるようにします。 ユーザーは、提供される特定のオブジェクトがどのようにスペースに収まるかを確認するために、これを実行する可能性があります。 オブジェクトの 3D モデルがある場合は、代わりに [**MR で表示**コンポーネント](mixed-reality-component-view-mr.md) を使用できます。
+アプリの **MR の図形表示** コンポーネントを使用して、シンプルな立方体が指定されたスペースに収まるかをユーザーが確認できるようにします。 ユーザーは、提供される特定のオブジェクトがどのようにスペースに収まるかを確認するために、これを実行する可能性があります。 オブジェクトの 3D モデルがある場合は、代わりに [**MR で表示**コンポーネント](mixed-reality-component-view-mr.md) を使用できます。
 
 コンポーネントは、アプリにボタンを作成します。 アプリのユーザーがボタンをクリックすると、キューブがデバイスのライブ カメラ フィードにオーバーレイされます。 Power Apps でコンポーネントを編集するとき、キューブのディメンションを設定します。
 
@@ -34,20 +34,20 @@ ms.locfileid: "3331693"
 
 [MR コンポーネントを使用するための前提条件の確認](mixed-reality-overview.md#prerequisites) も必ず実行してください。
 
->[!TIP]
+> [!TIP]
 > MR コンポーネントは、フラット テクスチャ サーフェスの明るい環境で最適に動作します。 追跡を確立するときは、追跡するサーフェスにデバイスを向け、広い腕の動きでデバイスを右から左にゆっくりとパンします。 追跡に失敗した場合は、終了して MR ビューを入力し、追跡をリセットして再試行してください。
 
 ## <a name="use-the-component"></a>コンポーネントを使用する
 
 他の任意のボタン コントロールまたはコンポーネントの場合と同じように、コンポーネントをアプリに挿入します。
 
-[Power Apps Studio](https://create.powerapps.com) で編集用にアプリを開くと:
+[Power Apps Studio](https://create.powerapps.com) で編集用にアプリを開いて:
 
 1. **挿入**タブを開きます。
 2. **Mixed reality** を展開します。
 3. コンポーネントの **MR の図形表示**を選択して、アプリ スクリーンの中央に配置するか、またはスクリーンの任意の場所にドラッグおよびドロップします。
 
-  ![](./media/augmented-view-shape/augmented-view-shape.png)
+   ![MR の図形表示を選択](./media/augmented-view-shape/augmented-view-shape.png "MR の図形表示を選択")
 
 いくつかのプロパティを使用してコンポーネントを変更できます。
 
@@ -55,14 +55,14 @@ ms.locfileid: "3331693"
 
 次のプロパティは、**プロパティ**と**詳細**タブのコンポーネントの **MR の図形表示**ウィンドウにあります。
 
-![](./media/augmented-view-shape/augmented-view-shape-properties.png)
+![MR ペインのコンポーネントの図形表示のプロパティ](./media/augmented-view-shape/augmented-view-shape-properties.png "MR ペインのコンポーネントの図形表示のプロパティ")
 
 一部のプロパティは、**MR の図形表示**ウィンドウの**詳細**タブでのみ使用できることに注意してください。
 
-プロパティ | 内容 | 種類​​ | 場所
+プロパティ | 内容 | 種類​​ | Location
 - | - | - | -
-テキスト | ボタンのラベル | 文字列 | プロパティ (**詳細**にもあります)
-表示の種類 | ボタンにアイコン、テキスト、またはその両方が表示されるかどうか | ドロップダウン セレクション | プロパティ (**詳細**にもあります)
+テキスト | ボタンのラベル。 | 文字列 | プロパティ (**詳細**にもあります)
+表示の種類 | ボタンにアイコン、テキスト、またはその両方が表示されるかどうか。 | ドロップダウン セレクション | プロパティ (**詳細**にもあります)
 形状の幅 | キューブの幅。 | Integer | **プロパティ** (**詳細**にもあります)
 形状の高さ | キューブの高さ。 | Integer | **プロパティ** (**詳細**にもあります)
 図形の深さ | キューブの 3 次元の深さ。 | Integer | **プロパティ** (**詳細**にもあります)
@@ -91,7 +91,7 @@ ms.locfileid: "3331693"
 
 **[Font](./controls/properties-text.md)** – テキストを表示するフォントのファミリーの名前。
 
-**[FontStyle](./controls/properties-text.md)** - コンポーネント内のテキストのスタイル: **無し**、**取り消し線**、**下線**、または**イタリック**
+**[FontStyle](./controls/properties-text.md)** - コンポーネント内のテキストのスタイル: **なし**、**取り消し線**、**下線**、または **イタリック**。
 
 **[FontSize](./controls/properties-text.md)** – コントロールに表示されるテキストのフォント サイズ。
 
@@ -121,11 +121,11 @@ ms.locfileid: "3331693"
 
 **[TabIndex](./controls/properties-accessibility.md)** – キーボード ナビゲーションの順序。
 
-**[TextAlignment](./controls/properties-text.md)** - テキストの配置: **中央揃え**、**左揃え**、**右揃え**、または両端揃え
+**[TextAlignment](./controls/properties-text.md)** - テキストの配置: **中央揃え**、**左揃え**、**右揃え**、または両端揃え。
 
 **[Tooltip](./controls/properties-core.md)** – ユーザーがコントロールにカーソルを置くときに表示される説明テキスト。
 
-**[VerticalAlign](./controls/properties-text.md)** – コントロールの垂直方向の中心に対するコントロール上でのテキストの位置: **中央**、**上部**、または**下部**
+**[VerticalAlign](./controls/properties-text.md)** – コントロールの垂直方向の中心に対するコントロール上でのテキストの位置: **中央**、**上部**、または **下部**。
 
 **[Visible](./controls/properties-core.md)** – コントロールが表示されるか非表示になるか。
 

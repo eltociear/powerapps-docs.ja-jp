@@ -1,22 +1,20 @@
 ---
 title: 地域政府機関の緊急応答およびモニタリング ポータルを使用する | Microsoft Docs
 description: 地域政府機関の緊急応答およびモニタリング ポータルを医療従事者として使用する方法を学びます。
-author: tapanm-msft
+author: pankajarora-msft
 manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 06/09/2020
-ms.author: tapanm
+ms.author: pankar
 ms.reviewer: tapanm
-searchScope:
-- PowerApps
-ms.openlocfilehash: aef73457df6180ec5d7e3fc2a0391d09cfb80c93
-ms.sourcegitcommit: 6e4a8cc9ddfb0ceb894fe7fbd626021633033907
+ms.openlocfilehash: c2c7434f453e456cf89550bd1502f9fd511ec98e
+ms.sourcegitcommit: b5ab419dad4e9d64a5e6610641363b0d7487930a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2020
-ms.locfileid: "3442936"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "3465729"
 ---
 # <a name="use-the-regional-governmentemergency-response-and-monitoring-portal"></a>地域政府機関の緊急応答およびモニタリング ポータルを使用する
 

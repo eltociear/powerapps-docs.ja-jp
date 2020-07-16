@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 5864476278e2bc90feff16725b78de725ab3e42b
-ms.sourcegitcommit: 6c73e316f866af6a34619f95a5ac64ad1664b48a
+ms.openlocfilehash: 3893cf77af33edeef2d9c2b821c74df2e058ea7e
+ms.sourcegitcommit: b5ab419dad4e9d64a5e6610641363b0d7487930a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "3326421"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "3465397"
 ---
 # <a name="get-started-with-model-driven-apps-customization-using-code"></a>コードを使用してモデル駆動型アプリケーションのカスタマイズを開始する
 
@@ -42,9 +42,9 @@ Power Apps ポータルにあるツールまたは公式ドキュメントで説
 
 - Power Apps ポータルまたはソリューション エクスプローラーのカスタマイズ。 詳細については、[モデル駆動型アプリの作成の概要](../../maker/model-driven-apps/model-driven-app-overview.md) を参照してください
 
-- Web アプリケーションの設定。 詳細については、[モデル駆動型アプリの管理](/dynamics365/customer-engagement/admin/admin-guide) を参照してください。
+- Web アプリケーションの設定。 詳細については、[モデル駆動型アプリの管理](https://docs.microsoft.com/powerapps/maker/model-driven-apps/model-driven-app-overview) を参照してください。
 
-- Reporting Services。 詳細については、[モデル駆動型アプリのレポートと分析ガイド](/dynamics365/customer-engagement/analytics/reporting-analytics-with-dynamics-365) を参照してください。
+- Reporting Services。 詳細については、[モデル駆動型アプリのレポートと分析ガイド](https://docs.microsoft.com/powerapps/maker/model-driven-apps/add-reporting-to-app) を参照してください。
 
 > [!NOTE]
 > モデル駆動型アプリの動作は、関連する Common Data Service に適用されるカスタマイズによって異なります。 詳細: [Common Data Service のサポートされているカスタマイズ](../common-data-service/supported-customizations.md)

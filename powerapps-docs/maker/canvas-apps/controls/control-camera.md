@@ -6,19 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.date: 04/07/2020
+ms.date: 06/12/2020
 ms.author: chmoncay
 ms.reviewer: tapanm
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 59c0f85dd71c9dc512e348d6d8ee9686d6945fa1
-ms.sourcegitcommit: 6acc6ac7cc1749e9681d5e55c96613033835d294
+ms.openlocfilehash: d75aa36ad81b37bf46221cc9b48d1bfbc73f5ec5
+ms.sourcegitcommit: e8e2b7251c301f44fb60af29a86107c099a543a8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "3309098"
+ms.lasthandoff: 06/12/2020
+ms.locfileid: "3447138"
 ---
 # <a name="camera-control-in-power-apps"></a>Power Apps でのカメラ コントロール
 
@@ -26,7 +26,7 @@ ms.locfileid: "3309098"
 
 ## <a name="description"></a>内容
 
-**カメラ** コントロールを使用して、デバイスのカメラで画像をキャプチャします。  デバイスにはカメラが必要であり、ユーザーはアプリがカメラを使用することを許可する必要があります。 カメラ コントロールは、Web ブラウザーでの実行時にサポートされます。
+**カメラ** コントロールを使用して、デバイスのカメラで画像をキャプチャします。 デバイスにはカメラが必要であり、ユーザーはアプリがカメラを使用することを許可する必要があります。
 
 直前にキャプチャした画像は、**写真**プロパティを通じて利用できます。 このプロパティを使用すると、画像は次のようになります:
 
@@ -40,6 +40,9 @@ ms.locfileid: "3309098"
 キャプチャされたメディアは、テキスト文字列 URI によって参照されます。 詳細については、[データ型ドキュメント](../functions/data-types.md#uris-for-images-and-other-media) をお読みください。
 
 カメラ コントロールによって生成される画像は、通常カメラの最大解像度ではありません。 最大解像度の画像が必要な場合は、[画像の追加](control-add-picture.md) コントロールを使用してください。
+
+> [!NOTE]
+> カメラ コントロールは、Microsoft Edge、Chrome、Firefox、Opera ブラウザ、および Android、iOS デバイスにてご利用頂けます。 他のすべてのブラウザやプラットフォームでは、アプリの一部の機能が動作しない旨の警告メッセージが表示されます。
 
 ## <a name="key-properties"></a>主要なプロパティ
 
@@ -173,7 +176,7 @@ ms.locfileid: "3309098"
     
 1. [ドロップ ダウン](control-drop-down.md) コントロールを [追加](../add-configure-controls.md) します。
 
-1. ドロップ ダウンの**項目**プロパティを次のように設定します:
+1. ドロップダウン **項目** プロパティの設定 :
 
     ```powerapps-dot
     Camera1.AvailableDevices

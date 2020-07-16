@@ -1,20 +1,19 @@
 ---
 title: ポータルでテンプレート タグを使用する | MicrosoftDocs
 description: ポータルで使用可能なテンプレート タグについて説明します
-author: tapanm-msft
-manager: kvivek
+author: gitanjalisingh33msft
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 06/06/2020
-ms.author: tapanm
-ms.reviewer: ''
-ms.openlocfilehash: 064980a6189b56b97f2be3dc64929db961e3ba5f
-ms.sourcegitcommit: 6f904789d817248eac0a4c9dd0c5fe37dfbb77ad
+ms.author: gisingh
+ms.reviewer: tapanm
+ms.openlocfilehash: 2ee4e1204bdd21a57207c201d450b73d8d7ec394
+ms.sourcegitcommit: c12260f372ad2cc48d3146be570d2088c9ef1d86
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "3434615"
+ms.lasthandoff: 06/20/2020
+ms.locfileid: "3491047"
 ---
 # <a name="template-tags"></a>テンプレート タグ
 

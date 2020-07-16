@@ -7,18 +7,18 @@ ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: tapanm
-ms.date: 08/08/2017
+ms.date: 05/21/2020
 ms.author: kaagar
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: b336b6d73cbd3db8aac435035d44859080208534
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: 76f74a9d52f0a3957bda37b825eb8be849cd97ef
+ms.sourcegitcommit: 4b6f187c9501332f9acca5978fa326621f2980e5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "3306522"
+ms.lasthandoff: 05/22/2020
+ms.locfileid: "3394376"
 ---
 # <a name="send-a-push-notification-in-power-apps"></a>Power Apps でプッシュ通知を送信する
 プッシュ通知は、主に、アプリのユーザーの注意を促し、および重要なタスクに優先順位を付けるようにするため、コンシューマおよびビジネス シナリオにおいてモバイル アプリで使用されます。 Power Apps では Power Apps 通知コネクタを使用して通知を送信できます。 Power Apps で作成したアプリに、ネイティブ プッシュ通知を送信できます。 通知の種類は、今後追加される予定です。
@@ -141,6 +141,7 @@ PowerAppsNotification.SendPushNotification(
 * 現時点では、Web ブラウザーでのみアプリを実行するユーザーにはプッシュ通知を提供していません。
 * 通知は、特定のアプリ アイコンの代わりに汎用の Power Apps アイコンを表示します。
 * Power Automate を使用する場合、プッシュ通知を一度に 1 人の受信者にだけ送信することができます。
+* プッシュ通知は、モデル駆動型アプリでは現在対応していません。 
 
 参照情報については、[Power Apps 通知の参照](https://docs.microsoft.com/connectors/powerappsnotification/) をご覧ください。
 

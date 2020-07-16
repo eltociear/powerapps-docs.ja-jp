@@ -1,22 +1,20 @@
 ---
 title: 地域政府機関の緊急応答およびモニタリング ソリューションを展開する | Microsoft Docs
 description: 地域の IT 管理者が地域政府機関の緊急対応およびモニタリング ソリューションを組織に展開するための詳細な手順を示します。
-author: KumarVivek
+author: pankajarora-msft
 manager: annbe
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 06/05/2020
-ms.author: kvivek
+ms.author: pankar
 ms.reviewer: kvivek
-searchScope:
-- PowerApps
-ms.openlocfilehash: 5c689f3b5761be0f92fe6282cec0b5543454e482
-ms.sourcegitcommit: 6f904789d817248eac0a4c9dd0c5fe37dfbb77ad
+ms.openlocfilehash: 1a44a42a22ebda58f7f128af64ae16d014108d63
+ms.sourcegitcommit: b5ab419dad4e9d64a5e6610641363b0d7487930a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "3434483"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "3465477"
 ---
 # <a name="deploy-the-regional-governmentemergency-response-and-monitoring-solution"></a>地域政府機関の緊急応答およびモニタリング ソリューションを展開する
 

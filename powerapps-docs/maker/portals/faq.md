@@ -1,20 +1,19 @@
 ---
 title: よくあるご質問 | Microsoft Docs
 description: Power Apps ポータルに関してよくあるご質問。
-author: tapanm-msft
-manager: kvivek
+author: sandhangitmsft
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 05/21/2020
-ms.author: tapanm
-ms.reviewer: ''
-ms.openlocfilehash: cd5585b0b1c22a3f3f1698151fc91945d953c74e
-ms.sourcegitcommit: 8b08fdc6a2934648ae926ea62ebee4cdb578b651
+ms.author: sandhan
+ms.reviewer: tapanm
+ms.openlocfilehash: b36d49d4fbf0c1fe16cfdfe64349782e3cf80040
+ms.sourcegitcommit: c12260f372ad2cc48d3146be570d2088c9ef1d86
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/22/2020
-ms.locfileid: "3394972"
+ms.lasthandoff: 06/20/2020
+ms.locfileid: "3494337"
 ---
 # <a name="power-apps-portals-faq"></a>Power Apps ポータルに関する FAQ
 

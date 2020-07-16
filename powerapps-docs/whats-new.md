@@ -16,15 +16,12 @@ search.audienceType:
 - developer
 search.app:
 - PowerApps
-searchScope:
-- GetStarted
-- PowerApps
-ms.openlocfilehash: 82815f2d4a7c16f5f216c2e706756576d5784b8d
-ms.sourcegitcommit: ce291964123737257536378270e6004ecb74b3c4
+ms.openlocfilehash: 954bb790a4fecddd512ee39641c2ed83d5c27e9e
+ms.sourcegitcommit: 3bc94ac014b12d2b04a1af598d38b875e9e5dc2a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "3303716"
+ms.lasthandoff: 06/12/2020
+ms.locfileid: "3444097"
 ---
 # <a name="whats-new-in-power-apps"></a>Power Apps の新機能
 
@@ -34,15 +31,15 @@ ms.locfileid: "3303716"
 
 この数週間でリリースされた新機能、修正プログラム、機能改善については、[Microsoft Power Apps のリリース バージョン](https://docs.microsoft.com/business-applications-release-notes/powerplatform/released-versions/powerapps) を参照してください。
 
-週間リリース ノートの情報を閲覧する方法については、こちらの[ブログ投稿](https://powerapps.microsoft.com/blog/stay-tuned-with-the-latest-features-and-fixes-through-powerapps-weekly-release-notes/)をお読みください。
+週間リリース ノートの情報を閲覧する方法については、こちらの [ブログ投稿](https://powerapps.microsoft.com/blog/stay-tuned-with-the-latest-features-and-fixes-through-powerapps-weekly-release-notes/) をお読みください。
 
 > [!NOTE]
-> リリースは、数日間にわたってロールアウトします。 新機能や更新された機能は、すぐには表示されない場合があります。
+> リリースは、数日間にわたってロールアウトします。 新規または更新された機能はすぐに表示されないことがあります。
 
 ## <a name="release-plan"></a>リリース計画
 
-今後の数か月でリリースされる新機能については、「[2020 年リリース ウェーブ 1 の予定](https://docs.microsoft.com/power-platform-release-plan/2020wave1/microsoft-powerapps/planned-features)」を参照してください (計画のために使用できます)。
+今後の数か月でリリースされる新機能については、[2020 年リリース ウェーブ 1 プラン](https://docs.microsoft.com/power-platform-release-plan/2020wave1/microsoft-powerapps/planned-features) を参照して計画に使用していただけます。
 
 ## <a name="known-limitations"></a>既知の制限
 
-既知の制限については、「[Common issues and resolutions (お問い合わせの多い問題と解決方法)](common-issues-and-resolutions.md)」を参照してください。
+既知の制限については、[一般的な問題と解決法](common-issues-and-resolutions.md) を参照してください。

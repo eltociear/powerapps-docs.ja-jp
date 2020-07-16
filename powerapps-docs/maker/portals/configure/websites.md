@@ -1,20 +1,19 @@
 ---
 title: ポータルで Web サイトを管理する | MicrosoftDocs
 description: ポータルで Web サイトを管理する方法について説明します。
-author: tapanm-msft
-manager: kvivek
+author: sandhangitmsft
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 04/30/2020
-ms.author: tapanm
-ms.reviewer: ''
-ms.openlocfilehash: ce0b60b8801873376696c446a56e28ffa69b8d80
-ms.sourcegitcommit: 8e76afb331745f1da929a39e831634680dfa6008
+ms.author: sandhan
+ms.reviewer: tapanm
+ms.openlocfilehash: 452b649103e01a6149c15f49d935b3ae76877304
+ms.sourcegitcommit: c12260f372ad2cc48d3146be570d2088c9ef1d86
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "3346940"
+ms.lasthandoff: 06/20/2020
+ms.locfileid: "3493032"
 ---
 # <a name="manage-websites"></a>Web サイトの管理
 

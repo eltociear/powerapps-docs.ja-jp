@@ -1,20 +1,19 @@
 ---
 title: エンティティ フォームの定義 | MicrosoftDocs
 description: ポータルのエンティティ フォームを作成するための手順。
-author: tapanm-msft
-manager: kvivek
+author: sandhangitmsft
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 05/07/2020
-ms.author: tapanm
-ms.reviewer: ''
-ms.openlocfilehash: 6ff95cd84ff659fa24a3d970aa23e68adbc97de9
-ms.sourcegitcommit: ed423b9382bf183d0b28907039d3432b99d4e7f0
+ms.author: sandhan
+ms.reviewer: tapanm
+ms.openlocfilehash: a4c97df1b312accc415776eff7e200605416fbe7
+ms.sourcegitcommit: c12260f372ad2cc48d3146be570d2088c9ef1d86
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "3353520"
+ms.lasthandoff: 06/20/2020
+ms.locfileid: "3490090"
 ---
 # <a name="about-entity-forms"></a>エンティティ フォームについて
 

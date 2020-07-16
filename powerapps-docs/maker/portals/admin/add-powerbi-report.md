@@ -1,20 +1,19 @@
 ---
 title: Power BI レポートまたはダッシュボードをポータルの Web ページに追加 | MicrosoftDocs
 description: ポータルの Web ページへ Power BI レポートまたはダッシュボードを追加するための手順。
-author: tapanm-msft
-manager: kvivek
+author: neerajnandwana-msft
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 05/13/2019
-ms.author: tapanm
-ms.reviewer: ''
-ms.openlocfilehash: 6c55a515aa7ad2a08c0f839ce7f6349eb3f6ff90
-ms.sourcegitcommit: ef921bbf0908283a3621c2ca1069e6b58a2b14e7
+ms.author: nenandw
+ms.reviewer: tapanm
+ms.openlocfilehash: e32b83dd3f667b4035a0b029af5c2c64f5e10d38
+ms.sourcegitcommit: 2fd873a1ea17f419f6194714efffa47a9bd00c2e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "3373621"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "3506871"
 ---
 # <a name="add-a-power-bi-report-or-dashboard-to-a-web-page-in-portal"></a>Power BI レポートまたはダッシュボードをポータルの Web ページに追加
 
