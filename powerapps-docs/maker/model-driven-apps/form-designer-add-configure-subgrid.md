@@ -34,7 +34,7 @@ ms.locfileid: "2868456"
 # <a name="add-and-configure-a-sub-grid-component-on-a-form"></a>フォームでサブグリッド コンポーネントを追加して構成する  
 レコードの詳細の表示するフォームは、表形式の関連するレコードや非関連レコードの一覧を表示するサブグリッド コンポーネントを使用できます。 メーカーはフォーム デザイナーを使用してサブグリッド コンポーネントを追加して構成できます。
 
-## <a name="add-a-sub-grid-component"></a>サブグリッド コンポーネントのの追加
+## <a name="add-a-sub-grid-component"></a>サブグリッド コンポーネントの追加
 サブグリッド コンポーネントは、その他のコンポーネントの追加方法と同じ方法で追加します。 詳細: [フォームでコンポーネントを追加、構成、移動、削除する](add-move-configure-or-delete-components-on-form.md)
 
 ## <a name="configure-a-sub-grid-component"></a>サブグリッド コンポーネントの構成
