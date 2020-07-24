@@ -1,6 +1,6 @@
 ---
-title: ミーティング画面のテンプレート |Microsoft Docs
-description: キャンバスアプリのミーティング画面テンプレートがどのように機能するかを理解し、独自のユースケースに合わせて画面を拡張する
+title: ミーティング - スクリーン テンプレート | Microsoft Docs
+description: キャンバス アプリのミーティング スクリーン テンプレートの仕組みを理解し、独自の使用に合わせて画面を拡張する
 author: emcoope-msft
 manager: kvivek
 ms.service: powerapps
@@ -15,59 +15,59 @@ search.app:
 - PowerApps
 ms.openlocfilehash: ac6b75d60f41cd68ee1723c913766ea701bc6ca8
 ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/03/2019
-ms.locfileid: "74732523"
+ms.locfileid: "3307166"
 ---
-# <a name="overview-of-the-meeting-screen-template-for-canvas-apps"></a>キャンバスアプリのミーティング画面テンプレートの概要
+# <a name="overview-of-the-meeting-screen-template-for-canvas-apps"></a>キャンバス アプリのミーティング スクリーン テンプレートの概要
 
-キャンバスアプリで、ユーザーが Office 365 Outlook アカウントから会議出席依頼を作成して送信できるようにする会議画面を追加します。 ユーザーは、組織内の出席者を検索したり、外部の電子メールアドレスを追加したりできます。 テナントに Outlook に会議室が組み込まれている場合は、ユーザーが場所を選択することもできます。
+キャンバス アプリで、ユーザーが Office 365 Outlook アカウントからミーティング要請を作成および送信できるミーティング画面を追加します。 ユーザーは組織内の出席者を検索し、外部の電子メール アドレスを追加することもできます。 テナントに Outlook へ組み込まれたミーティングの部屋がある場合、ユーザーは場所も選択できます。
 
-また、[電子メール](email-screen-overview.md) [、組織内のユーザー、](people-screen-overview.md)ユーザーの[予定表](calendar-screen-overview.md)など、Office 365 のさまざまなデータを表示するテンプレートベースの他の画面を追加することもできます。
+[メール](email-screen-overview.md)、組織内の[ユーザー](people-screen-overview.md)、およびユーザーの[カレンダー](calendar-screen-overview.md) などの Office 365 とは異なるデータを表示する他のテンプレート ベースのスクリーンを追加することもできます。
 
-この概要では、画面の高レベルの機能について説明します。
+この概要では、スクリーンの高レベル機能について説明します。
 
-この画面の既定の機能の詳細については、[ミーティング画面のリファレンス](meeting-screen-reference.md)を参照してください。
+このスクリーンの既定機能についてさらに詳しく知りたい場合は、[ミーティング スクリーンを参照する](meeting-screen-reference.md) を参照してください。
 
 ## <a name="prerequisite"></a>前提条件
 
-[Power Apps でアプリを作成](../data-platform-create-app-scratch.md)するときに、画面やその他のコントロールを追加および構成する方法について理解します。
+[Power Apps でアプリを作成する](../data-platform-create-app-scratch.md) ときに、画面およびその他のコントロールの追加および構成を行う方法に関する知識。
 
-## <a name="default-functionality"></a>既定の機能
+## <a name="default-functionality"></a>既定機能
 
-テンプレートからミーティング画面を追加するには、次のようにします。
+テンプレートからミーティングのスクリーンを追加するには:
 
-1. Power Apps に[サインイン](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)し、アプリを作成するか、Power apps Studio で既存のアプリを開きます。
+1. Power Apps に[サインインし](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)、アプリを作成するか、または Power Apps Studio で既存のアプリを開きます。
 
-    このトピックでは phone アプリについて説明しますが、同じ概念がタブレットアプリにも当てはまります。
+    このトピックでは電話アプリについて説明しますが、同じ概念がタブレット PC アプリにも適用されます。
 
-1. リボンの **[ホーム]** タブで、[**新しい画面** > **会議**] を選択します。
+1. リボンの**ホーム**タブで、**新しいスクリーン** > **ミーティング**を選択します。
 
-  入力すると、ミーティング画面の両方のタブが次のようになります。
+  入力すると、ミーティング スクリーンの両方のタブは次のようになります:
 
-  ![ミーティング画面、両方のタブ](media/meeting-screen/meeting-screen-full-both.png)
+  ![ミーティング スクリーン、両方のタブ](media/meeting-screen/meeting-screen-full-both.png)
 
-役に立つ注意事項がいくつかあります。
+いくつかの役に立つ注意事項があります。
 
-* 会議画面では、アプリユーザーは Outlook で会議を作成できます。
-  ユーザーは、出席者を検索して追加したり、必要に応じて会議室を会議に追加したりすることができます。
-* 組織内のユーザーを検索するには、[出席者] の下のテキスト入力ボックスで、名前の入力を開始します。
-* ユーザーを検索すると、上位15件の結果のみが返されます。
-* 組織外の出席者の電子メールアドレスを追加するには、完全な有効な電子メールアドレスを入力し、電子メールアドレスの右側に表示される [+] アイコンを選択します。
-* 会議を作成するには、少なくとも1人を出席者として追加し、件名を入力して、 **[スケジュール]** タブで会議の時刻を選択する必要があります。
-* 会議出席依頼を送信すると、その会議のすべての情報がクリアされます。
-* 送信アイコン (右上隅) の**Onselect**ステートメントには、次の式が含まれています。
+* ミーティング スクリーンでは、アプリ ユーザーが Outlook でミーティングを作成できます。
+  ユーザーは、出席者を検索して追加したり、オプションでミーティングの部屋をミーティングに追加したりできます。
+* 組織内のユーザーを検索するには、「出席者」の下のテキスト入力ボックスにユーザーの名前を入力します。
+* ユーザーを検索すると、上位 15 件の結果のみが返されます。
+* 組織外の出席者の電子メール アドレスを追加するには、完全で有効な電子メール アドレスを入力し、メール アドレスの右側に表示される「+」アイコンを選択します。
+* ミーティングを作成するには、少なくとも 1 人を出席者として追加し、件名を入力し、**スケジュール**タブのミーティング時間を選択します。
+* ミーティング要請を送信すると、ミーティングのすべての情報が消去されます。
+* 送信アイコンの (右上隅)**OnSelect** ステートメントには、次の式が含まれています:
     ```powerapps-dot
     Set( _myCalendarName, 
         LookUp( 'Office365'.CalendarGetTables().value, DisplayName = "Calendar" ).Name 
     );
     ```
-* "Calendar" はほとんどの Office ユーザーの予定表の既定の表示名ですが、組織によって異なる場合があります。 その場合は、"Calendar" を組織の適切な用語に変更できます。
-* 過去に発生した会議のスケジュールを設定しようとした場合、または会議に20人を超える人を追加しようとした場合に、エラーが表示されます。
+* 「カレンダー」は、ほとんどの Office ユーザーのカレンダーの既定表示名ですが、組織によって異なる場合があります。 その場合は、「カレンダー」を組織に適した用語に変更できます。
+* 過去のミーティングをスケジュールしようとしたり、20 人を超えるミーティングに追加しようとすると、エラーが発生します。
 
 ## <a name="next-steps"></a>次の手順
 
-* [この画面のリファレンスドキュメントを表示](./meeting-screen-reference.md)します。
-* [Office 365 Outlook コネクタの詳細については、こちらを参照して](../connections/connection-office365-outlook.md)ください。
-* [Office 365 Users コネクタの詳細については、こちらを参照して](../connections/connection-office365-users.md)ください。
+* [スクリーンの参照ドキュメントを表示します](./meeting-screen-reference.md)。
+* [Office 365 Outlook コネクタについての詳細](../connections/connection-office365-outlook.md)。
+* [Office 365 ユーザー コネクタについての詳細](../connections/connection-office365-users.md)。

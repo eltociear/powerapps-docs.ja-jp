@@ -1,7 +1,7 @@
 ---
 title: Power Apps におけるモデル駆動型アプリ フォームへのフィールドの追加 | MicrosoftDocs
 ms.custom: ''
-ms.date: 03/18/2020
+ms.date: 05/04/2020
 ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
@@ -21,12 +21,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: f3b24d42fa8a9c800bf16eab51f39bb741c3d3bc
-ms.sourcegitcommit: 9f2694bd14d70798310b89a4673672c1bfad989d
+ms.openlocfilehash: dcf292660c89e55ec83739c4dba662ff4cf7bff4
+ms.sourcegitcommit: 52b7f59e271437e86ffff226fb6c1982bf7f08b1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "3166887"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "3332487"
 ---
 # <a name="add-a-field-to-a-model-driven-app-form"></a>フィールドをモデル駆動型アプリ フォームに追加する 
 
@@ -49,8 +49,13 @@ ms.locfileid: "3166887"
   
 6.  フォームの編集が終了したら **保存して閉じる** をクリックします。  
   
+> [!IMPORTANT]
+>  統一インターフェイスでフィールド レベルのセキュリティを設定する場合、フィールド レベルのセキュリティ規則を使用して必須フィールドに読み取り専用を設定することはお勧めしません。  レコードが作成されると、保存パイプラインは必須フィールドの読み取り専用設定を無視して、レコードを保存します。 ロールベースのセキュリティを使用して、エンティティを読み取り専用に設定することをお勧めします。 これにより、レコードの作成または保存時に競合が発生しなくなります。
+  
+  
 > [!NOTE]
->  カスタマイズを公開すると、標準システム操作を干渉する可能性があります。 ユーザーへの影響が最小限に留まるように公開することが推奨されます。  
+>  カスタマイズを公開すると、標準システム操作を干渉する可能性があります。 ユーザーへの影響が最小限に留まるように公開することが推奨されます。
+
   
 ## <a name="next-steps"></a>次のステップ  
  

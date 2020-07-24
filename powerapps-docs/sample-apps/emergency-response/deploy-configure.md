@@ -1,323 +1,279 @@
 ---
-title: 病院の緊急時対応アプリをデプロイする | Microsoft Docs
-description: 病院の IT 管理者が組織用のサンプル アプリをデプロイして構成するための詳細な手順について説明します。
+title: Hospital Emergency Response アプリを展開する | Microsoft Docs
+description: 病院の IT 管理者が、自分たちの組織のためのサンプル アプリをデプロイして構成するための詳細な手順を示します。
 author: pankajarora-msft
 manager: annbe
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 04/15/2020
+ms.date: 06/10/2020
 ms.author: pankar
 ms.reviewer: kvivek
-searchScope:
-- PowerApps
-ms.openlocfilehash: 132276b88fe23e9ea4a69caeff330c10f7d32daf
-ms.sourcegitcommit: 371fb08328f88f8bae7335db413d52b5c961c3e4
+ms.openlocfilehash: 30aa2a2d44cdb2f85f73296601f4117f8a0b2dcc
+ms.sourcegitcommit: 997384ebd01bda4f456f08689e024fb8ca5bf057
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "81544017"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "3455208"
 ---
-# <a name="deploy-the-hospital-emergency-response-app"></a>病院の緊急時対応アプリをデプロイする
+# <a name="deploy-the-hospital-emergency-response-app"></a>病院緊急時対応アプリをデプロイする
 
-病院の緊急時対応アプリは、少量のセットアップでお客様のニーズに合わせることができます。 この記事では、病院の IT 管理者が組織用のアプリケーションをデプロイして構成するための詳細な手順について説明します。
+病院緊急時対応アプリでは、ニーズに適応するために多少の設定が必要です。 この記事では、病院の IT 管理者が、自分たちの組織のためのサンプル アプリケーションをデプロイして構成するための詳細な手順を示します。
 
-これらの手順の推定所要時間: **35 – 40 分**。
+これらの手順を完了するための推定時間: **35〜40 分**。
 
-## <a name="demo-deploy-the-hospital-emergency-response-app"></a>デモ:病院の緊急時対応アプリをデプロイする
+## <a name="service-urls-for-us-government-customers"></a>米国政府機関のユーザー向けのサービス URL
 
-病院の緊急時対応アプリをデプロイして構成する方法をご覧ください。
+Hospital Emergency Response ソリューションは、米国政府機関のユーザーにご利用いただけます。 Power Apps米国政府機関の環境や Power BI にアクセスする URL が市販製品とは異なる設定になっています。
 
-<br/>
-
-> [!VIDEO https://www.youtube.com/embed/-1g44wNiuWI]
+このサポート記事では、市販製品版のサービス URL を使用しています。 米国政府機関のユーザーは、展開の際に以下に記載する米国政府機関の URL を使用してください：
 
 
-## <a name="service-urls-for-us-government-customers"></a>米国政府機関のお客様向けのサービス URL
-
-病院の緊急時対応ソリューションは、米国政府機関のお客様もご利用いただけます。 Power Apps US Government 環境および Power BI にアクセスするための、商用バージョンとは異なる URL のセットが用意されています。
-
-この記事全体では、商用バージョンのサービス URL が使用されています。 米国政府機関のお客様は、デプロイ用に、次に記載するそれぞれの米国政府機関用 URL をご使用ください。
-
-
-| **商用バージョンの URL**                | **米国政府機関バージョンの URL**  |
+| **商用バージョンの URL**                | **US Government バージョンの URL**  |
 |-------------------------------------------|--------------------------------|
-| https://make.powerapps.com                | https://make.gov.powerapps.us (GCC)<br/><br/>https://make.high.powerapps.us (GCC High)                |
-| https://admin.powerplatform.microsoft.com | https://gcc.admin.powerplatform.microsoft.us (GCC)<br/><br/>https://high.admin.powerplatform.microsoft.us (GCC High) |
-| https://app.powerbi.com/                  | <https://app.powerbigov.us> (GCC)<br/><br/>https://app.high.powerbigov.us (GCC High)                  |
+| [https://make.powerapps.com](https://make.powerapps.com)                | [https://make.gov.powerapps.us](https://make.gov.powerapps.us) (GCC) <br/><br/>[https://make.high.powerapps.us](https://make.high.powerapps.us) (GCC High)                |
+| [https://admin.powerplatform.microsoft.com](https://admin.powerplatform.microsoft.com) | [https://gcc.admin.powerplatform.microsoft.us](https://gcc.admin.powerplatform.microsoft.us) (GCC)<br/><br/>[https://high.admin.powerplatform.microsoft.us](https://high.admin.powerplatform.microsoft.us) (GCC High)|
+| [https://app.powerbi.com/](https://app.powerbi.com/)                  | [https://app.powerbigov.us](https://app.powerbigov.us) (GCC)<br/><br/>[https://app.high.powerbigov.us](https://app.high.powerbigov.us) (GCC High)                 |
 
-Power Apps と Power BI の米国政府機関向けプランの詳細については、以下を参照してください。
-- [米国政府機関向け Power Apps](https://docs.microsoft.com/power-platform/admin/powerapps-us-government)
-- [米国政府機関向け Power BI](https://docs.microsoft.com/power-bi/service-govus-overview)
+Power Apps と Power BI についての、米国政府機関の計画の詳細については次を参照してください：
+- [米国政府機関用 Power Apps ](https://docs.microsoft.com/power-platform/admin/powerapps-us-government)
+- [米国政府機関用 Power BI ](https://docs.microsoft.com/power-bi/service-govus-overview)
 
 
-## <a name="deploy-the-hospital-emergency-response-app"></a>病院の緊急時対応アプリをデプロイする
-
-ご自身の組織用に病院の緊急時対応サンプル アプリをデプロイするには、以下の手順を実行します。
-
-- [ステップ 1:Power Apps にサインアップして環境を作成する](#step-1-sign-up-for-power-apps-and-create-an-environment)
-- [手順 2:デプロイ パッケージをダウンロードする](#step-2-download-the-deployment-package)
-- [ステップ 3:ソリューション ファイルを環境にインポートする](#step-3-import-the-solution-file-into-your-environment)
-- [手順 4:組織の構成データとマスター データを読み込む](#step-4-load-configuration-and-master-data-for-your-organization)
-    - [手順 4.1: 必須の構成データを読み込む](#step-41-load-mandatory-configuration-data)
-    - [手順 4.2: マスター データを読み込む](#step-42-load-master-data)
-- [手順 5:モバイル アプリのブランドを更新する](#step-5-update-the-mobile-app-branding)
-- [手順 6:モバイル アプリの同意をバイパスする](#step-6-bypass-consent-for-mobile-apps)
-- [手順 7:テレメトリ用に Azure Application Insights キーをモバイル アプリに追加する (省略可能)](#step-7-add-azure-application-insights-key-to-mobile-apps-for-telemetry-optional)
-- [手順 8: 組織内のユーザーとキャンバス アプリを共有する](#step-8-share-canvas-apps-with-users-in-your-organization)
-- [手順 9:モバイル アプリをヒーロー アプリおよびおすすめアプリとして設定する](#step-9-set-your-mobile-app-as-hero-and-featured-app)
-- [手順 10: 組織内の管理者とモデル駆動型アプリを共有する](#step-10-share-model-driven-app-with-admins-in-your-organization)
-
-### <a name="step-1-sign-up-for-power-apps-and-create-an-environment"></a>手順 1:Power Apps にサインアップして環境を作成する
-
-Power Apps をまだ持っていない場合は、Power Apps にサインアップし、適切なライセンスを購入します。
-
-詳細情報:
-
--   [Power Apps の価格](https://powerapps.microsoft.com/pricing/)
--   [Power Apps を購入する](https://docs.microsoft.com/power-platform/admin/signup-for-powerapps-admin)
-
-Power Apps を購入した後、Common Data Service データベースを使用して環境を作成します。
-
-1.  [Power Platform 管理センター](https://aka.ms/ppac)にサインインします。
-
-2.  データベースを使用して Common Data Service 環境を作成します。 詳細情報: [環境を作成および管理する](https://docs.microsoft.com/power-platform/admin/create-environment)
-
-    > [!IMPORTANT]
-    > データベースの作成中に、データベースのセキュリティ グループを選択した場合は、そのセキュリティ グループのメンバーであるユーザーと*のみ*アプリを共有できます。
-
-3.  環境に適切なユーザーを作成します。 詳細情報: [ユーザーを作成し、セキュリティ ロールを割り当てる](https://docs.microsoft.com/power-platform/admin/create-users-assign-online-security-roles)
-
-### <a name="step-2-download-the-deployment-package"></a>手順 2:デプロイ パッケージをダウンロードする
-
-病院の緊急時対応アプリ用のアプリとビジネス ロジックを設定するためのソリューション ファイル、画像、データ ファイルが含まれる、最新のデプロイ パッケージ (.zip) を <https://aka.ms/emergency-response-solution> から取得します。
+## <a name="step-1-download-the-deployment-package"></a>ステップ 1: デプロイ パッケージのダウンロード
 
 > [!IMPORTANT]
-> デプロイ パッケージ (.zip ファイル) を抽出する前に、ファイルのブロックを解除してください。 ブロックを解除するには:
-> 1. .zip ファイルを右クリックし、 **[プロパティ]** を選択します。
-> 2. [プロパティ] ダイアログ ボックスで、 **[ブロックの解除]** を選択してから、 **[適用]** 、 **[OK]** の順に選択します。
+> 市販製品のユーザーは、この手順をスキップし、代わりに AppSource オプションを使用して、アプリと Power BI ダッシュボードをインストールします。 
 
-<br/>
+<https://aka.ms/emergency-response-solution> から最新の展開パッケージ (.zip) をダウンロードします。
 
-デプロイ ファイル (.zip ファイル) のブロックを解除した後、ご自分のコンピューター上の場所にファイルを抽出します。 抽出されたフォルダーには、次のフォルダーが含まれます。
+.zip ファイルを解凍する前に、ファイルのブロックを解除してください。
 
-| **フォルダー/ファイル**       | **説明**  |
-|-----------------------|------------------|
-| **App Icons**         | モバイル アプリ (キャンバス アプリ) 用の既定のアプリ アイコンが格納されています|
-| **Data Files**        | ソリューションおよびアプリが動作するためのマスター ファイルとサンプル データ ファイル (.xlsx) が格納されています。 これらのファイルからデータをインポートして、アプリでの作業を始められます。 詳細情報: [手順 4: 組織の構成データとマスター データを読み込む](#step-4-load-configuration-and-master-data-for-your-organization) |
-| **Power BI Template** | 組織向けのレポートを構成するために使用する Power BI レポート テンプレート ファイル (.pbit) が格納されています。 詳細情報:[Power BI ダッシュボードを発行する](#publish-the-power-bi-dashboard)|
-| **PowerShell**        | モバイル アプリ (キャンバス アプリ) の構成に使用するスクリプトが格納されています。 |
-| **Solution File**     | 病院の緊急時対応アプリに必要なアプリとメタデータを作成する Common Data Service ソリューション ファイルが格納されています。  |
+1.  .zip ファイルを右クリックし、**プロパティ** を選択します。
 
-### <a name="step-3-import-the-solution-file-into-your-environment"></a>手順 3:ソリューション ファイルを環境にインポートする
+2.  プロパティ ダイアログボックスで **ブロック解除** を選択し、続いて **適用** を選択し、**OK** をクリックします。
 
-1.  デプロイ ファイル (.zip) を抽出した場所に移動します。**Solution File** フォルダーが見つかります。 **Solution File** フォルダーにあるマネージド ソリューション (.zip) ファイルを環境にインポートします。
+.zip ファイルを解凍すると、解凍したフォルダーに以下が表示されます。
 
-2.  [Power Apps](https://make.powerapps.com) にサインインします。
+|**フォルダー**  |**説明**  |
+|---------|---------|
+|**パッケージ**     |  Package Deployer ツールと、環境にソリューションを設定するために後で展開するパッケージが含まれています。 詳細: [オプション C: 展開パッケージからアプリをインストールする](#option-c-install-the-app-from-the-deployment-package)     |
+|**Power BI テンプレート**     | レポートの構成に使用する Power BI レポートのテンプレート ファイル (.pbit) が含まれています。 詳細: [ステップ 10: Power BI ダッシュボードを公開する](#step-10-publish-the-power-bi-dashboard)        |
 
-3.  右上隅で環境を選択します。
+## <a name="step-2-sign-up-for-power-apps-and-create-an-environment"></a>ステップ 2: Power Apps にサインアップして、環境を作成する
 
-4.  左側のペインで **[ソリューション]** を選択した後、 **[インポート]** を選択します。
+Power Apps をまだ持っていない場合は Power Apps にサインアップして適切なライセンスを購入します。
+
+詳細:
+
+-   [Power Apps 価格設定](https://powerapps.microsoft.com/pricing/)
+-   [購入Power Apps](https://docs.microsoft.com/power-platform/admin/signup-for-powerapps-admin)
+
+Power Apps を購入後、Common Data Service データベースで環境を作成します。
+
+1.  [Power Platform 管理センター](https://aka.ms/ppac) にサインインします。
+
+2.  データベースで Common Data Service 環境を作成します。 詳細: [環境の作成と管理](https://docs.microsoft.com/power-platform/admin/create-environment)
+
+    > [!IMPORTANT]
+    > データベースの作成中に、データベースのセキュリティ グループを選択すると、セキュリティ グループのメンバーであるユーザーと *のみ* アプリを共有できます。
+
+3.  自分の環境に適切なユーザーを作成します。 詳細情報: [ユーザーを作成し、セキュリティ ロールを割り当てる](https://docs.microsoft.com/power-platform/admin/create-users-assign-online-security-roles)
+
+## <a name="step-3-install-the-app"></a>ステップ 3: アプリのインストール
+
+以下の手順に従って、Hospital Emergency Response アプリを構成とサンプル データとともにインストールします。
+
+> [!NOTE]
+> 
+> - 構成とサンプル データは、新規インストールの場合にのみインストールされます。 このアプリを以前に環境にインストールしている場合、既存のデータが上書きされないようにするため、インストール中に構成データとサンプル データはインストールされません。
+>
+> - 病院から[地域](/powerapps/sample-apps/regional-emergency-response/overview)ソリューションにデータを転送する場合は、ソリューションをインストールする前に[接続の作成](/powerapps/sample-apps/emergency-response-data-transfer#step-1-create-connections)で説明したように、ご利用の環境に接続を作成しておく必要があります。 既成のソリューション [病院から地域へデータを転送する](../emergency-response-data-transfer.md) では、データ転送メカニズムにセキュア ファイル転送プロトコル (SFTP) を使用しています。 
+
+次の 3 つのオプションのいずれかを使用してアプリをインストールできます。
+
+- Microsoft AppSource (Power Apps 米国政府機関のユーザーのみ)。 [オプション A: Microsoft AppSource (US Govt customers) からアプリをインストールする](#option-a-install-the-app-from-microsoft-appsource-us-govt-customers)を参照
+
+- Microsoft AppSource (Power Apps 市販製品のユーザー向け)。 [オプション B: Microsoft AppSource からアプリをインストールする](#option-b-install-the-app-from-microsoft-appsource)を参照
+
+- 以前にダウンロードした展開パッケージ。 [オプション C: 展開パッケージからアプリをインストールする](#option-c-install-the-app-from-the-deployment-package)を参照
+
+### <a name="option-a-install-the-app-from-microsoft-appsource-us-govt-customers"></a>オプション A: Microsoft AppSource (米国政府機関のユーザー) からアプリをインストールする
+
+1.  Power Platform 管理センターにサインインします。 適切な URL を使用してサインインします。
+    - **GCC**: [https://gcc.admin.powerplatform.microsoft.us](https://gcc.admin.powerplatform.microsoft.us)
+    - **GCC High**: [https://high.admin.powerplatform.microsoft.us](https://high.admin.powerplatform.microsoft.us)
+
+2.  左側のウィンドウで、**環境**を選択し、前の手順で作成した環境の名前を選択します。
+
+3. 環境の詳細ページで、**Dynamics 365 アプリを管理する**を選択します。
 
     > [!div class="mx-imgBorder"] 
-    > ![ソリューションをインポートする](media/conf-import-solution.png "ソリューションをインポートする")
+    > ![環境の設定](media/ppac-env-setting.png "環境の設定")
 
-5.  **[ソリューションのインポート]** ダイアログ ボックスで、手順 1 で説明したソリューション ファイルを選択し、ウィザードの手順に従ってソリューションをインポートします。
+3.  Dynamics 365 アプリ ページで、**アプリをインストールする**を選択します。 次に、右のウィンドウにある **Power Platform 緊急時対応アプリ**を選択し、**次へ**を選択します。
 
-6.  ソリューションが正常にインポートされたら、インポート ダイアログ ボックスで **[閉じる]** を選択します。
+    > [!div class="mx-imgBorder"] 
+    > ![アプリのインストール](media/ppac-install-app.png "アプリのインストール")
 
-**[アプリ]** に新しいアプリが表示されるようになります。
+4.  次のページで、条件に同意し、**インストール**を選択します。
 
-> [!div class="mx-imgBorder"] 
-> ![新しいアプリ](media/conf-apps-new-apps.png "新しいアプリ")
+5.  インストールが開始され、Dynamics 365 アプリ ページでアプリのインストールの進行状況を監視できます。
 
-**Admin App** を選択して、残りのデプロイ設定を構成できるモデル駆動型アプリを開きます。 詳細情報: [モデル駆動型アプリとは](https://docs.microsoft.com/powerapps/maker/model-driven-apps/model-driven-app-overview)
+    > [!div class="mx-imgBorder"] 
+    > ![アプリのインストール進行状況を監視する](media/ppac-app-install-progress.png "アプリのインストール進行状況を監視する")
+
+    > [!IMPORTANT]
+    > アプリのインストールにはしばらく時間がかかる場合があります。
+
+6.  アプリをインストールしたら、[Power Apps](https://make.powerapps.com) に移動し、右上隅から環境を選択します。 **アプリ**に新しいアプリが表示されます。
+
+    > [!div class="mx-imgBorder"] 
+    > ![新しいアプリ](media/conf-apps-new-apps.png "新しいアプリ")
+
+    インストールでは、Hospital Emergency Response アプリの構成とサンプル データも追加されます。
+
+### <a name="option-b-install-the-app-from-microsoft-appsource"></a>オプション B: Microsoft AppSource からアプリをインストールする
+
+1.  [AppSource](https://appsource.microsoft.com/)に移動し、「Hospital Emergency Response アプリ」を検索します。<br/>または、このリンクを使用して、直接 AppSource のアプリに移動します: <https://appsource.microsoft.com/product/dynamics-365/mscrm.pphersapp>
+
+2.  Hospital Emergency Response アプリ ページで、**今すぐ入手する**を選択します。
+
+    > [!div class="mx-imgBorder"] 
+    > ![AppSource](media/appsource-01.png "AppSource のアプリ")
+
+3.  AppSource 契約条件を確認するように求められます。 ダイアログには、サインインに使用されているアカウントも表示されます。 **続行** を選択します。 資格情報の確認を求められる場合があります。
+
+4.  次のページで、アプリをインストールする環境を選択します。 法的条項とプライバシーに関する声明のチェック ボックスを選択し、**同意する**を選択します。
+
+    > [!div class="mx-imgBorder"] 
+    > ![環境を選択する](media/appsource-02.png "環境を選択する")
+
+5.  アプリのインストールの進行状況を監視できる Dynamics 365 管理センターに移動します。
+
+    > [!div class="mx-imgBorder"] 
+    > ![AppSource](media/appsource-03.png "アプリのインストール進行状況を監視する")
+
+    > [!IMPORTANT]
+    > アプリのインストールにはしばらく時間がかかる場合があります。
+
+6.  アプリをインストールしたら、[Power Apps](https://make.powerapps.com) に移動し、右上隅から環境を選択します。 **アプリ**に新しいアプリが表示されます。
+
+    > [!div class="mx-imgBorder"] 
+    > ![新しいアプリ](media/conf-apps-new-apps.png "新しいアプリ")
+
+    インストールでは、Hospital Emergency Response アプリの構成とサンプル データも追加されます。
+
+### <a name="option-c-install-the-app-from-the-deployment-package"></a>オプション C: 展開パッケージからアプリをインストールする
+
+1.  [展開パッケージ](#step-1-download-the-deployment-package) (.zip); を抽出した場所に移動すると、**パッケージ** フォルダーが表示されます。 **パッケージ** フォルダーの下で、**PackageDeployer.exe** ファイルを実行し、ツールを実行してパッケージを展開します。
+
+2.  次の画面で**続行**を選択します。
+
+3.  環境に接続するように求められます。 **展開の種類**として**Office 365**を選択し、**詳細の表示**を選択し、次に資格情報を入力して環境に接続します。
+
+    > [!div class="mx-imgBorder"] 
+    > ![展開パッケージ](media/deploy-connect-to-environment.png "展開パッケージ")
+
+4.  **ログイン**を選択し続行します。
+
+5.  複数の Common Data Service 環境にアクセスできる場合、次の画面で、パッケージをインストールする環境を選択するように求められます。 環境を 1 つ選択し、**ログイン**を選択します。
+
+    > [!div class="mx-imgBorder"] 
+    > ![環境を選択する](media/deploy-select-environment.png "環境を選択する")
+
+6.  次の画面で**次へ**を選択します。
+
+7.  次の画面には、パッケージがインストールされる環境の名前が表示されます。 情報を確認し、**次へ** を選択します。
+
+8.  次の画面では、パッケージを環境にインストールできるかどうかを検証します。 **次へ**を選択して、インストールを続行します。
+
+    > [!div class="mx-imgBorder"] 
+    > ![環境の検証](media/conf-validate-env.png "環境の検証")
+
+9.  次の画面にパッケージのインストールの状態が表示されます。 インストールが完了したら、**次へ** を選択します。
+
+    > [!div class="mx-imgBorder"] 
+    > ![インストールの状態](media/conf-package-install.png "インストールの状態")
+
+    > [!NOTE]
+    > パッケージのインストール完了にはしばらく時間がかかる場合があります。 
+
+10.  次の画面で、**完了**を選択して完了し、設定を閉じます。
+
+11.  アプリをインストールしたら、[Power Apps](https://make.powerapps.com) に移動し、右上隅から環境を選択します。 **アプリ**に新しいアプリが表示されます。
+
+        > [!div class="mx-imgBorder"] 
+        > ![新しいアプリ](media/conf-apps-new-apps.png "新しいアプリ")
+
+        インストールでは、Hospital Emergency Response アプリの構成とサンプル データも追加されます。
+
+**管理アプリ** を選択して、残りのデプロイ設定を構成できるモデル駆動型アプリを開きます。 管理アプリには、自分の病院システムのデータを追加および管理できるエンティティがいくつかあります。 左側のナビゲーション ウィンドウの下部にあるエリア ピッカーを使用して、別のエリアを選択できます。
 
 > [!div class="mx-imgBorder"] 
 > ![管理アプリを開く](media/conf-admin-app-open.png "管理アプリを開く")
 
-管理アプリのいくつかのエンティティで、病院システムのデータを追加したり管理したりできます。 左側のナビゲーション ペインの下部にある領域ピッカーを使用して、異なる領域を選択できます。
+## <a name="step-4-update-the-mobile-app-branding-and-tracking-level"></a>ステップ 4: モバイル アプリのブランディングとトラッキング レベルを更新する
 
-### <a name="step-4-load-configuration-and-master-data-for-your-organization"></a>手順 4.組織の構成データとマスター データを読み込む
+モバイル アプリのアプリ アイコン、配色、または表示名を変更して、組織のブランドに合わせることができます。 また、現場の従業員がモバイル アプリを使用して場所または施設の情報を追跡できるように、指定することもできます。 **管理**エリアで**アプリ**および**アプリ構成**エンティティを使用します。
 
-病院の緊急時対応アプリに必要なすべてのデータは、抽出したデプロイ フォルダーの下にある **Data Files** フォルダーから入手できます。
-
-**Data Files** フォルダーには、次のファイルとフォルダーがあります。
-
-<table style="width:100%">
-<tr>
-<th>名前</th>
-<th>Description</th>
-</tr>
-<tr>
-<td>ルートには次のファイルがあります。
-<ul>
-<li>00 - Acuities Import.xlsx</li>
-<li>00 - App Config Import.xlsx</li>
-<li>00 - App Import.xlsx</li>
-<li>00 - Request Roles Import.xlsx</li>
-<li>00 - Supplies Import.xlsx</li>
-</ul>
-</td>
-<td>これらは構成データ ファイルであり、管理アプリを使用して次のエンティティにインポートする必要があります。
-<ul>
-<li>Acuities</li>
-<li>App Config</li>
-<li>Apps</li>
-<li>Request Roles</li>
-<li>Supplies Import</li>
-</ul>
-<br/>これらのエンティティにデータをインポートすると、病院の緊急時対応アプリが動作するために必要な、これらのエンティティのレコードが作成されます。
-<br/>
-<br/>
-<strong>注意</strong>: 後で説明する <strong>Apps</strong> エンティティと <strong>App Config</strong> エンティティを除き、これらのエンティティの構成値を更新しないでください。</td>
-</tr>
-<tr>
-<td><strong>Sample Data</strong> フォルダー</td>
-<td><p>このフォルダーには、インポートすることでアプリケーションにサンプル データを設定できるサンプル データ ファイル (.xlsx) が格納されています。 これらのファイルには、データをアプリにインポートする必要がある順序がわかる名前が付けられています。 </p>
-<p>病院の緊急時対応アプリのマスター サンプル データを含む次のエンティティに、データをインポートします。
-<ul>
-<li>Systems</li>
-<li>Regions</li>
-<li>Facilities</li>
-<li>Locations</li>
-<li>部門</li>
-</ul>
-<p>サンプル データではなく自分の組織のデータをインポートしたい場合は、これらの Excel ファイル内のサンプル データを、自分の組織のデータに置き換えてから、アプリにデータをインポートできます。</p>
-<p>これらのエンティティのデータを手動で入力することもできます。 これらの各エンティティおよびエンティティ内の各フィールドについて詳しくは、「<a href="configure-data-reporting.md#configure-and-manage-master-data-for-your-organization">組織のマスター データを構成して管理する</a>」をご覧ください</p></td>
-</tr>
-<tr>
-<td><strong>Data Template File for Master Data</strong> フォルダー</td>
-<td><p>このフォルダーには、実際の組織のデータを設定してアプリにインポートするために使用できる、マスター エンティティの "空の" データ ファイル (.xlsx) が格納されています。</p>
-<p>これらのファイルには、データをアプリにインポートする必要がある順序がわかる名前が付けられています。 <strong>Sample Data</strong> フォルダーについて前述したエンティティの一覧と同じです。</p>
-<p>これらのエンティティのデータを手動で入力することもできます。 これらの各エンティティおよびエンティティ内の各フィールドについて詳しくは、「<a href="configure-data-reporting.md#configure-and-manage-master-data-for-your-organization">組織のマスター データを構成して管理する</a>」をご覧ください</p>
-</td>
-</tr>
-</table>
-
-#### <a name="step-41-load-mandatory-configuration-data"></a>手順 4.1: 必須の構成データを読み込む
-
-次の手順に進む前に、管理アプリで次のエンティティに構成データをインポートする**必要があります**。
-
-| 領域名 | エンティティ名| ファイル名
-|-|-|-
-| Locations | Acuities | 00 - Acuities Import.xlsx
-| Administration | Apps Config | 00 - App Config Import.xlsx
-| Administration | Apps | 00 - App Import.xlsx
-| Staffing | Request Roles | 00 - Request Roles Import.xlsx
-| Locations | Supplies | 00 - Supplies Import.xlsx
-
-##### <a name="how-to-load-data-from-data-files"></a>データ ファイルからデータを読み込む方法
-
-データ ファイルの 1 つからエンティティにデータをインポートするには:
-
-1.  管理アプリの左側のナビゲーション ペインで、データを読み込むエンティティを選択します。 たとえば、領域ピッカーで **Administration** を選択してから、**Acuities** を選択します。
-
-2.  **[Excel からインポート]** を選択し、**Data Files** フォルダーから **00 - Acuities Import.xlsx** ファイルを選択します。
-
-    > [!div class="mx-imgBorder"]
-    > ![Excel からインポート](media/conf-import-from-excel.png "Excel からインポート")
-
-3.  インポート ウィザードの手順に従って、データをインポートします。
-
-4.  データがインポートされると、エンティティにインポートされたレコードが表示されます。
-
-    > [!div class="mx-imgBorder"] 
-    > ![エンティティ レコード](media/conf-entity-record.png "インポート後のエンティティのレコード")
-
-他の構成データ エンティティについて上記の手順を繰り返します。
-
-または、マスター データを手動で入力する場合は、「[組織のマスター データを構成して管理する](configure-data-reporting.md#configure-and-manage-master-data-for-your-organization)」をご覧ください。
-
-#### <a name="step-42-load-master-data"></a>手順 4.2: マスター データを読み込む
-
-前述のように、次の操作を行うことができます。
-- **Data Files/Sample Data** フォルダーにあるマスター データ エンティティのサンプル データ ファイルを使用して、必要なエンティティにサンプル データをインポートできます。 
-
-- **Data Files/Data Template File for Master Data** フォルダーにあるマスター エンティティの "空の" データ ファイルを使用して、組織のデータを設定した後、必要なエンティティにデータをインポートできます。
-
-マスター データは、後で手動で追加することもできます。 詳細情報: [組織のマスター データを構成して管理する](configure-data-reporting.md#configure-and-manage-master-data-for-your-organization)
-
-### <a name="step-5-update-the-mobile-app-branding"></a>手順 5.モバイル アプリのブランドを更新する
-
-モバイル アプリのアプリ アイコン、配色、または表示名を組織のブランドに合わせて変更することができます。
-
-**Administration** 領域の **App** エンティティと **App Config** エンティティを使用してこの操作を行うには、デプロイ パッケージの **Data Files** フォルダーにある Excel ファイルおよび **App Icons** フォルダーにあるアイコン ファイルからアプリとアプリ構成のデータをインポートします (「[手順 2:デプロイ パッケージをダウンロードする](#step-2-download-the-deployment-package)」を参照してください)。
-
-> [!div class="mx-imgBorder"] 
-> ![Apps と App Config エンティティ](media/conf-app-app-config-entities.png "Apps エンティティと App Config エンティティ")
-
-1.  **App Import.xlsx** ファイルと **App Config Import.xlsx** ファイルをそれぞれ使用して、**Apps** エンティティと **App Config** エンティティの構成データをインポートしたことを確認します。
-
-1.  次に、インポートした **Apps** レコードに設定できるように、キャンバス アプリのアプリ ID をコピーします。 [Power Apps](https://make.powerapps.com) にサインインします。
-
-1.  右上隅で環境を選択します。
-
-1.  左側のペインで **Apps** を選択し、キャンバス アプリの省略記号 [...] を選択してから、 **[詳細]** を選択します。
-
-    > [!div class="mx-imgBorder"] 
-    > ![Apps の詳細](media/conf-environments-apps-details.png "アプリの詳細")
-
-1.  そのアプリの **[詳細]**  ペインの下部に、アプリ ID が表示されます。 アプリ ID とその名前をメモ帳ファイルにコピーします。
-
-    > [!div class="mx-imgBorder"] 
-    > ![アプリ ID の詳細](media/conf-details-app-id.png "アプリ ID の詳細")
-
-1.  各キャンバス アプリについて、手順 4 と 5 を繰り返します。
-
-1.  Admin App を開き、管理アプリの左側のナビゲーション ペインの領域ピッカーで **Administration** を選択して、**Apps** を選択します。 これにより、**App Import.xlsx** ファイルからインポートしたすべてのキャンバス アプリ レコードが表示されます。
+1.  管理アプリを開き、管理アプリの左側のナビゲーション ウィンドウで、エリアピッカーから **管理** を選択し、次に **アプリ** を選択します。
 
     > [!div class="mx-imgBorder"] 
     > ![管理アプリ](media/conf-admin-app-records.png "管理アプリ")
 
-1.  いずれかのアプリ レコードを選択して開きます。 **[Power App ID]** フィールドが空白になっていることに注意してください。
+1.  アプリレコードの1つを選択して開きます。 
 
     > [!div class="mx-imgBorder"] 
-    > ![[Power App ID] フィールド](media/conf-powerapp-id-field.png "アプリ情報の更新")
+    > ![Power App ID フィールド ](media/conf-powerapp-id-field.png "アプリの更新情報")
 
-1.  アプリの詳細ページで、次の操作を行います。
+1.  アプリの詳細ページ:
+ 
+    1. 組織のブランディングに合わせてアプリのアイコンにカスタム イメージを選択するには、アプリのアイコンをダブルクリックして、任意のアイコン ファイルを選択します。
 
-    1. 前の手順でメモ帳にコピーしたアプリ ID を **[Power App ID]** フィールドにコピーします。
+    3. 必要に応じて、アプリの **説明文** または **表示名** をアップデートします。
 
-    2. アプリ アイコンをダブルクリックして、**App Icons** フォルダーからアプリのアイコン ファイルを選択します。 正しいアイコンを簡単に選択できるように、画像ファイルにはわかりやすい名前が付けられています。 たとえば、**Emergency Response App** の場合は、"Emergency Response App.png" ファイルを選択します。 また、組織のブランドに従ってカスタム イメージを選択することもできます。
+    > [!TIP]
+    > 別の表示名を選択して、テスト環境でアプリを識別することができます。 例えば : **テスト-ベッドのキャパシティ**などです。
 
-    3. 必要に応じて、アプリの **[説明]** または **[表示名]** を更新します。
+    4. 必要に応じて、アプリをアプリ リストに表示すべき場合は **メニューからアプリを隠す** 値を更新します。 **緊急対応アプリ** はコンテナー アプリですので、この値は規定では **いいえ** に設定します。
 
-    4. 必要に応じて、 **[Hide App from Menu]\(メニューでアプリを非表示にする\)** の値を更新して、アプリをアプリ一覧に表示するかどうかを設定します。 **Emergency Response App** はコンテナー アプリであるため、この値は既定で **[いいえ]** に設定されています。
+    5. 必要に応じて、**アプリ表示ランク** 値をアプリ リストのアプリの表示位置を設定するように更新します。
 
-    5. 必要に応じて、 **[App Display Rank]\(アプリの表示順位\)** の値を更新して、アプリ一覧内のアプリの表示位置を設定します。
+    6. 必要に応じて、このモバイル アプリのデータを **場所** や **施設** レベルで追跡するかどうかを指定するには、**追跡レベル** フィールドの値を選択してください。 詳細については、[モバイル アプリのトラッキン グレベルを管理する](configure-data-reporting.md#manage-tracking-level-for-mobile-apps) を参照してください
 
-    6. 必要に応じて、 **[Tracking Level]\(追跡レベル\)** フィールドで値を選択し、このモバイル アプリでデータを **[Location]\(場所\)** レベルで追跡するか、または **[Facility]\(施設\)** レベルで追跡するかを指定します。 詳細情報: [モバイル アプリの追跡レベルを管理する](configure-data-reporting.md#manage-tracking-level-for-mobile-apps)
+    7. **保存**を選択します。
 
-    7. **[保存]** を選択します。
+1.  **アプリ** 下の各キャンバス アプリ レコードに対してステップ 2 と 3 を繰り返します。
 
-1.  **Apps** にある各キャンバス アプリ レコードについて、手順 8 と 9 を繰り返します。
+1.  左側のウィンドウで、**アプリの構成** を選択します。
 
-1.  左側のペインで、**App Config** を選択します。
+1.  **緊急対応アプリ** レコードを選択して、編集のために開きます。
 
-1.  **Emergency Response App** レコードを選択して、編集用に開きます。
+1.  必要に応じて、モバイル アプリの色を更新します。
 
-    1.  必要に応じて、アプリの色を更新します。
+    > [!TIP]
+    > テスト環境のアプリを識別するために、プライマリ カラーを指定するケースが考えられます。
 
-    2.  **[Device Sharing Enabled]\(デバイスの共有を有効にする\)** フィールドで **[はい]** または **[いいえ]** を選択して、モバイル アプリで **[サインアウト]** オプションを使用できるようにするかどうかを指定します。 **[はい]** を選択すると、 **[サインアウト]** オプションが使用できるようになります。 詳細情報: ユーザー ガイドの「[シフトの終了 - サインアウト](use.md#end-shift---sign-out)」を参照してください。
+2.  **デバイス共有を有効にする** フィールドで **はい** または **いいえ** を選択して、モバイルアプリで **サインアウト** オプションが利用できるかどうかを指定します。 **はい** を選ぶと **サインアウト** オプションが使用可能になります。 詳細については、ユーザーガイドの [シフト終了 - サインアウト](use.md#end-shift---sign-out) を参照してください。
 
     > [!div class="mx-imgBorder"] 
-    > ![[Device Sharing Enabled]\(デバイスの共有を有効にする\) フィールド](media/conf-device-sharing-enabled-field.png "[Device Sharing Enabled]\(デバイスの共有を有効にする\) フィールド")
+    > ![デバイス共有有効化フィールド](media/conf-device-sharing-enabled-field.png "デバイス共有有効化フィールド")
 
-1.  右下隅にある **[保存]** を選択して、変更を保存します。
+1.  変更を保存するには、画面の右下隅にある **保存** を選択します。
 
-### <a name="step-6-bypass-consent-for-mobile-apps"></a>手順 6:モバイル アプリの同意をバイパスする
+## <a name="step-5-bypass-consent-for-mobile-apps-optional"></a>ステップ 5: モバイル アプリの同意のバイパス (オプション)
 
-この手順を完了するには、テナント管理者である必要があります。 また、この手順を実行する前に、各モバイル アプリ (キャンバス アプリ) のアプリ ID を確認しておく必要があります。
+必要に応じて、モバイル アプリのユーザーの同意をバイパスするように構成して、ユーザーに位置情報のアクセス許可を許可しないようにすることができます。 このステップを完了するには、テナント管理者である必要があります。 また、このステップを実行する前に、各モバイル アプリ (キャンバス アプリ) のアプリ ID が必要になります。
 
-アプリのアプリ ID を確認するには、管理アプリの左側のナビゲーション ペインの領域ピッカーで **Administration** を選択して、**Apps** を選択します。 これにより、すべてのモバイル アプリ (キャンバス アプリ) が表示されます。 モバイル アプリを選択して、そのアプリ ID を表示します。 各アプリのアプリ ID をメモ帳ファイルにコピーします。
+自分のアプリにアプリ ID を取得するには、管理アプリの左側のナビゲーション ウィンドウで、エリアピッカーから **管理** を選択し、次に **アプリ** を選択します。 これにより、すべてのモバイル アプリ (キャンバス アプリ) が表示されます。 アプリ ID を表示するには、モバイル アプリを選択します 各アプリのアプリ ID をメモ帳ファイルにコピーします。
 
 > [!div class="mx-imgBorder"] 
-> ![アプリ ID を調べる](media/conf-admin-get-app-id.png "アプリ ID を調べる")
+> ![アプリ ID を取得する](media/conf-admin-get-app-id.png "アプリ ID を取得する")
 
-続けて次の作業を行います。
+次に以下のステップを実行します。
 
-1.  メモ帳を開き、次の PowerShell スクリプトをコピーします。
+1.  メモ帳を開いて、この PowerShell スクリプトをコピーします:
 
     ```powershell
     # MUST BE A TENANT ADMIN TO RUN THIS
@@ -335,52 +291,52 @@ Power Apps を購入した後、Common Data Service データベースを使用�
     Set-AdminPowerAppApisToBypassConsent -AppName APPGUIDHERE
     ```
 
-2.  `APPGUIDHERE` の値を、キャンバス アプリの実際のアプリ ID に置き換えます。
+2.  キャンバスアプリの実際のアプリ ID を持つ `APPGUIDHERE` 値を置き替えます。
 
-3.  ファイルを .ps ファイルとして保存します。
+3.  ファイルを .ps1 ファイル形式で保存します。
 
-4.  管理者として PowerShell を実行し、作成した .ps ファイルを実行します。
+4.  管理者として PowerShell を実行し、作成した .ps1 ファイルを実行します。
 
-5.  各キャンバス アプリについて、手順 2 から 4 を繰り返します。
+5.  各キャンバス アプリごとにステップ 2 - 4 を繰り返します。
 
-### <a name="step-7-add-azure-application-insights-key-to-mobile-apps-for-telemetry-optional"></a>手順 7:テレメトリ用に Azure Application Insights キーをモバイル アプリに追加する (省略可能)
+## <a name="step-6-add-azure-application-insights-key-to-mobile-apps-for-telemetry-optional"></a>手順 6：Azure Application Insights キーをテレメトリ用モバイル アプリのキーに追加する（オプション）
 
-必要に応じて、Azure Application Insights を使用して、モバイル アプリ (キャンバス アプリ) の詳細なテレメトリを収集し、アプリの使用状況に関する分析情報を取得できます。 これについて詳しくは、「[Application Insights を使用したアプリ テレメトリの分析](https://docs.microsoft.com/powerapps/maker/canvas-apps/application-insights)」をご覧ください
+オプションで、Azure Application Insights を使用してモバイル アプリ（キャンバス アプリ）の詳細なテレメトリを収集し、アプリの使用状況についての分析情報を得ることができます。 この詳細については、[Application Insights を使用してアプリのテレメトリを分析する](https://docs.microsoft.com/powerapps/maker/canvas-apps/application-insights) を参照してください
 
-### <a name="step-8-share-canvas-apps-with-users-in-your-organization"></a>手順 8:組織内のユーザーとキャンバス アプリを共有する
+## <a name="step-7-share-canvas-apps-with-users-in-your-organization"></a>ステップ 7: 組織内のユーザーとキャンバス アプリを共有する
 
-現場のユーザーが自分のモバイル デバイスのキャンバス アプリでデータを使用するには、アプリがユーザーと共有されている必要があります。 Azure AD グループを使用すると、ユーザーのグループと簡単にアプリを共有できます。
+最前線にいるユーザーがモバイル デバイスのキャンバス アプリを使用してデータを使用するには、アプリが共有されていなければなりません。 Azure AD グループを使用すると、ユーザーのグループとアプリをより簡単に共有できます。
 
 > [!IMPORTANT]
-> アプリを共有するユーザーまたはグループが*既に*環境にアクセスできることを確認します。 通常は、[環境の設定](#step-1-sign-up-for-power-apps-and-create-an-environment)時にユーザーまたはグループを追加します。 または、ここに記載されている手順に従ってユーザーを環境に追加し、アプリを共有する前に適切なアクセスを提供することもできます。[ユーザーを作成し、セキュリティ ロールを割り当てる](https://docs.microsoft.com/power-platform/admin/create-users-assign-online-security-roles)
+> アプリを共有する予定のユーザーまたはグループが *既に* 自分の環境へのアクセスができていることを確認してください。 通常、[環境を設定する](#step-2-sign-up-for-power-apps-and-create-an-environment) 間には、ユーザーまたはグループはすでに追加されています。 または、こちらのステップに従ってユーザーを環境に追加し、アプリをユーザーと共有する前に適切なアクセスを提供できます: [ユーザーを作成してセキュリティ ロールを割り当てる](https://docs.microsoft.com/power-platform/admin/create-users-assign-online-security-roles)。
 
-1.  [Power Apps](https://make.powerapps.com) にサインインします
+1.  [Power Apps](https://make.powerapps.com) へのサインイン
 
-2.  左側のナビゲーション ペインで **[アプリ]** を選択して、すべてのアプリの一覧を表示します。
+2.  左側のナビゲーション ウィンドウで **アプリ** を選択して、すべてのアプリのリストを表示します。
 
-3.  モバイル アプリ (キャンバス アプリ) を選択し、バナーで **[共有]** を選択します。
+3.  モバイル アプリ (キャンバス アプリ) を選択し、バナーの **共有** を選択します。
 
     > [!div class="mx-imgBorder"] 
     > ![キャンバス アプリを共有する](media/conf-share-canvas-apps.png "キャンバス アプリを共有する")
 
-4.  このアプリを共有する Azure AD グループまたはユーザーを指定します。 アプリは Common Data Service のデータに接続するので、エンティティに対するアクセス許可を付与する必要もあります。 共有パネルでは、エンティティに対するセキュリティの管理を求められます。 このアプリで使用されるエンティティに **[Emergency Response User] (緊急時対応ユーザー)** および **[Common Data Service ユーザー]** のセキュリティ ロールを割り当てて、 **[共有]** を選択します。
+4.  このアプリを共有する Azure AD グループまたはユーザーを指定します。 アプリが Common Data Service データに接続するので、エンティティへのアクセス許可も提供する必要もあります。 共有パネルでは、エンティティのセキュリティを管理するように求められます。 **緊急対応ユーザー** と **Common Data Service ユーザー** のセキュリティ ロールをこのアプリを使用してエンティティに割り当て、**共有** を選択します。
 
     > [!div class="mx-imgBorder"] 
-    > ![Azure AD のグループまたはユーザーとアプリを共有する](media/conf-share-app-groups-users.png "Azure AD のグループまたはユーザーとアプリを共有する")
+    > ![アプリを Azure AD グループまたはユーザーと共有する](media/conf-share-app-groups-users.png "アプリを Azure AD グループやユーザーと共有する")
 
-5.  各モバイル アプリについて、手順 3 と 4 を繰り返します。
+5.  各モバイル アプリごとにステップ 3 と 4 を繰り返します。
 
 アプリの共有に関する詳細情報: [キャンバス アプリを共有する](https://docs.microsoft.com/powerapps/maker/canvas-apps/share-app)
 
-### <a name="step-9-set-your-mobile-app-as-hero-and-featured-app"></a>手順 9:モバイル アプリをヒーロー アプリおよびおすすめアプリとして設定する
+## <a name="step-8-set-your-mobile-app-as-hero-and-featured-app-optional"></a>ステップ 8: モバイル アプリをヒーローおよびおすすめアプリとして設定する (オプション)
 
-この手順では、**Power Apps** モバイル アプリ内のヒーロー アプリおよびおすすめアプリとして、モバイル アプリを設定します。 この手順を完了するには、テナント管理者である必要があります。
+オプションで、モバイル アプリをヒーローとして設定し、**Power Apps** モバイル アプリ内でおすすめアプリにすることができます。 このステップを完了するには、テナント管理者である必要があります。
 
-この手順を実行する前に、ヒーロー アプリおよびおすすめアプリとして設定する各モバイル アプリ (キャンバス アプリ) のアプリ ID を、確認しておく必要があります。 キャンバス アプリのアプリ ID を取得する方法については、次のセクションを参照してください: [手順 6: モバイル アプリの同意をバイパスする](#step-6-bypass-consent-for-mobile-apps)
+このステップを実行する前に、ヒーローおよびおすすめアプリとして設定する各モバイル アプリ (キャンバス アプリ) のアプリ ID が必要です。 キャンバス アプリのアプリ ID を取得する方法については、次を参照してください 
 
-続けて次の作業を行います。
+次に以下を実行します。
 
-1.  メモ帳を開き、次の PowerShell スクリプトをコピーします。
+1.  メモ帳を開いて、この PowerShell スクリプトをコピーします:
 
 
     ```powershell
@@ -406,145 +362,178 @@ Power Apps を購入した後、Common Data Service データベースを使用�
     Set-AdminPowerAppAsHero -AppName APPGUIDHERE
     ```
 
-2.  スクリプト内の `APPGUIDHERE` の値を、それぞれおすすめおよびヒーローとして設定するアプリの実際のアプリ ID に置き換えます。
+2.  スクリプトの `APPGUIDHERE` 値を、それぞれお薦めやヒーローとして設定するアプリの実際のアプリ ID と置き換えます。
 
 3.  ファイルを .ps ファイルとして保存します。
 
-4.  管理者として PowerShell を実行し、作成した .ps ファイルを実行します。
+4.  管理者として PowerShell を実行し、今作成した .ps ファイルを実行します。
  
 
-### <a name="step-10-share-model-driven-app-with-admins-in-your-organization"></a>手順 10: 組織内の管理者とモデル駆動型アプリを共有する
+## <a name="step-9-share-model-driven-app-with-admins-in-your-organization"></a>ステップ 9: モデル駆動型アプリを組織の管理者と共有する
 
-管理者ユーザーが管理アプリ (モデル駆動型アプリ) を使用できるようにするには、アプリを管理者ユーザーと共有する必要があります。 Azure AD グループを使用すると、管理者ユーザーのグループと簡単にアプリを共有できます。
+管理ユーザーが管理アプリ (モデル駆動型アプリ) を使用するには、それを管理者と共有する必要があります。 Azure AD グループを使用すると、管理ユーザーのグループとアプリをより簡単に共有できます。
 
 > [!IMPORTANT]
-> アプリを共有するユーザーまたはグループが*既に*環境にアクセスできることを確認します。 通常は、[環境の設定](#step-1-sign-up-for-power-apps-and-create-an-environment)時にユーザーまたはグループを追加します。 または、ここに記載されている手順に従ってユーザーを環境に追加し、アプリを共有する前に適切なアクセスを提供することもできます。[ユーザーを作成し、セキュリティ ロールを割り当てる](https://docs.microsoft.com/power-platform/admin/create-users-assign-online-security-roles)
+> アプリを共有する予定のユーザーまたはグループが *既に* 環境へのアクセスができていることを確認してください。 通常、[環境を設定する](#step-2-sign-up-for-power-apps-and-create-an-environment) 間には、ユーザーまたはグループはすでに追加されています。 または、こちらのステップに従ってユーザーを環境に追加し、アプリをユーザーと共有する前に適切なアクセスを提供できます: [ユーザーを作成してセキュリティ ロールを割り当てる](https://docs.microsoft.com/power-platform/admin/create-users-assign-online-security-roles)。
 
 1. [Power Apps](https://make.powerapps.com) にサインインします。
 
-2. 左側のナビゲーション ペインで [アプリ] を選択して、すべてのアプリの一覧を表示します。
+2. 左側のナビゲーション ウィンドウで、アプリ を選択してすべてのアプリのリストを表示します。
 
-3. モデル駆動型アプリ (**Admin App – Emergency Response App**) を選択し、バナーで **[共有]** を選択します。
+3. モデル駆動型アプリ (**管理アプリ – 緊急対応アプリ**) を選択して、バナーで **共有** を選択します。
 
-4. このアプリを共有する Azure AD グループまたは管理者ユーザーを指定し、**Emergency Response Admin** セキュリティ ロールを割り当てて、 **[共有]** を選択します。
+4. このアプリを共有する Azure AD グループまたは管理ユーザーを指定して、**緊急対応管理者** セキュリティ ロールを割り当て、**共有** を選択します。
 
-## <a name="publish-the-power-bi-dashboard"></a>Power BI ダッシュボードを発行する
+## <a name="step-10-publish-the-power-bi-dashboard"></a>ステップ 10: Power BI ダッシュボードを公開する
 
-ダッシュボードを使用して分析情報の取得や意思決定を行うことができるように、Power BI ダッシュボードを発行し、組織内のユーザーと共有します。
+Power BI ダッシュボードを公開し、組織内のユーザーと共有することで、インサイトと意思決定のためにダッシュボードを使用できます。
 
-Power BI ダッシュボードは、次のいずれかのオプションを使用して発行できます: AppSource のテンプレート アプリを使用する。"*または*"、デプロイ パッケージから入手できる **.pbit** ファイルを使用する。
+Power BI ダッシュボードを公開するには、次のいずれかのオプションを使用てください：AppSource のテンプレートアプリを使用する、*または* デプロイメント パッケージで利用可能な **.pbit** ファイルを使用します。
 
-### <a name="option-a-publish-using-the-template-app-from-appsource-preferred-option"></a>オプション A: AppSource のテンプレート アプリを使用して発行する (推奨オプション)
+### <a name="option-a-publish-using-the-template-app-from-appsource-preferred-option"></a>オプション A：AppSource のテンプレートアプリを使用して公開する（推奨オプション）
 
-AppSource のテンプレート アプリの使用方法について詳しくは、次を参照してください。[病院の緊急時対応の意思決定支援ダッシュボードに接続する](https://docs.microsoft.com/power-bi/connect-data/service-connect-to-health-emergency-response)
+AppSource のテンプレート アプリの使用に関する詳細情報は、[病院の緊急対応意思決定サポート ダッシュボードに接続する](https://docs.microsoft.com/power-bi/connect-data/service-connect-to-health-emergency-response) を参照してください。
 
 > [!IMPORTANT]
-> この方法では、.pbit ファイルのオプションを使用して発行するよりも、簡単に Power BI ダッシュボードを発行することができます。 .pbit ファイルのオプションを使用して発行するのではなく、このオプションを使用することをお勧めします。 
+> これは、.pbit ファイルのオプションを使用して公開するよりも、 Power BI のダッシュボードを簡単に公開することができます。 .pbit ファイルのオプションを使用して発行するよりも、このオプションの使用を推奨しています。 
 
-### <a name="option-b-publish-using-the-pbit-file-in-the-deployment-package"></a>オプション B: デプロイ パッケージの .pbit ファイルを使用して発行する
+### <a name="option-b-publish-using-the-pbit-file-in-the-deployment-package"></a>オプションB：展開パッケージの .pbit ファイルを使用して公開する
 
-このセクションでは、デプロイ パッケージから入手できる **Emergency Response App.pbit** を使用してダッシュボードを発行する方法について説明します。
+このセクションでは、展開パッケージで利用可能な**緊急時対応アプリ .pbit** ファイルを使用してダッシュボードを公開する方法について説明します。
 
 #### <a name="prerequisites"></a>前提条件
 
-- レポートにアクセスするユーザーに、Power BI Premium 容量または Power BI Pro ライセンスが割り当てられていること。 
+- <https://aka.ms/emergency-response-solution> から展開パッケージ (.zip file) をダウンロードします。 ダウンロード後、.zip ファイルをコンピューターに解凍します。 .pbit ファイルは P**ower BI テンプレート** フォルダーにあります
 
-- レポートを発行するワークスペースを Power BI で作成します。 Power BI にサインインしてワークスペースを作成します。 詳細情報: [Power BI で新しいワークスペースを作成する](https://docs.microsoft.com/power-bi/service-create-the-new-workspaces)
+- レポートにアクセスするユーザーに割り当てられる Power BI Premium 容量または Power BI Pro ライセンス。 
 
-- Windows アプリ ストア <https://aka.ms/pbidesktop> から Power BI Desktop をインストールします
+- レポートを公開する Power BI でワークスペースを作成します。 Power BI にサインインして、ワークスペースを作成します。 詳細: [Power BI で新しいワークスペースを作成する](https://docs.microsoft.com/power-bi/service-create-the-new-workspaces)
+
+- Windows の App Store: <https://aka.ms/pbidesktop> からの Power BI Desktop のインストール
 
    > [!NOTE] 
-   > 以前に Power BI Desktop を、ダウンロード センターのページから実行可能ファイルとして直接ダウンロードしてインストールした場合は、それを削除し、Microsoft Store のものを使用してください。 Microsoft Store のバージョンは、新しいリリースが利用可能になると自動的に更新されます。
+   > 既にダウンロード センターのページから実行ファイルとして直接ダウンロードし、 Power BI Desktop をインストールしていた場合は、削除して Microsoft Store のものを使用してください。 Microsoft Store のバージョンは、バージョンは新しいリリースがされると自動的に更新されます。
    >
-   > Microsoft Store からインストールできない場合は、[ダウンロード センターのページ](https://www.microsoft.com/download/details.aspx?id=58494)から、最新の非 Microsoft Store バージョンをインストールしてください。
+   > Microsoft Store からインストールできない場合は、[ダウンロード センター ページ](https://www.microsoft.com/download/details.aspx?id=58494) から Microsoft Store 以外の最新バージョンをインストールしてください。
 
-- アプリ ストアから Power BI Desktop をインストールした後、それを実行し、組織内で Power BI アプリを発行するためのアクセス許可を持つアカウントを使用してサインインします。
+- App Store から Power BI Desktop をインストールし、実行し、組織内で Power BI アプリを公開するための権限を持つアカウントを使用してログインします。
 
-#### <a name="publish-the-dashboard-using-the-pbit-file"></a>.pbit ファイルを使用してダッシュボードを発行する
+#### <a name="publish-the-dashboard-using-the-pbit-file"></a>.pbit ファイルを使用してダッシュボードを公開する
 
-1. デプロイ パッケージを抽出した場所に移動します。 **Power BI Template** フォルダーに **Emergency Response App.pbit** ファイルがあります。
+1. デプロイ パッケージを抽出する場所に移動します。 **Power BI テンプレート** フォルダー下に **緊急時対応アプリ.pbit** ファイルがあります。
 
-2. Power BI Desktop で **Emergency Response App.pbit** ファイルを開きます。 次の値を入力するように求められます。
+2. Power BI Desktop で **緊急時対応アプリ.pbit** ファイルを開きます。 次の値を入力するように求められます。
 
-    - **Organization_name**:各レポート ページの左上隅に設定される、ご自分の組織名を入力します。
-    - **CDS_base_solution_URL**:ご自分の Common Data Service 環境インスタンスの URL を入力します。 例: 「 https:// *[myenv]* .crm.dynamics.com」
+    - **組織名**: 各レポート ページの左上隅に表示される組織名を入力します。
+        > [!TIP]
+        > テスト環境で Power BI ダッシュボードを識別するには、**Organization_name** に別の値を指定した方が分かりやすい場合もあります。 例えば、**Contoso テスト システム**と入力します。
 
-    > [!div class="mx-imgBorder"]
-    > ![組織名とベース URL を指定する](media/pbi-pub-rep1.png)
-
-    **[読み込み]** を選択します。
-
-3. Common Data Service 環境に接続するための資格情報を入力するように求められます。 **[組織アカウント]**  >  **[サインイン]** を選択して、Common Data Service の資格情報を指定ます。  
+    - **CDS_base_solution_URL**: Common Data Service 環境インスタンスの URL を入力します。 例: https://*[myenv]*.crm.dynamics.com
 
     > [!div class="mx-imgBorder"]
-    > ![組織アカウントを選択する](media/select-organizational-account.png)
+    > ![組織名とベースURLを指定する](media/pbi-pub-rep1.png)
 
-4. サインインしたら、 **[接続]** を選択して、Common Data Service 内のデータに接続します。
+    **読み込み** を選択します。
 
-5. 接続が成功すると、Power BI レポートにデータが表示されます。 クエリに対して保留中の変更を適用するように求められます。 **[変更の適用]** を選択します。
-
-6. **[発行]** を選択し、Power BI ワークスペースにデータを発行します。 変更内容を保存するように求められます。 **[保存]** を選択します。
+3. Common Data Service 環境に接続するための資格情報を入力するように求められます。 **組織アカウント** > **サインイン** を選択して、自分の Common Data Service 資格情報を指定します。  
 
     > [!div class="mx-imgBorder"]
-    > ![更新の発行を選択する](media/select-refresh-publish.png)
+    > ![select-organizational-account](media/select-organizational-account.png)
 
-7. Common Data Service の環境情報と共に、ファイルを .pbix ファイルとして保存するように求められます。 名前を指定し、コンピューターに保存します。
+4. サインイン後、**接続** を選択して、Common Data Service のデータに接続します。
 
-8. .pbix ファイルを保存した後、レポートを発行するように求められます。 **[Power BI へ発行]** ページで、発行するワークスペースを選択してから、 **[選択]** をクリックします。
+5. 接続に成功すると、データが Power BI レポートに表示されます。 保留中の変更をクエリに適用するように求められ、**変更を適用** を選択します。
 
-12. ワークスペースでレポートを使用できるようになります。 次に、データセットに対するデータの更新設定を構成します。 ワークスペースでデータセットを選択し、 **[更新のスケジュール設定]** アイコンを選択します。  
+6. **公開** を選択してデータを自分の Power BI ワークスペースに公開します。 変更を保存するように求められますので **保存** を選択します。
+
+    > [!div class="mx-imgBorder"]
+    > ![select-refresh-publish](media/select-refresh-publish.png)
+
+7. ファイルを Common Data Service 環境情報とともに、 .pbix ファイルとして保存するように求められます。 名前を入力して、コンピューターに保存します。
+
+8. .pbix ファイルを保存すると、レポートを公開するように求められます。 **Power BI** へ公開ページで、公開するワークスペースを選択して **選択する** をクリックします。
+
+12. レポートがワークスペースで使用可能になります。 次に、データセットのデータ更新設定を構成します。 ワークスペースでデータセットを選択し **更新のスケジュール** アイコンを選択します。  
     
     > [!div class="mx-imgBorder"]
-    > ![更新のスケジュールを設定する](media/schedule-refresh.png)
+    > ![schedule-refresh](media/schedule-refresh.png)
 
-13. データ更新設定を初めて設定しようとすると、 **[設定]** ページと共に、資格情報が無効であることを示すメッセージが表示されます。 **[データ ソースの資格情報]** の下で、 **[資格情報の編集]** を選択して、使用する資格情報を指定します。  
+13. データ更新設定を初めて設定しようとすると、**設定** ページに認証情報が無効であることを示すメッセージが表示されます。 **データ ソース資格情報** から **資格情報を編集する** を選択して、自分の資格情報を指定します。  
 
     > [!div class="mx-imgBorder"]
-    > ![[資格情報の編集] を選択する](media/select-edit-credentials.png)
+    > ![select-edit-credentials](media/select-edit-credentials.png)
 
-14. 次の画面で以下の操作を行います。
-    - **[認証方法]** として **[OAuth2]** を選択します。
-    - **[このデータ ソースのプライバシー レベルの設定]** として **[組織]** を選択します。
-    - **[サインイン]** をクリックします。
+14. 次の画面で次の操作を行います。
+    - **認証方法** を **OAuth2** として選択します。
+    - **このデータ ソースのプライバシー レベルの設定** を **組織的** として設定します。
+    - **サインイン**を選択します。
 
-    資格情報を指定してサインインするように求められます。 サインインに成功すると、 **[設定]** ページに戻ります。
+    資格情報を指定してサインインするように求められます。 サインインに成功すると **設定** ページに戻ります。
 
-15. **[設定]** ページで、 **[スケジュールされている更新]** を展開し、スケジュールに基づいてデータを更新するために必要な詳細を指定します。 **[適用]** を選びます。
+15. **設定** ページで **スケジュールされた更新** を展開して、スケジュールに基づいてデータを更新するために必要な詳細を指定します。 **適用**を選択します。
 
     > [!div class="mx-imgBorder"]
     > ![スケジュールされた更新](media/refresh-schedule.png)
 
     > [!NOTE] 
-    > データを更新できる回数には制限があります。 Power BI では、共有された容量にあるデータセットに対して、1 日の更新を 8 回までに制限しています。 データセットが Premium 容量にある場合は、データセットの設定で、1 日に最大 48 回まで更新をスケジュールできます。 詳細情報: [データを更新する](https://docs.microsoft.com/power-bi/refresh-data#data-refresh)
+    > データを更新できる回数には制限があります。 Power BI は共有容量のデータセットを 1 日 8 回の更新に制限します。 データセットが Premium 容量にある場合、データセット設定で 1 日あたり最大 48 回の更新をスケジュールできます。 詳細: [データを差真の状態に更新](https://docs.microsoft.com/power-bi/refresh-data#data-refresh)
 
-16. 左側のペインでワークスペース名を選択し、右上隅で **[アプリの作成]** を選択します。  
+16. 左側のウィンドウでワークスペース名を選択し、次に右上隅にある **アプリを作成** を選択します。  
 
     > [!div class="mx-imgBorder"]
-    > ![[アプリの作成] を選択する](media/select-create-app.png)
+    > ![select-create-app](media/select-create-app.png)
 
-17. アプリ発行ページで次のようにします。
+17. アプリ公開ページで次のことをおこないます。
 
-    1. **[セットアップ]** タブで、アプリの名前と説明を指定します。
+    1. **セットアップ** タブで、アプリの名前と説明を指定します。
 
-    2. **[ナビゲーション]** タブで、発行するダッシュボードの場所を指定します。
+    2. **ナビゲーション** タブで、ダッシュボードを公開する場所を指定します。
 
-    3. **[アクセス許可]** タブで、このアプリを表示できるユーザーまたはグループを指定します。 **[このアプリを自動的にインストールします]** チェック ボックスをオンにして、このアプリがエンド ユーザーに自動的にインストールされるようにします。 詳細情報: [エンド ユーザーにアプリを自動的にインストールする](https://docs.microsoft.com/power-bi/service-create-distribute-apps#automatically-install-apps-for-end-users)  
+    3. **許可** タブで、このアプリを表示できるユーザーまたはグループを指定します。 エンドユーザー向けにこのアプリを自動的にインストールするために **このアプリを自動的にインストール** チェックボックスをオンにします。 詳細: [エンドユーザー向けのアプリを自動的にインストールする](https://docs.microsoft.com/power-bi/service-create-distribute-apps#automatically-install-apps-for-end-users)  
 
         > [!div class="mx-imgBorder"]
-        > ![アプリの自動インストールを選択する](media/select-install-apps-automatically.png)
+        > ![select-install-apps-automatically](media/select-install-apps-automatically.png)
 
-18. **[アプリの発行]** を選択します。 Power BI でのアプリの発行について詳しくは、「[アプリを発行する](https://docs.microsoft.com/power-bi/service-create-distribute-apps#publish-your-app)」をご覧ください。
+18. **アプリの公開** を選択します。 Power BI でのアプリの公開についての詳細は [アプリの公開](https://docs.microsoft.com/power-bi/service-create-distribute-apps#publish-your-app) を参照してください。
 
-### <a name="after-publishing-the-dashboard"></a>ダッシュボードを発行した後
+### <a name="after-publishing-the-dashboard"></a>ダッシュボードの公開後
 
-発行した Power BI ダッシュボードを表示するには、「[Power BI ダッシュボードを表示する](configure-data-reporting.md#view-power-bi-dashboard)」をご覧ください
+公開された Power BI ダッシュボードを表示するには、[Power BI のダッシュボードを表示する](configure-data-reporting.md#view-power-bi-dashboard) を参照してください
+
+## <a name="step-11-enable-flows-for-populating-cdc-data"></a>手順 11 : CDC データを取り込むのフローを有効化する
+
+疾病予防管理センター (CDC) が各病院に報告を要求している形式で、ソリューション内のさまざまなソースからのデータの照合に役立つ次のフローを有効にする必要があります :
+
+- CDC データの入力 - 医療スタッフ
+- CDC データの入力 - 医療消耗品
+- CDC データの入力 - 患者および病院のキャパシティ
+
+1.  [Power Automate](https://flow.microsoft.com/) にサインインする。
+
+2.  左側のウィンドウで、**ソリューション**を選択します。 ソリューションのリストから、**地域の緊急時対応ソリューション**を選択し、ソリューションを開きます。
+
+3.  ソリューションでは、**フロー**でフィルター処理し、すべてのフローを検索します。
+
+    > [!div class="mx-imgBorder"]
+    > ![すべてのフロー](media/all-flows.png)
+
+4.  フロー名を選択してフロー定義を開きます。 例えば、**CDC データの入力 - 医療スタッフ** です。
+
+5.  ツールバーで **編集** を選択し、接続情報を確認します。  
+
+6. **保存**を選択して変更の保存を行い、**有効にする**を選択します。
+
+7. 次の各フローで手順 4 から 6 を実行して接続を承認し、フローを検証します。
+
+    - CDC データの入力 - 医療消耗品
+    - CDC データの入力 - 患者および病院のキャパシティ
 
 ## <a name="issues-and-feedback"></a>問題とフィードバック
 
-- 病院の緊急時対応サンプル アプリに関する問題を報告するには、<https://aka.ms/emergency-response-issues> にアクセスしてください。
+- 病院緊急時対応サンプル アプリに関する問題を報告するには、<https://aka.ms/emergency-response-issues> にアクセスしてください。
 
-- 病院の緊急時対応サンプル アプリに関するフィードバックについては、<https://aka.ms/emergency-response-feedback> にアクセスしてください。
+- 病院緊急時対応サンプル アプリに関するフィードバックについては、<https://aka.ms/emergency-response-feedback> にアクセスしてください。
 
 ## <a name="next-step"></a>次のステップ
 
-[病院の緊急時対応アプリを使用する](use.md)
+[データを構成してレポートを表示する](configure-data-reporting.md)

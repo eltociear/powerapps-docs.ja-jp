@@ -10,12 +10,12 @@ ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
-ms.openlocfilehash: ee265ae0c82cc6b8fe82595ae555b989579177d2
-ms.sourcegitcommit: ebb4bb7ea7184e31dc95f0c301ebef75fae5fb14
+ms.openlocfilehash: 8a1cf58022d28366a9f24821a5a78dc9a661b559
+ms.sourcegitcommit: e1a6113bc54d23f94a2ec336076ca715df75f67f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "3218536"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "3370087"
 ---
 # <a name="common-issues-and-workarounds"></a>共通の問題と回避策
 
@@ -30,7 +30,7 @@ ms.locfileid: "3218536"
 **回避策**:
 
 - Visual Studio インストーラーを開きます。
-- Visual Studio 2017 で、 **修正 を選択します**。
+- Visual Studio 2017 以降の場合は、**修正** を選択します。
 - **個別のコンポーネント** を選択します。
 - コード ツール配下の **NuGet ターゲットと構築タスク** を確認します。
 
@@ -102,17 +102,21 @@ ms.locfileid: "3218536"
     <PcfBuildMode>production</PcfBuildMode>
   </PropertyGroup>
   ```
-## <a name="solution-checker-issue"></a>ソリューション チェッカーの問題
 
-**エラー: eval 関数または同等の機能は使用しないでください。**
+## <a name="when-running-power-apps-checker-with-the-solution-built-using-cli-tooling-in-default-configuration"></a>既定の構成で CLI ツールを使用して構築されたソリューションを備えた Power Apps チェッカーを実行している場合
 
-このエラーは、ユーザーが CLI を使用してコード コンポーネントを作成、ビルド、パッケージ化し、`msbuild` を使用してソリューション ファイルをビルドし、ソリューション ファイルを Common Data Service にインポートしてソリューション チェッカーを実行すると発生します。
+**エラー: 「eval」関数または同等の機能を使用しないでください** 既定の `msbuild` 構成が `Configuration=Debug` であるため、この警告は仕様によるものです。 これにより、`eval()` を出力する開発モードでパッケージ化するように webpack (コード コンポーネントをバンドルするために使用) に指示されます。 
 
 **回避策**
 
-次のコマンドを使用してソリューション ファイルを再構築し、ソリューションを Common Data Service に再インポートして、ソリューション チェッカーを実行します。
+次のいずれかのコマンドを使用してソリューション ファイルを再構築し、ソリューションを Common Data Service に再インポートします。
+
 ```CLI
 msbuild/property:configuration:Release
+```
+
+```CLI
+npm run build -- --buildMode production
 ```
 
 ## <a name="power-apps-component-framework-datasets-getvalue-by-property-alias-doesnt-work"></a>Power Apps component framework Datasets プロパティ エイリアスによる getValue が機能しない

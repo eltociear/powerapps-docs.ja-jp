@@ -2,7 +2,7 @@
 title: Power Apps でモデル駆動型アプリ システム グラフを作成、編集する | MicrosoftDocs
 description: グラフを作成または編集する方法を学習する
 ms.custom: ''
-ms.date: 05/23/2018
+ms.date: 03/30/2020
 ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
@@ -22,22 +22,19 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 24c932f34c23c42f938f54ffa4f328f25a714c59
-ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
+ms.openlocfilehash: 426bfaf0ab53e1d896f7e0b098e089c8596ad907
+ms.sourcegitcommit: 3c6c5594b73abd5ff438d50f3b579d56cef7241c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "2875183"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "3285613"
 ---
 # <a name="create-a-model-driven-app-system-chart"></a>モデル駆動型アプリ システム グラフを作成する
 
-このトピックでは、システム グラフの作成方法について説明します。 システム グラフは、組織所有のグラフであり、アプリを実行しているデータを読み取るためのアクセス権を持つユーザーはだれでも使用できるようになります。 システム グラフは、特定のアプリ ユーザーに割り当てたり共有したりすることはできません。  
+このトピックでは、システム グラフの作成方法について説明します。 システム グラフは、組織所有のグラフであり、アプリを実行しているデータを読み取るためのアクセス権を持つユーザーはだれでも使用できるようになります。 システム グラフを、特定のアプリ ユーザーに割り当てたり共有したりすることはできません。  
   
 1. [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインします。  
 
-    > [!IMPORTANT]
-    > **モデル駆動型** デザイン モードがない場合は、[環境の作成](https://docs.microsoft.com/powerapps/administrator/create-environment)が必要となることがあります。     
-  
 2. **データ**を展開して**エンティティ**を選択し、目的のエンティティを選択して**グラフ** タブを選択します。  
   
 3.  ツール バーで、**グラフの追加** を選択します。  

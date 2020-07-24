@@ -1,20 +1,19 @@
 ---
 title: ポータルの Liquid の種類を使用する | MicrosoftDocs
 description: ポータルで使用可能な Liquid の種類について説明します。
-author: tapanm-msft
-manager: kvivek
+author: gitanjalisingh33msft
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 10/07/2019
-ms.author: tapanm
-ms.reviewer: ''
-ms.openlocfilehash: e84ec3363f492231c218e0bb9f6e8a8d8b45fce6
-ms.sourcegitcommit: a1b54333338abbb0bc3ca0d7443a5a06b8945228
+ms.author: gisingh
+ms.reviewer: tapanm
+ms.openlocfilehash: db1cc7a73d9e99fabc54d728731ee91da2de2164
+ms.sourcegitcommit: c12260f372ad2cc48d3146be570d2088c9ef1d86
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "3125050"
+ms.lasthandoff: 06/20/2020
+ms.locfileid: "3493662"
 ---
 # <a name="available-liquid-types"></a>使用可能な Liquid の種類
 

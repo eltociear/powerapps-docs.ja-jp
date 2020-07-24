@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 6494c278f147be996beb10d0e295666ae39a564b
-ms.sourcegitcommit: be9b8c0f5c7c7e9992e93fa0d03e961b4ac7e3ae
+ms.openlocfilehash: 624b158e50807396ccc3e349b1afc2c158bbc82c
+ms.sourcegitcommit: 4a88daac42180283314f6bedee3d6810fd5a6c25
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "3172582"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "3275915"
 ---
 # <a name="export-prepare-to-edit-and-import-the-ribbon"></a>リボンのエクスポート、編集の準備、およびインポート
 
@@ -27,24 +27,26 @@ ms.locfileid: "3172582"
 
 リボンを編集するには、次の手順を実行します。  
   
-1.  [リボンをエクスポートする](export-prepare-edit-import-ribbon.md#BKMK_ExportTheRibbon)  
+1. [リボンをエクスポートする](export-prepare-edit-import-ribbon.md#BKMK_ExportTheRibbon)  
   
-2.  [XML を編集する準備をする](export-prepare-edit-import-ribbon.md#BKMK_PrepareToEditTheXML)  
+2. [XML を編集する準備をする](export-prepare-edit-import-ribbon.md#BKMK_PrepareToEditTheXML)  
   
-3.  `<RibbonDiffXml>` を編集する  
+3. `<RibbonDiffXml>` を編集する  
   
-4.  [リボンをインポートする](export-prepare-edit-import-ribbon.md#BKMK_ImportTheRibbon)  
+4. [リボンをインポートする](export-prepare-edit-import-ribbon.md#BKMK_ImportTheRibbon)  
   
-<a name="BKMK_ExportTheRibbon"></a>   
+<a name="BKMK_ExportTheRibbon"></a>
+
 ## <a name="export-the-ribbon"></a>リボンをエクスポートする  
- リボンをエクスポートするには、ソリューションにリボンを組み込んで、このソリューションをエクスポートします。 すべてのカスタマイズをエクスポートできますが、大量のデータが出力される可能性があります。 既存のアンマネージド ソリューションを使用するか、新しいソリューションを作成することをお勧めします。  
+
+リボンをエクスポートするには、ソリューションにリボンを組み込んで、このソリューションをエクスポートします。 すべてのカスタマイズをエクスポートできますが、大量のデータが出力される可能性があります。 既存のアンマネージド ソリューションを使用するか、新しいソリューションを作成することをお勧めします。  
   
 #### <a name="create-a-new-solution"></a>新しいソリューションの作成  
   
 1. **設定 > カスタマイズ**に移動します。
 1. **設定 > ソリューション**に移動します。
 1. **新規**をクリックまたはタップします。  
-1. 分かりやすい名前を**表示名**と**一意の名前**に入力し、**発行元**と**バージョン**番号を指定します。  
+1. わかりやすい**表示名**、**名前**を入力し、**発行元**と**バージョン**番号を入力します。  
   
    > [!NOTE]
    >  通常は、組織の既定の発行元を使用できます。  
@@ -106,12 +108,13 @@ ms.locfileid: "3172582"
 ## <a name="prepare-to-edit-the-xml"></a>XML を編集する準備をする  
  エクスペリエンス向上のために、IntelliSense のサポートを提供するスキーマ検証を使用するアプリケーションで customizations.xml ファイルを編集します。 詳細については、「[スキーマ検証を使用したカスタマイズ ファイルの編集](edit-customizations-xml-file-schema-validation.md)」を参照してください。  
   
-<a name="BKMK_ImportTheRibbon"></a>   
+<a name="BKMK_ImportTheRibbon"></a>
+
 ## <a name="import-the-ribbon"></a>リボンをインポートする  
   
 1. Visual Studio または Visual Web Developer 2010 Express から customization.xml ファイルを編集した後、customization.xml タブを右クリックし、 **含んでいるフォルダーを開く** を選択します。  
   
-2. ソリューションを展開したときに含まれていたすべてのファイルまたはフォルダーを選択します。 選択中のファイルを右クリックし、**送る**をポイントし、**圧縮 (zip 形式) フォルダー**をクリックします。  
+2. ソリューションを展開したときに含まれていたすべてのファイルまたはフォルダーを選択します。 選択中のファイルを右クリックし、**送る**をポイントし、**圧縮 (zip 形式) フォルダー**を選択します。  
   
    > [!NOTE]
    >  ZIP 圧縮ファイルが同じフォルダーに作成されます。 このファイルの名前は、フォルダー内の他のファイルの名前に拡張子 .zip を付けた名前になります。  
@@ -130,6 +133,7 @@ ms.locfileid: "3172582"
 10. ソリューションが正常にインポートされた後で、変更内容を表示に反映するにはカスタマイズを公開する必要があります。 [ソリューション] の一覧で**すべてのカスタマイズの公開**をクリックします。  
   
 <a name="BKMK_DealWithErrorsOnImport"></a>   
+
 ### <a name="dealing-with-errors-on-import"></a>インポート時のエラーを処理する  
   
 1.  エラーが発生し、インポートが失敗に終わったことを通知するメッセージが表示された場合は、**ログのエクスポート**をクリックします。  
@@ -145,7 +149,7 @@ ms.locfileid: "3172582"
 
 ## <a name="troubleshoot-ribbon-issues"></a>リボンの問題のトラブルシューティング
 
-リボン コマンドバー ボタンで問題が発生している場合は、次のトラブルシューティング ガイドを使用して問題を見つけ解決してください: <https://support.microsoft.com/help/4552163>
+リボン コマンド バー ボタンで問題が発生している場合は、次の[トラブルシューティング ガイド](https://support.microsoft.com/help/4552163)を使用して問題を見つけ解決してください。
 
 ### <a name="see-also"></a>関連項目  
  [リボンのカスタマイズ](customize-commands-ribbon.md)   

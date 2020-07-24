@@ -20,12 +20,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 11e38cf505a2fa6bb597c24fbf03bdbe1ddc9de1
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: e94e5a0058d6f892a06e982fba454551b15f5374
+ms.sourcegitcommit: c0508e233a03ac4846c04d5caae79eccca3e2843
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2748851"
+ms.lasthandoff: 04/15/2020
+ms.locfileid: "3261790"
 ---
 # <a name="the-tenant-page"></a>テナント ページ
 
@@ -88,5 +88,7 @@ ms.locfileid: "2748851"
 ### <a name="see-also"></a>関連項目
 
 [Power Platform ISV Studioの概要](isv-app-management.md)  
-[ホーム ページ](isv-app-management-homepage.md)  
-[アプリ ページ](isv-app-management-apppage.md)
+[ホーム ページ](isv-app-management-homepage.md)<br/> 
+[アプリ ページ](isv-app-management-apppage.md)<br/> 
+[AppSource チェッカー](isv-app-management-appsource-checker.md)<br/> 
+[コネクタ認定](isv-app-management-certification.md)

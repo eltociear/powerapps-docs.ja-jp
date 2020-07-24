@@ -1,20 +1,19 @@
 ---
 title: ポータルのウェブページへのチャートを追加 | MicrosoftDocs
 description: モデル駆動型のアプリで作成したチャートをポータルのウェブページに追加するための手順。
-author: tapanm-msft
-manager: kvivek
+author: sandhangitmsft
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 01/29/2020
-ms.author: tapanm
-ms.reviewer: ''
-ms.openlocfilehash: 3d9a2ec3ef4e2589c51717629213dfe73d3418eb
-ms.sourcegitcommit: 4349eefb1fd788f5e27d91319bc878ee9aba7a75
+ms.author: sandhan
+ms.reviewer: tapanm
+ms.openlocfilehash: d526e76e0d32f29510b9afa123ee8bf72003679e
+ms.sourcegitcommit: c12260f372ad2cc48d3146be570d2088c9ef1d86
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3012580"
+ms.lasthandoff: 06/20/2020
+ms.locfileid: "3492217"
 ---
 # <a name="add-a-chart-created-in-a-model-driven-app-to-a-webpage-in-portal"></a>モデル駆動型のアプリで作成したチャートをポータルの Web ページに追加する
 

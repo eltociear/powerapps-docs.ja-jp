@@ -1,20 +1,19 @@
 ---
 title: エンティティ フォームの定義 | MicrosoftDocs
 description: ポータルのエンティティ フォームを作成するための手順。
-author: tapanm-msft
-manager: kvivek
+author: sandhangitmsft
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 04/09/2020
-ms.author: tapanm
-ms.reviewer: ''
-ms.openlocfilehash: 4ddc8daba01d281a483d51b1ce7a42205d0c6e93
-ms.sourcegitcommit: 2484ebce6563cfd1c849e1e2f66dd2d29fdb7b64
+ms.date: 05/07/2020
+ms.author: sandhan
+ms.reviewer: tapanm
+ms.openlocfilehash: a4c97df1b312accc415776eff7e200605416fbe7
+ms.sourcegitcommit: c12260f372ad2cc48d3146be570d2088c9ef1d86
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "3256684"
+ms.lasthandoff: 06/20/2020
+ms.locfileid: "3490090"
 ---
 # <a name="about-entity-forms"></a>エンティティ フォームについて
 
@@ -30,10 +29,11 @@ ms.locfileid: "3256684"
 
 新しいエンティティ フォームを作成する場合は、最初の手順として、**モード: 挿入、編集、または読み取り専用**とともに表示する**エンティティ**および**フォーム名**を決めます。 選択したモードは、ポータルから新しいレコードを作成するか、既存のレコードを編集するか、ポータルのレコードに関する情報を表示するだけかを決定します。
 
-> [!Note]
+> [!NOTE]
 > - サイトでフォームを表示できるようにするには、 **エンティティ フォーム** を特定の Web サイト の Web ページに関連付ける必要があります。
-> - つながり (Connection) エンティティのサブグリッドは、エンティティ フォームではサポートされません。 フォーム デザイナーを使用してフォームにつながり (Connection) エンティティのサブグリッドを追加した場合、ポータルにフォームを表示させ、つながりエンティティを使用すると、エラー メッセージが表示されます。
-> - 重複したフィールド、複数が選択されたオプション セット、カスタム コントロール、パーティー リスト フィールド、業務ルールはエンティティ フォームに対応していません。
+> - 接続エンティティのサブグリッドは、エンティティ フォームではサポートされていません。 フォーム デザイナーを使用してフォームにつながり (Connection) エンティティのサブグリッドを追加した場合、ポータルにフォームを表示させ、つながりエンティティを使用すると、エラー メッセージが表示されます。
+> - 重複したフィールド、複数が選択されたオプション セット、カスタム コントロール、パーティー リスト フィールド、業務ルールはエンティティ フォームではサポートされていません。
+> - [イメージ属性](https://docs.microsoft.com/powerapps/developer/common-data-service/image-attributes)、[ファイル属性](https://docs.microsoft.com/powerapps/developer/common-data-service/file-attributes)、[エンティティ イメージ](https://docs.microsoft.com/dynamics365/customerengagement/on-premises/developer/sample-set-retrieve-entity-images) は [エンティティ フォーム](entity-forms.md)、[ウェブ フォーム](web-form-properties.md) または、[fetchxl](../liquid/template-tags.md) などの Liquid テンプレート タグを使用する場合ではサポートされていません。
 > - ビジネス ルールおよびクライアントAPIでは、読取り専用フォームのロックされたフィールドを有効化することができます。
 > - 挿入モードでエンティティ フォームを作成する場合は、ボタンの展開の変更、またはエンティティ フォーム上部にアクション ボタンを配置することはできません。
 > - 検索コントロールをフォーム上のドロップダウン リストとして表示する場合は、関連するレコード フィルターは動作しません。

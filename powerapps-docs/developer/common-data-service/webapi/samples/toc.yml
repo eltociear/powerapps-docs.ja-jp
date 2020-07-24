@@ -10,6 +10,16 @@
       href: conditional-operations-csharp.md
     - name: 機能およびアクション
       href: functions-actions-csharp.md
+- name: '(C#) CDSWebApiService のサンプル'
+  items:
+    - name: CDSWebApiService クラス
+      href: cdswebapiservice.md
+    - name: CDSWebApiService 基本操作
+      href: cdswebapiservice-basic-operations.md
+    - name: CDSWebApiService の並列操作
+      href: cdswebapiservice-parallel-operations.md
+    - name: CDSWebApiService の非同期並列操作
+      href: cdswebapiservice-async-parallel-operations.md
 - name: クライアント側の JavaScript データ操作のサンプル
   items:
     - name: クライアント側 JavaScript のサンプルを使用して開始する

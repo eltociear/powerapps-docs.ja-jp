@@ -1,20 +1,19 @@
 ---
 title: ポータルのリダイレクト ステップの種類の構成 | MicrosoftDocs
 description: ポータルのリダイレクト ステップを追加およびコンフィギュレーションする指示をします。
-author: tapanm-msft
-manager: kvivek
+author: sandhangitmsft
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 11/04/2019
-ms.author: tapanm
-ms.reviewer: ''
-ms.openlocfilehash: e82d19a7adb43bcb8fddaeac88a5e238ee96eae1
-ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
+ms.author: sandhan
+ms.reviewer: tapanm
+ms.openlocfilehash: 29f6cab5c5f3ccbd23aadabc0e0d923b9cf306d3
+ms.sourcegitcommit: c12260f372ad2cc48d3146be570d2088c9ef1d86
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "2979606"
+ms.lasthandoff: 06/20/2020
+ms.locfileid: "3492037"
 ---
 # <a name="add-a-redirect-step-type"></a>リダイレクト ステップの種類を追加する
 

@@ -3,14 +3,14 @@ title: 管理者の学習カタログ
 description: Power Apps のすべてのトレーニング オプションを検索します
 author: loreleishannonmsft
 ms.topic: article
-ms.date: 02/19/2020
+ms.date: 04/28/2020
 ms.author: v-lshann
-ms.openlocfilehash: a4998011c83097649f1ad4e661e947086841972f
-ms.sourcegitcommit: ca7df48f819795d28ccfcd4a862639e20a7fe8fe
+ms.openlocfilehash: 340452caf9efe138e84eb0f47627d21215730184
+ms.sourcegitcommit: 08184794f3438c8293b88dbbd16bfe8be4f6c229
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "3168410"
+ms.lasthandoff: 04/30/2020
+ms.locfileid: "3322070"
 ---
 # <a name="administrators-learning-catalog"></a>管理者の学習カタログ
 
@@ -21,4 +21,6 @@ ms.locfileid: "3168410"
 ## <a name="administration"></a>管理
 | 内容  | 説明  | 書式   | 長さ    | 
 |-------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------|-----------|----------------------------------------------------------|
-| [アクセス許可の管理と Common Data Service の管理](https://docs.microsoft.com/learn/paths/manage-permissions-administration-common-data-service/)|   ユーザーのアクセス権を管理する必要がありますか? このラーニング パスでは、環境とエンティティに関連付けられたアクセス許可を管理する方法を学習します。 また、異なる管理ポータルおよびそれぞれにアクセスする方法についても学習します。| マイペースで進められる無料のラーニング パス    |1 時間 23 分 |
+| [アクセス許可の管理と Common Data Service の管理](https://docs.microsoft.com/learn/paths/manage-permissions-administration-common-data-service/)|   ユーザーのアクセス権を管理する必要がありますか? このラーニング パスでは、環境とエンティティに関連付けられたアクセス許可を管理する方法を学習します。 さまざまな管理ポータルと、それぞれにアクセスする方法についても説明します。| マイペースで進められる無料のラーニング パス    |1 時間 23 分 |
+| [1 日ラボ管理者](https://github.com/microsoft/powerapps-tools/tree/master/Administration/AdminInADay)                                      | トレーニング イベントまたは自己ペース、ハンズオン ラボ、ILT の資料に関するラボの指示 | 無料、講師による指導 | 就業時間   |
+| [顧客管理者ダッシュボードの説明](https://powerapps.microsoft.com/blog/custom-admin-dashboard-with-the-powerapps-admin-connectors/) | 顧客管理者ダッシュボードに関するブログ投稿   | ブログの投稿   | 

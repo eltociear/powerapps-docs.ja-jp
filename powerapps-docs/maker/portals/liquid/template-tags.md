@@ -1,20 +1,19 @@
 ---
 title: ポータルでテンプレート タグを使用する | MicrosoftDocs
 description: ポータルで使用可能なテンプレート タグについて説明します
-author: tapanm-msft
-manager: kvivek
+author: gitanjalisingh33msft
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 01/24/2020
-ms.author: tapanm
-ms.reviewer: ''
-ms.openlocfilehash: a152fc23b71b2e564bad28a9f1717c15acfe9a60
-ms.sourcegitcommit: a1b54333338abbb0bc3ca0d7443a5a06b8945228
+ms.date: 06/06/2020
+ms.author: gisingh
+ms.reviewer: tapanm
+ms.openlocfilehash: 2ee4e1204bdd21a57207c201d450b73d8d7ec394
+ms.sourcegitcommit: c12260f372ad2cc48d3146be570d2088c9ef1d86
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "3125622"
+ms.lasthandoff: 06/20/2020
+ms.locfileid: "3491047"
 ---
 # <a name="template-tags"></a>テンプレート タグ
 
@@ -135,6 +134,9 @@ Power Apps ポータルでは、タグに提供された親のテンプレート
 ## <a name="substitution"></a>代替
 
 ユーザーがヘッダーとフッターのキャッシュを有効にし、特定のセクション出力のキャッシュを避けたい場合、このタグを使用できます。 このタグは、ラップされたコンテンツ ブロックの出力がキャッシュされないヘッダーまたはフッターにコンテンツブロックを提供します。 これは、リクエスト、ページ、言語、日付など、頻繁に更新される可能性のあるオブジェクトをユーザーが使用しているシナリオで役立ちます。 たとえば、[ヘッダーとフッターのキャッシュが有効になっている](../configure/enable-header-footer-output-caching.md)場合にヘッダーとフッターの Web テンプレート ソース コード更新シナリオを参照してください。
+
+> [!TIP]
+> [request.url](liquid-objects.md#request) で使用される URL は、任意の要求値にでき、後続の要求に対して [キャッシュ](../configure/enable-header-footer-output-caching.md) を取得します。 request.url の値を正しくするには、置換タグ を使用するか、 ~\{WebFile path} などの部分的な URL を使用するか、または [サイト設定](../configure/configure-site-settings.md) にポータル URL を保存することを検討してください。
 
 ### <a name="see-also"></a>関連項目
 

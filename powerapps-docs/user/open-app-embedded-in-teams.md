@@ -21,27 +21,27 @@ ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/03/2019
-ms.locfileid: "74726217"
+ms.locfileid: "3302819"
 ---
-# <a name="add-an-app-to-microsoft-teams"></a>Microsoft Teams にアプリを追加する
+# <a name="add-an-app-to-microsoft-teams"></a>Microsoft Teamsにアプリを追加する
 
-Microsoft Teams は、Office 365 テクノロジを基に構築されているチャット ベースのコラボレーション プラットフォームです。 Teams のチャネルに Power Apps キャンバス アプリを追加して、Teams のエクスペリエンスをカスタマイズできます。 このトピックでは、Product Showcase サンプル アプリを Teams のチャネルに追加し、そのチャネルからアプリを開く方法を説明します。 
+Office 365テクノロジーは、Microsoft Teams に基づいて構築されたチャット ベースのコラボレーションプラットフォームです。 Teams のチャネルに Power Apps キャンバス アプリを追加して、Teams のエクスペリエンスをカスタマイズできます。 このトピックでは、Product Showcase サンプル アプリを Teams のチャネルに追加し、そのチャネルからアプリを開く方法を説明します。 
 
 ![Microsoft Teams に埋め込まれたアプリ](./media/open-app-embedded-in-teams/embedded-app.png)
 
-Power Apps にサインアップしていない場合は、開始する前に[無料でサインアップ](https://make.powerapps.com/signup?redirect=marketing&email=)してください。
+Power Apps にサインアップしていない場合は、[無料でサインアップ](https://make.powerapps.com/signup?redirect=marketing&email=) してください。
 
 ## <a name="prerequisites"></a>前提条件
 
-この手順を行うには、[Office 365 サブスクリプション](https://signup.microsoft.com/Signup?OfferId=467eab54-127b-42d3-b046-3844b860bebf&dl=O365_BUSINESS_PREMIUM&ali=1)と [Teams のチャネル](https://www.youtube.com/watch?v=he2f1quaR7M)が必要です。
+この手順を行うには、[Office 365 サブスクリプション](https://signup.microsoft.com/Signup?OfferId=467eab54-127b-42d3-b046-3844b860bebf&dl=O365_BUSINESS_PREMIUM&ali=1) と [Teams のチャネル](https://www.youtube.com/watch?v=he2f1quaR7M) が必要です。
 
 ## <a name="sign-in-to-power-apps"></a>Power Apps にサインインする
 
-[https://make.powerapps.com](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) で Power Apps にサインインします。
+[https://make.powerapps.com](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)で、Power Apps にサインインします。
 
 ## <a name="add-an-app"></a>アプリの追加
 
-1. Microsoft Teams で、チームとそのチームが所有するチャネルを選びます。 この例では、**Business Development** チームの **General** チャネルです。
+1. Microsoft Teams で、チームを選択し、そのチームが所有するチャネルを選びます。 この例では、**Business Development** チームの **General** チャネルです。
 
     ![](./media/open-app-embedded-in-teams/teams-select-channel.png)
 
@@ -49,11 +49,11 @@ Power Apps にサインアップしていない場合は、開始する前に[�
 
     ![](./media/open-app-embedded-in-teams/teams-add-tab.png)
 
-3. **[タブの追加]** ダイアログ ボックスで、 **[PowerApps]** を選びます。
+3. **タブの追加**  ダイアログ ボックスで、**PowerApps** を選びます。
 
     ![](./media/open-app-embedded-in-teams/add-a-tab.png)
 
-4. **[サンプル アプリ]**  >  **[Product Showcase]**  >  **[保存]** の順に選びます。
+4. **[サンプル アプリ]** > **[Product Showcase]** > **[保存]** の順に選びます。
 
     ![](./media/open-app-embedded-in-teams/select-an-app.png)
 
@@ -80,19 +80,19 @@ Power Apps にサインアップしていない場合は、開始する前に[�
 
 ## <a name="known-issues"></a>既知の問題
 
-Microsoft Teams のデスクトップ アプリでは:
+Microsoft Teams のデスクトップ アプリでは：
 
 * アプリは、セキュリティで保護された (https) 接続経由でイメージや .pdf ファイルなどのコンテンツを読み込む必要があります。
 * すべてのセンサー (**Acceleration**、**Compass**、**Location** など) がサポートされているとは限りません。
 * サポートされているオーディオ形式は、AAC、H264、OGG Vorbis、および WAV のみです。
 
-## <a name="clean-up-resources"></a>リソースをクリーンアップする
+## <a name="clean-up-resources"></a>リソースのクリーンアップ
 
-チャネルからアプリを削除するには、 **[Product Showcase]** タブ、 **[削除]** の順に選びます。
+チャネルからアプリを削除するには、**[Product Showcase]** タブ、**[削除]** の順に選びます。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
-このトピックでは、Product Showcase サンプル アプリを Teams のチャネルに追加して、そのチャネルからアプリを開きました。 Power Apps の詳細については、Power Apps のチュートリアルを続けてください。
+このトピックでは、Product Showcase サンプル アプリを Teams のチャネルに追加して、そのチャネルからアプリを開きました。 Power Apps についてさらに詳しく学習するには、Power Apps のチュートリアルを続けてください。
 
 > [!div class="nextstepaction"]
 > [Power Apps チュートリアル](../maker/canvas-apps/get-started-create-from-blank.md)

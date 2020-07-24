@@ -2,7 +2,7 @@
 title: モデル駆動型アプリによる階層型データのビジュアル化 | MicrosoftDocs
 description: 関連する階層データをクエリおよびビジュアル化する方法を学習します
 ms.custom: ''
-ms.date: 05/28/2019
+ms.date: 06/11/2020
 ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
@@ -20,12 +20,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 2328d35af7be35e3aae8d38bc1157adce513cb7c
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 90d69fcd5c6e20dd66bcab307a2ad4c7975a43dc
+ms.sourcegitcommit: 3bc94ac014b12d2b04a1af598d38b875e9e5dc2a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2758549"
+ms.lasthandoff: 06/12/2020
+ms.locfileid: "3444193"
 ---
 # <a name="visualize-hierarchical-data-with-model-driven-apps"></a>モデル駆動型アプリによる階層型データのビジュアル化
 
@@ -42,11 +42,11 @@ ms.locfileid: "2758549"
   
  階層のすべての他のいくつかのエンティティは有効にすることができます。 これらのエンティティには、[取引先担当者](/powerapps/developer/common-data-service/reference/entities/contact)と[チーム](/powerapps/developer/common-data-service/reference/entities/team)が含まれます。 階層のすべてのユーザー定義エンティティは有効にすることができます。  
   
-ビジュアル化の作成で重要な留意点は次のとおりです。  
+## <a name="important-things-to-remember"></a>覚えておくべき重要なこと 
   
 - 各エンティティについて (1:N) の自己参照の関連付けを 1 つだけ階層として設定できます。 自己参照の関連付けで、主エンティティおよび関連エンティティが同じ種類である必要があります。  
 - 階層またはビジュアル化は 1 つのエンティティのみに基づいています。 取引先企業を複数レベルで示す取引先企業階層を表現することはできますが、取引先企業と取引先担当者を同じ階層型ビジュアル化に表示することはできません。 
-- タイルに表示できる最大のレコード数は 4 です。 タイル ビューに使用される簡易入力フォームに複数のフィールドを追加すると、最初の 4 つのフィールドだけが表示されます。 
+- タイルに表示できるフィールドの最大数は、統一インターフェイスでは 3 つ、レガシー Web クライアントでは 4 つです。 タイル ビューに使用される簡易入力フォームに複数のフィールドを追加すると、最初の 3 つのフィールドだけが表示されます。 
 
 ## <a name="hierarchy-settings"></a>階層設定
 
@@ -89,7 +89,7 @@ ms.locfileid: "2758549"
 > [!div class="mx-imgBorder"] 
 > ![階層設定](media/hierarchy-settings.png)  
   
-**簡易表示フォーム**について、**ウィジェットの階層タイル フォーム**という名前の簡易入力フォームを作成しました。 このフォームで、各タイルに表示する 4 つのフィールドを追加しました。  
+**簡易表示フォーム**について、**ウィジェットの階層タイル フォーム**という名前の簡易入力フォームを作成しました。 レガシー Web クライアント アプリで使用されるこのフォームでは、各タイルに表示する 4 つのフィールドを追加しました。 詳細: [覚えておくべき重要なこと](#important-things-to-remember) 
 
 > [!div class="mx-imgBorder"] 
 > ![ウィジェットの簡易入力フォームを作成する](media/create-quickform.png)  

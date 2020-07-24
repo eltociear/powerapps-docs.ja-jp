@@ -1,20 +1,19 @@
 ---
 title: ポータルの Web ページ バインドの作成および管理 | MicrosoftDocs
 description: ポータルの Web ページ バインドの作成および管理方法に関する説明 | MicrosoftDocs
-author: tapanm-msft
-manager: kvivek
+author: sandhangitmsft
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 11/12/2019
-ms.author: tapanm
-ms.reviewer: ''
-ms.openlocfilehash: 294e1040f79ed5a25521ae2a861ccd30cdbfaf3e
-ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
+ms.author: sandhan
+ms.reviewer: tapanm
+ms.openlocfilehash: 36447aaa098fcae926b936a64f3ac18bd2787148
+ms.sourcegitcommit: c12260f372ad2cc48d3146be570d2088c9ef1d86
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "2977564"
+ms.lasthandoff: 06/20/2020
+ms.locfileid: "3491317"
 ---
 # <a name="create-and-manage-website-bindings"></a>Web サイトのバインドの作成および管理
 

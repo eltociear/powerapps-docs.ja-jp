@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 8abda26be50d31f734d3143c9cfa79b38fd3f130
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 93f73878e8bc978a01f6100b76829f60365f5967
+ms.sourcegitcommit: 6c73e316f866af6a34619f95a5ac64ad1664b48a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2753599"
+ms.lasthandoff: 05/01/2020
+ms.locfileid: "3326441"
 ---
 # <a name="query-and-edit-an-organization-theme"></a>組織のテーマのクエリと編集
 
@@ -102,7 +102,7 @@ OData-Version: 4.0
 |LogoId|String|null|ループとして使用される Web リソースの名前。 推奨のサイズは、高さ 50 ピクセル、最大幅 400 ピクセルです。|  
 |LogoToolTip|String|モデル駆動型アプリ|ロゴのツールヒントと alt テキストとして使用されるテキスト。| 
 |MainColor|String|#3B79B7|メイン コマンド バー、ボタン、タブで使用される統一インターフェイスのプライマリ テーマの色。| 
-|Name|String|MDA 既定のテーマ|テーマ エンティティの名前。|  
+|件名|文字列|モデル駆動型アプリの既定のテーマ|テーマ エンティティの名前。|  
 |NavBarBackgroundColor|String|#002050|プライマリ ナビゲーション バーの色。|  
 |NavBarShelfColor|String|#DFE2E8|セカンダリ ナビゲーション バーの色。|  
 |OverriddenCreatedOn|日時|null|レコードが移行された日時です。|  

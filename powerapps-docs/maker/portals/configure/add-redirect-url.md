@@ -1,20 +1,19 @@
 ---
 title: ポータル上で新しい URL にリダイレクトする| MicrosoftDocs
 description: ユーザーをサイトの他のページにリダイレクトするリダイレクト URL を作成するよう指示します。
-author: tapanm-msft
-manager: kvivek
+author: sandhangitmsft
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 11/04/2019
-ms.author: tapanm
-ms.reviewer: ''
-ms.openlocfilehash: 2bb180ec705464d4c6314fc60973c2bd5fe15be8
-ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
+ms.author: sandhan
+ms.reviewer: tapanm
+ms.openlocfilehash: 0b8a3c24b0d5fd7b29bc8ace1799ec4323605ae7
+ms.sourcegitcommit: c12260f372ad2cc48d3146be570d2088c9ef1d86
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "2979449"
+ms.lasthandoff: 06/20/2020
+ms.locfileid: "3491947"
 ---
 # <a name="add-a-redirect-url-to-a-new-url-on-a-portal"></a>ポータル上で新しい URL にリダイレクト URL を追加する
 

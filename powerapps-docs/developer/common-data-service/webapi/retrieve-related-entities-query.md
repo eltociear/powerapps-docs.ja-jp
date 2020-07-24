@@ -2,7 +2,7 @@
 title: クエリで関連エンティティ レコードを取得する (Common Data Service)| Microsoft Docs
 description: ナビゲーション プロパティの拡張によって関連エンティティを取得できる方法についてお読みください。
 ms.custom: ''
-ms.date: 01/08/2020
+ms.date: 06/27/2020
 ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -11,20 +11,20 @@ applies_to:
 - Dynamics 365 (online)
 ms.assetid: 3D8FB9AF-3663-437A-988E-CBAE9579F167
 caps.latest.revision: 78
-author: susikka
-ms.author: susikka
-manager: shujoshi
+author: JimDaly
+ms.author: phecke
+manager: ryjones
 search.audienceType:
 - developer
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 9c91d3c0b4bf3eed9757f75c763519eab73b08c3
-ms.sourcegitcommit: 5e23beed96cc14efae9ff264405956d59fae1e7c
+ms.openlocfilehash: b6326523b63b3974da96a373ed6f8f2a7a63c2e3
+ms.sourcegitcommit: c31f1d0385945d6265290c3eb6e49646ffbe4e18
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "2944992"
+ms.lasthandoff: 06/29/2020
+ms.locfileid: "3517385"
 ---
 # <a name="retrieve-related-entity-records-with-a-query"></a>クエリで関連エンティティを取得する
 
@@ -37,6 +37,7 @@ ms.locfileid: "2944992"
 ナビゲーション プロパティ名のみを含める場合、関連レコードのすべてのプロパティが表示されます。 ナビゲーション プロパティ名の後にかっこで示される、`$select` システム クエリ オプションを使用して、関連レコードに対して返されるプロパティを制限できます。 これは、単一値とコレクション値のナビゲーション プロパティの両方で使用します。  
 
 > [!NOTE]
+>  - クエリ内の `$expand` オプションは 10 個までに制限されています。 これはパフォーマンスを保護するためです。 各 `$expand` オプションは、パフォーマンスに影響を与える可能性のある結合を作成します。 
 >  - エンティティ インスタンスの関連エンティティを取得するには、「[ナビゲーション プロパティの拡張による関連エンティティの取得](retrieve-entity-using-web-api.md#bkmk_expandRelated)」を参照してください。 
 > - コレクション値ナビゲーション プロパティを展開するクエリは、最新の変更を反映しないそれらのプロパティのキャッシュされたデータを返す場合があります。 ブラウザのキャッシュを上書きするには、`If-None-Match` ヘッダーと値 `null` を使用することをお勧めします。 詳細については、「[HTTP ヘッダー](compose-http-requests-handle-errors.md#bkmk_headers)」を参照してください。
 > 
@@ -50,7 +51,8 @@ ms.locfileid: "2944992"
 **要求**  
 
 ```http 
-GET [Organization URI]/api/data/v9.1/accounts?$select=name&$expand=primarycontactid($select=contactid,fullname) HTTP/1.1  
+GET [Organization URI]/api/data/v9.1/accounts?$select=name
+&$expand=primarycontactid($select=contactid,fullname) HTTP/1.1  
 Accept: application/json  
 OData-MaxVersion: 4.0  
 OData-Version: 4.0  
@@ -83,81 +85,9 @@ OData-Version: 4.0
             "contactid":"9edbf27c-8efb-e511-80d2-00155db07c77",
             "fullname":"Susanna Stubberod (sample)"
          }
-      },
-      {  
-         "@odata.etag":"W/\"513479\"",
-         "name":"Adventure Works (sample)",
-         "accountid":"3adbf27c-8efb-e511-80d2-00155db07c77",
-         "primarycontactid":{  
-            "contactid":"a0dbf27c-8efb-e511-80d2-00155db07c77",
-            "fullname":"Nancy Anderson (sample)"
-         }
-      },
-      {  
-         "@odata.etag":"W/\"513481\"",
-         "name":"Fabrikam, Inc. (sample)",
-         "accountid":"3cdbf27c-8efb-e511-80d2-00155db07c77",
-         "primarycontactid":{  
-            "contactid":"a2dbf27c-8efb-e511-80d2-00155db07c77",
-            "fullname":"Maria Campbell (sample)"
-         }
-      },
-      {  
-         "@odata.etag":"W/\"514057\"",
-         "name":"Blue Yonder Airlines (sample)",
-         "accountid":"3edbf27c-8efb-e511-80d2-00155db07c77",
-         "primarycontactid":{  
-            "contactid":"a0dbf27c-8efb-e511-80d2-00155db07c77",
-            "fullname":"Nancy Anderson (sample)"
-         }
-      },
-      {  
-         "@odata.etag":"W/\"513485\"",
-         "name":"City Power & Light (sample)",
-         "accountid":"40dbf27c-8efb-e511-80d2-00155db07c77",
-         "primarycontactid":{  
-            "contactid":"a6dbf27c-8efb-e511-80d2-00155db07c77",
-            "fullname":"Scott Konersmann (sample)"
-         }
-      },
-      {  
-         "@odata.etag":"W/\"513487\"",
-         "name":"Contoso Pharmaceuticals (sample)",
-         "accountid":"42dbf27c-8efb-e511-80d2-00155db07c77",
-         "primarycontactid":{  
-            "contactid":"a8dbf27c-8efb-e511-80d2-00155db07c77",
-            "fullname":"Robert Lyon (sample)"
-         }
-      },
-      {  
-         "@odata.etag":"W/\"513489\"",
-         "name":"Alpine Ski House (sample)",
-         "accountid":"44dbf27c-8efb-e511-80d2-00155db07c77",
-         "primarycontactid":{  
-            "contactid":"aadbf27c-8efb-e511-80d2-00155db07c77",
-            "fullname":"Paul Cannon (sample)"
-         }
-      },
-      {  
-         "@odata.etag":"W/\"513491\"",
-         "name":"A. Datum Corporation (sample)",
-         "accountid":"46dbf27c-8efb-e511-80d2-00155db07c77",
-         "primarycontactid":{  
-            "contactid":"acdbf27c-8efb-e511-80d2-00155db07c77",
-            "fullname":"Rene Valdes (sample)"
-         }
-      },
-      {  
-         "@odata.etag":"W/\"513493\"",
-         "name":"Coho Winery (sample)",
-         "accountid":"48dbf27c-8efb-e511-80d2-00155db07c77",
-         "primarycontactid":{  
-            "contactid":"aedbf27c-8efb-e511-80d2-00155db07c77",
-            "fullname":"Jim Glynn (sample)"
-         }
       }
    ]
-}    
+}
 ```  
 
 エンティティ セットの関連エンティティを返す代わりに、`$ref` オプションを使用して単一値ナビゲーション プロパティを展開することにより、関連エンティティへの参照 (リンク) を返すこともできます。 次の例では、すべての取引先企業の取引先担当者レコードに対するリンクを返します。  
@@ -165,13 +95,14 @@ OData-Version: 4.0
  **要求**
 
 ```http  
-GET [Organization URI]/api/data/v9.1/accounts?$select=name&$expand=primarycontactid/$ref HTTP/1.1  
+GET [Organization URI]/api/data/v9.1/accounts?$select=name
+&$expand=primarycontactid/$ref HTTP/1.1  
 Accept: application/json  
 OData-MaxVersion: 4.0  
 OData-Version: 4.0  
 ```  
   
- **応答**
+ **回答**
  
 ```http 
 HTTP/1.1 200 OK  
@@ -198,82 +129,83 @@ OData-Version: 4.0
          "primarycontactid":{  
             "@odata.id":"[Organization URI]/api/data/v9.1/contacts(9edbf27c-8efb-e511-80d2-00155db07c77)"
          }
-      },
-      {  
-         "@odata.etag":"W/\"513479\"",
-         "name":"Adventure Works (sample)",
-         "_primarycontactid_value":"a0dbf27c-8efb-e511-80d2-00155db07c77",
-         "accountid":"3adbf27c-8efb-e511-80d2-00155db07c77",
-         "primarycontactid":{  
-            "@odata.id":"[Organization URI]/api/data/v9.1/contacts(a0dbf27c-8efb-e511-80d2-00155db07c77)"
-         }
-      },
-      {  
-         "@odata.etag":"W/\"513481\"",
-         "name":"Fabrikam, Inc. (sample)",
-         "_primarycontactid_value":"a2dbf27c-8efb-e511-80d2-00155db07c77",
-         "accountid":"3cdbf27c-8efb-e511-80d2-00155db07c77",
-         "primarycontactid":{  
-            "@odata.id":"[Organization URI]/api/data/v9.1/contacts(a2dbf27c-8efb-e511-80d2-00155db07c77)"
-         }
-      },
-      {  
-         "@odata.etag":"W/\"514057\"",
-         "name":"Blue Yonder Airlines (sample)",
-         "_primarycontactid_value":"a0dbf27c-8efb-e511-80d2-00155db07c77",
-         "accountid":"3edbf27c-8efb-e511-80d2-00155db07c77",
-         "primarycontactid":{  
-            "@odata.id":"[Organization URI]/api/data/v9.1/contacts(a0dbf27c-8efb-e511-80d2-00155db07c77)"
-         }
-      },
-      {  
-         "@odata.etag":"W/\"513485\"",
-         "name":"City Power & Light (sample)",
-         "_primarycontactid_value":"a6dbf27c-8efb-e511-80d2-00155db07c77",
-         "accountid":"40dbf27c-8efb-e511-80d2-00155db07c77",
-         "primarycontactid":{  
-            "@odata.id":"[Organization URI]/api/data/v9.1/contacts(a6dbf27c-8efb-e511-80d2-00155db07c77)"
-         }
-      },
-      {  
-         "@odata.etag":"W/\"513487\"",
-         "name":"Contoso Pharmaceuticals (sample)",
-         "_primarycontactid_value":"a8dbf27c-8efb-e511-80d2-00155db07c77",
-         "accountid":"42dbf27c-8efb-e511-80d2-00155db07c77",
-         "primarycontactid":{  
-            "@odata.id":"[Organization URI]/api/data/v9.1/contacts(a8dbf27c-8efb-e511-80d2-00155db07c77)"
-         }
-      },
-      {  
-         "@odata.etag":"W/\"513489\"",
-         "name":"Alpine Ski House (sample)",
-         "_primarycontactid_value":"aadbf27c-8efb-e511-80d2-00155db07c77",
-         "accountid":"44dbf27c-8efb-e511-80d2-00155db07c77",
-         "primarycontactid":{  
-            "@odata.id":"[Organization URI]/api/data/v9.1/contacts(aadbf27c-8efb-e511-80d2-00155db07c77)"
-         }
-      },
-      {  
-         "@odata.etag":"W/\"513491\"",
-         "name":"A. Datum Corporation (sample)",
-         "_primarycontactid_value":"acdbf27c-8efb-e511-80d2-00155db07c77",
-         "accountid":"46dbf27c-8efb-e511-80d2-00155db07c77",
-         "primarycontactid":{  
-            "@odata.id":"[Organization URI]/api/data/v9.1/contacts(acdbf27c-8efb-e511-80d2-00155db07c77)"
-         }
-      },
-      {  
-         "@odata.etag":"W/\"513493\"",
-         "name":"Coho Winery (sample)",
-         "_primarycontactid_value":"aedbf27c-8efb-e511-80d2-00155db07c77",
-         "accountid":"48dbf27c-8efb-e511-80d2-00155db07c77",
-         "primarycontactid":{  
-            "@odata.id":"[Organization URI]/api/data/v9.1/contacts(aedbf27c-8efb-e511-80d2-00155db07c77)"
-         }
       }
    ]
 }  
-```  
+```
+
+## <a name="multi-level-expand-of-single-valued-navigation-properties"></a>単一値ナビゲーション プロパティの複数レベルの展開
+
+`$expand` オプションを別の `$expand` オプション内に入れ子にすることで、単一値ナビゲーション プロパティを複数のレベルに展開することができます。
+
+> [!NOTE]
+> 入れ子になった `$expand` オプションの深さに制限はありませんが、クエリ内の合計 10 個の `$expand` オプションの組み合わせ制限は適用されます。
+
+
+次のクエリは、`task` レコードを返し、関連する `contact`、`contact` に関連する `account`、そして最後に `account` レコードを作成した `systemuser` を展開します。
+
+**要求**
+
+```http
+GET [Organization URI]/api/data/v9.1/tasks?$select=subject
+&$expand=regardingobjectid_contact_task($select=fullname;
+ $expand=parentcustomerid_account($select=name;
+  $expand=createdby($select=fullname))) HTTP/1.1  
+Accept: application/json  
+OData-MaxVersion: 4.0  
+OData-Version: 4.0  
+```
+
+**回答**
+
+```http
+HTTP/1.1 200 OK  
+Content-Type: application/json; odata.metadata=minimal  
+OData-Version: 4.0  
+
+{
+    "@odata.context": "[Organization URI]/api/data/v9.1/$metadata#tasks(subject,regardingobjectid_contact_task(fullname,parentcustomerid_account(name,createdby(fullname))))",
+    "value":
+  [
+     {
+        "@odata.etag": "W/\"28876997\"",
+        "subject": "Task 1 for Susanna Stubberod",
+        "activityid": "834814f9-b0b8-ea11-a812-000d3a122b89",
+        "regardingobjectid_contact_task": {
+            "fullname": "Susanna Stubberod (sample)",
+            "contactid": "824814f9-b0b8-ea11-a812-000d3a122b89",
+            "parentcustomerid_account": {
+                "name": "Contoso, Ltd. (sample)",
+                "accountid": "7a4814f9-b0b8-ea11-a812-000d3a122b89",
+                "createdby": {
+                    "fullname": "Nancy Anderson",
+                    "systemuserid": "4026be43-6b69-e111-8f65-78e7d1620f5e",
+                    "ownerid": "4026be43-6b69-e111-8f65-78e7d1620f5e"
+                }
+            }
+        }
+    },
+    {
+        "@odata.etag": "W/\"28877001\"",
+        "subject": "Task 2 for Susanna Stubberod",
+        "activityid": "844814f9-b0b8-ea11-a812-000d3a122b89",
+        "regardingobjectid_contact_task": {
+            "fullname": "Susanna Stubberod (sample)",
+            "contactid": "824814f9-b0b8-ea11-a812-000d3a122b89",
+            "parentcustomerid_account": {
+                "name": "Contoso, Ltd. (sample)",
+                "accountid": "7a4814f9-b0b8-ea11-a812-000d3a122b89",
+                "createdby": {
+                    "fullname": "Nancy Anderson",
+                    "systemuserid": "4026be43-6b69-e111-8f65-78e7d1620f5e",
+                    "ownerid": "4026be43-6b69-e111-8f65-78e7d1620f5e"
+                }
+            }
+        }
+     }
+  ]
+}
+```
 
 <a bkmk="bkmk_retrieverelatedentityexpandcollectionnavprop"></a>
 
@@ -281,18 +213,20 @@ OData-Version: 4.0
 
 コレクション値ナビゲーション パラメーターを拡張してエンティティ セットの関連エンティティを取得すると、`@odata.nextLink` プロパティが関連エンティティに返されます。 `@odata.nextLink` プロパティの値を新しい `GET` 要求と共に使用して、必要なデータを返す必要があります。  
 
-次の例は、上位 5 件の取引先企業レコードに割り当てられたタスクを取得します。  
+次の例は、上位 2 件の取引先企業レコードに割り当てられたタスクを取得します。  
   
 **要求**
 
 ```http 
-GET [Organization URI]/api/data/v9.1/accounts?$top=5&$select=name&$expand=Account_Tasks($select%20=%20subject,%20scheduledstart) HTTP/1.1  
+GET [Organization URI]/api/data/v9.1/accounts?$top=2
+&$select=name
+&$expand=Account_Tasks($select=subject,scheduledstart) HTTP/1.1  
 Accept: application/json  
 OData-MaxVersion: 4.0  
 OData-Version: 4.0  
 ```  
   
-**応答** 
+**回答** 
  
 ```http 
 HTTP/1.1 200 OK  
@@ -306,49 +240,18 @@ OData-Version: 4.0
          "@odata.etag":"W/\"513475\"",
          "name":"Fourth Coffee (sample)",
          "accountid":"36dbf27c-8efb-e511-80d2-00155db07c77",
-         "Account_Tasks":[  
-
-         ],
+         "Account_Tasks":[],
          "Account_Tasks@odata.nextLink":"[Organization URI]/api/data/v9.1/accounts(36dbf27c-8efb-e511-80d2-00155db07c77)/Account_Tasks?$select%20=%20subject,%20scheduledstart"
       },
       {  
          "@odata.etag":"W/\"513477\"",
          "name":"Litware, Inc. (sample)",
          "accountid":"38dbf27c-8efb-e511-80d2-00155db07c77",
-         "Account_Tasks":[  
-
-         ],
+         "Account_Tasks":[],
          "Account_Tasks@odata.nextLink":"[Organization URI]/api/data/v9.1/accounts(38dbf27c-8efb-e511-80d2-00155db07c77)/Account_Tasks?$select%20=%20subject,%20scheduledstart"
-      },
-      {  
-         "@odata.etag":"W/\"514074\"",
-         "name":"Adventure Works (sample)",
-         "accountid":"3adbf27c-8efb-e511-80d2-00155db07c77",
-         "Account_Tasks":[  
-
-         ],
-         "Account_Tasks@odata.nextLink":"[Organization URI]/api/data/v9.1/accounts(3adbf27c-8efb-e511-80d2-00155db07c77)/Account_Tasks?$select%20=%20subject,%20scheduledstart"
-      },
-      {  
-         "@odata.etag":"W/\"513481\"",
-         "name":"Fabrikam, Inc. (sample)",
-         "accountid":"3cdbf27c-8efb-e511-80d2-00155db07c77",
-         "Account_Tasks":[  
-
-         ],
-         "Account_Tasks@odata.nextLink":"[Organization URI]/api/data/v9.1/accounts(3cdbf27c-8efb-e511-80d2-00155db07c77)/Account_Tasks?$select%20=%20subject,%20scheduledstart"
-      },
-      {  
-         "@odata.etag":"W/\"514057\"",
-         "name":"Blue Yonder Airlines (sample)",
-         "accountid":"3edbf27c-8efb-e511-80d2-00155db07c77",
-         "Account_Tasks":[  
-
-         ],
-         "Account_Tasks@odata.nextLink":"[Organization URI]/api/data/v9.1/accounts(3edbf27c-8efb-e511-80d2-00155db07c77)/Account_Tasks?$select%20=%20subject,%20scheduledstart"
-          }
-       ]
-    }
+      }
+   ]
+}
  
 ```  
 
@@ -358,18 +261,21 @@ OData-Version: 4.0
 
 次の例では、単一値とコレクション値の両方のナビゲーション プロパティを使用して、エンティティセットの関連エンティティを拡張する方法を示します。 既に説明しているように、コレクション値ナビゲーション プロパティを拡張してエンティティ セットの関連エンティティを取得すると、関連エンティティの `@odata.nextLink` プロパティが返されます。 `@odata.nextLink` プロパティの値を新しい `GET` 要求と共に使用して、必要なデータを返す必要があります。  
   
-この例では、上位 3 件の取引先企業に割り当てられた取引先担当者およびタスクを取得します。  
+この例では、上位 2 件の取引先企業に割り当てられた取引先担当者およびタスクを取得します。  
   
 **要求**
 
 ```http 
-GET [Organization URI]/api/data/v9.1/accounts?$top=3&$select=name&$expand=primarycontactid($select=contactid,fullname),Account_Tasks($select=subject,scheduledstart)  HTTP/1.1  
+GET [Organization URI]/api/data/v9.1/accounts?$top=2
+&$select=name
+&$expand=primarycontactid($select=contactid,fullname),
+Account_Tasks($select=subject,scheduledstart)  HTTP/1.1  
 Accept: application/json  
 OData-MaxVersion: 4.0  
 OData-Version: 4.0  
 ```  
   
-**応答**  
+**回答**  
 
 ```http 
 HTTP/1.1 200 OK  
@@ -378,7 +284,8 @@ OData-Version: 4.0
   
 {  
    "@odata.context":"[Organization URI]/api/data/v9.1/$metadata#accounts(name,primarycontactid,Account_Tasks,primarycontactid(contactid,fullname),Account_Tasks(subject,scheduledstart))",
-   "value":[  
+   "value":
+   [  
       {  
          "@odata.etag":"W/\"550614\"",
          "name":"Fourth Coffee (sample)",
@@ -387,10 +294,8 @@ OData-Version: 4.0
             "contactid":"c19648c3-68f7-e511-80d3-00155db53318",
             "fullname":"Yvonne McKay (sample)"
          },
-         "Account_Tasks":[  
-
-         ],
-         "Account_Tasks@odata.nextLink":"[Organization URI]/api/data/v9.1/accounts(5b9648c3-68f7-e511-80d3-00155db53318)/Account_Tasks?$select=subject,scheduledstart"
+         "Account_Tasks":[],
+         "Account_Tasks@odata.nextLink":"[Organization URI]/api/data/v9.1/accounts(5b9648c3-68f7-e511-80d3-00155db53318)/Account_Tasks?$select%20=%20subject,%20scheduledstart"
       },
       {  
          "@odata.etag":"W/\"550615\"",
@@ -400,28 +305,13 @@ OData-Version: 4.0
             "contactid":"c39648c3-68f7-e511-80d3-00155db53318",
             "fullname":"Susanna Stubberod (sample)"
          },
-         "Account_Tasks":[  
-
-         ],
-         "Account_Tasks@odata.nextLink":"[Organization URI]/api/data/v9.1/accounts(5d9648c3-68f7-e511-80d3-00155db53318)/Account_Tasks?$select=subject,scheduledstart"
-      },
-      {  
-         "@odata.etag":"W/\"550616\"",
-         "name":"Adventure Works (sample)",
-         "accountid":"5f9648c3-68f7-e511-80d3-00155db53318",
-         "primarycontactid":{  
-            "contactid":"c59648c3-68f7-e511-80d3-00155db53318",
-            "fullname":"Nancy Anderson (sample)"
-         },
-         "Account_Tasks":[  
-
-         ],
-         "Account_Tasks@odata.nextLink":"[Organization URI]/api/data/v9.1/accounts(5f9648c3-68f7-e511-80d3-00155db53318)/Account_Tasks?$select=subject,scheduledstart"
+         "Account_Tasks":[],
+         "Account_Tasks@odata.nextLink":"[Organization URI]/api/data/v9.1/accounts(5d9648c3-68f7-e511-80d3-00155db53318)/Account_Tasks?$select%20=%20subject,%20scheduledstart"
       }
    ]
 }
-  
 ```
+
 ## <a name="filter-collection-values-based-on-data-in-related-entities"></a>関連エンティティのデータに基づいてコレクション値をフィルターする
 
 Web APIでは、 `any` と `all` の2つのラムダ演算子を使用して、コレクションのブール式を評価することができます。 詳細については次を参照してください: [ラムダ演算子を使用する](query-data-web-api.md#bkmk_LambdaOperators)

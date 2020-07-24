@@ -1,20 +1,19 @@
 ---
 title: ポータルの Liquid の演算子を使用する | MicrosoftDocs
 description: ポータルで使用可能な Liquid の演算子について説明します。
-author: tapanm-msft
-manager: kvivek
+author: gitanjalisingh33msft
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 10/07/2019
-ms.author: tapanm
-ms.reviewer: ''
-ms.openlocfilehash: 77561ee8ad31a7c2ab21162edbb08779627d1e65
-ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
+ms.author: gisingh
+ms.reviewer: tapanm
+ms.openlocfilehash: 08dc5cd0293f6d4a140e420b828bb34b6715add5
+ms.sourcegitcommit: c12260f372ad2cc48d3146be570d2088c9ef1d86
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "2981190"
+ms.lasthandoff: 06/20/2020
+ms.locfileid: "3490137"
 ---
 # <a name="understand-liquid-operators"></a>Liquid の演算子の認識
 

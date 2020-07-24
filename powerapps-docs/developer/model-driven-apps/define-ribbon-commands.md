@@ -15,12 +15,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 3ea2f5cfdffb19589719780e7da1afaf3c510243
-ms.sourcegitcommit: ebb4bb7ea7184e31dc95f0c301ebef75fae5fb14
+ms.openlocfilehash: 0578be828ec9d061df54df173320e8719137bf9c
+ms.sourcegitcommit: 4a88daac42180283314f6bedee3d6810fd5a6c25
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "3218556"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "3275975"
 ---
 # <a name="define-ribbon-commands"></a>リボン コマンドを定義する
 
@@ -43,6 +43,6 @@ ms.locfileid: "3218556"
 >  コマンドの定義はすべて、ユーザーのコンピューターにダウンロードされるので、コマンドの定義を実行時に評価できます。 つまり、リボンの特定のコントロールを表示する特権を持っていなくても、ユーザーは、ブラウザーの**ソースの表示**コマンドを使用して、コードを確認し、表示されないコントロールが存在しないかどうかを調べることができます。  
   
 ### <a name="see-also"></a>関連項目  
- [コマンド、およびリボンをカスタマイズする](customize-commands-ribbon.md)   
+ [コマンドとリボンのカスタマイズ](customize-commands-ribbon.md)   
  [リボンでのローカライズされたラベルの使用](use-localized-labels-ribbons.md)   
  [リボン有効化ルールを定義する](define-ribbon-enable-rules.md) [リボンの問題のトラブルシューティング](https://support.microsoft.com/help/4552163)

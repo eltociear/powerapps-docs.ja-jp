@@ -13,12 +13,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 39f462daeb86dae724aa5b9cde7e7d0a3c9a5d6e
-ms.sourcegitcommit: 310dd3dc68ffebe6a416450836ac0ba988b84fb4
+ms.openlocfilehash: 27ca63ba1db97d7c5c63e72230852ab4e64617e7
+ms.sourcegitcommit: 4a88daac42180283314f6bedee3d6810fd5a6c25
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "3162028"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "3276203"
 ---
 # <a name="apply-business-logic-using-client-scripting-in-model-driven-apps-using-javascript"></a>JavaScript を使用するモデル駆動型アプリでクライアント スクリプトを使用してビジネス ロジックを適用
 
@@ -33,12 +33,13 @@ JavaScript を使用したクライアント サイド スクリプトは、モ�
 
 ## <a name="use-client-scripting-in-model-driven-apps"></a>モデル駆動型アプリでクライアント スクリプトを使用する
 
-モデル駆動型アプリのフォームのヘルプにより、データをユーザーに表示します。 モデル駆動型アプリのフォームは、フィールド、簡易入力フォームまたはグリッドなどのアイテムを含むことができます。 [イベント](clientapi/events-forms-grids.md) は次の場合はいつでもモデル駆動型アプリ フォームで発生します:
+モデル駆動型アプリのフォームのヘルプにより、データをユーザーに表示します。 モデル駆動型アプリのフォームは、フィールド、簡易入力フォームまたはグリッドなどのアイテムを含むことができます。 [イベント](clientapi/events-forms-grids.md) は、常にモデル駆動型アプリ フォームで発生します:
+
 - フォームロード
 - データはフォーム内のフィールドまたはアイテムにおいて変更されます
 - データはフォームに保存されます。
 
-フォームにイベントが発生した場合にコードが実行されるように、これらのイベントに「応答」するためのJavaScriptコードを添付できます。 モデル駆動型アプリの [スクリプト Web リソース](script-jscript-web-resources.md) を使用して、これらのイベントに JavaScript コード (スクリプト) を添付します。 
+フォームにイベントが発生した場合にコードが実行されるように、これらのイベントに「応答」するためのJavaScriptコードを添付できます。 モデル駆動型アプリの[スクリプト Web リソース](script-jscript-web-resources.md) を使用して、これらのイベントに JavaScript コード (スクリプト) を添付します。 
 
 モデル駆動型アプリは、何時および何をフォームに表示するかをコントロールするフォームオブジェクトおよびイベントと対話するための**クライアント API** の豊富なセットを提供します。
 
@@ -59,6 +60,6 @@ JavaScript を使用したクライアント サイド スクリプトは、モ�
 ### <a name="related-topics"></a>関連トピック
 
 [モデル駆動型アプリのための Web リソース](web-resources.md)<br/>
-[コマンド、およびリボンをカスタマイズする](customize-commands-ribbon.md)<br/>
+[コマンドとリボンのカスタマイズ](customize-commands-ribbon.md)<br/>
 
 

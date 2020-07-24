@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: a8c24b6d48b5d9330cdc3761cad458e399aec898
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 77aae6792cdb5bff83c1b8fe6381dd6c4a8826c7
+ms.sourcegitcommit: b5ab419dad4e9d64a5e6610641363b0d7487930a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2754580"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "3465617"
 ---
 # <a name="pass-parameters-to-a-url-by-using-the-ribbon"></a>リボンの使用による URL へのパラメーターの受け渡し
 
@@ -34,6 +34,7 @@ ms.locfileid: "2754580"
 -   `<JavaScriptFunction>` 要素と `<CrmParameter>` 要素を一緒に使用します。  
   
 ## <a name="use-the-passparams-attribute-to-set-dynamic-values"></a>PassParams 属性を使用して動的な値を設定する  
+
  ターゲットのアプリケーションは、**PassParams** 属性を使用してターゲット URL に渡されたパラメーターから、レコードまたはユーザーのコンテキストについての情報を受け取ります。 **PassParams** 属性を使用してリボン コントロールを構成している場合、すべてのパラメーターが渡されます。 渡されるパラメーターを次の表に示します。  
   
 |パラメーター|名前|説明|  
@@ -48,7 +49,7 @@ ms.locfileid: "2754580"
 [!INCLUDE[languagecode](../../includes/languagecode.md)]
   
 > [!NOTE]
->  エンティティの種類コードではなく、エンティティ名を使用することをお勧めします。エンティティの種類コードは MDA のインストール環境間で異なることがあります。  
+>  エンティティの種類コードはモデル駆動型アプリ間のインストールで異なることがあるので、エンティティの種類コードではなく、エンティティ名を使用することをお勧めします。  
   
 ### <a name="example"></a>例  
  次のサンプルは、パラメーターのない URL の表示方法を示しています。  
@@ -77,7 +78,7 @@ https://myserver/mypage.aspx?orgname=AdventureWorksCycle&userlcid=1033&orglcid=1
   
 ### <a name="see-also"></a>関連項目
 
- [コマンド、およびリボンをカスタマイズする](customize-commands-ribbon.md)   
+ [コマンドとリボンのカスタマイズ](customize-commands-ribbon.md)   
  [URL を使用してフォームおよびビューを開く](open-forms-views-dialogs-reports-url.md)    
  [リボン タブ表示ルールを定義する](define-ribbon-tab-display-rules.md)   
  [サンプル: リボン定義をエクスポートする](sample-export-ribbon-definitions.md)

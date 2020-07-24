@@ -2,7 +2,7 @@
 title: Common Data Service でレコードを参照するために代替キーを定義する | Microsoft Docs
 description: Common Data Serviceのレコードを参照するために使用可能な代替キーを定義する方法を説明します。
 ms.custom: ''
-ms.date: 06/04/2019
+ms.date: 06/24/2020
 ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
@@ -22,12 +22,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 7ad5f422c0d45bbeb60ae43e687329b1fb770c2b
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 413979e0ccb568c8af759d1ff875c0a8632a740c
+ms.sourcegitcommit: 8c157ad4ab7c01d55728a301abd616fee9341f9c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2861164"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "3503142"
 ---
 # <a name="define-alternate-keys-to-reference-records"></a>レコードを参照する代替キーの定義
 
@@ -95,7 +95,7 @@ ms.locfileid: "2861164"
 
 ### <a name="unicode-characters-in-key-value"></a>キー値内の Unicode 文字
 
-代替キーで使用されるフィールド内のデータに `<`、`>`、`*`、`%`、`&`、`:`、`/`、`\\` のいずれかが含まれる場合、patch または upsert アクションは動作しません。 
+代替キーで使用されているフィールド内のデータに  `<`、`>`、`*`、`%`、`&`、`:`、`/`、`\\` のいずれかが含まれている場合、更新または upsert (PATCH) アクションは機能しません。
 
 一意性のみを必要とする場合はこの方法も使用することができますが、これらのキーをデータ統合の一部として使用する必要がある場合は、これらの文字を持つデータを持たないフィールド上でキーを作成するのが最善です。
 

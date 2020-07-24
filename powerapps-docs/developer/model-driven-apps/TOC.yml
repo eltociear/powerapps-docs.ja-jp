@@ -40,6 +40,8 @@
           href: actions-dashboards.md
         - name: ダッシュボードを作成する
           href: create-dashboard.md
+        - name: サンプル ダッシュボード
+          href: sample-dashboards.md
     - name: ビジュアル化を使用したデータの表示 (グラフ)
       href: view-data-with-visualizations-charts.md
       items:
@@ -49,7 +51,9 @@
           href: actions-visualizations-charts.md
         - name: ビジュアル化の作成 (グラフ)
           href: create-visualization-chart.md
-- name: クライアント スクリプトを使用してビジネス ロジックを適用
+        - name: サンプル グラフ
+          href: sample-charts.md
+- name: クライアント スクリプトを使用したビジネス ロジックの適用
   href: client-scripting.md
   items:
     - name: フォームおよびグリッドのイベント
@@ -491,8 +495,12 @@
               href: clientapi/reference/formcontext-ui-formselector/getId.md
             - name: getLabel
               href: clientapi/reference/formcontext-ui-formselector/getLabel.md
+            - name: getVisible
+              href: clientapi/reference/formcontext-ui-formselector/getVisible.md
             - name: navigate
               href: clientapi/reference/formcontext-ui-formselector/navigate.md
+            - name: setVisible
+              href: clientapi/reference/formcontext-ui-formselector/setVisible.md
         - name: formContext.ui.navigation
           href: clientapi/reference/formcontext-ui-navigation.md
           items:
@@ -874,10 +882,6 @@
       href: sample-pass-multiple-values-web-resource-through-data-parameter.md
     - name: Web リソースとしてのファイルのインポート
       href: sample-import-files-web-resources.md
-    - name: サンプル グラフ
-      href: sample-charts.md
-    - name: サンプル ダッシュボード
-      href: sample-dashboards.md
 - name: リソース
   items:
     - name: 開発者ツール

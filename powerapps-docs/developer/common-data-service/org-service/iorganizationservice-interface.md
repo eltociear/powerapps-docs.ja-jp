@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 28ac02182471d35b77d2c45dc1f3148d881ff5d9
-ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
+ms.openlocfilehash: 8a16f2553411878a769a486f7b0fc7df25bcfb70
+ms.sourcegitcommit: cbaf5ba8b6435796a538ece2da5cc172c0781fad
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "3156043"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "3254301"
 ---
 # <a name="iorganizationservice-interface"></a>IOrganizationService インターフェイス
 

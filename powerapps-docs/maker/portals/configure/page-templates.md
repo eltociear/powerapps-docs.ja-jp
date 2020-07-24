@@ -1,20 +1,19 @@
 ---
 title: Power Apps ポータルのページ テンプレートの作成および管理 | MicrosoftDocs
 description: Power Apps ポータルでページ テンプレートの作成および管理方法について | MicrosoftDocs
-author: tapanm-msft
-manager: kvivek
+author: sandhangitmsft
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 11/04/2019
-ms.author: tapanm
-ms.reviewer: ''
-ms.openlocfilehash: 26d9799425d561e4fb6a5f9f6c368fa6162ecb6d
-ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
+ms.author: sandhan
+ms.reviewer: tapanm
+ms.openlocfilehash: 8b666b81d732e16618db84bea20a2b6682f2a6ef
+ms.sourcegitcommit: c12260f372ad2cc48d3146be570d2088c9ef1d86
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "2980618"
+ms.lasthandoff: 06/20/2020
+ms.locfileid: "3490367"
 ---
 # <a name="create-and-manage-page-templates"></a>ページ テンプレートの作成および管理
 

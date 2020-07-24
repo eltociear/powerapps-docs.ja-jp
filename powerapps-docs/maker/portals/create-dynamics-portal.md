@@ -1,20 +1,19 @@
 ---
 title: Dynamics 365のモデル駆動型アプリケーションを含む環境でポータルを作成する | Microsoft Docs
 description: Dynamics 365のモデル駆動型アプリケーションを含む環境でポータルを作成する方法を説明します。
-author: tapanm-msft
-manager: kvivek
+author: neerajnandwana-msft
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 10/07/2019
-ms.author: tapanm
-ms.reviewer: ''
-ms.openlocfilehash: 98fab91cb8be63ec307977e89fb7147f5561fcc8
-ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
+ms.author: nenandw
+ms.reviewer: tapanm
+ms.openlocfilehash: 586dc8b2335b0f1d3913bfecadbebbdad7aaefe4
+ms.sourcegitcommit: 2fd873a1ea17f419f6194714efffa47a9bd00c2e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "2977494"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "3506594"
 ---
 # <a name="create-a-portal-in-an-environment-containing-model-driven-apps-in-dynamics-365"></a>Dynamics 365のモデル駆動型アプリケーションを含む環境でポータルを作成する
 

@@ -15,12 +15,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 3617be54131274dc82f6940e39621b864e9fd76c
-ms.sourcegitcommit: 5701e7a755fade6c3bac5c4a5774fcc74627e168
+ms.openlocfilehash: 7a6b628c1c59de02078f96abf3a46abe21e446cf
+ms.sourcegitcommit: 4a88daac42180283314f6bedee3d6810fd5a6c25
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "3115911"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "3275827"
 ---
 # <a name="css-web-resources"></a>CSS Web リソース
 

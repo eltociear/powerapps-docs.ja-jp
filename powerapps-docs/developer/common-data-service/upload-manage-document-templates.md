@@ -1,8 +1,8 @@
 ---
-title: <Topic Title> (Common Data Service) | Microsoft Docs
-description: <Description>
+title: ドキュメント テンプレートのアップロードと管理 (Common Data Service) | Microsoft Docs
+description: Common Data Service では、*テンプレート* エンティティを使用して、電子メール メッセージ、記事、契約書、差し込み印刷文書、および Microsoft Office ドキュメント (Excelと Word) のレイアウトと内容を統一することができます。
 ms.custom: ''
-ms.date: 10/31/2018
+ms.date: 06/19/2020
 ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 0d726de4b3bb05a189bfa95d239f91dd0425b514
-ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
+ms.openlocfilehash: 00f3e98267bb3a9b103dea7533deb696f095fadc
+ms.sourcegitcommit: 75efc726828507593b1ae38a456d28e00d27b777
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "3155215"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "3516742"
 ---
 # <a name="upload-and-manage-document-templates"></a>ドキュメント テンプレートのアップロードおよび管理
 

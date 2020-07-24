@@ -2,7 +2,7 @@
 title: Web API (Common Data Service) を使って条件付き操作を実行する| Microsoft Docs
 description: Web API を使用して特定の操作を実行するかどうかおよびその方法を決定する、条件の作成方法について説明します。
 ms.custom: ''
-ms.date: 01/08/2020
+ms.date: 06/19/2020
 ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -20,12 +20,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: a78b50dc3f70817a3da5f1f66c3a562099076e56
-ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
+ms.openlocfilehash: 3fe0f0efb28c7d7fdc6051916df70b57f249a3ee
+ms.sourcegitcommit: c12260f372ad2cc48d3146be570d2088c9ef1d86
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "3155083"
+ms.lasthandoff: 06/20/2020
+ms.locfileid: "3490207"
 ---
 # <a name="perform-conditional-operations-using-the-web-api"></a>Web API を使用する条件付き演算を実行する
 
@@ -54,7 +54,7 @@ Common Data Service により、各エンティティ インスタンスに対�
 
 Etags により、同じレコードに複数回アクセスするときは、いつでもレコードの検索を最大限に活用することができます。 以前にレコードを取得している場合、最後に取得されてから変更している場合にのみ、取得されたデータを要求するために、`If-None-Match` ヘッダーを含む ETag 値を渡すことができます。 データが変更された場合、要求は、要求の本体の最新データを含む `200 (OK)` HTTP ステータスを返します。 データが変更されていない場合、エンティティが変更されていないことを示す HTTP ステータス コード `304 (Not Modified)` が返されます。 
 
-次のサンプル メッセージ ペアでは、Etag 値が `W/"468026"` のときに、データが最後に取得されてから変更されていない場合、 `accountid` が `00000000-0000-0000-0000-000000000001` に等しい取引先企業エンティティのデータを返します
+次のサンプル メッセージ ペアでは、Etag 値が `W/"468026"` のときに、データが最後に取得されてから変更されていない場合、`accountid` が `00000000-0000-0000-0000-000000000001` に等しい取引先企業エンティティのデータを返します
 
  **要求**  
 ```http  
@@ -85,12 +85,18 @@ GET [Organization URI]/api/data/v9.0/EntityDefinitions(LogicalName='<Entity Logi
 ### <a name="query-must-not-include-expand"></a>クエリに $expand を含めることはできません
 
 Etag は、取得される単一レコードが変更されたかどうかのみを検出できます。 クエリで `$expand` を使用すると、追加のレコードが返され、それらのレコードが変更されたかどうかを検出できなくなります。 クエリに `$expand` が含まれる場合、 `304 Not Modified` は返されません。
+
+### <a name="query-must-not-include-annotations"></a>クエリに注釈を含めることはできません
+
+`Prefer: odata.include-annotations` ヘッダーが `GET` 要求に含まれている場合、`304 Not Modified` を返すことはありません。 注釈の値は、関連するレコードの値を参照できます。 これらのレコードは変更されている可能性があり、この変更は検出できなかったため、何も変更されていないことを示すのは正しくありません。
+
+
   
 <a name="bkmk_limitUpsertOperations"></a>
   
 ## <a name="limit-upsert-operations"></a>upsert 操作の制限
 
-upsert は、エンティティが存在しない場合にエンティティを作成することによって本来機能します。それ以外の場合は、既存のエンティティを更新します。 ただし、作成または更新のいずれかを阻止するために、ETags は upserts をさらに制限するのに使用できます。  
+upsert は、エンティティが存在しない場合にエンティティを作成することによって本来機能します; それ以外の場合は、既存のエンティティを更新します。 ただし、作成または更新のいずれかを阻止するために、ETags は upserts をさらに制限するのに使用できます。  
   
 <a name="bkmk_preventCreateOnUpsert"></a>
  
@@ -116,8 +122,8 @@ If-Match: *
 }  
 ```  
   
- **応答**  
- エンティティが存在する場合、ステータス 204 (No Content) の通常応答を受け取ります。 エンティティが存在しない場合は、ステータス 404 (Not Found) の次の応答を受け取ります。  
+ **Response**  
+ エンティティが見つかる場合、ステータス 204 (No Content) の通常応答を受け取ります。 エンティティが見つからない場合は、ステータス 404 (Not Found) の次の応答を受け取ります。  
   
 ```json  
 HTTP/1.1 404 Not Found  
@@ -127,12 +133,7 @@ Content-Type: application/json; odata.metadata=minimal
 {  
  "error": {  
   "code": "",  
-  "message": "account With Id = 00000000-0000-0000-0000-000000000001 Does Not Exist",  
-  "innererror": {  
-   "message": "account With Id = 00000000-0000-0000-0000-000000000001 Does Not Exist",  
-   "type": "System.ServiceModel.FaultException`1[[Microsoft.Xrm.Sdk.OrganizationServiceFault, Microsoft.Xrm.Sdk, Version=8.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35]]",  
-   "stacktrace": <stack trace removed for brevity>  
-  }  
+  "message": "account With Id = 00000000-0000-0000-0000-000000000001 Does Not Exist"
  }  
 }  
 ```  
@@ -161,8 +162,8 @@ If-None-Match: *
 }  
 ```  
   
- **応答**  
- エンティティが存在しない場合、ステータス 204 (No Content) の通常応答を受け取ります。 エンティティが存在する場合、ステータス 412 (Precondition Failed) の次の応答を受け取ります。  
+ **Response**  
+ エンティティが見つからない場合、ステータス 204 (No Content) の通常応答を受け取ります。 エンティティが見つかる場合、ステータス 412 (Precondition Failed) の次の応答を受け取ります。  
   
 ```json  
 HTTP/1.1 412 Precondition Failed  
@@ -172,12 +173,7 @@ Content-Type: application/json; odata.metadata=minimal
 {  
   "error":{  
    "code":"",  
-   "message":"A record with matching key values already exists.",  
-   "innererror":{  
-    "message":"Cannot insert duplicate key.",  
-    "type":"System.ServiceModel.FaultException`1[[Microsoft.Xrm.Sdk.OrganizationServiceFault, Microsoft.Xrm.Sdk, Version=8.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35]]",  
-    "stacktrace":<stack trace removed for brevity>  
-    }  
+   "message":"A record with matching key values already exists."
   }  
 }  
 ```  
@@ -213,12 +209,7 @@ OData-Version: 4.0
   
 {  
   "error":{  
-    "code":"","message":"The version of the existing record doesn't match the RowVersion property provided.",  
-    "innererror":{  
-      "message":"The version of the existing record doesn't match the RowVersion property provided.",  
-      "type":"System.ServiceModel.FaultException`1[[Microsoft.Xrm.Sdk.OrganizationServiceFault, Microsoft.Xrm.Sdk, Version=8.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35]]",  
-"stacktrace":"  <stack trace details omitted for brevity>  
-    }  
+    "code":"","message":"The version of the existing record doesn't match the RowVersion property provided." 
   }  
 }  
 ```  
@@ -250,12 +241,7 @@ OData-Version: 4.0
   
 {  
   "error":{  
-    "code":"","message":"The version of the existing record doesn't match the RowVersion property provided.",  
-    "innererror":{  
-      "message":"The version of the existing record doesn't match the RowVersion property provided.",  
-      "type":"System.ServiceModel.FaultException`1[[Microsoft.Xrm.Sdk.OrganizationServiceFault, Microsoft.Xrm.Sdk, Version=8.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35]]",  
-"stacktrace":"  <stack trace details omitted for brevity>  
-    }  
+    "code":"","message":"The version of the existing record doesn't match the RowVersion property provided."
   }  
 }  
 ```  

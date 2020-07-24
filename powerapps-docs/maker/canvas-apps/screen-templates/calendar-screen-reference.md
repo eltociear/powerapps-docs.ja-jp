@@ -1,59 +1,59 @@
 ---
-title: Canvas apps のカレンダー画面テンプレートのリファレンス |Microsoft Docs
-description: Power Apps でキャンバスアプリのカレンダー画面テンプレートがどのように機能するかについて詳しく説明します。
+title: キャンバス アプリのカレンダー スクリーン テンプレートの参照 | Microsoftドキュメント
+description: Power Apps でキャンバス アプリのカレンダー スクリーン テンプレートの仕組みの詳細を理解する。
 author: emcoope-msft
 manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: tapanm
-ms.date: 12/31/2018
+ms.date: 04/28/2020
 ms.author: emcoope
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: adcdc2b14bdc393b69f467f123418c87bb5cca9e
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
-ms.translationtype: MT
+ms.openlocfilehash: e85994e65c9712992ca9813e9cb5d8706aa8d080
+ms.sourcegitcommit: c0b694f53af1cd35dce135be9e4e0924ac35608d
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74732660"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "3352176"
 ---
-# <a name="reference-information-about-the-calendar-screen-template-for-canvas-apps"></a>キャンバスアプリのカレンダー画面テンプレートに関する参照情報
+# <a name="reference-information-about-the-calendar-screen-template-for-canvas-apps"></a>キャンバス アプリのカレンダー スクリーン テンプレートに関する参照情報
 
-Power Apps のキャンバスアプリでは、カレンダー画面テンプレートの各重要なコントロールが画面全体の既定の機能にどのように影響するかを理解します。 この詳細では、動作の数式と、コントロールがユーザー入力にどのように応答するかを決定するその他のプロパティの値を示します。 この画面の既定の機能の概要については、「[カレンダー画面の概要](calendar-screen-overview.md)」を参照してください。
+Power Apps でのキャンバス アプリの場合、カレンダー スクリーン テンプレートの重要な各コントロールがスクリーン全体の既定機能にどのように貢献するかを理解します。 この詳細は、動作の数式およびコントロールがユーザー入力にどのように応答するかを決定する他のプロパティの値を表示します。 このスクリーン既定機能の概要については、 [カレンダー スクリーンの概要](calendar-screen-overview.md) を参照してください。
 
-ここでは、いくつかの重要なコントロールについて説明し、これらのコントロールのさまざまなプロパティ ( **Items**や**onselect**など) が設定される式または数式について説明します。
+このトピックは、一部の重要なコントロールに注目し、それらのコントロールのさまざまなプロパティ (**Items** および **OnSelect** など) に設定する式または数式ついて説明しています。
 
-- [カレンダーのドロップダウン (dropdownCalendarSelection)](#calendar-drop-down)
-- [予定表アイコン (iconCalendar)](#calendar-icon)
-- [前の月のシェブロン (iconPrevMonth)](#previous-month-chevron)
+- [カレンダー ドロップダウン (dropdownCalendarSelection)](#calendar-drop-down)
+- [カレンダー アイコン (iconCalendar)](#calendar-icon)
+- [前月のシェブロン (iconPrevMonth)](#previous-month-chevron)
 - [翌月のシェブロン (iconNextMonth)](#next-month-chevron)
-- [Calendar gallery (MonthDayGallery) (+ 子コントロール)](#calendar-gallery)
-- [イベントギャラリー (CalendarEventsGallery)](#events-gallery)
+- [カレンダー ギャラリー (MonthDayGallery) (+ child controls)](#calendar-gallery)
+- [イベント ギャラリー (CalendarEventsGallery)](#events-gallery)
 
 ## <a name="prerequisite"></a>前提条件
 
-[Power Apps でアプリを作成](../data-platform-create-app-scratch.md)するときに、画面やその他のコントロールを追加および構成する方法について理解します。
+[Power Apps でアプリを作成する](../data-platform-create-app-scratch.md) ときに、画面およびその他のコントロールの追加および構成を行う方法に関する知識。
 
-## <a name="calendar-drop-down"></a>予定表のドロップダウン
+## <a name="calendar-drop-down"></a>カレンダー ドロップダウン
 
 ![dropdownCalendarSelection コントロール](media/calendar-screen/calendar-dropdown.png)
 
-- プロパティ: **Items**<br>
+- プロパティ: **アイテム**<br>
     値: `Office365.CalendarGetTables().value`
 
-    この値は、アプリユーザーの Outlook カレンダーを取得するコネクタ操作です。 この操作によって取得された[値](https://docs.microsoft.com/connectors/office365/#entitylistresponse[table])を確認できます。
+    この値は、アプリ ユーザーの Outlook カレンダーを取得するコネクタ操作です。 この操作が取得する[値](https://docs.microsoft.com/connectors/office365/#entitylistresponse[table]) が表示されます。
 
 - プロパティ: **OnChange**<br>値: `Select(dropdownCalendarSelection)`
 
-    ユーザーが一覧のオプションを選択すると、コントロールの**Onselect**プロパティ内の関数が実行されます。
+    ユーザーがリストのオプションを選択すると、コントロールの **OnSelect** プロパティの関数が実行されます。
 
-- プロパティ: **Onselect**<br>
-    Value: **If**関数。次のコードブロックに表示されます。また、その後のコードブロックに表示されるいくつかの追加の関数もあります。
+- プロパティ: **OnSelect**<br>
+    値: 次のコード ブロックに表示される **If** 関数、およびその後のコード ブロックに表示されるいくつかの追加関数です。
 
-   数式のこの部分は、ユーザーがアプリを開いた後にドロップダウンリストでオプションを初めて選択したときにのみ実行されます。
+   数式のこの部分は、ユーザーがアプリを開いた後にドロップダウン リストでオプションを初めて選択したときにのみ実行されます:
 
     ```powerapps-dot
     If( IsBlank( _userDomain ),
@@ -66,15 +66,15 @@ Power Apps のキャンバスアプリでは、カレンダー画面テンプレ
     );
     ```
 
-    上記のコードでは、次の変数を定義しています。
+    上記のコードは、次の変数を定義しています:
     
-  - **\_userDomain**: ユーザーの電子メールアドレスに反映されたアプリユーザーの会社のドメイン。
-  - **\_dateSelected**: 今日の日付 (既定)。 カレンダーギャラリーにこの日付が強調表示され、イベントギャラリーには、その日付に対してスケジュールされているイベントが表示されます。
-  - **\_firstDayOfMonth**: 現在の月の最初の日。 `(Today + (1 - Today)) = Today - Today + 1 = 1`ため、この**DateAdd**関数は常に月の最初の日を返します。
-  - **\_firstDayInView**: カレンダーギャラリーで表示できる最初の日。 月が日曜日で始まる場合を除き、この値は月の最初の日と同じではありません。 前月の週全体が表示されないようにするには、 **\_firstDayInView**の値を `_firstDayOfMonth - Weekday(_firstDayOfMonth) + 1`します。
-  - **\_lastDayOfMonth**: 現在の月の最後の日 (翌月の最初の日から1日を引いた日付)。
+  - **\_userDomain**: ユーザーのメール アドレスに反映されている、アプリ ユーザーの企業ドメイン。
+  - **\_dateSelected**: 今日の日付 (既定)。 カレンダー ギャラリーはこの日付を強調表示し、イベント ギャラリーはその日付にスケジュールされているイベントを表示します。
+  - **\_firstDayOfMonth**: 当月の最初の日。 `(Today + (1 - Today)) = Today - Today + 1 = 1` なので、この **DateAdd** 関数は常に月の最初の日を返します。
+  - **\_firstDayInView**: カレンダー ギャラリーで表示できる最初の日。 この値は、月が日曜日に開始しない限り、月の最初の日と同じではありません。 前月の週全体が表示されないようにするために、**\_firstDayInView** の値は `_firstDayOfMonth - Weekday(_firstDayOfMonth) + 1` です。
+  - **\_lastDayOfMonth**: 当月の最終日は、翌月の最初の日から 1 日を引いた日と同じです。
 
-   **If**関数の後の関数は、ユーザーが初めてアプリを開いたときだけでなく、[カレンダー] ドロップダウンリストでオプションを選択したときに実行されます。
+   **If** 関数の後の関数は、ユーザーがカレンダーのドロップダウン リストでオプションを選択すると実行されます (ユーザーが初めてアプリを開いたときだけではありません) :
 
     ```powerapps-dot
     Set( _calendarVisible, false );
@@ -100,22 +100,35 @@ Power Apps のキャンバスアプリでは、カレンダー画面テンプレ
     Set( _calendarVisible, true )
     ```
 
-    上記のコードでは、これらの変数と1つのコレクションを定義しています。
+    上記のコードは、これらの変数および 1 つのコレクションを定義しています:
 
-    - **calendarVisible\_** : 新しい選択の読み込み中にカレンダーが表示されないように**false**に設定します。
-    - **showLoading を\_** : を**true**に設定すると、新しい選択の読み込み中に読み込みインジケーターが表示されます。
-    - **\_mycalendar**: 正しい暦からのイベントが取得されるように、**カレンダーのドロップダウン**コントロールの現在の値に設定します。
-    - **\_minDate**: **\_firstDayInView**と同じ値に設定します。 この変数は、Outlook から既に取得され、アプリにキャッシュされているイベントを判別します。
-    - **\_maxDate**: カレンダーの最後の表示可能日に設定します。 数式は `_firstDayInView + 40`です。 カレンダーには最大41日が表示されるので、 **\_maxDate**変数は常に最後の表示可能な日を反映し、Outlook から既に取得され、アプリにキャッシュされているイベントを判断します。
-    - **MyCalendarEvents**: 選択したカレンダーのユーザーのイベントのコレクションを、 **\_MinDate**から **\_maxDate**に設定します。
-    - **showLoading の\_** : を**false**に設定します。他のすべてのが読み込まれた後、 **calendarVisible\_** は**true**に設定されます。
+    - **\_calendarVisible**: 新しい選択が読み込まれている間にカレンダーを表示しないため、**false** に設定します。
+    - **\_showLoading**: 新しい選択が読み込まれている間にインジケーターを表示するため、**true** に設定します。
+    - **\_myCalendar**: 正しいカレンダーからイベントを取得するため、**カレンダー ドロップダウン** コントロールの現在値に設定します。
+    - **\_minDate**: **\_firstDayInView** と同じ値に設定します。 この変数は、Outlook から既に取得され、アプリにキャッシュされているイベントを決定します。
+    - **\_maxDate**: カレンダーで表示可能な最後の日に設定します。 数式は、`_firstDayInView + 40` です。 カレンダーには最大 41 日が表示されるため、**\_maxDate** 変数は常に表示可能な最後の日を反映し、Outlook から既に取得され、アプリにキャッシュされているイベントを決定します。
+    - **MyCalendarEvents**: 選択したカレンダーからのユーザーのイベントのコレクションに設定します。範囲は **\_minDate** から **\_maxDate** です。
+    - **\_showLoading**: **false** に設定; 他のすべてが読み込まれた後、**\_calendarVisible** は **true** に設定されます。
 
-## <a name="calendar-icon"></a>予定表アイコン
+### <a name="color-properties"></a>色のプロパティ
 
-![iconCalendar コントロール](media/calendar-screen/calendar-today-icon.png)
+全般的な色のプロパティについては、[Power Apps で色と境界線のプロパティ](../controls/properties-color-border.md) を参照してください。
 
-- プロパティ: **Onselect**<br>
-    値: カレンダーギャラリーを今日の日付にリセットする4つの**セット**関数:
+カレンダー ドロップダウン コントロールの一意の色プロパティ:
+
+- **ChevronBackground** - カレンダー ドロップダウンの背景色。
+- **ChevronBackground** - 無効にされたカレンダー ドロップダウンの背景色。
+- **ChevronFill** - カレンダー ドロップダウンの塗りつぶしの色。
+- **ChevronDisabledFill** - 無効にされたカレンダー ドロップダウンの塗りつぶしの色。
+- **ChevronHoverBackground** - ユーザーがマウス ポインターを置いたときのカレンダー ドロップダウンの背景色。
+- **ChevronHoverFill** - ユーザーがマウス ポインターを置いたときのカレンダー ドロップダウンの塗りつぶしの色。
+
+## <a name="calendar-icon"></a>カレンダー アイコン
+
+![アイコン カレンダー コントロール](media/calendar-screen/calendar-today-icon.png)
+
+- プロパティ: **OnSelect**<br>
+    値: カレンダー ギャラリーを今日の日付にリセットする 4 つの **Set** 関数:
 
     ```powerapps-dot
     Set( _dateSelected, Today() );
@@ -124,20 +137,20 @@ Power Apps のキャンバスアプリでは、カレンダー画面テンプレ
     Set( _lastDayOfMonth, DateAdd( DateAdd( _firstDayOfMonth, 1, Months ), -1, Days ) )
     ```
 
-    上記のコードでは、適切なカレンダービューを表示するために必要なすべての日付変数がリセットされます。
+    上記のコードは、適切なカレンダー ビューを表示するために必要なすべての日付変数をリセットします:
 
-    - **選択した dateselected**が今日にリセットされます。
-    - **\_firstDayOfMonth**は、今日の月の最初の日にリセットされます。
-    - **\_firstDayInView**は、今日の月を選択したときに表示される最初の日にリセットされます。
-    - **\_lastDayOfMonth**は、今日の月の最終日にリセットされます。
+    - **\_dateSelected** は今日にリセットされます。
+    - **\_firstDayOfMonth** は今日の月の最初の日にリセットされます。
+    - **\_firstDayInView** は今日の月を選択すると、表示可能な最初の日にリセットされます。
+    - **\_lastDayOfMonth** は今日の月の最後の日にリセットされます。
 
-    このトピックの「[**カレンダー」ドロップダウン**](#calendar-drop-down)セクションでは、これらの変数についてさらに詳しく説明します。
+    このトピックの[**カレンダー ドロップダウン**](#calendar-drop-down) セクションでは、これらの変数について詳しく説明しています。
 
-## <a name="previous-month-chevron"></a>前の月のシェブロン
+## <a name="previous-month-chevron"></a>前月のシェブロン
 
 ![iconPrevMonth コントロール](media/calendar-screen/calendar-back.png)
 
-- プロパティ: **Onselect**<br>値: カレンダーギャラリーで前の月を表示する4つの**セット**関数と**If**関数。
+- プロパティ: **OnSelect**<br>値: カレンダー ギャラリーで前月を表示する 4 つの **Set** 関数および **If** 関数:
 
     ```powerapps-dot
     Set( _firstDayOfMonth, DateAdd( _firstDayOfMonth, -1, Months ) );
@@ -157,22 +170,22 @@ Power Apps のキャンバスアプリでは、カレンダー画面テンプレ
     ```
 
     > [!NOTE]
-    > **\_firstDayOfMonth**、 **\_firstDayInView**、および **\_lastDayOfMonth**の定義は、このトピックの「 [Calendar (予定表](#calendar-drop-down))」セクションに記載されているものとほぼ同じです。
+    > **\_firstDayOfMonth**、**\_firstDayInView**、および **\_lastDayOfMonth** の定義は、このトピックの[カレンダー ドロップダウン](#calendar-drop-down) セクションとほぼ同じです。
 
-    前のコードの最初の3行は、ユーザーが前の月のシェブロンを選択するたびに実行されます。 このコードは、適切なカレンダービューを表示するために必要な変数を設定します。 残りのコードは、ユーザーが選択した予定表の今月を選択していない場合にのみ実行されます。
+    上記のコードの最初の 3 行は、ユーザーが前月のシェブロンを選択すると実行されます。 このコードは、適切なカレンダー ビューを表示するために必要な変数を設定します。 残りのコードは、ユーザーが選択したカレンダーに対して今月以前に選択していない場合にのみ実行されます。
 
-    この場合、 **\_minDate**は、前月に表示される最初の日です。 ユーザーがアイコンを選択する前に、 **\_minDate**には当月の23日の最小有効値が設定されています。 (3 月1日が土曜日になると、3月の **\_firstDayInView**は2月23日になります)。つまり、ユーザーがこの月を選択していない場合、 **\_minDate**は新しい **\_firstDayOfMonth**よりも大きくなり、 **if**関数は**true**を返します。 コードが実行され、コレクションと変数が更新されます。
+    その場合、**\_minDate** は前月が表示されるときに表示される最初の日です。 ユーザーがアイコンを選択する前に、**\_minDate** には当月の 23 日の最小許容値があります。 (3 月 1 日が土曜日になると、3 月の **\_firstDayInView** は 2月 23 日です。) つまり、ユーザーが今月まだ選択していない場合、**\_minDate** は新しい **\_ firstDayOfMonth** より大きく、**If** 関数は **true** に戻ります。 コードが実行され、コレクションおよび変数が更新されます:
 
-    - **MyCalendarEvents**は、 [GetEventsCalendarViewV2](https://docs.microsoft.com/connectors/office365/#get-calendar-view-of-events--v2-)操作を使用して、選択したカレンダーからイベントを取得します。 日付範囲は **\_firstDayInView** date と **\_minDate** -1 の間にあります。 **MyCalendarEvents** minDate date に **\_** は既にイベントが含まれているので、この新しい日付範囲の最大値については、その日付から1が減算されます。
+    - **MyCalendarEvents** は、[Office365.GetEventsCalendarViewV2](https://docs.microsoft.com/connectors/office365/#get-calendar-view-of-events--v2-) 操作で選択したカレンダーからイベントを取得します。 日付範囲は **\_firstDayInView** 日付および **\_minDate** - 1 です。 **MyCalendarEvents** には既に **\_minDate** 日付のイベントが含まれているため、この新しい日付範囲の最大値はその日付から 1 が差し引かれます。
 
-    - **\_minDate**は、イベントが取得された最初の日付であるため、現在の **\_firstDayInView**に設定されています。 前の月のシェブロンを選択してこの日付に戻った場合、 **if**関数は**false**を返します。このビューのイベントは**MyCalendarEvents**に既にキャッシュされているため、このコードは実行されません。
+    - **\_minDate** は現在の **\_firstDayInView** に設定されています。これは、イベントが取得された最初の日付だからです。 ユーザーが前月のシェブロンを選択してこの日付に戻ると、**If** 関数が **false** に戻ります。このビューのイベントは既に **MyCalendarEvents** でキャッシュされているため、コードは実行されません。
 
 ## <a name="next-month-chevron"></a>翌月のシェブロン
 
 ![iconNextMonth コントロール](media/calendar-screen/calendar-forward.png)
 
-- プロパティ: **Onselect**<br>
-    値: カレンダーギャラリーで次の月を表示する4つの**セット**関数と**If**関数。
+- プロパティ: **OnSelect**<br>
+    値: カレンダー ギャラリーで翌月を表示する 4 つの **Set** 関数および **If** 関数:
 
     ```powerapps-dot
     Set( _firstDayOfMonth, DateAdd( _firstDayOfMonth, 1, Months ) );
@@ -191,42 +204,42 @@ Power Apps のキャンバスアプリでは、カレンダー画面テンプレ
     ```
 
     > [!NOTE]
-    > **\_firstDayOfMonth**、 **\_firstDayInView**、および **\_lastDayOfMonth**の定義は、このトピックの「 [Calendar (予定表](#calendar-drop-down))」セクションに記載されているものとほぼ同じです。
+    > **\_firstDayOfMonth**、**\_firstDayInView**、および **\_lastDayOfMonth** の定義は、このトピックの[カレンダー ドロップダウン](#calendar-drop-down) セクションとほぼ同じです。
 
-    前のコードの最初の3行は、ユーザーが次の月のシェブロンを選択したときに実行され、適切なカレンダービューを表示するために必要な変数を設定します。 残りのコードは、ユーザーが選択した予定表の今月を選択していない場合にのみ実行されます。
+    前のコードの最初の 3 行は、ユーザーが翌月のシェブロンを選択したときに実行され、適切なカレンダービューを表示するために必要な変数を設定します。 残りのコードは、ユーザーが選択したカレンダーに対して今月以前に選択していない場合にのみ実行されます。
 
-    この場合、 **\_maxDate**は、前月に表示される最後の日です。 ユーザーが次の月のシェブロンを選択する前に、 **\_maxDate**は翌月の13番目の値を持つことができます。 (2 月1日がうるう年以外の日曜日になると、 **\_maxDate**は40年3月13日 **\_firstDayInView** + 日) になります。つまり、ユーザーがこの月を選択していない場合、 **\_maxDate**は新しい **\_lastDayOfMonth**よりも大きくなり、 **if**関数は**true**を返します。 コードが実行され、コレクションと変数が更新されます。
+    その場合、**\_maxDate** は前月が表示されるときに表示される最後の日です。 ユーザーが翌月のシェブロンを選択する前に、**\_maxDate** には翌月の 13 日の最大許容値があります。 (2 月 1 日がうるう年ではない日曜日になると、**\_maxDate** は 3 月13 日で、**\_firstDayInView** + 40 日です。) つまり、ユーザーが今月まだ選択していない場合、**\_maxDate** は新しい **\_lastDayOfMonth** より大きく、**If** 関数は **true** に戻ります。 コードが実行され、コレクションおよび変数が更新されます:
 
-    - **MyCalendarEvents**は、 [GetEventsCalendarViewV2](https://docs.microsoft.com/connectors/office365/#get-calendar-view-of-events--v2-)操作を使用して、選択したカレンダーからイベントを取得します。 日付の範囲は、 **\_maxDate** + 1 日、 **\_firstDayInView** + 40 日までです。 **MyCalendarEvents** **minDate date\_** には既にイベントが含まれているので、この新しい日付範囲の最小値に対して1が追加されます。 **\_firstDayInView** + 40 は、 **\_maxDate**の数式であるため、範囲の2番目の日付は新しい **\_maxDate**にすぎません。
+    - **MyCalendarEvents** は、[Office365.GetEventsCalendarViewV2](https://docs.microsoft.com/connectors/office365/#get-calendar-view-of-events--v2-) 操作で選択したカレンダーからイベントを取得します。 日付範囲は **\_maxDate** + 1 日および **\_firstDayInView** + 40 日です。 **MyCalendarEvents** には既に **\_minDate** 日付のイベントが含まれているため、この新しい日付範囲の最小値はその日付から 1 が追加されます。 **\_firstDayInView** + 40 は、**\_maxDate** の数式なので、範囲の 2 つ目の日付は新しい **\_maxDate** です。
 
-    - **maxDate**が **\_firstDayInView** + 40 日に設定されています。これは、イベントが取得された最後の日であるためです。\_ ユーザーが次の月のシェブロンを選択してこの日付に戻ると、 **if**関数は**false**を返します。このビューのイベントは**MyCalendarEvents**に既にキャッシュされているため、このコードは実行されません。
+    - **\_maxDate** は現在の **\_firstDayInView** + 40 日に設定されています。これは、イベントが取得された最後の日付だからです。 ユーザーが翌月のシェブロンを選択してこの日付に戻ると、**If** 関数が **false** に戻ります; このビューのイベントは既に **MyCalendarEvents** でキャッシュされているため、コードは実行されません。
 
-## <a name="calendar-gallery"></a>カレンダーギャラリー
+## <a name="calendar-gallery"></a>カレンダー ギャラリー
 
 ![MonthDayGallery コントロール](media/calendar-screen/calendar-month-gall.png)
 
-- プロパティ: **Items**<br>
+- プロパティ: **アイテム**<br>
     値: `[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,
     20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41]`
   
-  カレンダーギャラリーの項目には 0 ~ 41 のセットが使用されます。これは、最悪のシナリオでは、カレンダービューには42日を表示する必要があるためです。 このエラーは、月の最初のが土曜日に発生し、その月の最後のが日曜日に発生した場合に発生します。 この場合、カレンダーには、月の最初の行を含む行の前の月から6日が表示されます。月の最後の行には、次の月の6日が表示されます。 これは42の一意の値で、選択した月の30個です。
+  最悪のシナリオでは、カレンダー ビューに 42 日間表示する必要があるため、0 から 41 のセットがカレンダー ギャラリーのアイテムに使用されます。 これは、月の最初が土曜日に発生し、月の最後が日曜日に発生する場合に発生します。 この場合、カレンダーは前月から 6 日を月の最初を含む行に、翌月から 6 日を月の最後を含む行に表示します。 これは 42 の一意の値で、そのうち 30 は選択した月のものです。
 
 - プロパティ: **WrapCount**<br>
     値: `7`
 
-  この値には7日の週が反映されます。
+  この値は、週 7 日を反映しています。
 
-### <a name="title-control-in-the-calendar-gallery"></a>カレンダーギャラリーのタイトルコントロール
+### <a name="title-control-in-the-calendar-gallery"></a>カレンダー ギャラリーのタイトル コントロール
 
-![MonthDayGallery Title コントロール](media/calendar-screen/calendar-month-text.png)
+![MonthDayGallery タイトル コントロール](media/calendar-screen/calendar-month-text.png)
 
-- プロパティ:**テキスト**<br>
+- プロパティ: **テキスト**<br>
     値: `Day( DateAdd( _firstDayInView, ThisItem.Value, Days ) )`
 
-    **\_firstDayInView**が ( **\_firstDayOfMonth**の曜日値) + 1 として定義されていることを思い出してください。 これにより、 **\_firstDayInView**は常に日曜日で、 **\_firstDayOfMonth**は常に**MonthDayGallery**の最初の行になります。 これらの2つのファクトのため、 **\_firstDayInView**は常に**MonthDayGallery**の最初のセルにあります。 ここでは、 **MonthDayGallery** item プロパティのセルの番号を**指定します。** したがって、 **firstDayInView**を開始点として\_すると、各セルに **\_firstdayinview**とそのそれぞれのセル値の増分が表示されます。
+    **\_firstDayInView** が (**\_firstDayOfMonth** - 平日の値) + 1 と定義されていることを思い出してください。 **\_firstDayInView** が常に日曜日であり、**\_firstDayOfMonth** が常に **MonthDayGallery** の最初の行にあることを示します。 これら 2 つの要素のために、**\_firstDayInView** は常に **MonthDayGallery** の最初のセルにあります。 **ThisItem.Value** は **MonthDayGallery** アイテムのプロパティのセルの番号です。 したがって、**\_firstDayInView** を開始点として、各セルは **\_firstDayInView** + それぞれのセル値の増分を表示します。
 
-- プロパティ: **Fill**<br>
-    値: **If**関数:
+- プロパティ: **フィル**<br>
+    値: **If** 関数 1 つ:
 
     ```powerapps-dot
     If( DateAdd( _firstDayInView, ThisItem.Value ) = Today() && 
@@ -240,22 +253,22 @@ Power Apps のキャンバスアプリでは、カレンダー画面テンプレ
     )
     ```
 
-  **Text**プロパティの説明で説明したように、`DateAdd(_firstDayInView, ThisItem.Value)` は、表示されているセルの日を表します。 これを考慮すると、上記のコードでは次の比較が実行されます。
-  1. セルの値が今日の日付で、このセルが **\_dateSelected**と同じ場合は、fill 値を指定しないでください。
-  1. セルの値が今日の日付で、 **\_dateSelected**とは等しくない場合は、 **colorfade**の塗りつぶしを指定します。
-  1. 最後の比較は明確ではありません。 これは、セル内の実際のテキスト値とセルアイテムの値 (表示されている数値と項目番号) の比較です。<br>
+  **テキスト** プロパティの説明で説明したように、`DateAdd(_firstDayInView, ThisItem.Value)` は表示されるセルの日を表します。 これを考慮して、上記のコードはこれらの比較を実行します:
+  1. セルの値が今日の日付であり、かつこのセルが **\_dateSelected** に相当する場合、フィル値を指定しないでください。
+  1. セルの値は今日の日付ですが、**\_dateSelected** に相当しない場合、**ColorFade** フィルを指定してください。
+  1. 最後の比較はそれほど明確ではありません。 これは、セルの実際のテキスト値およびセル項目の値 (表示されている番号とアイテム番号) の比較です。<br>
 
-      これについて理解を深めるには、2018年9月に開始され、土曜日から日曜日に終了します。 この場合、カレンダーには、8月1日から8月1日までの26日が表示され、9月1日までは `Abs(Title.Text - ThisItem.Value) = 26` が表示されます。 次に、`Abs(Title.Text - ThisItem.Value) = 5`します。 カレンダーの最後の行から5月30日から6月1日までと表示されます。 この `Abs(Title.Text - ThisItem.Value)` では、9月30日は5になりますが、10月の日付では35になります。<br>
+      これをよりよく理解するため、土曜日に始まり日曜日に終わる月である 2018 年 9 月を考慮します。 この場合、カレンダーの最初の行には 8 月 26 日から 31 日および 9 月 1 日が表示され、`Abs(Title.Text - ThisItem.Value) = 26` で 9 月 1 日まで表示されます。 次に `Abs(Title.Text - ThisItem.Value) = 5`。 カレンダーの最後の行まで 5 に留まると、9 月 30 日および 10 月 1 日から 6 日が表示されます。 `Abs(Title.Text - ThisItem.Value)` の中で、9 月 30 日は引き続き 5 ですが、10 月の日付は 35 になります。<br>
 
-      これは、前の月の日付の場合、`Abs(Title.Text - ThisItem.Value)` は常に表示の最初の日の `Title.Text` 値と同じになります。 翌月に表示される日については、`Abs(Title.Text - ThisItem.Value)` は常にその月の最初のセルの**MonthDayGallery** item 値 (この場合は10月1日) から1を引いた値と等しくなります。 また、最も重要な点として、現在選択されている月に表示される日数についても、`Abs(Title.Text - ThisItem.Value)` は、前の例で示したように、その月の最初の項目の値から1を引いた値と常に同じになります。 数式を `Abs(Title.Text - ThisItem.Value) > 5`として記述することは、完全に有効です。
+      これはパターンです: 前月から表示される日については、`Abs(Title.Text - ThisItem.Value)` が常に表示される最初の日の `Title.Text` 値に等しいものです。 翌月に表示される日については、`Abs(Title.Text - ThisItem.Value)` が常にその月 (この場合は 10 月 1 日) から 1 を引いた最初のセルの **MonthDayGallery** アイテム値に等しいものです。 そして最も重要なのは、現在選択されている月に表示される日については、前の例が示しているように、`Abs(Title.Text - ThisItem.Value)` は常にその月の最初のアイテム値から 1 を引いた値に等しく、5 を超えることはありません。 したがって、数式を `Abs(Title.Text - ThisItem.Value) > 5` として書き込むことが完全に有効です。
 
-      このステートメントでは、日付の値が現在選択されている月の範囲外であるかどうかを確認します。 設定されている場合は、**塗りつぶし**が部分的に不透明な灰色になります。
+      次のステートメントは、日付値が現在選択されている月の範囲外かどうかを確認します。 その場合、**フィル**は部分的に不透明な灰色です。
 
     > [!NOTE]
-    > この最後の比較の有効性を確認するには、ギャラリーに**ラベル**コントロールを挿入し、その**Text**プロパティを次の値に設定します。<br>`Abs(Title.Text - ThisItem.Value)`。
+    > この最後の比較の有効性を自分で確認するには、**ラベル** コントロールをギャラリーに挿入し、その**テキスト** プロパティをこの値に設定します:<br>`Abs(Title.Text - ThisItem.Value)`。
 
-- プロパティ: **Visible**<br>
-    数値
+- プロパティ: **表示する**<br>
+    値:
 
     ```powerapps-dot
     !(
@@ -265,21 +278,21 @@ Power Apps のキャンバスアプリでは、カレンダー画面テンプレ
     )
     ```
 
-    前のステートメントは、現在選択されている月の日付がない行にセルがあるかどうかをチェックします。 日付値から任意の日の曜日値を減算し、1を追加すると、その日が存在する行の最初の項目が常に返されることを思い出してください。 このステートメントでは、行の最初の日が、表示可能な月の最終日より後かどうかを確認します。 含まれている場合は、行全体に次の月の日付が含まれているため表示されません。
+    上記のステートメントは、現在選択されている月の日が発生しない行にセルがあるかどうかを確認します。 日付値から任意の曜日の平日の値を差し引いて 1 を加えると、その日が存在する行の最初のアイテムが常に返されることを思い出してください。 したがって、このステートメントは、行の最初の日が表示可能な月の最後の日の後かどうかを確認します。 その場合、行全体に翌月の日が含まれているため、表示されません。
 
-- プロパティ: **Onselect**<br>
-    値: **\_dateselected**変数を、選択したセルの日付に設定する**Set**関数:
+- プロパティ: **OnSelect**<br>
+    値:  **\_dateSelected** 変数を選択したセルの日付に設定する **Set** 関数:
 
     ```powerapps-dot
     Set( _dateSelected, DateAdd( _firstDayInView, ThisItem.Value, Days ) )
     ```
 
-### <a name="circle-control-in-the-calendar-gallery"></a>カレンダーギャラリーの円コントロール
+### <a name="circle-control-in-the-calendar-gallery"></a>カレンダー ギャラリーの サークル コントロール
 
-![MonthDayGallery Circle コントロール](media/calendar-screen/calendar-month-event.png)
+![MonthDayGallery サークル コントロール](media/calendar-screen/calendar-month-event.png)
 
-- プロパティ: **Visible**<br>
-    値: 選択した日付に対してイベントがスケジュールされているかどうか、および**サブ円**と**タイトル**のコントロールを表示するかどうかを決定する数式。
+- プロパティ: **表示する**<br>
+    値: 選択した日付にイベントがスケジュールされているかどうか、および**サブサークル**と**タイトル** コントロールが表示されるかどうかを決定する数式:
 
     ```powerapps-dot
     CountRows(
@@ -289,27 +302,27 @@ Power Apps のキャンバスアプリでは、カレンダー画面テンプレ
     ) > 0 && !Subcircle.Visible && Title.Visible
     ```
 
-    任意のイベントの **[開始]** フィールドがそのセルの日付と等しい場合、**タイトル**コントロールが表示されていて、 **subcircle**コントロールが表示されていない場合は、**円**コントロールが表示されます。 つまり、この日に少なくとも1つのイベントが発生し、この日が選択されていない場合に、このコントロールが表示されます。 選択されている場合、その日のイベントは**CalendarEventsGallery**コントロールに表示されます。
+    イベントの**開始**フィールドがそのセルの日付に相当する場合、**タイトル** コントロールが表示されている場合、および**サブサークル** コントロールが表示されていない場合、**サークル** コントロールは表示されます。 つまり、このコントロールは、この日に少なくとも 1 つのイベントが発生し、この日が選択されていない場合に表示されます。 選択された場合、その日のイベントが **CalendarEventsGallery** コントロールに表示されます。
 
-### <a name="subcircle-control-in-the-calendar-gallery"></a>カレンダーギャラリーの subcircle コントロール
+### <a name="subcircle-control-in-the-calendar-gallery"></a>カレンダー ギャラリーの サブサークル コントロール
 
-![MonthDayGallery Subcircle コントロール](media/calendar-screen/calendar-month-selected.png)
+![MonthDayGallery サブサークル コントロール](media/calendar-screen/calendar-month-selected.png)
 
-- プロパティ: **Visible**<br>
-    数値
+- プロパティ: **表示する**<br>
+    値:
 
     ```powerapps-dot
     DateAdd( _firstDayInView, ThisItem.Value ) = _dateSelected && Title.Visible
     ```
 
-  **Subcircle**コントロールは、 **\_dateselected**がセルの日付と同じであり、**タイトル**コントロールが表示されている場合に表示されます。 言い換えると、このコントロールは、セルが現在選択されている日付のときに表示されます。
+  **サブサークル** コントロールは **\_dateSelected** がセルの日付に相当し、**タイトル** コントロールが表示される場合に表示されます。 つまり、このコントロールは、セルが現在選択されている日付である場合に表示されます。
 
-## <a name="events-gallery"></a>イベントギャラリー
+## <a name="events-gallery"></a>イベント ギャラリー
 
 ![CalendarEventsGallery コントロール](media/calendar-screen/calendar-events-gall.png)
 
-- プロパティ: **Items**<br>
-    値: イベントギャラリーの並べ替えとフィルター処理を行う数式:
+- プロパティ: **アイテム**<br>
+    値: イベントギャラリーを並べ替えてフィルター処理する数式:
 
     ```powerapps-dot
     SortByColumns(
@@ -320,10 +333,10 @@ Power Apps のキャンバスアプリでは、カレンダー画面テンプレ
     )
     ```
 
-   **MyCalendarEvents**コレクションには、 **\_MinDate**と **\_maxDate**間のすべてのイベントが含まれています。 選択した日付のみのイベントを表示するために、 **MyCalendarEvents**に対してフィルターが適用され、開始日が **\ _dateSelected**に相当するイベントが表示されます。 次に、項目が開始日順に並べ替えられ、順番に配置されます。
+   **MyCalendarEvents** コレクションには、**\_minDate** と **\_maxDate** との間のすべてのイベントが含まれます。 選択した日付のみのイベントを表示するために、**MyCalendarEvents** にフィルター処理が適用され、**\   _dateSelected** に相当する開始日を持つイベントが表示されます。 次に、アイテムは順番に並べるため、開始日で並べ替えられます。
 
 ## <a name="next-steps"></a>次の手順
 
-- [この画面の詳細情報](./calendar-screen-overview.md)
-- [Office 365 Outlook コネクタの詳細については、「Power Apps」を参照してください。](../connections/connection-office365-outlook.md)
-- [Office 365 Users コネクタの詳細については、「Power Apps」を参照してください。](../connections/connection-office365-users.md)
+- [このスクリーンに関する詳細情報](./calendar-screen-overview.md)
+- [Power Apps での Office 365 Outlook コネクタについての詳細](../connections/connection-office365-outlook.md)
+- [Power Apps での Office 365 ユーザー コネクタについての詳細](../connections/connection-office365-users.md)

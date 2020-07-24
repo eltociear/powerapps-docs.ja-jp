@@ -4,8 +4,8 @@ description: 個々のプラグイン/ユーザー定義ワークフロー活動
 services: ''
 suite: powerapps
 documentationcenter: na
-author: jowells
-manager: austinj
+author: JimDaly
+manager: sunilg
 editor: ''
 tags: ''
 ms.service: powerapps
@@ -14,18 +14,18 @@ ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 1/15/2019
-ms.author: jowells
+ms.author: phecke
 search.audienceType:
 - developer
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 926cc3f7ebb61d0d9c59df707f6d4d824d59599a
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 44671a13acf299663544527ed3dc124737f3b7b4
+ms.sourcegitcommit: 2fd873a1ea17f419f6194714efffa47a9bd00c2e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2861844"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "3506524"
 ---
 # <a name="optimize-assembly-development"></a>アセンブリ開発を最適化する
 
@@ -39,26 +39,30 @@ ms.locfileid: "2861844"
 
 カスタム アセンブリの開発時には、考慮すべき事項がいくつかあります:
 
+1. 多数のユーザー定義ワークフロー活動を持つアセンブリは、登録時にアップロードに時間がかかることがあります。
 1. 異なる複数のカスタム アセンブリ
     - 保守性の複雑さの増大
     - プラグイン実行期間の増大の可能性
+1. Common Data Service でのサンドボックス アセンブリ サイズの制約は16 MBです。
 
-2. Common Data Service でのサンドボックス アセンブリ サイズの制約は16 MBです。
 
 <a name='guidance'></a>
 
 ## <a name="guidance"></a>ガイダンス
 
-> [!NOTE]
-> より詳細なガイダンス説明は、アセンブリ開発の最適化の詳細に関する開発 (個別のプラグインを単一のカスタム アセンブリに統合する方法、アセンブリ サイズを最小限に抑える推奨など) を参照してください。
+### <a name="limit-the-number-of-custom-workflow-activities-in-a-single-assembly"></a>1 つのアセンブリのユーザー定義ワークフロー活動の数を制限する
+
+プラグインの登録中にユーザー定義ワークフロー活動を持つアセンブリをアップロードすると、ユーザー定義ワークフロー活動に追加のチェックが必要になります。
+
+何百もの通常のプラグイン タイプを持つアセンブリは、非常に迅速にアップロードできますが、100 を超えるユーザー定義ワークフロー活動があるアセンブリは、登録または更新時に数分またはタイムアウトする場合があります。 1 つのアセンブリに含めるユーザー定義ワークフロー活動は 50 以下にすることをお勧めします。
 
 ### <a name="consolidate-plug-ins-or-custom-workflow-activities-into-a-single-assembly"></a>プラグインまたはユーザー定義ワークフロー活動を単一のアセンブリに統合します。
 
 Common Data Service ソリューション用に開発されたプラグインおよびユーザー定義ワークフロー活動は、単一の Visual Studio プロジェクト内に存在させる必要があります。 プラグインが次の例外に当てはまらない限り、個別のプラグインまたはユーザー定義ワークフロー活動を単一の Visual Studio プロジェクトまたはアセンブリに統合することを考量してください。
 
 1. プラグイン / ユーザー定義のワークフロー活動は、選択的に 1 つの環境に展開する必要があります。
-
-2. Common Data Service インスタンスの場合、物理アセンブリ サイズは 16 MB に近いサイズまたはそれ以上です。
+1. Common Data Service インスタンスの場合、物理アセンブリ サイズは 16 MB に近いサイズまたはそれ以上です。
+1. [1 つのアセンブリのユーザー定義ワークフロー活動の数を制限する](#limit-the-number-of-custom-workflow-activities-in-a-single-assembly) で説明したように、アセンブリには 50 を超えるユーザー定義ワークフロー活動があります
 
 
 ### <a name="move-plug-inscustom-workflow-activities-into-multiple-assemblies"></a>プラグイン / ユーザー定義ワークフロー活動を複数のアセンブリに移動する
@@ -69,7 +73,12 @@ Power Apps および Dynamics 365 (online) には 16 MB のアセンブリ サ�
 
 ## <a name="problematic-patterns"></a>問題となるパターン
 
+### <a name="assemblies-take-a-long-time-to-upload-when-being-registered"></a>アセンブリは、登録時にアップロードに時間がかかります
+
+ユーザー定義ワークフロー活動タイプのプラグインが登録中にアップロードされると、タイプごとに追加の検証チェックが必要になります。 アセンブリに 100 を超えるユーザー定義ワークフロー活動タイプのプラグインが含まれている場合、チェックを完了するのに数分かかる可能性があり、タイムアウトするリスクがあります。
+
 ### <a name="multiple-assemblies"></a>複数のアセンブリ
+
 複数の領域に影響を与える可能性のあるアセンブリが複数ある:
 
 1. パフォーマンス - 各アセンブリには、Common Data Service によって管理されるライフサイクルがあります。  これにはアセンブリの読み込み、キャッシュ、アンロードが含まれます。  複数のアセンブリが原因でサーバー上で多くの作業 (アセンブリの読み込みやキャッシュ) が実行されており、プラグイン/ユーザー定義ワークフロー活動の全体の実行時間に影響を与える可能性がある。

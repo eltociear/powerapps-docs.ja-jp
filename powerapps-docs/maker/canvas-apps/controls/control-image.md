@@ -1,6 +1,6 @@
 ---
-title: 'イメージ コントロール: リファレンス | Microsoft Docs'
-description: 各種プロパティとサンプルを含むイメージ コントロールに関する情報
+title: '画像コントロール: リファレンス | Microsoft Docs'
+description: プロパティとサンプルを含む、画像コントロールに関する情報
 author: chmoncay
 manager: kvivek
 ms.service: powerapps
@@ -15,145 +15,145 @@ search.app:
 - PowerApps
 ms.openlocfilehash: 0610e1cfabde8bd62e083ca1cff65825c28918e4
 ms.sourcegitcommit: c0508e233a03ac4846c04d5caae79eccca3e2843
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 04/15/2020
-ms.locfileid: "81385260"
+ms.locfileid: "3309282"
 ---
-# <a name="image-control-in-power-apps"></a>Power Apps のイメージコントロール
-ローカル ファイルやデータ ソースの画像を表示するコントロールです。
+# <a name="image-control-in-power-apps"></a>Power Apps での画像コントロール
+たとえば、ローカル ファイルまたはデータ ソースからの画像を表示するコントロール。
 
-## <a name="description"></a>説明
-アプリに**イメージ** コントロールを 1 つまたは複数追加すると、データ セットに含まれていない個々の画像を表示したり、データ ソースのレコードの画像を組み合わせたりすることができます。
+## <a name="description"></a>内容
+アプリに**画像**コントロールを 1 つまたは複数追加すると、データ セットに含まれていない個々の画像を表示したり、データ ソースのレコードからの画像を組み込むことができます。
 
 ## <a name="key-properties"></a>主要なプロパティ
-**[Image](properties-visual.md)** – イメージ、オーディオ、マイクの各コントロールに表示される画像の名前です。
+**[画像](properties-visual.md)** – 画像、オーディオ、マイクのコントロールに表示される画像の名前。
 
-## <a name="additional-properties"></a>その他のプロパティ
-**[AccessibleLabel](properties-accessibility.md)** – スクリーン リーダー用のラベルです。
+## <a name="additional-properties"></a>追加のプロパティ
+**[AccessibleLabel](properties-accessibility.md)** – スクリーン リーダー用のラベル。
 
-**ApplyEXIFOrientation** - 画像とともに埋め込まれたEXIF のデータで指定された向きを、自動的に適用するかどうかを指定します。
+**ApplyEXIFOrientation** – 画像とともに埋め込まれた EXIF のデータで指定された向きを、自動的に適用するかどうか。
 
 **AutoDisableOnSelect** – OnSelect の動作の実行時にコントロールを自動で無効化するかどうかを指定します。
 
-**[BorderColor](properties-color-border.md)** – コントロールの境界線の色です。
+**[BorderColor](properties-color-border.md)** – コントロールの境界線の色。
 
-**[BorderStyle](properties-color-border.md)** – コントロールの境界線を **Solid** (実線)、**Dashed** (破線)、**Dotted** (点線)、**None** (なし) のいずれに指定します。
+**[BorderStyle](properties-color-border.md)** – コントロールの境界線が**実線**、**破線**、**点線**、または**なし**かどうか。
 
-**[BorderThickness](properties-color-border.md)** – コントロールの境界線の太さです。
+**[BorderThickness](properties-color-border.md)** – コントロールの境界線の太さ。
 
-**CalculateOriginalDimensions** – **OriginalHeight** プロパティと **OriginalWidth** プロパティを有効にします。
+**CalculateOriginalDimensions** – **OriginalHeight** および **OriginalWidth** プロパティを有効にします。
 
-**[DisplayMode](properties-core.md)** – コントロールで、ユーザー入力を許可するか (**Edit**)、データの表示のみを許可するか (**View**)、許可しないか (**Disabled**) を設定します。
+**[DisplayMode](properties-core.md)** – コントロールがユーザー入力を許可するか (**編集**)、データのみを表示するか (**表示**)、または無効にするか (**無効**) どうか。
 
-**[DisabledBorderColor](properties-color-border.md)** – コントロールの **[DisplayMode](properties-core.md)** プロパティが **Disabled** に設定されている場合のコントロールの境界線の色です。
+**[DisabledBorderColor](properties-color-border.md)** – コントロールの **[DisplayMode](properties-core.md)** プロパティが**無効**に設定されている場合のコントロールの境界線の色。
 
-**[DisabledFill](properties-color-border.md)** – コントロールの **[DisplayMode](properties-core.md)** プロパティが **Disabled** に設定されている場合のコントロールの背景色です。
+**[DisabledFill](properties-color-border.md)** – コントロールの **[DisplayMode](properties-core.md)** プロパティが**無効**に設定されている場合のコントロールの背景色。
 
-**[Fill](properties-color-border.md)** – コントロールの背景色です。
+**[塗りつぶし](properties-color-border.md)** – コントロールの背景色。
 
-**FlipHorizontal** - 画像を表示する前に水平方向に反転するかどうかを指定します。
+**FlipHorizontal** – 画像を表示する前に水平方向に反転するかどうか。
 
-**FlipVertical** - 画像を表示する前に垂直方向に反転するかどうかを指定します。
+**FlipVertical** – 画像を表示する前に垂直方向に反転するかどうか。
 
-**[FocusedBorderColor](properties-color-border.md)** – コントロールにフォーカスがあるときのコントロールの境界線の色です。
+**[FocusedBorderColor](properties-color-border.md)** – コントロールがフォーカスされているときのコントロールの境界線の色。
 
-**[FocusedBorderThickness](properties-color-border.md)** – コントロールにフォーカスがあるときのコントロールの境界線の太さです。
+**[FocusedBorderThickness](properties-color-border.md)** – コントロールがフォーカスされているときのコントロールの境界線の太さ。
 
-**[Height](properties-size-location.md)** – コントロールの上端と下端の距離です。
+**[高さ](properties-size-location.md)** – コントロールの上端と下端間の距離。
 
-**[HoverBorderColor](properties-color-border.md)** – コントロール上にユーザーがマウス ポインターを重ねているときのコントロールの境界線の色です。
+**[HoverBorderColor](properties-color-border.md)** – ユーザーがコントロール上にマウス ポインターを重ねているときのコントロールの境界線の色。
 
-**[HoverFill](properties-color-border.md)** – コントロールにユーザーがマウス ポインターを重ねているときのコントロールの背景色です。
+**[HoverFill](properties-color-border.md)** – ユーザーがコントロールにマウス ポインターを重ねているときのコントロールの背景色。
 
-**[ImagePosition](properties-visual.md)** – 画面またはコントロールのサイズが画像と異なる場合の、画面またはコントロール内の画像の位置です (**Fill** (フィル)、**Fit** (サイズに合わせる)、**Stretch** (伸ばす)、**Tile** (タイル表示)、または **Center** (中央に表示))。
+**[ImagePosition](properties-visual.md)** – 画面またはコントロールのサイズが画像と異なる場合の、画面またはコントロール内の画像の位置 (**画面いっぱい**、**自動調整**、**拡大**、**タイル表示**、または**中央に表示**)。
 
-**ImageRotation** - 画像を表示する前に回転させる方法を指定します。  値には、なし、時計回り (CW) に 90 度、反時計回り (CCW) に 90 度、時計回りに 180 度を設定できます。
+**ImageRotation** – 画像を表示する前に回転させる方法。  値には、なし、時計回り (CW) に 90 度、反時計回り (CCW) に 90 度、時計回りに 180 度を設定できます。
 
-**[OnSelect](properties-core.md)** – ユーザーがコントロールをタップまたはクリックした場合のアプリの反応を指定します。
+**[OnSelect](properties-core.md)** – ユーザーがコントロールをタップまたはクリックする場合のアプリの反応方法。
 
-**OriginalHeight** – 画像の元の高さです。**CalculateOriginalDimensions** プロパティで有効にします。
+**OriginalHeight** – 画像の元の高さで、**CalculateOriginalDimensions** プロパティで有効にします。
 
-**OriginalWidth** – 画像の元の幅です。**CalculateOriginalDimensions** プロパティで有効にします。
+**OriginalWidth** – 画像の元の幅で、**CalculateOriginalDimensions** プロパティで有効にします。
 
-**[PaddingBottom](properties-size-location.md)** – コントロール内のテキストとそのコントロールの下端間の距離です。
+**[PaddingBottom](properties-size-location.md)** – コントロール内のテキストとそのコントロールの下端間の距離。
 
-**[PaddingLeft](properties-size-location.md)** – コントロール内のテキストとそのコントロールの左端間の距離です。
+**[PaddingLeft](properties-size-location.md)** – コントロール内のテキストとそのコントロールの左端間の距離。
 
-**[PaddingRight](properties-size-location.md)** – コントロール内のテキストとそのコントロールの右端間の距離です。
+**[PaddingRight](properties-size-location.md)** – コントロール内のテキストとそのコントロールの右端間の距離。
 
-**[PaddingTop](properties-size-location.md)** – コントロール内のテキストとそのコントロールの上端間の距離です。
+**[PaddingTop](properties-size-location.md)** – コントロール内のテキストとそのコントロールの上端間の距離。
 
-**[PressedBorderColor](properties-color-border.md)** – コントロールをユーザーがタップまたはクリックしたときのコントロールの境界線の色です。
+**[PressedBorderColor](properties-color-border.md)** – ユーザーがコントロールをタップまたはクリックしたときのコントロールの境界線の色。
 
-**[PressedFill](properties-color-border.md)** – コントロールをユーザーがタップまたはクリックしたときのコントロールの背景色です。
+**[PressedFill](properties-color-border.md)** – ユーザーがコントロールをタップまたはクリックしたときのコントロールの背景色。
 
-**[RadiusBottomLeft](properties-size-location.md)** – コントロールの左下隅を丸める度合いです。
+**[RadiusBottomLeft](properties-size-location.md)** – コントロールの左下隅を丸める度合い。
 
-**[RadiusBottomRight](properties-size-location.md)** – コントロールの右下隅を丸める度合いです。
+**[RadiusBottomRight](properties-size-location.md)** – コントロールの右下隅を丸める度合い。
 
-**[RadiusTopLeft](properties-size-location.md)** – コントロールの左上隅を丸める度合いです。
+**[RadiusTopLeft](properties-size-location.md)** – コントロールの左上隅を丸める度合い。
 
-**[RadiusTopRight](properties-size-location.md)** – コントロールの右上隅を丸める度合いです。
+**[RadiusTopRight](properties-size-location.md)** – コントロールの右上隅を丸める度合い。
 
-**[TabIndex](properties-accessibility.md)** – 他のコントロールに関連するキーボード ナビゲーションの順序です。
+**[TabIndex](properties-accessibility.md)** – 他のコントロールに関連するキーボード ナビゲーションの順序。
 
-**[Tooltip](properties-core.md)** – ユーザーがポインターをコントロールに合わせたときに表示される説明テキストです。
+**[ツールヒント](properties-core.md)** – ユーザーがコントロールにカーソルを置くときに表示される説明テキスト。
 
-**Transparency** – 画像の背後にあるコントロールを表示する度合いです。 10進値の範囲は 0 ~ 1 です。  0は不透明で、0.5 は半透明で、1は透明です。 
+**透明性** – 画像の背後にあるコントロールを表示し続ける度合い。 10 進値の範囲は 0〜1 です。  0 は不透明、0.5 は半透明、1 は透明です。 
 
-**[Visible](properties-core.md)** – コントロールを表示するか非表示にするかを指定します。
+**[表示](properties-core.md)** – コントロールが表示されるか非表示になるか。
 
-**[Width](properties-size-location.md)** – コントロールの左端と右端の間の距離です。
+**[幅](properties-size-location.md)** – コントロールの左端と右端間の距離。
 
-**[X](properties-size-location.md)** – コントロールの左端とその親コンテナー (親コンテナーがない場合は画面) の左端間の距離です。
+**[X](properties-size-location.md)** – コントロールの左端とその親コンテナー (親コンテナーがない場合は画面) の左端間の距離。
 
-**[Y](properties-size-location.md)** – コントロールの上端とその親コンテナー (親コンテナーがない場合は画面) の上端間の距離です。
+**[Y](properties-size-location.md)** – コントロールの上端とその親コンテナー (親コンテナーがない場合は画面) の上端間の距離。
 
 ## <a name="related-functions"></a>関連する関数
 [**Remove**( *DataSource*, ThisItem )](../functions/function-remove-removeif.md)
 
 ## <a name="examples"></a>例
-### <a name="show-an-image-from-a-local-file"></a>ローカル ファイルの画像の表示
-1. **[ファイル]** メニューの **[メディア]** をクリックまたはタップして、 **[参照]** をクリックまたはタップします。
-2. 追加する画像ファイルをクリックまたはタップし、 **[開く]** をクリックまたはタップしてから Esc キーを押して既定のワークスペースに戻ります。
-3. **イメージ** コントロールを追加し、**Image** プロパティを追加したファイルの名前に設定します。
+### <a name="show-an-image-from-a-local-file"></a>ローカル ファイルからの画像を表示する
+1. **ファイル** メニューで、**メディア**をクリックまたはタップしてから、**参照**をクリックまたはタップします。
+2. 追加する画像ファイルをクリックまたはタップし、**開く**をクリックまたはタップしてから、Esc キーを押して既定のワークスペースに戻ります。
+3. **画像**コントロールを追加し、**画像**プロパティを追加したファイルの名前に設定します。
 
-    [コントロールの追加および構成方法](../add-configure-controls.md)については関連記事を参照してください。
+    [コントロールの追加および構成](../add-configure-controls.md) についてはこちらをご覧ください。
 
-    指定した画像が**イメージ** コントロールに表示されます。
+    指定した画像が**画像**コントロールに表示されます。
 
-### <a name="show-a-set-of-images-from-a-data-source"></a>データ ソースの画像セットの表示
-1. こちらの [Excel ファイル](https://pwrappssamples.blob.core.windows.net/samples/FlooringEstimates.xlsx)をダウンロードして、ローカル デバイスに保存します。
-2. Power Apps Studio でアプリを作成するか開き、右側のウィンドウで **[データソースの追加]** をクリックまたはタップします。
+### <a name="show-a-set-of-images-from-a-data-source"></a>データ ソースからの一連の画像を表示する
+1. この [Excel ファイル](https://pwrappssamples.blob.core.windows.net/samples/FlooringEstimates.xlsx) をダウンロードして、ローカル デバイスに保存します。
+2. Power Apps Studio で、アプリを作成するか開いてから、右側のウィンドウで**データ ソースの追加**をクリックまたはタップします。
 
-    右のウィンドウに **[データ ソースの追加]** が表示されない場合、左のナビゲーション バーの画面をどれかクリックまたはタップします。
-3. **[静的データをアプリに追加します]** をクリックまたはタップして、ダウンロードした Excel ファイルをクリックまたはタップし、 **[開く]** をクリックまたはタップします。
-4. **[Flooring Estimates]** (フローリングの見積り) チェック ボックスをオンにして、 **[接続]** をクリックまたはタップします。
-5. **ギャラリー** コントロールと画像を追加し、 **[Items](properties-core.md)** プロパティを **FlooringEstimates** に設定します。
+    右側のウィンドウに**データ ソースの追加**が表示されない場合、左側のナビゲーション バーの画面をクリックまたはタップします。
+3. **静的データをアプリに追加**をクリックまたはタップして、ダウンロードした Excel ファイルをクリックまたはタップしてから、**開く**をクリックまたはタップします。
+4. **床材の見積もり**チェック ボックスをオンにしてから、**接続**をクリックまたはタップします。
+5. **ギャラリー** コントロールを画像に追加し、**[項目](properties-core.md)** プロパティを **FlooringEstimates** に設定します。
 
-    [コントロールの追加および構成方法](../add-configure-controls.md)については関連記事を参照してください。
+    [コントロールの追加および構成](../add-configure-controls.md) についてはこちらをご覧ください。
 
-    **ギャラリー** コントロールに、ダウンロードした Excel ファイルに含まれるリンクに基づくカーペット製品、硬木の製品、およびタイル製品の画像が表示されます。
+    **ギャラリー** コントロールには、ダウンロードした Excel ファイルのリンクに基づくカーペット、硬木、およびタイル製品の画像が表示されます。
 
 
-## <a name="accessibility-guidelines"></a>アクセシビリティのガイドライン
+## <a name="accessibility-guidelines"></a>アクセシビリティ ガイドライン
 ### <a name="color-contrast"></a>色のコントラスト
-* グラフィックがボタンとして使用される場合、[標準の色のコントラスト要件](../accessible-apps-color.md)が適用されます。
-* 純粋に装飾でないイメージの場合、イメージ内のコントラストの問題を確認すること検討してください。
+* グラフィックがボタンとして使用される場合、[標準色のコントラスト要件](../accessible-apps-color.md) が適用されます。
+* 純粋な装飾でない画像の場合、画像内のコントラストの問題を確認することを検討してください。
 
-### <a name="screen-reader-support"></a>スクリーン リーダーのサポート
-* グラフィックがボタンとして使用されるか、単なる装飾用ではない場合は、 **[AccessibleLabel](properties-accessibility.md)** が存在する必要があります。
-* グラフィックが純粋に装飾用である場合は、 **[AccessibleLabel](properties-accessibility.md)** を空または空の文字列 **""** にする必要があります。 それにより、スクリーン リーダーでグラフィックが無視されます。
-* グラフィックが冗長な情報を提供する場合は、 **[AccessibleLabel](properties-accessibility.md)** を空または空の文字列 **""** にすることができます。
-  * たとえば、AccessibleLabel **[ が](properties-accessibility.md)設定**に設定された歯車の**イメージ**があるとします。 このイメージは、ボタンとしては使用されません。 同じく **[設定][ と表示される](control-text-box.md)** ラベルの横にあります。 スクリーン リーダーは、イメージを**設定**と読み上げ、ラベルをもう一度**設定**と読み上げます。 これは不必要に冗長です。 この場合、**イメージ**に **[AccessibleLabel](properties-accessibility.md)** は必要ありません。
+### <a name="screen-reader-support"></a>スクリーン リーダー サポート
+* グラフィックがボタンとして使用されるか、または単なる装飾用ではない場合は、**[AccessibleLabel](properties-accessibility.md)** が存在する必要があります。
+* グラフィックが純粋に装飾用である場合は、**[AccessibleLabel](properties-accessibility.md)** を空または空の文字列 **""** にする必要があります。 これにより、スクリーン リーダーでグラフィックが無視されます。
+* グラフィックが不要な情報を提供する場合は、**[AccessibleLabel](properties-accessibility.md)** を空または空の文字列 **""** にすることができます。
+  * たとえば、**[AccessibleLabel](properties-accessibility.md)** が**設定**に設定された歯車の**画像**があるとします。 このイメージは、ボタンとしては使用されません。 **[ラベル](control-text-box.md)** の横にあり、**設定**であることを示しています。 スクリーン リーダーは、画像を**設定**として読み取り、ラベルをもう一度**設定**として読み取ります。 これは不必要に冗長なものです。 この場合、**画像**に **[AccessibleLabel](properties-accessibility.md)** は必要ありません。
 
     > [!IMPORTANT]
-    > スクリーン リーダーは、AccessibleLabel **[ が空の場合でも、](properties-accessibility.md)** TabIndex **[ が 0 以上の](properties-accessibility.md)イメージ**を常に読み上げます。 これらはボタンとしてレンダリングされるためです。 **[AccessibleLabel](properties-accessibility.md)** が指定されていない場合、スクリーン リーダーは単純にグラフィックを**ボタン**として読み上げます。
+    > スクリーン リーダーは、**[AccessibleLabel](properties-accessibility.md)** が空の場合でも、**[TabIndex](properties-accessibility.md)** が 0 以上の**画像**を常に読み取ります。 これはボタンとしてレンダリングされるためです。 **[AccessibleLabel](properties-accessibility.md)** が指定されていない場合、スクリーン リーダーは単純にグラフィックを**ボタン**として読み取ります。
 
 ### <a name="keyboard-support"></a>キーボードのサポート
-* グラフィックをボタンとして使用する場合は、 **[TabIndex](properties-accessibility.md)** を 0 以上にする必要があります。 こうすることで、キーボード ユーザーがそこに移動できるようになります。
-* グラフィックをボタンとして使用する場合は、フォーカス インジケーターを明確に表示する必要があります。 これを実現するには **[FocusedBorderColor](properties-color-border.md)** と **[FocusedBorderThickness](properties-color-border.md)** を使用します。
+* グラフィックをボタンとして使用する場合は、**[TabIndex](properties-accessibility.md)** を 0 以上にする必要があります。 こうすることで、キーボード ユーザーがそこに移動できるようになります。
+* グラフィックをボタンとして使用する場合は、明確に判別できるフォーカス インジケーターが必要です。 これを実現するには **[FocusedBorderColor](properties-color-border.md)** および **[FocusedBorderThickness](properties-color-border.md)** を使用します。
 
     > [!NOTE]
-  > **[TabIndex](properties-accessibility.md)** が 0 以上の場合、**イメージ**はボタンとしてレンダリングされます。 視覚的な外観は変わりませんが、スクリーン リーダーはイメージをボタンとして正しく識別します。 **[TabIndex](properties-accessibility.md)** が 0 未満の場合、**イメージ**はイメージとして識別されます。
+  > **[TabIndex](properties-accessibility.md)** が 0 以上の場合、**画像**はボタンとしてレンダリングされます。 外観は変更はありませんが、スクリーン リーダーは画像をボタンとして正しく識別します。 **[TabIndex](properties-accessibility.md)** が 0 未満の場合、**画像**は画像として識別されます。

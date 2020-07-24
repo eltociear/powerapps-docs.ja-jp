@@ -15,12 +15,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 5814c60e301e3721c2c0e4e7f20926708c2dd5e3
-ms.sourcegitcommit: 5701e7a755fade6c3bac5c4a5774fcc74627e168
+ms.openlocfilehash: 518cae90216c8178c1ef46c3613a6613f9895527
+ms.sourcegitcommit: 4a88daac42180283314f6bedee3d6810fd5a6c25
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "3115919"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "3275843"
 ---
 # <a name="configure-a-form-to-accept-custom-querystring-parameters"></a>カスタム クエリストリング パラメーターが許可されるフォームの構成
 
@@ -35,9 +35,9 @@ ms.locfileid: "3115919"
 ## <a name="define-allowed-query-string-parameters"></a>許可されるクエリ文字列パラメーターの定義  
  フォームに受け付けられるクエリ文字列パラメーターを指定する方法は 2 つあります。  
   
--   フォーム プロパティの編集  
+- フォーム プロパティの編集  
   
--   フォーム XML の編集  
+- フォーム XML の編集  
   
 ### <a name="edit-form-properties"></a>フォーム プロパティの編集  
  エンティティ フォームを編集するとき、**フォーム**グループの**ホーム**タブで、**フォームのプロパティ**をクリックします。 **フォームのプロパティ**ダイアログ ボックスで、**パラメーター**タブを選択します。  

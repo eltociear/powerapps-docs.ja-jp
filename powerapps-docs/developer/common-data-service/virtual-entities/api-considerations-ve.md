@@ -1,26 +1,26 @@
 ---
 title: 仮想エンティティの API に関する考慮事項 (Common Data Service) | Microsoft Docs
 description: 仮想エンティティの API について説明する
-ms.date: 10/31/2018
+ms.date: 06/24/2020
 ms.service: powerapps
 ms.topic: article
 applies_to:
 - Dynamics 365 (online)
 ms.assetid: d329dade-16c5-46e9-8dec-4b8efb996dea
-author: mayadumesh
-ms.author: jdaly
-manager: annbe
+author: Sunil-Garg
+ms.author: pehecke
+manager: ryjones
 search.audienceType:
 - developer
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: e561c77b2677d6b306463d687866a55b46f65421
-ms.sourcegitcommit: 5701e7a755fade6c3bac5c4a5774fcc74627e168
+ms.openlocfilehash: b18ba33792b96a48a4950a7022ba584f070dc047
+ms.sourcegitcommit: 8c157ad4ab7c01d55728a301abd616fee9341f9c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "3115779"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "3503172"
 ---
 # <a name="api-considerations-of-virtual-entities"></a>仮想エンティティの API に関する考慮事項
 

@@ -2,7 +2,7 @@
 title: ファイル属性 (Common Data Service) | Microsoft Docs
 description: アプリケーション内にファイル データを保存するファイル属性、サポートされている属性、データの取得、およびファイル データのアップロードについて説明します。
 ms.custom: ''
-ms.date: 10/04/2019
+ms.date: 06/17/2020
 ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: d8a64f994f035f61506a26836386f5f087777928
-ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
+ms.openlocfilehash: 045e42cfe3038618cf4125c790f55390e7e37eb6
+ms.sourcegitcommit: 8728546925c570541bebc1ac7a24227651e8f65f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "3156195"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "3463288"
 ---
 # <a name="file-attributes"></a>ファイル属性
 
@@ -27,12 +27,14 @@ ms.locfileid: "3156195"
 
 Web API (REST) | .NET API (SOAP)
 ------- | -------
-FileAttributeMetadata | <xref:Microsoft.Xrm.Sdk.Metadata.FileAttributeMetadata>
+[FileAttributeMetadata](/dynamics365/customer-engagement/web-api/fileattributemetadata) | <xref:Microsoft.Xrm.Sdk.Metadata.FileAttributeMetadata>
 
 許可されないファイルの種類については、 **ブロックする添付ファイルの拡張子の設定** 設定の [システム設定全般タブ](/power-platform/admin/system-settings-dialog-box-general-tab) を参照してください。
 
 > [!IMPORTANT]
-> いくつかの制限は、 Common Data Service のファイルおよび拡張イメージ データ型を使用するときに適用されます。 顧客管理キー (CMK) がテナントで有効になっている場合、テナントの組織は、ファイル、イメージ、IoTデータ型を使用できません。 除外されたデータ型を含むソリューションはインストールされません。 これらのデータ型を使用するには、顧客が CMK をオプトアウトする必要があります。
+> いくつかの制限は、 Common Data Service のファイルおよび拡張イメージ データ型を使用するときに適用されます。 顧客管理キー (CMK) がテナントで有効になっている場合、テナントの組織は、ファイル、イメージ、IoTデータ型を使用できません。 除外されたデータ型を含むソリューションはインストールされません。 これらのデータ型を使用するには、顧客が CMK をオプトアウトする必要があります。<p/>
+> ファイル属性は、<xref:Microsoft.Xrm.Sdk.Client.OrganizationServiceProxy.SdkClientVersion> 9.0.45.329 以降および Web API バージョン 9.1 以降でサポートされています。
+
 
 <!--File data is not passed to plug-ins for performance reasons. You must retrieve the file data in plug-in code using an explicit retrieve call. -->
   
@@ -43,6 +45,9 @@ FileAttributeMetadata | <xref:Microsoft.Xrm.Sdk.Metadata.FileAttributeMetadata>
 ### <a name="maxsizeinkb-attribute"></a>MaxSizeInKB 属性
 
  この値は、属性に含めることができるファイル データの最大サイズ (KB) を表します。 この値を、特定のアプリケーションに適した最小の使用可能データ サイズに設定してください。 許容サイズ制限と既定値に対する <xref:Microsoft.Xrm.Sdk.Metadata.FileAttributeMetadata.MaxSizeInKB> のプロパティを参照してください。
+ 
+ > [!NOTE]
+ > MaxSizeInKB は、ファイル属性がエンティティに追加されるときに設定されます。 設定後は変更するできません。
   
 <a name="BKMK_RetrievingFiles"></a>
 
@@ -52,7 +57,7 @@ FileAttributeMetadata | <xref:Microsoft.Xrm.Sdk.Metadata.FileAttributeMetadata>
 Web API (REST) | .NET API (SOAP)
 ------- | -------
  なし  | <xref:Microsoft.Crm.Sdk.Messages.InitializeFileBlocksDownloadRequest>、<br/><xref:Microsoft.Crm.Sdk.Messages.InitializeAttachmentBlocksDownloadRequest>、<br/><xref:Microsoft.Crm.Sdk.Messages.InitializeAnnotationBlocksDownloadRequest>
-GET /api/data/v9.1/\<entity-type(id)\>/\<file-attribute-name\>/$value    | <xref:Microsoft.Crm.Sdk.Messages.DownloadBlockRequest>
+GET /api/data/v9.1/\<entity-type(id)\>/\<file-attribute-name\>/$value   | <xref:Microsoft.Crm.Sdk.Messages.DownloadBlockRequest>
 
 Webサービス エンドポイントからのファイル データ転送は、単一のサービス コールで最大16 MBデータに制限されています。 その量を超えるファイル データは、4 MB以下のデータ ブロック (チャンク) に分割する必要があり、各ブロックはすべてのファイル データが受信されるまで、個別の API 呼び出しで受信されます。 ダウンロードしたデータ ブロックを結合して、ブロックを受信したのと同じ順序でデータ ブロックを結合して完全なデータ ファイルを形成するのは、ユーザーの責任です。
 
@@ -64,7 +69,7 @@ Webサービス エンドポイントからのファイル データ転送は、
 ```http
 GET [Organization URI]/api/data/v9.1/accounts(id)/myfileattribute/$value
 Headers:
-Range: 0-1023/8192
+Range: bytes=0-1023/8192
 ```
 
 **応答**
@@ -167,7 +172,7 @@ Location: api/data/v9.1/accounts(id)/myfileattribute?FileContinuationToken
 PATCH [Organization URI]/api/data/v9.1/accounts(id)/myfileattribute?FileContinuationToken 
 
 Headers: 
-Content-Range: 0-4095/8192 
+Content-Range: bytes 0-4095/8192 
 Content-Type: application/octet-stream
 x-ms-file-name: sample.png
 

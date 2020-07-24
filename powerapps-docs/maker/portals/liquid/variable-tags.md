@@ -1,20 +1,19 @@
 ---
 title: ポータルで変数タグを使用する | MicrosoftDocs
 description: ポータルで使用可能な変数タグについて説明します
-author: tapanm-msft
-manager: kvivek
+author: gitanjalisingh33msft
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 10/07/2019
-ms.author: tapanm
-ms.reviewer: ''
-ms.openlocfilehash: f9a56a9bccc8445dc7540f6ade402d5988ec1ffc
-ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
+ms.author: gisingh
+ms.reviewer: tapanm
+ms.openlocfilehash: 448e30aceed37a201c89135565e18e6cb303a5a3
+ms.sourcegitcommit: c12260f372ad2cc48d3146be570d2088c9ef1d86
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "2978814"
+ms.lasthandoff: 06/20/2020
+ms.locfileid: "3491002"
 ---
 # <a name="variable-tags"></a>変数タグ
 

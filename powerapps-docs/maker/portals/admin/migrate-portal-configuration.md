@@ -1,20 +1,19 @@
 ---
 title: ポータル構成の移行 | MicrosoftDocs
 description: ポータル構成の移行方法を説明します。
-author: tapanm-msft
-manager: kvivek
+author: neerajnandwana-msft
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 01/08/2020
-ms.author: tapanm
+ms.author: nenandw
 ms.reviewer: tapanm
-ms.openlocfilehash: cb0e92db15cf3f33ca89975ec3bd8750ca8ee6e2
-ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
+ms.openlocfilehash: eb09a2f8c7045016cb60af0a48ab8853a7492c8d
+ms.sourcegitcommit: 2fd873a1ea17f419f6194714efffa47a9bd00c2e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "2978506"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "3507718"
 ---
 # <a name="migrate-portal-configuration"></a>ポータル構成の移行
 

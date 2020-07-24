@@ -3,38 +3,28 @@ title: Power BI レポートをモデル駆動型システム フォームに埋
 ms.custom: ''
 ms.date: 03/05/2019
 ms.reviewer: matp
-ms.service: crm-online
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.service: powerapps
 ms.topic: get-started-article
-applies_to:
-- Dynamics 365 (online)
-- Dynamics 365 Version 9.x
-- PowerApps
-ms.assetid: 99c795e0-9165-4112-85b1-6b5e1a4aa5ec
-caps.latest.revision: 1
-author: prsi-msft
-ms.author: prsi
+author: adrianorth
+ms.author: aorth
 manager: kvivek
-tags:
-- Links to topic not migrated
 search.audienceType:
 - maker
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 5ea6ed1011ce9d21c78adf6beed9a2943c9f4cd0
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: c31121b0de0c1256d12f6bbdbb4367d8122cab68
+ms.sourcegitcommit: c6906775005aec98973b1f5c3dbe5924aff6d26e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2860460"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "3341438"
 ---
 # <a name="embed-a-power-bi-report-in-a-model-driven-system-form"></a>Power BI レポートをモデル駆動型システム フォームに埋め込む
 Power Apps モデル駆動型アプリで Power BI レポートを使用して、システム フォームに豊富なレポート作成と分析を導入して、ユーザーがより多くを達成するよう強化します。 これでシステム間でデータを集約できるようになり、単一レコードのコンテキストに合わせて調整します。
  
 ## <a name="prerequisites"></a>前提条件
-Power BI コンテンツの埋め込みはオプション機能で、すべての環境において既定で無効になっています。 Power BI コンテンツを埋め込む前に、それを有効にする必要があります。 詳細: [組織で Power BI ビジュアル化を有効にする](https://docs.microsoft.com/dynamics365/customer-engagement/admin/use-power-bi?#enable--visualizations-in-the-organization)。
+Power BI コンテンツの埋め込みはオプション機能で、すべての環境において既定で無効になっています。 Power BI コンテンツを埋め込む前に、それを有効にする必要があります。 詳細: [組織で Power BI ビジュアル化を有効にする](/power-platform/admin/use-power-bi#embed--visualizations-on-personal-dashboards)。
 
 この機能は、ソリューションをエクスポートし、それを修正して XML スニペットを追加し、そして元の環境にインポートする必要があります。 管理ソリューションのみを介して、ターゲット環境に変更を必ずインポートしてください。 既存の管理ソリューションに更新プログラムをインストールするガイダンスは [ソリューションのインポート、更新およびエクスポート](https://docs.microsoft.com/powerapps/maker/common-data-service/import-update-export-solutions) を参照してください。
 
@@ -153,8 +143,8 @@ Power BI コンテンツの埋め込みはオプション機能で、すべて�
 
 ### <a name="see-also"></a>関連項目
 
-[Power Apps モデル駆動型個人用ダッシュボードに Power BI ダッシュボードを埋め込む](https://docs.microsoft.com/dynamics365/customer-engagement/basics/add-edit-power-bi-visualizations-dashboard)
+[Power Apps モデル駆動型個人用ダッシュボードに Power BI ダッシュボードを埋め込む](/powerapps/user/add-powerbi-dashboards)
 
-[Dynamics 365 アプリで Power BI を使用する](https://docs.microsoft.com/dynamics365/customer-engagement/admin/use-power-bi)
+[Dynamics 365 アプリで Power BI を使用する](/power-platform/admin/use-power-bi)
 
 [ソリューションのインポート、更新およびエクスポート](../common-data-service/import-update-export-solutions.md)

@@ -1,20 +1,19 @@
 ---
 title: Power Apps でポータルの作成 | Microsoft Docs
 description: Power Apps のポータルを作成するための手順。
-author: tapanm-msft
-manager: kvivek
+author: neerajnandwana-msft
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 02/07/2020
-ms.author: tapanm
-ms.reviewer: ''
-ms.openlocfilehash: 987541aff2cb3585fa19c1c9f8007ad4a79b163d
-ms.sourcegitcommit: 80120b59d440bb7a3ddca93cd51154607f749f6b
+ms.author: nenandw
+ms.reviewer: tapanm
+ms.openlocfilehash: fdc81c20e17b2d45c19784af2023e1f2725b1dc9
+ms.sourcegitcommit: 2fd873a1ea17f419f6194714efffa47a9bd00c2e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2020
-ms.locfileid: "3033103"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "3507587"
 ---
 # <a name="create-a-common-data-service-starter-portal"></a>Common Data Service スターター ポータルの作成
 

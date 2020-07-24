@@ -6,24 +6,27 @@ manager: kvivek
 ms.service: powerapps
 ms.component: cds
 ms.topic: reference
-ms.date: 03/20/2020
+ms.date: 04/15/2020
 ms.author: lanced
 search.audienceType:
 - maker
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: e497b7dcf1b815acfaad7df170e3801083b8433e
-ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
+ms.openlocfilehash: 464222180188a4295c8662b70f5b5d7cdef49509
+ms.sourcegitcommit: 371fb08328f88f8bae7335db413d52b5c961c3e4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "3156575"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "3266043"
 ---
 # <a name="complex-entities-and-licensing"></a>複雑なエンティティとライセンス付与
 
 > [!IMPORTANT]
-> 複雑なエンティティは、Power Apps Plan 1 と Plan 2 のライセンスに対してのみ適用可能で、アプリごとの Power Apps やユーザープランごとの Power Apps には適用されません。
+> *このトピックは、Power Apps プラン 1 およびプラン 2 のライセンスにのみ適用されます。* 
+>
+> 複雑なエンティティは、以前の Power Apps プラン 1 およびプラン 2 のライセンスに*のみ*適用可能であり、最新のアプリごとの Power Apps プランおよびユーザーごとの Power Apps プランには適用されません。
+> 
 > エンティティに対するライセンス要件の最新情報については、 [Power Apps ライセンス ガイド](https://go.microsoft.com/fwlink/p/?linkid=2085130) を参照してください。
 
 次の複数のサーバー側ロジックを含むエンティティは、これらのエンティティを使用するアプリまたはフローのユーザーに、Power Apps Plan 2 または Power Automate Plan 2 ライセンスを要求します。
@@ -31,7 +34,7 @@ ms.locfileid: "3156575"
 * コード プラグイン。詳細情報: [プラグイン開発](/powerapps/developer/common-data-service/plug-ins)
 * リアルタイム ワークフロー。 詳細情報: [ワークフロー プロセス](/flow/workflow-processes)
 
-    > [!IMPORTANT]
+    > [!NOTE]
     >  リアルタイムのワークフローに変換されるワークフローのみ、リアルタイムおよび同期と見なされます。 バックグラウンドで実行されるワークフローは、適切な Power Apps プランでも使用でき、追加ライセンスは必要ありません。
 
 エンティティに複雑なビジネス ロジックを追加するかどうかを調べるには、環境で設定されたプラグイン アセンブリおよびワークフローの一覧を確認します。
@@ -176,8 +179,4 @@ ms.locfileid: "3156575"
 * 作業指示書サービス タスク
 * 作業指示書のサブ状態
 * 作業テンプレート
-
-
-## <a name="licensing"></a>ライセンス
-Power Apps と Dynamics 365 ライセンスの詳細については、 [ライセンスの概要](../../administrator/pricing-billing-skus.md) ページをご覧ください。
 

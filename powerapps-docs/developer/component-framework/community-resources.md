@@ -10,12 +10,12 @@ ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
-ms.openlocfilehash: 0163e6d71caf307e3e952c0f8fcb3d21a82949cc
-ms.sourcegitcommit: ebb4bb7ea7184e31dc95f0c301ebef75fae5fb14
+ms.openlocfilehash: afd3ec0c312b007a9bef4f1d320e4575f902f70d
+ms.sourcegitcommit: c0508e233a03ac4846c04d5caae79eccca3e2843
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "3218548"
+ms.lasthandoff: 04/15/2020
+ms.locfileid: "3261814"
 ---
 # <a name="community-resources-for-power-apps-component-framework"></a>Power Apps Component Framework の コミュニティ リソース
 
@@ -68,6 +68,7 @@ Power Apps Component Framework ギャラリー (<https://pcf.gallery/>) は Powe
 - [コード コンポーネントの作成](https://debajmecrm.com/2019/04/26/in-depth-end-end-walkthrough-develop-your-custom-controls-using-power-apps-component-framework-and-use-it-on-your-crm-interface/)
 - [対応しているコード コンポーネントを使用してDOMを編集する](https://www.magnetismsolutions.com/blog/adammurchison/2019/05/29/editing-the-dom-with-supported-dynamics-365-custom-controls)
 - [Node.js と Typescript を環境に構成する方法](https://capuanodanilo.com/2019/06/11/how-to-configure-node-js-and-typescript-into-your-environment-to-develop-powerapps-component-frameworks-pcf)
+- [バインドされたプロパティを使用して目的のイベントをシミュレートする方法](https://technomancy.com.au/2020/03/27/how-to-handle-events-and-reset-component-in-pcf/)
 - [コード コンポーネントのローカライズ](https://dynamicsninja.blog/2020/01/21/pcf-localization)
 - [Power Apps Component Framework– さらなる可能性へ](https://stevemordue.com/powerapps-component-framework-frosting-on-the-cake/)
 - [Power Apps Component Framework の一般公開 – 重要なマイルストーン](https://crmindian.com/2019/04/24/public-availability-of-powerapps-component-framework-an-important-milestone-for-powerapps-and-d365/)

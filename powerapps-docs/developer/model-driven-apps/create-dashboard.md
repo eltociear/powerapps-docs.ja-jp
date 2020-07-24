@@ -15,16 +15,14 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 02b8e2b80821e3a59f3522f25f455d6cc3b4a083
-ms.sourcegitcommit: 5701e7a755fade6c3bac5c4a5774fcc74627e168
+ms.openlocfilehash: 069e5d2b41176e7c947db1460f76cd34011124e5
+ms.sourcegitcommit: 4a88daac42180283314f6bedee3d6810fd5a6c25
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "3115915"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "3275835"
 ---
 # <a name="create-a-dashboard"></a>ダッシュボードを作成する
-
-<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/customize-dev/create-dashboard -->
 
 Common Data Service または、customizations.xml ファイルを編集を行い Common Data Service のエンティティ フォームをカスタマイズすることで、組織が所有するダッシュボードを作成することができます。  
   
@@ -146,7 +144,7 @@ SystemForm dashboard = new SystemForm
 _dashboardId = _serviceProxy.Create(dashboard);
  ``` 
   
- 完成サンプルについては、[サンプル: ダッシュボードを作成、取得、更新、および削除 (CRUD) する方法](/dynamics365/customer-engagement/developer/customize-dev/sample-create-retrieve-update-delete-dashboard) を参照してください。 ユーザー所有のダッシュボードを作成して別のユーザーに割り当てるサンプルについては、 [サンプル: 他のユーザーにユーザー所有のダッシュボードを割り当てる](/dynamics365/customer-engagement/developer/customize-dev/sample-assign-user-owned-dashboard-another-user)を参照してください。  <!-- TODO relevant powerapps repo topic must be linked> 
+ 完成サンプルについては、[サンプル: ダッシュボードを作成、取得、更新、および削除 (CRUD) する方法](/dynamics365/customer-engagement/developer/customize-dev/sample-create-retrieve-update-delete-dashboard) を参照してください。 ユーザー所有のダッシュボードを作成して別のユーザーに割り当てるサンプルについては、 [サンプル: 他のユーザーにユーザー所有のダッシュボードを割り当てる](/dynamics365/customer-engagement/developer/customize-dev/sample-assign-user-owned-dashboard-another-user)を参照してください。  
   
 <a name="UsingFormCustomization"></a>   
 ## <a name="create-an-organization-owned-dashboard-by-customizing-the-entity-form"></a>エンティティ フォームのカスタマイズによる組織所有のダッシュボードの作成  
@@ -210,8 +208,8 @@ _dashboardId = _serviceProxy.Create(dashboard);
  **解決方法**: FormXML で IFRAME を作成する場合は、`<Url>` パラメーターの値を必ず指定してください。  
   
 ### <a name="see-also"></a>関連項目  
- [ダッシュボード](analyze-data-with-dashboards.md)   
- [ダッシュボード用FormXMLを使用](understand-dashboards-dashboard-components-formxml.md)   
+ [ダッシュボード​​](analyze-data-with-dashboards.md)   
+ [ダッシュボード用 FormXML を使用](understand-dashboards-dashboard-components-formxml.md)   
  [ダッシュボードに対するアクション](actions-dashboards.md)   
  [サンプル ダッシュボード](sample-dashboards.md)   
  [サンプル: ダッシュボードの作成、取得、更新および削除 (CRUD)](/dynamics365/customer-engagement/developer/customize-dev/sample-create-retrieve-update-delete-dashboard)   <!-- TODO relevant powerapps repo topic must be linked-->

@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 2ae64d15ac0b5213f2f34c69cf771e8ab725021f
-ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
+ms.openlocfilehash: ca6bdeeee6723f401f18c6da69db6c5bb05b474b
+ms.sourcegitcommit: ef921bbf0908283a3621c2ca1069e6b58a2b14e7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "3156035"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "3373445"
 ---
 # <a name="work-with-attribute-metadata"></a>属性メタデータに関する作業
 
@@ -508,7 +508,7 @@ Console.WriteLine("Created {0} with the value of {1}.",
 
  このサンプル コードはローカル オプション セット内のオプションの順序を変更する方法を示します。 次のサンプルは、ユーザー定義 <xref:Microsoft.Xrm.Sdk.Metadata.PicklistAttributeMetadata> 属性を取得して、[OrderBy](https://msdn.microsoft.com/library/system.linq.enumerable.orderby.aspx)**LINQ** 関数を使用して元のオプションの順序を変更し、ラベル テキストの昇順でアイテムを並べ替えます。 次に、<xref:Microsoft.Xrm.Sdk.Messages.OrderOptionRequest> を使用して、属性のオプションのその新しい順序を設定します。  
   
- アイテムを降順で並べ替えるには、[OrderByDecending](https://msdn.microsoft.com/library/system.linq.enumerable.orderbydescending.aspx) linq 関数を使用します。  
+ アイテムを降順で並べ替えるには、[OrderByDescending](https://msdn.microsoft.com/library/system.linq.enumerable.orderbydescending.aspx) linq 関数を使用します。  
 
 ```csharp
 // Use the RetrieveAttributeRequest message to retrieve  

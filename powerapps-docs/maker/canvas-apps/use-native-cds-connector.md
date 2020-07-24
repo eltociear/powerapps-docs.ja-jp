@@ -1,5 +1,5 @@
 ---
-title: ネイティブ Common Data Service コネクタを使用するためのアップグレード |Microsoft Docs
+title: ネイティブ Common Data Service コネクタを使用するようにアップグレードする | Microsoft Docs
 description: ''
 author: tapanm-msft
 manager: kvivek
@@ -15,172 +15,172 @@ search.app:
 - PowerApps
 ms.openlocfilehash: e77bf1304ac7d1083348dce18d7d78189dfef306
 ms.sourcegitcommit: 56c8c7cc64695ccb00e0d021c9f98cf70b69b4a2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/06/2020
-ms.locfileid: "78845378"
+ms.locfileid: "3308109"
 ---
-# <a name="common-data-service-and-the-improved-data-source-experience"></a>Common Data Service と強化されたデータソースエクスペリエンス
+# <a name="common-data-service-and-the-improved-data-source-experience"></a>Common Data Service および強化されたデータ ソース エクスペリエンス
 
 ## <a name="overview"></a>概要
 
-2019年11月より前に Common Data Service コネクタでキャンバスアプリを作成した場合、最新バージョンの Common Data Service の利点が得られない可能性があります。 
+2019 年 11 月より前に Common Data Service コネクタを使用してキャンバス アプリを作成した場合、Common Data Service の最新バージョンの利点がない可能性があります。 
 
-**データソースエクスペリエンスの向上** オプションと ビューの Common Data Service オプションには、次の利点があります。
+**強化されたデータ ソース エクスペリエンスおよび Common Data Service ビュー**のオプションには次の利点があります。
 
-1. 速度が大幅に向上します。
+1. 大幅な速度向上。
 2. 信頼性の向上。
-3. Common Data Service**ビュー** 、**ファイルおよびイメージのフィールド属性**へのアクセス。
+3. Common Data Service **ビュー**および**ファイルと画像フィールドの属性**にアクセスします。
 
-詳細設定] セクションに、 **[データソースエクスペリエンスの向上]** オプションと [ビューの Common Data Service オプションが表示されます。
+**強化されたデータ ソース エクスペリエンスと Common Data Service ビュー**のオプションが詳細設定セクションに表示されます。
 
-![データソースエクスペリエンスの向上とビューの Common Data Service](media/use-native-cds-connector/improved-data-source-setting.png)
+![強化されたデータ ソース エクスペリエンスおよび Common Data Service ビュー](media/use-native-cds-connector/improved-data-source-setting.png)
 
-[非推奨の機能] セクションに、 **Common Data Service のリレーショナルデータ、オプションセット、およびその他の新機能**が表示されるようになりました。
+**リレーショナル データ、オプション セット、および Common Data Service の他の新機能**は、非推奨機能セクションに表示されます。
 
-## <a name="how-do-i-upgrade"></a>操作方法アップグレードしますか?
+## <a name="how-do-i-upgrade"></a>アップグレードするには?
 
-次の手順に従って、機能の設定を調べてアプリをアップグレードします。
+機能の設定を調べ、以下の指示に従ってアプリをアップグレードします。
 
-### <a name="improve-data-source-experience-and-common-data-service-views-is-on"></a>*データソースのエクスペリエンスを向上させ、Common Data Service ビュー*をオンにします。
+### <a name="improve-data-source-experience-and-common-data-service-views-is-on"></a>*強化されたデータ ソース エクスペリエンスおよび Common Data Service ビュー*がオンになっています。
 
-この機能を使用するようにキャンバスアプリを既に変換したか、またはこの機能に対して *[オン*] の既定の設定を使用してアプリを開始しました。 これ以上の操作は必要ありません。 
+この機能を使用するようにキャンバス アプリを既に変換しているか、この機能の既定の設定を*オン*にしてアプリを起動しました。 これ以降のアクションは不要です。 
 
 また、**明示的な列の選択**機能を有効にすることもできます。
 
 ![明示的な列の選択](media/use-native-cds-connector/explicit-column-selection.png)
 
 > [!NOTE]
-> [Windows 用 Power Apps](https://www.microsoft.com/p/power-apps/9nblggh5z8f3)では **、データソースエクスペリエンスの向上と Common Data Service ビュー**はサポートされていません。 Windows 用の Power Apps を使用する場合は、この機能を*オフ*にする必要があります。
+> **強化されたデータ ソース エクスペリエンスおよび Common Data Service ビュー**は、[Windows 用 Power Apps](https://www.microsoft.com/p/power-apps/9nblggh5z8f3) ではサポートされていません。 Windows 用 Power Apps を使用する際には、この機能を*オフ*にする必要があります。
 
-### <a name="relational-data-option-sets-and-other-new-features-for-common-data-service-is-off"></a>*リレーショナルデータ、オプションセット、および Common Data Service のその他の新機能は、次の*とおりです。
+### <a name="relational-data-option-sets-and-other-new-features-for-common-data-service-is-off"></a>*リレーショナル データ、オプション セット、Common Data Service のその他の新機能*はオフになっています。
 
-[*詳細設定*] の [*非推奨の機能*] をオンにします。  *Off*に設定されている場合は、変換の最初の手順として次の手順に進みます。 
+*非推奨機能*セクションの下にある*詳細設定*を確認してください。  *オフ*に設定されている場合、変換の最初のステップとして次の手順に進みます。 
 
 > [!IMPORTANT]
-> *[詳細設定*] で**Common Data Service のリレーショナルデータ、オプションセット、およびその他の新機能**が表示されない場合、または既*にオンに*なっている場合は、次の手順をスキップして[次のセクション](#improve-data-source-experience-and-common-data-service-views-is-off)に進みます。
+> *詳細設定*にある**リレーショナル データ、オプション セット、Common Data Service のその他の新機能**が表示されない場合、または既に*オン*になっている場合は、以下の手順をスキップして[次のセクション](#improve-data-source-experience-and-common-data-service-views-is-off)に進みます。
 
-- **手順 1**: [**表示名を使用**する] 機能**を有効に**する:
+- **ステップ 1**: **表示名の使用**機能を**オン**にします。
     
-    1. [**表示名を使用**する] 機能*を*有効にします。
-    1. ヘルスモニターがアプリの分析を完了するまで待ちます。
-    1. アプリを保存して閉じ、再度開きます。
+    1. **表示名の使用**機能を*オン*にします。
+    1. ヘルス モニターがアプリの分析を完了するまで待ちます。
+    1. アプリを保存し、閉じて、再度開きます。
     1. すべての数式エラーを解決します。
-    1. アプリを保存して閉じ、再度開きます。
+    1. アプリを保存し、閉じて、再度開きます。
     
     *考えられるエラーと提案*:
     
-    新しく表示された表示名の一部が、他のエンティティ、フィールド、またはコントロールの表示名と競合する可能性があります。 たとえば、同じ名前のコントロールとフィールドがあるとします。 コントロールの名前を変更して、一意の値を修正することができます。
+    新しく表示された表示名の一部が、他のエンティティ、フィールド、またはコントロールの表示名と競合する可能性があります。 たとえば、同じ名前のコントロールとフィールドがあるとします。 修正する一意の値でコントロールの名前を変更できます。
     
-    フィールドとエンティティの表示名が競合している場合は、エンティティを予期していますが、ローカルスコープのフィールド名に解決される数式が表示されることがあります。
+    フィールドとエンティティの表示名の競合については、エンティティを想定しながらもローカル スコープのフィールド名に解決される式が表示される場合があります。
 
-    エンティティに解決されるようにグローバルスコープを示すには、角かっこを **@** 記号と共に使用します。たとえば、 **[@entityName]** のようになります。
+    角かっこと **@** 記号を使用してグローバル スコープを示し、エンティティに解決するようにします。たとえば、**[@entityName]** などです。
     
     
-- **手順 2**: **Common Data Service のリレーショナルデータ、オプションセット、およびその他の新機能**を有効にし、の文字列**機能で**は**なく GUID データ型を使用**します。
+- **Step 2**: **リレーショナル データ、オプション セット、Common Data Service のその他の新機能**および**文字列の代わりに GUID データ型を使用する**の機能を**オン**にします。
     
-    1. の**Common Data Service 機能のリレーショナルデータ、オプションセット、およびその他の新機能**を有効*にします。*
-    1. で**は、文字列の代わりに GUID データ型を使用**する機能*を*有効にします。
-    1. ヘルスモニターがアプリの分析を完了するまで待ちます。
+    1. **リレーショナル データ、オプション セット、Common Data Service のその他の新機能**を*オン*にします。
+    1. **文字列の代わりに GUID データ型を使用する**機能を*オン*にします。
+    1. ヘルス モニターがアプリの分析を完了するまで待ちます。
     1. すべての数式エラーを解決します。
-    1. アプリを保存して閉じ、再度開きます。  
+    1. アプリを保存し、閉じて、再度開きます。  
     
     *考えられるエラーと提案*:
     
-    オプションセットフィールドまたはハードコーディングされた GUID テキスト値を使用している場合、この段階でエラーが発生する可能性があります。  <br><br> 
+    オプション セット フィールドまたはハードコーディングされた GUID テキスト値を使用している場合、この段階でエラーが発生する可能性があります。  <br><br> 
     
-    - *オプションの設定*値: オプションセットの値に対してテキスト識別子を持つオプションセットフィールドを使用する場合は、代わりにドット表記を使用して、オプションセットの値を参照します。 たとえば、`Patch(Accounts, OptionSet1 = “12345”)` を `Patch(Accounts, OptionSet.Item1)` に変更し、`Item1` が `12345` 値に対応するようにします。 <br>
-    詳細については、「[詳細な例](#detailed-examples)」を参照してください。
-    - *Guid*: `015e45e1044e49f388115be07f2ee116`などの静的 GUID 文字列を使用している場合は、guid オブジェクトを返す関数に変換します。たとえば、`GUID(“015e45e1044e49f388115be07f2ee116”)`です。 
-    - *参照*: 参照関数を使用して `Lookup(Contacts, ‘contactID’ = ThisItem.ContactID”)`などの最初のレベルの参照値を取得する場合は、代わりに `ThisItem.PrimaryContacts` (primarycontacts がエンティティの名前) を使用することを検討してください。
+    - *オプション セットの値*: オプション セット値のテキスト識別子を含むオプション セット フィールドを使用している場合は、代わりにドット表記を使用してオプション セット値を参照してください。 たとえば、`Patch(Accounts, OptionSet1 = “12345”)` を `Patch(Accounts, OptionSet.Item1)` に変更します。ここで、`Item1` は `12345` 値に対応します。 <br>
+    詳細については、[詳細例](#detailed-examples)のセクションを参照してください。
+    - *GUID*: `015e45e1044e49f388115be07f2ee116` などの静的 GUID 文字列を使用している場合は、たとえば `GUID(“015e45e1044e49f388115be07f2ee116”)` など、GUID オブジェクトを返す関数に変換します。 
+    - *ルックアップ*: Lookup 関数を使用して、`Lookup(Contacts, ‘contactID’ = ThisItem.ContactID”)` などの第 1 レベルのルックアップ値を取得する場合は、代わりに `ThisItem.PrimaryContacts` (PrimaryContacts がエンティティの名前) を使用することを検討してください。
 
-### <a name="improve-data-source-experience-and-common-data-service-views-is-off"></a>*データソースのエクスペリエンスを向上させ、Common Data Service ビュー*をオフにします。
+### <a name="improve-data-source-experience-and-common-data-service-views-is-off"></a>*データ ソース エクスペリエンスおよび Common Data Service ビューの向上*がオフになっています。
 
-次の手順に従って、の**データソースエクスペリエンスと Common Data Service ビュー**機能*の*向上を有効にします。
+次の手順に従って、**強化されたデータ ソース エクスペリエンスおよび Common Data Service ビュー**の機能を*オン*にします。
 
-1. 既存の Common Data Service のデータソース接続を削除します。 
-1. **[データソースエクスペリエンスの向上とビューの Common Data Service]** 機能*を*オンにします。
-1. 新しいデータソースの選択エクスペリエンスを使用して、Common Data Service 接続を追加します。
+1. 既存の Common Data Service データ ソース接続を削除します。 
+1. **強化されたデータ ソース エクスペリエンスおよび Common Data Service ビュー**の機能を*オン*にします。
+1. 新しいデータ ソース選択エクスペリエンスを使用して、Common Data Service 接続を追加します。
 1. アプリケーションを保存します。
 
 > [!NOTE]
-> アプリケーションのサイズが非常に大きい場合、データソースの接続を追加し直すと、しばらく時間がかかることがあります。 このプロセス中はアプリケーションを閉じないでください。
+> アプリケーションが非常に大きい場合は、データ ソース接続を元に戻すのにしばらく時間がかかることがあります。 このプロセス中はアプリケーションを閉じないでください。
 
-## <a name="converting-canvas-apps-with-the-dynamics-365-connector"></a>Dynamics 365 コネクタを使用したキャンバスアプリの変換
+## <a name="converting-canvas-apps-with-the-dynamics-365-connector"></a>Dynamics 365 Connector を使用したキャンバス アプリの変換
 
-Dynamics 365 コネクタを使用するアプリを変換するには、データソースへの接続を削除して追加する必要があります。 接続をデータソースに変換するには、次の手順を使用します。
+Dynamics 365 Connector を使用するアプリを変換するには、データ ソースへの接続を削除して追加する必要があります。 以下の手順を使用して、接続をデータ ソースに変換します。
 
-1. **データソースエクスペリエンスの向上と Common Data Service ビュー**機能が有効*に*なっていることを確認します。
-2. 既存の Dynamics 365 データソース接続を削除します。
-3. 新しいデータソースの選択エクスペリエンスを使用して、データソースへの接続を Common Data Service に追加します。 
+1. **強化されたデータ ソース エクスペリエンスおよび Common Data Service ビュー**の機能が*オン*になっていることを確認してください。
+2. 既存の Dynamics 365 データ ソース接続を削除します。
+3. 新しいデータ ソース選択エクスペリエンスを使用して、データ ソースへの接続を Common Data Service に追加します。 
 
     > [!NOTE] 
-    > (現在以外の) 他の環境に接続している場合は、[*エンティティ*] カテゴリを選択し、[ *More* (...)] オプションを選択して環境を変更します。 次に、別の環境からエンティティを選択して、アプリケーションに追加できます。 クロステナント接続は、強化されたネイティブコネクタでは機能しません。 データのクロステナントにアクセスするには、データ統合を使用する必要があります。
+    > 他の環境 (現在の環境以外) に接続している場合は、*エンティティ* カテゴリ、次に*詳細* (...) オプションを選択して環境を変更します。 次に、別の環境からエンティティを選択して、アプリケーションに追加します。 クロステナント接続は、改善されたネイティブ コネクタでは機能しません。 データのクロステナントにアクセスするには、データ統合を使用する必要があります。
 4.  アプリケーションを保存します。
 
 *考えられるエラーと提案*:
 
-表示名を使用していない場合、GUID 文字列を使用している場合、またはオプションセットのフィールドを使用している場合は、変換時にエラーが発生する可能性があります。
+表示名を使用していない、GUID 文字列を使用している、またはオプション セット フィールドを使用している場合、変換時にエラーが発生する可能性があります。
 
-- コントロール名が競合する場合は、コントロールの名前を異なる一意の名前に変更します。 
-- フィールドとエンティティの表示名が競合している場合は、エンティティを予期しているものの、よりローカルにスコープが設定されたフィールド名に解決している数式が表示されることがあります。 エンティティに解決されるようにグローバルスコープを示すには、角かっこを *@* 記号と共に使用します。たとえば、 **[@entityName]** のようになります。
-- *オプションの設定*値: オプションセットの値に対してテキスト識別子を持つオプションセットフィールドを使用する場合は、代わりにドット表記を使用して、オプションセットの値を参照します。 たとえば、`Patch(Accounts, OptionSet1 = “12345”)` を `Patch(Accounts, OptionSet.Item1)` に変更し、`Item1` が `12345` 値に対応するようにします。 <br>
-詳細については、「[詳細な例](#detailed-examples)」を参照してください。
-- *Guid*: `015e45e1044e49f388115be07f2ee116`などの静的 GUID 文字列を使用している場合は、guid オブジェクトを返す関数に変換します。たとえば、`GUID(“015e45e1044e49f388115be07f2ee116”)`です。 
-- *参照*: `Lookup(Contacts, ‘contactID’ = ThisItem.ContactID”)`などの最初のレベルの参照値を取得するために参照関数を使用する場合は、代わりに `ThisItem.PrimaryContacts` (primarycontacts がエンティティの名前) を使用することを検討してください。
-- ポリモーフィックな参照については、以下の「詳細な例」のセクションを参照してください。 
+- コントロール名が競合する場合は、コントロール名を異なる一意の名前に変更してください。 
+- フィールドとエンティティの表示名の競合については、エンティティを想定しながらもローカル スコープのフィールド名に解決される式が表示される場合があります。 角かっこと *@* 記号を使用してグローバル スコープを示し、エンティティに解決するようにします。たとえば、**[@entityName]** などです。
+- *オプション セットの値*: オプション セット値のテキスト識別子を含むオプション セット フィールドを使用している場合は、代わりにドット表記を使用してオプション セット値を参照してください。 たとえば、`Patch(Accounts, OptionSet1 = “12345”)` を `Patch(Accounts, OptionSet.Item1)` に変更します。ここで、`Item1` は `12345` 値に対応します。 <br>
+詳細については、[詳細例](#detailed-examples)のセクションを参照してください。
+- *GUID*: `015e45e1044e49f388115be07f2ee116` などの静的 GUID 文字列を使用している場合は、たとえば `GUID(“015e45e1044e49f388115be07f2ee116”)` など、GUID オブジェクトを返す関数に変換します。 
+- *ルックアップ*: Lookup 関数を使用して、`Lookup(Contacts, ‘contactID’ = ThisItem.ContactID”)` などの第 1 レベルのルックアップ値を取得する場合は、代わりに `ThisItem.PrimaryContacts` (PrimaryContacts がエンティティの名前) を使用することを検討してください。
+- ポリモーフィック参照については、以下の詳細例のセクションを参照してください。 
 
-## <a name="detailed-examples"></a>詳細な例
+## <a name="detailed-examples"></a>詳細例
 
-新しい**オプションセット**と**2 つのオプション**のデータ型を使用するようにアプリケーションを変換することは、新しい強化された*データソースエクスペリエンスと Common Data Service ビュー*機能を使用するようにアプリをアップグレードする際には困難な場合があります。
+アプリを変換して新しい**オプション セット**と **2 つのオプション**のデータ型をサポートするコントロールで使用すると、アプリをアップグレードして*強化されたデータ ソース エクスペリエンスと Common Data Service ビュー*の機能を使用するのが困難になる場合があります。
 
-### <a name="option-sets"></a>オプションセット
+### <a name="option-sets"></a>オプション セット
 
-前のオプションセットには、`_myfield` フィールドと `_myfield_label` フィールドが個別に使用されていました。 ここでは、ロケールに依存しない比較とロケール固有のラベルを取得するために使用できる1つの `myfield` があります。
+以前のオプション セットでは、個別の `_myfield` と `_myfield_label` フィールドが使用されていました。 現在、ロケールに依存しない比較とロケール固有のラベル取得の両方に使用できる単一の `myfield` があります。
 
-#### <a name="removing-and-adding-option-set-data-cards"></a>オプションセットデータカードの削除と追加
+#### <a name="removing-and-adding-option-set-data-cards"></a>オプション セット データ カードの削除と追加
 
-既存のデータカードを削除して、オプションセットを操作できるように戻すことをお勧めします。 たとえば、Account エンティティと Category オプションを設定して作業している場合、データカードの*DataField*プロパティが `_accountcategorycode_label`に設定されていることがわかります。 データカードの種類が*文字列*であることが、フィールドの一覧に表示されます。
+既存のデータ カードを削除し、オプション セットで使用するよう再度追加することをお勧めします。 たとえば、取引先企業エンティティとカテゴリ オプション セットを使用している場合は、`_accountcategorycode_label` に設定されているデータ カードの *DataField* プロパティが表示されます。 フィールド リストで、データ カードのタイプが*文字列*であることがわかります。
 
-![古いスタイル名を使用した OptionSet](./media/use-native-cds-connector/OptionSet-with-old-style-name.png)
+![古いスタイル名の OptionSet](./media/use-native-cds-connector/OptionSet-with-old-style-name.png)
 
-新しい強化された*データソースエクスペリエンスと Common Data Service ビュー*機能により、`_accountcategorycode_label`が表示されなくなりました。 `accountcategorycode`に置き換えられます。 これで、カードは**カスタム**としてマークされるようになり、エラーが表示されます。 古いデータカードを削除し、*オプションセット*を再び追加します。 新しいデータカードは、*オプションセット*を認識するように設定されています。
+新しい*強化されたデータ ソース エクスペリエンスと Common Data Service ビュー*の機能がある場合、`_accountcategorycode_label` は表示されません。 `accountcategorycode` に置き換えられます。 カードが**カスタム**としてマークされ、エラーが表示されます。 古いデータ カードを取り外し、*オプション セット* を再度追加します。 新しいデータ カードは*オプション セット*対応です。
 
-![古いスタイル名を使用した OptionSet](./media/use-native-cds-connector/OptionSet-with-new-style-name.png)
+![古いスタイル名の OptionSet](./media/use-native-cds-connector/OptionSet-with-new-style-name.png)
 
-#### <a name="editing-the-option-set-filter-expressions-to-use-new-syntax"></a>新しい構文を使用するようにオプションセットのフィルター式を編集する
+#### <a name="editing-the-option-set-filter-expressions-to-use-new-syntax"></a>新しい構文を使用するためのオプション セット フィルター式の編集
 
-以前は、フィルター式でオプションセットの値を使用する場合は、[*値*] フィールドを使用する必要がありました。 例 :
+以前は、フィルター式でオプション セット値を使用したい場合は、*値*フィールドが必要でした。 たとえば、次のようなものです。
 
 ```powerapps-dot
 Filter(Account,'Category Value' = "1")
 ```
 
-この数式を編集する必要があります。 オプションセットのテキスト識別子は、値に使用されなくなりました。 この式は、次のように更新する必要があります。
+この式を編集する必要があります。 オプション セット テキスト識別子は値に使用されなくなりました。 この式は、以下を検索するように更新する必要があります。
 
 ```powerapps-dot
 Filter(Account, Category= ‘Category (Accounts)’.’Preferred Customer’)
 ```
 
-' Category (Accounts) ' は、Accounts エンティティの Category フィールドで使用される列挙型の名前です。 これはローカルオプションセットです。  ローカルオプションセットとグローバルオプションセットの詳細については、「[グローバルオプションセット」](https://docs.microsoft.com/powerapps/maker/common-data-service/create-edit-global-option-sets)を参照してください。
+'Category(Accounts)' は、取引先企業エンティティのカテゴリ フィールドに使用される列挙値の名前です。 これはローカル オプション セットです。  ローカルおよびグローバル オプション セットの詳細については、[グローバル オプション セット](https://docs.microsoft.com/powerapps/maker/common-data-service/create-edit-global-option-sets) を参照してください。
 
-#### <a name="editing-option-set-patch-statements-to-use-new-syntax"></a>新しい構文を使用するためのオプション Set Patch ステートメントの編集
+#### <a name="editing-option-set-patch-statements-to-use-new-syntax"></a>新しい構文を使用するためのオプション セット パッチ ステートメントの編集
 
-次に、オプションセットの前の Patch ステートメントの例を示します。
+以下は、以前のオプション セットのパッチ ステートメントの例です。
 
 ```powerapps-dot
 Patch( Accounts, First(Accounts), { ‘Category Value’: 1 } ) )
 ```
 
-次の形式に従ってステートメントを更新する必要があります。
+このフォームに従うようにステートメントを更新する必要があります。
 
 ```powerapps-dot
 Patch( Accounts, First(Accounts), { Category: ‘Category (Accounts)’.’Preferred Customer’ } )
 ```
 
-#### <a name="option-set-disambiguation"></a>オプションセットのあいまいを解消する
+#### <a name="option-set-disambiguation"></a>オプション セットの曖昧性除去
 
-オプションセット**フィールド**の表示名とオプションセットの名前が同じ場合は、その数式を明確にする必要があります。 アカウントカテゴリコードの例を引き続き使用するために、 **@** はフィールドではなく、オプションセットを使用することを意味します。
+オプション セット **フィールド**の表示名とオプション セットの名前が同じ場合、数式の曖昧性を解消する必要があります。 取引先企業カテゴリ コードの例を引き続き使用するには、**@** は、フィールドではなくオプション セットを使用することを意味します。
 
 ```powerapps-dot
 Filter(Accounts, 'Category Code' = [@’Category Code’].'Preferred Customer')
@@ -188,17 +188,17 @@ Filter(Accounts, 'Category Code' = [@’Category Code’].'Preferred Customer')
 
 ### <a name="two-options"></a>2 つのオプション
 
-#### <a name="removing-and-adding-two-option-set-data-cards"></a>2つのオプションセットデータカードの削除と追加
+#### <a name="removing-and-adding-two-option-set-data-cards"></a>2 つのオプション セット データ カードの削除と追加
 
-2つのオプションセットを使用するには、既存のデータカードを削除してからもう一度追加する必要があります。 データ型は、前の例のように単純なブール値として認識されていました。たとえば、true/on、false/off はラベルがありません。
+既存のデータ カードを削除し、2 つのオプション セットを使用するよう再度追加することをお勧めします。 データ型は、以前は単純なブール値として認識されていました - たとえば、ラベルなしの true/on や false/off などです。
 
-![2つのオプションセット-old スタイル](./media/use-native-cds-connector/TwoOptionSet-Old.png)
+![2 つのオプション セット - 古いスタイル](./media/use-native-cds-connector/TwoOptionSet-Old.png)
 
-新しい改良された*データソースエクスペリエンスと Common Data Service ビュー*機能により、カードは**カスタム**としてマークされるようになり、エラーが表示されます。  古いデータカードを削除し、オプションセットを再び追加します。 を追加すると、既定で2つのオプションを含むエディットコントロールが表示されます。
+新しい*強化されたデータ ソース エクスペリエンスと Common Data Service ビュー*機能では、カードは**カスタム**とマークされ、エラーが表示されます。  古いデータ カードを取り外し、オプション セットを再度追加します。 追加すると、既定で 2 つのオプションを持つ編集コントロールが表示されます。
 
-![TwoOptionSet-新規](./media/use-native-cds-connector/TwoOptionSet-New.png)
+![TwoOptionSet-New](./media/use-native-cds-connector/TwoOptionSet-New.png)
 
-ブール値フィールドのトグルスイッチを使用する場合は、データカードのロックを解除し、データカード内のコントロールを代わりに切り替えることができます。  また、トグルでこれらのプロパティを設定する必要があります。
+ブール値のフィールドにトグル スイッチを使用する場合は、データ カードのロックを解除して、データ カードのコントロールをトグルに置き換えます。  また、トグルでこれらのプロパティを設定する必要があります。
 
 ```powerapps-dot
 Toggle1.Default = ThisItem.’Do not allow Bulk Emails’
@@ -209,23 +209,23 @@ DataCard.Value = If( Toggle1.Value,
     ‘Do not allow Bulk Emails (Accounts)’.Allow )
 ```
 
-![2つのオプションの切り替えスイッチ](./media/use-native-cds-connector/TwoOption-Toggle.png)
+![2 つのオプション トグル スイッチ](./media/use-native-cds-connector/TwoOption-Toggle.png)
 
-#### <a name="refining-two-option-patch-statements"></a>2つの Option Patch ステートメントの再設定
+#### <a name="refining-two-option-patch-statements"></a>2 つのオプション パッチ ステートメントの絞り込み
 
-[Patch](./functions/function-patch.md)関数を2つのオプションと共に使用する場合は、' as ' として機能します。 ブール型と同様に、true と false の直接使用をサポートしています。 唯一の違いは、前に true と false を示したラベルコントロールに値を配置した場合です。2つのオプションラベルが表示されるようになります。
+[Patch](./functions/function-patch.md) 関数を 2 つのオプションと共に使用すると、そのまま動作します。 ブール値と同様に、true と false を直接使用できます。 唯一の違いは、true および false を示す値を以前の Label コントロールに配置した場合、代わりに 2 つのオプション ラベルが表示されることです。
 
-### <a name="polymorphic-lookups"></a>ポリモーフィック参照
+### <a name="polymorphic-lookups"></a>ポリモーフィック ルックアップ
 
-次のガイドラインは、[ポリモーフィック](working-with-references.md)フィールドを参照している場合にアプリケーションをアップグレードするのに役立ちます。 同じフィールドからのポリモーフィックな参照では、複数のエンティティの制限付きセットへの参照がサポートされます。  他の言語の参照と同様に、レコード参照は特定のエンティティ内の特定のレコードへのポインターです。 レコード参照は、エンティティ情報を使用して、複数の異なるエンティティ内のレコードを指すことができます。これは、1つのエンティティ内のレコードのみを指す通常の参照とは異なります。  
+次のガイドラインは、[ポリモーフィック](working-with-references.md) フィールドを参照している場合に、アプリケーションをアップグレードするのに役立ちます。 同じフィールドからのポリモーフィック ルックアップは、制限された複数のエンティティのセットへの参照をサポートします。  他の言語の参照と同様に、レコード参照は、特定のエンティティの特定のレコードへのポインターです。 レコード参照にはエンティティ情報が含まれているため、他の複数のエンティティのレコードを参照することができます。これは、1つのエンティティのレコードのみを参照することができる通常の検索とは異なります。  
 
-#### <a name="access-set-and-filter-on-the-owner-field-of-a-record"></a>レコードの Owner フィールドに対するアクセス、設定、およびフィルター処理
+#### <a name="access-set-and-filter-on-the-owner-field-of-a-record"></a>レコードの所有者フィールドでのアクセス、設定、およびフィルター
 
-たとえば、エンティティの Owner フィールドは、Users エンティティまたは Teams エンティティ内のレコードを参照できます。 異なるレコードの同じルックアップフィールドが、異なるエンティティ内のレコードを参照している可能性があります。
+たとえば、エンティティの所有者フィールドは、ユーザー エンティティまたはチーム エンティティのレコードを参照できます。 異なるレコードの同じ検索フィールドは、異なるエンティティのレコードを参照できます。
  
 ![ポリモーフィック所有者フィールド](./media/use-native-cds-connector/Polymorphic1.png)
  
-##### <a name="polymorphic-with-filter-and-patch"></a>フィルターとパッチを使用したポリモーフィック
+##### <a name="polymorphic-with-filter-and-patch"></a>フィルターとパッチを持つポリモーフィック
 
 レコード参照は、完全なレコードと同じように使用できます。
 
@@ -234,21 +234,21 @@ Filter( Accounts, Owner = First( Teams ) )
 Patch( Accounts, First( Accounts ), { Owner: First( Users ) })
 ```
 
-##### <a name="polymorphic-with-a-gallery-displaying-owner-name"></a>所有者名を表示するギャラリーを含むポリモーフィック
+##### <a name="polymorphic-with-a-gallery-displaying-owner-name"></a>所有者名を表示するギャラリーを持つポリモーフィック
 
-参照は異なるエンティティを指すことがあるため、固有のものである必要があります。 **ThisItem.Owner.Name**を使用することはできません。これは、**チーム**エンティティの 名前 フィールドが **チーム名** で、**ユーザー**エンティティの 名前 フィールドが **フルネーム** であるためです。 アプリを実行するまで、お客様が参照している検索の種類は、Power Apps によって認識されません。
+参照は異なるエンティティを指すことができるので、具体的にする必要があります。 **チーム** エンティティの名前フィールドが**チーム名**であり、**ユーザー** エンティティの名前フィールドが**氏名**であるため、**ThisItem.Owner.Name** は使用できません。 Power Apps は、アプリを実行するまで、参照しているルックアップのタイプを認識しません。
 
-この問題を修正するには、次の操作を行います。 
+この問題を解決するには、以下を行います。 
 
-1. 所有者として使用できるエンティティ型のデータソースを追加します。現在の例では、ユーザーとチーム)。
-2. 目的を明確にするために、追加の関数を使用します。
+1. 所有者がなり得るエンティティの種類のデータ ソースを追加します。現在の例では、ユーザーとチームです)。
+2. 追加の関数を使用して、意図を明確にします。
 
-次の2つの新しい関数を使用できます。
+使用できる 2 つの新しい関数があります。
 
-- IsType –レコード参照が特定のエンティティ型であるかどうかを確認します。
-- AsType: レコード参照を特定のエンティティ型にキャストします。
+- IsType – レコード参照が特定のエンティティの種類であるかどうかを確認します。
+- AsType – レコード参照を特定のエンティティの種類にキャストします。
 
-これらの関数を使用すると、所有者のエンティティ型に基づいて、2つの異なる名前付きフィールドから取得した所有者の名前を表示する数式を作成できます。
+これらの関数を使用すると、所有者のエンティティの種類に基づいて、2 つの異なる名前のフィールドから取得した所有者の名前を表示する式を記述できます。
 
 ```powerapps-dot
 If( IsType( ThisItem.Owner,  [@Teams]), 
@@ -256,17 +256,17 @@ If( IsType( ThisItem.Owner,  [@Teams]),
     AsType( ThisItem.Owner, [@Users]).'Full Name' )
 ```
 
-![型としてのギャラリー](./media/use-native-cds-connector/Polymorphic-And-AsType-in-Gallery.png)
+![AsType を持つギャラリー](./media/use-native-cds-connector/Polymorphic-And-AsType-in-Gallery.png)
 
-グローバルエンティティ型を参照するために、`[@Teams]` と `[@Users]` のグローバルなあいまいさを排除する演算子を使用します。 ただし、この場合は必要ありませんが、常に明確にすることをお勧めします。 1対多のリレーションシップは、多くの場合、ギャラリーのレコードのスコープ内で競合するため、混乱を避けることができます。
+`[@Teams]` と `[@Users]` のグローバル曖昧性除去演算子を使用して、グローバル エンティティの種類を参照するようにします。 この場合は必須ではありませんが、常に明確にすることをお勧めします。 一対多のリレーションシップは、ギャラリーのレコード スコープで競合することがよくありますが、この操作を行うことで混乱を回避できます。
  
-#### <a name="access-and-set-the-company-name-field-a-customer-data-type-of-the-contacts-entity"></a>連絡先エンティティの会社名フィールド (顧客データ型) にアクセスして設定する
+#### <a name="access-and-set-the-company-name-field-a-customer-data-type-of-the-contacts-entity"></a>取引先担当者エンティティの会社名フィールド (顧客データ型) にアクセスして設定する
 
-顧客参照フィールドは、所有者に似た別のポリモーフィックなルックアップです。 エンティティごとに所有者フィールドを1つだけ設定できます。 ただし、エンティティには、0、1、または複数の顧客参照フィールドを含めることができます。 Contacts システムエンティティには、顧客参照フィールドである "会社名" フィールドが含まれています。 詳細については[、「顧客のフィールドを表示する](https://docs.microsoft.com/powerapps/maker/canvas-apps/working-with-references#show-the-fields-of-a-customer)」を参照してください。
+顧客検索フィールドは、所有者に類似した別のポリモーフィック ルックアップです。 各エンティティには所有者フィールドを 1 つのみ設定できます。 ただし、エンティティには 0、1、またはそれ以上の顧客検索フィールドを含めることができます。 取引先担当者システム エンティティには、顧客検索フィールドである会社名フィールドが含まれています。 詳細については、[顧客フィールドを表示する](https://docs.microsoft.com/powerapps/maker/canvas-apps/working-with-references#show-the-fields-of-a-customer)を参照してください。
  
-#### <a name="access-and-set-the-regarding-field-of-activity-entities-such-as-faxes-phone-calls-email-messages"></a>Fax、電話、電子メールメッセージなどのアクティビティエンティティの関連フィールドにアクセスして設定する
+#### <a name="access-and-set-the-regarding-field-of-activity-entities-such-as-faxes-phone-calls-email-messages"></a>FAX、電話、電子メール メッセージなどの活動エンティティの関連フィールドにアクセスして設定する
 
-ポリモーフィックな参照は、アカウントと連絡先に限定されません。 エンティティの一覧は、カスタムエンティティで拡張できます。 たとえば、Fax エンティティには、アカウント、連絡先、およびその他のエンティティを参照することが可能な、相互に関連するルックアップフィールドがあります。 データソースが Fax に設定されているギャラリーがある場合は、次の式を使用して、[関連する参照] フィールドに関連付けられている名前を表示できます。 
+ポリモーフィック ルックアップは、取引先企業と取引先担当者に限定されません。 エンティティのリストは、カスタム エンティティで拡張できます。 たとえば、FAX エンティティには、取引先企業、取引先担当者、およびその他のエンティティを参照できるポリモーフィック関連検索フィールドがあります。 データ ソースが FAX に設定されているギャラリーを使用している場合は、次の数式を使用して、関連検索フィールドに関連付けられている名前を表示できます。 
  
  ```powerapps-dot
 If( IsBlank( ThisItem.Regarding ), "",
@@ -277,25 +277,25 @@ If( IsBlank( ThisItem.Regarding ), "",
     "" )
 ```
 
-![関連するギャラリー](./media/use-native-cds-connector/Polymorphic-With-Regarding.png)
+![関連付けギャラリー](./media/use-native-cds-connector/Polymorphic-With-Regarding.png)
  
-詳細については、[参照フィールド](https://docs.microsoft.com/powerapps/maker/canvas-apps/working-with-references#understand-regarding-lookup-fields)と[リレーションシップ](https://docs.microsoft.com/powerapps/maker/canvas-apps/working-with-references#understand-regarding-relationships)に関する情報を参照してください。
+詳細については、[検索フィールドに関して](https://docs.microsoft.com/powerapps/maker/canvas-apps/working-with-references#understand-regarding-lookup-fields)および[リレーションシップに関して](https://docs.microsoft.com/powerapps/maker/canvas-apps/working-with-references#understand-regarding-relationships)を参照してください。
 
-#### <a name="access-the-list-of-all-activities-for-a-record"></a>レコードのすべてのアクティビティの一覧にアクセスする
+#### <a name="access-the-list-of-all-activities-for-a-record"></a>レコードのすべての活動のリストにアクセスする
 
-Common Data Service では、Fax、タスク、電子メール、メモ、電話、文字、チャットなどのエンティティが[アクティビティ](https://docs.microsoft.com/powerapps/developer/common-data-service/activity-entities)として指定されます。 独自の[カスタムアクティビティエンティティ](https://docs.microsoft.com/powerapps/developer/common-data-service/custom-activities)を作成することもできます。
+Common Data Service では、FAX、タスク、電子メール、メモ、電話、レター、チャットなどは、[活動](https://docs.microsoft.com/powerapps/developer/common-data-service/activity-entities)として指定されます。 独自の[カスタム活動エンティティ](https://docs.microsoft.com/powerapps/developer/common-data-service/custom-activities)を作成することもできます。
 
-特定の種類 (Fax や税金など) の活動、または account などのエンティティに関連付けられているすべての活動を表示できます。 キャンバスアプリに表示する予定のデータを持つアクティビティエンティティとその他の個々のエンティティを追加します。
+特定の種類の活動 (FAX や税金など)、または取引先企業などのエンティティに関連付けられているすべての活動を表示できます。 活動エンティティと、キャンバス アプリに表示する予定のデータを持つその他の個々のエンティティを追加します。
 
-(Tasks エンティティなどの) にレコードを追加するたびに、すべてのアクティビティエンティティに共通するフィールドを持つアクティビティエンティティ内のレコードが作成されます。 詳細については、「[アクティビティエンティティ](https://docs.microsoft.com/powerapps/maker/canvas-apps/working-with-references#activity-entity)の読み取り」を参照してください。
+(たとえば、タスク エンティティに) レコードを追加するたびに、すべての活動エンティティに共通のフィールドを持つ活動エンティティのレコードが作成されます。 詳細については、[活動エンティティ](https://docs.microsoft.com/powerapps/maker/canvas-apps/working-with-references#activity-entity)を参照してください。
 
-次の例は、アカウントを選択すると、そのアカウントに関連付けられているすべてのアクティビティが表示されることを示しています。
+次の例は、取引先企業を選択すると、その取引先企業に関連付けられているすべての活動が表示されることを示しています。
  
-![ポリモーフィックアクティビティ](./media/use-native-cds-connector/Polymorphic-Activities.png) 
+![ポリモーフィック活動](./media/use-native-cds-connector/Polymorphic-Activities.png) 
  
-レコードがアクティビティエンティティから表示されています。 ただし、 [istype](./functions/function-astype-istype.md)関数を使用して、アクティビティの種類を特定することもできます。 ここでも、エンティティ型で IsType 種類を使用する前に、必要なデータソースを追加する必要があります。
+レコードは、活動エンティティから表示されています。 ただし、[IsType](./functions/function-astype-istype.md) 関数を使用して、それらがどのような種類の活動であるかを識別することができます。 この場合も、エンティティの種類で IsType を使用する前に、必要なデータ ソースを追加する必要があります。
  
-この数式を使用すると、ギャラリー内のラベルコントロールにレコードの種類を表示できます。
+この式を使用すると、ギャラリー内のラベル コントロールにレコードの種類を表示できます。
 
  ```powerapps-dot
 If( IsType( ThisItem, [@Faxes] ), "Fax",
@@ -305,35 +305,35 @@ If( IsType( ThisItem, [@Faxes] ), "Fax",
     "Unknown")
 ```
 
- ![ポリモーフィック-IsType](./media/use-native-cds-connector/Polymorphic-IsType.png)
+ ![ポリモーフィック - IsType](./media/use-native-cds-connector/Polymorphic-IsType.png)
 
-#### <a name="access-the-list-of-notes-for-a-record"></a>レコードのメモの一覧にアクセスする
+#### <a name="access-the-list-of-notes-for-a-record"></a>レコードのすべてのメモのリストにアクセスする
 
-エンティティを作成するときに、添付ファイルを有効にすることができます。 添付ファイルを有効にするためのチェックボックスをオンにした場合は、次の図に示すように、Note エンティティとの関連関係を作成します。
+エンティティを作成する際に、添付ファイルを有効にできます。 添付ファイルを有効にするためのチェックボックスをオンにすると、次の図が取引先企業エンティティを示すように、メモ エンティティとの関連リレーションシップが作成されます。
 
-![メモ-フィールド](./media/use-native-cds-connector/Notes-Field.png)
+![メモフィールド](./media/use-native-cds-connector/Notes-Field.png)
 
-##### <a name="filtering"></a>フィルター
+##### <a name="filtering"></a>フィルタリング
 
-[関連] フィールドに基づいて、読み取りやフィルター処理を行うことはできません。 ただし、逆メモの一対多リレーションシップは使用できます。 Account エンティティに関連付けられているすべてのメモを一覧表示するには、次の式を使用します。
+関連フィールドに基づいて読み取りまたはフィルター処理することはできません。 ただし、メモの一対多の逆の関係を使用できます。 取引先企業エンティティに関連付けられているすべてのメモを一覧表示するには、次の数式を使用します。
 
 ```powerapps-dot
 First( Accounts ).Notes
 ```
 
-##### <a name="patch"></a>修正プログラム
+##### <a name="patch"></a>Patch
 
-Patch を使用してエンティティの [メモ] フィールドを設定することはできません。 エンティティの Notes テーブルにレコードを追加するには、関連付け関数を使用します。 次の例のように、最初にメモを作成します。
+パッチを使用してエンティティのメモ フィールドを設定することはできません。 エンティティのメモ テーブルにレコードを追加するには、Relate 関数を使用します。 この例のように、最初にメモを作成します。
 
 ```powerapps-dot
 Relate( ThisItem.Notes, Patch( Notes, Defaults( Notes ), { Title: "A new note", isdocument:'Is Document (Notes)'.No } ) )
 ```
 
-## <a name="next-steps"></a>次のステップ:
+## <a name="next-steps"></a>次の手順
 
 - [数式のリファレンス](https://docs.microsoft.com/powerapps/maker/canvas-apps/formula-reference)
 - [コントロールのリファレンス](https://docs.microsoft.com/powerapps/maker/canvas-apps/reference-properties)
 
-### <a name="see-also"></a>参照
+### <a name="see-also"></a>関連項目
 
-[Common Data Service とは](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-intro)
+[Common Data Service とは?](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-intro)

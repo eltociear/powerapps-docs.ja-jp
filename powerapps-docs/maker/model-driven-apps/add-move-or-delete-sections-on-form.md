@@ -21,12 +21,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 2731520659633c305e19e02b67670bb12796dc50
-ms.sourcegitcommit: ed583eb94720a9645bfd79776311792a958077b8
+ms.openlocfilehash: bcbb1fba03a60135f192f0760f33b2e7e637123f
+ms.sourcegitcommit: ce291964123737257536378270e6004ecb74b3c4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/01/2020
-ms.locfileid: "3094027"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "3281409"
 ---
 # <a name="add-configure-move-or-delete-sections-on-a-form"></a>フォーム上のセクションを追加、構成、移動、削除する 
 フォーム デザイナーを使用してフォームのセクションを追加、構成、移動、削除します。 
@@ -38,7 +38,8 @@ ms.locfileid: "3094027"
 > ![](media/FormDesignerComponentsLayout.png "Layout components")
 
   > [!NOTE]
-  >   セクションは、メイン フォームおよび簡易表示フォームのみに追加できます。 詳細: [フォームの種類](types-forms.md)
+  >   セクションは、メイン フォームおよび簡易表示フォームのみに追加できます。 詳細: [フォームの種類](types-forms.md)。
+  統一インターフェイスでは、空のセクションは実行時にレンダリングされず、自動的に非表示になります。
 
 ### <a name="add-sections-to-a-form-using-drag-and-drop"></a>ドラッグ アンド ドロップを使用してフォームにセクションを追加
 > [!NOTE]

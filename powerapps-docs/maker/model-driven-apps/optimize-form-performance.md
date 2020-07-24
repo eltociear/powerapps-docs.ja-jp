@@ -2,16 +2,12 @@
 title: Power Apps におけるモデル駆動型アプリ フォームの最適化 | MicrosoftDocs
 description: フォームの読み込みが遅くなる原因となるフォーム設計を避ける方法を学習します
 ms.custom: ''
-ms.date: 06/27/2018
+ms.date: 04/24/2020
 ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
-applies_to:
-- Dynamics 365 (online)
-- Dynamics 365 Version 9.x
-- powerapps
 author: Mattp123
 ms.assetid: 59cfa5e6-638a-437f-a462-fddfd26fb07d
 caps.latest.revision: 8
@@ -22,12 +18,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 5df20edea9440d407c75b114d24dcb3c0f39306a
-ms.sourcegitcommit: 5e6d71967902c463f34a9254f988b9c10e431eb4
+ms.openlocfilehash: e67db84c047754eed6bfc2588c5e59d83ea4674a
+ms.sourcegitcommit: 82fa1758e29fe302f9a252fd9943ace03b7aada0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "2890658"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "3427087"
 ---
 # <a name="optimize-model-driven-app-form-performance"></a>モデル駆動型アプリ フォーム パフォーマンスを最適化する
 
@@ -47,24 +43,30 @@ ms.locfileid: "2890658"
 ## <a name="form-scripts"></a>フォーム スクリプト  
  フォーム スクリプトを使用したカスタマイズが存在するとき、パフォーマンスを向上するためのこれらのストラテジーを開発者が理解していることを確認してください。  
   
- **不要な JavaScript Web リソース ライブラリの組み込みの回避**  
- フォームにより多くのスクリプトを追加すると、それらをダウンロードする時間が余計にかかります。 通常、スクリプトは最初に読み込まれた後、ブラウザーにキャッシュされますが、フォームを最初に表示するときのパフォーマンスがきわめて強い印象を与えます。  
+**同期要求を使用しない**  
+同期要求により、ページの読み込みに時間がかかったり、フォームが応答しなくなることがあります。 [代わりに非同期要求を使用する](https://docs.microsoft.com/powerapps/developer/model-driven-apps/best-practices/business-logic/interact-http-https-resources-asynchronously)。 その他の例については、[このブログの投稿](https://powerapps.microsoft.com/en-us/blog/turbocharge-your-model-driven-apps-by-transitioning-away-from-synchronous-requests/) を参照してください。
   
- **Onload イベントでのすべてのスクリプトの読み込みの回避**  
- フィールドの `OnChange` イベント、または `OnSave` イベントのみをサポートするコードがある場合は、`OnLoad` イベントの代わりに、これらのイベントのイベント ハンドラーを使用して、スクリプト ライブラリを設定するようにしてください。 このように、フォームを読み込むとき、これらのライブラリの読み込みを延期することができるし、パフォーマンスを向上させることもあります。  
+**不要な JavaScript Web リソース ライブラリの組み込みの回避**  
+フォームにより多くのスクリプトを追加すると、それらをダウンロードする時間が余計にかかります。 通常、スクリプトは最初に読み込まれた後、ブラウザーにキャッシュされますが、フォームを最初に表示するときのパフォーマンスがきわめて強い印象を与えます。  
+  
+**Onload イベントでのすべてのスクリプトの読み込みの回避**  
+フィールドの `OnChange` イベント、または `OnSave` イベントのみをサポートするコードがある場合は、`OnLoad` イベントの代わりに、これらのイベントのイベント ハンドラーを使用して、スクリプト ライブラリを設定するようにしてください。 このように、フォームを読み込むとき、これらのライブラリの読み込みを延期することができるし、パフォーマンスを向上させることもあります。  
   
  **折りたたまれたタブを使用して Web リソースの読み込みを延期**  
  Web リソースと IFRAME が折りたたみまれたタブ内のセクションに含まれているとき、タブが折りたたまれている場合、Web リソースと IFRAME は読み込まれません。 Web リソースと IFRAME は、タブが展開されているときに読み込まれます。 タブの状態が変化すると、`TabStateChange` イベントが発生します。 折りたたまれたタブ内で Web リソースまたは IFRAME をサポートするのに必要なすべてのコードが、**TabStateChange** イベントのイベント ハンドラーを使用して、別の方法では `OnLoad` イベントで発生した可能性のあるコードを減らすことができます。  
   
- **既定の表示オプションの設定**  
- フォーム要素を非表示にする、`OnLoad` イベントのフォーム スクリプトの使用を避けてください。 代わりに、表示されていない場合もあるフォーム要素の既定の表示オプションを設定して、フォーム読み込み時に既定で表示されないようにします。 次に、`OnLoad` イベントのスクリプトを使用して、表示対象のフォーム要素を表示させます。  
+**既定の表示オプションの設定**  
+フォーム要素を非表示にする、`OnLoad` イベントのフォーム スクリプトの使用を避けてください。 代わりに、表示されていない場合もあるフォーム要素の既定の表示オプションを設定して、フォーム読み込み時に既定で表示されないようにします。 次に、`OnLoad` イベントのスクリプトを使用して、表示対象のフォーム要素を表示させます。  
   
 <a name="BKMK_CommandBar"></a>   
 ## <a name="command-bar-or-ribbon"></a>コマンド バーまたはリボン  
  コマンド バーまたはリボンを編集するときは、これらの推奨事項に留意してください。  
   
  **コントロール数を最低限に維持**  
- フォームのリボン コマンド内またはバー内で、必要なコントロールを評価し、必要でないコントロールを非表示にします。 表示される各コントロールは、ブラウザーにダウンロードする必要のあるリソースを増加させます。  
+ フォームのリボン コマンド内またはバー内で、必要なコントロールを評価し、必要でないコントロールを非表示にします。 表示される各コントロールは、ブラウザーにダウンロードする必要のあるリソースを増加させます。
+ 
+ **カスタム ルールで非同期ネットワーク要求を使用する**  
+ 統一インターフェイスでネットワーク要求を行うカスタム ルールを使用する場合、[非同期ルール評価を使用します](https://docs.microsoft.com/powerapps/developer/model-driven-apps/define-ribbon-enable-rules#custom-rule)。
   
 ## <a name="next-steps"></a>次のステップ  
  [フォームの作成および設計](create-design-forms.md)    

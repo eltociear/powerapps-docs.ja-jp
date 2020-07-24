@@ -18,12 +18,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: fb40f10fae12afb16f59c98c6e1a43c3acf64e89
-ms.sourcegitcommit: 6acc6ac7cc1749e9681d5e55c96613033835d294
+ms.openlocfilehash: b636e5b684fa5422f6b273c3b4462f2573809b1b
+ms.sourcegitcommit: 82fa1758e29fe302f9a252fd9943ace03b7aada0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "3238419"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "3427597"
 ---
 # <a name="common-issues-and-resolutions-for-solution-checker"></a>ソリューション チェッカーの一般的な問題と解決策
 
@@ -230,7 +230,7 @@ PowerApps-アドバイザー エンタープライズ アプリケーション I
 
 ソリューションに [修正プログラム](https://docs.microsoft.com/powerapps/developer/common-data-service/create-patches-simplify-solution-updates) が適用済の場合、ソリューション チェッカーは分析のためのソリューションをエクスポートできません。 ソリューションに修正プログラムが適用されている場合、元のソリューションがロックされそのソリューションを親ソリューションとして識別する依存修正プログラムが組織内に存在する限り、変更やエクスポートはできません。
 
-この問題を解決するには、新しく作成されたソリューションに関連するすべてのパッチが含まれるように、ソリューションの完全なコピーを作成します。 これによりソリューションのロックが解除され、ソリューションをシステムからエクスポートできます。  詳細については  [ソリューションをクローンする](solution-patches.md#clone-a-solution) を参照してください。
+この問題を解決するには、新しく作成されたソリューションに関連するすべてのパッチが含まれるように、ソリューションの完全なコピーを作成します。 これによりソリューションのロックが解除され、ソリューションをシステムからエクスポートできます。  詳細については  [ソリューションをクローンする](/power-platform/alm/update-solutions-alm#clone-a-solution) を参照してください。
 
 ## <a name="solution-checker-will-not-analyze-empty-solutions"></a>ソリューション チェッカーは、空白の ソリューション の分析をすることはできません。
 
@@ -253,6 +253,10 @@ Common Data Service 環境からの大規模なソリューションのエクス
 ## <a name="line-number-references-for-issues-in-html-resources-with-embedded-javascript-are-not-correct"></a>JavaScript が埋め込まれた HTML リソースで問題の行番号参照が不正
 
 HTML Web リソース が ソリューション チェッカー で処理されるときに、HTML Web リソースは HTML Web リソース内の JavaScript とは別に処理されます。 このため、HTML Web リソースの `<script>` の中に見つかった不正な行番号は正しくありません。
+
+## <a name="web-avoid-eval-error-for-power-apps-component-framework-code-components"></a>Power Apps component framework のコード コンポーネントで発生する Web-avoid-eval エラー
+
+CLI ツールを使用して作成された Power Apps component framework のコード コンポーネントに対して、Web-avoid-eval エラーが報告された場合は、コントロールを `msbuild /p:configuration=Release` または `npm run build -- --buildMode production` でパッケージ化し、'eval' の使用を含まないリリース ビルドを作成してください。
 
 ## <a name="web-unsupported-syntax-issue-for-web-resources"></a>Web リソースにおける Web-unsupported-syntax 問題
 

@@ -20,12 +20,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 5600d4225868dc67096dc3f72ee30b3166ed30d5
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 950096a50c820f9ea6e023172c94e96ed51a86d9
+ms.sourcegitcommit: ef921bbf0908283a3621c2ca1069e6b58a2b14e7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2748810"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "3373449"
 ---
 # <a name="retrieve-published-metadata"></a>公開済みメタデータの取得
 
@@ -66,7 +66,7 @@ public RetrieveAllEntitiesAttributesResponse GetAllEntitiesImplicit(IOrganizatio
 }
 ```
 
-### <a name="explictly-controlling-the-behavior"></a>動作を明示的に制御します
+### <a name="explicitly-controlling-the-behavior"></a>動作の明示的な制御
 
 `RetrieveAsIfPublished` プロパティを明示的に設定して、公開済みカスタマイズのみ取得します
 

@@ -1,20 +1,19 @@
 ---
 title: Power Apps ポータルのリリースの更新 | MicrosoftDocs
 description: Power Apps ポータルののリリース更新について説明します。
-author: tapanm-msft
-manager: kvivek
+author: dileepsinghmicrosoft
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 11/22/2019
-ms.author: tapanm
-ms.reviewer: ''
-ms.openlocfilehash: d775b383116f28df8a584a4943e64989e9ca0f76
-ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
+ms.author: dileeps
+ms.reviewer: tapanm
+ms.openlocfilehash: 5009d47f0d1f0402ae47df410e31c79efa67ef32
+ms.sourcegitcommit: c12260f372ad2cc48d3146be570d2088c9ef1d86
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "2981366"
+ms.lasthandoff: 06/20/2020
+ms.locfileid: "3490912"
 ---
 # <a name="release-updates"></a>リリースの更新
 

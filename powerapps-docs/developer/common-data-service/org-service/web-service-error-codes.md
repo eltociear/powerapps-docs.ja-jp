@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 5da0e8248a1a65115f6c3ae2d084a6a6dec56cac
-ms.sourcegitcommit: 0e41cc0c944e6b0ee22a7e183e40c52fd553b7be
+ms.openlocfilehash: 598431ab7f7bbe0fb3ee3e665490cf6ef4a233f1
+ms.sourcegitcommit: ef921bbf0908283a3621c2ca1069e6b58a2b14e7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/22/2020
-ms.locfileid: "3081451"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "3373821"
 ---
 # <a name="web-service-error-codes"></a>Web サービス エラー コード
 
@@ -71,9 +71,9 @@ ms.locfileid: "3081451"
 > |**名前**:<br />AppConfigFeatureNotEnabled<br />**16 進数**:<br />80072200<br />**数値**:<br />-2147016192|アプリ内カスタマイズのアプリ構成機能が有効ではありません。|
 > |**名前**:<br />AppEntityLimitExceeded<br />**16 進数**:<br />80048547<br />**数値**:<br />-2147187385|{0}|
 > |**名前**:<br />ApplicationMetadataConverterFailed<br />**16 進数**:<br />8005F231<br />**数値**:<br />-2147093967|問題が発生しました。 操作をやり直すか、アプリを再起動してください。|
-> |**名前**:<br />ApplicationMetadatadaCreateFailed<br />**16 進数**:<br />8005F233<br />**数値**:<br />-2147093965|問題が発生しました。 操作をやり直すか、アプリを再起動してください。|
-> |**名前**:<br />ApplicationMetadatadaNullData<br />**16 進数**:<br />8005F232<br />**数値**:<br />-2147093966|問題が発生しました。 操作をやり直すか、アプリを再起動してください。|
-> |**名前**:<br />ApplicationMetadatadaUpdateFailed<br />**16 進数**:<br />8005F234<br />**数値**:<br />-2147093964|問題が発生しました。 操作をやり直すか、アプリを再起動してください。|
+> |**名前**:<br />ApplicationMetadataCreateFailed<br />**16 進数**:<br />8005F233<br />**数値**:<br />-2147093965|問題が発生しました。 操作をやり直すか、アプリを再起動してください。|
+> |**名前**:<br />ApplicationMetadataNullData<br />**16 進数**:<br />8005F232<br />**数値**:<br />-2147093966|問題が発生しました。 操作をやり直すか、アプリを再起動してください。|
+> |**名前**:<br />ApplicationMetadataUpdateFailed<br />**16 進数**:<br />8005F234<br />**数値**:<br />-2147093964|問題が発生しました。 操作をやり直すか、アプリを再起動してください。|
 > |**名前**:<br />ApplicationMetadataFailedWithContinue<br />**16 進数**:<br />8005F241<br />**数値**:<br />-2147093951|サーバーの構成の変更に問題がありました。  アプリケーションを引き続き使用できますが、変更を保存できないなどの問題が発生する可能性があります。 Dynamics 365 管理者に連絡して、[詳細情報] に示された情報を伝えてください。|
 > |**名前**:<br />ApplicationMetadataGetPreviewMetadataUnknownError<br />**16 進数**:<br />8005F230<br />**数値**:<br />-2147093968|問題が発生しました。 操作をやり直すか、アプリを再起動してください。|
 > |**名前**:<br />ApplicationMetadataPrepareCustomizationsAppLock<br />**16 進数**:<br />8005F237<br />**数値**:<br />-2147093961|お客様のユーザーに対してカスタマイズの準備をしている間に、問題が発生しました。 この問題が解決されるまで、一部のクライアント上のユーザーは、カスタマイズ更新プログラムをダウンロードすることはできません。|

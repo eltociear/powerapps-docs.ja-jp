@@ -2,14 +2,10 @@
 title: Power Apps および Common Data Service の開発者リソースの表示またはダウンロード | MicrosoftDocs
 description: Power Apps および Common Data Service の開発者リソースおよびサービス エンドポイント URL を検索する
 keywords: ''
-ms.date: 06/06/2018
+ms.date: 04/09/2020
 ms.service: powerapps
 ms.custom: ''
 ms.topic: article
-applies_to:
-- Dynamics 365 (online)
-- Dynamics 365 Version 9.x
-- powerapps
 ms.assetid: e200d242-ff3f-48e5-af32-aed050e02441
 author: Mattp123
 ms.author: matp
@@ -18,28 +14,38 @@ ms.reviewer: pehecke
 ms.suite: ''
 ms.tgt_pltfrm: ''
 search.audienceType:
-- maker
+- developer
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 71bbb3d4b17d518e251ccedb1d2e8244d011853e
-ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
+ms.openlocfilehash: bd3b907411d0e43b572908204aeff9c64069ed15
+ms.sourcegitcommit: cbaf5ba8b6435796a538ece2da5cc172c0781fad
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "3155155"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "3254401"
 ---
 # <a name="view-or-download-developer-resources"></a>開発者リソースの表示またはダウンロード
 
-このページには、開発者のリソースと、作業中の特定のインスタンスに関する情報があります。 
+このページには、開発者向けリソースと、作業中の特定のインスタンスに関する情報があります。 
 
 ## <a name="view-the-developer-resources-page-for-your-environment"></a>環境の開発者リソース ページを表示する
 
-1. Power Apps ポータルで、![設定ボタン](../../administrator/media/settings-button-nav-bar.png) [設定] ボタンを選択し、**高度なカスタマイズ** を選択します。
+1. [Power Apps](https://make.powerapps.com) にサインインして、右上隅で環境を選択します。
+
+1. 右上隅の**設定**ボタンを選択してから、**詳細設定**を選択します。
 
     ![高度なカスタマイズ](media/advanced-customizations-menu.png)
 
-1. **高度なカスタマイズ** パネル内で、**開発者リソース** リンクを選択します。<br />![開発者リソース リンク](media/developer-resources-link.png)
+1. **設定**ページで、**設定**の横にあるドロップダウン矢印を選択してから、**カスタマイズ**を選択します。
+
+    ![カスタマイズの選択](media/dev-customization.png)
+
+1. **カスタマイズ** ページで、**開発者リソース**を選択し、開発者向けのリソースを含むページを表示します。
+
+    ![開発者リソース ページ](media/developer-resources-page.png)
+
+次のセクションでは、開発者リソース ページで使用可能な情報について説明します。
 
 ## <a name="getting-started"></a>はじめに 
 
@@ -50,9 +56,9 @@ ms.locfileid: "3155155"
 |---------|---------|
 |[ディベロッパー センター](https://go.microsoft.com/fwlink/?LinkId=551006)|開発者用ドキュメントのメイン エントリ ポイント。|
 |[開発者フォーラム](https://go.microsoft.com/fwlink/?LinkId=550993)|他の開発者にして質問して答えをもらいます。|
-|[NuGetパッケージ](https://go.microsoft.com/fwlink/?LinkId=550994)|SDK アセンブリをプロジェクトに追加するには NuGet パッケージを検出します。|
-|[ツールのダウンロード](https://go.microsoft.com/fwlink/?LinkID=512122)|必要なツールは NuGet からダウンロードできます。 最新バージョンを取得する際にこのページの PowerShell スクリプトを使用します。|
-|[サンプル コード](https://go.microsoft.com/fwlink/?LinkId=553007)|使用できるサンプルの一覧。|
+|[SDK NuGet パッケージ](https://go.microsoft.com/fwlink/?LinkId=550994)|SDK アセンブリをプロジェクトに追加するには NuGet パッケージを検出します。|
+|SDK のダウンロード|Microsoft ダウンロード センターで SDK パッケージをダウンロードとして出荷することはなくなりました。 代わりに、SDK アセンブリとツールは [NuGet パッケージ](https://go.microsoft.com/fwlink/?LinkId=550994) として使用可能です。 この記事の PowerShell スクリプトを使用して、SDK ツールの最新バージョンを取得します: [NuGet からツールをダウンロード](https://docs.microsoft.com/powerapps/developer/common-data-service/download-tools-nuget)|
+|[サンプル コード](https://go.microsoft.com/fwlink/?LinkId=553007)|使用できるコード サンプルの一覧。|
 |[開発者向けの概要](https://go.microsoft.com/fwlink/?LinkId=550995)|開発者の概要について説明するトピックにリンクします。|
 
 
@@ -81,7 +87,7 @@ ms.locfileid: "3155155"
 
 ユーザーは複数の Common Data Service 環境にアクセスできる場合があるので、探索サービスでは、ユーザーがユーザーの資格情報に基づいてアクセスできる使用可能な環境を取得できます。
 
-### <a name="discovery-restful-api"></a>探索 RESTful API
+### <a name="discovery-web-api"></a>検出 Web API
 
 これは、インスタンスで使用するための探索サービスの RESTful OData v4 バージョンのエンドポイント アドレスです。 サービス ドキュメントはここでダウンロードできます。
 詳細情報: [開発者ドキュメント: Web API を使用して組織の URL を検出する](/powerapps/developer/common-data-service/webapi/discover-url-organization-web-api)

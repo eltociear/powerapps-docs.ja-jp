@@ -1,20 +1,19 @@
 ---
 title: Power Apps ポータルで一般データ保護規則を実装する | MicrosoftDocs
 description: Power Apps ポータルで一般的なデータ保護規則を実装する方法を学習します。
-author: tapanm-msft
-manager: kvivek
+author: sandhangitmsft
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 11/18/2019
-ms.author: tapanm
-ms.reviewer: ''
-ms.openlocfilehash: 80a60ae7b1dd8810ee3509dfe9fcd108dffceb5d
-ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
+ms.author: sandhan
+ms.reviewer: tapanm
+ms.openlocfilehash: b1c88e5408079b47122085892b0c88b4fdf5163c
+ms.sourcegitcommit: c12260f372ad2cc48d3146be570d2088c9ef1d86
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "2980046"
+ms.lasthandoff: 06/20/2020
+ms.locfileid: "3494292"
 ---
 # <a name="implementing-general-data-protection-regulations-in-your-power-apps-portals"></a>Power Apps ポータルで一般データ保護規則を実装する
 

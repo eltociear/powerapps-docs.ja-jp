@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: d36fe4c8d62ea8cbc2750d44fbe28901fd7a827a
-ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
+ms.openlocfilehash: bd155da7f23938bf0b663cfc727275bd62264f1a
+ms.sourcegitcommit: a94b56525667015d4439a082873c2262a61b25a9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "3156479"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "3455952"
 ---
 # <a name="appendix-app-certification-checklist"></a>付録: アプリの認証チェックリスト
 
@@ -52,9 +52,9 @@ ms.locfileid: "3156479"
 <li>実行時エラー: アプリを実行モードで開いて表示する時に発生する可能性があります。 問題が見つかったらすべて電子メールで報告されます。</li>
 <li>ユーザー補助のエラーと警告: ユーザー補助のエラーはすべてソリューション チェッカーのガイドラインに従って解決する必要があります。</li>
 </ul></li>
-<li>Common Data Service ソリューションのコード検証は、<a href="https://docs.microsoft.com/powerapps/developer/common-data-service/checker/webapi/overview">Power Apps Checker</a> を利用して行われます。</li>
+<li>Common Data Service ソリューションのコード検証は、<a href="https://.docs.microsoft.com/power-platform/alm/checker-api/overview">Power Apps Checker</a> を利用して行われます。</li>
 <li>Power Apps Checker で報告された問題は手動で検証され、誤検出された問題は重要度が低く抑えられます。</li>
-<li>ソリューションとパッケージの品質は、AppSource認証<a href="https://docs.microsoft.com/powerapps/developer/common-data-service/checker/webapi/retrieve-rulesets">ルールセット</a>に照らして検証されます。 
+<li>ソリューションとパッケージの品質は、AppSource認証<a href="https://docs.microsoft.com/power-platform/alm/checker-api/retrieve-rulesets">ルールセット</a>に照らして検証されます。 
 <li>生成されたレポートは電子メールで発行者と共有されます。</li>
 </ul>
 </td>
@@ -63,7 +63,7 @@ ms.locfileid: "3156479"
 <td>展開の検証</td>
 <td>
 <ul>
-<li>ソリューションは <a href="https://docs.microsoft.com/powerapps/developer/common-data-service/package-deployer/create-packages-package-deployer">Package Deployer</a> を使用して Power Apps Studio にインストールされます。 インストールされたキャンバス アプリは、ソリューションおよびアプリ セクションにインストール後に手動で配置されます。そしてアプリが編集モードおよび実行モードで開かれていることを確認します。 キャンバス アプリは Power Apps Studio から手動で削除され、アンインストールが成功したことを検証します</li>
+<li>ソリューションは <a href="https://docs.microsoft.com/power-platform/alm/package-deployer-tool">Package Deployer</a> を使用して Power Apps Studio にインストールされます。 インストールされたキャンバス アプリは、ソリューションおよびアプリ セクションにインストール後に手動で配置されます。そしてアプリが編集モードおよび実行モードで開かれていることを確認します。 キャンバス アプリは Power Apps Studio から手動で削除され、アンインストールが成功したことを検証します</li>
 <li>キャンバス アプリが発行者から提供されたコネクタを介して正しく接続していることを確認します。 たとえば、 Common Data Service またはほかのコネクションです。</li>
 <li>すべての Common Data Service コンポーネント (エンティティ、webリソース、プラグイン、その他のコンポーネント) がソリューションにて利用可能となっていることを確認します。</li>
 <li>ソリューションを手動でアンインストールし、管理ソリューションに関連付けられたすべてのコンポーネントが削除されたかを確認します。</li>

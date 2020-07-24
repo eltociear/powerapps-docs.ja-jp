@@ -1,20 +1,19 @@
 ---
 title: ポータルの動的コンテンツの追加およびカスタム テンプレートの作成 | MicrosoftDocs
 description: ポータルに統合されているオープン ソースのテンプレート言語である Liquid をどのように使用するか学習します。
-author: tapanm-msft
-manager: kvivek
+author: gitanjalisingh33msft
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 10/07/2019
-ms.author: tapanm
-ms.reviewer: ''
-ms.openlocfilehash: cda93410ee9580a7479e6b67353058a997a0b3d6
-ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
+ms.author: gisingh
+ms.reviewer: tapanm
+ms.openlocfilehash: 140933fb1d8580468e4171bd411077c30a906948
+ms.sourcegitcommit: c12260f372ad2cc48d3146be570d2088c9ef1d86
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "2981146"
+ms.lasthandoff: 06/20/2020
+ms.locfileid: "3489862"
 ---
 # <a name="work-with-liquid-templates"></a>Liquid テンプレートに関する作業
 

@@ -2,7 +2,7 @@
 title: QueryExpression クラスの使用 (Common Data Service) | Microsoft Docs
 description: QueryExpression クラスを使用して、IOrganizationService.QueryBase) メソッドまたは RetrieveMultipleRequest メッセージで使用する複雑なクエリを作成します。
 ms.custom: ''
-ms.date: 10/31/2018
+ms.date: 04/17/2020
 ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
@@ -14,30 +14,18 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 79b8f500bb6448a0272df627e813cf518159c817
-ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
+ms.openlocfilehash: 0b405e76323300522e01956ea3eacbe7b2596f50
+ms.sourcegitcommit: 4a88daac42180283314f6bedee3d6810fd5a6c25
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "3155427"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "3275783"
 ---
 # <a name="use-the-queryexpression-class"></a>QueryExpression クラスの使用
 
 Common Data Service では、<xref:Microsoft.Xrm.Sdk.Query.QueryExpression> クラスを使用して、<xref:Microsoft.Xrm.Sdk.IOrganizationService>.<xref:Microsoft.Xrm.Sdk.IOrganizationService.RetrieveMultiple*> メソッドまたは <xref:Microsoft.Xrm.Sdk.Messages.RetrieveMultipleRequest> メッセージによってクエリの結果セットを絞り込むことができます。 <xref:Microsoft.Xrm.Sdk.Query.QueryExpression> に対するクエリ パラメーターは、<xref:Microsoft.Xrm.Sdk.Query.ConditionExpression>、<xref:Microsoft.Xrm.Sdk.Query.ColumnSet>、および <xref:Microsoft.Xrm.Sdk.Query.FilterExpression> の各クラスを使用して設定できます。  
   
  <xref:Microsoft.Xrm.Sdk.Query.QueryExpression> クラスを使用すると、複雑なクエリを作成できます。 <xref:Microsoft.Xrm.Sdk.Query.QueryByAttribute> クラスは、指定した値と属性が一致するエンティティを簡単に検索できるように設計されています。  
-  
- 次の表に、クエリ式を作成する際に設定するプロパティを一覧表示します。  
-  
-|プロパティ|説明|  
-|--------------|-----------------|  
-|<xref:Microsoft.Xrm.Sdk.Query.QueryExpression.EntityName>|取得するエンティティの種類を指定します。 クエリ式では、1 種類のエンティティのコレクションのみ取得できます。|  
-|<xref:Microsoft.Xrm.Sdk.Query.QueryExpression.ColumnSet>|取得する一連の属性 (列) を指定します。|  
-|<xref:Microsoft.Xrm.Sdk.Query.QueryExpression.Criteria>|クエリの結果をフィルターする複雑な条件式および論理フィルター式を指定します。|  
-|<xref:Microsoft.Xrm.Sdk.Query.QueryExpression.Distinct>|クエリの結果に重複するレコードを含めるかどうかを指定します。|  
-|<xref:Microsoft.Xrm.Sdk.Query.QueryExpression.LinkEntities>|複数のエンティティ種類間のリンクを指定します。|  
-|<xref:Microsoft.Xrm.Sdk.Query.QueryExpression.Orders>|クエリでレコードを返す順序を指定します。|  
-|<xref:Microsoft.Xrm.Sdk.Query.QueryExpression.PageInfo>|クエリで返されるページ数、およびページごとのレコード数を指定します。|  
   
 <a name="record_count"></a>   
 ## <a name="record-count"></a>レコードのカウント  
@@ -69,7 +57,25 @@ foreach (var a in result1.Entities)
 }  
 Console.WriteLine("---------------------------------------");  
 ```  
-  
+## <a name="use-sql-hints-in-a-query"></a>クエリ内の SQL ヒントを使用
+
+<xref:Microsoft.Xrm.Sdk.Query.QueryExpression> クラスでは <xref:Microsoft.Xrm.Sdk.Query.QueryExpression.QueryHints> という名前のプロパティが含まれています。 このプロパティを以下に示すサポートされている文字列値のいずれかに設定することにより、クエリの実行に影響する生成された SQL テキストのヒントを提供できます。
+
+|QueryHint 値 | SQL クエリ オプションとヒント |
+|---------|---------|
+|OptimizeForUnknown | 不明の最適化|
+|ForceOrder | 強制注文 |
+|再コンパイル | 再コンパイル |
+|DisableRowGoal | ヒントを使用 ('Disable_Optimizer_RowGoal') |
+|EnableOptimizerHotfixes | ヒントを使用 ('ENABLE_QUERY_OPTIMIZER_HOTFIXES') |
+|LoopJoin | ループ結合 |
+|MergeJoin | マージ結合 |
+|HashJoin | ハッシュ結合 |
+|NO_PERFORMANCE_SPOOL | NO_PERFORMANCE_SPOOL |
+|MaxRecursion | MAXRECURSION 番号 |
+
+詳細: [ヒント (Transact-SQL) - クエリ](https://docs.microsoft.com/sql/t-sql/queries/hints-transact-sql-query)
+
 ### <a name="see-also"></a>関連項目  
  [QueryExpression でクエリを作成する](build-queries-with-queryexpression.md)   
  [ColumnSet クラスの使用](use-the-columnset-class.md)   

@@ -15,12 +15,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: ed08b46825e5cbf4d4045fe95df8266d326a4a44
-ms.sourcegitcommit: be9b8c0f5c7c7e9992e93fa0d03e961b4ac7e3ae
+ms.openlocfilehash: 6edcc5908c889136393eda80e220ece82b68be0d
+ms.sourcegitcommit: afe9c7b6ef3e82eb8f7e3ad5cc41b067e81546d0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "3172586"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "3518327"
 ---
 # <a name="command-bar-or-ribbon-presentation"></a>バーまたはリボンの表示
 
@@ -28,11 +28,14 @@ ms.locfileid: "3172586"
 
 Common Data Service のコマンドを定義するデータは、クライアントによってさまざまな方法で表現でき、エンティティの処理方法に違いがあります。 リボン コマンドを変更したり、新しいフィルターを定義する際に、次の要因を検討する必要があります。
   
-<a name="BKMK_DifferentPresentations"></a>   
-## <a name="different-presentations-of-commands"></a>コマンドのさまざまな表示  
- コマンド データを表示する方法には、3 通りあります。  
+<a name="BKMK_DifferentPresentations"></a>
+
+## <a name="different-presentations-of-commands"></a>コマンドのさまざまな表示 
+
+コマンド データを表示する方法には、3 通りあります。  
   
 ### <a name="updated-user-experience"></a>更新済みのユーザー エクスペリエンス  
+
  これは、アプリケーション全体のコマンド バーと、ユーザー エクスペリエンスを更新したエンティティのフォームの表示です。  
   
  ![アカウントのコマンド バー](media/customization-account-grid-command-bar.PNG "Dynamics 365 のアカウントのコマンド バー")
@@ -50,6 +53,7 @@ Common Data Service のコマンドを定義するデータは、クライアン
  サブグリッド コントロールの動作に関する詳細およびカスタマイズ方法については、[サブグリッドリボン](/dynamics365/customer-engagement/developer/customize-dev/ribbons-available-microsoft-dynamics-365#BKMK_SubGridRibbons)を参照してください。  
   
 ### <a name="classic-user-experience"></a>従来のユーザー エクスペリエンス  
+
  これはリボンを使用した表示です。 また、Outlook クライアント内の一覧と、更新されたユーザー エクスペリエンスを使用しないエンティティ フォームで使用されます。  
   
  ![記事のリボン](media/customization-article-ribbon.PNG "Dynamics 365 の記事リボン")  
@@ -104,7 +108,8 @@ Common Data Service のコマンドを定義するデータは、クライアン
   また既存の `<CrmClientTypeRule>` 要素が含まれていますが、その要素の `Type` 属性は `Web` と `Outlook` クライアントの間でのみ識別できます。 このルールは、Web クライアントとしてタブレット クライアント用 Dynamics 365 を評価します。  
   
 ### <a name="see-also"></a>関連項目  
- [コマンド、およびリボンをカスタマイズする](customize-commands-ribbon.md)   
- [利用できるリボン](/dynamics365/customer-engagement/developer/customize-dev/ribbons-available-microsoft-dynamics-365)   
+
+ [コマンドとリボンのカスタマイズ](customize-commands-ribbon.md)   
+ [利用できるリボン](https://docs.microsoft.com/powerapps/developer/model-driven-apps/ribbons-available)   
  [リボン定義のエクスポート](export-ribbon-definitions.md)   
  [リボンの問題のトラブルシューティング](https://support.microsoft.com/help/4552163)

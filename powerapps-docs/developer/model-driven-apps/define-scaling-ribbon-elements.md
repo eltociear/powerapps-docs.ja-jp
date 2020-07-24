@@ -17,12 +17,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 844ac96d1e5e0a0a47b4a0c64d649a417d6fd632
-ms.sourcegitcommit: 5701e7a755fade6c3bac5c4a5774fcc74627e168
+ms.openlocfilehash: 0de4ce4a3475be0f5f6a6b4ed67284722601cc7a
+ms.sourcegitcommit: 4a88daac42180283314f6bedee3d6810fd5a6c25
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "3115847"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "3275815"
 ---
 # <a name="define-scaling-for-ribbon-elements"></a>リボン要素のスケーリングの定義
 
@@ -66,6 +66,6 @@ ms.locfileid: "3115847"
 >  `Scale` 要素の `Sequence` 属性値は、スケーリングの適用順序の決定に使用されません。 スケーリングは、`MaxSize` 要素と `Scale` 要素が RibbonDiffXML に出現する相対順序で適用されます。 すべての `Sequence` 要素を `MaxSize` 要素の上にグループ化する必要があるため、`Scale` 値は `MaxSize` 要素と `Scale` 要素の両方にとって重要です。 新しい `MaxSize` 要素または `Scale` 要素を追加する場合は、すべての `Sequence` 要素と `MaxSize` 要素に割り当てられている `Scale` の規定値の範囲を必ず確認してください。 範囲が重複する可能性のある `Sequence` 値を割り当てるという誤りがよく見られます。  
   
 ### <a name="see-also"></a>関連項目  
- [コマンド、およびリボンをカスタマイズする](customize-commands-ribbon.md)   
+ [コマンドとリボンのカスタマイズ](customize-commands-ribbon.md)   
  [ユーザー定義のアクションによるリボンの変更](define-custom-actions-modify-ribbon.md)   
  [リボン タブ表示ルールを定義する](define-ribbon-tab-display-rules.md)

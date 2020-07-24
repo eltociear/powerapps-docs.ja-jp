@@ -2,7 +2,7 @@
 title: Excel および Word テンプレートに関する作業| MicrosoftDocs
 description: Word および Excel テンプレートの使用方法について学習します
 ms.custom: ''
-ms.date: 05/23/2019
+ms.date: 04/30/2020
 ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
@@ -22,12 +22,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 6109721781e4a73858527daa7aeabe09c3435dd9
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: ac590e84625fc3e45e2720da365176e2cb2c6c17
+ms.sourcegitcommit: 4b6f187c9501332f9acca5978fa326621f2980e5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2710776"
+ms.lasthandoff: 05/22/2020
+ms.locfileid: "3394200"
 ---
 # <a name="use-excel-and-word-templates"></a>Excel および Word テンプレートの使用
 
@@ -35,23 +35,14 @@ ms.locfileid: "2710776"
 
 ## <a name="enable-and-work-with-excel-and-word-templates"></a>Excel および Word テンプレートの有効化および使用
 
-1. [https://admin.powerplatform.microsoft.com](https://admin.powerplatform.microsoft.com) に移動します。 
+1. [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインして、右上隅で ![設定アイコン](../model-driven-apps/media/powerapps-gear.png) (右上) を選択して、**詳細設定** を選択します。
 
-2. **環境**を選択、環境を選択後、**環境を開く**を選択します。
-
-3. 公開済みのアプリを表示している場合は、アプリを選択してそれを開きます。 それ以外の場合は、手順 5 に進みます。
-
-   > [!div class="mx-imgBorder"] 
-   > ![](media/published-apps.png "Published apps") 
-
-4. 右上の歯車アイコンを選択して、**詳細設定** を選択します。 **詳細設定** が表示されない場合は、次の手順に進みます。
-
-5. **設定** > **テンプレート**を選択してください。
+2. **設定** > **テンプレート**を選択してください。
 
    > [!div class="mx-imgBorder"] 
    > ![](media/settings-templates.png "Settings Templates") 
 
-6. **テンプレート** ページで、Excel または Word テンプレートで作業するためには**ドキュメント テンプレート**を選択します。
+3. **テンプレート** ページで、Excel または Word テンプレートで作業するためには**ドキュメント テンプレート**を選択します。
 
    > [!div class="mx-imgBorder"] 
    > ![](media/document-templates.png "Document Templates") 

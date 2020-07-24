@@ -15,12 +15,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 48245a8034c8dde9da77e7cbd6e2c8d9163bb5d5
-ms.sourcegitcommit: 5701e7a755fade6c3bac5c4a5774fcc74627e168
+ms.openlocfilehash: 01da0d784570c5508250b100c5b2b26e3a51374f
+ms.sourcegitcommit: afe9c7b6ef3e82eb8f7e3ad5cc41b067e81546d0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "3115867"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "3518277"
 ---
 # <a name="create-a-visualization-chart"></a>ビジュアル化の作成 (グラフ)
 
@@ -45,7 +45,7 @@ ms.locfileid: "3115867"
 
  グラフのビジュアル化を作成するには、グラフの基盤データとグラフの外観を、*データ記述*および*プレゼンテーション記述* XML 文字列として指定する必要があります。 詳細: [グラフ データの指定](understand-charts-underlying-data-chart-representation.md)および[サンプル グラフ](sample-charts.md)。  
   
- 組織所有のグラフの作成方法の完全なサンプルについては、[サンプル: グラフの作成、取得、更新、および削除 (CRUD)](/dynamics365/customer-engagement/developer/customize-dev/sample-create-retrieve-update-delete-chart) を参照してください。  <!-- TODO need to replace the link with powerapps -->
+ 組織所有のグラフの作成方法の完全なサンプルについては、[サンプル: グラフの作成、取得、更新、および削除 (CRUD)](https://github.com/microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/CRUDOperationsChart) を参照してください。 
   
 ### <a name="create-a-multi-series-chart"></a>複数系列グラフの作成  
 
@@ -64,15 +64,14 @@ SavedQueryVisualization newWebResourceVisualization = new SavedQueryVisualizatio
 {  
    Name = "Sample Dashboard Visualization",  
    Description = "Sample organization-owned visualization",  
-                           PrimaryEntityTypeCode = Account.EntityLogicalName,  
+  PrimaryEntityTypeCode = Account.EntityLogicalName,  
    WebResourceId = new EntityReference(WebResource.EntityLogicalName, _webResourceId))  
   
 };  
-_orgOwnedVisualizationId = _serviceProxy.Create(newWebResourceVisualization);  
-  
+_orgOwnedVisualizationId = service.Create(newWebResourceVisualization);  
 ```  
   
- Dynamics 365 Common Data Service Webアプリケーションを使用してWebリソースの視覚化を作成する場合は、以下の形式のXMLファイルを作成し、リボンの **チャートのインポート** を使用して視覚化をインポートする必要があります。  
+Common Data Service を使用して Web リソース ビジュアル化を作成する場合は、次の形式の XML ファイルを作成し、その後、リボン内の**グラフのインポート**を使用してビジュアル化をインポートする必要があります。  
   
 ```xml  
 <visualization>  
@@ -84,7 +83,7 @@ _orgOwnedVisualizationId = _serviceProxy.Create(newWebResourceVisualization);
 </visualization>  
 ```  
   
- たとえば、*new_TestWebResource* という名前の既存の Web リソースを表示する *サンプル ビジュアル化* を作成し、そのビジュアル化を *取引先企業* エンティティにアタッチするには、XML は以下のようになります。  
+たとえば、*new_TestWebResource* という名前の既存の Web リソースを表示する *サンプル ビジュアル化* を作成し、そのビジュアル化を *取引先企業* エンティティにアタッチするには、XML は以下のようになります。  
   
 ```xml  
 <visualization>  
@@ -96,10 +95,11 @@ _orgOwnedVisualizationId = _serviceProxy.Create(newWebResourceVisualization);
 </visualization>  
 ```  
   
-### <a name="see-also"></a>関連項目  
+### <a name="see-also"></a>関連項目
+ 
  [グラフ](view-data-with-visualizations-charts.md)   
  [グラフ データの指定](understand-charts-underlying-data-chart-representation.md)   
  [グラフ上のアクション](actions-visualizations-charts.md)   
  [サンプル グラフ](sample-charts.md)   
  [データのビジュアル化および分析](customize-visualizations-dashboards.md)   
- [サンプル: グラフの作成、取得、更新、および削除 (CRUD)](/dynamics365/customer-engagement/developer/customize-dev/sample-create-retrieve-update-delete-chart)  <!-- TODO need to replace the link with powerapps -->
+ [サンプル: グラフの作成、取得、更新、および削除 (CRUD)](https://github.com/microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/CRUDOperationsChart)  

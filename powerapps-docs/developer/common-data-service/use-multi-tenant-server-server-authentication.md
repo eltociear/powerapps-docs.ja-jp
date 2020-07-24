@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: cdc3a2c20f8459787e01001e070ed01b684ceb83
-ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
+ms.openlocfilehash: c15132ceb3b2e203b8d6bf8697095bcfaeb3199f
+ms.sourcegitcommit: a94b56525667015d4439a082873c2262a61b25a9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "3155171"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "3455980"
 ---
 # <a name="use-multi-tenant-server-to-server-authentication"></a>マルチ テナント型でのサーバー間認証の使用
 
@@ -68,12 +68,12 @@ ms.locfileid: "3155171"
  マルチテナント型 Web アプリケーションまたは Azure AD を認証プロバイダーとして使用するサービスを作成します。  
   
  これをどうやって行うのかは、このトピックの焦点ではありません。 これにアプローチして、要件や好みに合った選択をすることができるいくつかの方法があります。 詳細とサンプルについては、次のリンクを参照してください:  
+
+- [Azure AD & OpenID Connect を使用してマルチテナント型 SaaS Web アプリケーションを構築する](https://github.com/Azure-Samples/active-directory-dotnet-webapp-multitenant-openidconnect)
   
-- [ Azure AD &amp; OpenID 接続を使用してマルチテナント型 SaaS Web アプリケーションを構築する](https://azure.microsoft.com/documentation/samples/active-directory-dotnet-webapp-multitenant-openidconnect/)  
+- [Microsoft IDプラットフォームを使用する組織の ASP.NET Core Web アプリのサインイン ユーザー](https://github.com/Azure-Samples/active-directory-aspnetcore-webapp-openidconnect-v2/tree/master/1-WebApp-OIDC/1-2-AnyOrg)  
   
-- [Azure AD を使用して、Web API を呼び出すマルチテナント型 SaaS Web アプリケーションを構築する](https://azure.microsoft.com/documentation/samples/active-directory-webapp-webapi-multitenant-openidconnect-aspnetcore/)  
-  
-  Azure AD には、アプリを登録するために次の値が必要です。  
+Azure AD には、アプリを登録するために次の値が必要です。  
   
 |値|説明|  
 |-----------|-----------------|  
@@ -209,14 +209,14 @@ ms.locfileid: "3155171"
   
   [Common Data Service] ソリューションの作成に関する詳細は、次のトピックを参照してください:
   
-- [カスタマイズでのソリューションの使用](../../maker/common-data-service/use-solutions-for-your-customizations.md)  
+- [カスタマイズでのソリューションの使用](/power-platform/alm/use-solutions-for-your-customizations)  
 - [ソリューションを使用した拡張機能のパッケージ化および配布](/dynamics365/customer-engagement/developer/package-distribute-extensions-use-solutions)  
   
   ただし、アプリケーション ユーザーをソリューションに含めることはできないため、このアプリケーション ユーザーを作成しカスタム セキュリティ ロールを関連付ける方法を提供する必要があります。  
   
   Web サービスを使用して独自のプログラムを作成したりサブスクライバーにプログラムを実行させるなど、これを達成するにはいくつかの方法があります。  
   
-  Dynamics 365 Package Deployer は、ソリューションおよびデータを別の Common Data Service 組織へ自動的に転送するパッケージの準備として使用できるアプリです。 詳細: [Dynamics 365 Package Deployer 用のパッケージを作成する](/dynamics365/customer-engagement/developer/create-packages-package-deployer)  
+  Dynamics 365 Package Deployer は、ソリューションおよびデータを別の Common Data Service 組織へ自動的に転送するパッケージの準備として使用できるアプリです。 詳細: [Package Deployer のパッケージを作成する](/power-platform/alm/package-deployer-tool)  
   
 ### <a name="see-also"></a>関連項目  
  [単一テナント型のサーバー間認証の使用](use-single-tenant-server-server-authentication.md)   

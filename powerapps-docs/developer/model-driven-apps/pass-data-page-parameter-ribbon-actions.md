@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 329e9f1845bfdfc9f2afa87528fbfd10bc4aa886
-ms.sourcegitcommit: a1b54333338abbb0bc3ca0d7443a5a06b8945228
+ms.openlocfilehash: 9741aa279c4164eb97e7c7489ab11adf2f506318
+ms.sourcegitcommit: 4a88daac42180283314f6bedee3d6810fd5a6c25
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "3126538"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "3275791"
 ---
 # <a name="pass-data-from-a-page-as-a-parameter-to-ribbon-actions"></a>データをページからパラメーターとしてリボン操作に渡す
 

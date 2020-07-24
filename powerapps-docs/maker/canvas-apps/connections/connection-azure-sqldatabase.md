@@ -1,6 +1,6 @@
 ---
-title: SQL Server の接続の概要 | Microsoft Docs
-description: Azure SQL またはオンプレミス SQL Server データベースに接続するための操作手順
+title: SQL Server への接続の概要 | Microsoft Docs
+description: Azure SQL またはオンプレミス SQL Server データベースに接続する方法に関する詳細な手順
 author: lancedMicrosoft
 manager: kvivek
 ms.service: powerapps
@@ -15,105 +15,105 @@ search.app:
 - PowerApps
 ms.openlocfilehash: 08e54e48b371e71364edd2da09648af354a4d9ec
 ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/03/2019
-ms.locfileid: "74723910"
+ms.locfileid: "3306453"
 ---
 # <a name="connect-to-sql-server-from-power-apps"></a>Power Apps から SQL Server に接続する
 ![SQL Server アイコン](./media/connection-azure-sqldatabase/sqlicon.png)
 
-Azure またはオンプレミスデータベースの SQL Server に接続して、Power Apps でその情報を表示できるようにします。
+Azure またはオンプレミス データベースで SQL Server に接続し、Power Apps でそこから情報を表示できるようにします。
 
 ## <a name="prerequisites"></a>前提条件
 
-* Power Apps に[サインアップ](../../signup-for-powerapps.md)し、サインアップに使用したのと同じ資格情報を入力して[サインイン](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)します。
-* 主キーを持つテーブルが 1 つ以上含まれるデータベースに関して次の情報を集めます。
+* Power Apps に [サインアップ](../../signup-for-powerapps.md) し、サインアップに使用した同じ資格情報を使用して [サインイン](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) します。
+* 主キーを持つテーブルが 1 つ以上含まれるデータベースに関して次の情報を集めます:
   
   * データベースの名前
   * データベースがホストされているサーバーの名前
-  * データベースに接続するための有効なユーザー名/パスワード
+  * データベースに接続するための有効なユーザー名およびパスワード
   * データベースへの接続に必要な認証の種類
     
     この情報がない場合、使用するデータベースの管理者にお問い合わせください。
-* オンプレミス データベースの場合、自分と共有された[データ ゲートウェイ](../gateway-management.md)を特定します (あるいはデータ ゲートウェイを作成します)。
+* オンプレミス データベースの場合、共有されている [データ ゲートウェイ](../gateway-management.md) を特定します (あるいはデータ ゲートウェイを作成します)。
   
     > [!NOTE]
-  > ゲートウェイとオンプレミス接続は、ユーザーの[既定の環境](../working-with-environments.md)でのみ作成し、使用できます。
+  > ゲートウェイおよびオンプレミス接続は、ユーザーの [既定の環境](../working-with-environments.md) で作成および使用できます。
 
 ## <a name="generate-an-app-automatically"></a>アプリを自動的に生成する
-1. Power Apps Studio で、 **[ファイル]** メニュー (左端) の **[新規]** をクリックまたはタップします。
+1. Power Apps Studio で、**ファイル** メニュー (左端に表示される) の**新規**をクリックまたはタップします。
    
-    ![[ファイル] メニューの [新規] オプション](./media/connection-azure-sqldatabase/file-new.png)
-2. **[データを使用して開始]** で、コネクタの行端にある右矢印をクリックまたはタップします。
-3. 使用するデータベースへの接続が既に与えられている場合、それをクリックまたはタップし、手順 7 に進んでください。
-4. **[新しい接続]** をクリックまたはタップし、 **[SQL Server]** をクリックまたはタップします。
+    ![ファイル メニューの新しいオプション](./media/connection-azure-sqldatabase/file-new.png)
+2. **データを使用して開始する**で、コネクタの行端にある右矢印をクリックまたはタップします。
+3. 使用するデータベースへの接続が既に与えられている場合、それをクリックまたはタップしてから、手順 7 に進んでください。
+4. **新規接続**をクリックまたはタップしてから、**SQL Server** をクリックまたはタップします。
    
     ![SQL Server 接続を追加する](./media/connection-azure-sqldatabase/add-sql-connection.png)
-5. 次の手順のいずれかを実行します。
+5. 次の手順のいずれかを実行します:
    
-   * **[直接接続 (クラウド サービス)]** を指定し、サーバー名、データベース名、ユーザー名、使用するデータベースのパスワードを入力するか、貼り付けます。
+   * **直接接続 (クラウド サービス)** を指定してから、サーバー名、データベース名、ユーザー名、使用するデータベースのパスワードを入力するか、貼り付けます。
      
        ![Azure のデータベースに接続する](./media/connection-azure-sqldatabase/connect-azure.png)
-   * **[オンプレミス データ ゲートウェイを使用する接続]** を指定し、サーバー名、データベース名、ユーザー名、使用するデータベースのパスワードを入力するか貼り付けて、認証の種類とゲートウェイを指定します。
+   * **オンプレミス データ ゲートウェイを使用する接続**を指定し、サーバー名、データベース名、ユーザー名、使用するデータベースのパスワードを入力するか貼り付けて、認証の種類とゲートウェイを指定します。
      
        ![オンプレミス データベースに接続する](./media/connection-azure-sqldatabase/connect-onprem.png)
      
        > [!NOTE]
-     > ゲートウェイがない場合、[ゲートウェイをインストール](../gateway-reference.md)し、 **[ゲートウェイ一覧を最新の情報に更新]** をクリックまたはタップします。
-6. **[接続]** をクリックまたはタップします。
-7. **[データセットの選択]** のオプションをクリックまたはタップし、 **[テーブルの選択]** のオプションをクリックまたはタップし、 **[接続]** をクリックまたはタップします。
+     > ゲートウェイがない場合は、[ゲートウェイをインストール](../gateway-reference.md) してから、**ゲートウェイ一覧を最新の情報に更新** をクリックまたはタップします。
+6. **接続**をクリックまたはタップします。
+7. **データセットの選択**でオプションをクリックまたはタップし、**テーブルの選択**でオプションをクリックまたはタップしてから、**接続**をクリックまたはタップします。
    
-    Power Apps は、3つの画面にデータを表示するアプリを作成します。 ヒューリスティックスにより表示するデータの種類が提案されますが、場合によっては、自分のニーズに合わせて UI をカスタマイズする必要があります。
-8. アプリのカスタマイズは、「[Create an app from Excel](../get-started-create-from-data.md)」 (Excel からアプリを作成する) にある説明と同様の手法で行います。最初にアプリのレイアウトを変更します。
+    Power Apps では、3 つの画面にデータを表示するアプリが作成されます。 ヒューリスティックスにより表示するデータの種類が提案されますが、場合によっては、自分のニーズに合わせて UI をカスタマイズする必要があります。
+8. アプリのカスタマイズは、[Excel からアプリを作成する](../get-started-create-from-data.md) にある説明と同様の手法で行います。最初にアプリのレイアウトを変更します。
 
 ## <a name="build-an-app-from-scratch"></a>アプリをゼロから作成
-1. Power Apps へのサインアップに使用したものと同じアカウントで[powerapps.com](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)にサインインします。
-2. 左側のナビゲーション バーで、 **[接続]** をクリックまたはタップします。  
+1. Power Apps のサインアップに使用したものと同じアカウントで [powerapps.com](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインします。
+2. 左側のナビゲーション バーで、**接続**をクリックまたはタップします:  
    
-    ![接続を管理する](./media/connection-azure-sqldatabase/manage-connections.png)
-3. 右上隅で **[新しい接続]** をクリックまたはタップし、 **[SQL Server]** をクリックまたはタップします。
-4. 次の手順のいずれかを実行します。
+    ![接続の管理](./media/connection-azure-sqldatabase/manage-connections.png)
+3. 右上隅で**新しい接続**をクリックまたはタップし、**SQL Server** をクリックまたはタップします。
+4. 次の手順のいずれかを実行します:
    
-   * **[直接接続 (クラウド サービス)]** を指定し、サーバー名、データベース名、ユーザー名、使用するデータベースのパスワードを入力するか、貼り付けます。
+   * **直接接続 (クラウド サービス)** を指定してから、サーバー名、データベース名、ユーザー名、使用するデータベースのパスワードを入力するか、貼り付けます。
      
        ![Azure のデータベースに接続する](./media/connection-azure-sqldatabase/connect-azure-portal.png)
-   * **[オンプレミス データ ゲートウェイを使用する接続]** を指定し、サーバー名、データベース名、ユーザー名、使用するデータベースのパスワードを入力するか貼り付けて、認証の種類とゲートウェイを指定します。
+   * **オンプレミス データ ゲートウェイを使用する接続**を指定し、サーバー名、データベース名、ユーザー名、使用するデータベースのパスワードを入力するか貼り付けて、認証の種類とゲートウェイを指定します。
      
        ![Azure のデータベースに接続する](./media/connection-azure-sqldatabase/connect-onprem-portal.png)
      
        > [!NOTE]
-     > ゲートウェイがない場合、[ゲートウェイをインストール](../gateway-reference.md)し、時計回りアイコンをクリックまたはタップし、一覧を更新します。
-5. **[作成]** をクリックまたはタップして接続を作成します。
-6. 「[アプリをゼロから作成](../get-started-create-from-blank.md)」の説明と同様の手法でアプリを作成します。
+     > ゲートウェイがない場合は、[ゲートウェイをインストール](../gateway-reference.md) し、時計回りアイコンをクリックまたはタップしてから、一覧を更新します。
+5. **作成**をクリックまたはタップして接続を作成します。
+6. [アプリを最初から作成する](../get-started-create-from-blank.md) の説明と同様の手法でアプリを作成します。
 
 ## <a name="update-an-existing-app"></a>既存のアプリを更新する
 1. Power Apps Studio で、更新するアプリを開きます。
-2. リボンの **[ビュー]** タブで、 **[データ ソース]** をクリックまたはタップします。
-3. 右側のウィンドウで、 **[データ ソースの追加]** をクリックまたはタップします。
+2. リボンの**ビュー** タブで、**データ ソース**をクリックまたはタップします。
+3. 右側のウィンドウで、**データ ソースの追加**をクリックまたはタップします。
    
     ![データ ソースの追加](./media/connection-azure-sqldatabase/add-data-source.png)
-4. **[新しい接続]** をクリックまたはタップし、 **[SQL Server]** をクリックまたはタップし、 **[接続]** をクリックまたはタップします。
-5. 次の手順のいずれかを実行します。
+4. **新しい接続**をクリックまたはタップし、**SQL Server** をクリックまたはタップしてから、**接続**をクリックまたはタップします。
+5. 次の手順のいずれかを実行します:
    
-   * **[直接接続 (クラウド サービス)]** を指定し、サーバー名、データベース名、ユーザー名、使用するデータベースのパスワードを入力するか、貼り付けます。
+   * **直接接続 (クラウド サービス)** を指定してから、サーバー名、データベース名、ユーザー名、使用するデータベースのパスワードを入力するか、貼り付けます。
      
        ![Azure のデータベースに接続する](./media/connection-azure-sqldatabase/connect-azure-fromblank.png)
-   * **[オンプレミス データ ゲートウェイを使用する接続]** を指定し、サーバー名、データベース名、ユーザー名、使用するデータベースのパスワードを入力するか貼り付けて、認証の種類とゲートウェイを指定します。
+   * **オンプレミス データ ゲートウェイを使用する接続**を指定し、サーバー名、データベース名、ユーザー名、使用するデータベースのパスワードを入力するか貼り付けて、認証の種類とゲートウェイを指定します。
      
        ![Azure のデータベースに接続する](./media/connection-azure-sqldatabase/connect-onprem-fromblank.png)
      
        > [!NOTE]
-     > ゲートウェイがない場合、[ゲートウェイをインストール](../gateway-reference.md)し、円アイコンをクリックまたはタップし、一覧を更新します。
-6. **[接続]** をクリックまたはタップします。
-7. **[データセットの選択]** で、オプションをクリックまたはタップします。
-8. **[テーブルの選択]** で 1 つまたは複数のチェック ボックスをオンにし、 **[接続]** をクリックまたはタップします。
+     > ゲートウェイがない場合は、[ゲートウェイをインストール](../gateway-reference.md) し、円アイコンをクリックまたはタップして一覧を更新します。
+6. **接続**をクリックまたはタップします。
+7. **データセットの選択**で、オプションをクリックまたはタップします。
+8. **テーブルの選択**で 1 つまたは複数のチェック ボックスをオンにし、**接続**をクリックまたはタップします。
 
 ## <a name="next-steps"></a>次の手順
-* [データ ソースからデータを表示する方法](../add-gallery.md)を学習する。
-* [詳細を表示する方法とレコードを作成または更新する方法](../add-form.md)を学習する。
-* 接続できる他の種類の[データ ソース](../connections-list.md)を確認する。  
-* 表形式のデータ ソースの[表とレコードを理解する](../working-with-tables.md)。
+* [データ ソースからデータを表示する](../add-gallery.md) 方法についてご確認ください。
+* [詳細を表示してレコードを作成または更新する](../add-form.md) 方法についてご確認ください。
+* 接続できる他の種類の [データ ソース](../connections-list.md) を参照してください。  
+* 表形式のデータ ソースの[テーブルとレコードについて](../working-with-tables.md)。
 
 <!--NotAvailableYet
 ## View the available functions ##

@@ -1,20 +1,19 @@
 ---
 title: ポータル内の現在のページに関連付けられたエンティティ リストをレンダリングする | MicrosoftDocs
 description: ポータル内の現在のページに関連付けられたエンティティ リストをレンダリングするためのサンプルコード。
-author: tapanm-msft
-manager: kvivek
+author: gitanjalisingh33msft
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 10/07/2019
-ms.author: tapanm
-ms.reviewer: ''
-ms.openlocfilehash: 73149bc45d61f344b62f7a5e733848f11287c369
-ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
+ms.date: 06/04/2020
+ms.author: gisingh
+ms.reviewer: tapanm
+ms.openlocfilehash: 96c0f529ef222fd21eaac262782bfdb48cc166ad
+ms.sourcegitcommit: c12260f372ad2cc48d3146be570d2088c9ef1d86
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "2980882"
+ms.lasthandoff: 06/20/2020
+ms.locfileid: "3489772"
 ---
 # <a name="render-the-entity-list-associated-with-the-current-page"></a>現在のページに関連付けられているエンティティの表示
 
@@ -145,7 +144,7 @@ ms.locfileid: "2980882"
                 {% else %}
                   {{ attr }}
                 {% endif -%}
-              </th>
+              </td>
             {% endfor -%}
 
             <td>

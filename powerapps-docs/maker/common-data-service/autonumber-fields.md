@@ -22,18 +22,18 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: e4ffa1062d553e37776b1ff9a4625f7d80b4e46e
-ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
+ms.openlocfilehash: 3cd18308c9cdcda077a87f21e9da28652f7dc4a3
+ms.sourcegitcommit: 241075714595a3544833040a6a16bc3def87ffcc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "2874279"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "3408358"
 ---
 # <a name="autonumber-fields"></a>自動付番フィールド
 
 自動付番フィールドは、作成されるたびに自動的に英数字文字列を生成するフィールドです。 作成者はこれらのフィールドのフォーマットを好みに合わせてカスタマイズし、そして実行時に自動的に入力される一致する値の生成をシステムに頼ることができます。
 
-自動付番フィールドは正式にはその上に追加機能を構築したテキスト フィールドですが、[Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) は **自動付番** を **テキスト** カテゴリの下に個別のデータ型として単純に公開することでこの概念を単純化しています。 [クラシック ソリューション エクスプローラー](use-solution-explorer.md#classic-solution-explorer) が自動付番フィールドの作成または管理をサポートしていないことに注意する必要があります。
+自動付番フィールドは正式にはその上に追加機能を構築したテキスト フィールドですが、[Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) は **自動付番** を **テキスト** カテゴリの下に個別のデータ型として単純に公開することでこの概念を単純化しています。 クラシック ソリューション エクスプローラー が自動付番フィールドの作成または管理をサポートしていないことに注意する必要があります。
 
 自動付番フィールドを作成するには、[フィールドの作成](create-edit-field-portal.md#create-a-field) まで同じ手順に従って、**データの種類** ドロップダウン リスト ボックスから単純に **自動付番** を選択します。 
 

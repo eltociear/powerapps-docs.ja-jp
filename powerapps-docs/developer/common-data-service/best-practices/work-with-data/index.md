@@ -20,12 +20,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: d9d8addf30b785b2f81b6f7e94d5bdc622521fa3
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: 5b0e17d90b65477ac5d8987ac1541adf678769fd
+ms.sourcegitcommit: afe9c7b6ef3e82eb8f7e3ad5cc41b067e81546d0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "2883537"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "3518201"
 ---
 # <a name="best-practices-and-guidance-around-working-with-data-for-the-common-data-service"></a>Common Data Service のデータで作業するにあたってのベスト プラクティスおよびガイダンス
 
@@ -36,4 +36,4 @@ ms.locfileid: "2883537"
 |[サービス保護の API 制限 (Common Data Service)](../../api-limits.md)     |API 要求に対する制限について理解します。         |
 
 ### <a name="see-also"></a>関連項目
-[Common Data Service (PowerApps) でコードを使用して作業する](../../work-with-data-cds.md)<br />
+[Common Data Service (Power Apps) でコードを使用して作業する](../../work-with-data-cds.md)<br />

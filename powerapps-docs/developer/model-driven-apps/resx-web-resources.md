@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 755ea7efd4c19bfed56595b9b10765b5455f6339
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 97412ab09d71e66c0362547494f90767aec72132
+ms.sourcegitcommit: afe9c7b6ef3e82eb8f7e3ad5cc41b067e81546d0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749029"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "3518272"
 ---
 # <a name="resx-web-resources"></a>RESX Web リソース
 
@@ -42,15 +42,13 @@ RESX Web リソースを作成するときには、言語値を明示的に設�
 ### <a name="see-also"></a>関連項目
 [Web リソース](web-resources.md)<br />
 [アクセス可能な Web リソースの作成](create-accessible-web-resources.md)<br />
-[モバイル クライアント用 Dynamics 365 で使用する Web リソースと IFrame の内容を作成する](/dynamics365/customer-engagement/developer/create-web-resources-iframe-mobile)<br />
 [Web リソースの依存関係](web-resource-dependencies.md)<br />
 [Webpage (HTML) の Web リソース](webpage-html-web-resources.md)<br />
-[Silverlight (XAP) の Web リソース](/dynamics365/customer-engagement/developer/silverlight-xap-web-resources)<br />
 [スクリプト (JScript) Web リソース](script-jscript-web-resources.md)<br />
 [画像 (JPG、PNG、GIF、ICO) の Web リソース](image-web-resources.md)<br />
 [スタイルシート (XSL) Web リソース](stylesheet-xsl-web-resources.md)<br />
 [データ (XML) Web リソース](data-xml-web-resources.md)<br />
 [CSS Web リソース](css-web-resources.md)<br />
-[Web リソース (WebResource) エンティティのメッセージおよびメソッド](/dynamics365/customer-engagement/developer/webresource-entity-messages-methods)<br />
+[Web リソース (WebResource) エンティティのメッセージおよびメソッド](https://docs.microsoft.com/powerapps/developer/common-data-service/reference/entities/webresource)<br />
 [サンプル: データ パラメーターを使用した Web リソースへの複数の値の引き渡し](sample-pass-multiple-values-web-resource-through-data-parameter.md)<br />
-[サンプル: Web リソースとしてファイルをインポート](sample-import-files-web-resources.md)<br />
+[サンプル: Web リソースとしてファイルをインポート](sample-import-files-web-resources.md)

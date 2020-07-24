@@ -22,12 +22,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: edb149b72716eb22e97ffce2d54a14be3bf84de5
-ms.sourcegitcommit: af653cd30f5879fea97a594d458d355fe18f4834
+ms.openlocfilehash: 12cc43b30b48c9bcfbb735939ad93ace1a7382c7
+ms.sourcegitcommit: 81d6996e870b55797372429d66f9b56a7200d154
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2020
-ms.locfileid: "3258520"
+ms.lasthandoff: 04/18/2020
+ms.locfileid: "3270505"
 ---
 # <a name="make-model-driven-app-grids-lists-editable-using-the-editable-grid-custom-control"></a>編集可能グリッド カスタム コントロールを使用してモデル駆動型アプリ グリッド (リスト) を編集可能にする
 
@@ -145,7 +145,9 @@ Dynamics CRM の以前のリリースでは、ユーザーはグリッド (リ�
 ## <a name="group-by-views-work-on-client-side-only"></a>ビューによるグループ化はクライアント側でのみ機能します
 グループ化動作はクライアント側でのみ機能し、ページ間を横断することはありません。 グループ化はクライアントのみの機能であり、単数ページのデータでのみ機能します。 グループ化では、サーバー上の完全なデータセットに基づいて、すべてのオプションが表示されるわけではありません。 グループ化は、現在のページでのみグループ化を示します。 カスタム コントロール構成のプロパティを使用して、グループ化を無効にすることができます。 詳しくは、[メイン グリッドを編集可能にする](#make-main-grids-editable) を参照してください
 
- 
+## <a name="business-rules-work-only-if-conditional-field-is-a-column-on-the-grid"></a>ビジネス ルールは、条件フィールドがグリッド上の列である場合にのみ動作します
+編集可能なグリッドのビジネス ルールは、条件フィールドがグリッドの列でもある場合にのみサポートされます。 フィールドが列でない場合、ビジネス ルールは動作しません。 また、ビジネス ルールで参照される各フィールドがフォーム上にも含まれていることを確認します。 編集可能なグリッドがダッシュボードで構成されている場合、編集可能なグリッドのビジネス ルールは起動しないことに注意してください。
+
 ## <a name="next-steps"></a>次のステップ  
  [編集可能グリッドでショートカット キーを使用する](https://docs.microsoft.com/dynamics365/customer-engagement/basics/keyboard-shortcuts#editable-grids-views)
 

@@ -15,12 +15,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: c6a1be2be5bda302dcdbaebf57cfb3b50cc71b14
-ms.sourcegitcommit: 5701e7a755fade6c3bac5c4a5774fcc74627e168
+ms.openlocfilehash: 51d92e0b155c93b23cc613226aaae9a8603fade3
+ms.sourcegitcommit: ee4796919a3ef520e95210468ec57f8d4baa39db
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "3115855"
+ms.lasthandoff: 06/11/2020
+ms.locfileid: "3442230"
 ---
 # <a name="customize-visualizations-and-dashboards"></a>ビジュアル化とダッシュボードのカスタマイズ
 
@@ -34,32 +34,10 @@ ms.locfileid: "3115855"
   
 - **ダッシュボード**。 ダッシュボードは、さまざまな形式でデータのスナップショットを提供することにより、モデル駆動アプリでビジネス インテリジェンス ツールとして機能します。 ダッシュボードを使用して、グラフ、グリッド、IFrame、または Web リソースからのデータを同時に提示できます。  
   
-## <a name="in-this-section"></a>このセクションの内容  
- [ビジュアル化を使用したデータの表示 (グラフ)](view-data-with-visualizations-charts.md)  
+## <a name="related-topics"></a>関連トピック  
+
+[ダッシュボードによるデータの分析](analyze-data-with-dashboards.md)<br/>
+[ビジュアル化を使用したデータの表示 (グラフ)](view-data-with-visualizations-charts.md)<br/>
+[ビジュアル化データ記述スキーマ](visualization-data-description-schema.md)  
   
- [ダッシュボードによるデータの分析](analyze-data-with-dashboards.md)  
-  
- [ビジュアル化データ記述スキーマ](visualization-data-description-schema.md)  
-  
-## <a name="related-sections"></a>関連セクション  
- [メタデータ モデルの拡張](/dynamics365/customer-engagement/developer/org-service/use-organization-service-metadata)  <!-- TODO Need to update relevant powerapps repo link-->
-  
- [エンティティ フォームのカスタマイズ](customize-entity-forms.md)  
-  
- [エンティティ ビューのカスタマイズ](customize-entity-views.md)  
-  
- [グローバル オプション セットのカスタマイズ](/dynamics365/customer-engagement/developer/org-service/customize-global-option-sets)  <!-- TODO Need to update relevant powerapps repo link-->
-  
- [SiteMap を使用したアプリケーション ナビゲーションの変更](/dynamics365/customer-engagement/developer/customize-dev/change-application-navigation-using-sitemap)  <!-- TODO Need to update relevant powerapps repo link-->
-  
- [コマンド、およびリボンをカスタマイズする](customize-commands-ribbon.md)  
-  
- [サービス カレンダーの外観の構成](/dynamics365/customer-engagement/developer/customize-dev/service-calendar-appearance-configuration)  <!-- TODO Need to update relevant powerapps repo link-->
-  
- [カスタマイズの公開](publish-customizations.md)  
-  
- [カスタマイズ ファイルを編集するとき](when-edit-customization-file.md)  
-  
- [クライアントの拡張](/dynamics365/customer-engagement/developer/extend-client)  <!-- TODO Need to update relevant powerapps repo link-->
-  
- [Web リソース](web-resources.md)
+

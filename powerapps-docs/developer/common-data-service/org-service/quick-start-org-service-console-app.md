@@ -1,6 +1,6 @@
 ---
-title: 'クイック スタート: 組織サービス サンプル (C#) (Common Data Service) | Microsoft Docs'
-description: このクイック スタートでは、  Common Data Service の組織サービスに接続する方法を説明します
+title: 'クイックスタート: 組織サービス サンプル (C#) (Common Data Service) | Microsoft Docs'
+description: このクイックスタートでは、Common Data Service の組織サービスに接続する方法を説明します
 ms.custom: ''
 ms.date: 04/25/2019
 ms.reviewer: pehecke
@@ -14,23 +14,23 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: f5b8ef34d1be214c9d9a54943166c0dce9cd9223
-ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
+ms.openlocfilehash: 12e46f3069a5362c186d8412f2d533285b0bb3ab
+ms.sourcegitcommit: 08184794f3438c8293b88dbbd16bfe8be4f6c229
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "3155987"
+ms.lasthandoff: 04/30/2020
+ms.locfileid: "3321826"
 ---
-# <a name="quick-start-organization-service-sample-c"></a>クイック スタート: 組織サービス サンプル (C#)
+# <a name="quickstart-organization-service-sample-c"></a>クイックスタート: 組織サービス サンプル (C#)
 
 これで、 Common Data Service を使用してデータ作業するために .NET SDK アセンブリでの作業を開始できます。
 
-このクイック スタートでは、<xref:Microsoft.Xrm.Tooling.Connector.CrmServiceClient> クラスを使用して組織サービスに接続するために最小限のコンソール アプリケーションを作成します。 コンストラクターに渡された接続文字列を使用して接続情報を渡します。
+このクイックスタートでは、<xref:Microsoft.Xrm.Tooling.Connector.CrmServiceClient> クラスを使用して組織サービスに接続するために最小限のコンソール アプリケーションを作成します。 コンストラクターに渡された接続文字列を使用して接続情報を渡します。
 
 <xref:Microsoft.Xrm.Sdk.IOrganizationService>.<xref:Microsoft.Xrm.Sdk.IOrganizationService.Execute*> メソッドを使用して、 <xref:Microsoft.Crm.Sdk.Messages.WhoAmIRequest> クラスのインスタンスを渡し、<xref:Microsoft.Crm.Sdk.Messages.WhoAmIResponse>.<xref:Microsoft.Crm.Sdk.Messages.WhoAmIResponse.UserId>  値を表示します。
 
 > [!NOTE]
-> このクイック スタートの例には、エラー処理は含まれません。 これは、組織サービスに接続して使用するための最小の例です。
+> このクイックスタートの例には、エラー処理は含まれません。 これは、組織サービスに接続して使用するための最小の例です。
 
 
 ## <a name="prerequisites"></a>前提条件
@@ -72,7 +72,7 @@ ms.locfileid: "3155987"
     using Microsoft.Xrm.Tooling.Connector;
     ```
 
-1. `Main` メソッドを次のコードで置き換えます。 *AuthType* のサポートされた値が、 [接続文字列のパラメータ](/dynamics365/customer-engagement/developer/xrm-tooling/use-connection-strings-xrm-tooling-connect#connection-string-parameters) に一覧表示されます。
+1. `Main` メソッドを次のコードで置き換えます。 *AuthType* のサポートされた値が、[接続文字列のパラメータ](../xrm-tooling/use-connection-strings-xrm-tooling-connect.md) に一覧表示されます。
 
     ```csharp
     static void Main(string[] args)
@@ -133,7 +133,7 @@ ms.locfileid: "3155987"
 
 ## <a name="next-steps"></a>次の手順
 
-これらのトピックでは、 Common Data Service エンティティでの作業方法について説明します:
+これらの記事では、Common Data Service エンティティでの作業方法について説明します:
 
 [組織サービスを使用したエンティティ操作](entity-operations.md)<br />
 [組織サービスを使用したエンティティの作成](entity-operations-create.md)<br />

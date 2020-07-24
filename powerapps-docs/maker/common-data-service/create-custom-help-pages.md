@@ -2,7 +2,7 @@
 title: ユーザー定義のヘルプ ページを作成する | MicrosoftDocs
 description: UCI でユーザー定義のヘルプ ページを作成する
 ms.custom: ''
-ms.date: 09/13/2019
+ms.date: 06/19/2020
 ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
@@ -22,12 +22,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 0ba852565acee10fc4c853eb185f552df6399fc9
-ms.sourcegitcommit: d98dd90a7dda11f434a13a7f8976459856d6142b
+ms.openlocfilehash: 5e5ee445c24b3f067eb2a0cd7dd66b7c1871dcb5
+ms.sourcegitcommit: c12260f372ad2cc48d3146be570d2088c9ef1d86
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/29/2020
-ms.locfileid: "3093909"
+ms.lasthandoff: 06/20/2020
+ms.locfileid: "3492582"
 ---
 # <a name="create-guided-help-for-your-unified-interface-app"></a>統一インターフェイスアプリのガイド付きヘルプを作成する
 
@@ -56,7 +56,7 @@ ms.locfileid: "3093909"
 ユーザー定義のヘルプ ウィンドウを作成するには、以下が必要になります: 
 - バージョン 9.1.0.10300 またはそれ以降。
 - **ヘルプ ページ** 特権に対するグローバル作成、読み取り、書き込み、削除、追加、および追加のアクセス許可。 既定では、システム管理者とシステムカスタマイザの両方のセキュリティ ロールがこの特権を持っています。  
-- [ご利用の環境で、ユーザー定義のヘルプ ウィンドウを有効にしている必要があります。](#enable-custom-help-panes-for-your-environment)
+- [ご利用の環境で、ユーザー定義のヘルプ ウィンドウを有効にしている必要があります。](#enable-custom-help-panes-for-your-environment) 
 
 ## <a name="enable-custom-help-panes-for-your-environment"></a>ご利用の環境で、ユーザー定義のヘルプ ウィンドウを有効にする
 1. モデル駆動形アプリを開き、コマンド バーの **設定** ![設定](../model-driven-apps/media/powerapps-gear.png) > **詳細設定**を選びます。
@@ -68,7 +68,8 @@ ms.locfileid: "3093909"
     > ![ユーザー定義ヘルプ ウィンドウを有効にする](media/enable-custom-help-panes.png "ユーザー定義ヘルプ ウィンドウを有効にする")
 
 > [!IMPORTANT]
-> ユーザー定義ヘルプ ウィンドウ、または ユーザー定義ヘルプを有効にすることができますが、同時にこの両方を有効にすることはできません。 **ユーザー定義可能なエンティティにユーザー定義のヘルプを使用する** および **URL にパラメーターを追加する** が両方とも **いいえ**に設定されていることを確認します。  
+> - ユーザー定義ヘルプ ウィンドウ、または ユーザー定義ヘルプを有効にすることができますが、同時にこの両方を有効にすることはできません。 **ユーザー定義可能なエンティティにユーザー定義のヘルプを使用する** および **URL にパラメーターを追加する** が両方とも **いいえ**に設定されていることを確認します。  
+> - 一部の環境では、**ラーニングパスを有効にする** を **はい** に設定する必要がある場合があります。
  
 ## <a name="context-sensitive-custom-help"></a>状況に依存するユーザー定義のヘルプ
 各ヘルプ ウィンドウには、次のコンテキストにごとに固有となります: 
@@ -93,9 +94,6 @@ ms.locfileid: "3093909"
     - ヘルプ ウィンドウの領域に直接文字を入力します。 
     - 太字、斜体、取り消し線、リストの作成などのリッチテキストコマンドを使用して、テキストに書式を設定します。 
     - **挿入** タブを選択して、セクション、ビデオ、イメージ、リンク、コーチマーク、およびバルーンヘルプを追加します。 
-<!-- confirm the image is safe for use
-    > [!div class="mx-imgBorder"] 
-    > ![Custom help pane edit](media/custom-help-pane-edit.png)  -->
 4.  変更を保存するには、 **保存**を選択します。  
 
 ### <a name="free-form-text"></a>自由形式のテキスト

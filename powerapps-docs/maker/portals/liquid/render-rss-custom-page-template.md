@@ -1,20 +1,19 @@
 ---
 title: ポータルのカスタム ページ テンプレートを使用する RSS フィードをレンダリングする | MicrosoftDocs
 description: カスタム ページ テンプレートを作成して RSS フィードをレンダリングする手順。
-author: tapanm-msft
-manager: kvivek
+author: gitanjalisingh33msft
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 10/07/2019
-ms.author: tapanm
-ms.reviewer: ''
-ms.openlocfilehash: d2c4956bd6d5e1a15e6308b4e40442ef15502178
-ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
+ms.author: gisingh
+ms.reviewer: tapanm
+ms.openlocfilehash: dfa4ce196a080d800d81ad48975aea4ac5eef2c2
+ms.sourcegitcommit: c12260f372ad2cc48d3146be570d2088c9ef1d86
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "2981014"
+ms.lasthandoff: 06/20/2020
+ms.locfileid: "3491362"
 ---
 # <a name="create-a-custom-page-template-to-render-an-rss-feed"></a>RSS フィードを表示するカスタム ページ テンプレートを作成する
 この例では、ニュース記事の [RSS フィード](https://en.wikipedia.org/wiki/RSS) を表示するカスタム ページ テンプレートを Liquid および Web テンプレート ページ テンプレートを使用して作成します。 [!INCLUDE[proc-more-information](../../../includes/proc-more-information.md)] [Web テンプレートを使用したソース コンテンツの保存](store-content-web-templates.md)  

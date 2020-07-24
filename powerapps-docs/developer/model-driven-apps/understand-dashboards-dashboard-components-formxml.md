@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: b01f06fa23f14c4868d4a81af941d73682e4c158
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: bab891da008d1d7c850f1a17cf273a687e765962
+ms.sourcegitcommit: 4a88daac42180283314f6bedee3d6810fd5a6c25
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2748945"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "3275935"
 ---
 # <a name="understand-dashboards-dashboard-components-and-formxml"></a>ダッシュボードについて: ダッシュボード コンポーネントと FormXML
 

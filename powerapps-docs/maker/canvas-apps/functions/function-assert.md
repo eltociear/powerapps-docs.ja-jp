@@ -1,6 +1,6 @@
 ---
 title: Assert 関数 | Microsoft Docs
-description: 構文など、Power Apps テスト スタジオの Assert 関数のリファレンス情報
+description: Power Apps テスト スタジオでの Assert 関数の構文を含む参照情報
 author: tapanm-msft
 manager: kvivek
 ms.service: powerapps
@@ -18,11 +18,11 @@ ms.sourcegitcommit: 6b2961308c41867756ecdd55f55eccbebf70f7f0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 01/23/2020
-ms.locfileid: "76541292"
+ms.locfileid: "3307603"
 ---
-# <a name="assert-function-in-power-apps-test-studio"></a>Power Apps テスト スタジオの Assert 関数
+# <a name="assert-function-in-power-apps-test-studio"></a>Power Apps テスト スタジオでの Assert 関数
 
-アサーションは、テストにおいて true または false に評価される条件または式です。 式から false が返された場合、テスト ケースは失敗します。 アサーションは、テストまたはテスト ステップの想定される結果を実際の結果に対して検証し、条件が false の場合はテストを失敗させるために使用されます。 アサーションを使用して、アプリ内のコントロール (ラベル値、リスト ボックスの選択、その他のコントロール プロパティなど) の状態を検証できます。  
+アサーションは、テストにおいて true または false に評価される条件または式です。 式が false を返す場合、テスト ケースは失敗します。 アサーションは、テストまたはテスト ステップの想定される結果を実際の結果に対して検証し、条件が false の場合はテストを失敗させるために使用されます。 アサーションを使用して、アプリ内のコントロール (ラベル値、リスト ボックスの選択、その他のコントロール プロパティなど) の状態を検証できます。  
 
 成功したアサーションと失敗したアサーションの両方に対するアサーション メッセージが、TestCaseResult レコードの Traces テーブルにも含まれます。 
 
@@ -40,7 +40,7 @@ ms.locfileid: "76541292"
 ```Assert(ListBox1.Selected.Value = "Success", "ListBox1 selection Expected : Success,  Actual : " & ListBox1.Selected.Value)```<br>
 ```Assert(kudosAfterTest = kudosBeforeTest + 1, "Kudos count. Expected : " & kudosBeforeTest + 1  & " Actual :" & kudosAfterTest)```
 
-### <a name="see-also"></a>参照
+### <a name="see-also"></a>関連項目
 
-[テスト スタジオの概要](../test-studio.md) <br>
-[テスト スタジオの操作](../working-with-test-studio.md)
+[Test Studio の概要](../test-studio.md) <br>
+[Test Studio の操作](../working-with-test-studio.md)

@@ -21,12 +21,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: d89f040bf7030706f9f7288021249e3b78dcd3e5
-ms.sourcegitcommit: 9f2694bd14d70798310b89a4673672c1bfad989d
+ms.openlocfilehash: 0bec69577b352a87024ccf6ab3ea67021d85878b
+ms.sourcegitcommit: 82fa1758e29fe302f9a252fd9943ace03b7aada0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "3167063"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "3427553"
 ---
 # <a name="behavior-and-format-of-the-date-and-time-field"></a>日時フィールドの動作と形式
 
@@ -112,8 +112,8 @@ UTC とユーザー ローカルの間でデータが変換される場合、Web
 
 [フィールドの作成および編集](create-edit-fields.md)<br />
 [計算フィールドを定義して手動計算を自動化する](define-calculated-fields.md)<br />
-[フィールド管理プロパティ](set-managed-properties-metadata.md#view-and-edit-field-managed-properties)<br />
-[マネージド プロパティ](solutions-overview.md#managed-properties)  
+[フィールド管理プロパティ](/power-platform/alm/managed-properties-alm#view-and-edit-field-managed-properties)<br />
+[マネージド プロパティ](/power-platform/alm/managed-properties-alm)  
 [ブログ: Common Data Service のタイムゾーンの操作](https://powerapps.microsoft.com/en-us/blog/working-with-time-zones-in-the-common-data-service/)
 
 

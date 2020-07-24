@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 0dfaf5f41207106d217fa90f64bff1b3a2c4d124
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: c79e744d24a233406e33ea33a6b2bc9a38b567c7
+ms.sourcegitcommit: 4a88daac42180283314f6bedee3d6810fd5a6c25
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749020"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "3275963"
 ---
 # <a name="script-jscript-web-resources"></a>スクリプト (JScript) Web リソース
 
@@ -56,8 +56,8 @@ ms.locfileid: "2749020"
  [JavaScript を使用したクライアント スクリプト](client-scripting.md)   
  [Web リソース](web-resources.md)   
  [Web ページ (HTML) の Web リソースの使用](webpage-html-web-resources.md)   
- [スタイルシート (CSS) ウェブ リソースを使用する](css-web-resources.md)   
+ [スタイル シート (CSS) Web リソースの使用](css-web-resources.md)   
  [データ (XML) Web リソースの使用](data-xml-web-resources.md)   
- [画像 (JPG、PNG、GIF、ICO) Web リソースの使用](image-web-resources.md)   
+ [画像 (JPG、PNG、GIF) Web リソースの使用](image-web-resources.md)   
  [スタイルシート (XSL) Web リソースの使用](stylesheet-xsl-web-resources.md)   
  [Fiddler の AutoResponder を使用して Web リソース開発を合理化する](streamline-javascript-development-fiddler-autoresponder.md)    

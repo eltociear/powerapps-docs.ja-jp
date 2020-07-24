@@ -2,7 +2,7 @@
 title: Web リソースの依存関係 (モデル駆動型アプリ) | MicrosoftDocs
 description: Common Data Service の Web リソース間の依存関係の定義について説明します。
 ms.custom: ''
-ms.date: 10/31/2018
+ms.date: 05/07/2020
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: article
@@ -14,16 +14,14 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 4c48a508a9e42e60dc3b9e9e0e374c7d72f1b11c
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 54e7a817bbc5273038576b9fc610af065fe1911a
+ms.sourcegitcommit: ed423b9382bf183d0b28907039d3432b99d4e7f0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749367"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "3353492"
 ---
 # <a name="web-resource-dependencies"></a>Web リソースの依存関係
-
-<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/web-resource-dependencies -->
 
 他の Web リソース間の依存関係を定義できます。 この機能の主な目的は、文字列 (RESX) Web リソースと、それを使用する JavaScript Web リソースとの関連付けを可能にすることです。 また、これにより、オフライン使用のために HTML Web リソースが必要とする Web リソースも、オフラインで利用できるように設定することができます。 
 
@@ -40,7 +38,7 @@ ms.locfileid: "2749367"
 
 最も一般的なシナリオは、文字列 (RESX) Web リソースをそれに依存する Javascript Web リソースに関連付けることです。 文字列 (RESX) Web リソースは、それを使用する JavaScript Web リソースに関連付けられる各言語対応のものがあります。 その JavaScript Web リソースが読み込まれると、ローカライズされた値もユーザーの優先する言語と組織の基本言語用に自動的に読み込まれ、使用できるようになります。 いずれにせよこれらのリソース間のソリューション依存関係は作成する必要があるため、必要とするときに依存 RESX リソースが自動的に読み込まれることを知るというさらなる利点があります。
 
-ただし、Web リソースの依存関係は RESX Web リソースだけに限られません。 JavaScript Web リソースを任意の他のタイプの Web リソースに関連付けて、その関連付けられた Web リソースを JavaScript Web リソースと共に読み込ませる依存関係を作成することができます。 これにより、フォーム イベントのスクリプトを登録するときに複数の依存 Web リソースを明示的に読み込む必要がなく、ただプライマリ スクリプトを登録して依存構成に残りを読み込ませるため、時間の節約になります。 プライマリ JavaScript Web リソースのために読み込まれる JavaScript Web リソースにはそれに関連付けられた Web リソースがすべて含まれるため、依存関係のチェーンを作成することもできます。
+ただし、Web リソースの依存関係は RESX Web リソースだけに限られません。 JavaScript Web リソースを任意の他のタイプの Web リソースに関連付けて、その関連付けられた Web リソースを JavaScript Web リソースと共に読み込ませる依存関係を作成することができます。 これにより、[フォームイベント](/powerapps/developer/model-driven-apps/clientapi/reference/events#form-events)、[リボン コマンド](/powerapps/developer/model-driven-apps/define-ribbon-commands)、またはリボン [有効化ルール](/powerapps/developer/model-driven-apps/define-ribbon-enable-rules) のスクリプトを登録するときに、複数の依存 Web リソースを明示的に読み込む必要がなく、ただプライマリ スクリプトを登録して依存構成に残りを読み込ませるため、時間の節約になります。 プライマリ JavaScript Web リソースのために読み込まれる JavaScript Web リソースにはそれに関連付けられた Web リソースがすべて含まれるため、依存関係のチェーンを作成することもできます。
 
 > [!IMPORTANT]
 > Web リソースの依存関係は、Web リソースが読み込まれる順序を制御しません。 すべての Web リソースは非同期にまた並行して読み込まれます。 JavaScript Web リソースが、初期化する前に読み込んで初期化すべき他の JavaScript Web リソースに依存している場合は、別の方法でその依存関係を管理する必要があります。

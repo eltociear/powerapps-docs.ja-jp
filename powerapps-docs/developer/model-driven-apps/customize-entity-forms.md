@@ -2,7 +2,7 @@
 title: エンティティ フォームのカスタマイズ (モデル駆動型アプリ) | MicrosoftDocs
 description: フォームには、エンティティ レコードを作成、表示、編集するために使用するユーザー インターフェイス (UI) が用意されています。 エンティティ フォームを作成または編集するには、カスタマイズ ツールのフォーム デザイナーを使用します。 このトピックでは、フォームをプログラムで作成または編集するために必要な情報を提供します。
 keywords: ''
-ms.date: 10/31/2018
+ms.date: 03/10/2020
 ms.service: powerapps
 ms.topic: article
 ms.assetid: e6a25bbe-e484-cfe9-9ad9-20ac6f19336a
@@ -15,12 +15,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: f81937377d647aae58f189236c1d656d6ab988e5
-ms.sourcegitcommit: a1b54333338abbb0bc3ca0d7443a5a06b8945228
+ms.openlocfilehash: b5ca535e329f20813662e9a218ed47da19d09a08
+ms.sourcegitcommit: 4a88daac42180283314f6bedee3d6810fd5a6c25
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "3126506"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "3275939"
 ---
 # <a name="customize-entity-forms"></a>エンティティ フォームのカスタマイズ
 
@@ -82,10 +82,10 @@ ms.locfileid: "3126506"
 
 クライアント API を使用してダイアログでメイン フォームを開くには、 [Xrm.Navigation.navigateTo](https://docs.microsoft.com/powerapps/developer/model-driven-apps/clientapi/reference/xrm-navigation/navigateto) メソッドを使用して呼び出す必要があります。 [Xrm.Navigation.navigateTo](https://docs.microsoft.com/powerapps/developer/model-driven-apps/clientapi/reference/xrm-navigation/navigateto)API メソッドを使用すると、サイズや位置などのオプションが表示されたダイアログを開くことができます。
 
+
 > [!IMPORTANT]
 > - クライアント API を使用したダイアログでメインフォームを開く機能は現在プレビューの状態です。
-> - プレビュー機能は運用環境での使用を想定しておらず、機能が制限されている可能性があります。 これらの機能を公式リリースの前に使用できるようにすることで、顧客が一足先にアクセスし、そこからフィードバックを得ることができます。
-
+> - プレビュー機能は運用環境での使用を想定しておらず、機能が制限される可能性があります。 これらの機能を公式リリースの前に使用できるようにすることで、顧客が一足先にアクセスし、そこからフィードバックを得ることができます。
 
 > [!NOTE]
 > [Xrm.Navigation.openForm](https://docs.microsoft.com/powerapps/developer/model-driven-apps/clientapi/reference/xrm-navigation/openform)メソッドでは、メインフォームをダイアログで開くことには対応していません。
@@ -97,7 +97,17 @@ ms.locfileid: "3126506"
 この例では、ダイアログが新規レコードを作成する新たな取引先企業のフォームを開きます。 ダイアログは、呼び出し元のフォームの最上部にモード形式の使用可能なウィンドウの最大50%を使用して中央にポップアップされます。
 
 ```JavaScript
-Xrm.Navigation.navigateTo({pageType:"entityrecord", entityName:"account", formType:2}, {target: 2, position: 1, width: {value: 50, unit:"%"}});
+var pageInput = {
+    pageType: "entityrecord",
+    entityName: "account",
+    formType: 2,
+};
+var navigationOptions = {
+    target: 2,
+    width: {value: 50, unit:"%"},
+    position: 1
+};
+Xrm.Navigation.navigateTo(pageInput, navigationOptions);
 ```
 > [!div class="mx-imgBorder"]
 > ![新しいレコードを開く](media/open-new-record-mfd.png "新しいレコードを開く")
@@ -107,7 +117,18 @@ Xrm.Navigation.navigateTo({pageType:"entityrecord", entityName:"account", formTy
 この例では、ダイアログが連絡先フォームの取引先企業のエンティティID値を使用して既存の取引先企業レコードを開きます。 このエンティティの ID を、ダイアログにて開くレコードの ID に置き換えます。
 
 ```JavaScript
-Xrm.Navigation.navigateTo({pageType:"entityrecord", entityName:"account", formType:2, entityId:"xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"}, {target: 2, position: 1, width: {value: 80, unit:"%"}});
+var pageInput = {
+    pageType: "entityrecord",
+    entityName: "account",
+    formType: 2,
+    entityId: "5a57f2c3-5672-ea11-a812-000d3a339706" //replace with actual ID
+};
+var navigationOptions = {
+    target: 2,
+    width: {value: 80, unit:"%"},
+    position: 1
+};
+Xrm.Navigation.navigateTo(pageInput, navigationOptions);
 ```
 > [!div class="mx-imgBorder"]
 > ![既存のレコードを開く](media/open-existing-record-mfd.png "既存のレコードを開く")
@@ -117,7 +138,17 @@ Xrm.Navigation.navigateTo({pageType:"entityrecord", entityName:"account", formTy
 この例では、ダイアログ ウィンドウの右隅で新しいレコードを開きます。 これは、ピクセル オプションを使用して実現できます。
 
 ```JavaScript
-Xrm.Navigation.navigateTo({pageType:"entityrecord", entityName:"account", formType:2}, {target: 2, position: 2, width: {value: 500, unit:"px"}});
+var pageInput = {
+    pageType: "entityrecord",
+    entityName: "account",
+    formType: 2,
+};
+var navigationOptions = {
+    target: 2,
+    width: {value: 500, unit:"px"},
+    position: 2
+};
+Xrm.Navigation.navigateTo(pageInput, navigationOptions);
 ```
 > [!div class="mx-imgBorder"]
 > ![サイド ウィンドウで既存のレコードを開きます](media/open-record-side-pane-mfd.png "サイド ウィンドウで既存のレコードを開きます")
@@ -127,13 +158,26 @@ Xrm.Navigation.navigateTo({pageType:"entityrecord", entityName:"account", formTy
 この例では、レコードを保存してダイアログを閉じた後に、メインフォームのダイアログがコールバック メソッドでどのように呼び出されるかを示しています。
 
 ```Javascript
-Xrm.Navigation.navigateTo({pageType:"entityrecord", entityName:"account", formType:2},{target: 2, position: 2, width: {value: 80, unit:"%"}}).then(
-    function (retVal) {
-        console.log(retVal.savedEntityReference[0].id + ", " + retVal.savedEntityReference[0].name)
+var pageInput = {
+    pageType: "entityrecord",
+    entityName: "account",
+    formType: 2
+};
+var navigationOptions = {
+    target: 2,
+    width: {value: 80, unit:"%"},
+    position: 2  
+};
+Xrm.Navigation.navigateTo(pageInput, navigationOptions).then(
+    function success(result) {
+            console.log("Record created with ID: " + result.savedEntityReference[0].id + 
+            " Name: " + result.savedEntityReference[0].name)
+            // Handle dialog closed
     },
-    function (error) {
-        console.log(error);
-    });
+    function error() {
+            // Handle errors
+    }
+);
 ```
 
 ### <a name="see-also"></a>関連項目  

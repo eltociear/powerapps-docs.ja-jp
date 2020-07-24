@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 34ca8223ecf08bda2ed38353684a0971ab289b19
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 759c43e922d6d0d17f7efbf84ae8f442ee19850a
+ms.sourcegitcommit: 6c73e316f866af6a34619f95a5ac64ad1664b48a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749023"
+ms.lasthandoff: 05/01/2020
+ms.locfileid: "3326373"
 ---
 # <a name="sample-charts"></a>サンプル グラフ
 
@@ -92,7 +92,7 @@ ms.locfileid: "2749023"
   
 <a name="BarChart"></a>   
 ## <a name="bar-chart"></a>横棒グラフ  
- 次に示すのは、上位 10 件の顧客を表示する棒グラフです。 これは、MDA で `Opportunity` エンティティに使用できる既定のグラフの 1 つです。  
+ 次に示すのは、上位 10 件の顧客を表示する棒グラフです。 これは、`Opportunity` エンティティのモデル駆動型アプリで使用できる既定のグラフの 1 つです。  
   
  ![横棒グラフのサンプル: 上位 10 件の顧客](media/charts-top-10-customers.gif "横棒グラフのサンプル: 上位 10 件の顧客")  
   
@@ -212,7 +212,7 @@ ms.locfileid: "2749023"
   
 <a name="LineChart"></a>   
 ## <a name="line-chart"></a>折れ線グラフ  
- 次に示すのは、過去 5 か月間に生成された潜在顧客の数を表す折れ線グラフです。 これは、MDA で `Lead` エンティティに使用できる既定のグラフの 1 つです。 
+ 次に示すのは、過去 5 か月間に生成された潜在顧客の数を表す折れ線グラフです。 これは、`Lead` エンティティのモデル駆動型アプリで使用できる既定のグラフの 1 つです。 
   
 ![折れ線グラフのサンプル: 潜在顧客の生成率](media/lead-generation-rate-chart.png "折れ線グラフのサンプル: 潜在顧客の生成率") --> 
   
@@ -269,7 +269,7 @@ ms.locfileid: "2749023"
   
 <a name="PieChart"></a>   
 ## <a name="pie-chart"></a>円グラフ  
- 次に示すのは、潜在顧客の総数とそれらの重要度を表す円グラフです。 これは、MDA で `Lead` エンティティに使用できる既定のグラフの 1 つです。  
+ 次に示すのは、潜在顧客の総数とそれらの重要度を表す円グラフです。 これは、`Lead` エンティティのモデル駆動型アプリで使用できる既定のグラフの 1 つです。  
   
  ![円グラフのサンプル: 評価別潜在顧客](media/leads-by-source-chart.png "円グラフのサンプル: 評価別潜在顧客")  
   
@@ -323,7 +323,7 @@ ms.locfileid: "2749023"
   
 <a name="FunnelChart"></a>   
 ## <a name="funnel-chart"></a>じょうごグラフ  
- 次に示すのは、営業パイプラインの各ステージでの売上見込み合計を表すじょうごグラフです。 これは、MDA で `Opportunity` エンティティに使用できる既定のグラフの 1 つです。  
+ 次に示すのは、営業パイプラインの各ステージでの売上見込み合計を表すじょうごグラフです。 これは、`Opportunity` エンティティのモデル駆動型アプリで使用できる既定のグラフの 1 つです。  
   
  ![じょうごグラフのサンプル: 営業パイプライン](media/charts-sales-pipeline-chart.png "じょうごグラフのサンプル: 営業パイプライン")  
   
@@ -379,7 +379,7 @@ ms.locfileid: "2749023"
   
 ## <a name="multi-series-chart"></a>複数系列グラフ  
 
- 次に示すのは、月ごとの売上見込みと実売上の対比を示す複数系列グラフです。 MDA のグラフ デザイナー、または開発者ドキュメントに記載されているメソッドを使用して、これらの種類のグラフを作成できます。  
+ 次に示すのは、月ごとの売上見込みと実売上の対比を示す複数系列グラフです。 モデル駆動型アプリのグラフ デザイナー、または開発者ドキュメントに記載されているメソッドを使用して、これらの種類のグラフを作成できます。  
   
  複数系列グラフでは、データ記述に複数の `<measurecollection>` 要素が含まれ、そのそれぞれが、プレゼンテーション記述 XML 文字列内の対応する `<Series>` 要素にマッピングされています。  
   
@@ -458,7 +458,7 @@ ms.locfileid: "2749023"
   
 <a name="ComparisonChart"></a>   
 ## <a name="comparison-chart-stacked-chart"></a>比較グラフ (積み上げグラフ)  
- 次に示すのは、活動の数を種類と重要度ごとに表す比較グラフです。 MDA のグラフ デザイナー、または開発者ドキュメントに記載されているメソッドを使用して、これらの種類のグラフを作成できます。  
+ 次に示すのは、活動の数を種類と重要度ごとに表す比較グラフです。 モデル駆動型アプリのグラフ デザイナー、または開発者ドキュメントに記載されているメソッドを使用して、これらの種類のグラフを作成できます。  
   
  比較グラフには、データ記述 XML 内に 2 つの `groupby` 句があります。  
   
@@ -525,7 +525,7 @@ ms.locfileid: "2749023"
 
 ## <a name="comparison-chart-100-stacked-chart"></a>比較グラフ (100% 積み上げグラフ)  
 
- 次に示すのは、任意の日付に開かれたサポート案件の数を重要度ごとに表す比較グラフです。 MDA のグラフ デザイナー、または Web サービスで使用可能なメソッドを使用して、これらの種類のグラフを作成できます。  
+ 次に示すのは、任意の日付に開かれたサポート案件の数を重要度ごとに表す比較グラフです。 モデル駆動型アプリのグラフ デザイナー、または Web サービスで使用できるメソッドを使用して、これらの種類のグラフを作成できます。  
   
  比較グラフには、データ記述 XML 内に 2 つの `groupby` 句があります。  
   
@@ -588,6 +588,7 @@ ms.locfileid: "2749023"
 ```  
   
 ### <a name="see-also"></a>関連項目  
+
  [データのビジュアル化および分析](customize-visualizations-dashboards.md)   
  [ビジュアル化データ記述スキーマ](visualization-data-description-schema.md)   
  [グラフの作成](create-visualization-chart.md)   

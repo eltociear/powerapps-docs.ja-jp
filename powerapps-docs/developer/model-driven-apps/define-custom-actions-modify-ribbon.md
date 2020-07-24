@@ -15,12 +15,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 368801cbac62fee5f51646959c6f62380a6c61db
-ms.sourcegitcommit: 5701e7a755fade6c3bac5c4a5774fcc74627e168
+ms.openlocfilehash: 13c793dbc4e9011ee1d5685374010a7b9e204ffe
+ms.sourcegitcommit: 4a88daac42180283314f6bedee3d6810fd5a6c25
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "3115863"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "3276131"
 ---
 # <a name="define-custom-actions-to-modify-the-ribbon"></a>ユーザー定義のアクションによるリボンの変更
 
@@ -61,6 +61,6 @@ ms.locfileid: "3115863"
  **HideActionId** 要素は、アクションの一意の ID を提供します。 整合性と可読性を保つため、`<CustomAction>` 要素で説明した命名規則に従います。 **Location** 属性は、削除するリボン要素の ID と一致させる必要があります。  
   
 ### <a name="see-also"></a>関連項目  
- [コマンド、およびリボンをカスタマイズする](customize-commands-ribbon.md)   
+ [コマンドとリボンのカスタマイズ](customize-commands-ribbon.md)   
  [データをページからパラメーターとしてリボン操作に渡す](/dynamics365/customer-engagement/developer/customize-dev/pass-dynamics-365-data-page-parameter-ribbon-actions)<br/>   <!-- TODO need to update the relevant Power Apps repo link-->
  [リボン要素のスケーリングの定義](define-scaling-ribbon-elements.md)

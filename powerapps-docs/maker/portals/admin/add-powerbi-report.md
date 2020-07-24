@@ -1,24 +1,26 @@
 ---
 title: Power BI レポートまたはダッシュボードをポータルの Web ページに追加 | MicrosoftDocs
 description: ポータルの Web ページへ Power BI レポートまたはダッシュボードを追加するための手順。
-author: tapanm-msft
-manager: kvivek
+author: neerajnandwana-msft
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 11/22/2019
-ms.author: tapanm
-ms.reviewer: ''
-ms.openlocfilehash: babd35989529b66f0c32cdd6e61ba2ef77e8c601
-ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
+ms.date: 05/13/2019
+ms.author: nenandw
+ms.reviewer: tapanm
+ms.openlocfilehash: e32b83dd3f667b4035a0b029af5c2c64f5e10d38
+ms.sourcegitcommit: 2fd873a1ea17f419f6194714efffa47a9bd00c2e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "2977626"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "3506871"
 ---
 # <a name="add-a-power-bi-report-or-dashboard-to-a-web-page-in-portal"></a>Power BI レポートまたはダッシュボードをポータルの Web ページに追加
 
-[powerbi](../liquid/portals-entity-tags.md#powerbi) Liquid タグを使用して、Power BI レポートまたはダッシュボードをポータルの Web ページへ追加できます。 Web ページの**コピー**フィールドまたは Web テンプレートの**ソース**フィールドにタグを追加できます。 Power BI の新しいワークスペースに、作成した Power BI レポートやダッシュボードを追加する場合、認証の種類を powerbi Liquid タグの **powerbiembedded** として指定する必要があります。
+[powerbi](../liquid/portals-entity-tags.md#powerbi) Liquid タグを使用して、Power BI レポートまたはダッシュボードをポータルの Web ページへ追加できます。 Web ページの**コピー**フィールドまたは Web テンプレートの**ソース**フィールドにタグを追加できます。 Power BI の新しいワークスペースに、作成した Power BI レポートやダッシュボードを追加する場合、*powerbi* タグの認証の種類を  **powerbiembedded** として指定する必要があります。
+
+> [!TIP]
+> この記事では、*powerbi* のリキッド タグを使用して Power BI レポートやダッシュボードを追加する方法について説明します。 ポータルスタジオを使用して、 **Power BI コンポーネント**を Web ページに追加するには、[ポータル スタジオを使用して Power BI コンポーネントを Web ページに追加する](../compose-page.md#add-power-bi) に移動します。
 
 たとえば、次のようなものです。 
 
@@ -59,6 +61,6 @@ ms.locfileid: "2977626"
 
 ### <a name="see-also"></a>関連項目
 
-
-[Power BIの Liquid タグ](../liquid/portals-entity-tags.md#powerbi)<br> 
-[Power BI 統合の設定](set-up-power-bi-integration.md)
+- [ポータル スタジオを使用して、Power BI コンポーネントを Web ページに追加する](../compose-page.md#add-power-bi)
+- [Power BI 統合の設定](set-up-power-bi-integration.md)
+- [Power BIの Liquid タグ](../liquid/portals-entity-tags.md#powerbi)

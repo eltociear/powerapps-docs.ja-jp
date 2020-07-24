@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 6da18a7795f2e39e5f51f62403327bcfef09287c
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: d608ba21126006267ed285f7b4075e500a0e77f3
+ms.sourcegitcommit: b5ab419dad4e9d64a5e6610641363b0d7487930a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2754572"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "3465609"
 ---
 # <a name="publish-request-schema"></a>Publish 要求スキーマ
 
@@ -119,4 +119,4 @@ ms.locfileid: "2754572"
 ### <a name="see-also"></a>関連項目  
  <xref:Microsoft.Crm.Sdk.Messages.PublishXmlRequest>   
  [カスタマイズの公開](publish-customizations.md)   
- [モデル駆動型アプリで使用するスキーマ](/dynamics365/customer-engagement/developer/schemas-used-dynamics-365)
+ 

@@ -1,5 +1,5 @@
 ---
-title: 関数、シグナル、列挙型 | Microsoft Docs
+title: 関数、シグナル、列挙体 | Microsoft Docs
 description: Power Apps の関数、シグナル、および列挙体に関する参照情報。
 author: gregli-msft
 manager: kvivek
@@ -7,26 +7,26 @@ ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: tapanm
-ms.date: 03/21/2020
+ms.date: 05/20/2020
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 49f25d01c646916738e583729e12e7b0544f7390
-ms.sourcegitcommit: 1b29cd1fa1492037ef04188dd857a911edeb4985
-ms.translationtype: MT
+ms.openlocfilehash: 5678b69f3d08c2c08cf19ad063f08269e210dd41
+ms.sourcegitcommit: 4b6f187c9501332f9acca5978fa326621f2980e5
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80122800"
+ms.lasthandoff: 05/22/2020
+ms.locfileid: "3393972"
 ---
-# <a name="formula-reference-for-power-apps"></a>Power Apps の数式のリファレンス
+# <a name="formula-reference-for-power-apps"></a>Power Apps 向けの数式のリファレンス
 数式では、多くの要素を組み合わせて使用します。  使用できる要素は、次のとおりです。
 
-* **関数**: パラメーターを受け取り、演算を実行し、値を返します。 たとえば、**Sqrt(25)** は **5** を返します。 関数は、Microsoft Excel 関数をモデルにしています。  関数の中には、副作用を生じるものがあります。たとえば、**SubmitForm** 関数は、[Button.OnSelect](working-with-formulas-in-depth.md) のような**動作の数式**でのみ正しく機能します。
-* **シグナル**: 環境に関する情報を返します。 たとえば、 **[Location](functions/signals.md)** は、デバイスの現在の GPS 座標を返します。 シグナルは、パラメーターを受け取らず、副作用もありません。
-* **列挙型**: 事前定義された定数値を返します。 たとえば、 **[Color](functions/function-colors.md)** は、**Color.Red** や **Color.Blue** などの事前定義された値を持つ列挙型です。  一般的な列挙体がこのページに記載されています。関数に固有の列挙型は、関数と併せて説明しています。
-* ThisItem **[ や ](functions/operators.md#thisitem-operator)** Parent **[ などの](functions/operators.md#parent-operator)名前付き演算子**を使用すると、コンテナー内から情報にアクセスできます。
+* **関数**はパラメーターを受け取り、演算を実行し、値を返します。 たとえば、**Sqrt(25)** は **5** を返します。 関数は、Microsoft Excel 関数をモデルにしています。  関数の中には、副作用を生じさせるものがあります。たとえば、**SubmitForm** 関数は、**Button.OnSelect** のような[動作の数式](working-with-formulas-in-depth.md)内でのみ正しく機能します。
+* **シグナル**は、環境に関する情報を返します。 たとえば、**[Location](functions/signals.md)** は、デバイスの現在の GPS 座標を返します。 シグナルは、パラメーターを受け取らず、副作用もありません。
+* **列挙体**は、事前定義された定数値を返します。 たとえば、**[Color](functions/function-colors.md)** は、**Color.Red** や **Color.Blue** などの事前定義された値を持つ列挙体です。  一般的な列挙体がこのページに記載されています。関数に固有の列挙体は、関数と併せて説明しています。
+* **[ThisItem](functions/operators.md#thisitem-operator)** や **[Self](functions/operators.md#self-and-parent-operators)** などの**名前付き演算子**を使用すると、コンテナー内から情報にアクセスできます。
 
 上記の他にも、次のような要素を使用できます。
 
@@ -35,7 +35,7 @@ ms.locfileid: "80122800"
 * [データ型](functions/data-types.md)
 
 ## <a name="a"></a>A
-**[Abs](functions/function-numericals.md)** – 数値の絶対値を返します。  
+**[Abs](functions/function-numericals.md)** – 数値の絶対値です。  
 
 **[Acceleration](functions/signals.md)** – デバイス内の加速度センサーを読み取ります。
 
@@ -45,7 +45,7 @@ ms.locfileid: "80122800"
 
 **[AddColumns](functions/function-table-shaping.md)** – [列](working-with-tables.md#columns)が追加されたテーブルを返します。
 
-**[And](functions/function-logicals.md)** – ブール論理の AND です。  すべての引数が **true** の場合に **true** を返します。  [ **&&** 演算子](functions/operators.md)を使用することもできます。
+**[And](functions/function-logicals.md)** – ブール論理の AND です。  すべての引数が **true** の場合に **true** を返します。  [**&&** 演算子](functions/operators.md)を使用することもできます。
 
 **[App](functions/object-app.md)** – 現在実行中のアプリとアプリの動作に対する制御に関する情報を提供します。
 
@@ -53,7 +53,7 @@ ms.locfileid: "80122800"
 
 **[Assert](functions/function-assert.md)** – テストで true または false に評価されます。
 
-**[AsType](functions/function-astype-istype.md)** – レコード参照を特定のエンティティ型として扱います。
+**[AsType](functions/function-astype-istype.md)** – レコード参照を特定のエンティティの種類として扱います。
 
 **[Atan](functions/function-trig.md)** – 数値のアークタンジェントをラジアン単位で返します。
 
@@ -64,14 +64,14 @@ ms.locfileid: "80122800"
 ## <a name="b"></a>B
 **[Back](functions/function-navigate.md)** – 前の画面を表示します。  
 
-**[Blank](functions/function-isblank-isempty.md)** – "*空白*" の値を返します。データ ソースに NULL 値を挿入するために使用できます。
+**[Blank](functions/function-isblank-isempty.md)** – *空白*の値を返します。データ ソースに NULL 値を挿入するために使用できます。
 
 ## <a name="c"></a>C
 **[Calendar](functions/function-clock-calendar.md)** – 現在のロケールのカレンダーに関する情報を取得します。
 
 **[Char](functions/function-char.md)** – 文字コードを文字列に変換します。
 
-**[Choices](functions/function-choices.md)** – ルックアップ列で使用可能な値のテーブルを返します。
+**[Choices](functions/function-choices.md)** – 検索列で使用可能な値のテーブルを返します。
 
 **[Clear](functions/function-clear-collect-clearcollect.md)** – [コレクション](working-with-data-sources.md#collections)からすべてのデータを削除します。
 
@@ -79,7 +79,7 @@ ms.locfileid: "80122800"
 
 **[Clock](functions/function-clock-calendar.md)** – 現在のロケールの時計に関する情報を取得します。
 
-**[Coalesce](functions/function-isblank-isempty.md)** – *空*以外の値は変更せずに、*空*の値を置き換えます。
+**[Coalesce](functions/function-isblank-isempty.md)** – *空白*以外の値は変更せずに、*空白*の値を置き換えます。
 
 **[Collect](functions/function-clear-collect-clearcollect.md)** – コレクションを作成するか、データ ソースにデータを追加します。
 
@@ -87,7 +87,7 @@ ms.locfileid: "80122800"
 
 **[ColorFade](functions/function-colors.md)** – 色の値をフェードします。
 
-**[ColorValue](functions/function-colors.md)** – CSS 色名または 16 進コードを色の値に変換します。  
+**[ColorValue](functions/function-colors.md)** – CSS 色名または 16 進数コードを色の値に変換します。  
 
 **[Compass](functions/signals.md)** – コンパスの方位を返します。
 
@@ -134,7 +134,7 @@ ms.locfileid: "80122800"
 
 **[Distinct](functions/function-distinct.md)** – 重複を削除してテーブルのレコードを集約します。  
 
-**[Download](functions/function-param.md)** – Web からローカル デバイスにファイルをダウンロードします。
+**[Download](functions/function-download.md)** – Web からローカル デバイスにファイルをダウンロードします。
 
 **[DropColumns](functions/function-table-shaping.md)** – 1 つ以上の列を削除してテーブルを返します。
 
@@ -149,7 +149,7 @@ ms.locfileid: "80122800"
 
 **[EncodeUrl](functions/function-encode-decode.md)** – URL エンコードを使用して特殊文字をエンコードします。
 
-**[Exit](functions/function-exit.md)** –現在実行中のアプリを終了し、必要に応じて現在のユーザーをサインアウトします。
+**[Exit](functions/function-exit.md)** – 現在実行中のアプリを終了し、オプションで現在のユーザーをサインアウトします。
 
 **[Exp](functions/function-numericals.md)** - *e* の累乗を返します。
 
@@ -170,11 +170,11 @@ ms.locfileid: "80122800"
 **[GUID](functions/function-guid.md)** – GUID 文字列を GUID 値に変換するか、新しい GUID 値を作成します。
 
 ## <a name="h"></a>H
-**[HashTags](functions/function-hashtags.md)** – 文字列からハッシュタグ (#文字列) を抽出します。
+**[HashTags](functions/function-hashtags.md)** – 文字列からハッシュタグ (# 文字列) を抽出します。
 
-**[Hour](functions/function-datetime-parts.md)** – 日付/時刻値の時間の部分を取得します。
+**[Hour](functions/function-datetime-parts.md)** – 日付/時刻値の時間の部分を返します。
 
-## <a name="i"></a>i
+## <a name="i"></a>I
 **[If](functions/function-if.md)** – 条件が true の場合とそうでない場合とで異なる値を返します。 
 
 **[IfError](functions/function-iferror.md)** – エラーを検出し、代替値を提供するか、操作を実行します。 
@@ -183,13 +183,15 @@ ms.locfileid: "80122800"
 
 **[IsEmpty](functions/function-isblank-isempty.md)** – 空のテーブルがないかを調べます。
 
+**[IsError](functions/function-iferror.md)** – エラーがないかを調べます。
+
 **[IsMatch](functions/function-ismatch.md)** – 文字列をパターンと照合します。  正規表現を使用できます。
 
 **[IsNumeric](functions/function-isnumeric.md)** – 数値がないかを調べます。
 
 **[IsToday](functions/function-now-today-istoday.md)** – 日付/時刻値が今日に当たるかどうかを調べます。
 
-**[IsType](functions/function-astype-istype.md)** – レコード参照が特定のエンティティ型を表しているかどうかを確認します。
+**[IsType](functions/function-astype-istype.md)** – レコード参照が特定のエンティティの種類を参照しているかどうかを確認します。
 
 ## <a name="j"></a>J
 **[JSON](functions/function-json.md)** - テーブル、レコード、または値の JSON テキスト文字列を生成します。
@@ -201,7 +203,7 @@ ms.locfileid: "80122800"
 
 **[LastN](functions/function-first-last.md)** – テーブルの最後のレコード セット (N 個のレコード) を返します。
 
-**[Launch](functions/function-param.md)** – Web アドレスまたはアプリを起動します。
+**[Launch](functions/function-param.md)** – Web ページまたはキャンバス アプリを起動します。
 
 **[Left](functions/function-left-mid-right.md)** – 文字列の左端部分の文字を返します。
 
@@ -209,7 +211,7 @@ ms.locfileid: "80122800"
 
 **[Ln](functions/function-numericals.md)** – 自然対数を返します。
 
-**[LoadData](functions/function-savedata-loaddata.md)** –ローカルデバイスのストレージからコレクションを読み込みます。
+**[LoadData](functions/function-savedata-loaddata.md)** – ローカル デバイスのストレージからコレクションを読み込みます。
 
 **[Location](functions/signals.md)** – GPS (Global Positioning System) などの情報を使用して現在地を地図座標として返します。
 
@@ -217,10 +219,10 @@ ms.locfileid: "80122800"
 
 **[Lower](functions/function-lower-upper-proper.md)** – テキストの文字列内の文字をすべて小文字に変換します。
 
-## <a name="m"></a>M
-**[Match](functions/function-ismatch.md)** – パターンに基づいて部分文字列を抽出します。  正規表現を使用できます。
+## <a name="m"></a>月
+**[Match](functions/function-ismatch.md)** – パターンに基づいてサブストリングを抽出します。  正規表現を使用できます。
 
-**[MatchAll](functions/function-ismatch.md)** – パターンに基づいて複数の部分文字列を抽出します。  正規表現を使用できます。
+**[MatchAll](functions/function-ismatch.md)** – パターンに基づいて複数のサブストリングを抽出します。  正規表現を使用できます。
 
 **[Max](functions/function-aggregates.md)** – テーブル式または引数セットの最大値を返します。
 
@@ -239,19 +241,19 @@ ms.locfileid: "80122800"
 
 **[NewForm](functions/function-form.md)** – 項目を作成するためのフォーム コントロールをリセットします。
 
-**[Not](functions/function-logicals.md)** – ブール論理の NOT です。  引数が **false** の場合は **true** を、**true** の場合は **false** を返します。  [ **!** 演算子](functions/operators.md)を使用することもできます。
+**[Not](functions/function-logicals.md)** – ブール論理の NOT です。  引数が **false** の場合は **true** を、**true** の場合は **false** を返します。  [**!** 演算子](functions/operators.md)を使用することもできます。
 
 **[Notify](functions/function-showerror.md)** – バナー メッセージをユーザーに表示します。
 
-**[Now](functions/function-now-today-istoday.md)** – 現在の日付/時刻値を取得します。
+**[Now](functions/function-now-today-istoday.md)** – 現在の日付/時刻値を返します。
 
 ## <a name="o"></a>O
-**[Or](functions/function-logicals.md)** – ブール論理の OR です。  引数のいずれかが **true** の場合に **true** を返します。  [ **||** 演算子](functions/operators.md)を使用することもできます。
+**[Or](functions/function-logicals.md)** – ブール論理の OR です。  引数のいずれかが **true** の場合に **true** を返します。  [**||** 演算子](functions/operators.md)を使用することもできます。
 
 ## <a name="p"></a>P
-**[Param](functions/function-param.md)** – ユーザーがアプリを開いたときに渡されるパラメーターを取得します。
+**[Param](functions/function-param.md)** – 起動時にキャンバス アプリに渡されるパラメーターにアクセスします。
 
-**[Parent](functions/operators.md#parent-operator)** – コンテナー コントロールのプロパティを取得します。
+**[Parent](functions/operators.md#self-and-parent-operators)** – コンテナー コントロールのプロパティへのアクセスを提供します。
 
 **[Patch](functions/function-patch.md)** – データ ソース内のレコードを変更または作成するか、データ ソースの外部でレコードをマージします。
 
@@ -259,7 +261,7 @@ ms.locfileid: "80122800"
 
 **[PlainText](functions/function-encode-decode.md)** – 文字列から HTML タグと XML タグを削除します。
 
-**[Power](functions/function-numericals.md)** – 数値の累乗を返します。  [ **^** 演算子](functions/operators.md)を使用することもできます。
+**[Power](functions/function-numericals.md)** – 数値の累乗を返します。  [**^** 演算子](functions/operators.md)を使用することもできます。
 
 **[Proper](functions/function-lower-upper-proper.md)** – 文字列内の各単語の最初の文字を大文字に変換し、残りを小文字に変換します。
 
@@ -272,7 +274,7 @@ ms.locfileid: "80122800"
 
 **[Relate](functions/function-relate-unrelate.md)** – 一対多または多対多のリレーションシップを通じて 2 つのエンティティのレコードを関連付けます。
 
-**[Remove](functions/function-remove-removeif.md)** – データ ソースから特定のレコードを削除します。
+**[Remove](functions/function-remove-removeif.md)** – データ ソースから 1 つ以上の特定のレコードを削除します。
 
 **[RemoveIf](functions/function-remove-removeif.md)** – 条件に基づいてデータ ソースからレコードを削除します。
 
@@ -296,14 +298,16 @@ ms.locfileid: "80122800"
 
 **[RoundUp](functions/function-round.md)** – 元の数値以上の最小値になるように切り上げます。
 
-## <a name="s"></a>S
-**[SaveData](functions/function-savedata-loaddata.md)** –コレクションをローカルデバイスのストレージに保存します。
+## <a name="s"></a>土
+**[SaveData](functions/function-savedata-loaddata.md)** – ローカル デバイスのストレージにコレクションを保存します。
 
 **[Search](functions/function-filter-lookup.md)** – テーブル内で、いずれかの列に文字列が含まれているレコードを検索します。  
 
 **[Second](functions/function-datetime-parts.md)** – 日付/時刻値の秒の部分を取得します。
 
 **[Select](functions/function-select.md)** – コントロールでの選択アクションをシミュレートし、**OnSelect** 式の評価を実行させます。
+
+**[Self](functions/operators.md#self-and-parent-operators)** - 現在のコントロールのプロパティへのアクセスができるようになります。
 
 **[Set](functions/function-set.md)** – グローバル変数の値を設定します。
 
@@ -321,11 +325,11 @@ ms.locfileid: "80122800"
 
 **[SortByColumns](functions/function-sort.md)** – 1 つ以上の列に基づいて並べ替えられたテーブルを返します。
 
-**[Split](functions/function-split.md)** - テキスト文字列を部分文字列のテーブルに分割します。
+**[Split](functions/function-split.md)** - テキスト文字列をサブストリングのテーブルに分割します。
 
 **[Sqrt](functions/function-numericals.md)** – 数値の平方根を返します。
 
-**[StartsWith](functions/function-startswith.md)** – あるテキスト文字列が別のテキスト文字列の先頭にあるかどうかを調べます。
+**[StartsWith](functions/function-startswith.md)** – あるテキスト文字列が別のテキスト文字列で始まるかどうかを確認します。
 
 **[StdevP](functions/function-aggregates.md)** – 引数の標準偏差を返します。  
 
@@ -352,7 +356,7 @@ ms.locfileid: "80122800"
 
 **[TimeZoneOffset](functions/function-dateadd-datediff.md)** – UTC とユーザーのローカル時刻の差を分の単位で返します。
 
-**[Today](functions/function-now-today-istoday.md)** – 現在の日付/時刻値を取得します。
+**[Today](functions/function-now-today-istoday.md)** – 現在の日付/時刻値を返します。
 
 **[Trace](functions/function-trace.md)** - テスト結果に追加情報を提供します。
 
@@ -363,7 +367,7 @@ ms.locfileid: "80122800"
 ## <a name="u"></a>U
 **[Ungroup](functions/function-groupby.md)** – グループを削除します。
 
-**[Unrelate](functions/function-relate-unrelate.md)** – 一対多または多対多のリレーションシップから 2 つのエンティティのレコードの関連付けを解除します。
+**[Unrelate](functions/function-relate-unrelate.md)** – 一対多または多対多の関連付けから 2 つのエンティティのレコードの関連付けを解除します。
 
 **[Update](functions/function-update-updateif.md)** – データ ソースのレコードを置き換えます。
 
@@ -384,8 +388,8 @@ ms.locfileid: "80122800"
 
 **[ViewForm](functions/function-form.md)** – 既存の項目を表示するためのフォーム コントロールをリセットします。
 
-## <a name="w"></a>W
-**[Weekday](functions/function-datetime-parts.md)** – 日付/時刻値の曜日の部分を取得します。
+## <a name="w"></a>水
+**[Weekday](functions/function-datetime-parts.md)** – 日付/時刻値の平日の部分を取得します。
 
 **[With](functions/function-with.md)** – 値を計算し、名前付きの値のインライン レコードを含む 1 つのレコードに対してアクションを実行します。
 

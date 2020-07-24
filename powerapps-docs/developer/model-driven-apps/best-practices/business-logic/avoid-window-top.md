@@ -20,12 +20,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: daa8e5a4a8aaff4b2aecb0942783a84eed328dfb
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 460f7b450d863d3d3e69e089a26629396ef7d954
+ms.sourcegitcommit: 42d89101985f13a2a384f8f4617e7f5f7b23f0c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2748880"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "3531743"
 ---
 # <a name="avoid-using-windowtop"></a>window.top を使用しないでください
 
@@ -70,7 +70,6 @@ Dynamics 365 App for Outlook、電話およびタブレット PC 用 Dynamics 36
             catch (err) {
                 return false;
             }
-        }
     }
 
     var canAccess = isTopAccessible();

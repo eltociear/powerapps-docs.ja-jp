@@ -1,20 +1,19 @@
 ---
 title: ポータルの条件付きステップの種類の構成 | MicrosoftDocs
 description: ポータルの条件付ステップ タイプを追加およびコンフィギュレーションする指示をします。
-author: tapanm-msft
-manager: kvivek
+author: sandhangitmsft
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 11/04/2019
-ms.author: tapanm
-ms.reviewer: ''
-ms.openlocfilehash: 698f2e16cdefee0708acbcbd413a1c229a577839
-ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
+ms.author: sandhan
+ms.reviewer: tapanm
+ms.openlocfilehash: 8b3ccd9195d74f35cd4665226d5429017db88d0c
+ms.sourcegitcommit: c12260f372ad2cc48d3146be570d2088c9ef1d86
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "2979650"
+ms.lasthandoff: 06/20/2020
+ms.locfileid: "3492262"
 ---
 # <a name="add-a-conditional-step-type"></a>条件付きのステップの種類を追加する
 

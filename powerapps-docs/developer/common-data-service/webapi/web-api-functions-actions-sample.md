@@ -2,7 +2,7 @@
 title: Web API 機能およびアクションのサンプル (Common Data Service)| Microsoft Docs
 description: このサンプル グループは、Common Data Service Web API を使用して、バインドされた関数とバインドされていない関数およびアクションを実行する方法を示します。 これらは、クライアント側の JavaScript と C# を使用して実装されます
 ms.custom: ''
-ms.date: 10/31/2018
+ms.date: 04/06/2020
 ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -19,12 +19,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 531ebab75dcbac2e00004ae91fd9ff5349670382
-ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
+ms.openlocfilehash: e5b5a2d825d51c8b5197adc1dc6751bae1698445
+ms.sourcegitcommit: 49b69129262a9b530e69508e84c3822b742066df
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "3154959"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "3233755"
 ---
 # <a name="web-api-functions-and-actions-sample"></a>Web API 機能およびアクションのサンプル
 
@@ -475,11 +475,7 @@ Content-Length: 2760
 {  
    "error":{  
       "code":"",  
-      "message":"ContactFirstName and ContactLastName are required when CustomerType is contact.",  
-      "innererror":{  
-         "message":"ContactFirstName and ContactLastName are required when CustomerType is contact.",  
-         ...[truncated]  
-      }  
+      "message":"ContactFirstName and ContactLastName are required when CustomerType is contact."
    }  
 }  
 ```  

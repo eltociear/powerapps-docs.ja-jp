@@ -20,18 +20,18 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 9624293706f8b1307f19fc168f37c6464c724c65
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 037625ac96dd64b6093b7a898479d4f88cca46f9
+ms.sourcegitcommit: c0508e233a03ac4846c04d5caae79eccca3e2843
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2748853"
+ms.lasthandoff: 04/15/2020
+ms.locfileid: "3261806"
 ---
 # <a name="the-app-page"></a>アプリケーション ページ
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]
 
-ユーザがアプリを選択すると、アプリの詳細ページに遷移し、特定のアプリでの複数のテナントを横断したインストール履歴を分析するビューが表示されます。 アプリに関する説明は [AppSource](https://appsource.microsoft.com/)を参照してください。
+ユーザがアプリを選択すると、アプリの詳細ページに移動し、特定のアプリについて複数のテナント間でのインストール履歴を分析するビューが表示されます。 アプリに関する説明は [AppSource](https://appsource.microsoft.com/)を参照してください。
 
 ![アプリケーションの詳細ページ](media/isv-portal-apppage-appname.png)
 
@@ -87,5 +87,7 @@ ms.locfileid: "2748853"
 ### <a name="see-also"></a>関連項目
 
 [Power Platform ISV Studioの概要](isv-app-management.md)  
-[ホーム ページ](isv-app-management-homepage.md)  
-[テナント ページ](isv-app-management-tenantpage.md)
+[ホーム ページ](isv-app-management-homepage.md)<br/>
+[テナント ページ](isv-app-management-tenantpage.md)<br/>
+[AppSource チェッカー](isv-app-management-appsource-checker.md)<br/>
+[コネクタ認定](isv-app-management-certification.md)

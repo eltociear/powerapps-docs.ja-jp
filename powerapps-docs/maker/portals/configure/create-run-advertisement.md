@@ -1,20 +1,19 @@
 ---
 title: ポータルで広告を作成および実行 | MicrosoftDocs
 description: テキストまたは画像ベースの広告を作成し、サイト内の複数の配置で実行する方法についての説明です。
-author: tapanm-msft
-manager: kvivek
+author: sandhangitmsft
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 11/22/2019
-ms.author: tapanm
-ms.reviewer: ''
-ms.openlocfilehash: 8d3c30dce08a09847123612a240a6376999002f8
-ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
+ms.author: sandhan
+ms.reviewer: tapanm
+ms.openlocfilehash: ada06a9889f71097b1f1126bd2fb4c9c985b1d24
+ms.sourcegitcommit: c12260f372ad2cc48d3146be570d2088c9ef1d86
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "2979826"
+ms.lasthandoff: 06/20/2020
+ms.locfileid: "3494112"
 ---
 # <a name="create-and-run-advertisements-on-a-portal"></a>ポータルで広告を作成および実行
 

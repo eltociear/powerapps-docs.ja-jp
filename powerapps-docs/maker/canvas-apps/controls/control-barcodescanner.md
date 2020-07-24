@@ -1,96 +1,99 @@
 ---
-title: 'Web バーコード-スキャナーコントロール: リファレンス |Microsoft Docs'
-description: プロパティと例を含む、バーコードスキャナーコントロールに関する情報
+title: Web バーコード スキャナー コントロールのリファレンス | Microsoft Docs
+description: Web バーコード スキャナーのコントロールに関するプロパティや例を含む情報
 author: chmoncay
 manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.date: 10/25/2016
+ms.date: 06/12/2020
 ms.author: chmoncay
 ms.reviewer: tapanm
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: a116d812f8be7d8c1fb15ba2b05805536240084c
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
-ms.translationtype: MT
+ms.openlocfilehash: 9bc094614938d64fcf0e059b7a3f3d110da4ed6d
+ms.sourcegitcommit: e8e2b7251c301f44fb60af29a86107c099a543a8
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74727487"
+ms.lasthandoff: 06/12/2020
+ms.locfileid: "3447278"
 ---
-# <a name="web-barcode-scanner-control-experimental-in-power-apps"></a>Web バーコード-Power Apps でのスキャナーコントロール (試験段階)
+# <a name="web-barcode-scanner-control-experimental-in-power-apps"></a>Power Apps における Web バーコード スキャナー コントロール (試験段階)
 
-従来のバーコードスキャンコントロール。 web ブラウザーでのコードのスキャンに便利な場合があります。
+従来のバーコード スキャナー コントロールは廃止されましたが、Web ブラウザーでコードをスキャンすることが役立つ場合があります。
 
-## <a name="description"></a>Description
+## <a name="description"></a>内容
 
-コントロールは、ユーザーがすべてのデバイスでバーコードをスキャンできるように、アプリにカメラフィードを表示します。 パフォーマンスが低下しているため、コントロールは廃止されています。また、モバイル **[バーコードスキャナー](control-new-barcode-scanner.md)** コントロールは、このコントロールを置き換えます。
+ユーザーがすべてのデバイスでバーコードをスキャンできるように、コントロールではアプリにカメラ フィードを表示します。 このコントロールはパフォーマンスが悪いために廃止されているため、モバイル **[バーコードスキャナ](control-new-barcode-scanner.md)**  コントロールがこのコントロールに取って代わります。
+
+> [!NOTE]
+> Web バーコード スキャナー コントロールは、Microsoft Edge、Chrome、Firefox、Opera ブラウザにてご利用頂けます。 他のすべてのブラウザでは、アプリの一部の機能が動作しない旨の警告メッセージが表示されます。
 
 ## <a name="key-properties"></a>主要なプロパティ
 
-**barcode scanner** – 複数のバーコード スキャナーを備えるデバイスで、アプリが使うバーコード スキャナーの数値 ID です。
+**カメラ** – 複数のカメラを搭載した端末では、アプリがバーコードをスキャンする際に使用するカメラの数値 ID が表示されます。
 
-## <a name="additional-properties"></a>その他のプロパティ
+## <a name="additional-properties"></a>追加のプロパティ
 
-**[AccessibleLabel](properties-accessibility.md)** – スクリーン リーダー用のラベルです。
+**[AccessibleLabel](properties-accessibility.md)** – スクリーン リーダー用のラベル。
 
-**[BorderColor](properties-color-border.md)** – コントロールの境界線の色です。
+**[BorderColor](properties-color-border.md)** – コントロールの境界線の色。
 
-**[BorderStyle](properties-color-border.md)** – コントロールの境界線を **Solid** (実線)、**Dashed** (破線)、**Dotted** (点線)、**None** (なし) のいずれに指定します。
+**[BorderStyle](properties-color-border.md)** – コントロールの境界線が**実線**、**破線**、**点線**、または**なし**かどうか。
 
-**[BorderThickness](properties-color-border.md)** – コントロールの境界線の太さです。
+**[BorderThickness](properties-color-border.md)** – コントロールの境界線の太さ。
 
-**[DisplayMode](properties-core.md)** – コントロールで、ユーザー入力を許可するか (**Edit**)、データの表示のみを許可するか (**View**)、許可しないか (**Disabled**) を設定します。
+**[DisplayMode](properties-core.md)** – コントロールがユーザー入力を許可するか (**編集**)、データのみを表示するか (**表示**)、または無効にするか (**無効**) どうか。
 
-**[Height](properties-size-location.md)** – コントロールの上端と下端の距離です。
+**[高さ](properties-size-location.md)** – コントロールの上端と下端間の距離。
 
-**ShowLiveBarcodeDetection** – バーコード検出の状態を示す視覚的な手がかりが表示されるかどうかを示します。 黄色の四角形は、検査されている領域を表します。 四角形内の緑色の線は、バーコードの識別に成功したことを示します。
+**ShowLiveBarcodeDetection** – バーコード検出の状態を示す視覚的な手掛かりが表示されるかどうか。 黄色の四角形は、検査されている領域を表します。 四角形内の緑色の線は、バーコードの識別に成功したことを示します。
 
-**Stream** – **StreamRate** プロパティに基づいて自動的に更新された画像です。
+**ストリーム** – **StreamRate** プロパティに基づいて自動的に更新された画像。
 
-**StreamRate** – **Stream** プロパティの画像を更新する頻度です (ミリ秒単位)。  この値の範囲は、100 (0.1 秒) から 3,600,000 (1 時間) です。
+**StreamRate** – **ストリーム** プロパティの画像を更新する頻度 (ミリ秒単位)。  この値の範囲は、100 (0.1 秒) から 3,600,000 (1 時間) です。
 
-**Text** – スキャナーによって最後に識別されたバーコードの値。
+**テキスト** – スキャナーによって最後に識別されたバーコードの値。
 
-**[Tooltip](properties-core.md)** – ポインターをコントロールに合わせたときに表示される説明テキストです。
+**[ツールヒント](properties-core.md)** – ユーザーがコントロールにカーソルを置くときに表示される説明テキスト。
 
-**[Visible](properties-core.md)** – コントロールを表示するか非表示にするかを指定します。
+**[表示](properties-core.md)** – コントロールが表示されるか非表示になるか。
 
-**[Width](properties-size-location.md)** – コントロールの左端と右端の間の距離です。
+**[幅](properties-size-location.md)** – コントロールの左端と右端間の距離。
 
-**[X](properties-size-location.md)** – コントロールの左端とその親コンテナー (親コンテナーがない場合は画面) の左端間の距離です。
+**[X](properties-size-location.md)** – コントロールの左端とその親コンテナー (親コンテナーがない場合は画面) の左端間の距離。
 
-**[Y](properties-size-location.md)** – コントロールの上端とその親コンテナー (親コンテナーがない場合は画面) の上端間の距離です。
+**[Y](properties-size-location.md)** – コントロールの上端とその親コンテナー (親コンテナーがない場合は画面) の上端間の距離。
 
 ## <a name="related-functions"></a>関連する関数
 
-[**Patch**( *DataSource*, *BaseRecord*, *ChangeRecord* )](../functions/function-patch.md)
+[**Patch**( *DataSource*、*BaseRecord*、*ChangeRecord* )](../functions/function-patch.md)
 
 ## <a name="example"></a>例
 
-### <a name="add-photos-to-an-image-gallery-control"></a>イメージ ギャラリー コントロールに写真を追加する
+### <a name="add-photos-to-an-image-gallery-control"></a>画像ギャラリー コントロールに写真を追加する
 
-1. **バーコード スキャナー** コントロールを追加し、名前を **Mybarcode scanner** に設定します
+1. **バーコード スキャナー** コントロールを追加し、**Mybarcode scanner** と名前を付ける
 
-    [コントロールの追加、命名、構成についてはこちらをご覧ください](../add-configure-controls.md)。
+    [コントロールの追加、名前付け、構成](../add-configure-controls.md) についてはこちらをご覧ください。
 
-1. **ラベル**コントロールを追加し、その出力をバーコードスキャナーの**Text**プロパティに設定します。
+1. **ラベル** コントロールを追加し、その出力をバーコード スキャナーの**テキスト** プロパティに設定します。
 
-1. **Barcodetype**プロパティで設定されている種類のバーコードをスキャンします。
+1. **BarcodeType** プロパティで設定される種類のバーコードをスキャンします。
 
-    ラベルには、スキャンされたバーコードが表示されます。
+    ラベルにはスキャンしたバーコードが表示されます。
 
 ## <a name="accessibility-guidelines"></a>アクセシビリティ ガイドライン
 
 ### <a name="video-alternatives"></a>ビデオの代替手段
 
-* **[Text](properties-core.md)** をバーコード スキャナーの **Text** に設定した **[ラベル](control-text-box.md)** を追加することを検討してください。 バーコード スキャナーは識別されたバーコード値を表示しないので、上記のようにすると、視覚障碍を持つユーザーだけでなく、誰でもスキャナーにアクセスできるようになります。
+* **[テキスト](properties-core.md)** をバーコード スキャナーの**テキスト**に設定した **[ラベル](control-text-box.md)** を追加することを検討してください。 バーコード スキャナーは識別されたバーコードの値を表示しないため、上記のようにすることで、視覚障害者だけでなく、誰でもスキャナーにアクセスできるようになります。
 
-### <a name="screen-reader-support"></a>スクリーン リーダーのサポート
+### <a name="screen-reader-support"></a>スクリーン リーダー サポート
 
 * **[AccessibleLabel](properties-accessibility.md)** が存在する必要があります。
 
     > [!NOTE]
-  > 新しいバーコードが検出されると、スクリーンリーダーによってアナウンスされます。 値は発表されません。 バーコードが表示されている限り、スクリーンリーダーは、同じバーコードがまだ識別されていることを5秒ごとにユーザーに通知します。
+  > 新しいバーコードが検出されると、スクリーン リーダーから通知されます。 値は通知されません。 バーコードが表示されている限り、スクリーン リーダーから同じバーコードがまだ識別中であることが 5 秒ごとにユーザーに通知されます。

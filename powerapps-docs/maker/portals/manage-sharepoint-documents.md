@@ -1,24 +1,23 @@
 ---
 title: ポータルの SharePoint ドキュメントの管理 | MicrosoftDocs
 description: ポータルで SharePoint ドキュメントを管理するための手順。
-author: tapanm-msft
-manager: kvivek
+author: gitanjalisingh33msft
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 10/07/2019
-ms.author: tapanm
-ms.reviewer: ''
-ms.openlocfilehash: d774b3ccd584cdf9872979d2df09eb49cff926df
-ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
+ms.author: gisingh
+ms.reviewer: tapanm
+ms.openlocfilehash: 6efbca20258227365517fd4727ff28b0619411fd
+ms.sourcegitcommit: c12260f372ad2cc48d3146be570d2088c9ef1d86
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "2977404"
+ms.lasthandoff: 06/20/2020
+ms.locfileid: "3493887"
 ---
 # <a name="manage-sharepoint-documents"></a>SharePoint ドキュメントの管理
 
-Common Data Service は、[!INCLUDE[pn-microsoft-sharepoint-online](../../includes/pn-microsoft-sharepoint-online.md)] との統合をサポートしています。これによりユーザーは Common Data Service 内の [!INCLUDE[pn-sharepoint-short](../../includes/pn-sharepoint-short.md)] のドキュメント管理機能を使用できます。 Power Apps ポータルでは、ポータルのエンティティ フォームまたは Web フォームに [!INCLUDE[pn-sharepoint-short](../../includes/pn-sharepoint-short.md)] からのドキュメントを直接アップロードおよび表示することができるようになりました。 これにより、ユーザーは、ポータルからのドキュメントを表示、ダウンロード、追加、削除することができます。 ポータル ユーザーは各自のドキュメントの編成にサブフォルダーを作成することもできます。
+Common Data Service は、[!INCLUDE[pn-microsoft-sharepoint-online](../../includes/pn-microsoft-sharepoint-online.md)] との統合をサポートしています。これによりユーザーは Common Data Service 内の [!INCLUDE[pn-sharepoint-short](../../includes/pn-sharepoint-short.md)] のドキュメント管理機能を使用できます。 Power Apps ポータルでは、ポータルのエンティティ フォームまたは Web フォームに [!INCLUDE[pn-sharepoint-short](../../includes/pn-sharepoint-short.md)] からのドキュメントを直接アップロードおよび表示することができるようになりました。 これにより、ポータル ユーザーは、ドキュメントをポータルで表示、ダウンロード、追加、削除できます。 ポータル ユーザーは各自のドキュメントの編成にサブフォルダーを作成することもできます。
 
 > [!NOTE]
 > - ドキュメント管理は、[!INCLUDE[pn-microsoft-sharepoint-online](../../includes/pn-microsoft-sharepoint-online.md)] に対してのみ動作します。

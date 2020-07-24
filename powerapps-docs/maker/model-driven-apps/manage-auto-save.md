@@ -20,12 +20,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 86d70ba6d91fdd0179932401ceffd619ae50ce7e
-ms.sourcegitcommit: 9f2694bd14d70798310b89a4673672c1bfad989d
+ms.openlocfilehash: bd5746786888a193890c7be9a47bf799161013ad
+ms.sourcegitcommit: 42d89101985f13a2a384f8f4617e7f5f7b23f0c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "3166712"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "3531820"
 ---
 # <a name="disable-auto-save-in-a-model-driven-app"></a>モデル駆動型でオートセーブを無効にする
 
@@ -34,7 +34,7 @@ ms.locfileid: "3166712"
 <a name="BKMK_HowAutoSaveWorks"></a>   
 
 ## <a name="how-auto-save-works"></a>自動保存が機能する仕組み  
- 既定で、[更新されたエンティティと従来のエンティティ](create-design-forms.md#updated-versus-classic-entities) のメイン フォームすべてで自動保存が有効です。 レコードの作成 (最初の保存) の後、フォームに対する変更は変更の 30 秒後に自動的に保存されます。 フォームの変更がない場合は、フォームが開いている間に自動保存は実行されません。 変更が行われると、自動保存の前の 30 秒期間が再度発生します。 現在編集中のフィールドは自動保存されません。 編集中に他のユーザーが同じレコードを更新した場合、自動保存が行われると、その変更が取り込まれて、フォームに表示されます。  
+ 既定で、[更新されたエンティティと従来のエンティティ](create-design-forms.md#updated-versus-classic-entities) のメイン フォームすべてで自動保存が有効です。 レコードの作成 (最初の保存) の後、フォームに対する変更は変更の 30 秒後に自動的に保存されます。 フォームの変更がない場合は、フォームが開いている間に自動保存は実行されません。 変更が行われると、自動保存の前の 30 秒期間が再度発生します。 編集中に他のユーザーが同じレコードを更新した場合、自動保存が行われると、その変更が取り込まれて、フォームに表示されます。  
   
  自動保存が有効になっている状態では、保存ボタンはレコードの最初の保存の場合にのみ表示されます。 レコードが作成されると、コマンド バーの保存ボタンは表示されませんが、未保存の変更があるかどうかを示す ![自動保存ボタン](media/auto-save-icon.png "自動保存ボタン") ボタンが右下隅に表示されます。 このコントロールは、自動保存が無効になっている場合も表示されます。  
   

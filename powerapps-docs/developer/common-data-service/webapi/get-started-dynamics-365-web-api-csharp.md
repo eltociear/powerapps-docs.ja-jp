@@ -2,7 +2,7 @@
 title: Common Data Service Web API (C#) の使用の開始 (Common Data Service) | Microsoft Docs
 description: Microsoft Visual C# プログラミング言語を使用して Common Data Service の Web API にアクセスする方法について説明します
 ms.custom: ''
-ms.date: 1/09/2019
+ms.date: 03/31/2020
 ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -20,12 +20,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 059cac35fb19e0690cc93f00a0e5578085765067
-ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
+ms.openlocfilehash: 0e663e3c49a737f053b07be51454db24b40d7d09
+ms.sourcegitcommit: 4a88daac42180283314f6bedee3d6810fd5a6c25
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "3155075"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "3275979"
 ---
 # <a name="get-started-with-common-data-service-web-api-c"></a>Common Data Service Web API (C#) の使用の開始
 
@@ -35,7 +35,9 @@ ms.locfileid: "3155075"
   
 ## <a name="in-this-section"></a>このセクションの内容
 
-[クイック スタート: Web API のサンプル (C#)](quick-start-console-app-csharp.md)<br />
+[クイックスタート: Web API のサンプル](quick-start-console-app-csharp.md) (最初に実行します)  
+[拡張クイック スタート](enhanced-quick-start.md) (次に実行します)  
+[Visual Studio で Common Data Service Web API プロジェクトを始める](start-web-api-project-visual-studio-csharp.md)
 
 ### <a name="see-also"></a>関連項目
   

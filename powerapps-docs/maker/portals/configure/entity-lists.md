@@ -1,20 +1,19 @@
 ---
 title: ポータル上のレコードのリストを表示するウェブ ページを追加 | MicrosoftDocs
 description: エンティティ リストを追加および設定して、ポータルのレコードのリストを表示する手順。
-author: tapanm-msft
-manager: kvivek
+author: sandhangitmsft
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 02/05/2020
-ms.author: tapanm
-ms.reviewer: ''
-ms.openlocfilehash: 96c5ede672a57b6f01a87cf8aacf093db57ab234
-ms.sourcegitcommit: 2d21c2c65875f97dff6d5843611d4221a4282f22
+ms.author: sandhan
+ms.reviewer: tapanm
+ms.openlocfilehash: ff55f0b9f293049682f895d5fae779cb7f5bace8
+ms.sourcegitcommit: c12260f372ad2cc48d3146be570d2088c9ef1d86
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "3027690"
+ms.lasthandoff: 06/20/2020
+ms.locfileid: "3492127"
 ---
 # <a name="about-entity-lists"></a> エンティティ リストについて
 
@@ -114,7 +113,7 @@ $(document).ready(function (){
 | 削除ダイアログ             |ユーザーが削除アクションをアクティブにするときに表示されるダイアログボックスの設定を制御します。|
 | エラー ダイアログ              |任意の操作中にエラーが発生した場合に表示されるダイアログ ボックスの設定を制御します。|
 | CSS クラス                 |グリッドおよびアクション ボタンを含むグリッド領域全体を格納している HTML 要素に適用される CSS クラスを指定します。|
-| グリッド CSS クラス            |エンティティ リストの HTML \<table\> 要素に適用される CSS クラスを指定します。|
+| グリッド CSS クラス            |エンティティ リストの HTML \<table\> 要素に適用する CSS クラスを指定します。|
 | グリッド列の幅スタイル   |上書きする列の属性の **幅** 値が、**ピクセル**または**パーセント**で指定されているかどうかを設定します。|
 
 **全般的なアクション設定**

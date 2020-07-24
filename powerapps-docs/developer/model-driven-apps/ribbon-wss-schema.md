@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 089a95c90b5ca222e3ab0209da3e0ce20af4bcb5
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 48933d900da9514d7ea9a4d030d726e0dcc2dc78
+ms.sourcegitcommit: b5ab419dad4e9d64a5e6610641363b0d7487930a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2753591"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "3465589"
 ---
 # <a name="ribbon-wss-schema"></a>リボン WSS のスキーマ
 
@@ -30,7 +30,7 @@ ms.locfileid: "2753591"
 [スキーマ](https://download.microsoft.com/download/B/9/7/B97655A4-4E46-4E51-BA0A-C669106D563F/Schemas.zip) をダウンロードします。
 
 
-詳細については、[ソリューションを使用した拡張機能のパッケージ化および配布](/dynamics365/customer-engagement/developer/package-distribute-extensions-use-solutions)を参照してください。
+詳細については、[ソリューションを使用した拡張機能のパッケージ化および配布](https://docs.microsoft.com/powerapps/developer/common-data-service/introduction-solutions)を参照してください。
 
 
 ## <a name="schema"></a>スキーマ  

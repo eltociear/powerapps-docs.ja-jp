@@ -1,20 +1,19 @@
 ---
 title: ポータル用 Liquid の条件演算子を使用する | MicrosoftDocs
 description: ポータルで使用可能な Liquid の条件演算子について説明します。
-author: tapanm-msft
-manager: kvivek
+author: gitanjalisingh33msft
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 10/07/2019
-ms.author: tapanm
-ms.reviewer: ''
-ms.openlocfilehash: 034c6741ac5555448f85fc08579855d6980490e2
-ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
+ms.author: gisingh
+ms.reviewer: tapanm
+ms.openlocfilehash: ac6354a57e19efece53d92fea7c2410da7bda3a0
+ms.sourcegitcommit: c12260f372ad2cc48d3146be570d2088c9ef1d86
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "2978330"
+ms.lasthandoff: 06/20/2020
+ms.locfileid: "3494202"
 ---
 # <a name="available-liquid-conditional-operators"></a>使用可能な Liquid の条件演算子
 
@@ -23,7 +22,7 @@ ms.locfileid: "2978330"
 Liquid では、null およびブール値 false は false として扱われ、他のすべては true として扱われます。 空の文字、空の配列などは true として扱われます。 たとえば、
 
 ```
-{% assign empty_string =  %}
+{% assign empty_string = "" %}
 {% if empty_string %}
 <p>This will render.</p>
 {% endif %}

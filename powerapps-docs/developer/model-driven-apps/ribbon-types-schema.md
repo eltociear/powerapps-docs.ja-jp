@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 60d552a0f5a03513e758775571868eeeba3665cf
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: c42a298eff48846592f7c02ba075d6e72ca2448b
+ms.sourcegitcommit: b5ab419dad4e9d64a5e6610641363b0d7487930a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2754568"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "3465597"
 ---
 # <a name="ribbon-types-schema"></a>リボン タイプのスキーマ
 
@@ -29,7 +29,7 @@ ms.locfileid: "2754568"
 
 [スキーマ](https://download.microsoft.com/download/B/9/7/B97655A4-4E46-4E51-BA0A-C669106D563F/Schemas.zip) をダウンロードします。
 
-詳細については、[ソリューションを使用した拡張機能のパッケージ化および配布](/dynamics365/customer-engagement/developer/package-distribute-extensions-use-solutions)を参照してください。
+詳細については、[ソリューションを使用した拡張機能のパッケージ化および配布](https://docs.microsoft.com/powerapps/developer/common-data-service/introduction-solutions)を参照してください。
 
   
 ## <a name="schema"></a>スキーマ  

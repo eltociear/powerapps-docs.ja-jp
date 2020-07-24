@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 9b87b36d0262a3bf634b9d8e22cc79f7f1816373
-ms.sourcegitcommit: d500f44e77747a3244b6691ad9b3528e131dbfa5
+ms.openlocfilehash: 66d3085a1825fdbf70e462b8a491db274f93773e
+ms.sourcegitcommit: b5ab419dad4e9d64a5e6610641363b0d7487930a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "3119757"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "3465513"
 ---
 # <a name="image-web-resources"></a>イメージ Web リソース
 
@@ -109,13 +109,12 @@ ms.locfileid: "3119757"
 ```  
   
 > [!NOTE]
->  `$webresource:` ディレクティブを使用してソリューションの依存関係を追加し、参照されているイメージ Web リソースが、他のソリューション コンポーネントで使用されている間は削除されないようにします。  
+> `$webresource:` ディレクティブを使用してソリューションの依存関係を追加し、参照されているイメージ Web リソースが、他のソリューション コンポーネントで使用されている間は削除されないようにします。  
   
 ### <a name="see-also"></a>関連項目  
  [Web リソース](web-resources.md)   
  [Web ページ (HTML) の Web リソースの使用](webpage-html-web-resources.md)   
- [スタイルシート (CSS) ウェブ リソースを使用する](css-web-resources.md)   
+ [スタイル シート (CSS) Web リソースの使用](css-web-resources.md)   
  [スクリプト (JScript) Web リソースの使用](script-jscript-web-resources.md)   
- [データ (XML) Web リソースの使用](data-xml-web-resources.md)   
- [Silverlight (XAP) Web リソースの使用](/dynamics365/customer-engagement/developer/silverlight-xap-web-resources)  
+ [データ (XML) Web リソースの使用](data-xml-web-resources.md)     
  [スタイル シート (XSL) Web リソースの使用](stylesheet-xsl-web-resources.md)

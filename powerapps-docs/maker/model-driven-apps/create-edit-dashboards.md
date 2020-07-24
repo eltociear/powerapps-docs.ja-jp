@@ -21,12 +21,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: bcd178eef75c5ee63389048aff2f1cf0baf01fae
-ms.sourcegitcommit: cbaf5ba8b6435796a538ece2da5cc172c0781fad
+ms.openlocfilehash: 9a9e49a14268c3ee82a8c5fb541473903bbf5f11
+ms.sourcegitcommit: 3c6c5594b73abd5ff438d50f3b579d56cef7241c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "3254366"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "3285808"
 ---
 # <a name="create-or-edit-model-driven-app-dashboards"></a>モデル駆動型アプリ ダッシュボードを作成または編集する
 

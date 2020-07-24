@@ -20,9 +20,9 @@ ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/03/2019
-ms.locfileid: "74725803"
+ms.locfileid: "3302911"
 ---
-# <a name="deactivate-or-activate-an-account-or-contact"></a>アカウントまたは連絡先を有効または無効にする
+# <a name="deactivate-or-activate-an-account-or-contact"></a>取引先企業または取引先担当者の非アクティブ化またはアクティブ化
 
 モデル駆動型アプリでは、アカウントまたは連絡先を削除せず、無効にすることができます。 それにより、そのレコードに関連付けられている監査証跡の本来の姿が保たれます。  
   
@@ -32,17 +32,17 @@ ms.locfileid: "74725803"
   
 ## <a name="deactivate-an-account-or-contact"></a>アカウントまたは連絡先を無効にする 
   
-1.  左のメニューから、 **[アカウント]** または **[連絡先]** に進みます。  
+1.  左のメニューから、**[アカウント]** または **[連絡先]** に進みます。  
   
 2.  無効にするアクティブなアカウントまたは連絡先を選択し、コマンド バーで **[非アクティブ化]** を選択し、非アクティブ化を確定します。
 
     > [!div class="mx-imgBorder"]
-    > ![Power Apps でアカウントを無効にする](media/DeactiveAccounts.png "Power Apps でアカウントを無効にする")
+    > ![Power Appsでアカウントを無効にする](media/DeactiveAccounts.png "Power Appsでアカウントを無効にする")
 
 
 ## <a name="activate-an-account-or-contact"></a>アカウントまたは連絡先を有効にする  
   
-1.  左のメニューから、 **[アカウント]** または **[連絡先]** に進みます。 
+1.  左のメニューから、**[アカウント]** または **[連絡先]** に進みます。 
   
 2.  **[システム ビュー]** リストに進みます。
 
@@ -53,7 +53,7 @@ ms.locfileid: "74725803"
 5.  **[アクティブ化]** を選択し、アクティブ化を確定します。  
 
     > [!div class="mx-imgBorder"]
-    > ![Power Apps でアカウントを有効にする](media/ActiveAccounts.png "Power Apps でアカウントを有効にする")  
+    > ![Power Appsでアカウントを有効にする](media/ActiveAccounts.png "Power Apps でアカウントを有効にする")  
 
 
 

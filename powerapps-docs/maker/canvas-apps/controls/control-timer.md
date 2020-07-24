@@ -15,104 +15,104 @@ search.app:
 - PowerApps
 ms.openlocfilehash: 88c96535de5fc4f77da06ca11ba3f6c49b37bcdd
 ms.sourcegitcommit: c0508e233a03ac4846c04d5caae79eccca3e2843
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 04/15/2020
-ms.locfileid: "81385237"
+ms.locfileid: "3309305"
 ---
-# <a name="timer-control-in-power-apps"></a>Power Apps でのタイマー制御
+# <a name="timer-control-in-power-apps"></a>Power Apps のタイマー コントロール
 一定の時間が経過した後のアプリの反応を決定できるコントロールです。
 
-## <a name="description"></a>説明
-タイマーは、たとえば、コントロールが表示される時間の長さを決定したり、一定の時間が経過した後にコントロールの他のプロパティを変更したりできます。
+## <a name="description"></a>内容
+たとえば、タイマーはコントロールが表示される時間の長さを決定したり、一定の時間が経過した後にコントロールの他のプロパティを変更したりすることができます。
 
 > [!NOTE]
-> Power Apps Studio では、タイマーはプレビューモードでのみ実行されます。
+> Power Apps Studio では、タイマーはプレビュー モードでのみ実行されます。
 
 
 ## <a name="key-properties"></a>主要なプロパティ
-**Duration** - タイマーを実行する時間の長さを、ミリ秒単位で指定します。 最大値は、ミリ秒単位で表した24時間です。 既定値は60秒です。
+**Duration** – タイマーを実行する時間の長さを、ミリ秒単位で指定します。 最大値は、ミリ秒で表される 24 時間です。 既定値は 60 秒です。
 
 **OnTimerEnd** – タイマーが実行を完了した場合のアプリの反応を指定します。
 
-**Repeat** – タイマーが実行を完了したときに自動的に再開されるかどうかを指定します。
+**Repeat** – タイマーが実行を完了したときに自動的に再開するかどうかを指定します。
 
-## <a name="additional-properties"></a>その他のプロパティ
-**[Align](properties-text.md)** – コントロールの水平方向の中心に対するテキストの位置です。
+## <a name="additional-properties"></a>追加のプロパティ
+**[配置](properties-text.md)** – コントロールの水平方向の中心に対するテキストの位置。
 
 **AutoPause** – ユーザーが別の画面に移動した場合、タイマー コントロールを自動的に一時停止するかどうかを指定します。
 
 **AutoStart** – ユーザーがタイマー コントロールを含む画面に移動したときに、自動的に再生を開始するかどうかを指定します。
 
-**[BorderColor](properties-color-border.md)** – コントロールの境界線の色です。
+**[BorderColor](properties-color-border.md)** – コントロールの境界線の色。
 
-**[BorderStyle](properties-color-border.md)** – コントロールの境界線を **Solid** (実線)、**Dashed** (破線)、**Dotted** (点線)、**None** (なし) のいずれに指定します。
+**[BorderStyle](properties-color-border.md)** – コントロールの境界線が**実線**、**破線**、**点線**、または**なし**かどうか。
 
-**[BorderThickness](properties-color-border.md)** – コントロールの境界線の太さです。
+**[BorderThickness](properties-color-border.md)** – コントロールの境界線の太さ。
 
-**[Color](properties-color-border.md)** – コントロールのテキストの色です。
+**[色](properties-color-border.md)** – コントロールのテキストの色。
 
-**[DisplayMode](properties-core.md)** – コントロールで、ユーザー入力を許可するか (**Edit**)、データの表示のみを許可するか (**View**)、許可しないか (**Disabled**) を設定します。
+**[DisplayMode](properties-core.md)** – コントロールがユーザー入力を許可するか (**編集**)、データのみを表示するか (**表示**)、または無効にするか (**無効**) どうか。
 
-**[DisabledBorderColor](properties-color-border.md)** – コントロールの **[DisplayMode](properties-core.md)** プロパティが **Disabled** に設定されている場合のコントロールの境界線の色です。
+**[DisabledBorderColor](properties-color-border.md)** – コントロールの **[DisplayMode](properties-core.md)** プロパティが**無効**に設定されている場合のコントロールの境界線の色。
 
-**[DisabledColor](properties-color-border.md)** – コントロールの **[DisplayMode](properties-core.md)** プロパティが **Disabled** に設定されている場合のコントロール内のテキストの色です。
+**[DisabledColor](properties-color-border.md)** – コントロールの **[DisplayMode](properties-core.md)** プロパティが**無効**に設定されている場合のコントロール内のテキストの色。
 
-**[DisabledFill](properties-color-border.md)** – コントロールの **[DisplayMode](properties-core.md)** プロパティが **Disabled** に設定されている場合のコントロールの背景色です。
+**[DisabledFill](properties-color-border.md)** – コントロールの **[DisplayMode](properties-core.md)** プロパティが**無効**に設定されている場合のコントロールの背景色。
 
-**[Fill](properties-color-border.md)** – コントロールの背景色です。
+**[塗りつぶし](properties-color-border.md)** – コントロールの背景色。
 
-**[FocusedBorderColor](properties-color-border.md)** – コントロールにフォーカスがあるときのコントロールの境界線の色です。
+**[FocusedBorderColor](properties-color-border.md)** – コントロールがフォーカスされているときのコントロールの境界線の色。
 
-**[FocusedBorderThickness](properties-color-border.md)** – コントロールにフォーカスがあるときのコントロールの境界線の太さです。
+**[FocusedBorderThickness](properties-color-border.md)** – コントロールがフォーカスされているときのコントロールの境界線の太さ。
 
-**[Font](properties-text.md)** – テキストを表記するフォントのファミリー名です。
+**[フォント](properties-text.md)** – テキストを表示するフォントのファミリーの名前。
 
-**[FontWeight](properties-text.md)** – コントロール内のテキストの太さです。**Bold** (太字)、**Semibold** (中太)、**Normal** (標準)、**Lighter** (細字) から指定します。
+**[FontWeight](properties-text.md)** – コントロール内のテキストの太さ: **太字**、**中太**、**標準**、または**細字**。
 
-**[Height](properties-size-location.md)** – コントロールの上端と下端の距離です。
+**[高さ](properties-size-location.md)** – コントロールの上端と下端間の距離。
 
-**[HoverBorderColor](properties-color-border.md)** – コントロール上にユーザーがマウス ポインターを重ねているときのコントロールの境界線の色です。
+**[HoverBorderColor](properties-color-border.md)** – ユーザーがコントロール上にマウス ポインターを重ねているときのコントロールの境界線の色。
 
-**[HoverColor](properties-color-border.md)** – コントロールにユーザーがマウス ポインターを重ねているときのコントロール内のテキストの色です。
+**[HoverColor](properties-color-border.md)** – ユーザーがコントロールにマウス ポインターを重ねているときのコントロール内のテキストの色。
 
-**[HoverFill](properties-color-border.md)** – コントロールにユーザーがマウス ポインターを重ねているときのコントロールの背景色です。
+**[HoverFill](properties-color-border.md)** – ユーザーがコントロールにマウス ポインターを重ねているときのコントロールの背景色。
 
-**[Italic](properties-text.md)** – コントロール内のテキストを斜体にするかどうかを指定します。
+**[斜体](properties-text.md)** – コントロール内のテキストを斜体にするかどうか。
 
-**[OnSelect](properties-core.md)** – ユーザーがコントロールをタップまたはクリックした場合のアプリの反応を指定します。
+**[OnSelect](properties-core.md)** – ユーザーがコントロールをタップまたはクリックする場合のアプリの反応方法。
 
-**OnTimerStart** – タイマーが実行を開始した場合のアプリの反応を指定します。
+**OnTimerStart** – タイマーが実行を開始したときのアプリの反応を指定します。
 
-**[PressedBorderColor](properties-color-border.md)** – コントロールをユーザーがタップまたはクリックしたときのコントロールの境界線の色です。
+**[PressedBorderColor](properties-color-border.md)** – ユーザーがコントロールをタップまたはクリックしたときのコントロールの境界線の色。
 
-**[PressedColor](properties-color-border.md)** – コントロールをユーザーがタップまたはクリックしたときのコントロール内のテキストの色です。
+**[PressedColor](properties-color-border.md)** – ユーザーがコントロールをタップまたはクリックしたときのコントロール内のテキストの色。
 
-**[PressedFill](properties-color-border.md)** – コントロールをユーザーがタップまたはクリックしたときのコントロールの背景色です。
+**[PressedFill](properties-color-border.md)** – ユーザーがコントロールをタップまたはクリックしたときのコントロールの背景色。
 
 **[Reset](properties-core.md)** – コントロールを既定値に戻すかどうかを指定します。
 
-**[Size](properties-text.md)** – コントロールに表示されるテキストのフォント サイズです。
+**[サイズ](properties-text.md)** – コントロールに表示されるテキストのフォント サイズ。
 
-**Start** – タイマーが開始するかどうか。
+**Start** – タイマーを開始するかどうかを指定します。
 
-**[Strikethrough](properties-text.md)** – コントロールに表示されるテキストに取り消し線を付けるかどうかを指定します。
+**[Strikethrough](properties-text.md)** – コントロールに表示されるテキストに取り消し線を付けるかどうか。
 
-**[TabIndex](properties-accessibility.md)** – 他のコントロールに関連するキーボード ナビゲーションの順序です。
+**[TabIndex](properties-accessibility.md)** – 他のコントロールに関連するキーボード ナビゲーションの順序。
 
-**[Text](properties-core.md)** – コントロールに表示されるテキスト、またはコントロールにユーザーが入力するテキストです。
+**[テキスト](properties-core.md)** – コントロールに表示されるテキスト、またはユーザーがコントロールに入力するテキスト。
 
-**[Tooltip](properties-core.md)** – ユーザーがポインターをコントロールに合わせたときに表示される説明テキストです。
+**[ツールヒント](properties-core.md)** – ユーザーがコントロールにカーソルを置くときに表示される説明テキスト。
 
-**[Underline](properties-text.md)** – コントロールに表示されるテキストの下に線を引くかどうかを指定します。
+**[下線](properties-text.md)** – コントロールに表示されるテキストの下に線を引くかどうか。
 
-**[Visible](properties-core.md)** – コントロールを表示するか非表示にするかを指定します。
+**[表示](properties-core.md)** – コントロールが表示されるか非表示になるか。
 
-**[Width](properties-size-location.md)** – コントロールの左端と右端の間の距離です。
+**[幅](properties-size-location.md)** – コントロールの左端と右端間の距離。
 
-**[X](properties-size-location.md)** – コントロールの左端とその親コンテナー (親コンテナーがない場合は画面) の左端間の距離です。
+**[X](properties-size-location.md)** – コントロールの左端とその親コンテナー (親コンテナーがない場合は画面) の左端間の距離。
 
-**[Y](properties-size-location.md)** – コントロールの上端とその親コンテナー (親コンテナーがない場合は画面) の上端間の距離です。
+**[Y](properties-size-location.md)** – コントロールの上端とその親コンテナー (親コンテナーがない場合は画面) の上端間の距離。
 
 ## <a name="related-functions"></a>関連する関数
 [**Refresh**( *DataSource* )](../functions/function-refresh.md)
@@ -121,54 +121,54 @@ ms.locfileid: "81385237"
 ### <a name="show-a-countdown"></a>カウントダウンの表示
 1. タイマーを追加して **Countdown** という名前を付けます。
 
-    [コントロールの追加、命名、構成についてはこちらをご覧ください](../add-configure-controls.md)。
+    [コントロールの追加、名前付け、構成](../add-configure-controls.md) についてはこちらをご覧ください。
 2. タイマーの **Duration** プロパティを **10000** に、その **Repeat** および **Autostart** プロパティを **true** に設定します。
-3. (オプション) **[Height](properties-size-location.md)** プロパティを **160** に、 **[Width](properties-size-location.md)** プロパティを **600** に、 **[Size](properties-text.md)** プロパティを **60** に設定して、タイマーを読み取りやすくします。
+3. (任意) **[Height](properties-size-location.md)** プロパティを **160** に、**[Width](properties-size-location.md)** プロパティを **600** に、**[Size](properties-text.md)** プロパティを **60** に設定して、タイマーを読み取りやすくします。
 4. ラベルを追加し、その **[Text](properties-core.md)** プロパティを次の数式に設定します。
-   <br>**"残りの秒数: " & RoundUp(10-Countdown.Value/1000, 0)**
+   <br>**「残りの秒数: 」 & RoundUp(10-Countdown.Value/1000, 0)**
 
-    **[RoundUp](../functions/function-round.md)** 関数または[その他の関数](../formula-reference.md)については各関連記事を参照してください。
+    **[RoundUp](../functions/function-round.md)** 関数または [その他の関数](../formula-reference.md) については、各関連記事を参照してください。
 
     ラベルには、タイマーが再開されるまでの秒数が表示されます。
 
 ### <a name="animate-a-control"></a>コントロールのアニメーション
 1. タイマーを追加して **FadeIn** という名前を付けます。
 
-    [コントロールの追加、命名、構成についてはこちらをご覧ください](../add-configure-controls.md)。
-2. タイマーの **Duration** プロパティを **5000** に、**Repeat** プロパティを **true** に、 **[Text](properties-core.md)** プロパティを**アニメーションの切り替え**に設定します。
-3. (オプション) **[Height](properties-size-location.md)** プロパティを **160** に、 **[Width](properties-size-location.md)** プロパティを **600** に、 **[Size](properties-text.md)** プロパティを **60** に設定して、タイマーを読み取りやすくします。
-4. ラベルを追加し、その **[Text](properties-core.md)** プロパティを設定して "**ようこそ!** " を表示し、 その **[Color](properties-color-border.md)** プロパティを次の数式に設定します。
+    [コントロールの追加、名前付け、構成](../add-configure-controls.md) についてはこちらをご覧ください。
+2. タイマーの **Duration** プロパティを **5000** に、**Repeat** プロパティを **true** に、そして **[Text](properties-core.md)** プロパティを**アニメーションの切り替え**に設定します。
+3. (任意) **[Height](properties-size-location.md)** プロパティを **160** に、**[Width](properties-size-location.md)** プロパティを **600** に、**[Size](properties-text.md)** プロパティを **60** に設定して、タイマーを読み取りやすくします。
+4. ラベルを追加し、その **[Text](properties-core.md)** プロパティを設定して**ようこそ!** を表示し、 その **[Color](properties-color-border.md)** プロパティを次の数式に設定します。
    <br>**ColorFade(Color.BlueViolet, FadeIn.Value/5000)**
 
-    **[ColorFade](../functions/function-colors.md)** 関数または[その他の関数](../formula-reference.md)については各関連記事を参照してください。
+    **[ColorFade](../functions/function-colors.md)** 関数または [その他の関数](../formula-reference.md) については、各関連記事を参照してください。
 
 5. アニメーションを開始または停止するには、タイマー ボタンを選択します。 ラベル内のテキストが白色にフェードした後、最大輝度に戻り、このプロセスが繰り返されます。
 
-## <a name="accessibility-guidelines"></a>アクセシビリティのガイドライン
-ユーザーがコントロールを操作できる場合は、 **[ボタン](control-button.md)** コントロールの同じガイドラインが**Timer**コントロールにも適用されます。
+## <a name="accessibility-guidelines"></a>アクセシビリティ ガイドライン
+ユーザーが操作を実行できる場合、**[ボタン](control-button.md)** コントロールと同じガイドラインが**タイマー** コントロールに適用されます。
 
-### <a name="background-timers"></a>バックグラウンドタイマー
-バックグラウンドタイマーは自動的に実行され、非表示になります。 これらは、ユーザーにとって経過時間があまり重要ではないサポートロールで使用します。 たとえば、データを1分ごとに更新したり、一定の時間だけ通知メッセージを表示したりすることができます。
+### <a name="background-timers"></a>バックグラウンド タイマー
+バックグラウンド タイマーは自動的に実行され、非表示になります。 経過時間がユーザーにほとんど関心のないサポート ロールで使用します。 たとえば、1 分ごとにデータを更新したり、また一定の時間だけ通知メッセージを表示したりできます。
 
-バックグラウンドタイマーは、 **[Visible](properties-core.md)** プロパティを false に設定して、すべてのユーザーに表示されないようにする必要があります。
+バックグラウンド タイマーは **[Visible](properties-core.md)** プロパティを false に設定する必要があり、これによりすべてのユーザーに非表示になります。
 
 ### <a name="timing-considerations"></a>タイミングに関する考慮事項
-**タイマー**が自動的に実行される場合は、ユーザーがコンテンツを読み取って使用するのに十分な時間があるかどうかを検討してください。 キーボードとスクリーンリーダーのユーザーは、時間がかかるイベントに対処するためにより多くの時間が必要になる場合があります。
+**タイマー**が自動的に実行される場合、ユーザーがコンテンツを読み、使用するのに十分な時間があるかどうかを検討してください。 キーボード ユーザーおよびスクリーン リーダー ユーザーは、時間制限のあるイベントに反応するまでにより多くの時間がかかることがあります。
 
-次のいずれかの方法で十分です。
-* ユーザーが時間指定イベントをキャンセルできるようにします。
-* ユーザーが開始前に制限時間を調整できるようにします。
-* 制限時間が経過するまで20秒間警告し、制限を簡単に拡張できるようにします。
+以下のいずれかの戦略で十分です。
+* ユーザーが時間制限のあるイベントをキャンセルできるようにする。
+* ユーザーが開始前に時間制限を調整できるようにする。
+* 時間制限が切れる前に 20 秒間警告し、制限を簡単に延長する方法を提供する。
 
-一部のシナリオでは、これらの要件は除外されます。 詳細については、[時間制限に関する WCAG 2.0 ガイドライン](https://www.w3.org/TR/WCAG20/#time-limits)を参照してください。
+一部のシナリオでは、これらの要件は除外されます。 詳細については、[時間制限に関する WCAG 2.0 ガイドライン](https://www.w3.org/TR/WCAG20/#time-limits) を参照してください。
 
-### <a name="screen-reader-support"></a>スクリーン リーダーのサポート
-* タイマーが現在の画面で変更をトリガーする場合は、[ライブ領域](../accessible-apps-live-regions.md)を使用して、変更内容をスクリーンリーダーユーザーに通知します。
+### <a name="screen-reader-support"></a>スクリーン リーダー サポート
+* タイマーが現在の画面上での変更をトリガーする場合、[ライブ リージョン](../accessible-apps-live-regions.md) を使用してスクリーン リーダーのユーザーに変更内容を通知します。
 
     > [!NOTE]
-    > タイマーが表示され、実行されている場合、スクリーンリーダーは5秒ごとに経過時間をアナウンスします。
+    > タイマーが表示されていて実行中の場合、スクリーン リーダーは経過時間を 5 秒ごとに通知します。
 
-* 時間を区別する重要な情報については、コントロールの **[Text](properties-core.md)** プロパティを使用しないでください。 スクリーンリーダーは、 **[テキスト](properties-core.md)** への変更を発表しません。
-* 対話型タイマーの場合:
+* 時間的制約がある重要な情報のために、コントロールの **[Text](properties-core.md)** プロパティを使用しないでください。 スクリーン リーダーは **[テキスト](properties-core.md)** に変更を通知しません。
+* 対話型タイマーの場合
     * **[Text](properties-core.md)** を指定する必要があります。
-    * 経過時間を表示するには、 **[ラベル](control-text-box.md)** コントロールを追加することを検討してください。 タイマーを開始または停止するようにユーザーに指示するには、タイマーの **[Text](properties-core.md)** プロパティを使用します。
+    * 経過時間を示すために、**[ラベル](control-text-box.md)** コントロールを追加することを検討してください。 タイマーの開始または停止をユーザーに指示するには、タイマーの **[Text](properties-core.md)** プロパティを使用します。

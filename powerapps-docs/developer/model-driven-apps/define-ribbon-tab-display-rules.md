@@ -17,12 +17,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 4e4b7f1cbfc167d999881e396d53436387c2f184
-ms.sourcegitcommit: 5701e7a755fade6c3bac5c4a5774fcc74627e168
+ms.openlocfilehash: 5ad0f76512d423cbe94072cc96ec09da1b56ce9c
+ms.sourcegitcommit: 4a88daac42180283314f6bedee3d6810fd5a6c25
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "3115635"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "3276155"
 ---
 # <a name="define-ribbon-tab-display-rules"></a>リボン タブ表示ルールを定義する
 
@@ -39,6 +39,6 @@ ms.locfileid: "3115635"
  アプリケーション リボンの `RibbonDiffXml` にタブ表示ルールをグローバルに定義する場合は、`EntityRule` 要素と `<PageRule>` 要素を両方とも適用できます。  
   
 ### <a name="see-also"></a>関連項目  
- [コマンド、およびリボンをカスタマイズする](customize-commands-ribbon.md)   
+ [コマンドとリボンのカスタマイズ](customize-commands-ribbon.md)   
  [リボン要素のスケーリングの定義](define-scaling-ribbon-elements.md)   
  [リボンの使用による URL へのパラメーターの受け渡し](pass-parameters-url-by-using-ribbon.md)

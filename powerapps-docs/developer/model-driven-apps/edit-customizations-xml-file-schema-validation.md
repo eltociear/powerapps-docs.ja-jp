@@ -17,12 +17,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 2634fe9dcc9d0a68f200c2af0fcb47169fdbdb0c
-ms.sourcegitcommit: 5701e7a755fade6c3bac5c4a5774fcc74627e168
+ms.openlocfilehash: c5de61ab146cbc247a9a34706b736ebdd462bf41
+ms.sourcegitcommit: b5ab419dad4e9d64a5e6610641363b0d7487930a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "3115843"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "3465449"
 ---
 # <a name="edit-the-customizations-xml-file-with-schema-validation"></a>スキーマ検証を使用した XML カスタマイズ ファイルの編集
 
@@ -54,11 +54,13 @@ customizations.xml ファイルは、ソリューションとしてエクスポ�
 - VisualizationDataDescription.xsd  
   
   
-<a name="BKMK_UseSchemaValidation"></a>   
+<a name="BKMK_UseSchemaValidation"></a>
+
 ## <a name="using-schema-validation"></a>スキーマ検証の使用  
- エクスポートされた XML ファイルはテキスト ファイルなので、[!INCLUDE[pn_Notepad](../../includes/pn-notepad.md)] などのテキスト エディターを使用して編集できます。 ただし、XSD スキーマ検証機能を備えた [!INCLUDE[pn_Visual_Studio](../../includes/pn-visual-studio.md)] などのアプリケーションの使用を強く推奨します。 [!INCLUDE[pn_Visual_Studio](../../includes/pn-visual-studio.md)] における XSD の検証 <!-- TODO - need to fix this link. The page is not available (or [Visual Studio Express 2012 for Web](https://www.microsoft.com/visualstudio/eng/products/visual-studio-express-for-web))--> エラーを防ぐのに役立つ [!INCLUDE[pn_IntelliSense](../../includes/pn-intellisense.md)] の情報とスキーマ検証を提供します。  
+
+エクスポートされた XML ファイルはテキスト ファイルなので、[!INCLUDE[pn_Notepad](../../includes/pn-notepad.md)] などのテキスト エディターを使用して編集できます。 ただし、XSD スキーマ検証機能を備えた [!INCLUDE[pn_Visual_Studio](../../includes/pn-visual-studio.md)] などのアプリケーションの使用を強く推奨します。 [!INCLUDE[pn_Visual_Studio](../../includes/pn-visual-studio.md)] における XSD の検証 <!-- TODO - need to fix this link. The page is not available (or [Visual Studio Express 2012 for Web](https://www.microsoft.com/visualstudio/eng/products/visual-studio-express-for-web))--> エラーを防ぐのに役立つ [!INCLUDE[pn_IntelliSense](../../includes/pn-intellisense.md)] の情報とスキーマ検証を提供します。  
   
- ソリューションの customization.xml ファイルを検証するために使用される XSD スキーマ ファイルはここにあります。 [!INCLUDE[schema_download](../../includes/schema-download.md)]。 このフォルダーにあるすべてのファイルを同じディレクトリにコピーしてください。 customizations.xml ファイルを CustomizationsSolution.xsd ファイルに関連付ける必要があります。 このファイルには、フォルダー内の他のすべての XSD ファイルへのリンクが含まれます。  
+ソリューションの customization.xml ファイルを検証するために使用される XSD スキーマ ファイルはここにあります。 [!INCLUDE[schema_download](../../includes/schema-download.md)]。 このフォルダーにあるすべてのファイルを同じディレクトリにコピーしてください。 customizations.xml ファイルを CustomizationsSolution.xsd ファイルに関連付ける必要があります。 このファイルには、フォルダー内の他のすべての XSD ファイルへのリンクが含まれます。  
   
 1. XSD スキーマ ファイルをダウンロードし、コンピューターにそのすべてをコピーします。 これらのファイルを、[!INCLUDE[pn_Visual_Studio](../../includes/pn-visual-studio.md)] が XSD 検証ファイルを格納する場所に保存します。 通常、この場所は、`[install drive]\Program Files (x86)\Microsoft Visual Studio X.0\Xml\Schemas` です。ここで `X` は [!INCLUDE[pn_Visual_Studio_short](../../includes/pn-visual-studio-short.md)] のバージョンを表します。  
   
@@ -79,11 +81,10 @@ customizations.xml ファイルは、ソリューションとしてエクスポ�
   
 ### <a name="see-also"></a>関連項目
 
-[ Common Data Serviceのカスタマイズファイルを編集する場合](when-edit-customization-file.md)<br/> 
+[ Common Data Service のカスタマイズ ファイルを編集する場合](when-edit-customization-file.md)<br/> 
 [リボン コアのスキーマ](ribbon-core-schema.md)<br/>
 [リボン タイプのスキーマ](ribbon-types-schema.md)<br/>
 [リボン WSS のスキーマ](ribbon-wss-schema.md)<br/>
-[SiteMap スキーマ](/dynamics365/customer-engagement/developer/customize-dev/sitemap-schema)<br/>   <!-- TODO need to fix link relevant to the topic in powerapps repo-->
 [フォーム XML スキーマ](form-xml-schema.md)     
 [ISV Configuration File Schema](/dynamics365/customer-engagement/developer/customize-dev/isv-configuration-file-schema)<br/>   <!-- TODO need to fix link relevant to the topic in powerapps repo-->
-[FetchXML を使用したクエリの構築](/dynamics365/customer-engagement/developer/org-service/build-queries-fetchxml) <!-- TODO need to fix link relevant to the topic in powerapps repo-->
+

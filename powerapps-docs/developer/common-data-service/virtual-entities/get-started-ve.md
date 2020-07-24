@@ -1,30 +1,30 @@
 ---
 title: 仮想エンティティに関する入門情報 (Common Data Service) | Microsoft Docs
 description: 仮想エンティティは、 Common Data Service のエンティティとしてシームレスに表すことで、データの重複なしに、また、多くの場合、カスタム コーディングなしに、外部システムに存在するデータの統合を可能にします。
-ms.date: 10/31/2018
+ms.date: 06/24/2020
 ms.service: powerapps
 ms.topic: get-started-article
 applies_to:
 - Dynamics 365 (online)
 ms.assetid: 14c5fbbc-98db-4e49-b245-2c84c1cd11cd
-author: mayadumesh
-ms.author: jdaly
-manager: annbe
+author: Sunil-Garg
+ms.author: pehecke
+manager: ryjones
 search.audienceType:
 - developer
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: c6d4cc24a527a84c19c61123f8a63e088e3f9c34
-ms.sourcegitcommit: 5701e7a755fade6c3bac5c4a5774fcc74627e168
+ms.openlocfilehash: bf67d4db2686d87c21cdbb4343028c47be4c7bee
+ms.sourcegitcommit: 8c157ad4ab7c01d55728a301abd616fee9341f9c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "3115771"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "3503167"
 ---
 # <a name="get-started-with-virtual-entities"></a>仮想エンティティに関する入門情報
 
-仮想エンティティは、 Common Data Service のエンティティとしてシームレスに表すことで、データの重複なしに、また、多くの場合、カスタム コーディングなしに、外部システムに存在するデータの統合を可能にします。 この機能の初期実装では、このようなエンティティに対して読み取り専用サポートのみを提供し、下の [仮想エンティティの制限](#limitations-of-virtual-entities) で説明されているその他のいくつかの制限があります。 これらの制限を除いて、仮想エンティティは他のユーザー定義エンティティと同じ様に動作します。 
+仮想エンティティは、 Common Data Service のエンティティとしてシームレスに表すことで、データの重複なしに、また、多くの場合、カスタム コーディングなしに、外部システムに存在するデータの統合を可能にします。 仮想エンティティは、外部システムでのデータの作成、更新、削除をサポートします。 
 
 外部データの統合に対する以前のクライアント側およびサーバー側アプローチは、カスタマイズされたコードが必要であり、不完全な統合、データ重複、または開発リソースの拡張コミットメントなど、多くの制限の影響を受けましたが、仮想エンティティはそれに取って代わります。  更に、管理者およびシステム カスタマイザーにとって、仮想エンティティの使用により管理および構成が大幅に単純化されます。
 
@@ -36,13 +36,13 @@ ms.locfileid: "3115771"
 仮想エンティティは、Common Data Service データベースで作成されたエンティティ インスタンスに関連付けられた物理テーブルがない、Common Data Service プラットフォーム メタデータにおけるエンティティの定義です。 代わりに、実行中に、エンティティ インスタンスが必要なときに、関連付けられた外部システムから状態が動的に取得されます。 各仮想エンティティの種類は、 *仮想エンティティ データ プロバイダー* および (オプションで) 関連付けられた *仮想エンティティ データ ソース* からの何らかの構成情報に関連付けられます。 
 
 <!-- TODO:
-A data provider is a particular type of Common Data Service plug-in, which is registered against CRUD events that occur in the platform. This initial release only supports READ operations. More information: [Write a plug-in](../write-plugin.md) -->
+A data provider is a particular type of Common Data Service plug-in, which is registered against CRUD events that occur in the platform. More information: [Write a plug-in](../write-plugin.md) -->
 
 次のデータ プロバイダーは Common Data Service に付属します。
 - [OData v4](https://www.odata.org/documentation/) プロバイダーがサービスに含まれており、既定でインストールされます。
 - [Azure Cosmos DB](https://docs.microsoft.com/azure/cosmos-db) (以前の *Microsoft ドキュメント DB*) プロバイダーは [AppSource](https://appsource.microsoft.com) から入手できます。
 
-追加のプロバイダーが、Microsoft、そのパートナー、およびサード パーティによって使用可能になります。 外部データ ソースのデータ プロバイダーが見つからない場合、 *ユーザー定義仮想エンティティ データ プロバイダー* を開発することができます。詳細については、 [仮想エンティティ データ プロバイダー](custom-ve-data-providers.md) を参照してください。
+外部データ ソースのデータ プロバイダーが見つからない場合、 *ユーザー定義仮想エンティティ データ プロバイダー* を開発することができます。詳細については、 [仮想エンティティ データ プロバイダー](custom-ve-data-providers.md) を参照してください。
 
 ## <a name="virtual-entity-creation-and-mapping"></a>仮想エンティティの作成およびマッピング
 
@@ -52,8 +52,8 @@ A data provider is a particular type of Common Data Service plug-in, which is re
 
 ## <a name="limitations-of-virtual-entities"></a>仮想エンティティの制限
 
-このリリースでは、外部データと共に仮想エンティティを使用できるかどうか評価するときに、知っておく必要がある仮想エンティティのいくつかの制限があります。
-- データは読み取り専用です。 仮想エンティティ機能は、Common Data Service で行われた変更を外部システムに 押し戻すことをサポートしません。
+以下に、考慮が必要な仮想エンティティの制限を示します。
+
 - 組織が所有するエンティティのみサポートされます。 セキュリティのフィルタ処理がユーザー所有のエンティティに適用されることは、サポートされません。 個々のユーザーの仮想エンティティ データへのアクセスは、セキュリティ ロールに基づいて有効または無効を切り替えることができます。 フィールド レベル セキュリティはサポートされません。
 - Common Data Service エンティティとして外部データをモデル化することが可能で ある必要があります。 つまり、次のようになります。
     - 外部データ ソースのすべてのエンティティは、関連付けられた GUID 主キーが必要です。  
@@ -61,7 +61,7 @@ A data provider is a particular type of Common Data Service plug-in, which is re
     - Common Data Service ですべてのエンティティ関係をモデル化できる必要があります。
     - 仮想エンティティの属性は、計算またはロールアップすることはできません。  目的の計算は、場合によってはデータ プロバイダー内か、またはデータ プロバイダーによって指示されて、外部側で行われる必要があります。
     - グリッドまたはそのほかのUIのビューの参照として仮想エンティティの列を追加できますが、この仮想エンティティ検索列に基づいてフィルター処理や並べ替えはできません。
-- 監査および変更履歴はサポートされません。  これらは、外部データ ストア内で実装される場合があります。
+- 監査および変更履歴はサポートされません。
 - 仮想エンティティをキューに対して有効にすることはできません。
 - 値のオフライン キャッシングは、仮想エンティティでサポートされません。
 - 仮想エンティティは、活動を表すことができず、業務プロセス フローをサポートしません。

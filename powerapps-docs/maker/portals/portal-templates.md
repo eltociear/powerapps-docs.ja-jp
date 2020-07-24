@@ -1,20 +1,19 @@
 ---
 title: Power Apps で使用可能なポータル テンプレート | Microsoft Docs
 description: Power Apps で使用可能なさまざまなポータル テンプレートについて説明します。
-author: tapanm-msft
-manager: kvivek
+author: neerajnandwana-msft
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 11/07/2019
-ms.author: tapanm
-ms.reviewer: ''
-ms.openlocfilehash: ec678eccc0c4321db0576821035f714590b13b89
-ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
+ms.date: 04/09/2020
+ms.author: nenandw
+ms.reviewer: tapanm
+ms.openlocfilehash: 1dbe7bf3742e1d8477923d3f5d9e86ca3ea2ee31
+ms.sourcegitcommit: 2fd873a1ea17f419f6194714efffa47a9bd00c2e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "2981454"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "3506499"
 ---
 # <a name="portal-templates"></a>ポータル テンプレート
 
@@ -38,40 +37,41 @@ Dynamics 365 (Dynamics 365 Sales、Dynamics 365 Customer Service、Dynamics 365 
     > [!NOTE]
     > 各オプションを有効にするにいは、Field Service と Project Service パッケージが、Dynamics 365 組織にインストールさっれている必要があります。 詳細については、[Project Service Automation の統合](https://docs.microsoft.com/dynamics365/portals/integrate-project-service-automation) および [Field Serviceの統合](https://docs.microsoft.com/dynamics365/portals/integrate-field-service) を参照してください。
 
-- **従業員セルフサービス ポータル**: 一般的なタスクを合理化し、信頼できる技術情報ソースを提供してあらゆる従業員の能力を高めることにより、効率的で十分に情報を得た労働力を生み出します。
-- **コミュニティ ポータル**: コミュニティ ポータルでは、顧客とエキスパートの間でのピアツーピアの活発なやり取りを促し、サポート情報の記事、フォーラム、ブログから入手できる技術情報を有機的に拡大しながら、コメントや評価からフィードバックを得ることができます。
-- **空のポータル**: 外部および内部ユーザーとデータを共有するための Web サイトを作成します。 このテンプレートでは、迅速に開始するためのサンプル ページが取得できます。 
+- **従業員セルフ サービス ポータル**: 一般的なタスクを合理化し、知識の決定的なソースを提供してすべての従業員の能力を高めることにより、効率的で十分に情報に精通した人員を生み出します。
+- **コミュニティ ポータル**: コミュニティ ポータルでは、顧客とエキスパートの間でのピアツーピアの活発なやり取りを促し、サポート情報の記事、フォーラム、ブログから入手できる技術情報を組織的に拡大しながら、コメントや評価からフィードバックを得ることができます。
+- **空のポータル**: 外部および内部ユーザーとデータを共有するための Web サイトを作成します。 このテンプレートでは、迅速に開始するためのサンプル ページが取得できます。
+- **カスタマー ポータル (プレビュー)**: Supply Chain Management カスタマー ポータル テンプレートは、外部に面した B2B 注文発行 Web サイトをプロビジョニングします。 このテンプレートを使用すると、外部ユーザーは、関連付けられたDynamics 365 for Supply Chain Management 環境への注文を作成および表示できます。 カスタマー ポータル テンプレートは *プレビュー* にあります。 *プレビュー* 機能の詳細については、[Power Apps でのプレビュー機能について理解する](https://docs.microsoft.com/powerapps/maker/canvas-apps/working-with-experimental-preview) を参照してください。
 
 ## <a name="portal-templates-features"></a>ポータル テンプレート機能
 
 以下の表は、各ポータル オプションに関連する機能をまとめたものです。
 
-| 機能 | 顧客セルフサービス ポータル | パートナー ポータル | 従業員セルフサービス ポータル | コミュニティ ポータル | 空のポータル | Common Data Service スターター ポータル|
-|------------------|---------------|----------------|---------------|------------------|---------------|------|
-| ワールド レディ | •  | • | • | • | • |• |
-| 複数言語のサポート | •  | • | • | • | • |• |
-| ポータル管理| • | • | • | • | •  |• |
-| カスタマイズと拡張性  | •   | •  | •   | •  | • |• |
-| テーマ化   | •   | •   | •    | •   | •   |• |
-| コンテンツ管理                     | •                            |                | •                            | •                |               |
-| ナレッジ マネージメント                   | •                            | •              | •                            | •                |               |
-| サポート/Case Management                | •                            |                | •                            | •                |               |
-| フォーラム                                 | •                            |                | •                            | •                |               |
-| ファセット検索                         | •                            |                | •                            |                  |               |
-| プロファイル管理                     | •                            |                | •                            |                  |               |
-| フォーラム スレッドの購読              | •                            |                | •                            |                  |               |
-| コメント                               | •                            |                | •                            | •                |               |
-| [!INCLUDE[pn-azure-shortest](../../includes/pn-azure-shortest.md)] AD 認証                |                              |                | •                            |                  |               |
-| アイデア                                  |                              |                |                              | •                |               |
-| ブログ                                  |                              |                |                              | •                |               |
-| Project Service Automation 統合 |                              | •              |                              |                  |               |
-| Field Service 統合              |                              | •              |                              |                  |               |
-| パートナーのオンボーディング                     |                              | •              |                              |                  |               |
-| ポータル ベース  |  •    | •      |  •| •| •|• |
-| ポータルのワークフロー|  •| •|  •| •| •|• |
-| Web 通知|  •| •|  •| •| •|• |
-| [!INCLUDE[cc-microsoft](../../includes/cc-microsoft.md)] ID|   •|  •|  •|   •| •|• |
-| ID ワークフロー| •|  •| •|   •| •|• |
-| Web フォーム|  •| •|    •| •| •|• |
-| フィードバック|   •|  •|  •| •| •|• |
+| 機能 | 顧客セルフサービス ポータル | パートナー ポータル | 従業員セルフサービス ポータル | コミュニティ ポータル | 空のポータル | Common Data Service スターター ポータル| 顧客 ポータル (プレビュー) | 
+|------------------|---------------|----------------|---------------|------------------|---------------|------|-|
+| ワールド レディ | *  | * | * | * | * |* |*
+| 複数言語のサポート | *  | * | * | * | * |* |*
+| ポータル管理| * | * | * | * | *  |* |*
+| カスタマイズと拡張性  | *   | *  | *   | *  | * |* |*
+| テーマ化   | *   | *   | *    | *   | *   |* |*
+| コンテンツ管理                     | *                            |                | *                            | *                |               |
+| ナレッジ マネージメント                   | *                            | *              | *                            | *                |               |
+| サポート/サポート案件管理                | *                            |                | *                            | *                |               |
+| フォーラム                                 | *                            |                | *                            | *                |               |
+| ファセット検索                         | *                            |                | *                            |                  |               |
+| プロファイル管理                     | *                            |                | *                            |                  |               | |*
+| フォーラム スレッドの購読              | *                            |                | *                            |                  |               |
+| コメント                               | *                            |                | *                            | *                |               |
+| [!INCLUDE[pn-azure-shortest](../../includes/pn-azure-shortest.md)] AD 認証                |                              |                | *                            |                  |               ||*
+| アイデア                                  |                              |                |                              | *                |               |
+| ブログ                                  |                              |                |                              | *                |               |
+| Project Service Automation 統合 |                              | *              |                              |                  |               |
+| Field Service 統合              |                              | *              |                              |                  |               |
+| パートナーのオンボーディング                     |                              | *              |                              |                  |               |
+| ポータル ベース  |  *    | *      |  *| *| *|* |*
+| ポータルのワークフロー|  *| *|  *| *| *|* |*
+| Web 通知|  *| *|  *| *| *|* |*
+| [!INCLUDE[cc-microsoft](../../includes/cc-microsoft.md)] ID|   *|  *|  *|   *| *|* |*
+| ID ワークフロー| *|  *| *|   *| *|* |*
+| Web フォーム|  *| *|    *| *| *|* |*
+| フィードバック|   *|  *|  *| *| *|* |*
 ||

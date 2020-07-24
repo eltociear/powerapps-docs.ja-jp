@@ -1,20 +1,19 @@
 ---
 title: 複数言語によるポータル サポートの有効化 | MicrosoftDocs
 description: ポータルで複数の言語を有効化、複数の言語でコンテンツを作成するための手順。
-author: tapanm-msft
-manager: kvivek
+author: sandhangitmsft
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 11/04/2019
-ms.author: tapanm
-ms.reviewer: ''
-ms.openlocfilehash: a91ffe1c00b7dbcc40b786731e956bfdd8fc6d94
-ms.sourcegitcommit: 4349eefb1fd788f5e27d91319bc878ee9aba7a75
+ms.date: 04/30/2020
+ms.author: sandhan
+ms.reviewer: tapanm
+ms.openlocfilehash: c4fcfb3ce72619a0cc12d4cc50c6cfda368bdbe4
+ms.sourcegitcommit: c12260f372ad2cc48d3146be570d2088c9ef1d86
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3012730"
+ms.lasthandoff: 06/20/2020
+ms.locfileid: "3490547"
 ---
 # <a name="enable-multiple-language-portal-support"></a>複数言語ポータルサポートを有効にする
 ビジネスは単一の地域または言語に限定されてはいません。 単一ポータルは、世界中のお客様にお届けするため複数の言語でコンテンツを表示できます。 単一のコンテンツ階層を維持しながら、ポータルのコンテンツを複数の言語に翻訳することができます。
@@ -23,7 +22,7 @@ ms.locfileid: "3012730"
 
 ポータルに対して複数言語を有効にするには、次の手順を実行します。
 
-1. [Common Data Service 環境の言語を有効にする](https://technet.microsoft.com/library/dn832148.aspx)  
+1. [Common Data Service 環境の言語を有効にする](https://docs.microsoft.com/power-platform/admin/enable-languages)  
 2. **ポータル** > **Web サイト** > **Web サイト**の順に移動します。
 3. 言語サポートを追加したい Web サイトを選択します。
 4. **全般** タブの下の **サポートされている言語** セクションで、 **新しい Web サイト言語** を選択します。

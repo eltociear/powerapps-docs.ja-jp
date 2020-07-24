@@ -2,7 +2,7 @@
 title: リボンの有効化ルールを定義する (モデル駆動型アプリ) | MicrosoftDocs
 description: リボン要素の構成中にそのリボン要素をいつ有効化するかを制御する、特定のルールを定義することについて学習します。
 keywords: ''
-ms.date: 02/08/2019
+ms.date: 05/07/2020
 ms.service: powerapps
 ms.topic: article
 ms.assetid: 201f5db9-be65-7c3b-8202-822d78338bd6
@@ -15,12 +15,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 9dce1d13b5cb74173ff8af678480bda7b8e00140
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 70d44e321d798805b90b269bac5fc20588ae1d92
+ms.sourcegitcommit: ed423b9382bf183d0b28907039d3432b99d4e7f0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2865588"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "3353496"
 ---
 # <a name="define-ribbon-enable-rules"></a>リボンの有効化ルールの定義
 
@@ -70,7 +70,7 @@ ms.locfileid: "2865588"
 -   `CrmForOutlookOfflineAccess`  
 
 ### <a name="custom-rule"></a>カスタム ルール
- `<CustomRule>` 要素を使用します。 Promise (統一インターフェイス) またはブール値 (統一インターフェイスおよび Web クライアント) を返す JavaScript ライブラリ内の関数を呼び出すには、この種類のルールを使用します。
+ `<CustomRule>` 要素を使用します。 Promise (統一インターフェイス) またはブール値 (統一インターフェイスおよび Web クライアント) を返す [スクリプト (JScript) Web リソース](/powerapps/developer/model-driven-apps/script-jscript-web-resources)内の関数を呼び出すには、この種類のルールを使用します。
 
 ```JavaScript
 function EnableRule()
@@ -87,29 +87,32 @@ function EnableRule()
  > [!NOTE]
 >  Promise ベースのルールは統一インターフェイスでのみ実行されるので、従来の Web クライアントがまだ使われている場合は使用できません。
  ```JavaScript
-function EnableRule()
-{
+// Old synchronous style
+/*
+function EnableRule() {
+    const request = new XMLHttpRequest();
+    request.open('GET', '/bar/foo', false);
+    request.send(null);
+    return request.status === 200 && request.responseText === "true";
+}
+*/
+
+// New asynchronous style
+function EnableRule() {
     const request = new XMLHttpRequest();
     request.open('GET', '/bar/foo');
 
-    return new Promise((resolve, reject) =>
-    {
-        request.onload = function (e)
-        {
-            if (request.readyState === 4)
-            {
-                if (request.status === 200)
-                {
+    return new Promise(function(resolve, reject) {
+        request.onload = function (e) {
+            if (request.readyState === 4) {
+                if (request.status === 200) {
                     resolve(request.responseText === "true");
-                }
-                else
-                {
+                } else {
                     reject(request.statusText);
                 }
             }
         };
-        request.onerror = function (e)
-        {
+        request.onerror = function (e) {
             reject(request.statusText);
         };
 
@@ -165,6 +168,6 @@ function EnableRule()
 `<ValueRule>` 要素を使用します。 このルールは、フォームに表示されているレコード内の特定のフィールドの値を確認する場合に使用します。 確認するには`Field`と`Value`を指定する必要があります。
 
 ### <a name="see-also"></a>関連項目  
- [コマンド、およびリボンをカスタマイズする](customize-commands-ribbon.md)   
- [リボン コマンドを定義する](define-ribbon-commands.md)   
+ [コマンドとリボンのカスタマイズ](customize-commands-ribbon.md)   
+ [リボン コマンドの定義](define-ribbon-commands.md)   
  [リボンの表示ルールの定義](define-ribbon-display-rules.md)

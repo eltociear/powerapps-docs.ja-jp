@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 29aa934896638b65b20d8054379f0654ef5ee839
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 30ac8523d18bce42465616beec6c0ba473b171e2
+ms.sourcegitcommit: b5ab419dad4e9d64a5e6610641363b0d7487930a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2748956"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "3465557"
 ---
 # <a name="when-to-edit-the-customizations-file"></a>カスタマイズ ファイルを編集するとき
 
@@ -45,7 +45,7 @@ ms.locfileid: "2748956"
   
  [XrmToolBox Site Map Editor](https://www.xrmtoolbox.com/plugins/MsCrmTools.SiteMapEditor/) など、コミュニティで開発されたサイト マップ エディターを使用することもできます。   
   
- 詳細については、「[SiteMap を使用してアプリケーションのナビゲーションを変更する](/developer/customize-dev/change-application-navigation-using-sitemap.md)」を参照してください。  
+ 詳細については、「[SiteMap を使用してアプリケーションのナビゲーションを変更する](https://docs.microsoft.com/powerapps/maker/model-driven-apps/create-site-map-app)」を参照してください。  
   
  **FormXml を編集**  
  FormXml は、エンティティ フォームとダッシュボードを定義するために使用されます。 アプリケーションのフォーム エディターおよびダッシュボード デザイナーは、この目的のために最もよく使用されるツールです。 customizations.xml ファイルを編集する方法もあります。 詳細については、[エンティティ フォームのカスタマイズ](customize-entity-forms.md) および [ダッシュボードの作成](create-dashboard.md) を参照してください。  

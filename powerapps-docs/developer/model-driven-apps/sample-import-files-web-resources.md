@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 775ad0f50f65845f6e7fa437348b69c6730008a5
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: f8662e7462ef54fa39084cf311faf756680505e7
+ms.sourcegitcommit: 6c73e316f866af6a34619f95a5ac64ad1664b48a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749021"
+ms.lasthandoff: 05/01/2020
+ms.locfileid: "3326429"
 ---
 # <a name="sample-import-files-as-web-resources"></a>サンプル: Web リソースとしてファイルをインポート
 
@@ -110,7 +110,7 @@ static public string getEncodedFileContents(String pathToFile)
 ## <a name="example"></a>例  
  ImportWebResources.cs ファイルの次の部分には、次の変数が必要です。  
   
-- `_customizationPrefix`: **MDA SDK サンプル**発行者のカスタマイズの接頭辞。 この発行者が存在しない場合は、"sample" というカスタマイズの接頭辞で作成されます。  
+- `_customizationPrefix`: **SDK サンプル**発行者のカスタマイズの接頭辞。 この発行者が存在しない場合は、"sample" というカスタマイズの接頭辞で作成されます。  
   
 - `_ImportWebResourcesSolutionUniqueName`: このサンプルで作成された **Web リソースのインポートのサンプル ソリューション**の一意の名前。 値は `ImportWebResourcesSample` です。  
   

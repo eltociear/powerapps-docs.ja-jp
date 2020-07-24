@@ -12,16 +12,16 @@ search.audienceType:
 - developer
 search.app:
 - PowerApps
-ms.openlocfilehash: 165fedbd6bb8790fac6b1c3b1c4ac1814f31c7d6
-ms.sourcegitcommit: 5701e7a755fade6c3bac5c4a5774fcc74627e168
+ms.openlocfilehash: 3445d0b49bf3d5b9d056df9f0c9b6134a3f7391f
+ms.sourcegitcommit: ef921bbf0908283a3621c2ca1069e6b58a2b14e7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "3115683"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "3373453"
 ---
-# <a name="quick-start-sample-retrieve-common-data-service-environements-using-online-management-api"></a>クイックスタート サンプル: オンライン管理 API を使用して Common Data Service 環境を取得する 
+# <a name="quick-start-sample-retrieve-common-data-service-environments-using-online-management-api"></a>クイック スタートのサンプル: オンライン管理 API を使用する Common Data Service 環境の取得 
 
-C＃ サンプルは、Online Management API への認証方法と、Office 365 テナントからすべての Common Data Service の環境を取得する方法を示しています。
+C# サンプルは、オンライン管理 API への認証し、その後 自分の Office 365 テナントからすべての l Common Data Service 環境を取得する方法を示しています。
 
 サンプルでは、OAuth 2.0 プロトコルを使用して Online Management API に簡単に認証し、要求ヘッダーにあるアクセス トークンを渡すために、認証 [ヘルパー コード](sample-authentication-helper.md) を使用しています。
 

@@ -20,33 +20,20 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: c8d16a0c8451abc769990dbd88e6ad7f1e7846a5
-ms.sourcegitcommit: c9c1c78dadc92913558dab44af0890e90e2adcd0
+ms.openlocfilehash: 516f4a35cf7d31c45df011b7685ade1526246582
+ms.sourcegitcommit: c6906775005aec98973b1f5c3dbe5924aff6d26e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "3088586"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "3341280"
 ---
 # <a name="solution-publisher-overview"></a>ソリューション発行者の概要
 
 作成したアプリや加えたカスタマイズもソリューションの一部です。 すべてのソリューションには発行者がいます。 ソリューションを作成する際に発行元を指定します。 
 
-> [!div class="mx-imgBorder"] 
-> <img src="media/solution-publisher-select.png" alt="Select solution publisher" height="731" width="416">
-
 ソリューション発行者とは、アプリの開発者を意味します。 このため、分かりやすいソリューション発行者を作成する必要があります。 ソリューションの発行者は、Power Apps の **ソリューション** エリアで **設定** を選択すると確認できます。
 
-## <a name="solution-publisher-prefix"></a>ソリューション発行者の接頭辞
-ソリューション発行者には接頭辞が含まれています。 接頭辞は、どのパ発行者がコンポーネントを担当しているかを判断する際に役立ちます。 たとえば、ここに表示されている *Contoso ソリューション*には、ソリューション発行者の接頭辞*コントソ*が含まれています。 
-
-> [!div class="mx-imgBorder"] 
-> ![資金調達ソリューション発行者の接頭辞](media/publisher-prefix.png)
-
-> [!NOTE]
-> ソリューション発行者の接頭辞を変更する場合は、新しいアプリ、またはメタデータ項目を作成する前に変更をしておく必要があります。 メタデータ項目の名前を変更することはできません。 
-
-## <a name="common-data-services-default-solution"></a>Common Data Services の既定のソリューション
-Power Apps の既定のソリューションは Common Data Services の既定のソリューションでもあり、これは Common Data Service の既定の発行元と関連付けられています。 この発行元には、既定の発行元の接頭辞がランダムに割り当てられます。たとえば、接頭辞として *cr8a3* などが割り当てられます。 つまり、既定のソリューションで作成されるメタデータの新たな項目の名前の先頭には、そのアイテムを一意に識別するために使用される名前が付加されます。 たとえば、 *動物* という名前の新しいエンティティを作成する場合、Common Data Service が使用する一意の名称は *cr8a3_animal*となります。 これは、新しいフィールド (属性)、関連付け、オプション セットのオプションについても同様です。 既定のソリューションをカスタマイズする場合は、発行元の接頭辞を変更することを検討してください。 
+ソリューション発行者の詳細については、「[ソリューション発行者](/power-platform/alm/solution-concepts-alm#solution-publisher)」を参照してください。
 
 ## <a name="create-a-solution-publisher"></a>ソリューション発行者の作成
 1.  Power Apps ポータルで、 **ソリューション**を選択します。 

@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: e99433c2fce04ec5b72579645ccfda838892dbea
-ms.sourcegitcommit: 59f0b3adc56279b5673cbf04b4a55bd7678e1ea7
+ms.openlocfilehash: 143930d9590d094973386d363a0386da185818df
+ms.sourcegitcommit: b5ab419dad4e9d64a5e6610641363b0d7487930a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "3091302"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "3465505"
 ---
 # <a name="open-forms-views-dialogs-and-reports-with-a-url"></a>URL を使用してフォーム、ビュー、ダイアログ、およびレポートを開く
 
@@ -90,8 +90,9 @@ https://myorg.crm.dynamics.com/main.aspx?etn=contact&pagetype=entitylist&viewid=
 |   `cmdbar`   |                                                                                                                コマンド バーを表示するかどうかを制御します。 **注:** この機能は Unified Service Desk アプリケーションの要件をサポートしています。 これを使用して別のエンティティ フォームに埋め込まれた IFrame 内のエンティティ フォームを表示することは、サポートされていません。 <br /><br /> -   `true`<br />     コマンド バーが表示されます。 これが既定です。<br />-   `false`<br />     コマンド バーが非表示になります。                                                                                                                |
 
 <a name="BKMK_CopyViewURL"></a>   
+
 ### <a name="copy-the-url-for-a-view"></a>ビューの URL のコピー  
- モデル駆動型アプリの多くのビューには、特定のビューの URL をコピーしたり、電子メールのメッセージに特定のビューの URL を埋め込んで送信したりできる機能が備えられています。 この機能により、ユーザー間のやり取りが容易になり、ユーザーが別のアプリケーション (SharePoint サイトなど) に含めることのできるビューの URL にもアクセスできるようになります。  
+ 多くのモデル駆動型アプリのビューには、特定のビューの URL をコピーしたり、電子メールのメッセージに特定のビューの URL を埋め込んで送信したりできる機能が備えられています。 この機能により、ユーザー間のやり取りが容易になり、ユーザーが別のアプリケーション (SharePoint サイトなど) に含めることのできるビューの URL にもアクセスできるようになります。  
 
 > [!NOTE]
 >  この URL は、サイト マップを使用してアプリケーション ナビゲーションにビューを含めるときは使用しないでください。 詳細については、「[サイト マップを使用したアプリケーション ナビゲーションへのビューの表示](open-forms-views-dialogs-reports-url.md#BKMK_DisplayViewInApplicationUsingSiteMap)」を参照してください。  
@@ -102,7 +103,7 @@ https://myorg.crm.dynamics.com/main.aspx?etn=contact&pagetype=entitylist&viewid=
 
 1. 使用するビューを開きます。  
 
-2. コマンド バーで、**リンクの送信**をクリックし、次に**現在のビュー**をクリックします。  
+2. コマンド バーで**操作**をクリックし、**リンクを電子メールで送信**をクリックします。  
 
 3. リンクをメモ帳に貼り付けて編集し、テキストから必要な URL 部分のみ抽出します。  
 
@@ -110,13 +111,16 @@ https://myorg.crm.dynamics.com/main.aspx?etn=contact&pagetype=entitylist&viewid=
 > - ユーザー コンテキストをパラメーターとして使用するビュー (**自分の取引先企業**など) はコピーできません。  
 >   - システム エンティティのシステム ビューを表す GUID は、どのバージョンをインストールした場合でも同じになります。 ユーザー定義エンティティおよびユーザー定義ビューの GUID は、 のインストールごとに一意になります。  
 
-<a name="BKMK_DisplayViewInApplicationUsingSiteMap"></a>   
+<a name="BKMK_DisplayViewInApplicationUsingSiteMap"></a>  
+
 ### <a name="display-a-view-in-the-application-navigation-using-the-site-map"></a>サイト マップを使用したアプリケーション ナビゲーションへのビューの表示  
- サイト マップを使用してアプリケーション ナビゲーションをカスタマイズするときは、URL の設定に、「[ビューの URL のコピー](open-forms-views-dialogs-reports-url.md#BKMK_CopyViewURL)」の手順に従ってアプリケーションからコピーしたビューの URL を使用しないでください。 これはリボンを含むページを表示する URL であり、`<SubArea>` Url 属性で使用すると望ましくない結果が生じます。  
 
- SubArea のアプリケーションに含まれるエンティティ レコードの一覧を表示するには、Entity 属性の値を設定します。 これにより、そのエンティティの既定のビューが正しいタイトルとアイコンで表示されます。  
+サイト マップを使用してアプリケーション ナビゲーションをカスタマイズするときは、URL の設定に、「[ビューの URL のコピー](open-forms-views-dialogs-reports-url.md#BKMK_CopyViewURL)」の手順に従ってアプリケーションからコピーしたビューの URL を使用しないでください。
+これはリボンを含むページを表示する URL であり、`<SubArea>` Url 属性で使用すると望ましくない結果が生じます。  
 
- ただし、SubArea 要素の既定の初期ビューとして特定のビューを使用する場合は、次の Url のパターンを使用します。  
+SubArea のアプリケーションに含まれるエンティティ レコードの一覧を表示するには、Entity 属性の値を設定します。 これにより、そのエンティティの既定のビューが正しいタイトルとアイコンで表示されます。  
+
+ただし、SubArea 要素の既定の初期ビューとして特定のビューを使用する場合は、次の Url のパターンを使用します。  
 
 ```xml  
 Url=“/_root/homepage.aspx?etn=<entity logical name >&amp;viewid=%7b<GUID value of view id>%7d”  
@@ -125,13 +129,15 @@ Url=“/_root/homepage.aspx?etn=<entity logical name >&amp;viewid=%7b<GUID value
  この URL を使用するときは、さらに、`<Titles>` と `<Descriptions>` に適切な値を指定し、エンティティのアイコンを指定する必要があります。  
 
 > [!NOTE]
->  `/_root/homepage.aspx` ページを使用してビューを指定した場合も、ビュー セレクターは表示されます。 ユーザーがビューを変更した場合、ユーザーが最後に選択したビューがモデル駆動型アプリで記憶され、ブラウザーを閉じて次に開いたときに既定の初期ビューが表示されます。  
+> `/_root/homepage.aspx` ページを使用してビューを指定した場合も、ビュー セレクターは表示されます。 ユーザーがビューを変更した場合、ユーザーが最後に選択したビューがモデル駆動型アプリで記憶され、ブラウザーを閉じて次に開いたときに既定の初期ビューが表示されます。  
 
 <a name="BKMK_OpenADialogProcess"></a>   
-## <a name="opening-a-dialog-process-by-using-a-url"></a>URL を使用してダイアログ プロセスを開く  
- 一般的なカスタマイズは、ユーザーが特定のレコードのコンテキストで特定のダイアログ プロセスを開けるようにすることです。 たとえば、現在のレコードの id 値をダイアログ プロセスの入力パラメーターとして使用して、特定のエンティティのリボンにカスタム ボタンを追加できます。  
 
- ダイアログを開くには、以下が必要です。  
+## <a name="opening-a-dialog-process-by-using-a-url"></a>URL を使用してダイアログ プロセスを開く
+
+一般的なカスタマイズは、ユーザーが特定のレコードのコンテキストで特定のダイアログ プロセスを開けるようにすることです。 たとえば、現在のレコードの id 値をダイアログ プロセスの入力パラメーターとして使用して、特定のエンティティのリボンにカスタム ボタンを追加できます。  
+
+ダイアログを開くには、以下が必要です。  
 
 -   ダイアログの一意識別子。  
 
@@ -181,12 +187,12 @@ function openDialogProcess(dialogId, entityName, objectId)
  このパラメーターに可能な 2 つの値は `run` または `filter` のいずれかです。 `run` が使用される場合、レポートは既定のフィルターを使用して表示されます。 `filter` を使用する際、**レポートの実行**ボタンを選択してレポートを表示する前に、レポートにはユーザーが編集できるフィルターが表示されます。  
 
  **helpID**  
- このパラメータは任意です。 モデル駆動型アプリに含まれているレポートでは、**このページのヘルプ**を選択すると、このパラメータの値は**ヘルプ**ボタンを使用してこのレポートについて適切な内容を表示できます。 値は、レポートの `FileName` 属性値に対応する必要があります。  
+ このパラメータは任意です。 モデル駆動型アプリに含まれているレポートでは、このパラメーターの値により、**このページのヘルプ**を選択している場合に、**ヘルプ** ボタンはこのレポートに関する適切な内容を表示します。 値は、レポートの `FileName` 属性値に対応する必要があります。  
 
  **id**  
  このパラメーターは、レポートの `ReportId` 属性値です。  
 
- 次の例は MDA でレポートを開くために使用できる URL を示します。  
+ 次の例はモデル駆動型アプリでレポートを開くために使用できる URL を示します。  
 
  既定のフィルターを使用して**放置されたサポート案件**レポートを開きます。  
  ```  
@@ -223,6 +229,5 @@ function getReportURL(action,fileName,id) {
  [リボンのカスタマイズ](customize-commands-ribbon.md)<br/>
  [JavaScript を使用したクライアント スクリプト](client-scripting.md)<br/>
  [Web リソース](web-resources.md)<br/> 
- [クライアントの拡張](/dynamics365/customer-engagement/developer/extend-client)<br/> 
- [SiteMap を使用したアプリケーション ナビゲーションの変更](/dynamics365/customer-engagement/developer/customize-dev/change-application-navigation-using-sitemap)<br/> 
- [URL によるダイアログの起動](/dynamics365/customer-engagement/developer/actions-dialogs#StartDialog)
+ [SiteMap を使用したアプリケーション ナビゲーションの変更](https://docs.microsoft.com/powerapps/maker/model-driven-apps/create-site-map-app)
+ 

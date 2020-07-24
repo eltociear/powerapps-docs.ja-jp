@@ -1,20 +1,19 @@
 ---
 title: ポータルを Common Data Service 環境に接続する | MicrosoftDocs
 description: ポータルを Common Data Service 環境に接続する方法と認証キーを更新する方法を学習します。
-author: tapanm-msft
-manager: kvivek
+author: neerajnandwana-msft
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 10/07/2019
-ms.author: tapanm
-ms.reviewer: ''
-ms.openlocfilehash: 75d633c13b3d15888115e2e42a47e4f9da15e56f
-ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
+ms.date: 05/20/2020
+ms.author: nenandw
+ms.reviewer: tapanm
+ms.openlocfilehash: 546fb189ba7f50be08b0ab40b8ad8e77f0848cf8
+ms.sourcegitcommit: 2fd873a1ea17f419f6194714efffa47a9bd00c2e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "2978418"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "3507767"
 ---
 # <a name="connect-to-a-common-data-service-environment-using-a-portal"></a>ポータルを使用して Common Data Service 環境に接続する
 
@@ -22,7 +21,7 @@ ms.locfileid: "2978418"
 
 ![Common Data Service 環境でポータルに接続する](../media/connect-with-dynamics.png "Common Data Service  環境でポータルに接続する")
 
-各ポータルは、同じ Common Data Service 環境に接続してもしなくても、関連つけられた別々の Azure Active Directory アプリケーションを持ちます。 ポータルのために作成されたデフォルトの Azure Active Directory 認証プロバイダーは、ポータルを認証するために同じ Azure Active Directory アプリケーションを使用します。 承認はポータルにアクセスするユーザーに割り当てられた Web ロールで実施されます。
+各ポータルには、同じ Common Data Service 環境に接続されているかどうかに関係なく、個別の Azure Active Directory アプリケーションが関連付けられています。 ポータルのために作成されたデフォルトの Azure Active Directory 認証プロバイダーは、ポータルを認証するために同じ Azure Active Directory アプリケーションを使用します。 承認はポータルにアクセスするユーザーに割り当てられた Web ロールで実施されます。
 
 関連付けられたポータル アプリケーションを Azure Active Directory で表示できます。 このアプリケーションの名前は Microsoft CRM Portals で、ポータル ID は Azure Active Directory アプリケーション**の App ID URI** フィールドにあります。 ポータルをプロビジョニングするユーザーがこのアプリケーションを所有します。 このアプリケーションは削除または変更しないでください。ポータル機能が壊れる場合があります。 Power Apps ポータル管理センターからポータルを管理するには、アプリケーション所有者である必要があります。
 
@@ -60,7 +59,7 @@ Azure Active Directory アプリケーションを使用して Common Data Servi
 
 ### <a name="authentication-key-expiration-notification"></a>認証キーの有効期限切れの通知
 
-認証キーの有効期限が切れる前、電子メール、Power Apps ポータル管理センター、およびポータルで通知されます。
+認証キーの有効期限が切れる前に、電子メール、Power Apps ポータル管理センター、ポータルで通知されます。
 
 **電子メール**
 
@@ -72,11 +71,11 @@ Azure Active Directory アプリケーションを使用して Common Data Servi
 - 30 日間 
 - 15 日間 
 - 7 日間 
-- 6 日間 
-- 5 日間 
-- 4 日間 
-- 3 日間 
-- 2 日間 
+- 6 日 
+- 5 日 
+- 4 日 
+- 3 日 
+- 2 日 
 - 1 日 
 - 12 時間 
 - 6 時間 
@@ -125,8 +124,9 @@ URL <portal_path>/_services/about に移動すると、キーの有効期限に�
 
 > [!NOTE]
 > - このプロセスはバックグラウンドで実行されますが、ポータルは一度再起動します。
-> - キーを更新すると、2 年間有効です。
+> - キーを更新すると、次の 2 年間有効になります。
 > - このプロセスには 5 から 7 分かかります。
+> - 認証キーを更新しても、他のポータル構成やポータルの状態は変更されません。
 
 ### <a name="troubleshooting"></a>トラブルシューティング​​
 

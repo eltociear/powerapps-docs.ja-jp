@@ -18,12 +18,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: d96b2676e1d5ab115234422181121c20e35607e1
-ms.sourcegitcommit: 5701e7a755fade6c3bac5c4a5774fcc74627e168
+ms.openlocfilehash: 663307206f9f52d4e2ce6cfb21ad6620577d7adb
+ms.sourcegitcommit: 4a88daac42180283314f6bedee3d6810fd5a6c25
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "3115839"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "3276147"
 ---
 # <a name="model-driven-apps-developer-guide"></a>モデル駆動型アプリの開発者ガイド
 

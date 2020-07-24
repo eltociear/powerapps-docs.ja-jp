@@ -15,12 +15,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 97c11000f1f36a9356520913270b75e24a35b751
-ms.sourcegitcommit: 5701e7a755fade6c3bac5c4a5774fcc74627e168
+ms.openlocfilehash: bac673e3312cdcf03830341abea44020297cca05
+ms.sourcegitcommit: 4a88daac42180283314f6bedee3d6810fd5a6c25
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "3115903"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "3276139"
 ---
 # <a name="actions-on-visualizations-charts"></a>ビジュアル化に対するアクション (グラフ)
 
@@ -28,8 +28,9 @@ ms.locfileid: "3115903"
 
 Common Data Service Web サービスを使用して、ビジュアル化エンティティの以下のアクションを実行できます。  
   
-## <a name="actions-on-organization-owned-visualizations"></a>組織所有のビジュアル化に対するアクション  
- 組織所有のビジュアル化 (`SavedQueryVisualization`) にアクションを実行するには、システム管理者ロールまたはシステム カスタマイザー ロールが必要です。 組織所有のビジュアル化に対して以下のアクションを実行できます。  
+## <a name="actions-on-organization-owned-visualizations"></a>組織所有のビジュアル化に対するアクション 
+
+組織所有のビジュアル化 (`SavedQueryVisualization`) にアクションを実行するには、システム管理者ロールまたはシステム カスタマイザー ロールが必要です。 組織所有のビジュアル化に対して以下のアクションを実行できます。  
   
 - 組織所有のビジュアル化を作成、取得、更新、削除する。 詳細: [ビジュアル化の作成](create-visualization-chart.md)  
   

@@ -2,7 +2,7 @@
 title: ソリューション エクスプローラーを使用してエンティティを作成および編集する | MicrosoftDocs
 description: ソリューション エクスプローラーを使用してエンティティを作成する方法について説明します
 ms.custom: ''
-ms.date: 05/30/2018
+ms.date: 02/26/2019
 ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
@@ -19,12 +19,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 39ad845cfa18a64e242fd762792e244c50e7ad77
-ms.sourcegitcommit: a1b54333338abbb0bc3ca0d7443a5a06b8945228
+ms.openlocfilehash: f65741273b95bdc1f9510a74f82c60b8d0e0b2c3
+ms.sourcegitcommit: 82fa1758e29fe302f9a252fd9943ace03b7aada0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "3125182"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "3427157"
 ---
 # <a name="create-and-edit-entities-using-solution-explorer"></a>ソリューション エクスプローラーを使用してエンティティを作成および編集する
 

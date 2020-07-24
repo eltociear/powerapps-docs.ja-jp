@@ -10,34 +10,41 @@ ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
-ms.openlocfilehash: a674b37fd4616a21fe8d61336f255debafd552dd
-ms.sourcegitcommit: 3b68c4e29be4e8f68c0bfb88abdd1bbdf0187c57
+ms.openlocfilehash: 5d65768c0b321b578f4c6f649795f234a16a7159
+ms.sourcegitcommit: e1a6113bc54d23f94a2ec336076ca715df75f67f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "3080841"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "3369791"
 ---
 # <a name="how-to-use-the-sample-components"></a>サンプルコンポーネントの使用方法
 
-このセクションに記載されているすべてのサンプル コンポーネントは、[ここ](https://go.microsoft.com/fwlink/?linkid=2088525)からダウンロードできるため、モデル駆動型アプリまたはキャンバス アプリで試すことができます。
+このセクションに記載されているすべてのサンプル コンポーネントは、[ここ](https://github.com/microsoft/PowerApps-Samples/tree/master/component-framework)からダウンロードできるため、モデル駆動型アプリまたはキャンバス アプリで試すことができます。
 
-このセクションの個々のサンプル コンポーネントのトピックでは、サンプル コンポーネントの概要、外観、およびサンプル コンポーネントのマニフェスト、コード、およびリソースについて説明します。
+このセクションの個々のサンプル コンポーネントのトピックでは、サンプル コンポーネントの概要、外観、マニフェスト、コード、サンプル コンポーネントのリソースについて説明します。
 
 ## <a name="before-you-can-try-the-sample-components"></a>サンプル コンポーネントを試す前に
+
 サンプル コンポーネントを試すには、まず次の手順を実行する必要があります。
-- [ダウンロード](https://go.microsoft.com/fwlink/?linkid=2088525)サンプル コンポーネントを使用して、ローカル コピーを作成できるようにします。
+
+- [ダウンロード](https://github.com/microsoft/PowerApps-Samples/tree/master/component-framework)サンプル コンポーネントを使用して、ローカル コピーを作成できるようにします。
 - [Power Apps CLI](https://aka.ms/PowerAppsCLI) のインストール
 
 ## <a name="try-the-sample-components"></a>サンプル コンポーネントを試す
+
 モデル駆動型アプリまたはキャンバス アプリでサンプル コンポーネントをインポートして試すには、次の手順に従います。
 
 1. サンプル コンポーネントをダウンロードしたコンピューター上のフォルダーに移動し、.zip ファイルを展開します。  
-1. Visual Studio 2017 の開発者コマンド プロンプトを開き、ランタイムで表示する展開フォルダー内のサンプル コンポーネント フォルダーに移動します。 たとえば、\<extract_folder>/TS_IncrementComponent フォルダに移動します。
+1. Visual Studio　2017 以降の開発者コマンド プロンプトを開いて、ランタイムで表示する抽出したフォルダー内のサンプルコンポーネント フォルダーに移動します。 たとえば、`/extracted_folder/TS_IncrementComponent` フォルダに移動します。
+
+   >[!NOTE]
+   > 特定のコンポーネントを実行時に表示したい場合は、特定のコンポーネント フォルダーに移動する必要があります。 ビルド プロセス中に、複数のコンポーネントを単一のソリューション ファイルに追加できます。
+
 1. 次のコマンドを実行して、必要なすべての依存関係を取得します。
     ```CLI
     npm install
     ```
-1. サンプル コンポーネント フォルダ内のコマンド`mkdir <folder name>`を使用して新しいフォルダを作成し、 コマンド `cd <folder name>` を使用してフォルダ内に移動します。 
+1. `pcfproj` ファイルを含むサンプル コンポーネント フォルダー内のコマンド `mkdir <folder name>` を使用して新しいフォルダを作成してから、コマンド `cd <folder name>` を使用してフォルダに移動します。 
 1. 次のコマンドを使用して、フォルダー内に新しいソリューション プロジェクトを作成します。
     ```CLI
     pac solution init --publisher-name <Name of the publisher> --publisher-prefix <Publisher prefix>

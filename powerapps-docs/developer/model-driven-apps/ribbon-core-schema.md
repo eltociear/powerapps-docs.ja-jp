@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: d1f8805f2cb817e3e3859942f3640ea335ae7a93
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: b0ad3975d17111f377b7b7ef369b4838f56b4bfc
+ms.sourcegitcommit: b5ab419dad4e9d64a5e6610641363b0d7487930a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2753595"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "3465593"
 ---
 # <a name="ribbon-core-schema"></a>リボン コアのスキーマ
 
@@ -29,7 +29,7 @@ ms.locfileid: "2753595"
 
 [スキーマ](https://download.microsoft.com/download/B/9/7/B97655A4-4E46-4E51-BA0A-C669106D563F/Schemas.zip) をダウンロードします。
 
-詳細については、[ソリューションを使用した拡張機能のパッケージ化および配布](/dynamics365/customer-engagement/developer/package-distribute-extensions-use-solutions)を参照してください。
+詳細については、[ソリューションを使用した拡張機能のパッケージ化および配布](https://docs.microsoft.com/powerapps/developer/common-data-service/introduction-solutions)を参照してください。
   
 ## <a name="ribbon-core-schema"></a>リボン コアのスキーマ  
   
@@ -142,6 +142,7 @@ ms.locfileid: "2753595"
 ```  
   
 ### <a name="see-also"></a>関連項目  
+
  [コマンド、およびリボンをカスタマイズする](customize-commands-ribbon.md) <br/>
  [リボン コアのスキーマ](ribbon-core-schema.md)<br/>
  [リボン タイプのスキーマ](ribbon-types-schema.md)<br/>

@@ -4,14 +4,14 @@
       "docset_name": "powerapps-docs",
       "build_source_folder": "powerapps-docs",
       "build_output_subfolder": "powerapps-docs",
-      "locale": "ja-jp",
+      "locale": "ja-JP",
       "monikers": [],
       "moniker_ranges": [],
       "xref_query_tags": [
         "/dotnet",
         "/dynamics365/customer-engagement/web-api"
       ],
-      "open_to_public_contributors": true,
+      "open_to_public_contributors": false,
       "type_mapping": {
         "Conceptual": "Content",
         "ManagedReference": "Content",
@@ -39,10 +39,6 @@
           "ReferenceTOCUrl": "/dotnet/api/ce-9-general/toc.json"
         },
         {
-          "ConceptualTOC": "powerapps-docs/developer/common-data-service/package-deployer/toc.yml",
-          "ReferenceTOCUrl": "/dotnet/api/ce-9-packagedeployer/toc.json"
-        },
-        {
           "ConceptualTOC": "powerapps-docs/developer/common-data-service/workflow/toc.yml",
           "ReferenceTOCUrl": "/dotnet/api/ce-9-workflow/toc.json"
         },
@@ -67,20 +63,20 @@
   ],
   "branches_to_filter": [
     "master-sxs",
-    "live"
+    "live-sxs"
   ],
-  "git_repository_url_open_to_public_contributors": "https://github.com/MicrosoftDocs/powerapps-docs.ja-jp",
+  "git_repository_url_open_to_public_contributors": "https://github.com/MicrosoftDocs/powerapps-docs",
   "git_repository_branch_open_to_public_contributors": "live",
   "continue_with_document_error": true,
   "skip_source_output_uploading": false,
   "need_preview_pull_request": true,
   "contribution_branch_mappings": {
-    "live-sxs": "live"
+    "live": "live"
   },
   "dependent_repositories": [
     {
       "path_to_root": "_themes",
-      "url": "https://github.com/Microsoft/templates.docs.msft.ja-jp",
+      "url": "https://github.com/Microsoft/templates.docs.msft.ja-JP",
       "branch": "master",
       "branch_mapping": {}
     },
@@ -119,10 +115,6 @@
     }
   ],
   "branch_target_mapping": {
-    "live-sxs": [
-      "Publish",
-      "PDF"
-    ],
     "live": [
       "Publish",
       "PDF"

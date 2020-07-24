@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: c839738bb0ab1a533a432ea4d6e8ad6be1f7a6ce
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: e03bf15b925d45b64fcd6e392aa7f3ea519e779a
+ms.sourcegitcommit: b5ab419dad4e9d64a5e6610641363b0d7487930a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2754564"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "3465453"
 ---
 # <a name="ribbons-available"></a>利用できるリボン
 
@@ -27,21 +27,25 @@ ms.locfileid: "2754564"
 
 このトピックでは、モデル駆動型アプリでリボンを定義および変更する場所について説明します。
 
-<a name="ribbon_defs"></a>   
-## <a name="ribbon-definitions"></a>リボン定義  
- モデル駆動型アプリには、アプリケーションのすべてのリボンについて既定の `<RibbonDiffXml>` 定義が含まれています。 組織のリボンを定義している現在の XML をエクスポートおよび表示することはできますが、XML を直接更新することはできません。 リボンをカスタマイズするには、リボンをどのように変更するかを定義します。 指定した変更定義は、リボンがアプリケーションに表示される際に適用されます。 すべての変更は、`<CustomAction>` 要素または `<HideCustomAction>` に含めます。 これらの要素は、モデル駆動型アプリが提供する既定のリボン定義よりも優先して適用されます。  
+<a name="ribbon_defs"></a>  
 
- 変更定義を記述する場合は、既定のリボンの定義を頻繁に参照する必要があります。 たとえば、特定のリボン要素を非表示にする場合は、その要素の一意の ID を知る必要があります。 新しいリボン要素を既存のリボン要素の中または横に配置する場合は、それらの要素の ID 値と、要素の相対位置を制御するシーケンス順序を知る必要があります。  
+## <a name="ribbon-definitions"></a>リボン定義 
 
- このように、既存のリボン要素の定義を参照する必要があるため、組織の現在のリボン定義を理解することは非常に重要です。 リボンの現在の状態を表す XML ファイルのエクスポートに使用できるメッセージは 2 つあります。 これらの定義には、既にシステムに適用されているすべてのカスタマイズが含まれているので、以前適用されたすべてのユーザー定義リボンをカスタマイズできます。 詳細については、「[リボン定義のエクスポート](export-ribbon-definitions.md)」を参照してください。  
+モデル駆動型アプリには、アプリケーションのすべてのリボンについて既定の `<RibbonDiffXml>` 定義が含まれています。 組織のリボンを定義している現在の XML をエクスポートおよび表示することはできますが、XML を直接更新することはできません。 リボンをカスタマイズするには、リボンをどのように変更するかを定義します。 指定した変更定義は、リボンがアプリケーションに表示される際に適用されます。 すべての変更は、`<CustomAction>` 要素または `<HideCustomAction>` に含めます。 これらの要素は、モデル駆動型アプリが提供する既定のリボン定義よりも優先して適用されます。  
 
- 簡単に開始するために、[Microsoft ダウンロード: ExportedRibbonXml.zip](https://download.microsoft.com/download/C/2/A/C2A79C47-DD2D-4938-A595-092CAFF32D6B/ExportedRibbonXml.zip) から MDA の既定のリボン定義をダウンロードできます。 ExportedRibbonXml.zip ファイルには、リボンがカスタマイズされていない組織のための出力ファイルが含まれています。 このデータをエクスポートするために、サンプル アプリケーションを実行する必要はありません。 リボンがカスタマイズされている場合は、サンプル アプリケーションを実行して、このフォルダーのファイルをこれまで組織に適用されたすべてのカスタマイズで更新する必要があります。  
+変更定義を記述する場合は、既定のリボンの定義を頻繁に参照する必要があります。 たとえば、特定のリボン要素を非表示にする場合は、その要素の一意の ID を知る必要があります。 新しいリボン要素を既存のリボン要素の中または横に配置する場合は、それらの要素の ID 値と、要素の相対位置を制御するシーケンス順序を知る必要があります。  
 
- エクスポートされたリボン XML ファイルの中で、applicationRibbon.xml ファイルには、特定のエンティティに対して定義されていないすべてのリボンが含まれます。 これらのリボンは、**アプリケーション リボン**ソリューション コンポーネントに対応しています。 エンティティごとに、*エンティティ名*ribbon.xml ファイルがあります。 このファイルは、各エンティティに含まれる `RibbonDiffXml` に対応しています。 特定のエンティティのリボンを編集する場合は、そのエンティティのリボン XML ファイルを見つける必要があります。  
+このように、既存のリボン要素の定義を参照する必要があるため、組織の現在のリボン定義を理解することは非常に重要です。 リボンの現在の状態を表す XML ファイルのエクスポートに使用できるメッセージは 2 つあります。 これらの定義には、既にシステムに適用されているすべてのカスタマイズが含まれているので、以前適用されたすべてのユーザー定義リボンをカスタマイズできます。 詳細については、「[リボン定義のエクスポート](export-ribbon-definitions.md)」を参照してください。  
 
-<a name="entity_ribbons"></a>   
+作業を開始するために、[リボン定義のサンプルをエクスポート](https://github.com/microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/ExportRibbonDefinitions) からモデル駆動型アプリの既定のリボン定義をダウンロードできます。 `The ExportedRibbonXml` ファイルには、組織に必要な出力ファイルが含まれています。  
+
+エクスポートされたリボン XML ファイルの中で、applicationRibbon.xml ファイルには、特定のエンティティに対して定義されていないすべてのリボンが含まれます。 これらのリボンは、**アプリケーション リボン**ソリューション コンポーネントに対応しています。 エンティティごとに、*エンティティ名*ribbon.xml ファイルがあります。 このファイルは、各エンティティに含まれる `RibbonDiffXml` に対応しています。 特定のエンティティのリボンを編集する場合は、そのエンティティのリボン XML ファイルを見つける必要があります。  
+
+<a name="entity_ribbons"></a>  
+
 ## <a name="entity-ribbons"></a>エンティティ リボン  
- すべてのエンティティで、*エンティティ リボン テンプレート*と呼ばれる共通のリボン定義が使用されます。 エンティティ リボン テンプレート定義は、applicationribbon.xml ファイル内にあります。 ユーザー定義エンティティを作成した場合、表示されるリボンは、エンティティ リボン テンプレートによって定義された既定のリボンです。 各システム エンティティには、エンティティ リボン テンプレート定義に基づいて作成された個々の `<RibbonDiffXml>` 定義があります。  
+
+すべてのエンティティで、*エンティティ リボン テンプレート*と呼ばれる共通のリボン定義が使用されます。 エンティティ リボン テンプレート定義は、`applicationribbon.xml` ファイル内にあります。 ユーザー定義エンティティを作成した場合、表示されるリボンは、エンティティ リボン テンプレートによって定義された既定のリボンです。 各システム エンティティには、エンティティ リボン テンプレート定義に基づいて作成された個々の `<RibbonDiffXml>` 定義があります。  
 
  applicationribbon.xml ファイル内には、すべてのエンティティに適用される以下のタブがあります。  
 
@@ -131,7 +135,7 @@ ms.locfileid: "2754564"
 
 <a name="BKMK_BasicHomeTab"></a>   
 ## <a name="basic-home-tab"></a>基本ホーム タブ  
- 基本ホーム タブは、特定のページにタブを表示しないエンティティ コンテキストまたは表示規則によって代替タブが定義されていない場合、常にメインのアプリケーション リボンに表示されます。 たとえば、MDA **ヘルプ**を表示すると、このタブが表示されます。 基本ホーム タブの ID は、`Mscrm.BasicHomeTab` です。  
+ 基本ホーム タブは、特定のページにタブを表示しないエンティティ コンテキストまたは表示規則によって代替タブが定義されていない場合、常にメインのアプリケーション リボンに表示されます。 たとえば、モデル駆動型アプリの**ヘルプ**を表示すると、このタブが表示されます。 基本ホーム タブの ID は、`Mscrm.BasicHomeTab` です。  
 
 <!-- [!NOTE]-->
 <!-- >  The Jewel that was shown in [!INCLUDE[pn_crm2011_and_online](../../includes/pn-crm2011-and-online.md)] is no longer displayed. Changes to the Jewel will not appear in [!INCLUDE[pn_dynamics_crm_online](../../includes/pn-dynamics-crm-online.md)]  -->
@@ -146,7 +150,7 @@ ms.locfileid: "2754564"
 <!--### Microsoft Office Outlook 2010  
  The [!INCLUDE[pn_crm_for_outlook_full](../../includes/pn-crm-for-outlook-full.md)] controls to support [!INCLUDE[ribbon_enum_Version_2010](../../includes/ribbon-enum-version-2010.md)] toolbars and menus are defined as tabs with the Id values of `Mscrm.Outlook14GlobalToolbar` and `Mscrm.Outlook14GlobalMenubar`, respectively.  -->
 
-<a name="other_ribbons"></a> ## 他のリボン: 特別な目的のリボン タブが複数と状況依存グループが 1 つ、MDA によって定義されています。
+<a name="other_ribbons"></a> ## 他のリボン: 特別な目的のリボン タブが複数と状況依存グループが 1 つ、モデル駆動型アプリによって定義されています。
 各タブは、いつ表示されるかを制御する固有の `<TabDisplayRule>` と関連付けられています。 使用できるタブを次の表に示します。  
 
 
@@ -173,5 +177,6 @@ ms.locfileid: "2754564"
 `<PageRule>` を使用して、カスタム ページ上のカスタム リボン コンポーネントを有効化または表示することはできません。  
 
 ### <a name="see-also"></a>関連項目  
+
  [リボンのカスタマイズ](customize-commands-ribbon.md)   
  [バーまたはリボンの表示](command-bar-ribbon-presentation.md)

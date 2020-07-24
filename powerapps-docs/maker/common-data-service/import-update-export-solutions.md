@@ -2,16 +2,10 @@
 title: ソリューションのインポート | MicrosoftDocs
 description: Power Apps でソリューションをインポートする方法について
 ms.custom: ''
-ms.date: 01/30/2020
+ms.date: 05/26/2020
 ms.reviewer: ''
 ms.service: powerapps
-ms.suite: ''
-ms.tgt_pltfrm: ''
 ms.topic: article
-applies_to:
-- Dynamics 365 (online)
-- Dynamics 365 Version 9.x
-- powerapps
 author: Mattp123
 ms.assetid: 56363ea3-ea76-4311-9b7a-b71675e446fb
 caps.latest.revision: 57
@@ -22,17 +16,28 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 504e66801c122810da12810d9b19e5069136f7d6
-ms.sourcegitcommit: cb533c30252240dc298594e74e3189d7290a4bd7
+ms.openlocfilehash: b8475b0d347dabfab0fd1ce71b8a25fbbbd9d0c6
+ms.sourcegitcommit: 909948d219c3c61d617f13aceb355e1d5bcb0b55
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "3017626"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "3432889"
 ---
 # <a name="import-solutions"></a>ソリューションのインポート 
 
- 次の手順に従って手動でソリューションをインポートできます。 信頼できるソースから取得したソリューションだけをインポートしてください。 カスタマイズには、外部ソースにデータを送信できるコードが含まれている場合があります。   
-  
+この記事の手順を使用して、ソリューションを手動でインポートできます。 信頼できるソースから取得したソリューションのみをインポートする必要があります。 カスタマイズには、外部ソースにデータを送信できるコードが含まれている場合があります。   
+ 
+> [!NOTE]
+> - プラグイン アセンブリを含むソリューションをインポートするには、**プラグイン アセンブリ** エンティティの **作成** 権限が必要です。 既定では、システム管理者のセキュリティ ロールにはこの権限がありますが、システム カスタマイザー のセキュリティ ロールにはありません。 
+> - 管理ソリューションをインポートすると、すべてのコンポーネントの変更が公開された状態で環境に反映されます。 ただし、アンマネージド ソリューションをインポートすると、変更は下書き状態でインポートされるため、アクティブにするには公開する必要があります。 
+> - 組織に正常なアプリケーション ライフサイクル管理 (ALM) を実装するには、ソース管理システムを使用してソリューションを格納およびコラボレーションし、ソリューションのインポート プロセスを自動化することを検討してください。 詳細: Power Platform ALMガイドの [ALMの基本](/power-platform/alm/basics-alm)。
+
+**アンマネージド** ソリューションをインポートする場合:
+- そのソリューションのすべてのコンポーネントを環境に追加し、ソリューションを削除してコンポーネントを削除することはできません。 アンマネージド ソリューションを削除すると、ソリューション コンテナーのみが削除されます。
+- これには、すでにカスタマイズしたコンポーネントが含まれており、インポート済みアンマネージド ソリューションのカスタマイズによってカスタマイズが上書きされます。 これを元に戻すことはできません。
+
+ソリューションをインポートするには:
+
 1.  [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインし、左側のナビゲーションから**ソリューション**を選択します。  
   
 2.  コマンド バーで **インポート** を選択します。  
@@ -61,5 +66,6 @@ ms.locfileid: "3017626"
 
 ### <a name="see-also"></a>関連項目
 [ソリューションの更新](update-solutions.md) <br />
-[エクスポート ソリューション](export-solutions.md)
+[エクスポート ソリューション](export-solutions.md) <br />
+[変更の公開](create-solution.md#publish-changes)
 

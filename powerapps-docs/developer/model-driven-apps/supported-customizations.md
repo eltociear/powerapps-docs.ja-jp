@@ -14,17 +14,17 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 7d6ae1ae1389631987eef030af698d57b2a4235e
-ms.sourcegitcommit: 5701e7a755fade6c3bac5c4a5774fcc74627e168
+ms.openlocfilehash: 3893cf77af33edeef2d9c2b821c74df2e058ea7e
+ms.sourcegitcommit: b5ab419dad4e9d64a5e6610641363b0d7487930a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "3115647"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "3465397"
 ---
 # <a name="get-started-with-model-driven-apps-customization-using-code"></a>コードを使用してモデル駆動型アプリケーションのカスタマイズを開始する
 
 <!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/supported-extensions
-Split to just include MDA issues
+Split to just include model-driven apps issues
  -->
 
 Power Apps ポータルにあるツールまたは公式ドキュメントで説明されているツールを使用して、モデル駆動型アプリをカスタマイズできます。 これらのカスタマイズはサポートされており、アップグレードが可能です。
@@ -40,11 +40,11 @@ Power Apps ポータルにあるツールまたは公式ドキュメントで説
 
 次のカスタマイズ方法を使用すると、完全にサポートされるカスタマイズを実行できます。
 
-- Power Apps ポータルまたはソリューション エクスプローラーのカスタマイズ。 詳細については、[モデル駆動型アプリの作成の概要](../../maker/model-driven-apps/model-driven-app-overview.md)を参照してください
+- Power Apps ポータルまたはソリューション エクスプローラーのカスタマイズ。 詳細については、[モデル駆動型アプリの作成の概要](../../maker/model-driven-apps/model-driven-app-overview.md) を参照してください
 
-- Web アプリケーションの設定。 詳細については、[モデル駆動型アプリの管理](/dynamics365/customer-engagement/admin/admin-guide)を参照してください。
+- Web アプリケーションの設定。 詳細については、[モデル駆動型アプリの管理](https://docs.microsoft.com/powerapps/maker/model-driven-apps/model-driven-app-overview) を参照してください。
 
-- Reporting Services。 詳細については、[モデル駆動型アプリのレポートと分析ガイド](/dynamics365/customer-engagement/analytics/reporting-analytics-with-dynamics-365)を参照してください。
+- Reporting Services。 詳細については、[モデル駆動型アプリのレポートと分析ガイド](https://docs.microsoft.com/powerapps/maker/model-driven-apps/add-reporting-to-app) を参照してください。
 
 > [!NOTE]
 > モデル駆動型アプリの動作は、関連する Common Data Service に適用されるカスタマイズによって異なります。 詳細: [Common Data Service のサポートされているカスタマイズ](../common-data-service/supported-customizations.md)
@@ -65,9 +65,9 @@ Power Apps ポータルにあるツールまたは公式ドキュメントで説
 
 - **Web リソースと IFRAME**: HTML Web リソース内で JavaScript Web リソースを使用できます。 クロスサイト スクリプトまたはフォームに含まれる HTML Web リソース内のスクリプトを許可するように構成されたIFRAMEは、親参照を介してフォーム内でドキュメント化された`Xrm.Page`または`Xrm.Utility` メソッド対話することがあります。
 
-アプリケーション ページとのすべての対話は、[モデル駆動型アプリのクライアント API 参照](clientapi/reference.md)に記載されているメソッドを使用したメソッドを通じてのみ実行する必要があります。  モデル駆動型アプリ ページのドキュメント オブジェクト モデル(DOM )に直接アクセスすることは、サポートされていません。 フォーム スクリプトおよびコマンドで jQuery を使用することはお勧めしません。 詳細: [JavaScript を使用したモデル駆動型アプリでのクライアント スクリプト作成](client-scripting.md)。
+アプリケーション ページとのすべての対話は、[モデル駆動型アプリのクライアント API 参照](clientapi/reference.md) に記載されているメソッドを使用したメソッドを通じてのみ実行する必要があります。  モデル駆動型アプリ ページのドキュメント オブジェクト モデル(DOM )に直接アクセスすることは、サポートされていません。 フォーム スクリプトおよびコマンドで jQuery を使用することはお勧めしません。 詳細: [JavaScript を使用したモデル駆動型アプリでのクライアント スクリプト作成](client-scripting.md)。
 
-[URL を使用してフォーム、ビュー、ダイアログおよびレポートを開く](open-forms-views-dialogs-reports-url.md)に記載されている方法を使用して、モデル駆動型アプリ フォーム、ビュー、ダイアログ、およびレポートを開くことができます。
+[URL を使用してフォーム、ビュー、ダイアログおよびレポートを開く](open-forms-views-dialogs-reports-url.md) に記載されている方法を使用して、モデル駆動型アプリ フォーム、ビュー、ダイアログ、およびレポートを開くことができます。
 
 ### <a name="ribbon-customization"></a>リボンのカスタマイズ
 
@@ -75,14 +75,14 @@ Power Apps ポータルにあるツールまたは公式ドキュメントで説
 
 ## <a name="unsupported-customizations"></a>サポートされていないカスタマイズ
 
-このドキュメントで説明されたメソッドまたは Power Apps ポータルのいずれのツールも使用しないで実行されたモデル駆動型アプリの変更はサポートされず、モデル駆動型アプリの更新時またはアップグレード時に保存されません。 このドキュメントおよびサポート ドキュメントに文書化されていないものはすべてサポートされません。 また、サポートされていない変更を加えると、修正プログラムや Service Pack によって更新する際、またはモデル駆動型アプリをアップグレードする際に問題が生じる可能性があります。
+このドキュメントで説明されたメソッドまたは Power Apps ポータルのいずれのツールも使用しないで実行されたモデル駆動型アプリの変更はサポートされず、モデル駆動型アプリの更新時またはアップグレード時に保存されません。 このドキュメントおよびサポート ドキュメントに文書化されていないものはすべてサポートされません。 また、サポートされていない変更を加えると、修正プログラムやサービス パックによって更新する際、またはモデル駆動型アプリをアップグレードする際に問題が生じる可能性があります。
 
-次は、よく質問されるサポートされていない操作の種類の一覧です: 
+次は、よく質問されるサポートされていない操作の種類の一覧です:
 
 - モデル駆動型アプリケーション JavaScript コードの再利用。 このコードはアップグレード時に変更または上書きされる場合があります。
 - ソリューション ファイルの編集による、リボン、フォーム、サイトマップ、または保存されたクエリ以外のソリューション コンポーネントの編集はサポートされていません。 詳細については、[カスタマイズを編集するタイミング](when-edit-customization-file.md)を参照してください。
-    - ソリューション ファイルの定義による新しいソリューション コンポーネントの定義はサポートされていません。 
-    - ソリューションと共にエクスポートされた Web リソース ファイルの編集はサポートされていません。 
+    - ソリューション ファイルの定義による新しいソリューション コンポーネントの定義はサポートされていません。
+    - ソリューションと共にエクスポートされた Web リソース ファイルの編集はサポートされていません。
     - [管理ソリューションの保守](../common-data-service/maintain-managed-solutions.md)に記載されている手順を除いて、マネージド ソリューションの内容の編集はサポートされていません。
 
 - 別のエンティティ フォームに埋め込まれた IFrame 内のエンティティ フォームの表示はサポートされていません。
@@ -91,5 +91,5 @@ Power Apps ポータルにあるツールまたは公式ドキュメントで説
 
 [Common Data Service のサポートされているカスタマイズ](../common-data-service/supported-customizations.md)<br/>
 [JavaScript を使用するモデル駆動型アプリでクライアント スクリプトを使用してビジネス ロジックを適用](client-scripting.md)<br/>
-[コマンド、およびリボンをカスタマイズする](customize-commands-ribbon.md)<br/>
+[コマンドとリボンのカスタマイズ](customize-commands-ribbon.md)<br/>
 [モデル駆動型アプリの Web リソース](web-resources.md)

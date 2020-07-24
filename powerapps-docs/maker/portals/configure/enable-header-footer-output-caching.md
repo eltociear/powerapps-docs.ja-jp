@@ -1,20 +1,19 @@
 ---
 title: ポータル上でのヘッダーおよびフッター出力キャッシュの有効化 | MicrosoftDocs
 description: 既存のユーザー用のポータルのヘッダーおよびフッターの出力キャッシュを有効にするための手順。
-author: tapanm-msft
-manager: kvivek
+author: sandhangitmsft
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 11/11/2019
-ms.author: tapanm
-ms.reviewer: ''
-ms.openlocfilehash: e7a112c722e284f9060696d0fac5a3389b47b0d3
-ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
+ms.author: sandhan
+ms.reviewer: tapanm
+ms.openlocfilehash: 42223f9eb7bacd06c849988ca401b5a163699656
+ms.sourcegitcommit: c12260f372ad2cc48d3146be570d2088c9ef1d86
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "2977098"
+ms.lasthandoff: 06/20/2020
+ms.locfileid: "3494382"
 ---
 # <a name="enable-header-and-footer-output-caching-on-a-portal"></a>ポータルでヘッダーおよびフッターの出力キャッシュを有効にします
 

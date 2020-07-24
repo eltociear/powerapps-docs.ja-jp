@@ -1,0 +1,61 @@
+### YamlMime:Landing
+title: Power Apps ガイダンスのドキュメント
+summary: Power Apps ガイダンスのドキュメントは、法人のお客様に対応するチームから得られたベスト プラクティス情報を提供します。 ガイダンスの内容は定期的に追加および更新されます。
+metadata:
+  title: Power Apps ガイダンスのドキュメント
+  description: Power Apps に関するベスト プラクティスのガイダンス情報を提供します。
+  services: service
+  ms.service: powerapps
+  ms.subservice: subservice
+  ms.topic: landing-page
+  ms.collection: collection
+  author: KumarVivek
+  ms.author: kvivek
+  ms.date: 06/16/2020
+  ms.openlocfilehash: 18ea41a6e6326d80d074821d0a613735dce26799
+  ms.sourcegitcommit: 9a478412c5bed4b5ae0a986164dbe7155b0adddd
+  ms.translationtype: HT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 06/16/2020
+  ms.locfileid: "3462473"
+landingContent:
+- title: Power Apps プロジェクトの計画
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: 概要
+      url: planning/introduction.md
+    - text: 計画フェーズ
+      url: planning/planning-phase.md
+    - text: 設計フェーズ
+      url: planning/designing-phase.md
+    - text: 作成フェーズ
+      url: planning/making-phase.md
+    - text: テスト フェーズ
+      url: planning/testing-phase.md
+    - text: デプロイと調整フェーズ
+      url: planning/discoverability.md
+- title: 関連するコンテンツ
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Power Apps でのアプリの作成
+      url: /powerapps/maker
+    - text: キャンバス アプリとは
+      url: /powerapps/maker/canvas-apps/getting-started
+    - text: モデル駆動型アプリとは
+      url: /powerapps/maker/model-driven-apps/model-driven-app-overview
+    - text: Power Platform Center of Excellence (CoE) キット
+      url: /power-platform/guidance/coe/starter-kit
+    - text: Power Platform ALM ガイド
+      url: /power-platform/alm/
+- title: その他のリソース
+  linkLists:
+  - linkListType: concept
+    links:
+    - text: Power Apps ライセンス
+      url: /power-platform/admin/powerapps-flow-licensing-faq
+    - text: Power Apps US Government プラン
+      url: /power-platform/admin/powerapps-us-government
+    - text: Power Apps サポート
+      url: https://powerapps.microsoft.com/support/

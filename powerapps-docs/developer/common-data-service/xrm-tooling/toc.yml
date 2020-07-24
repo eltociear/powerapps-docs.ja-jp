@@ -28,3 +28,5 @@
       href: sample-simplified-connection-quick-start.md
     - name: 'サンプル: XRM ツール API のクイック スタート'
       href: sample-quick-start-xrm-tooling-api.md
+    - name: 'サンプル: CrmServiceClient を使用したタスク並列ライブラリ'
+      href: sample-tpl-crmserviceclient.md

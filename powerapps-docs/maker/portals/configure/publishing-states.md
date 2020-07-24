@@ -1,28 +1,27 @@
 ---
 title: Power Apps ポータルの公開状況の作成および管理 | MicrosoftDocs
 description: ポータルに公開状況を作成し管理する方法について説明します。
-author: tapanm-msft
-manager: kvivek
+author: sandhangitmsft
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 11/22/2019
-ms.author: tapanm
-ms.reviewer: ''
-ms.openlocfilehash: 6daf92aa4d821b66b8388826d69dcb8bbd99ddb4
-ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
+ms.author: sandhan
+ms.reviewer: tapanm
+ms.openlocfilehash: 5f18845541ae8a487889b0b2496c324af98e17c2
+ms.sourcegitcommit: c12260f372ad2cc48d3146be570d2088c9ef1d86
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "2980530"
+ms.lasthandoff: 06/20/2020
+ms.locfileid: "3493212"
 ---
 # <a name="create-and-manage-publishing-states"></a>公開状況の作成および管理
 
-公開状況ではポータル Web サイトでコンテンツのライフサイクルを定義することができます。 基本レベルで、関連するエンティティがポータル上で表示/公開済みとみなす必要があるかを公開状況によって判断することができます。 より複雑な構成では、各ステージのセキュリティ制限を使用して、コンテンツのレビューおよび公開のためのマルチステージ プロセスを定義することができます。
+公開状況ではポータル Web サイトでコンテンツのライフサイクルを定義することができます。 基本レベルでは、公開状況を使用した場合、関連エンティティをポータル上で表示可能/公開済みであると見なすかどうかを決定できます。 より複雑な構成の場合、公開状況を使用することにより、コンテンツのレビューと公開に対するマルチステージ プロセスを定義できます。また、各ステージにおいてセキュリティ制限を設定できます。
 
 公開状況は [Web ページ](web-page.md)、[Web ファイル](web-files.md)、[Web リンク](manage-web-links.md)、フォーラム、および広告で使用することができます。
 
-既定では、下書きおよび公開済みの、2 つの公開状況が使用可能です。 下書きはコンテンツの作成者ではないユーザーに対して表示しないコンテンツを指定し、公開済みはすべてのポータル ユーザー (他のセキュリティ制限がない場合) に対して表示する必要があるコンテンツを指定します。 必要な場合は新しい状況または名前を変更した状況を追加することにより、特定の要件を満たすように既定の構成を変更することができます。
+既定では、Draft および Published の 2 種類の公開状況を使用できます。 下書きはコンテンツの作成者ではないユーザーに対して表示しないコンテンツを指定し、公開済みはすべてのポータル ユーザー (他のセキュリティ制限がない場合) に対して表示する必要があるコンテンツを指定します。 必要な場合は新しい状況または名前を変更した状況を追加することにより、特定の要件を満たすように既定の構成を変更することができます。
 
 ## <a name="manage-publishing-states"></a>公開状況の管理
 

@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 8723f629b38df58bbc44ec294f84e7d006555e62
-ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
+ms.openlocfilehash: 3057b07e8745b137a5675177125e2ae15bd1400e
+ms.sourcegitcommit: ef921bbf0908283a3621c2ca1069e6b58a2b14e7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "3156023"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "3373545"
 ---
 # <a name="retrieve-and-detect-changes-to-metadata"></a>メタデータへの変更の取得および検出
 
@@ -147,8 +147,8 @@ ms.locfileid: "3156023"
      EntityFilter.Conditions.Add(new MetadataConditionExpression("IsIntersect", MetadataConditionOperator.Equals, false));
      EntityFilter.Conditions.Add(new MetadataConditionExpression("OwnershipType", MetadataConditionOperator.Equals, OwnershipTypes.UserOwned));
      EntityFilter.Conditions.Add(new MetadataConditionExpression("SchemaName", MetadataConditionOperator.NotIn, excludedEntities));
-     MetadataConditionExpression isVisibileInMobileTrue = new MetadataConditionExpression("IsVisibleInMobile", MetadataConditionOperator.Equals, true);
-     EntityFilter.Conditions.Add(isVisibileInMobileTrue);
+     MetadataConditionExpression isVisibleInMobileTrue = new MetadataConditionExpression("IsVisibleInMobile", MetadataConditionOperator.Equals, true);
+     EntityFilter.Conditions.Add(isVisibleInMobileTrue);
 ```
   
 ### <a name="specify-the-properties-you-want"></a>必要なプロパティの指定

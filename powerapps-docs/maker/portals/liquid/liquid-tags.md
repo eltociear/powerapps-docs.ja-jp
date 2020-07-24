@@ -1,20 +1,19 @@
 ---
 title: ポータルの Liquid タグを使用する | MicrosoftDocs
 description: ポータルで使用可能な Liquid のタグについて説明します。
-author: tapanm-msft
-manager: kvivek
+author: gitanjalisingh33msft
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 10/07/2019
-ms.author: tapanm
-ms.reviewer: ''
-ms.openlocfilehash: 3f85e4b86b305696f5b155c7e9e3b773f8ba2103
-ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
+ms.author: gisingh
+ms.reviewer: tapanm
+ms.openlocfilehash: ac76f36098b84bb1a4da0c7bc42d45f201bae88a
+ms.sourcegitcommit: c12260f372ad2cc48d3146be570d2088c9ef1d86
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "2981102"
+ms.lasthandoff: 06/20/2020
+ms.locfileid: "3491632"
 ---
 # <a name="available-liquid-tags"></a>使用可能な Liquid タグ
 

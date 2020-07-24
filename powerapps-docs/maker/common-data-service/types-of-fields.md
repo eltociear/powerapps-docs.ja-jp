@@ -2,32 +2,26 @@
 title: Common Data Service のフィールドのデータ型 | MicrosoftDocs
 description: アプリケーションで使用可能な異なるフィールド データの種類について
 keywords: ''
-ms.date: 09/30/2019
+ms.date: 05/27/2020
 ms.service: powerapps
 ms.custom: ''
 ms.topic: article
-applies_to:
-- Dynamics 365 (online)
-- Dynamics 365 Version 9.x
-- powerapps
 author: Mattp123
 ms.assetid: 734b4ffa-5543-4f88-8517-299589f433f7
 ms.author: matp
 manager: kvivek
 ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
 search.audienceType:
 - maker
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 2c98ab7d40d89460995e69aed86dcdecc97ada25
-ms.sourcegitcommit: abdc8c609a7a221ce4ca6b051a84b7083bdbe1ab
+ms.openlocfilehash: f786588a4e81ad66abf92e7c4486b8259d9806d5
+ms.sourcegitcommit: 3bc94ac014b12d2b04a1af598d38b875e9e5dc2a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "3225633"
+ms.lasthandoff: 06/12/2020
+ms.locfileid: "3444589"
 ---
 # <a name="types-of-fields"></a>フィールドの種類
 
@@ -64,7 +58,7 @@ ms.locfileid: "3225633"
 |**URL**|**1 行テキスト**<br />*URL* 形式|`StringType`|
 |**整数**|**整数**<br />*なし*形式|`IntegerType`|
 
-追加または編集可能な各種類の詳細については、対応するデザイナーのトピックをを参照してください。
+追加または編集可能な各種類の詳細については、対応する記事のトピックを参照してください。
  - [Power Apps ポータルを使用して Common Data Service のフィールドの作成および編集をする: フィールドのデータ型](create-edit-field-portal.md#field-data-types)
  - [Power Apps ソリューションエクスプローラーを使用して Common Data Service のフィールドの作成および編集をする: フィールドのデータ型](create-edit-field-solution-explorer.md#field-data-types)
 
@@ -88,7 +82,7 @@ ms.locfileid: "3225633"
 
 複数選択フィールドを追加して、フォーム (メイン、簡易作成、簡易ビュー) と電子メールのテンプレートをカスタマイズできます。 複数選択オプション セット フィールドを追加するときは、ユーザーが選択できる複数の値を指定することができます。 ユーザーはフォームに記入する際、ドロップダウン リストに表示される値 1 つ、複数またはすべてを選択できます。
 
-たとえば、組織が複数の領域または地域で実行すると、「事業地域]フィールドの複数の場所または地域を含めることができます。 ユーザーは使用可能な値の一覧から、1 つまたは複数の場所を選択できます。
+たとえば、組織が複数の領域または地域で実行すると、事業地域フィールドの複数の場所または地域を含めることができます。 ユーザーは使用可能な値の一覧から、1 つまたは複数の場所を選択できます。
 
 複数選択オプション セットは読み取り専用グリッド、編集可能グリッドおよびフォームでのみ使用できます。 複数選択オプション セットは以下でサポートされていません。 
 - ワークフロー、アクション、ダイアログ、ロールアップ、グラフ、および計算フィールド。
@@ -110,7 +104,7 @@ ms.locfileid: "3225633"
   
 ## <a name="using-the-right-type-of-number"></a>正しいタイプの数値を使用する
 
-数値フィールドに使用する正しいタイプを選択する際に、**整数**または**通貨**タイプを選択すると、とても簡単です。 **浮動小数点**または**小数**の数値を使用する選択は、もっと複雑です。  
+数値フィールドに使用する正しいタイプを選択する際に、**整数** または **通貨** タイプを選択すると、とても簡単です。 **浮動小数点**または**小数**の数値を使用する選択は、もっと複雑です。  
   
 小数は、指定したとおりにデータベースに格納されます。 浮動小数点数の数値は、その値の近似値が格納されます。 正確な値があるのに、なぜ近似値を使用するのか？ 答えは、異なるシステム パフォーマンスを得るためです。  
   
@@ -221,6 +215,9 @@ By default, when an app user adds an image to display to a form or canvas app, t
 
 11. フォーム エディター リボンで **保存** を選択し、**公開** を選択します。 フォーム エディターを閉じます。 
 
+>[!NOTE]
+> 最大ファイルサイズが一度保存されると、変更できません。
+
 アプリ ユーザーがフォームに表示するイメージを選択できるようになりました。 アプリ ユーザーがレコードのフォームを開くとき、フォームに表示するイメージを選択できます。 
 
 > [!IMPORTANT]
@@ -246,10 +243,16 @@ By default, when an app user adds an image to display to a form or canvas app, t
 ## <a name="file-fields"></a>ファイル フィールド
 [!INCLUDE [cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]
 
-現在、ファイル データの種類はキャンバス アプリとフローでのみ使用できます。 
-
 **ファイル** フィールドはバイナリ データを格納するために使用されます。 このフィールドの主目的の一つは、単一のイメージ、メモ、添付ファイルを保存することです。 ただし、そのほかの形式のバイナリ データの保存もできます。 このデータの種類に対して一つ以上のフィールドで、カスタマイズ可能な既存の標準のエンティティまたはユーザー定義エンティティに追加できます。
 
 既定の **最大ファイル サイズ** は 32 MBで、設定できる最大のサイズは128 MBです。 ファイル サイズ制限は、エンティティに追加するファイルの種類別のフィールドに個別に設定できます。 
+
+>[!NOTE]
+> 最大ファイルサイズが一度保存されると、変更できません。
+
+ファイル フィールドを作成するには、Power Apps の左側のペインで **ソリューション** を選択し、必要なソリューションを開き、必要なエンティティを開き、**フィールド** タブで **フィールドを追加** を選択してから、**フィールドのプロパティ** ペインで **ファイル** を**データの種類** として選択します。 
+
+> [!div class="mx-imgBorder"] 
+> ![ファイル データの種類](media/file-data-type.png)
 
 ファイル データを操作する開発者のための詳細: [ファイル属性](/powerapps/developer/common-data-service/file-attributes)

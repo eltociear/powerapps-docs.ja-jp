@@ -2,7 +2,7 @@
 title: データ レイクへのエクスポート | MicrosoftDocs
 description: エンティティデータを Power Appsの Azure データレイクにエクスポートする方法を解説します
 ms.custom: ''
-ms.date: 03/04/2020
+ms.date: 04/27/2020
 ms.reviewer: Mattp123
 ms.service: powerapps
 ms.suite: ''
@@ -19,12 +19,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 04913c04d6f8209ed3d0a11105964627eec96220
-ms.sourcegitcommit: d500f44e77747a3244b6691ad9b3528e131dbfa5
+ms.openlocfilehash: b8b0ab15720130e7624d31ea40fa7a73a4fe4f8f
+ms.sourcegitcommit: 8728546925c570541bebc1ac7a24227651e8f65f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "3119906"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "3463472"
 ---
 # <a name="export-entity-data-to-azure-data-lake-storage-gen2"></a>エンティティデータを Azure Data Lake Storage Gen2 にエクスポートする
 
@@ -44,11 +44,11 @@ Data Lake にエクスポート には、次の機能が実装されています
 
 ## <a name="how-data-and-metadata-are-exported"></a>データとメタデータのエクスポート方法
 
-Data Lake サービスへのエクスポートは、エンティティ データとメタデータの初期および増分の書き込みに対応しています。 Common Data Service でのデータまたはメタデータの変更は、追加アクションなしで自動的にデータレイクにプッシュされます。 これはプル操作ではなく、プッシュ操作です。 更新間隔を設定する必要なく、変更が宛先にプッシュされます。 
+Data Lake サービスへのエクスポートは、エンティティ データとメタデータの初期および増分の書き込みに対応しています。 Common Data Service でのデータまたはメタデータの変更は、追加アクションなしで自動的にデータレイクにプッシュされます。 これはプル操作ではなく、プッシュ操作です。 更新間隔を設定することなく、変更がエクスポート先にプッシュされます。 
 
 標準エンティティとカスタム エンティティの両方をエクスポートすることができます。 Common Data Service の変更追跡のエンティティ属性は、データが最初に抽出されてから、または最後に同期されてからどのデータが変更されたかを検出することによって、データの同期を効率の良い方法で維持します。 
 
-すべての作成、更新、削除操作が Common Data Service からデータ レイクへエクスポートされます。 たとえば、ユーザーが Common Data Service のアカウント エンティティ レコードを削除すると、トランザクションは宛先のデータ レイクに複製されます。
+すべての作成、更新、削除作業は、Common Data Service から Data Lake へとエクスポートされます。 たとえば、ユーザーが Common Data Service のアカウント エンティティ レコードを削除すると、トランザクションは宛先のデータ レイクに複製されます。
 
 ## <a name="prerequisites"></a>前提条件
 
@@ -88,6 +88,9 @@ Common Data Service のデータをデータ レイクにエクスポートす�
    > ![エクスポートするエンティティの選択](media/export-data-lake-select-entity.png "エクスポートするエンティティの選択")
 
 Common Data Service 環境は Azure Data Lake Storage Gen2 アカウントにリンクされています。 Azure ストレージ アカウントのファイル システムは、データ レイクに複製するように選択された各エンティティーのフォルダーとともに作成されます。 
+
+> [!NOTE]
+> エクスポートによってデータ レイク サービスにエクスポートされたデータは、Azure Data Lake Storage Gen2 によって暗号化されて保存されます。 さらに、BLOB ストレージ内の一時データも暗号化されて保存されます。 Azure Data Lake Storage Gen2 の暗号化は、データの保護、エンタープライズ セキュリティ ポリシー、規制コンプライアンス要件の順守に役立ちます。 詳細: [Azure データ保存時の暗号化]( /azure/security/fundamentals/encryption-atrest)
 
 ## <a name="manage-entity-data-to-the-data-lake"></a>データレイクへのエンティティデ ータを管理する
 

@@ -2,7 +2,7 @@
 title: 'チェックリスト: 統一インターフェイスへの移行 | MicrosoftDocs'
 description: 統一インターフェイスに移行する準備が整っていることを確認するチェックリスト。
 ms.custom: ''
-ms.date: 11/04/2019
+ms.date: 05/21/2020
 ms.reviewer: kvivek
 ms.service: powerapps
 ms.topic: article
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 20a64e12abc70e8c1b636ab5412e2a951b5ad612
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 882d07a284dae31c4fe2ee5478d9b494df667f03
+ms.sourcegitcommit: 4b6f187c9501332f9acca5978fa326621f2980e5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2869220"
+ms.lasthandoff: 05/22/2020
+ms.locfileid: "3394728"
 ---
 # <a name="checklist-unified-interface-transition"></a>チェックリスト: 統一インターフェイスへの移行
 
@@ -71,7 +71,7 @@ ms.locfileid: "2869220"
 > [!NOTE]
 > サードパーティ ソリューションが統一インターフェイスと互換性のあるバージョンに更新する予定がない場合は、これらの機能をネイティブ プラットフォームの機能または互換性のある代替ソリューションに置き換えるパスを特定することが重要です。
 
-## <a name="identify-replacements-for-deprecated-client-api-code-and-features"></a>非推奨のクライアント API コードと機能の代替を特定する
+## <a name="identify-replacements-for-deprecated-features"></a>廃止された機能の代替機能を見つける
 
 非推奨のクライアント API と機能に関する **Power Apps ソリューション チェッカー** の出力と [で予定されている重要な変更 (廃止)](https://docs.microsoft.com/power-platform/important-changes-coming) に含まれる情報に基づいて、統一インターフェイス プロジェクトで修正や置換が必要なカスタマイズと機能について十分な理解が必要です。
 
@@ -83,10 +83,12 @@ ms.locfileid: "2869220"
 
 -   **タスク フロー**: タスク フローの置き換えには [業務プロセス フロー](https://docs.microsoft.com/power-platform-release-plan/2019wave2/microsoft-flow/business-process-immersive-experiences) の使用を検討します。
 
--   **サービス スケジュール設定**: [Universal Resource Scheduling](https://docs.microsoft.com/dynamics365/common-scheduler/schedule-anything-with-universal-resource-scheduling) を使用して従来のサービス スケジュール設定を置き換えることを検討してください。
+-   **Dynamics 365 for Outlook (COMアドイン)** : [非推奨な](/power-platform/important-changes-coming#dynamic-365-for-outlook-is-deprecated)Dynamics 365 for Outlook (COMアドイン) を最新で軽量な[Dynamics 365 App for Outlook](https://docs.microsoft.com/dynamics365/outlook-app/overview) と交換することを検討してください。 スムーズな移行を行うための詳細情報と手順については、[Dynamics 365 for Outlook（COMアドイン）ハンドブック](https://aka.ms/OutlookCOMPlaybook) をダウンロードしてください
 
-> [!NOTE]
-> また、Dynamics 365 for Outlook (COM アドイン) を軽量 [Dynamics 365 App for Outlook](https://docs.microsoft.com/dynamics365/outlook-app/overview) に置き換えることも、ご検討ください。
+- **Dynamics 365 Customer Service**:
+    -   サービスのスケジューリング : 従来のサービス スケジューリングの代わりに、[Universal Resource Scheduling](https://docs.microsoft.com/dynamics365/common-scheduler/schedule-anything-with-universal-resource-scheduling) の使用を検討してください。
+    - [非推奨のナレッジ マネジメント エンティティ](https://docs.microsoft.com/previous-versions/dynamicscrm-2016/administering-dynamics-365/dn265924(v=crm.8)#some-knowledge-management-entities-are-deprecated) : 最新のナレッジ マネジメント エンティティを操作するには、[ナレッジ記事の作業をする](https://docs.microsoft.com/dynamics365/customer-service/work-knowledge-articles)を参照してください。
+    - [非推奨の契約エンティティ](https://docs.microsoft.com/power-platform/important-changes-coming#contracts-contract-line-items-and-contract-templates-entities-are-deprecated) : 資格に移行するには、[資格移行戦略の契約](https://docs.microsoft.com/dynamics365/customer-service/contract-to-entitlement-migration) を参照してください。 
 
 ## <a name="test-your-application-in-unified-interface"></a>統一インターフェイスでアプリケーションをテストする
 
@@ -115,7 +117,7 @@ ms.locfileid: "2869220"
 
 統一インターフェイス向けに最適化されておらず互換モードで実行する **Dynamics 365 – カスタム** アプリを使用する代わりに、Microsoft のファーストパーティ アプリを活用するか、独自のアプリを作成することを推奨します。
 
-すでに統一インターフェイスに最適化された Dynamics 365 のファーストパーティ アプリは次のとおりです。
+統一インター フェイスに向けて、最適化がされている Dynamics 365 アプリは以下のとおりです :
 
 -   Dynamics 365 Sales ハブ
 
@@ -131,7 +133,7 @@ ms.locfileid: "2869220"
 
 **モデル駆動型アプリ** は、Power Apps を使用して作成できるアプリの種類で、組織内の役割に応じてユーザーに合わせたエクスペリエンスを提供するのに役立ちます。 たとえば営業担当者が同じ環境のデータを使用している場合でも、顧客サービス担当者と異なるモデル駆動型アプリにとってまったく異なるエクスペリエンスを使用できます。 Common Data Service 環境で複数のモデル駆動型アプリを作成できます。 詳細: [モデル駆動型アプリとは](https://docs.microsoft.com/powerapps/maker/model-driven-apps/model-driven-app-overview)
 
-先にリストした Dynamics 365 のファーストパーティ アプリは、モデル駆動型アプリの例です。
+上記の Dynamics 365 アプリは、モデル駆動型アプリの例です。
 
 ### <a name="how-to-define-your-app-strategy"></a>アプリ戦略を定義する方法を教えてください。
 
@@ -225,5 +227,5 @@ ms.locfileid: "2869220"
 
 ## <a name="check-your-transition-date"></a>移行日を確認する
 
-2020 年 10 月 1 日に、[従来の Web クライアントを使用できなくなります](https://docs.microsoft.com/power-platform/important-changes-coming#legacy-web-client-is-deprecated)。
+2020 年 12 月 1 日をもって、[従来の Web クライアントは利用できなくなります](https://docs.microsoft.com/power-platform/important-changes-coming#legacy-web-client-is-deprecated)。
 問題に対処する時間があることを確認するために、事前に適切な移行を確認します。

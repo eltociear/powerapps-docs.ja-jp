@@ -20,12 +20,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 38ab2ea7116093e41d7816e17eed9cc183b34d14
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 2e9e1203676bdfba5ac42c868da2e412ab3de097
+ms.sourcegitcommit: 263a12aefa72a3d73e07b2660bf1e89eba532a16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2861764"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "3264861"
 ---
 # <a name="introduction-to-isv-studio-for-the-power-platform"></a>Power Platform ISV Studio の概要
 
@@ -52,9 +52,9 @@ ISV Studio の共有プレビューにアクセスするには、ブラウザで
 
 1. ISVは、[AppSource](https://appsource.microsoft.com/) で公開された 1 つまたは複数のサポート対象アプリを持つ、Microsoft 登録パートナー組織 [ISV] と関連付けられている必要があります。 サポートされているアプリには、Power Apps と Dynamics 365 Sales や Dynamics 365 Customer Service などの Dynamics 365 のモデル駆動型アプリがあります。
 
-2. ISVは [Azure Active Directory](https://azure.microsoft.com/services/active-directory/) (AAD) アカウントを持っている必要があり、そのアカウントは ISV の クラウド パートナー ポータル(CPP) で、アプリのコントリビューターまたはオーナーとして設定されている必要があります。
+2. ISVは [Azure Active Directory](https://azure.microsoft.com/services/active-directory/) (AAD) アカウントを持っている必要があり、そのアカウントは ISV のパートナー センターで、アプリのコントリビューターまたはオーナーとして設定されている必要があります。
 
-ISV Studio にアクセスできるユーザを追加する場合は、CPPにて アプリ コントリビュータとして追加することができます。  手順については、[クラウド パートナー ポータルでのユーザー管理](https://docs.microsoft.com/azure/marketplace/cloud-partner-portal-orig/cloud-partner-portal-manage-users)で確認することができます。
+ISV Studio にアクセスできるユーザを追加する場合、パートナー センターにてアプリ コントリビュータとして追加することができます。  手順については、[クラウド パートナー ポータルでのユーザー管理](https://docs.microsoft.com/azure/marketplace/cloud-partner-portal-orig/cloud-partner-portal-manage-users)で確認することができます。
 
 ISV Studioの機能については、以下の「アプリ」と「テナント」ページのトピックを参照してください。
 
@@ -63,8 +63,10 @@ ISV Studioの機能については、以下の「アプリ」と「テナント�
 ## <a name="in-this-section"></a>このセクションでは、以下について説明します。
 
 [ホーム ページ](isv-app-management-homepage.md)  
-[アプリ ページ](isv-app-management-apppage.md)  
-[テナント ページ](isv-app-management-tenantpage.md)
+[アプリ ページ](isv-app-management-apppage.md)<br/> 
+[テナント ページ](isv-app-management-tenantpage.md)<br/>
+[AppSource チェッカー](isv-app-management-appsource-checker.md)<br/>
+[コネクタ認定](isv-app-management-certification.md)
 
 ### <a name="see-also"></a>関連項目
 

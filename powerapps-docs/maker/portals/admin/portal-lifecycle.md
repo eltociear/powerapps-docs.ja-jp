@@ -1,94 +1,109 @@
 ---
 title: Power Apps ポータルのライフサイクルについて | MicrosoftDocs
-description: Power Apps ポータルのライフサイクルおよびそれを試用版から運用に変換することに関する情報。
-author: tapanm-msft
-manager: kvivek
+description: Power Apps ポータルのライフサイクルと、試用版から運用版への変更に関する情報。
+author: neerajnandwana-msft
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 12/26/2019
-ms.author: tapanm
+ms.date: 06/22/2020
+ms.author: nenandw
 ms.reviewer: tapanm
-ms.openlocfilehash: c7c330b8f7bda2b7c08c2c0ec94202e20670ed17
-ms.sourcegitcommit: a1b54333338abbb0bc3ca0d7443a5a06b8945228
+ms.openlocfilehash: 635222979ff99df941e447293f2cecdba22eca8d
+ms.sourcegitcommit: 2fd873a1ea17f419f6194714efffa47a9bd00c2e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "3125886"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "3507092"
 ---
-# <a name="about-portal-lifecycle"></a>ポータルのライフサイクルについて
+# <a name="about-the-portal-lifecycle"></a>ポータルのライフサイクルについて
 
-ポータルは、試用版として常に作成されます。 30 日後に有効期限が切れる試用版は、無料でポータルの機能を試すために役立ちます。 有効期限が切れた後、ポータルは中断されシャットダウンされます。 中断から 7 日後に、試用版ポータルは削除されます。 中断に接近する、中断された、削除済み、試用版から運用への変換などのポータルのライフサイクル ステージの変化ごとに、電子メールでトーストとしての通知が送信されます。
+ポータルは、試用版として常に作成されます。 30 日後に有効期限が切れる試用版は、無料でポータルの機能を試すために役立ちます。 有効期限が切れた後、ポータルは停止されシャットダウンされます。 停止から 7 日後に、試用版ポータルは削除されます。 ポータル ライフサイクル&mdash;間もなく停止、停止、削除、試用版から運用版への変更&mdash;の各段階で、トースト通知と電子メールで通知されます。
 
-管理者の場合は、中断したポータルを運用ポータルへと変換できます。 試用版用ポータルから運用に変換すると、環境も運用環境であることを確認します。 試用版を試用版の運用環境で運用に変換することはできません。 試用ポータルを作成した環境を削除すると、ポータルも削除されます。
+管理者の場合は、中断したポータルを運用ポータルへと変換できます。 ポータルを試用版からから運用版に変更する場合、環境が運用環境でもあること確認する必要があります。 試用版環境では、試用版ポータルを運用ポータルに変更することはできません。 試用ポータルを作成した環境を削除すると、ポータルも削除されます。
 
 最初のポータルは、テナントの環境で作成するのは無料です。 1 つ以上のポータルを作成する必要がある場合、テナントに 1 GBの未使用の保存領域が必要です。
 
-## <a name="stages-in-portal-lifecycle"></a>ポータル ライフサイクルのステージ
+## <a name="stages-in-the-portal-lifecycle"></a>ポータル ライフサイクルのステージ
 
 ### <a name="trial-portal"></a>試用版ポータル
 
-ポータルは、試用版ポータルとして常に作成されます。 必要なライセンスを持っている場合は、Power Apps ポータルの管理センターから運用版に変換できます。 試用版ポータルを運用に変換することに関する詳細については、[試用版ポータルを運用に変換する](#convert-a-trial-portal-to-production)を参照してください。
+すべてのポータルは、30 日後に有効期限が切れる試用版ポータルとして開始されます。 必要なライセンスがある場合は、Power Apps ポータル管理センターから運用ポータルに変更できます。 詳細: [ポータルを試用版から運用版に変更する](#convert-a-portal-from-trial-to-production)
 
-試用版ポータルを運用に変換するには、環境には、外部ユーザーでは追加項目または内部ユーザーではライセンスが必要です。 ライセンスの詳細については、[Power Apps および Power Automate のライセンスに関するよくあるご質問](https://docs.microsoft.com/power-platform/admin/powerapps-flow-licensing-faq) および [Power Apps ポータルのライセンス](https://docs.microsoft.com/power-platform/admin/powerapps-flow-licensing-faq#can-you-share-more-details-regarding-the-new-power-apps-portals-licensing) をご覧ください。
+試用版ポータルを運用ポータルに変更するには、環境に外部ユーザー用のアドオンまたは内部ユーザー用のライセンスが必要です。 詳細: [Power Apps と Power Automate ライセンスに関する FAQ](https://docs.microsoft.com/power-platform/admin/powerapps-flow-licensing-faq) と [Power Apps ポータル ライセンス](https://docs.microsoft.com/power-platform/admin/powerapps-flow-licensing-faq#can-you-share-more-details-regarding-the-new-power-apps-portals-licensing)
 
 ### <a name="suspended-portal"></a>中断状態のポータル
 
-試用版ポータルの有効期限については、Power Apps ポータル管理センターで継続して通知が表示されます。 試用版ポータルは 30 日で有効期限が切れます。 試用期間内にポータルを運用に変換しないと、ポータルはシャットダウンされ、中断状態になります。 有効期限が切れた後は、ポータルにアクセスできません。
+試用版ポータルの有効期限については、Power Apps ポータル管理センターで継続して通知が表示されます。 試用版ポータルは 30 日で有効期限が切れます。 試用期間内にポータルを運用に変更しないと、ポータルはシャットダウンされ、停止状態になります。
 
-ただし、中断されたポータルは、中断開始から 7 日以内であれば運用に変換できます。 
+有効期限が切れた後は、ポータルにアクセスできません。 ただし、停止されたポータルは、停止から 7 日以内であれば運用に変更できます。
 
 ### <a name="deleted-portal"></a>削除されたポータル
 
-ポータルを 7 日の中断期間内に運用に変換しない場合は、ポータルは削除されます。 ポータルのデータは環境から削除されませんが、環境でポータルが使用した領域はリリースされ、新しいポータルを作成できます。
+ポータルを 7 日の中断期間内に運用に変換しない場合は、ポータルは削除されます。 ポータル データは環境から削除されませんが、環境でポータルが使用した領域は解放され、新しいポータルを作成できます。
 
-## <a name="convert-a-trial-portal-to-production"></a>試用版ポータルを運用に変換する
+## <a name="convert-a-portal-from-trial-to-production"></a>ポータルを試用版から運用版に変更する
 
-試用版ポータルは、Power Apps ポータル管理センターに表示されている通知から運用へと変換できます。
+試用版ポータルは、Power Apps ポータル管理センターに表示されている通知から運用ポータルへと変更できます。
 
 > [!NOTE]
-> 試用版ポータルを運用に変換するには、次ロールの一つを割り当てる必要があります:
+> ポータルを試用版から運用版に変更するには、次のロールの 1 つを割り当てる必要があります:
 > - グローバル管理者
 > - システム管理者
 
-[Power Apps ポータル管理センター](admin-overview.md) を開き、[ポータルの詳細](portal-details.md) タブへと移動すると、**種類** フィールドの下に試用版の有効期限について通知が表示されます。
+[Power Apps ポータル管理センター](admin-overview.md) を開き、**[ポータルの詳細](portal-details.md)** タブへ移動すると、**種類** フィールドの下に試用版の有効期限について通知が表示されます。
 
 > [!div class=mx-imgBorder]
-> ![ポータル詳細タブの試用版に関する通知](../media/admin-center-convert-notif.png "ポータル詳細タブの試用版に関する通知")
+> ![[ポータルの詳細] タブの試用通知](../media/admin-center-convert-notif.png "[ポータルの詳細] タブの試用通知")
 
 管理センターのその他のページには、ページの上部に通知が表示されます。
 
 > [!div class=mx-imgBorder]
-> ![その他のタブ上の通知](../media/admin-center-convert-notif-all.png "その他のタブ上の通知")
+> ![他のページ上の試用通知](../media/admin-center-convert-notif-all.png "他のページ上の試用通知")
 
-試用版ポータルを運用に変換するには:
+ポータルを試用版から運用版に変更するには:
 
 1.  通知で、**変換**を選択します。
 
-2.  **確認**を選択します。
+2.  **確認** を選択します。
 
     > [!div class=mx-imgBorder]
     > ![試用版から運用への確認](../media/trial-to-prod-confirm.png "試用版から運用への確認")
 
+## <a name="convert-an-existing-portal-to-a-capacity-based-model"></a>既存のポータルを容量ベースのモデルに変換する
+
+既存のポータル ライセンスを [容量ベースのライセンス モデル](https://docs.microsoft.com/power-platform/admin/powerapps-flow-licensing-faq#can-you-share-more-details-regarding-the-new-power-apps-portals-licensing) に変換できます。 ポータル ライセンスを容量ベースのモデルに変更するには:
+
+1. [ポータルの詳細](portal-details.md) に移動します。
+1. **ライセンスの変更** を選択します。
+
+    ![既存のポータルを容量ベースのモデルに変換する](media/portal-lifecycle/convert-to-capacity-based-licensing.gif "既存のポータルを容量ベースのモデルに変換する")
+
+ポータル ライセンスを変更する前に、以下の点に注意してください:
+
+- ライセンスの変更中にポータルが再起動し、数分間使用できなくなります。 ビジネス ユーザーのダウンタイム期間に、これをスケジュールする必要がある場合があります。
+- 環境では、ライセンスを変更する前に適切な [ライセンス](https://docs.microsoft.com/power-platform/admin/powerapps-flow-licensing-faq#portals) が利用可能で割り当てられている必要があります。
+- ライセンスを変更するには、管理者権限が必要です。
+- 既存ライセンスから容量ベース ライセンスに変更できるのは、運用環境のみです。 [試用版環境](https://docs.microsoft.com/power-platform/admin/trial-environments) がある場合は、まず運用環境に変更する必要があります。
+
 ## <a name="considerations-for-add-on-portals"></a>アドオン ポータルに関する考慮事項
 
-以前に購入した [ポータル アドオン プランを使用してプロビジョニングされた](../provision-portal-add-on.md) ポータルには、以下の条件が適用されます:
+次のセクションでは、[ポータル アドオン プランを使用してプロビジョニング](../provision-portal-add-on.md) したポータルに適用される条件について説明します。
 
 ### <a name="trial-add-on-portal"></a>試用版アドオン ポータル
 
-試用版アドオン ポータルは30日後に有効期限が切れます。 期限切れのポータルは7日間中断されます。 一時停止期間が終了すると、ポータルは削除されます。 試用版アドオン ポータルは、構成または一時停止中でも運用に変換できます。
+試用版アドオン ポータルの有効期限は 30 日です。 期限切れのポータルは 7 日間停止されます。 ポータルは、停止期間が終了すると削除されます。 試用版アドオン ポータルは、環境に設定されているか停止されている間も、運用ポータルに変更できます。
 
 ### <a name="production-add-on-portal"></a>実稼働アドオン ポータル
 
-実稼働アドオン ポータルは、購入したライセンス期間の終了時に失効します。 実稼働アドオン ポータルの停止期間は、購入したライセンス プランによって異なる場合があります。 一時停止期間が終了すると、ポータルは削除されます。 ポータルが構成または一時停止状態のときに、実稼働アドオン ポータルのライセンスを延長できます。 一時停止した場合、ライセンス期間を延長した後、ポータルを構成済みの状態に変換できます。
+運用アドオン ポータルは、購入したライセンス期間の終了時に期限切れになります。 運用アドオン ポータルの停止期間は、購入したライセンス プランによって異なります。 ポータルは、停止期間が終了すると削除されます。 ポータルが構成済みまたは停止状態のときに、運用アドオン ポータルのライセンスを延長できます。 停止している場合は、ライセンス期間の延長後にポータルを構成済みの状態に変更できます。
 
 > [!IMPORTANT]
-> ポータルを一時停止または削除すると、機能が失われる可能性があります。 一時停止または削除を回避するために、期限が近づいているアドオン ポータルの適切なタイミングでライセンス期間が延長されるようにします。
+> ポータルの停止や削除による機能損失を避けるには、有効期限が切れる前に、適切なタイミングでライセンス期間を延長してください。
 
 ### <a name="reset-add-on-portal"></a>アドオン ポータルのリセット
 
-手順に従って、以前に購入した古いポータルアドオンプランを使用してプロビジョニングされたポータルを [リセット](reset-portal.md) します。
+[ポータルのリセット](reset-portal.md) の手順に従って、以前に購入したポータル アドオン プランを使用してプロビジョニングされたポータルをリセットします。
 
-## <a name="see-also"></a>関連項目
+### <a name="see-also"></a>関連項目
 
-[Power Apps ポータルに関してよくあるご質問](../faq.md)
+[Power Apps ポータルに関する FAQ](../faq.md)

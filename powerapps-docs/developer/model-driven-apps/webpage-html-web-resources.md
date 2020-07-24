@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 642d4f74e8d4e0c613bbc42381fecd4418f93030
-ms.sourcegitcommit: a1b54333338abbb0bc3ca0d7443a5a06b8945228
+ms.openlocfilehash: abf6098de965ae83da968bf6b59da3615fb1c7f5
+ms.sourcegitcommit: 4a88daac42180283314f6bedee3d6810fd5a6c25
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "3126534"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "3275799"
 ---
 # <a name="webpage-html-web-resources"></a>Webpage (HTML) の Web リソース
 
@@ -142,13 +142,14 @@ HTML Web リソースはユーザーのブラウザーにストリームされ�
 |セキュリティ||社外秘。|
 |tabSet||社外秘。|
 
- 複数の値がデータ パラメーターで渡された場合、自動的にエンコードされます。 ロジックも、HTML Web リソースのスクリプトを使用して複数のパラメーターをデコードするために含める必要があります。 「[サンプル: データ パラメーターを使用した Web リソースへの複数の値の引き渡し](sample-pass-multiple-values-web-resource-through-data-parameter.md)」トピックでは、複数のパラメーター値の引き渡しに対処する 1 つの方法を示しています。  
+ 複数の値がデータ パラメーターで渡された場合、自動的にエンコードされます。 ロジックも、HTML Web リソースのスクリプトを使用して複数のパラメーターをデコードするために含める必要があります。 [サンプル: データ パラメーターを使用した Web リソースへの複数の値の引き渡し](sample-pass-multiple-values-web-resource-through-data-parameter.md) トピックでは、複数のパラメーター値の引き渡しに対処する 1 つの方法を示しています。  
 
 ### <a name="see-also"></a>関連項目
+
  [Web リソース](web-resources.md)   
  [アクセス可能な Web リソースの作成](create-accessible-web-resources.md)   
- [スタイルシート (CSS) ウェブ リソースを使用する](css-web-resources.md)   
+ [スタイル シート (CSS) Web リソースの使用](css-web-resources.md)   
  [スクリプト (JScript) Web リソースの使用](script-jscript-web-resources.md)   
  [データ (XML) Web リソースの使用](data-xml-web-resources.md)   
- [画像 (JPG、PNG、GIF、ICO) Web リソースの使用](image-web-resources.md)   
+ [画像 (JPG、PNG、GIF) Web リソースの使用](image-web-resources.md)   
  [スタイル シート (XSL) Web リソースの使用](stylesheet-xsl-web-resources.md)

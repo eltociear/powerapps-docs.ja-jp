@@ -1,20 +1,19 @@
 ---
 title: ポータル用 SAML 2.0 プロバイダー設定の構成 | MicrosoftDocs
 description: ポータルの SAML 2.0 プロバイダー設定を追加およびコンフィギュレーションする指示をします。
-author: tapanm-msft
-manager: kvivek
+author: sandhangitmsft
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 10/18/2019
-ms.author: tapanm
-ms.reviewer: ''
-ms.openlocfilehash: 4126ba564027291d8bbcb853f0769aa67f0de7d7
-ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
+ms.author: sandhan
+ms.reviewer: tapanm
+ms.openlocfilehash: 3478fea889957b0e4a819231d9e89293b18506d3
+ms.sourcegitcommit: c12260f372ad2cc48d3146be570d2088c9ef1d86
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "2979122"
+ms.lasthandoff: 06/20/2020
+ms.locfileid: "3490045"
 ---
 # <a name="configure-saml-20-provider-settings-for-portals"></a>ポータルの SAML 2.0 プロバイダー設定を構成します
 

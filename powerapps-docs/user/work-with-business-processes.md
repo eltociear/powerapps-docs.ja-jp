@@ -20,7 +20,7 @@ ms.sourcegitcommit: dc379bede57da58b5787eda5437eb94b662e21ed
 ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 02/06/2020
-ms.locfileid: "77037369"
+ms.locfileid: "3303164"
 ---
 # <a name="work-with-business-processes"></a>ビジネス プロセスを操作する
 
@@ -42,7 +42,7 @@ ms.locfileid: "77037369"
  
   
  
-## <a name="what-if-your-business-processes-looks-different-from-these-examples"></a>ご利用の業務プロセスの外観がこれらの例と異なる場合はどうすればよいでしょうか?  
+## <a name="what-if-your-business-processes-looks-different-from-these-examples"></a>ご利用の業務プロセスの外観がこれらの例と異なる場合はどうすればよいでしょうか?   
 
 システムには一般的なタスク用の業務プロセスが付属しています。 しかし、ほとんどの組織は自分たちのやり方に合わせてそれらのプロセスをカスタマイズします。 または、会社用にまたは会社のビジネス目標に合わせてカスタマイズされているシステムにプロセスを追加している可能性もあります。 つまり、ここで示すものは、ご利用のシステム上に表示されるプロセス バーと完全には一致しない場合があるということです。 しかし、それとは関係なく、プロセス バーの動作はすべてのユーザーにおいて同じです。 フィールドにデータを入力して、顧客を次のステージに移行させます。
 

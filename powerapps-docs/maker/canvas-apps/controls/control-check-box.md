@@ -1,6 +1,6 @@
 ---
 title: 'チェック ボックス コントロール: リファレンス | Microsoft Docs'
-description: 各種プロパティとサンプルを含むチェック ボックス コントロールに関する情報
+description: プロパティとサンプルを含む、チェック ボックス コントロールに関する情報
 author: chmoncay
 manager: kvivek
 ms.service: powerapps
@@ -15,142 +15,142 @@ search.app:
 - PowerApps
 ms.openlocfilehash: 7bb993de28435478c65e061e959b2fa8945e73d1
 ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/03/2019
-ms.locfileid: "74727412"
+ms.locfileid: "3306154"
 ---
-# <a name="check-box-control-in-power-apps"></a>電源アプリのチェックボックスコントロール
-その値を **true** または **false** に設定するためにユーザーがオンまたはオフにできるコントロールです。
+# <a name="check-box-control-in-power-apps"></a>Power Apps でのチェック ボックス コントロール
+値を **true** または **false** に設定するためにユーザーがオンまたはオフにできるコントロール。
 
-## <a name="description"></a>Description
-ユーザーは、何十年もの間 GUI で使用されてきた、このなじみのあるコントロールを使用してブール値を指定できます。
+## <a name="description"></a>内容
+ユーザーは、何十年もの間 GUI で使用されてきた、この使い慣れたコントロールを使用してブール値を指定できます。
 
 ## <a name="key-properties"></a>主要なプロパティ
 **[Default](properties-core.md)** – ユーザーが変更する前のコントロールの初期値です。
 
-**[Text](properties-core.md)** – コントロールに表示されるテキスト、またはコントロールにユーザーが入力するテキストです。
+**[テキスト](properties-core.md)** – コントロールに表示されるテキスト、またはユーザーがコントロールに入力するテキスト。
 
 **[Value](properties-core.md)** – 入力コントロールの値です。
 
-## <a name="additional-properties"></a>その他のプロパティ
-**[BorderColor](properties-color-border.md)** – コントロールの境界線の色です。
+## <a name="additional-properties"></a>追加のプロパティ
+**[BorderColor](properties-color-border.md)** – コントロールの境界線の色。
 
-**[BorderStyle](properties-color-border.md)** – コントロールの境界線を **Solid** (実線)、**Dashed** (破線)、**Dotted** (点線)、**None** (なし) のいずれに指定します。
+**[BorderStyle](properties-color-border.md)** – コントロールの境界線が**実線**、**破線**、**点線**、または**なし**かどうか。
 
-**[BorderThickness](properties-color-border.md)** – コントロールの境界線の太さです。
+**[BorderThickness](properties-color-border.md)** – コントロールの境界線の太さ。
 
-**CheckboxBackgroundFill** – チェック ボックス コントロール内のチェックマークを囲むボックスの背景色です。
+**CheckboxBackgroundFill** – チェックボックス コントロール内のチェックマークを囲むボックスの背景色。
 
-**CheckboxBorderColor** – チェック ボックス コントロール内のチェックマークを囲む境界線の色です。
+**CheckboxBorderColor** – チェックボックス コントロール内のチェックマークを囲む境界線の色。
 
-**CheckboxSize** – チェック ボックス コントロール内のチェックマークを囲むボックスの幅と高さです。
+**CheckboxSize** – チェック ボックス コントロール内のチェックマークを囲むボックスの幅と高さ。
 
-**CheckmarkFill** – チェック ボックス コントロール内のチェックマークの色です。
+**CheckmarkFill** – チェック ボックス コントロール内のチェックマークの色。
 
-**[Color](properties-color-border.md)** – コントロールのテキストの色です。
+**[色](properties-color-border.md)** – コントロールのテキストの色。
 
-**[DisplayMode](properties-core.md)** – コントロールで、ユーザー入力を許可するか (**Edit**)、データの表示のみを許可するか (**View**)、許可しないか (**Disabled**) を設定します。
+**[DisplayMode](properties-core.md)** – コントロールがユーザー入力を許可するか (**編集**)、データのみを表示するか (**表示**)、または無効にするか (**無効**) どうか。
 
-**[DisabledBorderColor](properties-color-border.md)** – コントロールの **[DisplayMode](properties-core.md)** プロパティが **Disabled** に設定されている場合のコントロールの境界線の色です。
+**[DisabledBorderColor](properties-color-border.md)** – コントロールの **[DisplayMode](properties-core.md)** プロパティが**無効**に設定されている場合のコントロールの境界線の色。
 
-**[DisabledColor](properties-color-border.md)** – コントロールの **[DisplayMode](properties-core.md)** プロパティが **Disabled** に設定されている場合のコントロール内のテキストの色です。
+**[DisabledColor](properties-color-border.md)** – コントロールの **[DisplayMode](properties-core.md)** プロパティが**無効**に設定されている場合のコントロール内のテキストの色。
 
-**[DisabledFill](properties-color-border.md)** – コントロールの **[DisplayMode](properties-core.md)** プロパティが **Disabled** に設定されている場合のコントロールの背景色です。
+**[DisabledFill](properties-color-border.md)** – コントロールの **[DisplayMode](properties-core.md)** プロパティが**無効**に設定されている場合のコントロールの背景色。
 
-**[Fill](properties-color-border.md)** – コントロールの背景色です。
+**[塗りつぶし](properties-color-border.md)** – コントロールの背景色。
 
-**[FocusedBorderColor](properties-color-border.md)** – コントロールにフォーカスがあるときのコントロールの境界線の色です。
+**[FocusedBorderColor](properties-color-border.md)** – コントロールがフォーカスされているときのコントロールの境界線の色。
 
-**[FocusedBorderThickness](properties-color-border.md)** – コントロールにフォーカスがあるときのコントロールの境界線の太さです。
+**[FocusedBorderThickness](properties-color-border.md)** – コントロールがフォーカスされているときのコントロールの境界線の太さ。
 
-**[Font](properties-text.md)** – テキストを表記するフォントのファミリー名です。
+**[フォント](properties-text.md)** – テキストを表示するフォントのファミリーの名前。
 
-**[FontWeight](properties-text.md)** – コントロール内のテキストの太さです。**Bold** (太字)、**Semibold** (中太)、**Normal** (標準)、**Lighter** (細字) から指定します。
+**[FontWeight](properties-text.md)** – コントロール内のテキストの太さ: **太字**、**中太**、**標準**、または**細字**。
 
-**[Height](properties-size-location.md)** – コントロールの上端と下端の距離です。
+**[高さ](properties-size-location.md)** – コントロールの上端と下端間の距離。
 
-**[HoverBorderColor](properties-color-border.md)** – コントロール上にユーザーがマウス ポインターを重ねているときのコントロールの境界線の色です。
+**[HoverBorderColor](properties-color-border.md)** – ユーザーがコントロール上にマウス ポインターを重ねているときのコントロールの境界線の色。
 
-**[HoverColor](properties-color-border.md)** – コントロールにユーザーがマウス ポインターを重ねているときのコントロール内のテキストの色です。
+**[HoverColor](properties-color-border.md)** – ユーザーがコントロールにマウス ポインターを重ねているときのコントロール内のテキストの色。
 
-**[HoverFill](properties-color-border.md)** – コントロールにユーザーがマウス ポインターを重ねているときのコントロールの背景色です。
+**[HoverFill](properties-color-border.md)** – ユーザーがコントロールにマウス ポインターを重ねているときのコントロールの背景色。
 
-**[Italic](properties-text.md)** – コントロール内のテキストを斜体にするかどうかを指定します。
+**[斜体](properties-text.md)** – コントロール内のテキストを斜体にするかどうか。
 
-**OnCheck** – チェック ボックスまたはトグルの値が **true** に変わったときの、アプリの反応を指定します。
+**OnCheck** – チェックボックスまたはトグルの値が **true** に変わったときの、アプリの反応を指定します。
 
-**[OnSelect](properties-core.md)** – ユーザーがコントロールをタップまたはクリックした場合のアプリの反応を指定します。
+**[OnSelect](properties-core.md)** – ユーザーがコントロールをタップまたはクリックする場合のアプリの反応方法。
 
 **OnUncheck** – チェック ボックスまたはトグルの値が **false** に変わったときの、アプリの反応を指定します。
 
-**[PaddingBottom](properties-size-location.md)** – コントロール内のテキストとそのコントロールの下端間の距離です。
+**[PaddingBottom](properties-size-location.md)** – コントロール内のテキストとそのコントロールの下端間の距離。
 
-**[PaddingLeft](properties-size-location.md)** – コントロール内のテキストとそのコントロールの左端間の距離です。
+**[PaddingLeft](properties-size-location.md)** – コントロール内のテキストとそのコントロールの左端間の距離。
 
-**[PaddingRight](properties-size-location.md)** – コントロール内のテキストとそのコントロールの右端間の距離です。
+**[PaddingRight](properties-size-location.md)** – コントロール内のテキストとそのコントロールの右端間の距離。
 
-**[PaddingTop](properties-size-location.md)** – コントロール内のテキストとそのコントロールの上端間の距離です。
+**[PaddingTop](properties-size-location.md)** – コントロール内のテキストとそのコントロールの上端間の距離。
 
-**[PressedBorderColor](properties-color-border.md)** – コントロールをユーザーがタップまたはクリックしたときのコントロールの境界線の色です。
+**[PressedBorderColor](properties-color-border.md)** – ユーザーがコントロールをタップまたはクリックしたときのコントロールの境界線の色。
 
-**[PressedColor](properties-color-border.md)** – コントロールをユーザーがタップまたはクリックしたときのコントロール内のテキストの色です。
+**[PressedColor](properties-color-border.md)** – ユーザーがコントロールをタップまたはクリックしたときのコントロール内のテキストの色。
 
-**[PressedFill](properties-color-border.md)** – コントロールをユーザーがタップまたはクリックしたときのコントロールの背景色です。
+**[PressedFill](properties-color-border.md)** – ユーザーがコントロールをタップまたはクリックしたときのコントロールの背景色。
 
 **[Reset](properties-core.md)** – コントロールを既定値に戻すかどうかを指定します。
 
-**[Size](properties-text.md)** – コントロールに表示されるテキストのフォント サイズです。
+**[サイズ](properties-text.md)** – コントロールに表示されるテキストのフォント サイズ。
 
-**[Strikethrough](properties-text.md)** – コントロールに表示されるテキストに取り消し線を付けるかどうかを指定します。
+**[Strikethrough](properties-text.md)** – コントロールに表示されるテキストに取り消し線を付けるかどうか。
 
-**[TabIndex](properties-accessibility.md)** – 他のコントロールに関連するキーボード ナビゲーションの順序です。
+**[TabIndex](properties-accessibility.md)** – 他のコントロールに関連するキーボード ナビゲーションの順序。
 
-**[Tooltip](properties-core.md)** – ポインターをコントロールに合わせたときに表示される説明テキストです。
+**[ツールヒント](properties-core.md)** – ユーザーがコントロールにカーソルを置くときに表示される説明テキスト。
 
-**[Underline](properties-text.md)** – コントロールに表示されるテキストの下に線を引くかどうかを指定します。
+**[下線](properties-text.md)** – コントロールに表示されるテキストの下に線を引くかどうか。
 
-**[VerticalAlign](properties-text.md)** – コントロールの垂直方向の中心に対するコントロール上でのテキストの位置です。
+**[VerticalAlign](properties-text.md)** – コントロールの垂直方向の中心に対するコントロール上でのテキストの位置。
 
-**[Visible](properties-core.md)** – コントロールを表示するか非表示にするかを指定します。
+**[表示](properties-core.md)** – コントロールが表示されるか非表示になるか。
 
-**[Width](properties-size-location.md)** – コントロールの左端と右端の間の距離です。
+**[幅](properties-size-location.md)** – コントロールの左端と右端間の距離。
 
-**[X](properties-size-location.md)** – コントロールの左端とその親コンテナー (親コンテナーがない場合は画面) の左端間の距離です。
+**[X](properties-size-location.md)** – コントロールの左端とその親コンテナー (親コンテナーがない場合は画面) の左端間の距離。
 
-**[Y](properties-size-location.md)** – コントロールの上端とその親コンテナー (親コンテナーがない場合は画面) の上端間の距離です。
+**[Y](properties-size-location.md)** – コントロールの上端とその親コンテナー (親コンテナーがない場合は画面) の上端間の距離。
 
 ## <a name="related-functions"></a>関連する関数
 [**If**( *Condition*, *Result* )](../functions/function-if.md)
 
 ## <a name="example"></a>例
-1. **チェック ボックス** コントロールを追加して **chkReserve** という名前を付け、その **[Text](properties-core.md)** プロパティを設定して "**今すぐ予約する**" を表示します。
+1. **チェック ボックス** コントロールを追加して **chkReserve** という名前を付け、その **[テキスト](properties-core.md)** プロパティを**今すぐ予約する**を表示するよう設定します。
    
-    [コントロールの追加、命名、構成についてはこちらをご覧ください](../add-configure-controls.md)。
-2. **[日付の選択](control-date-picker.md)** コントロールを追加し、その **[Visible](properties-core.md)** プロパティを次の数式に設定します。
+    [コントロールの追加、名前付け、構成](../add-configure-controls.md) についてはこちらをご覧ください。
+2. **[日付の選択](control-date-picker.md)** コントロールを追加し、その **[表示](properties-core.md)** プロパティを次の数式に設定します:
    <br>**If(chkReserve.Value = true, true)**
    
-    **[If](../functions/function-if.md)** 関数や[その他の関数](../formula-reference.md)については各関連記事を参照してください。
-3. F5 キーを押して、**chkReserve** をクリックまたはタップしてその **[Value](properties-core.md)** プロパティを **true** に設定してから、もう一度 **chkReserve** をクリックまたはタップしてその **[Value](properties-core.md)** プロパティを **false** に設定します。
+    **[If](../functions/function-if.md)** 関数または [その他の関数](../formula-reference.md) の詳細については各関連記事を参照してください。
+3. F5 キーを押して、**chkReserve** をクリックまたはタップしてその **[値](properties-core.md)** プロパティを **true** に設定してから、もう一度 **chkReserve** をクリックまたはタップしてその **[値](properties-core.md)** プロパティを **false** に設定します。
    
-    **[日付の選択](control-date-picker.md)** コントロールは、**chkReserve** の **[Value](properties-core.md)** プロパティが **true** のときは表示されますが、**false** のときは表示されません。
+    **[日付の選択](control-date-picker.md)** コントロールは、**chkReserve** の **[値](properties-core.md)** プロパティが **true** のときは表示されますが、**false** のときは表示されません。
 4. 既定のワークスペースに戻るには、Esc キーを押します。
 
 
 ## <a name="accessibility-guidelines"></a>アクセシビリティ ガイドライン
 ### <a name="color-contrast"></a>色のコントラスト
-以下の間には適切な色のコントラストが必要です。
+次の間には適切な色のコントラストが必要です:
 * **CheckmarkFill** と **CheckboxBackgroundFill**
-* **CheckboxBackgroundFill** と **[Fill](properties-color-border.md)**
+* **CheckboxBackgroundFill** と **[塗りつぶし](properties-color-border.md)**
 * **CheckboxBackgroundFill** と **[PressedFill](properties-color-border.md)**
 * **CheckboxBackgroundFill** と **[HoverFill](properties-color-border.md)**
 
-これは、[標準の色のコントラスト要件](../accessible-apps-color.md)に追加されるものです。
+これは、[標準の色のコントラスト要件](../accessible-apps-color.md) に追加されるものです。
 
-### <a name="screen-reader-support"></a>スクリーン リーダーのサポート
+### <a name="screen-reader-support"></a>スクリーン リーダー サポート
 * **[Text](properties-core.md)** を指定する必要があります。
 
 ### <a name="keyboard-support"></a>キーボードのサポート
 * **[TabIndex](properties-accessibility.md)** を 0 以上にして、キーボード ユーザーがそこに移動できるようにする必要があります。
-* フォーカス インジケーターは明確に表示する必要があります。 これを実現するには **[FocusedBorderColor](properties-color-border.md)** と **[FocusedBorderThickness](properties-color-border.md)** を使用します。
+* フォーカス インジケーターは明確に表示する必要があります。 これを実現するには **[FocusedBorderColor](properties-color-border.md)** および **[FocusedBorderThickness](properties-color-border.md)** を使用します。
  

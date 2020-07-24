@@ -1,0 +1,102 @@
+- name: ガイダンス
+  items:
+    - name: Power Apps ガイダンスのドキュメント
+      href: index.yml
+    - name: Power Apps プロジェクトの計画
+      items:
+        - name: 概要
+          href: planning/introduction.md
+        - name: Power Apps と従来のアプリ開発アプローチの違い
+          href: planning/app-development-approaches.md
+        - name: 計画フェーズ
+          items:
+            - name: 概要
+              href: planning/planning-phase.md
+            - name: 解決するビジネス問題 (ユース ケース) の特定
+              href: planning/identifying-business-problem-to-solve.md
+            - name: 例 - 経費報告
+              href: planning/example-expense-reporting.md
+            - name: 現在のビジネス プロセスを理解する
+              items:
+                - name: 主要な協同作成者の概要と特定
+                  href: planning/understanding-current-business-process.md
+                - name: ビジネス プロセスのドキュメント化
+                  items:
+                    - name: どのようなタスクか?
+                      href: planning/what-is-task.md
+                    - name: だれがその作業をしているのか?
+                      href: planning/who-is-doing-work.md
+                    - name: どのような活動が実行されているのか?
+                      href: planning/what-activities.md
+                    - name: どのようなデータが必要か?
+                      href: planning/what-data-needed.md
+                    - name: どのようなデータが作成または編集されているか?
+                      href: planning/create-edit-data.md
+                    - name: どのような決定、承認、またはルールがあるか?
+                      href: planning/decisions-approvals.md
+                    - name: 次のタスクは何か?
+                      href: planning/next-task.md
+                    - name: プロセスを視覚的にマッピングする
+                      href: planning/visually-map-process.md
+            - name: ビジネス プロセスの最適化
+              href: planning/optimizing-business-process.md
+            - name: このプロセスを自動化する価値はあるか?
+              items:
+                - name: 何もしないことのコスト
+                  href: planning/worth-automating-process.md
+                - name: 問題を解決することのビジネス価値の定義
+                  href: planning/defining-business-value.md
+                - name: ビジネス価値に対する成功の測定
+                  href: planning/measuring-success.md
+            - name: プロジェクト計画の作成
+              items:
+                - name: アプリ プロジェクト目標の定義
+                  href: planning/defining-app-project-objective.md
+                - name: プロジェクトのスコープの定義
+                  href: planning/defining-project-scope.md
+                - name: 機能リクエストの優先順位付け
+                  href: planning/prioritizing-features.md
+                - name: プロジェクト チーム メンバーの特定
+                  href: planning/identifying-project-members.md
+                - name: プロジェクトのタスクと所有者の一覧作成
+                  href: planning/project-tasks-owners.md
+                - name: プロジェクトのスケジュールの定義
+                  href: planning/defining-project-schedule.md
+                - name: リスクの特定
+                  href: planning/identifying-risks.md
+                - name: 経営陣からの支援と後援を得る
+                  href: planning/gaining-support.md
+        - name: 設計フェーズ
+          items:
+            - name: 概要
+              href: planning/designing-phase.md
+            - name: 概念設計
+              items:
+                - name: アプリで実行するタスク
+                  href: planning/app-tasks.md
+                - name: シーンのスケッチ
+                  href: planning/sketching.md
+            - name: アーキテクチャの設計
+              items:
+                - name: データはどこにあるか?
+                  href: planning/where-is-data.md
+                - name: エンタープライズ システムの操作
+                  href: planning/enterprise-systems.md
+                - name: データ モデリング
+                  href: planning/data-modeling.md
+                - name: 作成するアプリの種類の決定
+                  href: planning/app-type.md
+                - name: ロジックを配置する場所の決定
+                  href: planning/logic.md
+                - name: アプリとデータの保護
+                  href: planning/security.md
+        - name: 作成フェーズ
+          href: planning/making-phase.md
+        - name: テスト フェーズ
+          href: planning/testing-phase.md
+        - name: デプロイと調整フェーズ
+          items:
+            - name: アプリを見つけやすくする
+              href: planning/discoverability.md
+            - name: フィードバックの収集とテレメトリの分析
+              href: planning/feedback-telemetry.md

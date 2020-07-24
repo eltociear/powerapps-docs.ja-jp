@@ -5,12 +5,12 @@ author: loreleishannonmsft
 ms.topic: article
 ms.date: 03/25/2020
 ms.author: v-lshann
-ms.openlocfilehash: 3965b2600af88e914f54071c5f8c53a44d623c1e
-ms.sourcegitcommit: ca7df48f819795d28ccfcd4a862639e20a7fe8fe
+ms.openlocfilehash: ec6328a7f8dbd3f63e758df7464c8bfc0997a9ed
+ms.sourcegitcommit: 08184794f3438c8293b88dbbd16bfe8be4f6c229
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "3168498"
+ms.lasthandoff: 04/30/2020
+ms.locfileid: "3322026"
 ---
 # <a name="learning-catalog-for-power-apps"></a>Power Apps のための学習カタログ
 
@@ -46,6 +46,8 @@ Power Apps のユーザーとしてのあなたの役割に適したオンライ
     [はじめに](learning-catalog-app-maker.md#get-started)
 
     [アプリの作成](learning-catalog-app-maker.md#app-creation)
+
+    [フローの作成](learning-catalog-app-maker.md#flow-creation)
 
       :::column-end:::
 :::row-end:::

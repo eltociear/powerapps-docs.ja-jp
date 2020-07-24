@@ -11,7 +11,7 @@ applies_to:
 - Dynamics 365 (online)
 - Dynamics 365 Version 9.x
 - PowerApps
-author: Aneesmsft
+author: Richdimsft
 ms.author: matp
 manager: kvivek
 tags:
@@ -21,23 +21,23 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 8c4b56d78b4c7337a9baf442231636e3d35ee27c
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: a140d97c6e2909a49701319d9c2ba99714144a9f
+ms.sourcegitcommit: e5a09400d34c5f840dd0d4a9084e620c6a895775
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "2884061"
+ms.lasthandoff: 06/11/2020
+ms.locfileid: "3442626"
 ---
 # <a name="share-an-embedded-canvas-app"></a>埋め込みキャンバス アプリの共有
 このトピックでは、既に作成済みの埋め込みキャンバス アプリを共有する方法を説明します。
 
 埋め込みキャンバス アプリを作成し、モデル駆動型フォームに追加した後、モデル駆動型フォームにアクセスするすべてのユーザーもキャンバス アプリおよび使用するデータに確実にアクセスできるようにする手順を実行する必要があります。 次のガイドラインを参照してください:
 -   組織またはセキュリティ グループまたは特定のユーザーと埋め込みキャンバス アプリを共有します。 詳細: [アプリの共有](../canvas-apps/share-app.md#share-an-app)
--   ユーザーが埋め込みキャンバス アプリを使用しているすべての Common Data Service エンティティに適切なアクセス許可があることを確認します。 詳細: [エンティティのアクセス許可の管理](../canvas-apps/share-app.md#manage-entity-permissions)
+-   ユーザーが埋め込みキャンバス アプリを使用しているすべての Common Data Service エンティティに適切なアクセス許可があることを確認します。 具体的には、カスタマイズ セクションの下にある "キャンバス アプリ" エンティティの読み取り権限を追加します。  詳細: [エンティティのアクセス許可の管理](../canvas-apps/share-app.md#manage-entity-permissions)
 -   SharePoint や OneDrive など、ユーザーが埋め込みキャンバス アプリを使用しているすべてのクラウド サービスのデータに適切なアクセス許可があることを確認します。 共有する手順は、各クラウド サービス固有で、Power Apps の範囲を超えています。
 
 > [!NOTE]
-> 現在、セキュリティ ロール内の**キャンバス アプリ**特権を使用して、埋め込みキャンバス アプリまたはスタンドアロン キャンバス アプリのいずれかに対するアクセス権をアプリ ユーザーに付与することはできません。
+> 現在、キャンバス アプリはアプリ共有を通じて明示的に共有する必要があります。 セキュリティ ロールの **キャンバス アプリ** 権限は、組み込み型アプリケーションまたはスタンドアロン型アプリケーションを共有しません。 
 
 埋め込みキャンバス アプリもソリューションに対応していません。 既定では、埋め込みキャンバス アプリはホストのモデル駆動型フォームと同じソリューションで作成されます。 1 つの環境から別の環境に埋め込みキャンバス アプリを移動するには、他のコンポーネントと同じようにソリューションの一部として埋め込みキャンバス アプリをエクスポートおよびインポートします。
 

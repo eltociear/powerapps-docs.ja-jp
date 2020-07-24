@@ -2,7 +2,7 @@
 title: Power Apps 内でのモデル駆動型アプリ ビューの削除または非アクティブ化 | MicrosoftDocs
 description: ビューを削除または非アクティブ化する方法を説明します。
 ms.custom: ''
-ms.date: 06/12/2018
+ms.date: 03/30/2020
 ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
@@ -22,30 +22,46 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: fd754dabac61c744044dce088ca063dc31ba63af
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 4c0eea329561fdf35646a04d50ac1b01915ff52b
+ms.sourcegitcommit: 3c6c5594b73abd5ff438d50f3b579d56cef7241c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2865231"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "3285764"
 ---
 # <a name="delete-or-deactivate-a-model-driven-app-view"></a>モデル駆動型アプリのビューの削除または非アクティブ化 
 
 <a name="BKMK_RemoveViews"></a>   
 
- 人に見せたくないビューがあるかもしれません。 ビューの種類に基づいて、ビューを削除または非アクティブにすることができます。  
-  
-## <a name="delete-a-view"></a>ビューの削除  
- ユーザー定義の共有ビューはいずれも削除できます。 [ビュー定義へのアクセス](accessing-view-definitions.md) のステップを使用して、削除するビューを見つけ、![削除ボタン](media/delete.gif "[削除] ボタン")**削除**コマンドを使用します。 実際に削除することを確認すると、ビューは完全に削除されます。  
-  
- ビューを完全に削除したくない場合は、削除する代わりに、それを非アクティブ化できます。  
-  
+ 人に見せたくないビューがあるかもしれません。 ビューの種類に基づいて、ビューを削除または非アクティブにすることができます。 ビューを完全に削除したくない場合は、削除する代わりに、それを非アクティブ化できます。
+ 
+  * ユーザー定義の共有ビューはいずれも削除できます。 実際に削除することを確認すると、ビューは完全に削除されます。
+
+  * システムが作成した共有ビューを含めて、どの[システム ビュー](create-edit-views.md#system-views)も削除または非アクティブ化することはできません。 システムが作成した共有ビューを含めて、どの共有ビューも非アクティブ化することはできます。
+
+## <a name="delete-a-view"></a>ビューの削除
+
+1.  [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインします。  
+
+2.  **データ**を展開して**エンティティ**を選択し、目的のエンティティを選択してから**ビュー** タブを選択します。
+
+3.  目的のビューの横にある**他のコマンド** ![他のコマンド ボタン](media/more-commands.gif "フォームの その他のコマンド ボタン") を選択してから、**ビューの削除**を選択します。 メニュー バーで、**ビューの削除**を選択することもできます。
+
 ## <a name="deactivate-or-activate-views"></a>ビューの非アクティブ化またはアクティブ化  
- システムが作成した共有ビューを含めて、どの[システム ビュー](create-edit-views.md#system-views)も削除または非アクティブ化することはできません。 システムが作成した共有ビューを含めて、どの共有ビューも非アクティブ化することはできます。  
+
+1.  [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインします。  
+
+2.  **データ**を展開して**エンティティ**を選択し、目的のエンティティを選択してから**ビュー** タブを選択します。
+
+3.  目的のビューの横にある**他のコマンド** ![他のコマンド ボタン](media/more-commands.gif "フォームの その他のコマンド ボタン") を選択してから、**非アクティブ化**または**アクティブ化**のいずれかを選択します。 メニュー バーで、**非アクティブ化**または**アクティブ化**を選択することもできます。
+
+## <a name="delete-a-view-in-solution-explorer"></a>ソリューション エクスプローラーでビューを削除  
+
+ユーザー定義の共有ビューはいずれも削除できます。 [ビュー定義へのアクセス](accessing-view-definitions.md#open-a-view-for-editing-in-solution-explorer) のステップを使用して、削除するビューを見つけ、![削除ボタン](media/delete.gif "[削除] ボタン")**削除**コマンドを使用します。 実際に削除することを確認すると、ビューは完全に削除されます。  
   
-### <a name="deactivate-or-activate-a-public-view"></a>共有ビューの非アクティブ化またはアクティブ化  
-  
-1.  「[ビュー定義へのアクセス](accessing-view-definitions.md)」に説明されているとおりに、**システム ビュー**に移動します。  
+## <a name="deactivate-or-activate-views-in-solution-explorer"></a>ソリューション エクスプローラーでのビューの非アクティブ化またはアクティブ化 
+
+1.  「[ビュー定義へのアクセス](accessing-view-definitions.md#open-a-view-for-editing-in-solution-explorer)」に説明されているとおりに、**システム ビュー**に移動します。  
   
 2.  共有ビューを選択します。 非アクティブなビューを表示するには、**非アクティブな共有ビュー**ビューを使用します。  
   

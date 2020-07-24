@@ -15,12 +15,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 0006367c852d5f3490c4c63cc5b923b952f997e8
-ms.sourcegitcommit: 5701e7a755fade6c3bac5c4a5774fcc74627e168
+ms.openlocfilehash: aa507c08df5fd93a8a9ffb7c852fc787d0efb63b
+ms.sourcegitcommit: b5ab419dad4e9d64a5e6610641363b0d7487930a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "3115859"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "3465525"
 ---
 # <a name="customization-xml-reference"></a>カスタマイズ XML リファレンス
 
@@ -38,14 +38,12 @@ customizations.xml ファイルは、エクスポートされるアンマネー�
 
  [リボン コアのスキーマ](ribbon-core-schema.md)[リボン タイプのスキーマ](ribbon-types-schema.md)  
  [リボン WSS のスキーマ](ribbon-wss-schema.md)  
- [SiteMap スキーマ](/dynamics365/customer-engagement/developer/customize-dev/sitemap-schema)<br/> <!-- TODO need to fix the link--> 
- [フォーム XML スキーマ](form-xml-schema.md)<br/> 
+ [フォーム XML スキーマ](form-xml-schema.md)  
  [FetchXML スキーマ](../common-data-service/fetchxml-schema.md) 
 
 ## <a name="related-sections"></a>関連セクション
 
- [Dynamics 365 で使用するスキーマ](/dynamics365/customer-engagement/developer/schemas-used-dynamics-365)<br/> <!-- TODO need to fix the link--> 
- [カスタマイズ ファイルを編集するとき](../common-data-service/when-edit-customization-file.md)  
+[カスタマイズ ファイルを編集するとき](../common-data-service/when-edit-customization-file.md)  
 [スキーマ検証を使用したカスタマイズ ファイルの編集](edit-customizations-xml-file-schema-validation.md)  
- [Dynamics 365 のリボンのカスタマイズ](customize-commands-ribbon.md)  
- [SiteMap を使用したアプリケーション ナビゲーションの変更](/dynamics365/customer-engagement/developer/customize-dev/change-application-navigation-using-sitemap) <!-- TODO need to fix the link--> 
+[Dynamics 365 のリボンのカスタマイズ](customize-commands-ribbon.md)  
+[SiteMap を使用したアプリケーション ナビゲーションの変更](https://docs.microsoft.com/powerapps/maker/model-driven-apps/create-site-map-app) 

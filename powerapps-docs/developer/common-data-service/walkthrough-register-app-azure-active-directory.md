@@ -1,5 +1,5 @@
 ---
-title: 'チュートリアル: Azure Active Directory でアプリケーションを登録する (Common Data Service) | Microsoft Docs'
+title: 'チュートリアル: Azure Active Directory でアプリを登録する (Common Data Service) | Microsoft Docs'
 description: このチュートリアルでは、Common Data Service 環境に接続し、OAuth を使用して認証を行い、Web サービスにアクセスできるようにするために、アプリを Azure Active Directory に登録する方法について説明します。
 keywords: ''
 ms.date: 04/01/2019
@@ -15,16 +15,16 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 7ea2afe0b3a4770be48a7df13f9378069926b0b5
-ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
+ms.openlocfilehash: 25162681f224d734bdcaaba1c158a901d11c5804
+ms.sourcegitcommit: 16a5243b77621ea63fa985ad0f3a3b0608c3e62f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "3155135"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "3413355"
 ---
-# <a name="walkthrough-register-an-app-with-azure-active-directory"></a>チュートリアル: アプリを Azure Active Directory に登録します
+# <a name="tutorial-register-an-app-with-azure-active-directory"></a>チュートリアル: アプリを Azure Active Directory に登録する
 
-このチュートリアルでは、Azure Active Directory にアプリケーションを登録する方法について説明します。これにより、Power Apps ユーザーアカウントを持つユーザーは、OAuth 認証を使用して外部クライアントアプリケーションから Common Data Service 環境に接続できます。
+このチュートリアルでは、Power Apps ユーザー アカウントを使用するユーザーが、OAuth 認証を使用して外部クライアント アプリケーションから Common Data Service 環境に接続できるアプリケーションを Azure Active Directory に登録する方法について説明します。
 
 > [!IMPORTANT]
 > また、Power Apps には、外部アプリケーションから、および特別なアプリケーション ユーザー アカウントを使用するサービスからアプリ用 Common Data Service 環境のインスタンスに接続するためのサーバー間 (S2S) 認証オプションも用意されています。 S2S 認証は、Microsoft AppSource に登録されたアプリがサブスクライバーのデータにアクセスする際に使用する一般的な方法です。 詳細情報: [サーバー間 (S2S) 認証を使用して Web アプリケーションを作成する](build-web-applications-server-server-s2s-authentication.md)。

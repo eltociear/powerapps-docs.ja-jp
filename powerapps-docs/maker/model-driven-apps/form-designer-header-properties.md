@@ -1,7 +1,7 @@
 ---
 title: フォームデザイナでヘッダーのプロパティを構成する | MicrosoftDocs
 ms.custom: ''
-ms.date: 09/30/2019
+ms.date: 06/26/2020
 ms.reviewer: ''
 ms.service: crm-online
 ms.suite: ''
@@ -21,12 +21,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 67173c01bc6a96f0ada55c62688db76ca0af0596
-ms.sourcegitcommit: 6cffa70358fd2e388d64a01f906c8c196fbbdefb
+ms.openlocfilehash: f7482e4409beabea37a65f29f558dd9e026ebb40
+ms.sourcegitcommit: 75efc726828507593b1ae38a456d28e00d27b777
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "3069676"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "3517056"
 ---
 # <a name="configure-header-properties-in-the-form-designer"></a>フォーム デザイナーでヘッダーのプロパティを構成する
 
@@ -92,7 +92,8 @@ ms.locfileid: "3069676"
 > - 新しいフォーム デザイナーを使用してください。 従来のフォーム デザイナーは、ヘッダーのポップアップを表示または非表示にする機能はありません。   
 > - ヘッダーのポップアップの表示/非表示は、高密度フォーム ヘッダを使用する場合にのみ制御することができます。 低密度のヘッダーを使用する場合、ヘッダーのフィールド数とフォームの幅に基づいて、ヘッダーのポップアップが自動的に表示または非表示になります。
 > - エンティティのイメージは、**プライマリ Imagine** 属性がエンティティに対して定義されおり、フォーム プロパティの**フォーム内のイメージを表示**が有効化されている場合にのみ、ヘッダー内で表示されます。 詳細情報: [イメージ フィールド](../common-data-service/types-of-fields.md#image-fields) <br />
-    開発者は、[EntityMetadata.PrimaryImageAttribute](https://docs.microsoft.com/dotnet/api/microsoft.xrm.sdk.metadata.entitymetadata.primaryimageattribute?view=dynamics-general-ce-9) を使用して、エンティティのイメージを特定できます。 
+    開発者は、[EntityMetadata.PrimaryImageAttribute](https://docs.microsoft.com/dotnet/api/microsoft.xrm.sdk.metadata.entitymetadata.primaryimageattribute?view=dynamics-general-ce-9) を使用して、エンティティのイメージを特定できます。
+> - フォームで高密度ヘッダーを使用する場合、チェックボックス、日時、小数、期間、メールアドレス、浮動小数点数、整数、言語ピッカー、ルックアップ、金額、電話番号、選択リスト、ラジオ、テキストボックス、ティッカー、timezonepicklist など、表示される内容のコントロールが制限されます。  カスタム Power Apps control framework を含むその他のタイプのコントロールは表示されません。  サポートされていないヘッダ内のコントロールにユーザーがアクセスできるようにするためには、フライアウト付きの高密度ヘッダーに切り替える必要があります。 
 
 
 ## <a name="form-designer-messages-related-to-form-headers"></a>フォームヘッダーに関連するフォーム デザイナーのメッセージ

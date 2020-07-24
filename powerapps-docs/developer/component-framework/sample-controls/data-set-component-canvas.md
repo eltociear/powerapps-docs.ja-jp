@@ -11,12 +11,12 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 356561d0-a36b-4b93-8b76-3e1abf9414e9
-ms.openlocfilehash: 6bc0f3da0b66dc929b1f6410453df88b3069bf8d
-ms.sourcegitcommit: 310dd3dc68ffebe6a416450836ac0ba988b84fb4
+ms.openlocfilehash: c88929c44d1728d40872631d82cb554e89f827f5
+ms.sourcegitcommit: e107b13b7ae401342704c1bfb8abb9d239fbcac9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "3162148"
+ms.lasthandoff: 06/22/2020
+ms.locfileid: "3497554"
 ---
 # <a name="implementing-data-set-component-for-canvas-apps"></a>キャンバス アプリに使用する データセット コンポーネントの実装
 
@@ -41,12 +41,12 @@ ms.locfileid: "3162148"
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <manifest>
   <control namespace="PcfSample" constructor="TestDataSetCtrl" version="0.0.6" display-name-key="TestDataSetCtrl" description-key="TestDataSetCtrl description" control-type="standard" api-version="1.2.1">
-    <data-set name="simpleTableGrid" display-name-key="Dataset_Display_Key">
+    <data-set name="sampleDataSet" display-name-key="Dataset_Display_Key">
       <property-set name="samplePropertySet" display-name-key="Property_Display_Key" description-key="Property_Desc_Key" of-type="SingleLine.Text" usage="bound" required="true"/>
       <property-set name="samplePropertySet2" display-name-key="Property_Display_Key2" description-key="Property_Desc_Key2" of-type="SingleLine.Text" usage="bound" required="true"/>
     </data-set>
     <resources>
-      <code path="bundle.js" order="1"/>
+      <code path="index.ts" order="1"/>
       <css path="css/TestDataSetCtrl.css" order="1"/>
       <resx path="strings/TestDataSetCtrl.1033.resx" version="1.0.0"/>
     </resources>
@@ -450,6 +450,8 @@ private onLoadPrevButtonClick(event: Event): void {
 ```
 
 ```XML
+<?xml version="1.0" encoding="utf-8"?>
+<root>
 <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
     <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
     <xsd:element name="root" msdata:IsDataSet="true">

@@ -13,19 +13,19 @@ ms.devlang: na
 ms.topic: article
 ms.reviewer: pehecke
 ms.workload: na
-ms.date: 01/28/2019
+ms.date: 05/06/2020
 ms.author: jdaly
 search.audienceType:
 - developer
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: ff175320897f156027cd394cf8319032c9f8a6ff
-ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
+ms.openlocfilehash: 665ebb1046d3b38c9851a1627ac218d0552176ae
+ms.sourcegitcommit: a94b56525667015d4439a082873c2262a61b25a9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "3156163"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "3455972"
 ---
 # <a name="introduction-to-solutions"></a>ソリューションの概要
 
@@ -36,7 +36,7 @@ Common Data Service または以前にインストールされたソリューシ
 異なる Common Data Service 環境間のカスタマイズまたは拡張を転送する場合、また AppSource を使用してソリューションを配布する場合、ソリューション フレームワークを理解している必要があります。
 
 > [!NOTE]
-> ソリューションを効率的に使用してアプリケーション ライフサイクル管理 (ALM) の実装を成功させる方法の詳細については、[ホワイトペーパー: ライフサイクル管理ソリューション](https://www.microsoft.com/download/details.aspx?id=57777) を参照してください
+> ソリューションを効率的に使用してアプリケーション ライフサイクル管理 (ALM) の実装を成功させる方法の詳細については、[Microsoft Power Platform アプリケーション ライフサイクル管理 (ALM)](/power-platform/alm) を参照してください。
 
 ## <a name="managed-and-unmanaged-solutions"></a>管理ソリューションとアンマネージド ソリューション
 
@@ -152,7 +152,7 @@ Common Data Service は、インストールされた順に管理ソリューシ
 - パッケージが展開される前、展開中、またはその後に実行できるカスタム コード。
 - 展開プロセスの最初か最後に表示可能なパッケージに固有の HTML コンテンツ。 これは、パッケージに展開されるソリューションおよびファイルの説明を提供するのに便利です。
 
-詳細: [Common Data Service Package Deployerにパッケージを作成する](package-deployer/create-packages-package-deployer.md)。
+詳細: [Package Deployer のパッケージを作成する](/power-platform/alm/package-deployer-tool)。
 
 ## <a name="team-development-of-solutions"></a>ソリューションのチーム開発
 

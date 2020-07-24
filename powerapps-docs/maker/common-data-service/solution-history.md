@@ -2,7 +2,7 @@
 title: ソリューションの履歴の表示 | MicrosoftDocs
 description: ソリューションの履歴の表示方法に関する説明 | MicrosoftDocs
 keywords: ''
-ms.date: 05/19/2019
+ms.date: 04/20/2020
 ms.service: powerapps
 ms.custom: ''
 ms.topic: article
@@ -20,54 +20,43 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 813a31b3b9d56dfb6742dc138ec947829613cf89
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 75880ec6d29dbb8e9fa9e5f1c2ef4f9721a479ce
+ms.sourcegitcommit: 4a88daac42180283314f6bedee3d6810fd5a6c25
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2869945"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "3276015"
 ---
 # <a name="view-the-history-of-a-solution"></a>ソリューションの履歴の表示
-モデル駆動型アプリケーション **ソリューション** 領域からソリューションの操作の詳細を表示できます。 操作は、ソリューションのインポート、エクスポート、または削除のいずれかです。 ソリューションの履歴はソリューション バージョン、ソリューション発行者、操作などの一部の情報を、操作の開始時刻と終了時刻、および操作の状態の表示されます。
-
-> [!div class="mx-imgBorder"] 
-> ![](media/solutions-history-custom-view.png "Solutions history custom view")
+Power Apps の**ソリューション**領域からソリューションの操作の詳細を表示できます。 操作は、ソリューションのインポート、エクスポート、またはアンインストールのいずれかです。 ソリューションの履歴はソリューション バージョン、ソリューション発行者、操作などの一部の情報を、操作の開始時刻と終了時刻、および操作の状態の表示されます。
 
 ## <a name="view-solution-history"></a>ソリューション履歴表示
-1. **設定**を選択して、その後**ソリューション履歴**を選択します。
+1.  [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインします。
+2.  左側のナビゲーション ウィンドウで、**ソリューション**を選択し、目的のソリューションを選択してから、コマンド バーの**履歴の表示**を選択します。 
 
-     > [!div class="mx-imgBorder"] 
-     > ![](media/solution-history-sitemap.png "Solution History area")
+    履歴が表示されます。 
 
-     > [!NOTE]
-     > Power Apps 統一インターフェイスのモデル駆動型アプリから、**設定** 領域を取得するには、アプリのツールバーにある **設定** ![設定](../model-driven-apps/media/powerapps-gear.png) を選択してから、**詳細設定** を選択します。 
+    > [!div class="mx-imgBorder"] 
+    > ![](media/solution-history.png "Solution history")
 
-2. 既定では、**カスタム ソリューションの履歴** ビューが表示されます。 次のビューは、 **ソリューション履歴** 領域で利用できます。 
-- **すべてのソリューション履歴**。 内部システムとカスタムソリューション両方のソリューション履歴の表示。 
-- **カスタム ソリューション履歴**。 カスタム ソリューションだけのソリューション履歴が表示されます。 
-- **内部ソリューション履歴**。 内部システムのみのソリューション履歴の表示。 
+ソリューションの操作を選択して**情報ページ**を表示します。 各ソリューションの履歴記録は読み取り専用であり、**詳細情報**領域に以下のものを含みます。
+-   **名前**. ソリューションの一意名。 
+-   **開始時間**。 操作が開始した時間。
+-   **終了時刻**: 操作が終了した時間。
+-   **バージョン**. このソリューションのバージョンです。
+-   **発行者** 操作が関連付けられている発行者の名前を入力します。 
+-   **操作**。 インポート、エクスポート、または削除のような操作です。 
+-   **サブ操作**: 既存のソリューションへの新しいソリューションのインポートまたは更新などの操作の種類を示します。
+-   **結果**。  成功 または 失敗 など、操作の結果。
 
-各ソリューションの履歴記録は読み取り専用であり、次のプロパティが含まれます: 
-- **開始時間**。 操作が開始した時間。 
-- **終了時刻**: 操作が終了した時間。 
-- **ソリューションのバージョン**。 このソリューションのバージョンです。 
-- **発行者名**。 操作が関連付けられている発行者の名前を入力します。 詳細: [ソリューション発行者の接頭辞を変更する](change-solution-publisher-prefix.md)  
-- **操作**。 インポート、エクスポート、または削除のような操作です。 詳細: [ソリューションのインポート、更新およびエクスポート](import-update-export-solutions.md)
-- **サブ操作**: 既存のソリューションへの新しいソリューションのインポートまたは更新などの操作の種類を示します。 
-- **状態**:  **完了済み** または **未完了**など操作の状態。 
-- **結果**。  **成功** または **失敗** など、操作の結果。 
--  **エラー コード**: 操作で返されるエラー コード。 エラー コード 0 は、操作が正常に終了したことを意味します。 
+ > [!div class="mx-imgBorder"] 
+ > ![](media/solution-history-details.png "Solution history details")
 
 ### <a name="view-solution-operation-error-details"></a>ソリューションの操作エラーの詳細表示 
-ソリューション操作に失敗が含まれている場合は、追加のエラーの詳細を記載したページを表示することを選択できます。 
-
-> [!div class="mx-imgBorder"] 
-> ![](media/solution-history-with-failure.png "Solution history with operation error")
-
-操作エラーの根本原因の診断に役立つ可能性がある **例外メッセージ** を含む情報が含まれる詳細ページ。 ソリューション依存エラーを含む一部のエラーは、問題の診断を簡単におこなうための **ソリューション階層** へのリンクも含まれることがあります。 **活動ID** は、Microsoft カスタマ サポートに問い合わせる必要があるケースに有用です。 
-
-> [!div class="mx-imgBorder"] 
-> ![](media/solution-history-error-details.png "Solution operation error details")
+**詳細情報**領域の下にある**詳細**領域にはソリューションに関する追加情報があり、ソリューションの操作に失敗した場合、情報には以下のものが含まれます。 
+- 操作から返されたエラーの**エラー コード**。 
+- 操作の失敗の根本的な原因を診断するのに役立つ**例外メッセージ**。 ソリューション依存エラーを含む一部のエラーは、問題の診断を簡単におこなうための ソリューション階層 へのリンクも含まれることがあります。 
+- **活動ID** は、Microsoft カスタマ サポートに問い合わせる必要があるケースに有用です。
 
 ### <a name="see-also"></a>関連項目
 [ソリューションの階層の表示](solution-layers.md)  <br />

@@ -15,12 +15,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 190659fb75b6cb6e89b1952178ff4eb0301f47b7
-ms.sourcegitcommit: 5701e7a755fade6c3bac5c4a5774fcc74627e168
+ms.openlocfilehash: 71fd2e8592622f894d3636610767c078e92a33e8
+ms.sourcegitcommit: 4a88daac42180283314f6bedee3d6810fd5a6c25
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "3115659"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "3275927"
 ---
 # <a name="define-ribbon-display-rules"></a>リボンの表示ルールの定義
 
@@ -198,6 +198,6 @@ ms.locfileid: "3115659"
 >  更新したユーザー エクスペリエンスを使用してフォームのサブグリッドに対して定義されたコマンドには、値ルールは表示ルール内で使用することはできません。 `<EnableRule>` 内のこの要素を使用して、要素を隠します。  
 
 ### <a name="see-also"></a>関連項目  
- [コマンド、およびリボンをカスタマイズする](customize-commands-ribbon.md)   
+ [コマンドとリボンのカスタマイズ](customize-commands-ribbon.md)   
  [リボンの有効化ルールの定義](define-ribbon-enable-rules.md)   
- [リボン アクションの定義](define-ribbon-actions.md)
+ [リボンのアクションの定義](define-ribbon-actions.md)

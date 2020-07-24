@@ -27,6 +27,8 @@
           href: use-fetchxml-left-outer-join-query-records-not-in.md
         - name: FetchXML による大量の結果セットのページング
           href: org-service/page-large-result-sets-with-fetchxml.md
+    - name: SQL を使用してデータを照会する (プレビュー)
+      href: cds-sql-query.md
     - name: 保存済みクエリ
       href: saved-queries.md
     - name: クエリ階層型データ
@@ -135,6 +137,8 @@
           href: data-import-entities.md
     - name: データ エクスポート サービス
       href: data-export-service.md
+    - name: OData データフローを使用する環境間でデータを移行する
+      href: cds-odata-dataflows-migration.md
     - name: データの同期
       href: data-synchronization.md
       items:
@@ -295,68 +299,41 @@
       href: customize-labels-support-multiple-languages.md
     - name: ベスト プラクティス
       href: best-practices/work-with-metadata/index.md
-- name: ソリューションを使用した拡張機能のパッケージ化および配布
+- name: ソリューションの概要
+  href: introduction-solutions.md
   items:
-    - name: ソリューションの概要
-      href: introduction-solutions.md
+    - name: ソリューション コンポーネントの依存関係の追跡
+      href: dependency-tracking-solution-components.md
+    - name: 依存関係の削除
+      href: removing-dependencies.md
+    - name: 管理ソリューションの保守
+      href: maintain-managed-solutions.md
+    - name: ソリューションを組織する
+      href: organize-solutions.md
+    - name: ソリューション開発のためのチーム編成
+      href: organize-team-develop-solutions.md
+    - name: マネージド プロパティの使用
+      href: use-managed-properties.md
+    - name: 管理ソリューションのマージ方法について
+      href: understand-managed-solutions-merged.md
+    - name: 複数の言語をサポートするソリューションの作成
+      href: create-solutions-support-multiple-languages.md
+    - name: ソリューションを管理する方法
       items:
-        - name: ソリューション コンポーネントの依存関係の追跡
-          href: dependency-tracking-solution-components.md
-        - name: 管理ソリューションの保守
-          href: maintain-managed-solutions.md
-        - name: ソリューションを組織する
-          href: organize-solutions.md
-        - name: ソリューション開発のためのチーム編成
-          href: organize-team-develop-solutions.md
-        - name: マネージド プロパティの使用
-          href: use-managed-properties.md
-        - name: 管理ソリューションのマージ方法について
-          href: understand-managed-solutions-merged.md
-        - name: 複数の言語をサポートするソリューションの作成
-          href: create-solutions-support-multiple-languages.md
-        - name: ソリューションを管理する方法
-          items:
-            - name: アンマネージド ソリューションの作成、エクスポート、またはインポート
-              href: create-export-import-unmanaged-solution.md
-            - name: ソリューションのインストールまたは削除
-              href: uninstall-delete-solution.md
-            - name: ソリューションに関する作業
-              href: work-solutions.md
-            - name: 管理ソリューションの作成、インストール、および更新
-              href: create-install-update-managed-solution.md
-            - name: ソリューションの更新プログラムを簡易化する修正プログラムの作成
-              href: create-patches-simplify-solution-updates.md
-            - name: カスタマイズ ファイルを編集するとき
-              href: when-edit-customization-file.md
-    - name: Azure DevOps 構築ツール
-      items:
-        - name: 概要
-          href: build-tools-overview.md
-        - name: 仕事
-          href: build-tools-tasks.md
-        - name: チュートリアルとよく寄せられる質問
-          href: build-tools-tutorial-faq.md
-    - name: 'SolutionPackager ツール '
-      href: compress-extract-solution-file-solutionpackager.md
-      items:
-        - name: ソリューション ファイルを使用したソース コントロール
-          href: use-source-control-solution-files.md
-    - name: Package Deployer ツール
-      href: package-deployer/create-packages-package-deployer.md
-    - name: ソリューションとパッケージの品質を検証する
-      items:
-        - name: Power Apps チェッカー Web API を使用する
-          href: checker/webapi/overview.md
-        - name: 分析の呼び出し
-          href: checker/webapi/analyze.md
-        - name: 解析ステータスを確認する
-          href: checker/webapi/check-status.md
-        - name: ルールの一覧の取得
-          href: checker/webapi/retrieve-rules.md
-        - name: ルールセットの一覧の取得
-          href: checker/webapi/retrieve-rulesets.md
-        - name: 分析用のファイルをアップロードします。
-          href: checker/webapi/upload-file.md
+        - name: アンマネージド ソリューションの作成、エクスポート、またはインポート
+          href: create-export-import-unmanaged-solution.md
+        - name: ソリューションのインストールまたは削除
+          href: uninstall-delete-solution.md
+        - name: ソリューションに関する作業
+          href: work-solutions.md
+        - name: 管理ソリューションの作成、インストール、および更新
+          href: create-install-update-managed-solution.md
+        - name: ソリューションの更新を簡略化する修正プログラムの作成
+          href: create-patches-simplify-solution-updates.md
+        - name: カスタマイズ ファイルを編集するとき
+          href: when-edit-customization-file.md
+- name: (ISV) アプリを公開して監視する
+  items:
     - name: AppSource でアプリを公開する
       href: publish-app-appsource.md
       items:
@@ -374,7 +351,7 @@
           href: appendix-app-design-best-practices-checklist.md
         - name: '付録: アプリの認証チェックリスト'
           href: appendix-app-certification-checklist.md
-    - name: ISV アプリの管理と監視
+    - name: ISV Studio でアプリを監視する
       items:
         - name: ISV Studio の概要
           href: isv-app-management.md
@@ -384,6 +361,10 @@
           href: isv-app-management-apppage.md
         - name: テナント ページ
           href: isv-app-management-tenantpage.md
+        - name: AppSource チェッカー
+          href: isv-app-management-appsource-checker.md
+        - name: コネクタ認定
+          href: isv-app-management-certification.md
 - name: クライアント アプリケーション作成
   href: connect-cds.md
   items:
@@ -398,6 +379,8 @@
           href: authenticate-office365-deprecation.md
     - name: 'チュートリアル: アプリを Azure Active Directory に登録する'
       href: walkthrough-register-app-azure-active-directory.md
+    - name: 'チュートリアル: ASP.NET Core Blazor WebAssembly アプリを作成する'
+      href: walkthrough-blazor-webassembly-single-tenant.md
     - name: サーバー間 (S2S) の認証を使用して Web アプリケーションを作成する
       href: build-web-applications-server-server-s2s-authentication.md
       items:

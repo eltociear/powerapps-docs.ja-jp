@@ -17,14 +17,14 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: e1187757c90af2ec245ace51031f5e0345c92bd2
-ms.sourcegitcommit: 6acc6ac7cc1749e9681d5e55c96613033835d294
+ms.openlocfilehash: 8b2f0b850b74d3af590e1eb9efb3f07bbf5893eb
+ms.sourcegitcommit: 09861c876b5d8fa2ec0bd422124aa44c077c540d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "3238463"
+ms.lasthandoff: 05/30/2020
+ms.locfileid: "3412548"
 ---
-# <a name="share-a-model-driven-app-with-power-apps"></a>Power Apps を使用してモデル駆動型アプリを共有する
+# <a name="share-a-model-driven-app-using-power-apps"></a>Power Apps を使用してモデル駆動アプリと共有する
 
 [!INCLUDE [powerapps](../../includes/powerapps.md)] アプリは、共有にロールベースのセキュリティを使用します。 ロールベースのセキュリティの基本概念は、セキュリティ ロールにはアプリ内で実行できる一連の操作を定義する特権が含まれるということです。 すべてのアプリ ユーザーは、これらの中で 1 つ以上の定義済みロールまたはユーザー定義ロールに割り当てられる必要があります。 または、チームにもロールを割り当てることができます。 これらのロールのいずれかにユーザーまたはチームを割り当てると、そのロールに関連付けられた一連の特権がユーザーまたはチーム メンバーに付与されます。 
 
@@ -144,7 +144,7 @@ ms.locfileid: "3238463"
 |---------|---------|---------|
 |環境作成者     |  なし       | Power Automate を使用して、アプリ、つながり、カスタム API、ゲートウェイ、フローなど、環境に関連付けられた新しいリソースを作成できます。 ただし、環境内のデータにアクセスする特権はありません。 詳細: [環境の概要](https://powerapps.microsoft.com/blog/powerapps-environments/)        |
 |システム管理者     |  作成、読み取り、書き込み、削除、カスタマイズ、セキュリティ ロール       | セキュリティ ロールの作成、変更、割り当てなど、環境をカスタマイズまたは管理する完全なアクセス許可があります。 環境のすべてのデータを表示できます。 詳細情報: [カスタマイズに必要な特権](https://docs.microsoft.com/dynamics365/customer-engagement/customize/privileges-required-customization)        |
-|システム カスタマイザ     | 作成 (自己)、読み取り (自己)、書き込み (自己)、削除 (自己)、カスタマイズ         | 環境をカスタマイズするための完全なアクセス許可があります。 ただし、作成した環境エンティティのレコードの表示のみ行うことができます。 詳細情報: [カスタマイズに必要な特権](https://docs.microsoft.com/dynamics365/customer-engagement/customize/privileges-required-customization)        |
+|システム カスタマイザ     | 作成 (自己)、読み取り (自己)、書き込み (自己)、削除 (自己)、カスタマイズ         | 環境をカスタマイズするための完全なアクセス許可が付与されます。 ただし、作成した環境エンティティのレコードの表示のみ行うことができます。 詳細情報: [カスタマイズに必要な特権](https://docs.microsoft.com/dynamics365/customer-engagement/customize/privileges-required-customization)        |
 |Common Data Service ユーザー     |  読み取り、作成 (自己)、書き込み (自己)、削除 (自己)       | 環境内のアプリを実行し、自分が所有しているレコードの一般的なタスクを実行できます。        |
 |代理人     | 別のユーザーの代わりに操作        | コードを別のユーザーとして実行するか、偽装するコードを実行できます。  通常、レコードへのアクセスを許可するためのセキュリティ ロールで使用されます。 詳細情報: [もう一方のユーザーの偽装](https://docs.microsoft.com/dynamics365/customer-engagement/developer/org-service/impersonate-another-user)        |
 

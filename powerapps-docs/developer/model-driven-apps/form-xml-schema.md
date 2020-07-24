@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 73c5a681df915beecd52b3d813178491e5832bff
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 495da0a1534f0d9174e6c295b052b68510ed3c3c
+ms.sourcegitcommit: 4a88daac42180283314f6bedee3d6810fd5a6c25
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2754576"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "3275943"
 ---
 # <a name="form-xml-schema"></a>フォーム XML スキーマ
 

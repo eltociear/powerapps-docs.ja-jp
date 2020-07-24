@@ -1,20 +1,19 @@
 ---
 title: Power Apps の既存ポータルの管理 | Microsoft Docs
 description: Power Apps のポータルを管理するための手順。
-author: tapanm-msft
-manager: kvivek
+author: sandhangitmsft
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 10/07/2019
-ms.author: tapanm
-ms.reviewer: ''
-ms.openlocfilehash: 3eea977cf59629c7f2b758affa145f520838b39f
-ms.sourcegitcommit: a1b54333338abbb0bc3ca0d7443a5a06b8945228
+ms.author: sandhan
+ms.reviewer: tapanm
+ms.openlocfilehash: fd0c301b62155303be82424bb0ec72a67627ca68
+ms.sourcegitcommit: c12260f372ad2cc48d3146be570d2088c9ef1d86
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "3125314"
+ms.lasthandoff: 06/20/2020
+ms.locfileid: "3494845"
 ---
 # <a name="manage-existing-portals-in-power-apps"></a>Power Apps で既存のポータルを管理する
 

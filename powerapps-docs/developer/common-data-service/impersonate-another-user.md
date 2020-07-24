@@ -2,7 +2,7 @@
 title: 他のユーザーを偽装する (Common Data Service) | Microsoft Docs
 description: 偽装を使用して、Common Data Service ユーザーに代わってビジネス ロジックを実行し、偽装されるユーザーの適切なロール ベースとオブジェクトベースのセキュリティを使用して任意の機能やサービスを提供するために使用されます。
 ms.custom: ''
-ms.date: 10/31/2018
+ms.date: 04/07/2020
 ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: e817468da9cf506acbaedf6b1617ca1a563661e9
-ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
+ms.openlocfilehash: bc5f6ee0e852985213365ed54f118b0ce72cd1ce
+ms.sourcegitcommit: 4a88daac42180283314f6bedee3d6810fd5a6c25
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "3156159"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "3275759"
 ---
 # <a name="impersonate-another-user"></a>もう一方のユーザーの偽装
 
@@ -52,7 +52,7 @@ ms.locfileid: "3156159"
 
 ## <a name="impersonate-another-user-using-the-web-api"></a>Web API を使用して別のユーザーを偽装する
 
-ユーザーを偽装するには、要求を Web サービスに送信する前に、偽装されるユーザーの `systemuserid` に等しい GUID 値を持つ、`MSCRMCallerID` という要求ヘッダーを追加します。 
+ユーザーを偽装するには、要求を Web サービスに送信する前に、偽装されるユーザーの Azure Active Directory (AAD) オブジェクト ID に等しい GUID 値を持つ、`CallerObjectId` という要求ヘッダーを追加します。 そのユーザーの AAD オブジェクト ID は、[SystemUser.AzureActiveDirectoryObjectId](reference/entities/systemuser.md#BKMK_AzureActiveDirectoryObjectId) に含まれています。
 
 詳細情報: [Web API を使用して別のユーザーを偽装する](webapi/impersonate-another-user-web-api.md)。
 
@@ -76,3 +76,4 @@ ms.locfileid: "3156159"
 [サーバー間 (S2S) の認証を使用して Web アプリケーションを作成する](build-web-applications-server-server-s2s-authentication.md)<br />
 [Web API を使用して別のユーザーを偽装する](webapi/impersonate-another-user-web-api.md)<br />
 [プラグインを記述する](write-plug-in.md)
+ 

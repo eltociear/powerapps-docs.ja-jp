@@ -1,7 +1,7 @@
 ---
 title: フォーム上のフィールドを追加、構成、移動、削除する | MicrosoftDocs
 ms.custom: ''
-ms.date: 08/26/2019
+ms.date: 05/04/2020
 ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
@@ -21,12 +21,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: d711a46676003786363f3496515dbd387024dadb
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: ce9bea71cb941628d943b60da30558c0d7794ed1
+ms.sourcegitcommit: 52b7f59e271437e86ffff226fb6c1982bf7f08b1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2860673"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "3332531"
 ---
 # <a name="add-configure-move-or-delete-fields-on-a-form"></a>フォーム上のフィールドを追加、構成、移動、削除する  
 フォーム デザイナーを使用して、フィールドを追加、構成、移動、削除します。
@@ -78,6 +78,9 @@ ms.locfileid: "2860673"
 |**表示オプション** | **フィールドの非表示** | 選択すると、そのフィールドは既定で非表示になり、コードを使用して表示できます。 |
 |**表示オプション** | **電話の非表示** | フィールドを非表示にして、電話の画面にフォームの要約バージョンを表示できます。 |
 |**形式** | **フィールドの幅** |  フィールドを含むセクションに複数の列があるとき、フィールドがセクションにある列の数まで占めるように設定できます。 |
+
+[!NOTE] 
+> 統一インターフェイスでは、フォームがすべてのフィールドの幅を調整して、画面サイズが非常に小さいものから非常に大きいものまで適切にレンダリングされるようにするため、ラベルサイズの設定は無視されます。
 
 ## <a name="move-fields-on-a-form"></a>フォームのフィールドを移動
 ドラッグ アンド ドロップやカット アンド ペーストの操作を使用して、フォーム上のフィールドを移動できます。 

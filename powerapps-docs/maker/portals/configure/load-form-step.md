@@ -1,20 +1,19 @@
 ---
 title: ポータルでフォームの読み込みやタブの読み込みのステップの種類を構成する | MicrosoftDocs
 description: ポータルで負荷フォームを定義し、タブの手順の種類を読み込む手順
-author: tapanm-msft
-manager: kvivek
+author: sandhangitmsft
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 11/04/2019
-ms.author: tapanm
-ms.reviewer: ''
-ms.openlocfilehash: 634ded2a7ab03e953c13ca0abe568eaecb3b75a7
-ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
+ms.author: sandhan
+ms.reviewer: tapanm
+ms.openlocfilehash: 7f9945a3a727e745cc04795febb720ee41c3a6c9
+ms.sourcegitcommit: c12260f372ad2cc48d3146be570d2088c9ef1d86
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "2979914"
+ms.lasthandoff: 06/20/2020
+ms.locfileid: "3491812"
 ---
 # <a name="define-a-load-form-and-load-tab-step-type"></a>フォームの読み込みやタブの読み込みのステップの種類を定義する
 

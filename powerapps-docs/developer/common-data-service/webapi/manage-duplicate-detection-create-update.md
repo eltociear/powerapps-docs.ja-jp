@@ -2,7 +2,7 @@
 title: Web API を使用して重複データを検出する (Common Data Service) | Microsoft Docs
 description: MSCRM.SuppressDuplicateDetection ヘッダーおよび Common Data Service Web API を使用して重複データを検出する方法の説明
 ms.custom: ''
-ms.date: 10/31/2018
+ms.date: 04/06/2020
 ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -19,12 +19,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 73cfe1f28eb95e87e4aedf7eed9e51710ba9b8b2
-ms.sourcegitcommit: a1b54333338abbb0bc3ca0d7443a5a06b8945228
+ms.openlocfilehash: 0a32cc136d9876cdf84acd80a2f5229449115876
+ms.sourcegitcommit: 49b69129262a9b530e69508e84c3822b742066df
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "3126402"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "3233695"
 ---
 # <a name="detect-duplicate-data-using-the-web-api"></a>Web API を使用した重複データの検出
 
@@ -44,7 +44,7 @@ Common Data Service Web API を使用すると、データの整合性を維持�
 
 
 > [!NOTE]
-> 適切な重複データ検出ルールが存在することを確認します。 Common Data Service には、取引先企業、取引先担当者、および潜在顧客のための既定の重複データ検出ルールが組み込まれています。他のレコードの種類のための既定のルールは存在しません。 システムが他のレコードの種類の重複データを検出するようにするには、新しいルールを作成する必要があります。 <br/>- UI を使用して重複データの検出ルールを作成する方法については、[データを整理するための重複データ検出ルールの設定](/dynamics365/customer-engagement/admin/set-up-duplicate-detection-rules-keep-data-clean) を参照してください。<br/>- コードを使用して重複データ検出ルールを作成する方法の詳細については、[重複ルール エンティティを参照します](../duplicaterule-entities.md) 
+> 適切な重複データ検出ルールが存在することを確認します。 Common Data Service には、取引先企業、取引先担当者、および潜在顧客のための既定の重複データ検出ルールが組み込まれています。他のレコードの種類のための既定のルールは存在しません。 システムで他のレコードの種類の重複データを検出するには、新しいルールを作成する必要があります。 <br/>- UI を使用して重複データの検出ルールを作成する方法については、[データを整理するための重複データ検出ルールの設定](/dynamics365/customer-engagement/admin/set-up-duplicate-detection-rules-keep-data-clean) を参照してください。<br/>- コードを使用して重複データ検出ルールを作成する方法の詳細については、[重複ルール エンティティを参照します](../duplicaterule-entities.md) 
 
 
 
@@ -81,12 +81,7 @@ OData-Version: 4.0
 {
     "error": {
         "code": "0x80040333",
-        "message": "A record was not created or updated because a duplicate of the current record already exists.",
-        "innererror": {
-            "message": "A record was not created or updated because a duplicate of the current record already exists.",
-            "type": "Microsoft.Crm.CrmException",
-            [ Stack Trace and internal exception details omitted for brevity]
-        }
+        "message": "A record was not created or updated because a duplicate of the current record already exists."
     }
 }
 ```
@@ -128,12 +123,7 @@ OData-Version: 4.0
 {
     "error": {
         "code": "0x80040333",
-        "message": "A record was not created or updated because a duplicate of the current record already exists.",
-        "innererror": {
-            "message": "A record was not created or updated because a duplicate of the current record already exists.",
-            "type": "Microsoft.Crm.CrmException",
-            [ Stack Trace and internal exception details omitted for brevity]
-        }
+        "message": "A record was not created or updated because a duplicate of the current record already exists."
     }
 }
 ```

@@ -1,20 +1,19 @@
 ---
 title: Power Apps ポータル スタジオでサポートされる Web ブラウザー | Microsoft Docs
 description: Power Apps ポータル スタジオでサポートされる Web ブラウザーについて。
-author: tapanm-msft
-manager: kvivek
+author: neerajnandwana-msft
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 10/07/2019
-ms.author: tapanm
-ms.reviewer: ''
-ms.openlocfilehash: 361e86938decdf2facd960ceafd74c698d91da16
-ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
+ms.author: nenandw
+ms.reviewer: tapanm
+ms.openlocfilehash: 9a4de9f791203c2322948b3758a560574c149b20
+ms.sourcegitcommit: 2fd873a1ea17f419f6194714efffa47a9bd00c2e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "2981322"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "3507857"
 ---
 # <a name="supported-web-browsers-for-power-apps-portals-studio"></a>Power Apps ポータル スタジオでサポートされる Web ブラウザーについて説明します。
 
